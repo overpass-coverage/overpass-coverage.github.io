@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 404</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 404</p><h1>Query 404</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1603 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;name:en&quot;,&quot;place&quot;,::&quot;count:areas&quot;,&quot;amenity&quot;,::timestamp,::otype,::id,&quot;fire_hydrant:type&quot;)][maxsize:1073741824];
+node(around:50,45.812064,-63.653077)-&gt;.s0;
+for.s0-&gt;.s1 ((suffix(t[&quot;operator:wikidata&quot;])!=type())) { convert item ::id=id(),g=_.val; }
+make info n=1,c=s0.count(deriveds),v=suffix(s0.min((type()+id())))-&gt;.s2;
+.s0 out noids 2 body;
+.s1 out bb skel;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1659</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1659</p><h1>Query 1659</h1><p class="muted">fuzz:4:history,complete,output:956 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Food&quot;;[&quot;owner&quot;!~&quot;^Ha&quot;];[&quot;bridge:name&quot;!=&quot;Sussex Street Bridge&quot;][&quot;maxspeed&quot;];&quot;ref&quot;;)][maxsize:268435456][timeout:25];
+rel(poly:&#x27;45.671625 -62.020950 45.675234 -62.018984 45.676243 -62.053064 45.668884 -62.048258 45.658467 -62.036002 45.661816 -62.019143&#x27;)-&gt;.s0;
+complete(4).s0-&gt;.s1 { node(w); way(bn)[&quot;addr:district&quot;]; }
+way(bn.s0)-&gt;.s2;
+complete(1).s2-&gt;.s3 { way(bn)[&quot;power&quot;]; node(w); }
+.s0 convert row ::id=id(),tags=count_tags();
+out;
+.s0 out qt body;
+.s1 out tags qt;
+</pre><h2>Lines only this query runs (2)</h2><ul><li><a href="../src/overpass_api/output_formats/output_popup.cc.html#L74">overpass_api/output_formats/output_popup.cc:74</a></li><li><a href="../src/overpass_api/output_formats/output_popup.cc.html#L77">overpass_api/output_formats/output_popup.cc:77</a></li></ul></main></body></html>

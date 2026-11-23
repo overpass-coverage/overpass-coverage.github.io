@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 339</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 339</p><h1>Query 339</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2592 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:536870912][out:csv(::&quot;count:areas&quot;,::&quot;count:nodes&quot;,::type,::&quot;count:ways&quot;,::count,::otype,&quot;material&quot;)][timeout:25];
+nw[&quot;golf&quot;=&quot;cartpath&quot;][~&quot;^tur&quot;~&quot;\\|\\|r&quot;][&quot;maxheight&quot;=&quot;4.1&quot;](45.609644,-62.832992,45.644413,-62.773164)-&gt;.s0;
+is_in(44.769851,-63.270508)-&gt;.s1;
+nwr(area.s1)[&quot;length&quot;=&quot;2&quot;]-&gt;.s2;
+(.s0; - .s1;)-&gt;.s3;
+.s0 is_in-&gt;.s4;
+.s1 convert item k2=lrs_union(lrs_isect(t[&quot;colour&quot;],&quot;a;b;c&quot;),lrs_union(&quot;1;2&quot;,lrs_union(&quot;a;b;c&quot;,&quot;1;2&quot;))),k0=user(),::id=id(),k1=0-&gt;.s5;
+.s0 out geom tags;
+.s1 out;
+.s5 out meta center qt 16;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

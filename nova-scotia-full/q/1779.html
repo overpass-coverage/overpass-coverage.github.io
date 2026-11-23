@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1779</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1779</p><h1>Query 1779</h1><p class="muted">fuzz:4:history,areas,complete,statements:427 · 0.23 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][adiff:&quot;2010-08-18T01:40:41Z&quot;,&quot;2018-11-10T14:03:18Z&quot;];
+way(id:5164344,241058403,297756295,452572623,473046002,492785515,520368391,628290136,1054510620,1241239656,1423323823,1557744831)[&quot;owner&quot;!~&quot;Canadian\\ National\\ Railway|Sackville\\ Manor|Sprigfield\\ Estates&quot;](if:is_tag(&quot;seamark:light:height&quot;))-&gt;.s0;
+timeline(way,75683720,3)-&gt;.s1;
+way.s1(if:id()&gt;3000000000)-&gt;.s2;
+node(way_cnt.s2:3-)-&gt;.s3;
+way(bn.s2)-&gt;.s4;
+way.s4(id:156736499,1152562777)-&gt;.s5;
+.s3 compare-&gt;.s6 { (.s6; .s6 &gt;;)-&gt;.s6; }
+.s3 out ids geom 26;
+.s6 out meta center 41;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

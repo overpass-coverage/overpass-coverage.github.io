@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 346</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 346</p><h1>Query 346</h1><p class="muted">fuzz:4:history,areas,complete,statements:979 · 0.25 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2011-06-14T14:02:01Z&quot;];
+node(id:907061099,1143667006,2437819295,3489288462,4722187054)[&quot;water_source&quot;=&quot;main&quot;](45.097771,-64.574309,45.105788,-64.262728)-&gt;.s0;
+.s0 &lt;-&gt;.s1;
+is_in(44.140510,-66.176193)-&gt;.s2;
+node(area.s2)(46.240204,-61.332010,46.248298,-61.261430)-&gt;.s3;
+nwr[&quot;destination:ref&quot;~&quot;^NS 111 South$&quot;][&quot;destination:ref:to:forward&quot;!~&quot;^NS&quot;]-&gt;.s4;
+.s1 compare(delta:lat())-&gt;.s5;
+.s1 out ids asc 6 (44.710878,-63.853568,44.787286,-63.780174);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,16 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1703</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1703</p><h1>Query 1703</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2518 · 0.15 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;barrier&quot;](around:25000,44.367901,-64.511347);
+  way[&quot;length&quot;=&quot;4.2&quot;](around:25000,44.367901,-64.511347);
+  way[&quot;natural&quot;=&quot;land&quot;](around:1000,44.367901,-64.511347);
+  nwr[&quot;brand&quot;~&quot;Laura\\ Secord|Mary\\ Brown&#x27;s|Tesla\\ Supercharger&quot;](around:25000,44.367901,-64.511347);
+  node[&quot;post:city&quot;~&quot;^(Dartmouth|Sheet\\ Harbour|Tangier|Upper\\ Musquodoboit)$&quot;](around:25000,44.367901,-64.511347);
+  node[&quot;operator&quot;=&quot;Parkbridge&quot;](around:500,44.367901,-64.511347);
+  node[&quot;railway&quot;~&quot;abandoned|level_crossing|rail|switch&quot;](around:25000,44.367901,-64.511347);
+  node[&quot;golf&quot;=&quot;bunker&quot;](around:2000,44.367901,-64.511347);
+  relation[&quot;water_source&quot;=&quot;main&quot;](around:25000,44.367901,-64.511347);
+  node[&quot;owner&quot;=&quot;Halifax Regional Water Commission&quot;](around:25000,44.367901,-64.511347);
+  way[&quot;postal_code&quot;~&quot;B0L\\ 1G0|B5A\\ 5G3&quot;,i][&quot;addr:country&quot;~&quot;commun&quot;,i](around:25000,44.367901,-64.511347);
+);
+out center tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 384</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 384</p><h1>Query 384</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:269 · 0.17 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][timeout:60][out:json][date:&quot;2022-03-04T19:10:23Z&quot;];
+way(poly:&#x27;44.648765 -63.543949 44.669314 -63.586585 44.640572 -63.601542 44.625934 -63.613918 44.613768 -63.575072 44.624320 -63.562686&#x27;)[!&quot;usage&quot;][&quot;electrified&quot;=&quot;no&quot;](44.783845,-64.264724,44.838928,-64.256119)-&gt;.s0;
+retro(date(&quot;2014-05-10T00:31:27Z&quot;)) { nw(45.074422,-62.779467,45.234601,-62.599990)[&quot;bridge:ref&quot;!=&quot;HFX245&quot;](if:(!is_closed()))-&gt;.s1; .s1 out ids; }
+node[~&quot;^destination$&quot;~&quot;^Commodore Drive$&quot;]-&gt;.s2;
+.s1 &lt;-&gt;.s3;
+.s0 out qt count;
+.s1 out body;
+.s3 out center meta qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

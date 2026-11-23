@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1793</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1793</p><h1>Query 1793</h1><p class="muted">fuzz:4:history,complete,output:218 · 1.40 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:json][date:&quot;2010-09-13T17:49:38Z&quot;];
+wr[&quot;network:wikipedia&quot;!~&quot;en:Halifax\\ Transit&quot;](44.166861,-64.494953,44.440037,-64.362925)(changed:&quot;2011-02-10T10:15:10Z&quot;)(poly:&quot;44.529953 -64.387530 44.523179 -64.395258 44.514076 -64.398869&quot;)-&gt;.s0;
+rel(br.s0)-&gt;.s1;
+(.s1; .s1;)-&gt;.s2;
+complete(1).s1-&gt;.s3 { node(w); way(bn)[&quot;poles&quot;]; }
+complete(5).s3-&gt;.s4 { way(around:0)[&quot;power&quot;]; }
+.s0 convert row ::id=id(),tags=count_tags();
+out;
+.s2 out ids bb qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

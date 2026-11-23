@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 919</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 919</p><h1>Query 919</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1771 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][out:csv(::type,&quot;fire_hydrant:position&quot;,::&quot;count:ways&quot;,&quot;bridge&quot;,::&quot;count:areas&quot;,::lon,::uid,&quot;surface&quot;)];
+way[&quot;post_box:type&quot;][&quot;postal_code&quot;=&quot;B0J 1J0&quot;][&quot;crossing:island&quot;~&quot;^n&quot;,i]-&gt;.s0;
+.s0-&gt;._; foreach-&gt;.x(node(w)-&gt;.n; .n out count;)
+(._;)-&gt;.s1;
+.s1 &lt;&lt;-&gt;.s2;
+way.s0(if:((is_number(t[&quot;addr:suburb&quot;])?(type()):((timestamp()+timestamp())))&lt;lrs_min(&quot;a;b;c&quot;)))-&gt;.s3;
+(.s2; .s0;)-&gt;.s4;
+foreach.s0-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s2 out body qt;
+.s4 out center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

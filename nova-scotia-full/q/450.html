@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 450</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 450</p><h1>Query 450</h1><p class="muted">fuzz:3:history,complete:1917 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][date:&quot;2015-05-01T17:40:23Z&quot;];
+way(poly:&#x27;43.733782 -65.160096 43.736007 -65.155725 43.741125 -65.156249 43.736794 -65.161702 43.740159 -65.159258 43.737466 -65.167701 43.738127 -65.173034 43.731570 -65.173930 43.730198 -65.168174 43.730785 -65.163863&#x27;)-&gt;.s0;
+complete(2).s0-&gt;.s1 { way(bn)[&quot;addr:district&quot;]; node(w); }
+complete(1).s0-&gt;.s2 { node(w); way(bn)[&quot;lamp_mount&quot;]; }
+rel(r.s0)[&quot;microbrewery&quot;=&quot;yes&quot;]-&gt;.s3;
+complete(5).s1-&gt;.s4 { node(w); way(bn)[&quot;height&quot;]; }
+.s2 out tags geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

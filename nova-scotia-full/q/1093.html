@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1093</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1093</p><h1>Query 1093</h1><p class="muted">fuzz:3:history,complete:726 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;fire_hydrant:position&quot;)][date:&quot;2011-02-13T14:09:51Z&quot;];
+way(46.324099,-60.992334,46.437561,-60.966785)[&quot;destination:ref:to&quot;!=&quot;311&quot;][&quot;amenity&quot;=&quot;bench&quot;]-&gt;.s0;
+timeline(way,492160303,1)-&gt;.s1;
+(.s0; .s0;)-&gt;.s2;
+.s1 out skel;
+.s2 out tags geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

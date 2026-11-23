@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2609</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2609</p><h1>Query 2609</h1><p class="muted">fuzz:3:history,complete:2907 · 0.15 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+wr(changed:&quot;2015-05-17T23:42:11Z&quot;,&quot;2017-03-15T20:44:55Z&quot;)(poly:&quot;45.122351 -64.508475 45.075658 -64.564099 45.069543 -64.574681 45.075660 -64.538696 45.048596 -64.547765 45.061457 -64.538271 45.057331 -64.500319 45.074453 -64.513017 45.065969 -64.504420 45.081193 -64.500369&quot;)(44.650937,-63.664510,44.805911,-63.474862)-&gt;.s0;
+complete(3).s0-&gt;.s1 { way(bn)[&quot;source&quot;]; node(w); }
+complete(6).s1-&gt;.s2 { way(bn)[&quot;natural&quot;]; node(w); }
+complete(6).s1-&gt;.s3 { node(w); way(bn)[&quot;surface&quot;]; }
+.s1 convert row ::id=id(),tags=count_tags();
+out;
+.s0 out meta;
+.s1 out ids bb qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

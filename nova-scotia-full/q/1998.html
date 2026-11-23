@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1998</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1998</p><h1>Query 1998</h1><p class="muted">fuzz:4:history,areas,complete,statements:777 · 4.06 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;building&quot;)];
+nwr[&quot;width&quot;=&quot;4.0&quot;](changed:&quot;2009-08-30T23:10:45Z&quot;)(if:length()&gt;1000)(44.570350,-65.789856,44.712368,-65.746008)[&quot;light:lit&quot;!~&quot;^dusk&quot;]-&gt;.s0;
+foreach.s0-&gt;.x(.x out ids;)
+(._;)-&gt;.s1;
+node(id:1080966773,1324904367,2293175352,3614194098,10942977449,12796419638)(changed:&quot;2010-07-10T22:42:07Z&quot;)-&gt;.s2;
+node.s2(44.765751,-64.316178,44.853981,-64.153711)-&gt;.s3;
+rel(bn.s3)-&gt;.s4;
+foreach.s4-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s4 out meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

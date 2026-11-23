@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1297</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1297</p><h1>Query 1297</h1><p class="muted">fuzz:4:history,complete,evaluators:9 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;surface&quot;)][bbox:44.394095,-64.633295,44.646699,-64.336667];
+way(around:50,45.533531,-61.178835)-&gt;.s0;
+way.s0(id:85241610,208797249,235741936,235864790,344618071,453309905,588446519,1047482992,1362043242,1414248681)-&gt;.s1;
+.s0 convert row k1=(is_date(id())?(suffix(t[&quot;frequency&quot;])):(lrs_min(lrs_union(t[&quot;amenity&quot;],&quot;name&quot;)))),k2=lrs_min(&quot;a;b;c&quot;),k0=lrs_union(lrs_isect(lrs_union(&quot;a;b;c&quot;,&quot;1;2&quot;),timestamp()),lrs_union(lrs_union(t[&quot;light:method&quot;],&quot;1;2&quot;),lrs_union(t[&quot;ref&quot;],lrs_union(t[&quot;phases&quot;],&quot;name&quot;)))),angles=per_vertex(pos()),k3=(!(!0))-&gt;.s2;
+way(around.s0:20)[&quot;surface&quot;~&quot;^unp&quot;,i]-&gt;.s3;
+.s1 convert row k3=abs((is_date(t[&quot;voltage&quot;])?(count_by_role(&quot;main_stream&quot;)):(1e3))),::geom=pt(45.073331,-64.669783),k1=(suffix((user()+t[&quot;footway&quot;]))==abs(count_tags())),k2=((version()&lt;(-id()))?(((is_number(t[&quot;colour&quot;])?(user()):(id()))+&quot;x;y&quot;)):(number(id()))),k0=is_closed()-&gt;.s4;
+.s1 out meta center;
+.s2 out body qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

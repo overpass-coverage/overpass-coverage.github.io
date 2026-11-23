@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1034</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1034</p><h1>Query 1034</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:379 · 0.59 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:csv(::count,&quot;water&quot;,::user,&quot;maxspeed&quot;,&quot;communication&quot;,::lat)][maxsize:1073741824][date:&quot;2019-10-25T01:29:13Z&quot;];
+node[&quot;building:levels&quot;!~&quot;^1&quot;](id:2439448897,6031444404,6251806295,11846332257)(changed:&quot;2019-02-09T23:19:27Z&quot;,&quot;2022-06-20T22:07:31Z&quot;)[&quot;drive_through&quot;]-&gt;.s0;
+way(around.s0:20)[&quot;horse&quot;=&quot;no&quot;]-&gt;.s1;
+node(around.s0:100)[~&quot;^hig&quot;~&quot;stree&quot;]-&gt;.s2;
+area[name=&quot;Moose Lake&quot;][boundary]-&gt;.s3;
+nwr(area.s3)(44.854897,-63.878552,44.915418,-63.867682)-&gt;.s4;
+for.s3-&gt;.s5 (type()) { make group value=_.val,n=count(nodes),w=count(ways); }
+.s0 out meta geom;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/for.cc.html#L170">overpass_api/statements/for.cc:170</a></li></ul></main></body></html>

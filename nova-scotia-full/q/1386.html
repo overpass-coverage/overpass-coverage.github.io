@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1386</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1386</p><h1>Query 1386</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2585 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  nwr[&quot;bridge&quot;=&quot;yes&quot;](around:2000,45.126748,-63.456715);
+  way[&quot;building&quot;~&quot;^(detached|industrial|shed|static_caravan)$&quot;,i](around:500,45.126748,-63.456715);
+  node[&quot;brand:wikidata&quot;=&quot;Q1032400&quot;](around:3000,45.126748,-63.456715);
+  way[&quot;postal_code&quot;~&quot;B0R\\ 1C0|B2X\\ 1T5&quot;][&quot;service&quot;~&quot;farmla|hole&quot;,i](around:5000,45.126748,-63.456715);
+  relation[&quot;collection_times&quot;~&quot;08:00;\\ Mo\\-Fr\\ 08:00|08:00;Mo\\-Fr\\ 08:00&quot;,i](around:500,45.126748,-63.456715);
+  node[&quot;seamark:light:height&quot;~&quot;14|16|24&quot;](around:500,45.126748,-63.456715);
+  way[&quot;landuse&quot;](around:500,45.126748,-63.456715);
+  node[&quot;power&quot;~&quot;converter|tower&quot;](around:500,45.126748,-63.456715);
+  relation[&quot;brand&quot;=&quot;Laura Secord&quot;](around:1000,45.126748,-63.456715);
+  node[&quot;natural&quot;=&quot;land&quot;](around:1000,45.126748,-63.456715);
+);
+out body center qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

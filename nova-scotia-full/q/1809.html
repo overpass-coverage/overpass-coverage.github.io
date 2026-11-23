@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1809</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1809</p><h1>Query 1809</h1><p class="muted">fuzz:4:history,areas,complete,statements:181 · 0.35 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][adiff:&quot;2012-02-12T19:14:56Z&quot;,&quot;2018-03-10T04:36:50Z&quot;];
+rel(if:length()&gt;10)[&quot;building&quot;=&quot;apartments&quot;](45.033520,-64.635878,45.173911,-64.384911)-&gt;.s0;
+.s0 &gt;-&gt;.s1;
+rel.s0(45.616582,-61.132763,45.801047,-61.007943)-&gt;.s2;
+way[&quot;destination&quot;=&quot;Highway 104&quot;][&quot;length&quot;!=&quot;1.5&quot;][&quot;owner&quot;~&quot;.&quot;]-&gt;.s3;
+node(way_cnt.s2:2-)-&gt;.s4;
+.s2 compare(delta:lat())-&gt;.s5 { .s5 out count; }
+.s3 out body (44.614229,-63.654351,44.675661,-63.520761);
+.s4 out meta 30;
+.s5 out body center qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

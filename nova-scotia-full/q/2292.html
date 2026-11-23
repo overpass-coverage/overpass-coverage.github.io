@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2292</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2292</p><h1>Query 2292</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:553 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][out:csv(::timestamp,::&quot;count:nodes&quot;,::type,::&quot;count:relations&quot;,::user,::otype)][maxsize:536870912][date:&quot;2023-10-10T15:08:34Z&quot;];
+node[&quot;internet_access:fee&quot;=&quot;yes&quot;](46.410191,-61.164470,46.496989,-61.024836)(if:is_date(user()))[&quot;maxspeed&quot;=&quot;60&quot;]-&gt;.s0;
+rel(bw.s0)-&gt;.s1;
+foreach.s0-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s1 out bb body (46.018590,-59.983826,46.067960,-59.941930);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

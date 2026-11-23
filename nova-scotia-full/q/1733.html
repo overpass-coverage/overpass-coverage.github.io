@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1733</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1733</p><h1>Query 1733</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2722 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  way[&quot;grades&quot;](around:2000,44.618953,-64.303418);
+  nwr[&quot;postal_code&quot;~&quot;B0J\\ 1J0|B0T\\ 1P0|B2T\\ 1B2|B4B\\ 2K1&quot;](around:5000,44.618953,-64.303418);
+  node[&quot;laundry&quot;](around:1000,44.618953,-64.303418);
+  relation[&quot;owner&quot;~&quot;Canadian\\ National\\ Railway|Halifax\\ Regional\\ Municipality|Halifax\\ Regional\\ Water\\ Commission|Pharmacist\\ Owner|Sackville\\ Manor|Sprigfield\\ Estates&quot;,i](around:500,44.618953,-64.303418);
+  nwr[&quot;waterway&quot;=&quot;dam&quot;][&quot;crossing&quot;~&quot;B2T\\ 1B&quot;,i](around:3000,44.618953,-64.303418);
+  way[&quot;fence_type&quot;](around:2000,44.618953,-64.303418);
+  way[&quot;width&quot;=&quot;2&quot;](around:1000,44.618953,-64.303418);
+  node[&quot;direction&quot;=&quot;backward&quot;](around:500,44.618953,-64.303418);
+  way[&quot;destination:forward&quot;=&quot;Wolfville : Bedford&quot;][&quot;wheelchair&quot;~&quot;3|60|7519|multi_&quot;,i](around:500,44.618953,-64.303418);
+  node[&quot;destination:forward&quot;=&quot;Cape St Marys ;Salmon River;Bedford&quot;](around:1000,44.618953,-64.303418);
+  relation[&quot;golf&quot;](around:500,44.618953,-64.303418);
+  node[&quot;communication&quot;~&quot;line&quot;,i](around:500,44.618953,-64.303418);
+  nwr[&quot;poles&quot;~&quot;bipole|monopole&quot;](around:500,44.618953,-64.303418);
+);
+out body center qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

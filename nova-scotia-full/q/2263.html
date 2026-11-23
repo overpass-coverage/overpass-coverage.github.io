@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2263</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2263</p><h1>Query 2263</h1><p class="muted">fuzz:4:evaluators:452 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+nwr[&quot;lanes&quot;=&quot;2&quot;](45.030841,-63.471168,45.198179,-63.230363)-&gt;.s0;
+rel.s0(45.427072,-63.384980,45.621215,-63.364200)-&gt;.s1;
+if ((number(s1.u(user()))&gt;100)) { make yes n=s1.count(nwr)-&gt;.s2; }
+rel.s1(if:((lrs_max(&quot;1;2&quot;)&lt;date(id()))||1))-&gt;.s3;
+rel(bw.s0)-&gt;.s4;
+.s4 out tags qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

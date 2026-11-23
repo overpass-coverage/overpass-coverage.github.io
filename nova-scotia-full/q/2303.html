@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2303</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2303</p><h1>Query 2303</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:966 · 0.39 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  way[&quot;natural&quot;~&quot;^(cape|coastline|grass|ridge|rock|tree_row)$&quot;](around:2000,44.652434,-63.601262);
+  way[&quot;building:flats&quot;~&quot;^(15|18|5)$&quot;](around:2000,44.652434,-63.601262);
+  nwr[&quot;leisure&quot;~&quot;fishing|park|playground&quot;](around:2000,44.652434,-63.601262);
+  way[&quot;highway&quot;~&quot;crossing|cycleway|secondary|steps|stop|street_lamp|tertiary|trunk&quot;,i](around:3000,44.652434,-63.601262);
+  relation[&quot;type&quot;=&quot;boundary&quot;](around:2000,44.652434,-63.601262);
+  way[&quot;animal_keeping&quot;=&quot;horse&quot;](around:1000,44.652434,-63.601262);
+  nwr[&quot;waterway&quot;=&quot;dam&quot;](around:2000,44.652434,-63.601262);
+  node[&quot;lit&quot;](around:3000,44.652434,-63.601262);
+  node[&quot;utility&quot;~&quot;power|telecom|telecom;power&quot;](around:2000,44.652434,-63.601262);
+  nwr[&quot;amenity&quot;=&quot;nightclub&quot;][&quot;admin_level&quot;~&quot;0\\.5\\+\\(4|unpave&quot;,i](around:2000,44.652434,-63.601262);
+  nwr[&quot;foot&quot;=&quot;designated&quot;](around:3000,44.652434,-63.601262);
+  node[&quot;highway&quot;=&quot;cycleway&quot;](around:3000,44.652434,-63.601262);
+  relation[&quot;power&quot;=&quot;transformer&quot;](around:500,44.652434,-63.601262);
+);
+out geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

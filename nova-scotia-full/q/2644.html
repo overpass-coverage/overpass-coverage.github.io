@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2644</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2644</p><h1>Query 2644</h1><p class="muted">fuzz:4:history,complete,evaluators:877 · 0.67 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][date:&quot;2025-08-19T13:40:45Z&quot;];
+way[&quot;brand:wikidata&quot;=&quot;Q7366633&quot;](44.623089,-63.647990,44.650893,-63.591198)-&gt;.s0;
+rel(br.s0)-&gt;.s1;
+.s0 convert item k1=date((id()+suffix(id()))),members=per_member(pos()),k0=lrs_max(type()),::id=id()-&gt;.s2;
+node(around.s2:100)[&quot;leisure&quot;!~&quot;^playg&quot;]-&gt;.s3;
+make info c=s3.sum((-count_tags())),n=1-&gt;.s4;
+.s0 out ids qt (45.352456,-63.281191,45.401511,-63.157675);
+.s3 out ids;
+.s4 out meta asc 4;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

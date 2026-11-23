@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 590</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 590</p><h1>Query 590</h1><p class="muted">fuzz:4:history,areas,complete,statements:484 · 0.12 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][date:&quot;2020-10-07T14:41:27Z&quot;];
+way(poly:&quot;45.105893 -64.335517 45.106238 -64.334072 45.108336 -64.335951 45.107965 -64.344148 45.106227 -64.341614 45.104620 -64.340460 45.104743 -64.339993 45.103220 -64.340061 45.101035 -64.339580 45.103202 -64.338795&quot;)[&quot;frequency&quot;=&quot;60&quot;]-&gt;.s0;
+rel(bw.s0)[&quot;bridge:name&quot;=&quot;Lower Mill (River Lake #1)&quot;]-&gt;.s1;
+.s1-&gt;._; &gt;&gt;; (._;)-&gt;.s2;
+node(around.s1:100)[&quot;brand:wikidata&quot;]-&gt;.s3;
+is_in(43.623561,-65.734483)-&gt;.s4;
+node(area.s4)[&quot;network&quot;=&quot;CA:NS:S&quot;]-&gt;.s5;
+.s3 out count;
+.s5 out tags geom 7;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

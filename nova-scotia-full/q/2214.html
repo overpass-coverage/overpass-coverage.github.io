@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2214</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2214</p><h1>Query 2214</h1><p class="muted">fuzz:4:poi,areas:782 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  nwr[&quot;landuse&quot;=&quot;residential&quot;](around:500,43.751967,-66.114552);
+  way[&quot;landuse&quot;~&quot;cemetery|farmland|grass|residential|winter_sports&quot;][&quot;leisure&quot;~&quot;159\\ li|2|8|uncont&quot;,i](around:5000,43.751967,-66.114552);
+  node[&quot;destination&quot;][&quot;motor_vehicle&quot;~&quot;Q22416|hole|no&quot;,i](around:1000,43.751967,-66.114552);
+  nwr[&quot;fence_type&quot;=&quot;chain_link&quot;](around:500,43.751967,-66.114552);
+  node[&quot;crossing&quot;~&quot;^(informal|marked|traffic_signals|uncontrolled)$&quot;,i](around:3000,43.751967,-66.114552);
+  nwr[&quot;tracktype&quot;~&quot;grade2|grade3|grade4&quot;](around:500,43.751967,-66.114552);
+  way[&quot;operator:wikipedia&quot;=&quot;en:Canada Post&quot;][&quot;golf&quot;~&quot;42G|christ|no|river&quot;,i](around:5000,43.751967,-66.114552);
+  nwr[&quot;structure&quot;](around:500,43.751967,-66.114552);
+  way[&quot;pumping_station&quot;](around:1000,43.751967,-66.114552);
+  way[&quot;building&quot;](around:500,43.751967,-66.114552);
+  nwr[&quot;tracktype&quot;=&quot;grade4&quot;][&quot;cuisine&quot;~&quot;gate&quot;,i](around:1000,43.751967,-66.114552);
+  relation[&quot;bridge:name&quot;~&quot;Crawfords|Lower\\ Mill\\ \\(River\\ Lake\\ \\#1\\)|Mill\\ Brook|Sussex\\ Street\\ Bridge&quot;][&quot;wheelchair&quot;~&quot;aggreg|commun|fire_h|tee&quot;,i](around:500,43.751967,-66.114552);
+);
+out body center qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

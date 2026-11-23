@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1925</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1925</p><h1>Query 1925</h1><p class="muted">fuzz:4:statements,areas:483 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;gauge&quot;)];
+wr[&quot;sport&quot;=&quot;pickleball&quot;](44.860938,-63.177841,44.931544,-62.971836)[&quot;bridge:name&quot;~&quot;^Paint\\ Brook&quot;]-&gt;.s0;
+node(around:10,45.400944,-64.446588,45.399567,-64.448686,45.398002,-64.448105,45.399949,-64.446703,45.398360,-64.444129)[&quot;admin_level&quot;]-&gt;.s1;
+.s0 out tags 22;
+.s1 out skel geom asc (45.384076,-63.314210,45.417262,-63.204341);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

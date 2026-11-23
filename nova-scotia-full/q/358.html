@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 358</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 358</p><h1>Query 358</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2974 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Other&quot;;[&quot;fence_type&quot;!=&quot;hedge&quot;][&quot;voltage&quot;];[&quot;natural&quot;!=&quot;water&quot;][&quot;natural&quot;=&quot;tree&quot;];)(&quot;Shops&quot;;[&quot;sport&quot;!=&quot;ice_hockey;ice_skating&quot;];[&quot;bicycle&quot;][&quot;seamark:light:height&quot;=&quot;14&quot;];&quot;ref&quot;;)(&quot;Shops&quot;;[&quot;plant:output:electricity&quot;!=&quot;50 KW&quot;][&quot;admin_level&quot;=&quot;8&quot;];[&quot;support&quot;~&quot;^or&quot;];[&quot;tunnel&quot;!=&quot;culvert&quot;];)][timeout:60];
+wr(43.699944,-65.158917,43.736026,-65.077540)[&quot;maxspeed&quot;]-&gt;.s0;
+way.s0(1528872193)-&gt;.s1;
+(.s0; .s0;)-&gt;.s2;
+node(way_cnt.s0:3-)-&gt;.s3;
+node(way_link.s2:3-)-&gt;.s4;
+foreach.s2-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s4 out body;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

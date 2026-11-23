@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2236</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2236</p><h1>Query 2236</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1260 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][out:csv(::&quot;count:nodes&quot;,::version,::&quot;count:relations&quot;,::id,::&quot;count:ways&quot;;true)][timeout:25];
+nw[&quot;communication:mobile_phone&quot;!=&quot;yes&quot;][&quot;network&quot;=&quot;Halifax Transit&quot;](44.586140,-63.494742,44.720863,-63.482590)-&gt;.s0;
+node(way_cnt.s0:2-)-&gt;.s1;
+area[name=&quot;Springfield Lake&quot;]-&gt;.s2;
+way(area.s2)(43.715390,-65.142653,43.720580,-65.093804)-&gt;.s3;
+.s0 map_to_area-&gt;.s4;
+.s2 out noids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

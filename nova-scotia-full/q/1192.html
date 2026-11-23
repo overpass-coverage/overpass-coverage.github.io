@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1192</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1192</p><h1>Query 1192</h1><p class="muted">fuzz:4:history,complete,evaluators:504 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+node(poly:&#x27;46.158769 -60.413129 46.158870 -60.412273 46.158978 -60.414932 46.159271 -60.415069 46.160193 -60.416595 46.163569 -60.415790 46.161077 -60.417535 46.161689 -60.417765 46.165351 -60.418498 46.163496 -60.421409 46.161622 -60.420739 46.160630 -60.421629 46.163362 -60.425180 46.161637 -60.426283 46.157302 -60.424830 46.155508 -60.422741 46.155963 -60.421336 46.154546 -60.421802 46.152711 -60.422623 46.155232 -60.420792 46.153509 -60.421455 46.154385 -60.420925 46.155457 -60.418865 46.151041 -60.418014 46.152951 -60.417408 46.155749 -60.417666 46.151884 -60.413872 46.152675 -60.412279 46.153341 -60.413079 46.154213 -60.411280&#x27;)-&gt;.s0;
+.s0 convert row k2=0,k0=(is_date((1?(user()):(type())))?(number(length())):(lrs_max(lrs_isect(t[&quot;waterway&quot;],lrs_union(t[&quot;addr:locality&quot;],&quot;name&quot;))))),k1=t[&quot;crossing&quot;],::id=id()-&gt;.s1;
+make info c=date(s1.max(timestamp())),n=1-&gt;.s2;
+node.s2(id:2502293229,6439393839,8122956824)-&gt;.s3;
+.s1 convert row ::id=id(),tags=count_tags();
+out;
+.s3 out meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

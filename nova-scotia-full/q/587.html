@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 587</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 587</p><h1>Query 587</h1><p class="muted">fuzz:4:history,complete,evaluators:437 · 0.34 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;collection_times&quot;)][date:&quot;2015-01-02T12:02:02Z&quot;];
+wr(poly:&#x27;45.127342 -64.313707 45.130054 -64.341053 45.101495 -64.331475 45.089520 -64.332087 45.094529 -64.322077 45.096504 -64.315330 45.104508 -64.316132 45.100428 -64.302824 45.100928 -64.291449 45.109112 -64.293988&#x27;)-&gt;.s0;
+for.s0-&gt;.s1 (lrs_max(&quot;a;b;c&quot;)) { convert item ::id=id(),g=_.val; }
+node(way_link.s0:3-)-&gt;.s2;
+node.s2(if:(number(t[&quot;type&quot;])==date(t[&quot;addr:province&quot;])))-&gt;.s3;
+node.s1(1160128187)-&gt;.s4;
+.s3 out ids 38;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/for.cc.html#L162">overpass_api/statements/for.cc:162</a></li></ul></main></body></html>

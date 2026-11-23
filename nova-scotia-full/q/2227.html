@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2227</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2227</p><h1>Query 2227</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3532 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::&quot;count:areas&quot;,::lat,::uid,::lon,::&quot;count:nodes&quot;,::version,&quot;structure&quot;;false;&quot;;&quot;)][timeout:180];
+way(newer:&quot;2008-01-16T21:27:56Z&quot;)(poly:&quot;45.475670 -61.393194 45.469301 -61.388310 45.468583 -61.359761&quot;)-&gt;.s0;
+make info v=s0.u((user()+id())),n=1,c=abs(s0.min((42+changeset())))-&gt;.s1;
+rel(bn.s0)[&quot;owner&quot;!~&quot;Halifax\\ Regional\\ Municipality|Halifax\\ Regional\\ Water\\ Commission|Pharmacist\\ Owner|Sprigfield\\ Estates&quot;]-&gt;.s2;
+.s2 &lt;-&gt;.s3;
+.s1 convert row ::id=id(),tags=count_tags();
+out;
+.s0 out center 100 asc;
+.s1 out count geom asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

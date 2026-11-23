@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1874</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1874</p><h1>Query 1874</h1><p class="muted">fuzz:4:statements,areas:316 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+way[&quot;waterway&quot;~&quot;^d&quot;,i][&quot;postal_code&quot;~&quot;^(B0J\\ 1J0|B0L\\ 1C0|B0R\\ 1C0|B0S\\ 1K0|B2T\\ 1B2|B2T\\ 1B4|B2T\\ 1B6|B2Z\\ 1N7|B3G\\ 1R1|B3K\\ 5W4|B4B\\ 2K1|B4G\\ 1C9|B4H\\ 3Y2)$&quot;](46.564930,-61.132323,46.710660,-60.860212)[&quot;network:wikidata&quot;=&quot;Q14875719&quot;]-&gt;.s0;
+way(bn.s0)-&gt;.s1;
+.s0 map_to_area-&gt;.s2;
+.s0 out count;
+.s2 out ids asc 44;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

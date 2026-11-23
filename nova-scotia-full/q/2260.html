@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2260</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2260</p><h1>Query 2260</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3453 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][maxsize:536870912];
+rel[!&quot;man_made&quot;](44.979500,-64.692534,45.095216,-64.588640)(id:1419734,9306356,9483123,9492942,13337087,13344763,17625504)-&gt;.s0;
+.s0 &gt;&gt;-&gt;.s1;
+way(around:200,44.451052,-64.382150,44.450650,-64.379855,44.449040,-64.378238,44.447964,-64.380108,44.450301,-64.379315,44.450215,-64.379209)[&quot;brand:wikidata&quot;]-&gt;.s2;
+area[name=&quot;Canaan&quot;]-&gt;.s3;
+way(area.s3)[&quot;place&quot;=&quot;village&quot;]-&gt;.s4;
+.s0 &gt;-&gt;.s5;
+.s1 out count;
+.s2 out skel;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

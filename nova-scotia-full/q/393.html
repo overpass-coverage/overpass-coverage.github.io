@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 393</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 393</p><h1>Query 393</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:865 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][maxsize:1073741824][out:csv(::lat,::user,::&quot;count:areas&quot;,::&quot;count:nodes&quot;)];
+way(id:492159116,1413823092)[&quot;voltage&quot;=&quot;69000;25000&quot;][&quot;motor_vehicle&quot;=&quot;no&quot;]-&gt;.s0;
+area[name=&quot;Northeast Cove&quot;]-&gt;.s1;
+way(area.s1)[&quot;junction:ref&quot;=&quot;1K&quot;]-&gt;.s2;
+.s1 &lt;-&gt;.s3;
+make stat k0=s1.min((t[&quot;height&quot;]==&quot;110&quot;?(suffix(t[&quot;poles&quot;])):(id()))),k1=abs((s1.sum(number(user()))-number(s1.u(count_distinct_by_role(&quot;outer&quot;))))),k2=s1.max(version())-&gt;.s4;
+.s4 out meta;
+</pre><h2>Lines only this query runs (2)</h2><ul><li><a href="../src/overpass_api/statements/tag_value.h.html#L570">overpass_api/statements/tag_value.h:570</a></li><li><a href="../src/overpass_api/statements/ternary_operator.cc.html#L186">overpass_api/statements/ternary_operator.cc:186</a></li></ul></main></body></html>

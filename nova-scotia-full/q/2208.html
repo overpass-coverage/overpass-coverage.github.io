@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2208</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2208</p><h1>Query 2208</h1><p class="muted">fuzz:4:history,complete,output:297 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][timeout:60][bbox:44.800623,-65.315504,44.941639,-65.253674][out:xml][date:&quot;2017-01-23T14:19:20Z&quot;];
+way(45.596907,-61.754686,45.640937,-61.537160)[&quot;operator&quot;][&quot;turn:lanes&quot;=&quot;||right&quot;][&quot;natural&quot;~&quot;^(bay|beach|coastline|grass|grassland|land|peak|reef|ridge|rock|scrub|tree|tree_row|wetland|wood)$&quot;,i]-&gt;.s0;
+node(way_link.s0:2-)-&gt;.s1;
+complete(6).s1-&gt;.s2 { node(w); way(bn)[&quot;light:method&quot;]; }
+complete(6).s0-&gt;.s3 { way(bn)[&quot;natural&quot;]; node(w); }
+complete(5).s0-&gt;.s4 { way(bn)[&quot;light:colour&quot;]; node(w); }
+.s0 out meta;
+.s3 out meta;
+.s4 out geom body noids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 911</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 911</p><h1>Query 911</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:325 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;amenity&quot;](around:500,46.263791,-60.256890);
+  way[&quot;emergency&quot;=&quot;fire_hydrant&quot;](around:500,46.263791,-60.256890);
+  way[&quot;access&quot;](around:500,46.263791,-60.256890);
+  relation[&quot;surface&quot;](around:500,46.263791,-60.256890);
+  way[&quot;building&quot;=&quot;shed&quot;](around:5000,46.263791,-60.256890);
+  node[&quot;religion&quot;~&quot;christian|muslim&quot;](around:500,46.263791,-60.256890);
+  node[&quot;loc_name&quot;~&quot;Lighthouse\\ Route|The\\ Rotary&quot;](around:500,46.263791,-60.256890);
+  way[&quot;noexit&quot;~&quot;yes&quot;,i][&quot;destination&quot;~&quot;15\\ lit|289|Member|games&quot;,i](around:500,46.263791,-60.256890);
+  node[&quot;tourism&quot;=&quot;camp_pitch&quot;](around:500,46.263791,-60.256890);
+  way[&quot;owner&quot;~&quot;^(Canadian\\ National\\ Railway|Halifax\\ Regional\\ Municipality|Halifax\\ Regional\\ Water\\ Commission)$&quot;][&quot;maintained&quot;~&quot;3|Canada|Prince&quot;,i](around:500,46.263791,-60.256890);
+  nwr[&quot;natural&quot;~&quot;beach|cape|grass|scrub&quot;](around:500,46.263791,-60.256890);
+  node[&quot;handicap&quot;](around:500,46.263791,-60.256890);
+);
+out center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

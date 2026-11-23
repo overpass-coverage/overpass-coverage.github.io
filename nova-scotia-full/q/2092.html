@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2092</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2092</p><h1>Query 2092</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1944 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][maxsize:536870912][out:popup(&quot;Food&quot;;[&quot;capacity&quot;=&quot;15 litres&quot;];)(&quot;Named things&quot;;[&quot;maxspeed:forward&quot;=&quot;60&quot;];[&quot;brand:wikidata&quot;~&quot;^Q5&quot;];[&quot;brand:wikipedia&quot;];)];
+node[&quot;turn:lanes&quot;=&quot;||right&quot;](id:1142922116,2746618527)-&gt;.s0;
+area[name=&quot;Molega Lake&quot;]-&gt;.s1;
+node(area.s1)[&quot;noexit&quot;=&quot;yes&quot;]-&gt;.s2;
+node(w.s0)-&gt;.s3;
+.s2 map_to_area-&gt;.s4;
+node.s0(if:1)-&gt;.s5;
+.s1 out ids center;
+.s2 out count;
+out meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

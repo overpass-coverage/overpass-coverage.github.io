@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2189</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2189</p><h1>Query 2189</h1><p class="muted">fuzz:4:statements,areas:466 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+wr[&quot;shelter&quot;~&quot;^n&quot;,i](44.474531,-64.265592,44.613178,-63.952049)(44.737196,-64.861144,44.738671,-64.622815)[&quot;place&quot;]-&gt;.s0;
+area[name=&quot;Pictou Landing First Nation&quot;][boundary]-&gt;.s1;
+node(area.s1)[&quot;destination&quot;=&quot;Bible Hill;Tatamagouche&quot;]-&gt;.s2;
+way(around:10,44.722640,-63.397940,44.725043,-63.401625)[&quot;admin_level&quot;]-&gt;.s3;
+.s1 out count;
+.s2 out body geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

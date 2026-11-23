@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2381</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2381</p><h1>Query 2381</h1><p class="muted">fuzz:4:history,complete,evaluators:150 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+node[&quot;manufacturer&quot;=&quot;Lamassu&quot;]-&gt;.s0;
+complete(6).s0-&gt;.s1 { node(w); way(bn)[&quot;addr:province&quot;]; }
+if ((!(number(s1.u((timestamp()+user())))==2))) { make yes n=s1.count(nwr)-&gt;.s2; }
+node(way_cnt.s1:2-)-&gt;.s3;
+.s1 out tags bb (44.755482,-63.686093,44.769346,-63.670679);
+.s2 out ids bb 7;
+.s3 out ids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

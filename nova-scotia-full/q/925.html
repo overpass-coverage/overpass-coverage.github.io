@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 925</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 925</p><h1>Query 925</h1><p class="muted">fuzz:4:history,areas,complete,statements:123 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;brand&quot;)];
+nw(44.574134,-64.317598,44.577602,-64.265529)-&gt;.s0;
+node(w.s0)[&quot;railway&quot;!=&quot;abandoned&quot;]-&gt;.s1;
+complete(1).s0-&gt;.s2 { node(w); way(bn)[&quot;waterway&quot;]; }
+.s0 is_in-&gt;.s3;
+.s3 &lt;-&gt;.s4;
+.s0 out count;
+.s3 out tags qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

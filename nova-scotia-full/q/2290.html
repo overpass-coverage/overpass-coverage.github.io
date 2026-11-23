@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2290</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2290</p><h1>Query 2290</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1516 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;addr:province&quot;,::uid,::&quot;count:ways&quot;,::&quot;count:relations&quot;;false;&quot;|&quot;)][timeout:60][maxsize:268435456];
+rel[&quot;animal_keeping&quot;=&quot;horse&quot;]-&gt;.s0;
+.s0 &gt;-&gt;.s1;
+nw(poly:&#x27;44.580262 -65.147218 44.580153 -65.150460 44.580708 -65.168725 44.577866 -65.172904 44.573780 -65.172529 44.568268 -65.159208 44.569287 -65.158502 44.565193 -65.148815 44.574183 -65.148200 44.573220 -65.144758&#x27;)[&quot;tracktype&quot;!=&quot;grade3&quot;]-&gt;.s2;
+for.s1-&gt;.s3 (keys()) { make group value=_.val,n=count(nodes),w=count(ways); }
+.s1 out (45.317240,-62.362820,45.357319,-62.320214) body qt;
+.s2 out ids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

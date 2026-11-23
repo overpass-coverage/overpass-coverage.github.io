@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 442</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 442</p><h1>Query 442</h1><p class="muted">fuzz:4:evaluators:503 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+way(poly:&#x27;45.739981 -61.015710 45.732824 -61.041850 45.716752 -61.025337 45.702220 -61.018377 45.710922 -61.012499 45.717497 -61.009707 45.712617 -60.997858 45.721513 -61.003316 45.716002 -60.988246 45.723430 -60.983182&#x27;)(id:67574774,76439906,162493350,169184873,224303335,469076739,500942750,539072254,597941271,1428254235)-&gt;.s0;
+if ((s0.count(nw)&gt;2)) { make yes n=s0.count(nwr)-&gt;.s1; }
+make stat k0=number((s1.set(&quot;steps&quot;)+s1.min(suffix(suffix(t[&quot;water&quot;]))))),k1=s1.count(nw),k2=number(s1.u(id())),k3=(-((s1.min(date(suffix(t[&quot;man_made&quot;])))&gt;3)?(s1.count(nodes)):(s1.count(wr)))),::geom=s1.gcat(geom())-&gt;.s2;
+way(around.s1:300)[&quot;place&quot;!~&quot;city|island|islet|locality|village&quot;]-&gt;.s3;
+foreach.s1-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s0 out skel center asc;
+.s3 out skel 46;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

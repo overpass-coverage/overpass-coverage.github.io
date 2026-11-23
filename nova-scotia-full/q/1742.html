@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1742</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1742</p><h1>Query 1742</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3212 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  nwr[&quot;is_in:municipality&quot;~&quot;Halifax\\ Regional\\ Municipality&quot;](around:2000,45.788940,-62.082227);
+  relation[&quot;maxspeed:advisory&quot;=&quot;45&quot;](around:10000,45.788940,-62.082227);
+  node[&quot;public_transport&quot;](around:10000,45.788940,-62.082227);
+  node[&quot;amenity&quot;~&quot;bicycle_parking|drinking_water|parking|restaurant&quot;](around:500,45.788940,-62.082227);
+  way[&quot;old_addr:housenumber&quot;=&quot;42G&quot;][&quot;area&quot;~&quot;7519|park&quot;,i](around:10000,45.788940,-62.082227);
+  node[&quot;takeaway&quot;](around:1000,45.788940,-62.082227);
+  nwr[&quot;leisure&quot;=&quot;playground&quot;](around:10000,45.788940,-62.082227);
+  node[&quot;destination:ref&quot;~&quot;^(2\\ North|NS\\ 111\\ :\\ NS\\ 2\\ IN|NS\\ 111\\ South|east)$&quot;](around:10000,45.788940,-62.082227);
+  way[&quot;operator:wikidata&quot;~&quot;Q1032001|Q3480058|Q6764023&quot;](around:10000,45.788940,-62.082227);
+  way[&quot;electrified&quot;~&quot;no&quot;,i](around:10000,45.788940,-62.082227);
+  nwr[&quot;entrance&quot;=&quot;emergency&quot;](around:10000,45.788940,-62.082227);
+  nwr[&quot;is_in:municipality&quot;~&quot;Halifax\\ Regional\\ Municipality&quot;,i](around:10000,45.788940,-62.082227);
+  relation[&quot;building:levels&quot;~&quot;1|12|16|2|3&quot;](around:10000,45.788940,-62.082227);
+);
+out body center qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

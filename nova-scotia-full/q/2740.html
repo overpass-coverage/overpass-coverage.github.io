@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2740</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2740</p><h1>Query 2740</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3689 · 0.33 s CPU · expected status <code>ok</code></p><pre class="query">[bbox:45.522335,-61.534416,45.708417,-61.257321][maxsize:536870912][out:json][timeout:60];
+nw(if:number(t[&quot;highway&quot;])&gt;28)(changed:&quot;2017-10-27T02:07:19Z&quot;)[&quot;building&quot;=&quot;warehouse&quot;](44.250390,-64.987232,44.282832,-64.807713)[&quot;leisure&quot;!=&quot;pitch&quot;]-&gt;.s0;
+wr(bn.s0)-&gt;.s1;
+way(around.s1:0)[&quot;destination&quot;=&quot;Mineville;Lake Echo&quot;]-&gt;.s2;
+area[name=&quot;Enfield&quot;][admin_level]-&gt;.s3;
+nwr(area.s3)[&quot;width&quot;=&quot;4.0&quot;]-&gt;.s4;
+foreach.s4-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s2 out geom skel;
+.s3 out tags 1;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

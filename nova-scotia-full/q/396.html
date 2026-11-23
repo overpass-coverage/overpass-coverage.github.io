@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 396</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 396</p><h1>Query 396</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2046 · 0.10 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][out:xml];
+nwr(around:1000,46.281124,-60.568219)[&quot;layer&quot;!~&quot;\\-1|1&quot;]-&gt;.s0;
+node(way_cnt.s0:1)-&gt;.s1;
+.s1 &gt;-&gt;.s2;
+.s0 convert row k1=((count_by_role(&quot;subarea&quot;)&lt;lrs_max(lrs_union(t[&quot;lamp_mount&quot;],&quot;name&quot;)))||(lat()&gt;date(timestamp()))),k2=(suffix(user())+lrs_min(t[&quot;operator&quot;])),k0=lrs_in(suffix(length()),lrs_union(t[&quot;lanes&quot;],&quot;name&quot;))-&gt;.s3;
+.s3-&gt;._; way(r); (._;)-&gt;.s4;
+.s0 out count noids 17;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

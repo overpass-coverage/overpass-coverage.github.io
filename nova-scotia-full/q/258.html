@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 258</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 258</p><h1>Query 258</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:600 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][out:xml][timeout:180];
+nwr(44.757220,-64.045475,44.779643,-64.039537)-&gt;.s0;
+.s0 &lt;&lt;-&gt;.s1;
+make stat k0=(is_number(s1.set(uid()))?(number(s1.u(lrs_min(&quot;1;2&quot;)))):(s1.sum((is_date(t[&quot;created_by&quot;])?(count_by_role(&quot;from&quot;)):(version()))))),k1=s1.min(count_tags()),k2=s1.count(relations)-&gt;.s2;
+rel.s1(if:is_date(suffix(suffix(user()))))-&gt;.s3;
+area[name=&quot;Angevine Lake&quot;]-&gt;.s4;
+nwr(area.s4)[&quot;aeroway&quot;=&quot;taxilane&quot;]-&gt;.s5;
+foreach.s4-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s2 out noids 5 (44.402272,-64.482935,44.479822,-64.389902);
+.s4 out body bb asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

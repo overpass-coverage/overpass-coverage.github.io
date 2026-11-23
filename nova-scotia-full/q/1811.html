@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1811</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1811</p><h1>Query 1811</h1><p class="muted">fuzz:4:history,complete,evaluators:384 · 0.10 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][date:&quot;2010-08-08T23:53:46Z&quot;];
+wr(45.024322,-64.484212,45.132904,-64.464076)[&quot;highway&quot;=&quot;primary&quot;]-&gt;.s0;
+timeline(way,99150067,3)-&gt;.s1;
+.s1 &lt;-&gt;.s2;
+way.s2(id:88899009,319963574,563480902,690277841,1032443777,1428122608)-&gt;.s3;
+make stat k0=s2.set(id()),k1=s2.min(count_distinct_by_role(&quot;hail_and_ride&quot;)),k2=(s2.set(timestamp())+(s2.u((is_tag(&quot;addr:locality&quot;)?(&quot;&quot;):(id())))+s2.u((user()+suffix(t[&quot;admin_level&quot;]))))),k3=s2.sum((changeset()*count_distinct_members()))-&gt;.s4;
+(.s2; - .s0;)-&gt;.s5;
+.s1 out tags center qt;
+.s3 out body center qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

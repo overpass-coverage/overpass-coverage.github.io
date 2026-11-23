@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 876</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 876</p><h1>Query 876</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2971 · 0.10 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::id,&quot;utility&quot;,::&quot;count:relations&quot;,::lon,&quot;boundary&quot;,::count,::user,::uid,&quot;barrier&quot;;true;&quot;|&quot;)][date:&quot;2021-05-22T13:10:38Z&quot;];
+node(45.110797,-63.198131,45.315813,-63.113171)(id:970668249,1366149720,3520285938,4758470555,4980362127,5889366464,7993505549,8517444068,10195137715)(45.485480,-62.747875,45.515969,-62.696240)-&gt;.s0;
+timeline(way,122687524)-&gt;.s1;
+is_in(45.598384,-64.210413)-&gt;.s2;
+nwr(area.s2)[&quot;bridge:ref&quot;=&quot;HFX019&quot;]-&gt;.s3;
+way.s3(id:93168929,460407465,463070385,467441832,1415500961)-&gt;.s4;
+node(way_cnt.s1:3-)-&gt;.s5;
+.s5 is_in-&gt;.s6;
+.s4 out meta (46.629348,-61.055626,46.646242,-60.936909);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1125</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1125</p><h1>Query 1125</h1><p class="muted">fuzz:4:history,complete,evaluators:274 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][date:&quot;2011-02-09T09:04:29Z&quot;];
+way[&quot;denomination&quot;=&quot;sunni&quot;](if:(number(timestamp())&lt;((count_by_role(&quot;inner&quot;)&lt;100)?((is_tag(&quot;addr:interpolation&quot;)?(timestamp()):(t[&quot;material&quot;]))):(type()))))(45.737601,-61.257116,45.972180,-61.090584)-&gt;.s0;
+rel(bw.s0)-&gt;.s1;
+rel.s1(if:(id()&lt;count_members()))-&gt;.s2;
+.s1 out tags center asc 35;
+.s2 out body (44.398777,-64.972236,44.484190,-64.924913);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

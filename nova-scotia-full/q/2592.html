@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2592</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2592</p><h1>Query 2592</h1><p class="muted">fuzz:4:history,complete,evaluators:518 · 0.68 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+way(id:224049585,348073758,1451912383,1460857747)(changed:&quot;2012-02-12T19:14:56Z&quot;)-&gt;.s0;
+.s0 convert row k0=count_distinct_members(),::=::,k2=(count_distinct_members()*number((t[&quot;utility&quot;]+&quot;2018-01-01&quot;))),k1=id()-&gt;.s1;
+.s1 &lt;-&gt;.s2;
+rel.s2(9118992)-&gt;.s3;
+.s2 out skel 1;
+.s3 out ids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

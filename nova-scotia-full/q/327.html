@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 327</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 327</p><h1>Query 327</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1261 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][maxsize:536870912];
+node(id:1160128187,2439347427,4549897840,13373921457,13648550879)-&gt;.s0;
+(.s0; .s0 &gt;;)-&gt;.s1;
+.s1 local-&gt;.s2;
+(.s2; .s2 &gt;;)-&gt;.s3;
+.s3 local-&gt;.s4;
+if ((!(number(s0.u((&quot;x;y&quot;+user())))==s0.max(lon())))) { make yes n=s0.count(nwr)-&gt;.s5; }
+.s2 out meta qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 664</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 664</p><h1>Query 664</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1496 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Other&quot;;[&quot;bus&quot;!=&quot;yes&quot;][&quot;building:material&quot;!~&quot;^pl&quot;];[&quot;sidewalk:right&quot;][&quot;height&quot;=&quot;6&quot;];[&quot;building:flats&quot;=&quot;5&quot;];)(&quot;Shops&quot;;[&quot;operator&quot;=&quot;Municipality of the District of Argyle&quot;];)][timeout:25];
+node[&quot;leisure&quot;!~&quot;fishing|park|swimming_pool&quot;](id:1020520307,1318896040,1325120590,1432330596,1692126438,2329893796,4747142594,5560672265,6190993248,6251726068,7501475463,8153424714)-&gt;.s0;
+rel(bw.s0:&quot;west&quot;)-&gt;.s1;
+.s1 map_to_area-&gt;.s2;
+node(w.s0)-&gt;.s3;
+foreach.s0-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s0 out body;
+.s3 out (44.620076,-63.583337,44.629352,-63.554102) tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

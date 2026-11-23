@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 739</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 739</p><h1>Query 739</h1><p class="muted">fuzz:3:history,complete:161 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][bbox:45.594147,-63.650609,45.769834,-63.464999][diff:&quot;2015-05-12T16:38:01Z&quot;];
+way(44.332398,-63.702357,44.613356,-63.563757)(if:t[&quot;sport&quot;]==&quot;ice_skating;ice_hockey&quot;)(44.620467,-63.744237,44.700232,-63.552530)[&quot;maxspeed&quot;=&quot;50&quot;]-&gt;.s0;
+.s0 &gt;-&gt;.s1;
+complete(4).s1-&gt;.s2 { node(w); way(bn)[&quot;operator&quot;]; }
+rel(bn.s0)[&quot;natural&quot;~&quot;^tr&quot;]-&gt;.s3;
+way.s1[&quot;maxspeed&quot;!~&quot;^4&quot;]-&gt;.s4;
+.s2 out tags geom;
+.s4 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

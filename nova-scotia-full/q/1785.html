@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1785</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1785</p><h1>Query 1785</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3552 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  way[&quot;maxspeed&quot;=&quot;110&quot;](around:1000,46.076537,-61.149750);
+  way[&quot;junction:ref&quot;~&quot;13W|1H|1K&quot;,i][&quot;place&quot;~&quot;Canada|Shared|nursin|surfac&quot;,i](around:2000,46.076537,-61.149750);
+  node[&quot;waterway&quot;](around:25000,46.076537,-61.149750);
+  way[&quot;footway&quot;~&quot;crossing|sidewalk|traffic_island&quot;](around:3000,46.076537,-61.149750);
+  node[&quot;building&quot;~&quot;detached|yes&quot;](around:1000,46.076537,-61.149750);
+  way[&quot;lamp:count&quot;~&quot;^(2)$&quot;](around:25000,46.076537,-61.149750);
+  way[&quot;barrier&quot;=&quot;fence&quot;](around:25000,46.076537,-61.149750);
+  way[&quot;layer&quot;=&quot;1&quot;](around:1000,46.076537,-61.149750);
+);
+out geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

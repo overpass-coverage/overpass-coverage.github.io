@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2824</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2824</p><h1>Query 2824</h1><p class="muted">fuzz:3:history,complete:1780 · 0.97 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2015-05-17T17:34:18Z&quot;];
+nw(45.284815,-63.226123,45.397770,-62.976010)[&quot;support&quot;=&quot;ornamental&quot;][&quot;fence_type&quot;=&quot;hedge&quot;][&quot;amenity&quot;=&quot;bicycle_parking&quot;]-&gt;.s0;
+retro(date(&quot;2010-09-02T21:29:42Z&quot;)) { rel(id:1732802,10235772,10237695,20162962)(poly:&quot;44.653529 -63.541058 44.673376 -63.591263 44.641285 -63.627325 44.619173 -63.604044 44.614137 -63.559424 44.609079 -63.546401&quot;)[&quot;material&quot;=&quot;metal&quot;]-&gt;.s1; .s1 out ids; }
+way(r.s1)-&gt;.s2;
+rel(br.s0)-&gt;.s3;
+node(around.s0:0)[&quot;landuse&quot;~&quot;^resid&quot;]-&gt;.s4;
+.s1 out body;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1315</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1315</p><h1>Query 1315</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2040 · 0.10 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  nwr[&quot;building&quot;=&quot;garage&quot;](around:25000,44.884607,-64.948288);
+  node[&quot;shop&quot;=&quot;hunting&quot;](around:1000,44.884607,-64.948288);
+  relation[&quot;collection_times&quot;=&quot;08:00; Mo-Fr 08:00&quot;](around:25000,44.884607,-64.948288);
+  nwr[&quot;post:city&quot;=&quot;Dartmouth&quot;](around:25000,44.884607,-64.948288);
+  nwr[&quot;destination&quot;=&quot;Lunenburg;Mahone Bay;Blockhouse&quot;](around:25000,44.884607,-64.948288);
+  node[&quot;water_source&quot;=&quot;main&quot;](around:3000,44.884607,-64.948288);
+  node[&quot;direction&quot;=&quot;290&quot;](around:25000,44.884607,-64.948288);
+  node[&quot;industrial&quot;=&quot;warehouse&quot;](around:25000,44.884607,-64.948288);
+  relation[&quot;highway&quot;=&quot;motorway_link&quot;](around:25000,44.884607,-64.948288);
+  nwr[&quot;leisure&quot;=&quot;pitch&quot;](around:25000,44.884607,-64.948288);
+  relation[&quot;collection_times&quot;~&quot;^(08:00;\\ Mo\\-Fr\\ 08:00|08:00;Mo\\-Fr\\ 08:00)$&quot;](around:500,44.884607,-64.948288);
+  nwr[&quot;man_made&quot;=&quot;utility_pole&quot;](around:500,44.884607,-64.948288);
+  way[&quot;postal_code&quot;=&quot;B4C 1G1&quot;](around:25000,44.884607,-64.948288);
+  node[&quot;cycleway:both&quot;~&quot;no&quot;](around:25000,44.884607,-64.948288);
+  node[&quot;crossing:markings&quot;~&quot;lines|no|zebra&quot;,i](around:1000,44.884607,-64.948288);
+);
+out center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

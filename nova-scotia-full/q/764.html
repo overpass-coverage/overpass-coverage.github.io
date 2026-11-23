@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 764</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 764</p><h1>Query 764</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2481 · 0.25 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:536870912][out:csv(::&quot;count:areas&quot;,&quot;tunnel&quot;,&quot;barrier&quot;,::&quot;count:nodes&quot;,::otype,&quot;structure&quot;,::lon;false;&quot;|&quot;)][date:&quot;2020-03-19T04:04:39Z&quot;];
+nwr(44.205517,-64.369539,44.312372,-64.204440)[&quot;network:wikipedia&quot;!~&quot;^en:Halifa&quot;](newer:&quot;2018-09-18T18:30:25Z&quot;)-&gt;.s0;
+retro(date(&quot;2010-11-05T22:05:55Z&quot;)) { nw[&quot;seamark:light:height&quot;=&quot;14&quot;]-&gt;.s1; .s1 out ids; }
+rel(bn.s1)-&gt;.s2;
+way(r.s2)[&quot;junction:ref&quot;]-&gt;.s3;
+way.s0(43.462399,-65.705597,43.472809,-65.567791)-&gt;.s4;
+.s2 out asc tags noids 2;
+.s3 out meta qt bb;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

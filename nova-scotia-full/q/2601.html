@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2601</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2601</p><h1>Query 2601</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1845 · 0.14 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:json][maxsize:1073741824];
+node(id:1014108744,1143141915,1215960303,2453552956,3513005327,3522010371,5872268778,6285007619,7330402669,10942977449,13938742770)(around:500,43.821481,-65.355466)(46.093054,-60.285714,46.138340,-60.198988)-&gt;.s0;
+.s0 &gt;&gt;-&gt;.s1;
+is_in(45.805794,-60.484449)-&gt;.s2;
+node(area.s2)[&quot;currency:CAD&quot;=&quot;yes&quot;]-&gt;.s3;
+rel(bw.s0:&quot;via&quot;)[&quot;access&quot;=&quot;no&quot;]-&gt;.s4;
+area[name=&quot;Scots Bay&quot;]-&gt;.s5;
+node(area.s5)(44.464482,-63.793226,44.520812,-63.671490)-&gt;.s6;
+.s3 out center;
+.s5 out geom noids ids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

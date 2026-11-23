@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1691</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1691</p><h1>Query 1691</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1406 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  way[&quot;destination&quot;=&quot;Wright Avenue&quot;](around:3219,44.936561,-62.730074);
+  node[&quot;public_transport&quot;~&quot;^(platform)$&quot;,i](around:3219,44.936561,-62.730074);
+  way[&quot;telecom:medium&quot;](around:500,44.936561,-62.730074);
+  way[&quot;waste&quot;~&quot;trash&quot;](around:3000,44.936561,-62.730074);
+  nwr[&quot;colour&quot;~&quot;^(orange)$&quot;](around:3219,44.936561,-62.730074);
+  relation[&quot;bridge:name&quot;](around:3219,44.936561,-62.730074);
+  node[&quot;lamp:count&quot;=&quot;2&quot;](around:3219,44.936561,-62.730074);
+  node[&quot;postal_code&quot;=&quot;B4H 3Y2&quot;](around:3219,44.936561,-62.730074);
+  relation[&quot;tracktype&quot;~&quot;grade2|grade3|grade4&quot;,i](around:3000,44.936561,-62.730074);
+  node[&quot;camera:direction&quot;~&quot;^(15)$&quot;](around:1000,44.936561,-62.730074);
+  way[&quot;place&quot;~&quot;city|island|islet|village&quot;](around:2000,44.936561,-62.730074);
+  nwr[&quot;aeroway&quot;~&quot;^(runway|taxilane)$&quot;](around:3219,44.936561,-62.730074);
+  way[&quot;voltage:primary&quot;~&quot;14400&quot;](around:3219,44.936561,-62.730074);
+  node[&quot;heritage:operator&quot;=&quot;hsmbc&quot;](around:3219,44.936561,-62.730074);
+  node[&quot;loc_name&quot;=&quot;Lighthouse Route&quot;](around:3219,44.936561,-62.730074);
+);
+out tags center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

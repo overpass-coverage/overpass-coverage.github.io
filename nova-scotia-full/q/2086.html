@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2086</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2086</p><h1>Query 2086</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2556 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:xml][timeout:25];
+way[&quot;bridge:name&quot;][&quot;animal_keeping&quot;=&quot;horse&quot;][&quot;maxspeed&quot;=&quot;80&quot;]-&gt;.s0;
+make stat k0=s0.set(suffix(t[&quot;emergency&quot;])),k1=(number(s0.u((0?(id()):(user()))))*date(s0.max(timestamp()))),k2=s0.min(abs(length()))-&gt;.s1;
+.s0 map_to_area-&gt;.s2;
+.s1 &lt;-&gt;.s3;
+out bb count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

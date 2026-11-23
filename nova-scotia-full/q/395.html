@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 395</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 395</p><h1>Query 395</h1><p class="muted">fuzz:4:history,complete,evaluators:285 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][adiff:&quot;2018-10-09T21:00:27Z&quot;,&quot;2020-07-14T02:59:17Z&quot;];
+node(id:1215966972,3515553868,3524363683,3524412771,4550113572,4942140216,9504094689,9910761910)[&quot;man_made&quot;][&quot;operator:fr&quot;=&quot;Postes Canada&quot;]-&gt;.s0;
+retro(date(&quot;2021-03-29T01:09:57Z&quot;)) { nwr(44.607690,-63.843661,44.741438,-63.769857)[&quot;seamark:light:range&quot;~&quot;^8&quot;,i](if:is_number(t[&quot;addr:city&quot;]))-&gt;.s1; .s1 out ids; }
+way(bn.s0)-&gt;.s2;
+.s1 convert stat ::geom=poly(lstr(pt(44.721206,-62.995371),pt(44.722206,-62.995371),pt(44.722206,-62.994371),pt(44.721206,-62.995371))),k2=(is_number(t[&quot;support&quot;])?((suffix(suffix(t[&quot;phases&quot;]))+&quot;yes&quot;)):(user())),k1=&quot;3&quot;,::id=id(),::=::,k0=((&quot;&quot;+t[&quot;type&quot;])+lrs_min(timestamp()))-&gt;.s3;
+node(way_link.s0:1)-&gt;.s4;
+.s1 &lt;&lt;-&gt;.s5;
+.s0 out body geom;
+.s4 out ids qt;
+.s5 out body;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

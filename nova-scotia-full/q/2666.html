@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2666</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2666</p><h1>Query 2666</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2571 · 0.21 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][timeout:180][date:&quot;2011-02-09T23:33:12Z&quot;];
+wr[&quot;landuse&quot;=&quot;residential&quot;](newer:&quot;2018-11-24T01:51:19Z&quot;)(44.858386,-62.936094,44.965063,-62.815065)-&gt;.s0;
+node(way_link.s0:3-)-&gt;.s1;
+for.s1-&gt;.s2 ((is_date(id())?(lrs_min(t[&quot;addr:street&quot;])):(lrs_min(lrs_union(t[&quot;addr:locality&quot;],&quot;name&quot;))))) { make group value=_.val,count=count(nwr); }
+out meta;
+.s2 out asc count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

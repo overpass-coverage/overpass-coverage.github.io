@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2857</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2857</p><h1>Query 2857</h1><p class="muted">fuzz:4:history,areas,complete,statements:40 · 2.26 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+nw(44.632754,-64.338289,44.658931,-64.285430)(changed:&quot;2011-02-10T10:15:10Z&quot;,&quot;2022-03-04T19:10:23Z&quot;)-&gt;.s0;
+nwr(around:50,44.318327,-65.068081,44.320576,-65.068861,44.318008,-65.072856,44.317533,-65.074020,44.319389,-65.072938)[&quot;lanes&quot;]-&gt;.s1;
+.s1 &gt;&gt;-&gt;.s2;
+.s0 &lt;-&gt;.s3;
+is_in(45.086052,-63.948413)-&gt;.s4;
+nwr(area.s4)[&quot;type&quot;=&quot;neighbourhood&quot;]-&gt;.s5;
+.s1 out body asc;
+.s5 out meta asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

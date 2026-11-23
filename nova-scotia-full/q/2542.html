@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2542</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2542</p><h1>Query 2542</h1><p class="muted">fuzz:3:history,complete:2480 · 0.70 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][date:&quot;2026-02-14T01:39:26Z&quot;];
+wr[~&quot;^des&quot;~&quot;airpor&quot;][&quot;building:flats&quot;~&quot;^1&quot;](poly:&#x27;45.704027 -63.774042 45.688542 -63.787788 45.653117 -63.793694 45.655469 -63.789497 45.631853 -63.771301 45.654584 -63.776971&#x27;)(changed:&quot;2013-03-07T23:04:20Z&quot;)-&gt;.s0;
+.s0 &lt;&lt;-&gt;.s1;
+complete(4).s0-&gt;.s2 { way(bn)[&quot;addr:postcode&quot;]; node(w); }
+node(way_cnt.s2:1)-&gt;.s3;
+complete(4).s3-&gt;.s4 { way(bn)[&quot;poles&quot;]; node(w); }
+.s1 out ids;
+.s2 out ids geom (44.416144,-64.873280,44.476577,-64.750041);
+.s4 out ids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

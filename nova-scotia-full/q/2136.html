@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2136</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2136</p><h1>Query 2136</h1><p class="muted">fuzz:4:history,areas,complete,statements:835 · 0.30 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;lane_markings&quot;)][date:&quot;2011-06-19T15:28:11Z&quot;];
+wr(poly:&quot;44.436292 -64.677391 44.440971 -64.676866 44.419695 -64.700872&quot;)-&gt;.s0;
+retro(date(&quot;2011-02-10T22:18:40Z&quot;)) { node(poly:&quot;45.076176 -62.390486 45.080224 -62.408434 45.072646 -62.446184 45.060512 -62.427416 45.050300 -62.365287 45.065333 -62.389370&quot;)-&gt;.s1; .s1 out ids; }
+node.s1(if:uid()&gt;17000000)-&gt;.s2;
+(.s0; .s1;)-&gt;.s3;
+wr(bn.s0)-&gt;.s4;
+node(way_cnt.s0:2-)-&gt;.s5;
+.s1 convert row ::id=id(),tags=count_tags();
+out;
+.s1 out ids;
+.s3 out tags qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

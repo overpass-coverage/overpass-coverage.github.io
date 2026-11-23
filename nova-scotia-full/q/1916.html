@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1916</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1916</p><h1>Query 1916</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:234 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][maxsize:536870912][out:csv(::otype,&quot;lit&quot;,&quot;noexit&quot;,::timestamp)];
+rel(if:lrs_in(date(type()),lrs_union(lrs_union(&quot;a;b;c&quot;,t[&quot;building&quot;]),lrs_union(t[&quot;lamp_mount&quot;],lrs_union(t[&quot;type&quot;],&quot;name&quot;)))))[&quot;surface&quot;!~&quot;asphalt|compacted|concrete|fine_gravel|gravel|ground|paved|pebblestone|unpaved&quot;](43.588171,-65.556888,43.619405,-65.505967)-&gt;.s0;
+.s0 map_to_area-&gt;.s1;
+.s0 out count;
+.s1 out skel center 2;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

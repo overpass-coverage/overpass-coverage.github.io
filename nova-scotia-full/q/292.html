@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 292</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 292</p><h1>Query 292</h1><p class="muted">fuzz:4:history,areas,complete,statements:322 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][date:&quot;2015-05-13T19:50:33Z&quot;];
+way(45.117288,-63.824971,45.244670,-63.617068)(id:165787542,236010046,342125162,459198868,599481103,628056844,893558086,940782664)-&gt;.s0;
+retro(date(&quot;2013-09-05T14:15:00Z&quot;)) { rel[&quot;bridge:name&quot;=&quot;Crawfords&quot;](44.870890,-65.127625,45.066177,-64.935662)[&quot;building:levels&quot;!=&quot;2&quot;]-&gt;.s1; .s1 out ids; }
+.s1 &gt;&gt;-&gt;.s2;
+.s0-&gt;._; foreach-&gt;.x(node(w)-&gt;.n; .n out count;)
+(._;)-&gt;.s3;
+.s0 out tags center asc 4;
+.s1 out count;
+.s2 out ids center asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

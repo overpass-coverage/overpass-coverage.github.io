@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 32</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 32</p><h1>Query 32</h1><p class="muted">fuzz:4:history,complete,evaluators:293 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2010-09-02T21:29:42Z&quot;,&quot;2011-02-13T14:09:51Z&quot;];
+rel(44.619829,-63.672620,44.652802,-63.665742)[&quot;voltage&quot;=&quot;12500&quot;](if:is_closed())[&quot;tourism&quot;]-&gt;.s0;
+timeline(relation,7070123)-&gt;.s1;
+make stat k0=s1.u(suffix(&quot;2018-01-01&quot;)),k1=s1.count(nw),k2=(abs(s1.count(nw))+s1.sum((changeset()+count_by_role(&quot;in&quot;)))),k3=abs((-s1.sum(lrs_max(t[&quot;layer&quot;]))))-&gt;.s2;
+node(around.s2:0)[&quot;service&quot;=&quot;parking_aisle&quot;]-&gt;.s3;
+make stat k0=s2.min(lrs_min(lrs_union(t[&quot;fire_hydrant:position&quot;],&quot;name&quot;))),k1=abs(s2.min(date(id()))),k2=lrs_min(s2.max(timestamp()))-&gt;.s4;
+.s2 convert row ::id=id(),tags=count_tags();
+out;
+.s1 out body;
+.s2 out tags (44.755795,-62.691376,44.777979,-62.678783);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1940</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1940</p><h1>Query 1940</h1><p class="muted">fuzz:4:history,areas,complete,statements:953 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2017-08-31T17:44:53Z&quot;];
+rel[&quot;building:levels&quot;=&quot;16&quot;](poly:&quot;44.901726 -63.907440 44.876688 -63.948341 44.862504 -63.901149 44.868484 -63.883893&quot;)(changed:&quot;2015-08-06T17:39:20Z&quot;)-&gt;.s0;
+.s0 &lt;-&gt;.s1;
+.s0 is_in-&gt;.s2;
+way.s1[~&quot;^bra&quot;~&quot;Q297&quot;]-&gt;.s3;
+node(r.s1:&quot;part&quot;)-&gt;.s4;
+.s3 compare(delta:is_tag(&quot;name&quot;))-&gt;.s5;
+.s0 out skel bb 18;
+.s1 out ids (44.638450,-63.629529,44.651441,-63.545584);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

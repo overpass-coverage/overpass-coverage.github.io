@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 485</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 485</p><h1>Query 485</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2705 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][timeout:25][out:json];
+node(around:500,45.137518,-63.120568)(if:changeset()&gt;149000000)-&gt;.s0;
+if (is_number(((s0.min(number(timestamp()))&gt;10)?(s0.min((t[&quot;height&quot;]==&quot;gabled&quot;?(type()):(&quot;54&quot;)))):(s0.u(lrs_min(&quot;a;b;c&quot;)))))) { make yes n=s0.count(nwr)-&gt;.s1; } else { make no n=0-&gt;.s1; }
+rel.s1(if:count_tags()&gt;5)-&gt;.s2;
+node(around.s0:0)[~&quot;^is_&quot;~&quot;Jesse\\ Jag&quot;]-&gt;.s3;
+.s2 convert row ::id=id(),tags=count_tags();
+out;
+.s2 out qt center count;
+.s3 out noids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

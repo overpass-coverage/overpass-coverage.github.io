@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 502</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 502</p><h1>Query 502</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2983 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][out:json];
+nwr(poly:&#x27;44.641853 -64.856619 44.650269 -64.841221 44.654884 -64.851022 44.658894 -64.860277 44.661140 -64.860804 44.643246 -64.885811 44.637455 -64.882763 44.621724 -64.877970 44.630909 -64.872481 44.630241 -64.866625&#x27;)[!&quot;brand&quot;]-&gt;.s0;
+way(r.s0)-&gt;.s1;
+.s0 &gt;&gt;-&gt;.s2;
+for.s2-&gt;.s3 (suffix((is_closed()?(t[&quot;land_area&quot;]):(&quot;yes&quot;)))) { make group value=_.val,n=count(nodes),w=count(ways); }
+area[name=&quot;Gaspereaux Lake&quot;][admin_level]-&gt;.s4;
+rel(area.s4)[&quot;lamp_mount&quot;=&quot;bent_mast&quot;]-&gt;.s5;
+foreach.s4-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s0 out skel noids qt;
+.s1 out bb tags asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

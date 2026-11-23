@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2240</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2240</p><h1>Query 2240</h1><p class="muted">fuzz:3:history,complete:1729 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][date:&quot;2011-12-24T01:32:09Z&quot;];
+nw(45.325704,-63.946086,45.399273,-63.852712)[~&quot;^cro&quot;~&quot;n&quot;][&quot;maxspeed&quot;=&quot;100&quot;]-&gt;.s0;
+retro(date(&quot;2012-03-21T20:05:56Z&quot;)) { node(43.776122,-66.010022,43.958202,-65.857330)(id:1233815845,1325053402,1561086399,1820907758,2483046570,2512369930,2852158865,3517915071,8298566252,10281839110,12949245675,13317730275)-&gt;.s1; .s1 out ids; }
+way(r.s1)-&gt;.s2;
+(.s1; .s0;)-&gt;.s3;
+rel.s3(id:1420097,1531150,2273402,5127030,9105314,9236383,10223563,11703667,11976829,13474128,17368355)-&gt;.s4;
+.s4 &gt;-&gt;.s5;
+.s2 out skel;
+.s4 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1382</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1382</p><h1>Query 1382</h1><p class="muted">fuzz:3:history,complete:2584 · 0.08 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][date:&quot;2016-01-27T18:09:28Z&quot;];
+nwr(46.134305,-60.360744,46.291966,-60.126175)[&quot;segregated&quot;=&quot;no&quot;]-&gt;.s0;
+retro(date(&quot;2021-04-21T11:56:40Z&quot;)) { nwr(44.911280,-64.370604,45.045467,-64.041332)(if:version()&gt;3)[&quot;seamark:light:height&quot;=&quot;16&quot;](44.890774,-65.004365,44.980997,-64.911381)-&gt;.s1; .s1 out ids; }
+rel.s1(id:8817603,9236294,10223288,11785993,11836492,13341687,13448082,17353122,18459359,21261545)-&gt;.s2;
+complete(1).s0-&gt;.s3 { way(bn)[&quot;operator&quot;]; node(w); }
+.s0 out skel center asc;
+.s3 out body geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1904</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1904</p><h1>Query 1904</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3836 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::user,&quot;name:en&quot;,&quot;amenity&quot;;false;&quot;;&quot;)][timeout:25][bbox:45.706409,-63.323886,45.776541,-63.039579][date:&quot;2022-02-06T20:25:58Z&quot;];
+way[&quot;postal_code&quot;!~&quot;^B2T&quot;](45.403229,-64.155082,45.479454,-64.138910)-&gt;.s0;
+way.s0[&quot;is_in:province&quot;!~&quot;^Nova\\ &quot;]-&gt;.s1;
+way.s1(if:is_date(t[&quot;light:lit&quot;]))-&gt;.s2;
+area[name=&quot;Port Hood&quot;][admin_level]-&gt;.s3;
+way(area.s3)[&quot;colour&quot;=&quot;orange&quot;]-&gt;.s4;
+.s0 out meta asc;
+.s2 out geom count;
+.s4 out tags geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

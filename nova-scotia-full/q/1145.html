@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1145</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1145</p><h1>Query 1145</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1901 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::count;false)][timeout:25];
+nwr(poly:&quot;44.790723 -63.745825 44.801010 -63.741269 44.797463 -63.748331 44.783268 -63.796673 44.779755 -63.786334 44.785137 -63.747206&quot;)[&quot;building:levels&quot;](46.090126,-60.977587,46.235594,-60.947855)[&quot;operator:en&quot;=&quot;Canada Post&quot;]-&gt;.s0;
+.s0 map_to_area-&gt;.s1;
+area[name=&quot;Kejimkujik National Park of Canada&quot;]-&gt;.s2;
+way(area.s2)[&quot;crossing:signals&quot;=&quot;no&quot;]-&gt;.s3;
+if ((s2.max(abs(count_by_role(&quot;main_stream&quot;)))&lt;2)) { make yes n=s2.count(nwr)-&gt;.s4; } else { make no n=0-&gt;.s4; }
+.s0 out asc geom;
+.s1 out 5 body;
+.s2 out meta bb;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

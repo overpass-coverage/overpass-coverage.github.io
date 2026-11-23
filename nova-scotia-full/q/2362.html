@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2362</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2362</p><h1>Query 2362</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:660 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  way[&quot;lamp_mount&quot;~&quot;bent_mast&quot;](around:1000,46.194655,-60.354132);
+  way[&quot;power&quot;](around:1000,46.194655,-60.354132);
+  node[&quot;operator&quot;=&quot;Glooscap Energy&quot;](around:1000,46.194655,-60.354132);
+  relation[&quot;bridge:name&quot;~&quot;Paint\\ Brook\\ \\(Elmsvale\\)|Sussex\\ Street\\ Bridge&quot;,i](around:1000,46.194655,-60.354132);
+  relation[&quot;bus:lanes&quot;=&quot;designated|designated&quot;](around:500,46.194655,-60.354132);
+  relation[&quot;destination&quot;~&quot;^(Albro\\ Lake\\ Road|Bible\\ Hill;Tatamagouche|Chester;Windsor|Highway\\ 104|Mineville;Lake\\ Echo)$&quot;](around:1000,46.194655,-60.354132);
+  way[&quot;takeaway&quot;~&quot;no|yes&quot;](around:1000,46.194655,-60.354132);
+  node[&quot;post_box:type&quot;~&quot;^(community)$&quot;](around:1000,46.194655,-60.354132);
+  node[&quot;beauty&quot;=&quot;tanning&quot;](around:1000,46.194655,-60.354132);
+  relation[&quot;shelter&quot;](around:3000,46.194655,-60.354132);
+  nwr[&quot;natural&quot;~&quot;^(land|rock|water)$&quot;](around:5000,46.194655,-60.354132);
+  relation[&quot;lit&quot;](around:5000,46.194655,-60.354132);
+  way[&quot;building&quot;~&quot;garage|hangar&quot;,i](around:1000,46.194655,-60.354132);
+  node[&quot;noexit&quot;~&quot;^(yes)$&quot;,i](around:1000,46.194655,-60.354132);
+);
+out body center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

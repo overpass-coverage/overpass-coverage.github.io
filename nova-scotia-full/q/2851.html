@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2851</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2851</p><h1>Query 2851</h1><p class="muted">fuzz:3:history,complete:137 · 1.72 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+node(changed:&quot;2009-01-01T15:19:54Z&quot;,&quot;2017-03-26T02:30:53Z&quot;)[&quot;amenity&quot;=&quot;drinking_water&quot;][&quot;power&quot;](poly:&quot;44.586798 -63.583608 44.582371 -63.593757 44.581640 -63.593308 44.580686 -63.591200&quot;)-&gt;.s0;
+node(around.s0:20)[&quot;highway&quot;~&quot;^ser&quot;]-&gt;.s1;
+node.s1(id:1083007832,1317530961,1324895154,4548323370,6004859740,12949253591)-&gt;.s2;
+complete(1).s2-&gt;.s3 { node(w); way(bn)[&quot;natural&quot;]; }
+.s2 &gt;&gt;-&gt;.s4;
+.s4 out skel;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

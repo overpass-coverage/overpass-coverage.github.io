@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2503</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2503</p><h1>Query 2503</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3209 · 0.09 s CPU · expected status <code>ok</code></p><pre class="query">[out:xml][timeout:60][date:&quot;2008-07-21T02:08:43Z&quot;];
+nwr[&quot;power&quot;=&quot;tower&quot;][&quot;leisure&quot;=&quot;bleachers&quot;](44.579551,-63.725356,44.646634,-63.500447)(45.496223,-62.655366,45.632579,-62.452194)-&gt;.s0;
+.s0 convert item ::geom=geom(),::id=id(),!&quot;crossing&quot;,k0=(timestamp()+lrs_min(lrs_isect(t[&quot;crossing&quot;],lrs_union(t[&quot;addr:postcode&quot;],&quot;name&quot;))))-&gt;.s1;
+nwr(44.591058,-65.684859,44.735089,-65.410483)[&quot;cables&quot;=&quot;3&quot;]-&gt;.s2;
+node(way_link.s0:3-)-&gt;.s3;
+complete(6).s2-&gt;.s4 { node(w); way(bn)[&quot;highway&quot;]; }
+foreach.s0-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s2 out asc 17 meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

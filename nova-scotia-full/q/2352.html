@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2352</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2352</p><h1>Query 2352</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2289 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  way[&quot;amenity&quot;~&quot;bench|bicycle_parking|drinking_water|nightclub|post_box|waste_basket&quot;](around:3000,46.209466,-60.254450);
+  nwr[&quot;operator:fr&quot;=&quot;Postes Canada&quot;][&quot;crossing:signals&quot;~&quot;12|steps|yes&quot;,i](around:3000,46.209466,-60.254450);
+  node[&quot;street_cabinet&quot;~&quot;street_lighting&quot;](around:3000,46.209466,-60.254450);
+  way[&quot;sidewalk&quot;~&quot;^(both|no|right)$&quot;,i](around:2000,46.209466,-60.254450);
+  way[&quot;boundary&quot;=&quot;administrative&quot;][&quot;note&quot;~&quot;tubula&quot;,i](around:2000,46.209466,-60.254450);
+  node[&quot;building&quot;~&quot;^(apartments|commercial|hangar|nursing_home|synagogue|warehouse)$&quot;](around:3000,46.209466,-60.254450);
+  nwr[&quot;sidewalk:right&quot;~&quot;separate&quot;,i](around:1000,46.209466,-60.254450);
+  way[&quot;surface&quot;=&quot;fine_gravel&quot;](around:3000,46.209466,-60.254450);
+  node[&quot;destination:forward&quot;~&quot;Bridgetown;\\ Bedford|Cape\\ St\\ Marys\\ ;Salmon\\ River;Bedford|Wolfville\\ :\\ Bedford&quot;](around:1000,46.209466,-60.254450);
+  node[&quot;highway&quot;](around:3000,46.209466,-60.254450);
+);
+out center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1739</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1739</p><h1>Query 1739</h1><p class="muted">fuzz:4:history,areas,complete,statements:754 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2011-01-15T18:13:48Z&quot;,&quot;2020-01-12T22:59:45Z&quot;];
+node(id:2438158940,2439118707)[&quot;destination:street:to&quot;=&quot;Prince Albert Road;Braemar Drive&quot;](44.406329,-64.506267,44.501567,-64.255883)-&gt;.s0;
+.s0 map_to_area-&gt;.s1;
+.s0 is_in-&gt;.s2;
+node(way_cnt.s2:2-)-&gt;.s3;
+complete(6).s1-&gt;.s4 { way(around:0)[&quot;addr:suburb&quot;]; }
+foreach.s1-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s3 compare(delta:version())-&gt;.s5;
+.s2 out meta 13;
+.s4 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

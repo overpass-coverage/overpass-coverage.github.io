@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 586</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 586</p><h1>Query 586</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3163 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][maxsize:1073741824][timeout:25];
+way(if:changeset()&gt;96000000)(id:98940857,99090046,117719502,150096121,342143104,480513676,589334163,590895919,860365054,962351728,1019312616,1035802171)(if:(lrs_max(lrs_union(&quot;1;2&quot;,lrs_union(t[&quot;golf&quot;],&quot;name&quot;)))!=date(type())))-&gt;.s0;
+node(around.s0:100)[&quot;maxspeed&quot;=&quot;20&quot;]-&gt;.s1;
+.s0 &gt;&gt;-&gt;.s2;
+complete(5).s1-&gt;.s3 { way(around:0)[&quot;addr:city&quot;]; }
+node.s1(44.591813,-63.705617,44.853826,-63.419936)-&gt;.s4;
+.s0 out qt meta bb;
+.s4 out geom tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1458</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1458</p><h1>Query 1458</h1><p class="muted">fuzz:4:evaluators:287 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+node(id:1144638199,1145187143,2502261631,2502307084,2853056216,3513021508,4308851770,4953034442,7813880302,9515567804,13123581304)-&gt;.s0;
+.s0 &lt;&lt;-&gt;.s1;
+make info c=s1.max(lrs_max(lrs_union(t[&quot;addr:interpolation&quot;],&quot;name&quot;))),n=1,v=s1.max((t[&quot;water&quot;]==&quot;110&quot;?(&quot;a&quot;):(user())))-&gt;.s2;
+rel.s2(if:is_tag(&quot;name&quot;))-&gt;.s3;
+if ((s2.min(version())&lt;10)) { make yes n=s2.count(nwr)-&gt;.s4; }
+.s0 out ids qt;
+.s2 out tags bb;
+.s3 out ids 37;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

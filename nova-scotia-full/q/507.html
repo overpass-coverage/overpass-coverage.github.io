@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 507</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 507</p><h1>Query 507</h1><p class="muted">fuzz:4:statements,areas:741 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+way[&quot;destination:ref:backward&quot;=&quot;NS 201&quot;][&quot;operator:wikidata&quot;=&quot;Q3480058&quot;]-&gt;.s0;
+area[name=&quot;Pine Lake&quot;][boundary]-&gt;.s1;
+way(area.s1)[&quot;building&quot;=&quot;synagogue&quot;]-&gt;.s2;
+area[name=&quot;Fox Lake&quot;][admin_level]-&gt;.s3;
+nwr(area.s3)[&quot;cyclestreet&quot;=&quot;yes&quot;]-&gt;.s4;
+.s4-&gt;._; way(bn); (._;)-&gt;.s5;
+rel(bw.s5:&quot;out&quot;)-&gt;.s6;
+.s2 out tags asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

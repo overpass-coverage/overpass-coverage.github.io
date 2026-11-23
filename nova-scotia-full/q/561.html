@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 561</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 561</p><h1>Query 561</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2524 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;service&quot;,::&quot;count:relations&quot;,::&quot;count:areas&quot;,::uid,::&quot;count:ways&quot;,&quot;boundary&quot;,::count,::type;true;&quot;::&quot;)][timeout:180];
+way(44.573133,-63.596654,44.639294,-63.523255)[&quot;maxspeed&quot;][&quot;landform&quot;~&quot;^es&quot;]-&gt;.s0;
+make stat k0=s0.sum(abs(count_members())),k1=suffix(lrs_union(s0.min((is_date(t[&quot;landuse&quot;])?(suffix(t[&quot;type&quot;])):(type()))),s0.max(id()))),k2=(((s0.sum(lrs_max(&quot;1;2&quot;))&lt;1e3)?(number(s0.u(suffix(t[&quot;created_by&quot;])))):(s0.count(nw)))/(s0.sum(number(timestamp()))*s0.sum(lrs_min(t[&quot;created_by&quot;])))),::geom=center(trace(s0.gcat(geom())))-&gt;.s1;
+way(around.s1:20)[&quot;natural&quot;~&quot;^wet&quot;]-&gt;.s2;
+way.s0(if:lrs_in((type()+user()),lrs_union(t[&quot;land_area&quot;],&quot;name&quot;)))-&gt;.s3;
+.s0 out count bb;
+.s2 out geom qt body;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1613</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1613</p><h1>Query 1613</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3123 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::lat,::changeset,::timestamp,::type,::uid,::&quot;count:ways&quot;;false;&quot;,&quot;)][timeout:60][maxsize:1073741824];
+wr[&quot;demolished:railway&quot;~&quot;^ra&quot;](43.710850,-66.129717,43.826641,-65.961106)(if:is_date((&quot;yes&quot;+(t[&quot;maxspeed&quot;]+t[&quot;owner&quot;]))))[~&quot;^pos&quot;~&quot;B2T&quot;]-&gt;.s0;
+rel.s0(if:(!is_number(suffix(t[&quot;man_made&quot;]))))-&gt;.s1;
+node(r.s0)[!&quot;shelter&quot;]-&gt;.s2;
+way[&quot;water&quot;=&quot;stream_pool&quot;][&quot;blind&quot;][~&quot;laye&quot;~&quot;-1&quot;,i]-&gt;.s3;
+rel.s0(if:(lrs_min(&quot;1;2&quot;)&gt;(is_number(t[&quot;oneway&quot;])?(uid()):(lrs_min(&quot;1;2&quot;)))))-&gt;.s4;
+.s0 convert row ::id=id(),tags=count_tags();
+out;
+.s3 out skel asc (45.878098,-61.501774,45.977308,-61.384159);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

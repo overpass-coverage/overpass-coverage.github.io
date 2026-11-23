@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1219</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1219</p><h1>Query 1219</h1><p class="muted">fuzz:3:history,complete:446 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][date:&quot;2012-06-27T22:37:14Z&quot;];
+nw[&quot;place&quot;!=&quot;village&quot;](44.436117,-63.646956,44.553541,-63.444788)[&quot;destination:symbol:forward&quot;]-&gt;.s0;
+retro(date(&quot;2023-04-28T03:13:55Z&quot;)) { node(id:812032938,981648645,1145170325,2439677675,2637401609,3489288462,3510538797,3510910316,3618775873,6439941935)-&gt;.s1; .s1 out ids; }
+complete(2).s0-&gt;.s2 { node(w); way(bn)[&quot;natural&quot;]; }
+complete(3).s2-&gt;.s3 { way(bn)[&quot;light:method&quot;]; node(w); }
+complete(1).s2-&gt;.s4 { way(bn)[&quot;light:colour&quot;]; node(w); }
+node(way_link.s3:2-)-&gt;.s5;
+.s3 out body 46;
+.s4 out meta geom asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 754</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 754</p><h1>Query 754</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:107 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::changeset)][timeout:60];
+way(id:90224083,345801081,496370623,926874109,940605953,1204073127,1248004754)(id:98857285,117113579,224192048,235879900,240061941,478310836,515571782,951227650,1116152571)-&gt;.s0;
+rel(br.s0)[~&quot;^des&quot;~&quot;Bible\\ Hill;&quot;]-&gt;.s1;
+node(r.s0)[&quot;maxspeed&quot;!=&quot;20&quot;]-&gt;.s2;
+rel(br.s0)[&quot;bicycle&quot;~&quot;^y&quot;,i]-&gt;.s3;
+if ((s0.max(number(t[&quot;service&quot;]))&gt;=2)) { make yes n=s0.count(nwr)-&gt;.s4; } else { make no n=0-&gt;.s4; }
+.s2 out center 1 tags asc;
+.s3 out meta bb;
+.s4 out tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

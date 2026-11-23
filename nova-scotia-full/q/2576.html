@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2576</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2576</p><h1>Query 2576</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3933 · 0.12 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;amenity&quot;~&quot;^(bench|bicycle_parking|drinking_water|parking|restaurant)$&quot;,i][&quot;drive_through&quot;~&quot;2|58|Laura\\ &quot;,i](around:5000,44.608618,-63.588723);
+  nwr[&quot;maxspeed&quot;~&quot;100|110|30|50|70|80&quot;,i][&quot;operator:fr&quot;~&quot;1|privat|teleco&quot;,i](around:5000,44.608618,-63.588723);
+  relation[&quot;heritage:operator&quot;~&quot;^(hsmbc)$&quot;](around:1000,44.608618,-63.588723);
+  nwr[&quot;foot&quot;](around:1000,44.608618,-63.588723);
+  way[&quot;highway&quot;=&quot;path&quot;](around:5000,44.608618,-63.588723);
+  node[&quot;place&quot;=&quot;island&quot;](around:1000,44.608618,-63.588723);
+);
+out body center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

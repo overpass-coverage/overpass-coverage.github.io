@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2807</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2807</p><h1>Query 2807</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:426 · 0.70 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  relation[&quot;sport&quot;~&quot;^(ice_hockey;ice_skating|ice_skating;ice_hockey|motorsport|pickleball)$&quot;](around:2000,44.321861,-64.690552);
+  relation[&quot;foot&quot;~&quot;^(designated|yes)$&quot;](around:25000,44.321861,-64.690552);
+  way[&quot;maxspeed&quot;~&quot;^(110|30|70)$&quot;](around:25000,44.321861,-64.690552);
+  nwr[&quot;building&quot;=&quot;house&quot;](around:25000,44.321861,-64.690552);
+  nwr[&quot;place&quot;=&quot;island&quot;](around:25000,44.321861,-64.690552);
+  way[&quot;maxspeed&quot;=&quot;100&quot;](around:500,44.321861,-64.690552);
+  node[&quot;shelter&quot;~&quot;no&quot;](around:25000,44.321861,-64.690552);
+  way[&quot;brand:wikidata&quot;~&quot;^(Q1032400|Q130546216|Q2974996|Q53268|Q6006077|Q62537250|Q6970842|Q7366633)$&quot;](around:25000,44.321861,-64.690552);
+  way[&quot;building&quot;~&quot;commercial|retail|static_caravan&quot;](around:1000,44.321861,-64.690552);
+  relation[&quot;access&quot;](around:25000,44.321861,-64.690552);
+  way[&quot;surface&quot;~&quot;asphalt|concrete|dirt|paved|unpaved&quot;](around:25000,44.321861,-64.690552);
+  nwr[&quot;natural&quot;](around:25000,44.321861,-64.690552);
+);
+out center tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

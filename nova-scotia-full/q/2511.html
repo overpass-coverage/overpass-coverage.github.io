@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2511</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2511</p><h1>Query 2511</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2275 · 0.09 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][out:xml][timeout:180];
+node[&quot;owner&quot;!~&quot;^Canadian\\ Nat&quot;](around:10,46.138509,-60.401891)[&quot;building&quot;=&quot;garage&quot;]-&gt;.s0;
+.s0 map_to_area-&gt;.s1;
+is_in(45.462615,-61.642768)-&gt;.s2;
+node(area.s2)[&quot;foot&quot;=&quot;private&quot;]-&gt;.s3;
+rel.s2(if:(((id()+&quot;animal_feed&quot;)==(suffix(t[&quot;addr:locality&quot;])+suffix(t[&quot;land_area&quot;])))&amp;&amp;(timestamp()==user())))-&gt;.s4;
+way.s1(if:lrs_in(t[&quot;material&quot;],lrs_union(lrs_union(t[&quot;poles&quot;],&quot;name&quot;),t[&quot;structure&quot;])))-&gt;.s5;
+.s5 out tags bb;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

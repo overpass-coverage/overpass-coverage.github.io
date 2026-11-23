@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 796</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 796</p><h1>Query 796</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:691 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  relation[&quot;destination:ref:to:forward&quot;](around:2000,44.870299,-62.658886);
+  nwr[&quot;is_in:country_code&quot;=&quot;CA&quot;][&quot;admin_level&quot;~&quot;Q29749&quot;,i](around:5000,44.870299,-62.658886);
+  way[&quot;bridge&quot;=&quot;yes&quot;](around:3219,44.870299,-62.658886);
+  way[&quot;network:wikipedia&quot;](around:3219,44.870299,-62.658886);
+  relation[&quot;maxspeed&quot;=&quot;30&quot;](around:3219,44.870299,-62.658886);
+);
+out center tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

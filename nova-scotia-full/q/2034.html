@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2034</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2034</p><h1>Query 2034</h1><p class="muted">fuzz:3:areas,complete:1944 · 0.08 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+rel[&quot;brand:wikidata&quot;~&quot;^Q53&quot;,i](id:1363856,2264270,3173621,3173957,5124757,11991863,12119913,12135385,13474497,20963909)[~&quot;^lan&quot;~&quot;n&quot;]-&gt;.s0;
+rel.s0[&quot;building:part&quot;~&quot;^ro&quot;]-&gt;.s1;
+area[name=&quot;Factory Cove&quot;]-&gt;.s2;
+node(area.s2)[&quot;man_made&quot;=&quot;planter&quot;]-&gt;.s3;
+is_in(46.252465,-60.417510)-&gt;.s4;
+way(area.s4)[&quot;highway&quot;=&quot;street_lamp&quot;]-&gt;.s5;
+(.s5; - .s1;)-&gt;.s6;
+.s3 out ids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

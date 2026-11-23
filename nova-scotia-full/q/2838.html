@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2838</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2838</p><h1>Query 2838</h1><p class="muted">fuzz:4:history,complete,evaluators:818 · 2.63 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2012-02-10T23:28:09Z&quot;,&quot;2022-03-20T20:46:53Z&quot;];
+nwr(44.749656,-63.760370,44.925612,-63.647683)[&quot;is_in:municipality&quot;=&quot;Halifax Regional Municipality&quot;](if:date(timestamp())&gt;date(&quot;2024-01-01&quot;))-&gt;.s0;
+retro(date(&quot;2012-02-11T21:13:44Z&quot;)) { nw[&quot;unsigned_ref&quot;=&quot;6763&quot;][&quot;aeroway&quot;!~&quot;runway|taxilane&quot;]-&gt;.s1; .s1 out ids; }
+.s0 &lt;&lt;-&gt;.s2;
+node(way_link.s2:1)-&gt;.s3;
+node.s3(44.718213,-63.745075,45.012239,-63.453279)-&gt;.s4;
+rel(br.s3)-&gt;.s5;
+.s1 out body 47;
+.s2 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

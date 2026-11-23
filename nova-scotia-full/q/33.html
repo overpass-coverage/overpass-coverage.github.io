@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 33</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 33</p><h1>Query 33</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1954 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][out:popup(&quot;Named things&quot;;[&quot;operator:wikipedia&quot;!~&quot;^en&quot;][&quot;direction&quot;=&quot;290&quot;];[&quot;foot&quot;=&quot;private&quot;];[&quot;water&quot;~&quot;^la&quot;];&quot;ref&quot;;)(&quot;Other&quot;;[&quot;golf&quot;=&quot;cartpath&quot;];[&quot;old_addr:housenumber&quot;=&quot;42G&quot;];[&quot;oneway&quot;!=&quot;no&quot;];&quot;ref&quot;;)][date:&quot;2015-05-13T19:50:33Z&quot;];
+node[&quot;cables&quot;=&quot;1&quot;](46.055514,-60.351859,46.108601,-60.199292)-&gt;.s0;
+make stat k0=number(s0.u(user()))-&gt;.s1;
+area[name=&quot;Half Island Cove&quot;][admin_level]-&gt;.s2;
+nwr(area.s2)[&quot;royal_cypher&quot;=&quot;no&quot;]-&gt;.s3;
+way(around.s1:100)[~&quot;^hei&quot;~&quot;6&quot;]-&gt;.s4;
+way(pivot.s2)-&gt;.s5;
+.s0 out skel 100;
+.s3 out body noids asc geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

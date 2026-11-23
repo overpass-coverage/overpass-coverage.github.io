@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2139</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2139</p><h1>Query 2139</h1><p class="muted">fuzz:4:statements,areas:808 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+way[&quot;service:vehicle:oil_change&quot;=&quot;yes&quot;](45.177518,-63.989714,45.313435,-63.808708)[&quot;entrance&quot;=&quot;emergency&quot;]-&gt;.s0;
+.s0 map_to_area-&gt;.s1;
+area[name=&quot;Wentworth Lake&quot;]-&gt;.s2;
+nwr(area.s2)(44.881829,-63.572552,44.941450,-63.570381)-&gt;.s3;
+way(around.s0:0)[!&quot;destination:right&quot;]-&gt;.s4;
+.s2 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

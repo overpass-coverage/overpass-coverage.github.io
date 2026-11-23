@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 980</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 980</p><h1>Query 980</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3737 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][maxsize:536870912];
+rel[&quot;highway&quot;=&quot;service&quot;](id:1068128,1531191,7073232,9311871,9321785,12023372,20216005)[&quot;sport&quot;=&quot;motorsport&quot;]-&gt;.s0;
+area[name=&quot;McGill Lake&quot;]-&gt;.s1;
+way(area.s1)(46.754147,-60.697799,46.786197,-60.690104)-&gt;.s2;
+.s1 convert stat ::id=id(),k0=lrs_union(lrs_union(lrs_union(t[&quot;structure&quot;],&quot;name&quot;),&quot;a;b;c&quot;),lrs_union(t[&quot;post:city&quot;],&quot;name&quot;))-&gt;.s3;
+node(way_cnt.s2:2-)-&gt;.s4;
+rel(bw.s2)[&quot;highway&quot;=&quot;service&quot;]-&gt;.s5;
+.s3 out meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

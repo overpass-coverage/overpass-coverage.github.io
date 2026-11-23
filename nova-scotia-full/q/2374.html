@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2374</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2374</p><h1>Query 2374</h1><p class="muted">fuzz:3:history,complete:2040 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;covered&quot;)];
+way(poly:&#x27;46.237601 -60.468371 46.239896 -60.464741 46.240617 -60.467558 46.243397 -60.465439 46.244772 -60.465227 46.240528 -60.472236 46.243204 -60.471613 46.242065 -60.473226 46.240909 -60.474421 46.241370 -60.476142 46.241861 -60.477340 46.242573 -60.486970 46.237058 -60.483390 46.237071 -60.480652 46.236502 -60.479907 46.235590 -60.479059 46.234447 -60.479383 46.231276 -60.478448 46.233366 -60.477072 46.229186 -60.478512 46.233466 -60.476443 46.227994 -60.477854 46.230993 -60.476456 46.229992 -60.475266 46.231934 -60.475095 46.232773 -60.472991 46.230535 -60.469165 46.230675 -60.469265 46.232465 -60.468296 46.235442 -60.471296&#x27;)[&quot;highway&quot;!~&quot;^turning&quot;]-&gt;.s0;
+timeline(way,281422301,1)-&gt;.s1;
+retro(date(&quot;2020-01-22T20:44:55Z&quot;)) { way[&quot;operator&quot;=&quot;Jason Hiltz&quot;][&quot;check_date&quot;][&quot;building&quot;~&quot;^apart&quot;](46.089584,-60.319968,46.278089,-60.258473)-&gt;.s2; .s2 out ids; }
+.s1 &lt;&lt;-&gt;.s3;
+.s0 &gt;-&gt;.s4;
+node(way_link.s2:2-)-&gt;.s5;
+.s0 out skel (44.471514,-64.542430,44.549228,-64.432744);
+.s3 out ids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

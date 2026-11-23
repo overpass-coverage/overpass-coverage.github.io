@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 490</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 490</p><h1>Query 490</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2885 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:268435456][out:popup(&quot;Other&quot;;[&quot;amenity&quot;=&quot;bench&quot;];)(&quot;Food&quot;;[&quot;golf&quot;!=&quot;fairway&quot;];&quot;name&quot;;)];
+nw(poly:&quot;45.226084 -62.948449 45.225927 -62.949691 45.225986 -62.950270 45.227421 -62.949079 45.227213 -62.949513 45.226773 -62.950254 45.226977 -62.950153 45.226389 -62.951450 45.226547 -62.951546 45.227051 -62.952009 45.226018 -62.951842 45.226113 -62.952030 45.226518 -62.952775 45.226287 -62.953066 45.224647 -62.952708 45.224098 -62.951681 45.223693 -62.951720 45.224084 -62.951497 45.223134 -62.951063 45.224374 -62.950669 45.223889 -62.950238 45.223535 -62.949980 45.224095 -62.950354 45.223482 -62.949451 45.223466 -62.947917 45.224634 -62.949692 45.224120 -62.947764 45.224489 -62.948560 45.224856 -62.949132 45.225174 -62.948805&quot;)-&gt;.s0;
+node(way_cnt.s0:2-)-&gt;.s1;
+make info c=(s0.min((count_members()/length()))+date(s0.max(timestamp()))),v=s0.u(user()),n=1-&gt;.s2;
+(.s1; .s2;)-&gt;.s3;
+wr(bn.s2)-&gt;.s4;
+.s0 out asc body;
+.s2 out skel qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

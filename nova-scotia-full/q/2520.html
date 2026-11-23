@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2520</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2520</p><h1>Query 2520</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2043 · 0.09 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][maxsize:1073741824][out:xml];
+node[!&quot;brand:wikidata&quot;](id:2336717203,6271936697)[&quot;nat_name:fr&quot;~&quot;^Route\\ Tran&quot;,i](newer:&quot;2010-11-14T02:34:22Z&quot;)-&gt;.s0;
+area[name=&quot;Wildcat Lake&quot;]-&gt;.s1;
+way(area.s1)[&quot;is_sidepath:of:name&quot;=&quot;Front Street&quot;]-&gt;.s2;
+is_in(44.731083,-65.639323)-&gt;.s3;
+nwr(area.s3)[&quot;sport&quot;=&quot;ice_hockey;ice_skating&quot;]-&gt;.s4;
+way.s2(if:(lrs_max(lrs_isect(&quot;a;b;c&quot;,t[&quot;material&quot;]))&gt;date(type())))-&gt;.s5;
+nwr(around:200,44.917378,-62.346323,44.919260,-62.344619,44.920498,-62.348530,44.919877,-62.345152,44.920952,-62.343259,44.921832,-62.341297)[&quot;bicycle&quot;]-&gt;.s6;
+.s4 out ids center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

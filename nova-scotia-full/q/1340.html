@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1340</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1340</p><h1>Query 1340</h1><p class="muted">fuzz:3:history,complete:939 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][bbox:44.823564,-63.422549,44.962842,-63.034830][date:&quot;2026-01-06T21:01:49Z&quot;];
+rel[&quot;lanes:psv&quot;=&quot;1&quot;](id:11791464,17440615,21293920,21293974,21787348)[!&quot;to&quot;]-&gt;.s0;
+complete(6).s0-&gt;.s1 { way(around:0)[&quot;operator&quot;]; }
+complete(5).s1-&gt;.s2 { way(bn)[&quot;highway&quot;]; node(w); }
+complete(5).s0-&gt;.s3 { node(w); way(bn)[&quot;power&quot;]; }
+complete(3).s3-&gt;.s4 { way(bn)[&quot;addr:suburb&quot;]; node(w); }
+.s1 out meta qt;
+.s4 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

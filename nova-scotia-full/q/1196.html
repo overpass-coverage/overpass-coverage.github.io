@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1196</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1196</p><h1>Query 1196</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2134 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  relation[&quot;height&quot;](around:1000,44.908569,-65.301233);
+  way[&quot;cyclestreet&quot;](around:1000,44.908569,-65.301233);
+  node[&quot;stop&quot;~&quot;minor&quot;](around:1000,44.908569,-65.301233);
+  nwr[&quot;turn:lanes&quot;~&quot;\\|\\|right&quot;](around:1000,44.908569,-65.301233);
+  way[&quot;amenity&quot;=&quot;waste_basket&quot;](around:1000,44.908569,-65.301233);
+  way[&quot;highway&quot;](around:3000,44.908569,-65.301233);
+  way[&quot;highway&quot;~&quot;crossing|cycleway|motorway|primary|residential|service&quot;][&quot;covered&quot;~&quot;Halifa|place_&quot;,i](around:1000,44.908569,-65.301233);
+  way[&quot;lanes&quot;~&quot;^(1|4)$&quot;](around:1000,44.908569,-65.301233);
+  way[&quot;sidewalk:both&quot;=&quot;no&quot;](around:1000,44.908569,-65.301233);
+);
+out geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

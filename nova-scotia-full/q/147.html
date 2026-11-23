@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 147</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 147</p><h1>Query 147</h1><p class="muted">fuzz:3:history,complete:1504 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][date:&quot;2013-08-30T18:33:25Z&quot;];
+nw[&quot;brand:wikidata&quot;=&quot;Q6006077&quot;](if:is_closed())[&quot;roof:levels&quot;~&quot;^0&quot;,i]-&gt;.s0;
+complete(2).s0-&gt;.s1 { way(bn)[&quot;poles&quot;]; node(w); }
+rel(bn.s0)[&quot;isced:level&quot;=&quot;4&quot;]-&gt;.s2;
+node.s0(if:version()&gt;3)-&gt;.s3;
+complete(1).s1-&gt;.s4 { way(bn)[&quot;utility&quot;]; node(w); }
+.s4 out body center 34;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

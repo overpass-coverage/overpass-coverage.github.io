@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2710</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2710</p><h1>Query 2710</h1><p class="muted">fuzz:4:history,complete,evaluators:718 · 0.26 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;landuse&quot;)];
+wr(changed:&quot;2010-10-25T12:15:57Z&quot;,&quot;2015-05-12T14:17:08Z&quot;)(44.142817,-65.790069,44.172290,-65.713925)[&quot;access&quot;=&quot;customers&quot;][&quot;cables&quot;!=&quot;1&quot;]-&gt;.s0;
+retro(date(&quot;2017-08-20T21:44:32Z&quot;)) { node(if:version()&gt;3)(45.566916,-62.726909,45.657026,-62.547431)[&quot;natural&quot;]-&gt;.s1; .s1 out ids; }
+if (((s1.sum(number(t[&quot;power&quot;]))==0.5)&amp;&amp;(number(s1.u(lrs_min(t[&quot;building&quot;])))!=s1.max(lrs_min(&quot;a;b;c&quot;))))) { make yes n=s1.count(nwr)-&gt;.s2; } else { make no n=0-&gt;.s2; }
+node(way_link.s2:2-)-&gt;.s3;
+complete(2).s1-&gt;.s4 { way(around:0)[&quot;operator&quot;]; }
+.s0 out tags center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

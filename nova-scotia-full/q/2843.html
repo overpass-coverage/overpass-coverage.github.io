@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2843</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2843</p><h1>Query 2843</h1><p class="muted">fuzz:4:output:961 · 1.48 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::user,&quot;lit&quot;,::uid,&quot;lanes&quot;,&quot;lit&quot;,::&quot;count:ways&quot;,::timestamp,::&quot;count:nodes&quot;)][maxsize:268435456];
+rel(44.610898,-63.618285,44.730989,-63.500049)[&quot;length&quot;!~&quot;^2&quot;]-&gt;.s0;
+.s0 &gt;&gt;-&gt;.s1;
+rel.s0(if:count_tags()&gt;3)-&gt;.s2;
+node(way_link.s1:3-)-&gt;.s3;
+.s3 out count;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/tag_value.cc.html#L777">overpass_api/statements/tag_value.cc:777</a></li></ul></main></body></html>

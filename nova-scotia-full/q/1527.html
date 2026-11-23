@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1527</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1527</p><h1>Query 1527</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:362 · 0.26 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::&quot;count:ways&quot;,::uid,::version;false)][timeout:25][maxsize:268435456][date:&quot;2016-12-12T14:23:59Z&quot;];
+wr(45.094263,-64.714802,45.111953,-64.706123)(if:(count_tags()&lt;=lrs_max(lrs_isect(&quot;a;b;c&quot;,t[&quot;admin_level&quot;]))))[!&quot;highway&quot;]-&gt;.s0;
+rel(bw.s0:&quot;in&quot;)-&gt;.s1;
+.s1 &lt;-&gt;.s2;
+rel.s0[&quot;roof:levels&quot;=&quot;0&quot;]-&gt;.s3;
+(.s3; - .s2;)-&gt;.s4;
+.s0 out body;
+.s4 out tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

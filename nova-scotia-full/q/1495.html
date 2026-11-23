@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1495</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1495</p><h1>Query 1495</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3080 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Shops&quot;;[&quot;service:bicycle:retail&quot;=&quot;yes&quot;][&quot;voltage:primary&quot;!=&quot;14400&quot;];[&quot;unsigned_ref&quot;=&quot;1374&quot;];&quot;ref&quot;;)(&quot;Roads&quot;;[&quot;start_date&quot;!~&quot;^20&quot;][&quot;parking:left:orientation&quot;=&quot;diagonal&quot;];[&quot;direction&quot;~&quot;^fo&quot;][&quot;motor_vehicle&quot;!=&quot;no&quot;];[&quot;boundary_type&quot;!=&quot;territorial_waters&quot;];&quot;amenity&quot;;)][maxsize:268435456][timeout:60];
+nwr(if:lrs_in((count_tags()/version()),&quot;1;2&quot;))[&quot;highway&quot;=&quot;unclassified&quot;](45.176848,-63.364754,45.243324,-63.135274)-&gt;.s0;
+.s0 &lt;&lt;-&gt;.s1;
+(.s1; - .s1;)-&gt;.s2;
+node(around:0,45.775943,-63.299036,45.774767,-63.300045,45.776587,-63.300606)[&quot;parking:lane:right&quot;]-&gt;.s3;
+out count (46.129416,-60.624868,46.166460,-60.538752);
+.s1 out asc ids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

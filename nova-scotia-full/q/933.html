@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 933</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 933</p><h1>Query 933</h1><p class="muted">fuzz:4:history,areas,complete,statements:90 · 1.37 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][adiff:&quot;2012-02-11T21:13:44Z&quot;,&quot;2017-06-19T16:15:05Z&quot;];
+wr[&quot;aeroway&quot;=&quot;runway&quot;](changed:&quot;2008-09-18T00:23:55Z&quot;,&quot;2016-12-09T02:33:08Z&quot;)(if:t[&quot;maxspeed:forward&quot;]==&quot;60&quot;)-&gt;.s0;
+rel(bn.s0)-&gt;.s1;
+.s0 compare(delta:count_tags())-&gt;.s2;
+.s0 out ids;
+.s1 out skel bb qt;
+.s2 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

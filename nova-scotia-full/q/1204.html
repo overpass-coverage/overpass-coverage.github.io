@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1204</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1204</p><h1>Query 1204</h1><p class="muted">fuzz:4:poi,areas:209 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;destination&quot;~&quot;^(Chester;Windsor|Lunenburg;Mahone\\ Bay;Blockhouse|Port\\ Hawkesbury;Antigonish;Canso\\ Causeway|Wright\\ Avenue)$&quot;](around:3000,44.958890,-65.204055);
+  way[&quot;sport&quot;~&quot;motorsport|pickleball&quot;](around:3000,44.958890,-65.204055);
+  nwr[&quot;smoothness&quot;~&quot;^(good|intermediate)$&quot;](around:3000,44.958890,-65.204055);
+  way[&quot;leisure&quot;~&quot;^(fishing|swimming_pool)$&quot;](around:2000,44.958890,-65.204055);
+  way[&quot;crossing:island&quot;~&quot;no&quot;](around:3000,44.958890,-65.204055);
+  relation[&quot;cyclestreet&quot;~&quot;yes&quot;](around:3000,44.958890,-65.204055);
+  node[&quot;building:part&quot;=&quot;roof&quot;](around:3000,44.958890,-65.204055);
+  way[&quot;lane_markings&quot;][&quot;fire_hydrant:type&quot;~&quot;servic&quot;,i](around:2000,44.958890,-65.204055);
+  way[&quot;foot&quot;~&quot;designated|private&quot;](around:3000,44.958890,-65.204055);
+  nwr[&quot;railway&quot;~&quot;level_crossing|switch&quot;](around:2000,44.958890,-65.204055);
+  way[&quot;postal_code&quot;~&quot;^(B0L\\ 1C0|B0R\\ 1C0|B2X\\ 1T5|B3E\\ 1E8|B3K\\ 5W4|B4B\\ 2K1|B4G\\ 1C9|B5A\\ 5G3)$&quot;](around:3000,44.958890,-65.204055);
+  relation[&quot;post:city&quot;~&quot;Scotsburn|Sheet\\ Harbour|Tangier|Upper\\ Musquodoboit&quot;](around:3000,44.958890,-65.204055);
+  nwr[&quot;smoothness&quot;~&quot;^(good|intermediate)$&quot;,i](around:3000,44.958890,-65.204055);
+  way[&quot;maxspeed:advisory&quot;=&quot;45&quot;](around:3000,44.958890,-65.204055);
+  way[&quot;height&quot;](around:3000,44.958890,-65.204055);
+);
+out body center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

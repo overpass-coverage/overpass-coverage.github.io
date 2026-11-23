@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1002</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1002</p><h1>Query 1002</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3835 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][out:csv(::&quot;count:nodes&quot;,::&quot;count:areas&quot;,::id,::count,::user,::lon,&quot;addr:country&quot;)];
+node(id:1019347505,1714495611,2438164593,2632875802,4550113572)[&quot;brand&quot;!=&quot;Laura Secord&quot;]-&gt;.s0;
+retro(date(&quot;2017-07-26T18:13:23Z&quot;)) { node(44.645219,-63.629818,44.678666,-63.592433)-&gt;.s1; .s1 out ids; }
+wr(bn.s1)-&gt;.s2;
+wr(bn.s0)[&quot;operator&quot;=&quot;Bell Aliant&quot;]-&gt;.s3;
+make info c=(s2.count(deriveds)/s2.max((is_date(t[&quot;utility&quot;])?(3):(uid())))),n=1-&gt;.s4;
+.s4 out meta center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

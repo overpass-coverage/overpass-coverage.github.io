@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 512</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 512</p><h1>Query 512</h1><p class="muted">fuzz:3:history,complete:2837 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][date:&quot;2018-05-23T02:00:24Z&quot;];
+node(2336666525)-&gt;.s0;
+node(around.s0:0)[&quot;amenity&quot;=&quot;waste_basket&quot;]-&gt;.s1;
+node(around.s0:20)[&quot;man_made&quot;=&quot;goods_conveyor&quot;]-&gt;.s2;
+complete(1).s1-&gt;.s3 { way(bn)[&quot;addr:suburb&quot;]; node(w); }
+node.s2(if:number(t[&quot;lane_markings&quot;])&gt;15)-&gt;.s4;
+.s1 out skel geom qt (43.811721,-65.585768,43.893631,-65.524398);
+.s2 out skel;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

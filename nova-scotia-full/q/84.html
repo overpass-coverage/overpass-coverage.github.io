@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 84</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 84</p><h1>Query 84</h1><p class="muted">fuzz:3:history,complete:2544 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2010-09-10T23:28:30Z&quot;,&quot;2017-03-26T02:30:53Z&quot;];
+nw(poly:&quot;44.054184 -65.279168 44.056469 -65.282652 44.061448 -65.286412 44.055885 -65.286722 44.031026 -65.275063 44.030466 -65.271564&quot;)(if:changeset()&gt;128000000)(changed:&quot;2013-06-03T17:39:29Z&quot;)-&gt;.s0;
+node.s0(45.458212,-64.718240,45.608072,-64.437951)-&gt;.s1;
+node(around.s0:300)[&quot;man_made&quot;=&quot;utility_pole&quot;]-&gt;.s2;
+complete(5).s0-&gt;.s3 { way(around:0)[&quot;surface&quot;]; }
+complete(2).s0-&gt;.s4 { way(bn)[&quot;lamp_mount&quot;]; node(w); }
+.s3 out skel qt 8;
+.s4 out tags center asc 31;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

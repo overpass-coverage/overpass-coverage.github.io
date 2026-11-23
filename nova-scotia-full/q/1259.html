@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1259</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1259</p><h1>Query 1259</h1><p class="muted">fuzz:4:history,areas,complete,statements:147 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+node(poly:&#x27;45.040096 -63.190129 45.006415 -63.171246 45.016532 -63.156489&#x27;)(poly:&quot;44.240665 -65.801809 44.242224 -65.800686 44.241296 -65.803514 44.242020 -65.804418 44.240249 -65.804830 44.240123 -65.805748 44.238872 -65.807217 44.237883 -65.806163 44.238141 -65.805705 44.238137 -65.804613&quot;)-&gt;.s0;
+retro(date(&quot;2025-11-23T16:46:30Z&quot;)) { node(id:1965864481,6040059162)[&quot;communication&quot;][&quot;is_in:country_code&quot;=&quot;CA&quot;]-&gt;.s1; .s1 out ids; }
+complete(3).s1-&gt;.s2 { way(around:0)[&quot;support&quot;]; }
+(.s0; .s1;)-&gt;.s3;
+is_in(45.569456,-60.932846)-&gt;.s4;
+nwr(area.s4)[&quot;network:wikidata&quot;=&quot;Q7059806&quot;]-&gt;.s5;
+node(around.s4:0)[!&quot;lanes&quot;]-&gt;.s6;
+.s3 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

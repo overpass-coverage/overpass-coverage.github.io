@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2212</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2212</p><h1>Query 2212</h1><p class="muted">fuzz:3:history,complete:48 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2010-07-25T17:30:53Z&quot;,&quot;2010-09-02T21:29:42Z&quot;];
+node[&quot;direction&quot;!=&quot;forward&quot;][&quot;seamark:light:category&quot;!~&quot;^re&quot;][&quot;lanes:backward&quot;=&quot;2&quot;](45.334904,-62.465775,45.339655,-62.217259)-&gt;.s0;
+retro(date(&quot;2010-11-08T02:35:41Z&quot;)) { way(id:117086589,242876892,344388411,476132711,478901847,490750831,552886876,692928621,741340238,1355106807,1426353310,1458272612)(newer:&quot;2017-07-26T18:13:23Z&quot;)(id:75601799,235889865)-&gt;.s1; .s1 out ids; }
+complete(2).s1-&gt;.s2 { way(around:0)[&quot;addr:housenumber&quot;]; }
+.s0 out ids 18;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

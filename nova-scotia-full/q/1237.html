@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1237</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1237</p><h1>Query 1237</h1><p class="muted">fuzz:4:evaluators:97 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+node[&quot;craft&quot;=&quot;goldsmith&quot;][&quot;highway&quot;=&quot;residential&quot;](44.465866,-64.427662,44.591251,-64.200103)-&gt;.s0;
+node.s0[&quot;cycleway:both&quot;=&quot;no&quot;]-&gt;.s1;
+.s0 convert stat k1=(-(0?(count_distinct_members()):(count_by_role(&quot;platform&quot;)))),k0=(count_distinct_members()&gt;(-(0?(count_members()):(id())))),k2=number(lrs_max(lrs_union(t[&quot;boundary&quot;],&quot;name&quot;))),::id=id(),k3=timestamp()-&gt;.s2;
+.s0 out meta bb;
+.s1 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

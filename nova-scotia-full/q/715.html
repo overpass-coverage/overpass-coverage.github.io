@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 715</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 715</p><h1>Query 715</h1><p class="muted">fuzz:4:history,complete,evaluators:567 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+nwr(44.495767,-64.083127,44.513691,-64.044592)[&quot;natural&quot;=&quot;water&quot;](if:(count_distinct_by_role(&quot;out&quot;)&lt;lrs_max(t[&quot;addr:city&quot;])))-&gt;.s0;
+nwr.s0(if:(t[&quot;addr:housenumber&quot;]==&quot;1&quot;&amp;&amp;lrs_in((id()+&quot;a&quot;),user())))-&gt;.s1;
+node(way_link.s1:1)-&gt;.s2;
+node.s2(if:is_date(t[&quot;colour&quot;]))-&gt;.s3;
+node.s3(if:((type()!=&quot;yes&quot;)||(lrs_max(&quot;a;b;c&quot;)&lt;lrs_max(&quot;a;b;c&quot;))))-&gt;.s4;
+.s0 out body asc (43.728762,-66.022669,43.824188,-65.909576);
+.s2 out meta qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
