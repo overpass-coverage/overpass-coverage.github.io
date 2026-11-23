@@ -14,6 +14,9 @@ a { color:var(--link); text-decoration:none; } a:hover { text-decoration:underli
 ul.runs { list-style:none; padding:0; }
 ul.runs li { padding:12px 0; border-bottom:1px solid var(--line); }
 ul.runs a { font-weight:600; font-size:16px; }
+ul.runs .head { display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:6px 12px; }
+a.dl { margin-left:auto; font-weight:600; font-size:14px; padding:3px 10px; border:1px solid var(--link); border-radius:6px; white-space:nowrap; }
+a.dl:hover { background:var(--link); color:var(--bg); text-decoration:none; }
 .muted { color:var(--muted); }
 pre { background:var(--code); border:1px solid var(--line); border-radius:6px; padding:12px; overflow-x:auto; font-size:13px; line-height:1.45; }
 code { font-family:ui-monospace, SFMono-Regular, Menlo, monospace; }
@@ -29,15 +32,15 @@ Each run below shows, for every source file of the query binary, which lines its
 queries run them.</p>
 <ul class="runs">
   <!-- One entry per run; each run lives in its own directory. -->
-  <li><a href="nova-scotia-full/">Nova Scotia, full</a>
+  <li><div class="head"><a href="nova-scotia-full/">Nova Scotia, full</a> <a class="dl" href="nova-scotia-full/corpus.jsonl" download>corpus.jsonl · 2.1 MB</a></div>
     <div class="muted">2,868 queries on one database with history and areas (Geofabrik full-history extract, latest edit 2026-11-15) · upstream master 8edf11b</div></li>
-  <li><a href="nova-scotia-full-shrunk/">Nova Scotia, full, shrunk</a>
+  <li><div class="head"><a href="nova-scotia-full-shrunk/">Nova Scotia, full, shrunk</a> <a class="dl" href="nova-scotia-full-shrunk/corpus.jsonl" download>corpus.jsonl · 224 KB</a></div>
     <div class="muted">the same coverage in 612 queries, each cut down to what it contributes (93% less text) · upstream master 8edf11b</div></li>
-  <li><a href="saxony-full/">Saxony, full</a>
+  <li><div class="head"><a href="saxony-full/">Saxony, full</a> <a class="dl" href="saxony-full/corpus.jsonl" download>corpus.jsonl · 2.2 MB</a></div>
     <div class="muted">3,110 queries on one database with history and areas (Geofabrik full-history extract of Sachsen, latest edit 2026-11-16) · upstream master 8edf11b</div></li>
 </ul>
 <h2>Run a suite yourself</h2>
-<p>Each run's <code>corpus.jsonl</code> holds its queries, one JSON object per line. To compare two builds, save this as <code>run.py</code>, run it once per build on the same database, and diff the results:</p>
+<p>Each run's <code>corpus.jsonl</code> (linked above) holds its queries, one JSON object per line. To compare two builds, save this as <code>run.py</code>, run it once per build on the same database, and diff the results:</p>
 <pre><code>#!/usr/bin/env python3
 """Run every query of a regression suite on one build and save each result, so that two builds
 can be compared with diff:
