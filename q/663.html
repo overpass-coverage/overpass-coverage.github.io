@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 663</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 663</p><h1>Query 663</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3843 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][out:json];
+nwr[&quot;operator&quot;=&quot;Emera&quot;][&quot;disused:amenity&quot;=&quot;fast_food&quot;](45.295481,-61.216632,45.343938,-61.028283)-&gt;.s0;
+way(bn.s0)-&gt;.s1;
+make info n=1-&gt;.s2;
+make stat k0=s2.count(wr),k1=((s2.max(abs(count_by_role(&quot;via&quot;)))&gt;s2.min((changeset()+count_tags())))?(s2.sum(abs(lat()))):(number(s2.u((type()+type()))))),k2=number(s2.u((timestamp()+suffix(t[&quot;addr:interpolation&quot;])))),k3=s2.max((-count_by_role(&quot;main&quot;)))-&gt;.s3;
+.s1 out (44.648114,-64.604302,44.718381,-64.578783) ids center;
+</pre><h2>Lines only this query runs (2)</h2><ul><li><a href="../src/overpass_api/statements/item_geometry.h.html#L283">overpass_api/statements/item_geometry.h:283</a></li><li><a href="../src/overpass_api/statements/item_geometry.h.html#L284">overpass_api/statements/item_geometry.h:284</a></li></ul></main></body></html>

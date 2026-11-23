@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1270</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1270</p><h1>Query 1270</h1><p class="muted">fuzz:3:output:926 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][out:json];
+way[&quot;operator:fr&quot;=&quot;Postes Canada&quot;][&quot;place&quot;~&quot;^loca&quot;](id:345797629,431657637,485323271,599438166,1343096416)-&gt;.s0;
+rel[&quot;brand:wikidata&quot;=&quot;Q6006077&quot;]-&gt;.s1;
+rel(r.s0)[&quot;maxspeed&quot;=&quot;110&quot;]-&gt;.s2;
+rel(bn.s0)[&quot;crossing&quot;~&quot;^uncont&quot;,i]-&gt;.s3;
+way(bn.s0)[&quot;royal_cypher&quot;]-&gt;.s4;
+.s1 out body;
+.s2 out (43.894951,-65.713756,43.956239,-65.698312) meta asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1522</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1522</p><h1>Query 1522</h1><p class="muted">fuzz:3:areas,complete:2926 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+rel[&quot;operator:wikipedia&quot;=&quot;en:Canada Post&quot;](43.819355,-66.161853,43.840476,-66.078088)-&gt;.s0;
+node(way_link.s0:2-)-&gt;.s1;
+node.s1(if:length()&gt;100)-&gt;.s2;
+.s2 &lt;&lt;-&gt;.s3;
+area[name=&quot;Ash Lake&quot;]-&gt;.s4;
+node(area.s4)(45.672388,-62.659288,45.723021,-62.639824)-&gt;.s5;
+.s0 out body 39 (44.665259,-63.595456,44.714270,-63.459351);
+.s4 out meta center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

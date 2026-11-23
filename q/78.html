@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 78</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 78</p><h1>Query 78</h1><p class="muted">fuzz:3:evaluators:918 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+rel(id:2439393,3029265,7333839,8817603,9311961)-&gt;.s0;
+.s0 &gt;-&gt;.s1;
+.s0 convert item k0=timestamp(),k1=lrs_min(lrs_isect(t[&quot;light:method&quot;],&quot;1;2&quot;)),k3=lrs_min(suffix(t[&quot;natural&quot;])),members=per_member((pos()&gt;3)),k2=lrs_min(&quot;yes&quot;)-&gt;.s2;
+if ((number(s2.u(suffix(t[&quot;lamp_mount&quot;])))&gt;((s2.count(ways)&gt;0)?(s2.count(nodes)):(s2.min(abs(count_tags())))))) { make yes n=s2.count(nwr)-&gt;.s3; }
+node(way_cnt.s1:2-)-&gt;.s4;
+.s0 out ids;
+.s2 out body asc;
+.s3 out tags geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

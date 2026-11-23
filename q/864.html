@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 864</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 864</p><h1>Query 864</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3048 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  relation[&quot;old_addr:housenumber&quot;=&quot;42G&quot;][&quot;bus&quot;~&quot;house&quot;,i](around:10000,45.853586,-63.490841);
+  way[&quot;bicycle_parking&quot;](around:10000,45.853586,-63.490841);
+  way[&quot;operator:wikidata&quot;=&quot;Q3480058&quot;](around:10000,45.853586,-63.490841);
+  node[&quot;drive_through&quot;=&quot;no&quot;](around:2000,45.853586,-63.490841);
+  relation[&quot;surface&quot;~&quot;asphalt|compacted|gravel|paved|rock&quot;](around:1000,45.853586,-63.490841);
+  node[&quot;brand:wikidata&quot;=&quot;Q6006077&quot;](around:10000,45.853586,-63.490841);
+  node[&quot;natural&quot;=&quot;tree_row&quot;](around:10000,45.853586,-63.490841);
+  relation[&quot;place&quot;~&quot;city|island|locality|village&quot;](around:10000,45.853586,-63.490841);
+  relation[&quot;man_made&quot;~&quot;goods_conveyor|mast|storage_tank|survey_point|tower|utility_pole&quot;](around:1000,45.853586,-63.490841);
+);
+out body center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

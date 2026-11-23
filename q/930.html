@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 930</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 930</p><h1>Query 930</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5579 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][out:xml];
+node(if:(is_closed()||(!is_date(id()))))[~&quot;^hig&quot;~&quot;foo&quot;](id:2437881882,9910761910,13648289520)-&gt;.s0;
+area[name=&quot;Broad Cove&quot;]-&gt;.s1;
+rel(area.s1)[&quot;demolished:railway&quot;=&quot;rail&quot;]-&gt;.s2;
+.s2 is_in-&gt;.s3;
+.s1 out 100 asc;
+.s3 out meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

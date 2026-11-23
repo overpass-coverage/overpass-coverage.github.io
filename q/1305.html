@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1305</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1305</p><h1>Query 1305</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:4814 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[bbox:44.501517,-64.508669,44.538141,-64.247528][out:csv(::&quot;count:relations&quot;,::&quot;count:ways&quot;,::count,::uid,::otype)][maxsize:1073741824];
+wr[&quot;destination:ref:to:lanes&quot;=&quot;|102 South;101 West|&quot;][&quot;postal_code&quot;=&quot;B0L 1G0&quot;]-&gt;.s0;
+complete(3).s0-&gt;.s1 { node(w); way(bn)[&quot;poles&quot;]; }
+if (((s0.sum(lon())*number(s0.u(t[&quot;addr:housenumber&quot;])))&gt;=s0.max(count_tags()))) { make yes n=s0.count(nwr)-&gt;.s2; } else { make no n=0-&gt;.s2; }
+way.s1(if:is_date(t[&quot;land_area&quot;]))-&gt;.s3;
+.s3 map_to_area-&gt;.s4;
+.s0 out (43.852820,-65.885395,43.873830,-65.864411);
+out geom meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

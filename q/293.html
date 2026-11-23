@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 293</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 293</p><h1>Query 293</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3114 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  way[&quot;operator&quot;~&quot;Accord|Bell\\ Aliant|Emera|Parkbridge|Shared&quot;][&quot;addr:county&quot;~&quot;sidewa&quot;,i](around:5000,44.431855,-64.963888);
+  nwr[&quot;highway&quot;=&quot;bus_stop&quot;](around:3000,44.431855,-64.963888);
+  nwr[&quot;phases&quot;~&quot;^(1|3)$&quot;](around:3000,44.431855,-64.963888);
+  node[&quot;leisure&quot;=&quot;park&quot;](around:3000,44.431855,-64.963888);
+  nwr[&quot;frequency&quot;~&quot;^(60)$&quot;,i](around:3000,44.431855,-64.963888);
+  node[&quot;destination:forward&quot;~&quot;Cape\\ St\\ Marys\\ ;Salmon\\ River;Bedford|Dartmouth\\ ;\\ Lawerncetown|Wolfville\\ :\\ Bedford&quot;](around:3000,44.431855,-64.963888);
+  node[&quot;building:levels&quot;~&quot;^(2|3)$&quot;](around:2000,44.431855,-64.963888);
+  node[&quot;natural&quot;~&quot;bay|grassland|ridge|tree|tree_row|wetland&quot;](around:3000,44.431855,-64.963888);
+  node[&quot;utility&quot;=&quot;telecom;power&quot;](around:3000,44.431855,-64.963888);
+  nwr[&quot;post:city&quot;=&quot;Tangier&quot;](around:2000,44.431855,-64.963888);
+  node[&quot;crossing&quot;~&quot;marked|unmarked&quot;](around:3000,44.431855,-64.963888);
+  node[&quot;animal_keeping&quot;~&quot;horse&quot;](around:3000,44.431855,-64.963888);
+  node[&quot;footway&quot;=&quot;crossing&quot;](around:1000,44.431855,-64.963888);
+  way[&quot;highway&quot;=&quot;bus_stop&quot;](around:3000,44.431855,-64.963888);
+);
+out body center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

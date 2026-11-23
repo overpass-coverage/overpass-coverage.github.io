@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1057</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1057</p><h1>Query 1057</h1><p class="muted">fuzz:3:evaluators:1120 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+nwr(45.824686,-61.988469,45.900855,-61.971195)(if:is_number(lrs_min(type())))[&quot;mooring&quot;!=&quot;yes&quot;][&quot;lit&quot;=&quot;no&quot;]-&gt;.s0;
+way.s0(if:((lrs_min(lrs_union(t[&quot;addr:city&quot;],&quot;name&quot;))+id())==lrs_min(lrs_union(lrs_union(t[&quot;oneway&quot;],&quot;name&quot;),&quot;1;2&quot;))))-&gt;.s1;
+.s1 convert stat k1=lrs_union(lrs_union(t[&quot;name&quot;],&quot;name&quot;),lrs_isect(&quot;1;2&quot;,&quot;1;2&quot;)),k0=number(t[&quot;water&quot;]),!&quot;golf&quot;,k2=lrs_min(lrs_isect(lrs_union(t[&quot;emergency&quot;],&quot;name&quot;),id()))-&gt;.s2;
+.s1 out body 50;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

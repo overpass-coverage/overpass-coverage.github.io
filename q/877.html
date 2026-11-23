@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 877</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 877</p><h1>Query 877</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:610 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Roads&quot;;[&quot;postal_code&quot;=&quot;B4H 3Y2&quot;][&quot;landuse&quot;=&quot;grass&quot;];[&quot;voltage&quot;=&quot;25000&quot;][&quot;religion&quot;!~&quot;^mu&quot;];[&quot;natural&quot;=&quot;coastline&quot;];)(&quot;Named things&quot;;[&quot;bicycle&quot;!=&quot;yes&quot;];&quot;amenity&quot;;)][timeout:180][maxsize:536870912];
+node(if:is_closed())(44.571343,-64.722937,44.844260,-64.627936)(id:1154236983,1325523404,1692566142,1715296587,2439370877,2480814056,4625306229,6967623032,11506028562,13532923431)-&gt;.s0;
+.s0 convert row k0=((is_closed()?((-changeset())):((lon()-number(t[&quot;light:method&quot;]))))&gt;number(t[&quot;addr:postcode&quot;])),::id=id()-&gt;.s1;
+rel(bw.s1:&quot;generator&quot;)-&gt;.s2;
+.s0 &lt;&lt;-&gt;.s3;
+node[&quot;power&quot;~&quot;^converter$&quot;,i][&quot;foot&quot;!~&quot;^ye&quot;][&quot;amenity&quot;!=&quot;nightclub&quot;]-&gt;.s4;
+.s0 out geom;
+.s3 out noids qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

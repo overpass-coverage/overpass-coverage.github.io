@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1193</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1193</p><h1>Query 1193</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:4782 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  way[&quot;length&quot;=&quot;3&quot;](around:3000,46.329482,-61.053113);
+  nwr[&quot;owner&quot;](around:500,46.329482,-61.053113);
+  way[&quot;gauge&quot;~&quot;1435&quot;](around:500,46.329482,-61.053113);
+  nwr[&quot;destination:ref:backward&quot;=&quot;NS 201&quot;](around:3000,46.329482,-61.053113);
+  nwr[&quot;highway&quot;~&quot;^(motorway|path|primary|stop|traffic_signals)$&quot;](around:500,46.329482,-61.053113);
+  relation[&quot;bridge:name&quot;](around:500,46.329482,-61.053113);
+  way[&quot;tower:type&quot;~&quot;communication&quot;](around:500,46.329482,-61.053113);
+);
+out tags center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

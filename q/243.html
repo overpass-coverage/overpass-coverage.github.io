@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 243</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 243</p><h1>Query 243</h1><p class="muted">fuzz:3:statements,areas:512 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+nwr(46.174134,-60.357733,46.215176,-60.350530)-&gt;.s0;
+.s0 map_to_area-&gt;.s1;
+nwr[&quot;old_addr:housenumber&quot;~&quot;^42G$&quot;]-&gt;.s2;
+rel(pivot.s1)-&gt;.s3;
+.s1 out meta qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

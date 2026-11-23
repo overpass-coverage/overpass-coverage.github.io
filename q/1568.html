@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1568</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1568</p><h1>Query 1568</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2298 · 2.17 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][maxsize:536870912][out:xml];
+way[&quot;highway&quot;=&quot;track&quot;][&quot;utility&quot;!=&quot;power&quot;](id:76527234,99837755,249155476,628446465,667503822,1056440724)-&gt;.s0;
+node(way_cnt.s0:1-2)-&gt;.s1;
+is_in(44.786232,-63.968595)-&gt;.s2;
+node(area.s2)[&quot;utility&quot;=&quot;power&quot;]-&gt;.s3;
+node.s3(if:(lrs_max(t[&quot;fire_hydrant:position&quot;])!=version()))-&gt;.s4;
+node.s3[&quot;colour&quot;!=&quot;orange&quot;]-&gt;.s5;
+foreach.s1-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s5 convert row ::id=id(),tags=count_tags();
+out;
+.s0 out skel geom;
+.s3 out meta asc geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

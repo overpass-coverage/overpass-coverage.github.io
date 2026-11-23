@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1392</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1392</p><h1>Query 1392</h1><p class="muted">fuzz:3::1003 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;footway&quot;)];
+wr(45.457561,-62.599247,45.606927,-62.431689)(if:is_closed())(if:number(t[&quot;width&quot;])&gt;37)[&quot;material&quot;=&quot;wood&quot;]-&gt;.s0;
+node(around.s0:100)[&quot;to&quot;=&quot;Green Route&quot;]-&gt;.s1;
+.s0 &gt;&gt;-&gt;.s2;
+wr[&quot;is_sidepath:of:name&quot;=&quot;Tannery Road&quot;][&quot;operator&quot;!=&quot;Accord&quot;]-&gt;.s3;
+wr[&quot;abandoned:railway&quot;=&quot;rail&quot;](44.562739,-63.806710,44.666164,-63.597567)(45.802427,-60.352313,45.880731,-60.256210)-&gt;.s4;
+.s0 out meta qt;
+.s1 out tags (44.247453,-64.336779,44.344711,-64.257394);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

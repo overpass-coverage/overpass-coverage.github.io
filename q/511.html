@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 511</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 511</p><h1>Query 511</h1><p class="muted">fuzz:3:areas,complete:777 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;lamp_mount&quot;)];
+node(44.871425,-63.597375,44.916709,-63.580819)(if:changeset()&gt;98000000)-&gt;.s0;
+node(around.s0:300)[&quot;nat_name:en&quot;!=&quot;Trans-Canada Highway&quot;]-&gt;.s1;
+complete(6).s1-&gt;.s2 { way(bn)[&quot;light:lit&quot;]; node(w); }
+node(way_cnt.s1:1)-&gt;.s3;
+way(around.s0:300)[&quot;service&quot;=&quot;parking_aisle&quot;]-&gt;.s4;
+.s0 out ids;
+.s2 out meta qt (44.607982,-63.651291,44.611566,-63.568377);
+.s4 out body;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

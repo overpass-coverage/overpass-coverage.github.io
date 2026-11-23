@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1101</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1101</p><h1>Query 1101</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5667 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:xml][maxsize:1073741824];
+rel(44.570769,-65.005918,44.582076,-64.991118)-&gt;.s0;
+node(way_cnt.s0:1-2)-&gt;.s1;
+.s1-&gt;._; foreach-&gt;.x((.x; &gt;;);)
+(._;)-&gt;.s2;
+if (is_number((s0.set(&quot;&quot;)+s0.u((t[&quot;structure&quot;]==&quot;2023-06-07&quot;?(user()):(user())))))) { make yes n=s0.count(nwr)-&gt;.s3; }
+if ((number(s0.u((is_closed()?(suffix(t[&quot;landuse&quot;])):(&quot;commercial&quot;))))&gt;1e3)) { make yes n=s0.count(nwr)-&gt;.s4; } else { make no n=0-&gt;.s4; }
+.s0 out meta (44.894041,-64.920952,44.988807,-64.879695);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

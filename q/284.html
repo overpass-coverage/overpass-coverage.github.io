@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 284</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 284</p><h1>Query 284</h1><p class="muted">fuzz:3::356 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+node[~&quot;^pow&quot;~&quot;minor&quot;](id:818535479,850194669,1062750981,1454956456,2439319170,2479445310,2487374648,9952111742)-&gt;.s0;
+way(r.s0:&quot;to&quot;)[!&quot;type&quot;]-&gt;.s1;
+way(r.s0:&quot;main&quot;)[&quot;service&quot;=&quot;parking_aisle&quot;]-&gt;.s2;
+rel(r.s1)-&gt;.s3;
+rel.s3(44.137416,-64.457064,44.389526,-64.112153)-&gt;.s4;
+.s4 convert row ::id=id(),tags=count_tags();
+out;
+.s0 out meta bb;
+.s1 out ids center;
+.s2 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

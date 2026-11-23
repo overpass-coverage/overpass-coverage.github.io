@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1605</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1605</p><h1>Query 1605</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:4878 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;highway&quot;~&quot;bus_stop|motorway|residential|steps|stop&quot;](around:500,45.574090,-62.062655);
+  way[&quot;communication&quot;=&quot;line&quot;](around:500,45.574090,-62.062655);
+  relation[&quot;destination&quot;=&quot;Wright Avenue&quot;](around:1000,45.574090,-62.062655);
+  relation[&quot;man_made&quot;~&quot;goods_conveyor|mast|planter|storage_tank|tower&quot;](around:3000,45.574090,-62.062655);
+  nwr[&quot;postal_code&quot;=&quot;B4E 3G7&quot;](around:2000,45.574090,-62.062655);
+  node[&quot;shop&quot;~&quot;beverages|deli|games&quot;](around:500,45.574090,-62.062655);
+  relation[&quot;natural&quot;=&quot;wetland&quot;](around:500,45.574090,-62.062655);
+  relation[&quot;created_by&quot;~&quot;JOSM&quot;,i](around:1000,45.574090,-62.062655);
+  nwr[&quot;capacity&quot;~&quot;127|15\\ litres|159\\ litres|48&quot;,i](around:500,45.574090,-62.062655);
+  relation[&quot;utility&quot;](around:5000,45.574090,-62.062655);
+  way[&quot;highway&quot;~&quot;bus_stop|cycleway|motorway|primary|steps|turning_circle&quot;,i](around:500,45.574090,-62.062655);
+  way[&quot;ford&quot;~&quot;^(stepping_stones)$&quot;][&quot;lane_markings&quot;~&quot;bollar|nordic|unmark&quot;,i](around:500,45.574090,-62.062655);
+  nwr[&quot;is_in:municipality&quot;~&quot;Halifax\\ Regional\\ Municipality&quot;](around:500,45.574090,-62.062655);
+);
+out center tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

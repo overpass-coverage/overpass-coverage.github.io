@@ -1,9 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 41</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 41</p><h1>Query 41</h1><p class="muted">fuzz:1::1468 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-nwr[&quot;sidewalk&quot;=&quot;no&quot;][&quot;footway&quot;=&quot;crossing&quot;](47.521898,-59.243317,47.604573,-58.983654)[~&quot;^tra&quot;~&quot;gra&quot;]-&gt;.s0;
-node(way_cnt.s0:1)-&gt;.s1;
-way(if:changeset()&gt;167000000)(43.380572,-65.813388,43.594267,-65.530729)(45.603559,-61.273856,45.613616,-61.235026)-&gt;.s2;
-way(45.374381,-61.901343,45.564072,-61.702058)(around:100,46.217280,-60.101294)(45.222874,-63.219787,45.469867,-63.120498)-&gt;.s3;
-way.s0(if:date(timestamp())&gt;date(&quot;2016-01-01&quot;))-&gt;.s4;
-.s1 out ids asc;
-.s4 out meta (45.416791,-61.850415,45.493416,-61.838627);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 41</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 41</p><h1>Query 41</h1><p class="muted">fuzz:3:evaluators:1378 · 0.00 s CPU · expected status <code>query-error: line N: parse error: &quot;,&quot; cannot be used as binary operator</code></p><pre class="query">[timeout:60][maxsize:536870912];
+node(id:729908827,809985079,1374944413,1630453713,1749073594,3510961917,3539331831,5413261537)-&gt;.s0;
+make stat k0=date(s0.max(timestamp())),k1=s0.u(lrs_min(t[&quot;water_source&quot;])),k2=lrs_union(((s0.count(deriveds)&lt;42)?(s0.min(&quot;&quot;)):(s0.set(suffix(user())))),((s0.sum(count_distinct_members())&lt;3)?(s0.max(suffix(user()))):(s0.u(t[&quot;highway&quot;])))),::geom=s0.gcat(center(geom())),bad=date(1,2)-&gt;.s1;
+if ((s0.sum((-1e3))==1)) { make yes n=s0.count(nwr)-&gt;.s2; }
+.s2 convert item ::id=id(),k3=((is_number(t[&quot;waterway&quot;])?((&quot;x;y&quot;+t[&quot;land_area&quot;])):(count_tags()))+((suffix(t[&quot;created_by&quot;])+timestamp())+t[&quot;voltage&quot;])),k1=((!(count_distinct_by_role(&quot;subarea&quot;)==changeset()))?(suffix((type()+suffix(t[&quot;addr:postcode&quot;])))):(suffix(suffix(suffix(t[&quot;operator&quot;]))))),k0=lrs_in(user(),lrs_isect(&quot;1;2&quot;,lrs_union(&quot;a;b;c&quot;,lrs_union(t[&quot;operator&quot;],&quot;name&quot;)))),k2=lrs_min(lrs_isect(lrs_isect(&quot;1;2&quot;,t[&quot;addr:housenumber&quot;]),&quot;a;b;c&quot;))-&gt;.s3;
+.s3 convert item ::geom=center(poly(lstr(pt(44.950016,-64.131171),pt(44.951016,-64.131171),pt(44.951016,-64.130171),pt(44.950016,-64.131171)))),k0=(-changeset()),::id=id(),k1=lrs_in(lrs_min(lrs_isect(lrs_union(t[&quot;maxheight&quot;],&quot;name&quot;),&quot;a;b;c&quot;)),(is_tag(&quot;created_by&quot;)?(t[&quot;footway&quot;]):(type())))-&gt;.s4;
+.s2 out body center;
+.s4 out body bb;
+</pre><h2>Lines only this query runs (3)</h2><ul><li><a href="../src/overpass_api/statements/string_endomorphisms.h.html#L68">overpass_api/statements/string_endomorphisms.h:68</a></li><li><a href="../src/overpass_api/statements/string_endomorphisms.h.html#L69">overpass_api/statements/string_endomorphisms.h:69</a></li><li><a href="../src/overpass_api/statements/string_endomorphisms.h.html#L70">overpass_api/statements/string_endomorphisms.h:70</a></li></ul></main></body></html>

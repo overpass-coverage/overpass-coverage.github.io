@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 249</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 249</p><h1>Query 249</h1><p class="muted">fuzz:3:evaluators:886 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+way(around:50,45.605448,-61.293937)-&gt;.s0;
+way.s0(44.986811,-64.583525,45.163161,-64.399571)-&gt;.s1;
+.s1 convert item k1=(number(&quot;a&quot;)-lat()),::geom=geom(),::id=id(),::=::,k0=(((1||is_closed())||is_number(t[&quot;addr:housenumber&quot;]))?((suffix(user())+(t[&quot;maxspeed&quot;]==&quot;camp_pitch&quot;?(&quot;a&quot;):(type())))):(suffix(lrs_min(t[&quot;height&quot;]))))-&gt;.s2;
+make info n=1,c=s1.min(lrs_max(&quot;1;2&quot;)),v=lrs_union(s1.max((0?(t[&quot;power&quot;]):(id()))),s1.max(t[&quot;land_area&quot;]))-&gt;.s3;
+.s1 convert row k2=lrs_union(lrs_isect(lrs_isect(lrs_union(t[&quot;addr:county&quot;],&quot;name&quot;),lrs_union(t[&quot;crossing:markings&quot;],&quot;name&quot;)),suffix(t[&quot;landuse&quot;])),lrs_union(t[&quot;maxspeed&quot;],&quot;name&quot;)),k0=lrs_min(t[&quot;light:lit&quot;]),k1=is_date(lrs_min(lrs_union(t[&quot;ref&quot;],&quot;name&quot;))),members=per_member(mtype())-&gt;.s4;
+.s4 convert row ::id=id(),tags=count_tags();
+out;
+.s1 out body;
+.s3 out ids (44.447690,-64.703566,44.498553,-64.648282);
+.s4 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

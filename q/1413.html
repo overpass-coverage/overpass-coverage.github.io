@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1413</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1413</p><h1>Query 1413</h1><p class="muted">fuzz:3:areas,complete:2766 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+node[~&quot;^len&quot;~&quot;1&quot;](poly:&#x27;44.764902 -63.369304 44.767705 -63.386815 44.762419 -63.410756 44.742334 -63.398386 44.725301 -63.371158 44.740267 -63.335607&#x27;)(poly:&quot;44.267531 -64.487276 44.283240 -64.479423 44.273038 -64.516172 44.265178 -64.513232 44.266059 -64.518682 44.250355 -64.482125&quot;)-&gt;.s0;
+.s0 is_in-&gt;.s1;
+way(r.s1)[&quot;natural&quot;!~&quot;cape|grass|grassland|peak|reef|ridge|rock|scrub|tree|water|wood&quot;]-&gt;.s2;
+area[name=&quot;Lakeview&quot;]-&gt;.s3;
+rel(area.s3)[&quot;craft&quot;=&quot;goldsmith&quot;]-&gt;.s4;
+area[name=&quot;Bear River 6B&quot;]-&gt;.s5;
+nwr(area.s5)[&quot;lamp:count&quot;=&quot;2&quot;]-&gt;.s6;
+foreach.s6-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s0 out skel asc (44.769126,-63.127565,44.840278,-63.084937);
+.s4 out ids;
+.s5 out body bb asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

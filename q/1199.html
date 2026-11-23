@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1199</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1199</p><h1>Query 1199</h1><p class="muted">fuzz:3:statements,areas:128 · 2.00 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;fire_hydrant:type&quot;)];
+way[&quot;structure&quot;!~&quot;solid|tubular&quot;](45.216783,-61.196179,45.381496,-61.009065)-&gt;.s0;
+node(way_cnt.s0:1)-&gt;.s1;
+.s1 is_in-&gt;.s2;
+foreach.s2-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s0 out body asc;
+.s1 out ids;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/data/tilewise_geometry.h.html#L719">overpass_api/data/tilewise_geometry.h:719</a></li></ul></main></body></html>

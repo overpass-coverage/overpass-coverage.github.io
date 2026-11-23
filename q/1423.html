@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1423</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1423</p><h1>Query 1423</h1><p class="muted">fuzz:3:evaluators:1280 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+node(poly:&quot;45.592890 -62.962646 45.587893 -62.964743 45.578737 -62.935449 45.583738 -62.935892&quot;)[&quot;post:city&quot;~&quot;^Sheet\\ &quot;](id:1216827219,2332509138,2493974700,2511033440,3511013214,3634723799,5135332871,6239116570,8474342029,11820287445,13463957491)-&gt;.s0;
+make stat k0=s0.min(number(user())),k1=(-s0.count(wr)),k2=(((s0.min((count_members()+id()))&lt;1e3)&amp;&amp;(number(s0.u(suffix(type())))&lt;3))?(s0.count(nr)):(s0.count(nwr)))-&gt;.s1;
+.s0 &lt;&lt;-&gt;.s2;
+.s0 out skel bb;
+.s2 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

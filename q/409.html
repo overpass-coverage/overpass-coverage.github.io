@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 409</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 409</p><h1>Query 409</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1317 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::lat,&quot;place&quot;)][maxsize:1073741824];
+nwr(poly:&#x27;44.468313 -63.714070 44.458217 -63.730153 44.452053 -63.729494 44.457134 -63.716790&#x27;)(46.555805,-60.825779,46.577149,-60.785351)-&gt;.s0;
+node(around.s0:100)[&quot;direction&quot;~&quot;^for&quot;,i]-&gt;.s1;
+nwr.s0(if:is_number(t[&quot;light:lit&quot;]))-&gt;.s2;
+.s2 out qt body;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

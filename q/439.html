@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 439</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 439</p><h1>Query 439</h1><p class="muted">fuzz:3:areas,complete:937 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+node(id:1031928250,1046055072,1561644938,2435986310,2479637825,3518476928,4558525524,4843515139,6266952098,7174005889,7956150912)(if:is_closed())(around:10,43.924270,-66.043045)-&gt;.s0;
+area[name=&quot;Windsor Park&quot;]-&gt;.s1;
+rel(area.s1)[&quot;destination:ref:backward&quot;=&quot;NS 201&quot;]-&gt;.s2;
+.s1 &gt;&gt;-&gt;.s3;
+.s2 is_in-&gt;.s4;
+.s4 is_in-&gt;.s5;
+.s1 out skel qt;
+.s2 out tags 19 (44.794728,-63.115883,44.813161,-63.065994);
+.s4 out skel center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

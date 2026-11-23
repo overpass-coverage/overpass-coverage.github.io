@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 876</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 876</p><h1>Query 876</h1><p class="muted">fuzz:3:evaluators:586 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+way[&quot;blind&quot;=&quot;yes&quot;][&quot;is_sidepath:of:name&quot;!~&quot;^Front\\ &quot;]-&gt;.s0;
+way.s0[!&quot;height&quot;]-&gt;.s1;
+for.s1-&gt;.s2 (suffix(user())) { convert item ::id=id(),g=_.val; }
+.s1 out skel 47;
+.s2 out meta qt (43.558340,-65.809412,43.589165,-65.748125);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

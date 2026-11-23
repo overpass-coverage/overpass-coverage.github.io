@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1766</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1766</p><h1>Query 1766</h1><p class="muted">fuzz:3:output:379 · 0.22 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][out:popup(&quot;Shops&quot;;[&quot;natural&quot;!=&quot;land&quot;];[&quot;highway&quot;!~&quot;^mo&quot;][&quot;sidewalk&quot;];&quot;amenity&quot;;)(&quot;Named things&quot;;[&quot;bus:lanes&quot;];[&quot;camera:direction&quot;=&quot;15&quot;][&quot;denomination&quot;];&quot;ref&quot;;)][maxsize:536870912];
+nwr(if:date(timestamp())&gt;date(&quot;2009-01-01&quot;))[&quot;network&quot;=&quot;CA:NS:S&quot;]-&gt;.s0;
+node.s0(45.128353,-64.687171,45.137918,-64.475511)-&gt;.s1;
+.s0 &lt;&lt;-&gt;.s2;
+node(w.s0:-1)-&gt;.s3;
+.s0 out meta geom;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/output_formats/output_popup.cc.html#L52">overpass_api/output_formats/output_popup.cc:52</a></li></ul></main></body></html>

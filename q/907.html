@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 907</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 907</p><h1>Query 907</h1><p class="muted">fuzz:3:output:755 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:xml][maxsize:268435456][timeout:180];
+way[&quot;crossing:markings&quot;][~&quot;^sur&quot;~&quot;gr&quot;](45.353964,-63.274945,45.479474,-63.048101)-&gt;.s0;
+.s0 &lt;-&gt;.s1;
+way(r.s1)-&gt;.s2;
+.s1 &gt;-&gt;.s3;
+node(around.s2:100)[&quot;voltage&quot;!=&quot;25000&quot;]-&gt;.s4;
+.s0 out asc skel;
+.s3 out qt (44.514807,-64.403340,44.537172,-64.269175);
+.s4 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

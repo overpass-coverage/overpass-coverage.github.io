@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 763</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 763</p><h1>Query 763</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3986 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;material&quot;~&quot;aluminium|metal&quot;](around:1000,46.209326,-59.969348);
+  relation[&quot;capacity&quot;~&quot;15\\ litres|159\\ litres|48&quot;,i](around:3000,46.209326,-59.969348);
+  way[&quot;building&quot;=&quot;commercial&quot;](around:2000,46.209326,-59.969348);
+  way[&quot;maxspeed&quot;=&quot;70&quot;](around:1000,46.209326,-59.969348);
+  nwr[&quot;power&quot;~&quot;converter|pole&quot;,i](around:1000,46.209326,-59.969348);
+  relation[&quot;lanes&quot;=&quot;4&quot;](around:1000,46.209326,-59.969348);
+  relation[&quot;to&quot;~&quot;Green\\ Route&quot;](around:3000,46.209326,-59.969348);
+  way[&quot;highway&quot;=&quot;primary&quot;](around:1000,46.209326,-59.969348);
+  node[&quot;natural&quot;=&quot;cape&quot;](around:500,46.209326,-59.969348);
+  relation[&quot;waterway&quot;~&quot;^(dam|river)$&quot;](around:1000,46.209326,-59.969348);
+  nwr[&quot;lit&quot;~&quot;no|yes&quot;][&quot;crossing:markings&quot;~&quot;neighb|orange&quot;,i](around:1000,46.209326,-59.969348);
+  node[&quot;to&quot;=&quot;Green Route&quot;](around:1000,46.209326,-59.969348);
+  node[&quot;power&quot;~&quot;^(converter|line|minor_line|tower)$&quot;,i](around:1000,46.209326,-59.969348);
+  relation[&quot;length&quot;](around:1000,46.209326,-59.969348);
+);
+out center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

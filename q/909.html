@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 909</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 909</p><h1>Query 909</h1><p class="muted">fuzz:3::43 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+rel[&quot;brand:wikipedia&quot;=&quot;en:Walmart&quot;](45.411501,-63.559150,45.483828,-63.431029)[&quot;direction&quot;~&quot;^(290|backward|forward)$&quot;]-&gt;.s0;
+.s0 &gt;&gt;-&gt;.s1;
+way(if:count_tags()&gt;2)[&quot;highway&quot;!=&quot;turning_circle&quot;](id:156998036,159357469,460059714,480730428,489144272,632538592,674171150,763141353,1217459533)-&gt;.s2;
+node(way_cnt.s0:2-)-&gt;.s3;
+node(around.s3:20)[&quot;maxheight&quot;]-&gt;.s4;
+.s2 out body center;
+.s3 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

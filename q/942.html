@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 942</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 942</p><h1>Query 942</h1><p class="muted">fuzz:3:evaluators:554 · 0.10 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+way(poly:&#x27;44.650592 -64.582348 44.652879 -64.578701 44.655797 -64.591479 44.661122 -64.585550 44.668143 -64.596761 44.668919 -64.610612 44.666533 -64.616311 44.671325 -64.631467 44.658488 -64.633813 44.658379 -64.648567 44.655705 -64.644448 44.653591 -64.643234 44.657491 -64.652253 44.643822 -64.664519 44.636782 -64.644487 44.631898 -64.662059 44.624892 -64.652505 44.625867 -64.633274 44.626334 -64.617911 44.618604 -64.616665 44.625759 -64.615977 44.622668 -64.614627 44.612111 -64.610654 44.617677 -64.604795 44.625221 -64.602554 44.617177 -64.587062 44.627487 -64.598432 44.619439 -64.581648 44.622097 -64.574911 44.633529 -64.595639&#x27;)-&gt;.s0;
+for.s0-&gt;.s1 (version()) { ._ out count; }
+make info c=(((s1.max(lrs_max(lrs_union(t[&quot;crossing:markings&quot;],&quot;name&quot;)))&lt;0.5)?(s1.min(version())):(s1.max(lrs_min(&quot;1;2&quot;))))/s1.max(lrs_max(&quot;1;2&quot;))),v=((s1.sum(count_members())&lt;1)?(s1.set(number(t[&quot;addr:interpolation&quot;]))):(s1.max(count_tags()))),n=1-&gt;.s2;
+node(r.s0)-&gt;.s3;
+for.s3-&gt;.s4 ((-date(&quot;2018-01-01&quot;))) { convert item ::id=id(),g=_.val; }
+.s3 out skel 45;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

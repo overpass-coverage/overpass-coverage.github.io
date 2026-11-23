@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 529</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 529</p><h1>Query 529</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:4566 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  nwr[&quot;cycleway:both&quot;~&quot;^(no)$&quot;,i](around:5000,43.828081,-66.117994);
+  way[&quot;ford&quot;=&quot;stepping_stones&quot;][&quot;stop&quot;~&quot;chain_|no|transf&quot;,i](around:25000,43.828081,-66.117994);
+  node[&quot;manufacturer&quot;=&quot;Lamassu&quot;](around:25000,43.828081,-66.117994);
+  node[&quot;place&quot;=&quot;village&quot;](around:25000,43.828081,-66.117994);
+  way[&quot;ford&quot;=&quot;stepping_stones&quot;](around:2000,43.828081,-66.117994);
+  way[&quot;unsigned_ref&quot;=&quot;1374&quot;](around:25000,43.828081,-66.117994);
+);
+out geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

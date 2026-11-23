@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 641</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 641</p><h1>Query 641</h1><p class="muted">fuzz:3:output:163 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][out:csv(::&quot;count:nodes&quot;,::timestamp,::lon,::&quot;count:ways&quot;,::&quot;count:areas&quot;,::changeset;false)];
+way(id:467776732,1321540329,1528872193,1575706626)-&gt;.s0;
+way(r.s0:&quot;side_stream&quot;)[&quot;building&quot;~&quot;^apart&quot;]-&gt;.s1;
+foreach.s0-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s0 out tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

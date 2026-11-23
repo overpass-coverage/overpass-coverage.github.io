@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1030</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1030</p><h1>Query 1030</h1><p class="muted">fuzz:3:poi,areas:1089 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+node(44.616019,-65.767226,44.630286,-65.754292)-&gt;.s0;
+area[name=&quot;Carrigan Lake&quot;]-&gt;.s1;
+node(area.s1)[&quot;natural&quot;=&quot;scrub&quot;]-&gt;.s2;
+rel.s1[&quot;loc_name&quot;]-&gt;.s3;
+.s1 out skel qt;
+.s3 out body qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

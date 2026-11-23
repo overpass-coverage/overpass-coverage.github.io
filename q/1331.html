@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1331</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1331</p><h1>Query 1331</h1><p class="muted">fuzz:3:statements,areas:1276 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+node(if:is_closed())(poly:&#x27;45.338335 -62.306309 45.335035 -62.333256 45.319700 -62.342338 45.317846 -62.331187 45.301418 -62.318367 45.311773 -62.315189 45.294700 -62.304707 45.305842 -62.308656 45.297393 -62.297108 45.311430 -62.301998&#x27;)[&quot;couplings&quot;!~&quot;2&quot;]-&gt;.s0;
+node.s0(if:id()&gt;8000000000)-&gt;.s1;
+.s1 is_in-&gt;.s2;
+.s1 out ids asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

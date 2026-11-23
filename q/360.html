@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 360</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 360</p><h1>Query 360</h1><p class="muted">fuzz:3:evaluators:1307 · 0.17 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+nwr[&quot;amenity&quot;=&quot;veterinary&quot;]-&gt;.s0;
+rel(bn.s0)[&quot;population&quot;=&quot;78&quot;]-&gt;.s1;
+.s0 convert row k2=lrs_isect(lrs_isect(t[&quot;utility&quot;],lrs_isect(&quot;1;2&quot;,&quot;a;b;c&quot;)),(is_tag(&quot;footway&quot;)?(suffix(t[&quot;fire_hydrant:type&quot;])):(user()))),k1=((lrs_in(user(),&quot;a;b;c&quot;)?(suffix(suffix(t[&quot;ref&quot;]))):(timestamp()))+t[&quot;addr:housenumber&quot;]),k3=(((t[&quot;phases&quot;]==&quot;2 North&quot;?(t[&quot;layer&quot;]):(user()))&lt;(t[&quot;addr:county&quot;]==&quot;land&quot;?(user()):(t[&quot;emergency&quot;])))?(count_distinct_members()):((is_number(suffix(t[&quot;post:city&quot;]))?(t[&quot;fire_hydrant:type&quot;]):(type())))),k0=lrs_min(lrs_isect(lrs_isect(&quot;a;b;c&quot;,&quot;1;2&quot;),lrs_union(t[&quot;land_area&quot;],&quot;name&quot;)))-&gt;.s2;
+wr(bn.s2)-&gt;.s3;
+.s0 out meta bb;
+.s2 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

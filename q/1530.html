@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1530</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1530</p><h1>Query 1530</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5280 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;maxheight&quot;=&quot;3.3&quot;](around:3000,44.242187,-64.451074);
+  relation[&quot;seamark:light:height&quot;~&quot;^(14|24)$&quot;,i](around:4828,44.242187,-64.451074);
+  node[&quot;pumping_station&quot;~&quot;water&quot;,i](around:4828,44.242187,-64.451074);
+  way[&quot;height&quot;~&quot;^(10|54|58|6|8)$&quot;,i](around:4828,44.242187,-64.451074);
+  node[&quot;postal_code&quot;=&quot;B3K 5W4&quot;](around:4828,44.242187,-64.451074);
+  node[&quot;destination&quot;](around:2000,44.242187,-64.451074);
+  node[&quot;building&quot;~&quot;hangar|semidetached_house|shelter|static_caravan|yes&quot;](around:4828,44.242187,-64.451074);
+  way[&quot;building&quot;~&quot;nursing_home|synagogue&quot;](around:500,44.242187,-64.451074);
+  relation[&quot;owner&quot;~&quot;Canadian\\ National\\ Railway|Pharmacist\\ Owner|Sackville\\ Manor|Sprigfield\\ Estates&quot;](around:4828,44.242187,-64.451074);
+  relation[&quot;landuse&quot;~&quot;^(cemetery|meadow|quarry|residential)$&quot;](around:500,44.242187,-64.451074);
+  nwr[&quot;capacity&quot;~&quot;^(127|159\\ litres|48)$&quot;][&quot;collection_times&quot;~&quot;1|dusk\\-d|yes&quot;,i](around:5000,44.242187,-64.451074);
+  relation[&quot;group_only&quot;=&quot;no&quot;](around:1000,44.242187,-64.451074);
+);
+out body center qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

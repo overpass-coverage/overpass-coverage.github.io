@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 833</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 833</p><h1>Query 833</h1><p class="muted">fuzz:3:evaluators:1356 · 0.08 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][bbox:44.065174,-65.773911,44.100856,-65.416097];
+node(poly:&#x27;45.122895 -63.347965 45.130628 -63.355763 45.141974 -63.364934 45.152164 -63.388883 45.127378 -63.441052 45.106326 -63.417308 45.100552 -63.408918 45.077415 -63.405707 45.096328 -63.386226 45.091262 -63.377172&#x27;)-&gt;.s0;
+.s0 convert item k0=suffix(suffix(t[&quot;phases&quot;])),k1=lon(),k2=user(),k3=t[&quot;addr:district&quot;],::id=id()-&gt;.s1;
+rel(br.s1)-&gt;.s2;
+(.s2; - .s0;)-&gt;.s3;
+.s2 out meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,5 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1018</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1018</p><h1>Query 1018</h1><p class="muted">fuzz:3:evaluators:1220 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;foot&quot;)];
+nwr[&quot;postal_code&quot;=&quot;B5A 5R1&quot;](if:(!(is_date(timestamp())||lrs_in(&quot;a&quot;,t[&quot;land_area&quot;]))))-&gt;.s0;
+way.s0(if:is_date(id()))-&gt;.s1;
+.s0 out ids geom asc (44.737858,-63.904146,44.778793,-63.810392);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

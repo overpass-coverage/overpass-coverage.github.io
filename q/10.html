@@ -1,11 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 10</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 10</p><h1>Query 10</h1><p class="muted">fuzz:1:areas,complete:703 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;postal_code&quot;)];
-way(id:224303335,478284113,676372341,958848598,1266881566,1428122608)-&gt;.s0;
-area[name=&quot;Chain Lakes&quot;]-&gt;.s1;
-rel(area.s1)(46.345433,-60.984138,46.416227,-60.974981)-&gt;.s2;
-rel(bn.s2)-&gt;.s3;
-.s2 &lt;&lt;-&gt;.s4;
-wr(bn.s1)-&gt;.s5;
-.s2 out tags;
-.s3 out ids;
-.s5 out skel 48;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 10</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 10</p><h1>Query 10</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:469 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][out:json];
+way(id:169635649,235760948,347957068,462416056,491209863,623446163,634360033,730069753,1414611864,1452813141,1463700739)-&gt;.s0;
+nw[~&quot;^destination$&quot;~&quot;^Highway 104$&quot;][!&quot;plant:output:electricity&quot;]-&gt;.s1;
+.s1 &gt;-&gt;.s2;
+for.s2-&gt;.s3 (lrs_max(id())) { make group value=_.val,n=count(nodes),w=count(ways); }
+area[name=&quot;Black Brook Lake&quot;]-&gt;.s4;
+way(area.s4)[&quot;power&quot;=&quot;minor_line&quot;]-&gt;.s5;
+.s1 out center tags;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1498</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1498</p><h1>Query 1498</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1789 · 0.09 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;is_sidepath:of:name&quot;~&quot;Kent\\ Avenue&quot;](around:4828,45.064596,-64.387406);
+  node[&quot;building:levels&quot;~&quot;^(16|19|2|7)$&quot;,i](around:5000,45.064596,-64.387406);
+  way[&quot;railway&quot;~&quot;abandoned|level_crossing|rail|switch&quot;](around:4828,45.064596,-64.387406);
+  nwr[&quot;created_by&quot;~&quot;JOSM&quot;](around:3000,45.064596,-64.387406);
+  way[&quot;direction&quot;=&quot;forward&quot;](around:1000,45.064596,-64.387406);
+  way[&quot;building&quot;~&quot;house|residential|shed|shelter|warehouse|yes&quot;](around:1000,45.064596,-64.387406);
+  node[&quot;highway&quot;=&quot;crossing&quot;](around:4828,45.064596,-64.387406);
+  way[&quot;parking:left:orientation&quot;=&quot;diagonal&quot;](around:5000,45.064596,-64.387406);
+  node[&quot;maxspeed&quot;=&quot;100&quot;](around:5000,45.064596,-64.387406);
+  relation[&quot;seamark:light:height&quot;](around:4828,45.064596,-64.387406);
+  nwr[&quot;brand:wikidata&quot;~&quot;Q1032400|Q2241604|Q2974996|Q6006077|Q62537250|Q6970842|Q7366633&quot;][&quot;network:wikipedia&quot;~&quot;storag&quot;,i](around:4828,45.064596,-64.387406);
+  way[&quot;landuse&quot;~&quot;^(cemetery|meadow|quarry|residential)$&quot;,i](around:5000,45.064596,-64.387406);
+);
+out body center qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

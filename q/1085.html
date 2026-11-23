@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1085</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1085</p><h1>Query 1085</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:4639 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][out:csv(::version,::&quot;count:areas&quot;,::changeset,::&quot;count:nodes&quot;,&quot;source&quot;,::timestamp,::lon,&quot;cables&quot;,&quot;water&quot;)][maxsize:1073741824][bbox:44.747193,-65.023819,45.030248,-64.641720];
+nw[&quot;building&quot;!~&quot;apartments|garage|nursing_home|shed|shelter&quot;][&quot;post:city&quot;!=&quot;Scotsburn&quot;](44.591874,-63.497724,44.637841,-63.430641)-&gt;.s0;
+node(way_link.s0:2-)-&gt;.s1;
+area[name=&quot;Ship Harbour&quot;]-&gt;.s2;
+nwr(area.s2)[&quot;utility&quot;=&quot;telecom;power&quot;]-&gt;.s3;
+.s0 out center qt (45.178532,-61.437076,45.181434,-61.328416) tags 5;
+.s1 out bb body;
+.s2 out qt body;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

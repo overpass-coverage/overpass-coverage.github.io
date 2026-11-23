@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1587</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1587</p><h1>Query 1587</h1><p class="muted">fuzz:3:areas,complete:2962 · 1.30 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+wr[&quot;landuse&quot;=&quot;winter_sports&quot;](44.575407,-63.668153,44.674021,-63.469286)(if:id()&gt;8000000000)(if:uid()&gt;18000000)-&gt;.s0;
+.s0 map_to_area-&gt;.s1;
+.s0 &lt;-&gt;.s2;
+is_in(45.469227,-61.801700)-&gt;.s3;
+rel(area.s3)(44.886631,-62.567097,44.951445,-62.479113)-&gt;.s4;
+.s4 is_in-&gt;.s5;
+.s1 out count;
+.s3 out ids bb 40;
+.s4 out skel 43;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1508</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1508</p><h1>Query 1508</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2258 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  way[&quot;waterway&quot;~&quot;^(dam|river)$&quot;](around:5000,43.792975,-64.931738);
+  nwr[&quot;telecom:medium&quot;~&quot;fibre&quot;](around:4828,43.792975,-64.931738);
+  nwr[&quot;bicycle&quot;~&quot;designated|yes&quot;][&quot;cycleway:both&quot;~&quot;100|Minevi|retail|yes&quot;,i](around:3000,43.792975,-64.931738);
+  way[&quot;tactile_paving&quot;~&quot;no&quot;][&quot;sidewalk:both&quot;~&quot;\\-1&quot;,i](around:4828,43.792975,-64.931738);
+  way[&quot;loc_name&quot;=&quot;Marine Drive&quot;](around:4828,43.792975,-64.931738);
+  nwr[&quot;sidewalk&quot;~&quot;both|no|right&quot;](around:4828,43.792975,-64.931738);
+  node[&quot;building:material&quot;~&quot;plaster&quot;,i](around:4828,43.792975,-64.931738);
+  way[&quot;amenity&quot;=&quot;drinking_water&quot;][&quot;telecom:medium&quot;~&quot;right|swimmi&quot;,i](around:2000,43.792975,-64.931738);
+);
+out geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

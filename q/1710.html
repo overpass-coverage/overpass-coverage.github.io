@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1710</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1710</p><h1>Query 1710</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2905 · 0.10 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  nwr[&quot;operator&quot;~&quot;^(Accord|Killam\\ Properties)$&quot;](around:10000,44.737310,-63.305194);
+  way[&quot;building&quot;=&quot;detached&quot;](around:10000,44.737310,-63.305194);
+  node[&quot;maxspeed:forward&quot;~&quot;^(60)$&quot;](around:10000,44.737310,-63.305194);
+  way[&quot;maxspeed&quot;~&quot;110|20|60|70|80&quot;](around:3000,44.737310,-63.305194);
+  nwr[&quot;light:lit&quot;~&quot;dusk\\-dawn&quot;,i](around:3000,44.737310,-63.305194);
+  node[&quot;operator&quot;~&quot;Accord|Bell\\ Aliant|Canada\\ Post|Glooscap\\ Energy|Municipality\\ of\\ the\\ District\\ of\\ Argyle|Nova\\ Scotia\\ Power|Shared|South\\ Queens\\ Middle\\ School&quot;][&quot;loc_name&quot;~&quot;58|unpave&quot;,i](around:10000,44.737310,-63.305194);
+  node[&quot;brand&quot;=&quot;Royal Canadian Legion&quot;](around:3000,44.737310,-63.305194);
+  way[&quot;layer&quot;=&quot;1&quot;][&quot;barrier&quot;~&quot;3|bay&quot;,i](around:3000,44.737310,-63.305194);
+  nwr[&quot;man_made&quot;][&quot;cycleway:both&quot;~&quot;tower&quot;,i](around:10000,44.737310,-63.305194);
+  nwr[&quot;destination&quot;~&quot;Albro\\ Lake\\ Road|Bible\\ Hill;Tatamagouche|Chester\\ :\\ Yarmouth|Chester;Windsor|Highway\\ 104|Lunenburg;Mahone\\ Bay;Blockhouse|Saint\\ Croix;Newport;Ellershouse&quot;](around:3000,44.737310,-63.305194);
+);
+out center tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

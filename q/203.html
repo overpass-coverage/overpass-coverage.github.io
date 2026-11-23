@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 203</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 203</p><h1>Query 203</h1><p class="muted">fuzz:3:evaluators:516 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+nwr(if:((is_date(&quot;2018-01-01&quot;)?((timestamp()+id())):((is_number(t[&quot;man_made&quot;])?(timestamp()):(timestamp()))))!=(version()+count_distinct_by_role(&quot;platform&quot;))))(44.651957,-63.657338,44.668742,-63.639429)(44.987255,-62.808730,45.189281,-62.532849)-&gt;.s0;
+.s0 &gt;&gt;-&gt;.s1;
+node(w.s0)[&quot;highway&quot;=&quot;secondary&quot;]-&gt;.s2;
+if ((!((s2.count(nw)&gt;0.5)||(s2.max((-2))==1e3)))) { make yes n=s2.count(nwr)-&gt;.s3; }
+.s2 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

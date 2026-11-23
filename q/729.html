@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 729</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 729</p><h1>Query 729</h1><p class="muted">fuzz:3:evaluators:163 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+rel[&quot;natural&quot;=&quot;grassland&quot;](43.351065,-65.751121,43.454121,-65.537053)(if:(is_date((type()+t[&quot;addr:suburb&quot;]))&amp;&amp;((id()+type())&lt;id())))-&gt;.s0;
+make info n=1,v=s0.min(count_distinct_members()),c=number(s0.u(suffix(t[&quot;material&quot;])))-&gt;.s1;
+make stat k0=(s0.max((-count_tags()))/number(s0.u(suffix(t[&quot;addr:housenumber&quot;])))),k1=abs((-number(s0.u(type()))))-&gt;.s2;
+node.s2[&quot;highway&quot;=&quot;primary&quot;]-&gt;.s3;
+make stat k0=abs(s0.sum((is_tag(&quot;landuse&quot;)?(version()):(changeset())))),k1=s0.count(deriveds),k2=number(s0.min(lrs_min(&quot;1;2&quot;))),::geom=trace(s0.gcat(geom()))-&gt;.s4;
+.s3 out meta geom;
+.s4 out ids 16 (46.029776,-60.520994,46.098202,-60.430162);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

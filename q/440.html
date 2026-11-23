@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 440</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 440</p><h1>Query 440</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:4298 · 0.30 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:xml];
+way(if:(!is_closed()))[&quot;seamark:light:height&quot;!~&quot;14|16|24&quot;](44.419084,-65.985352,44.480657,-65.779021)(if:((uid()/count_by_role(&quot;forward&quot;))!=(0?(version()):(length()))))-&gt;.s0;
+.s0 &gt;-&gt;.s1;
+node(way_link.s0:2-)-&gt;.s2;
+.s2 is_in-&gt;.s3;
+rel(bw.s2)-&gt;.s4;
+.s0 out bb;
+.s2 out body;
+.s4 out ids;
+</pre><h2>Lines only this query runs (4)</h2><ul><li><a href="../src/overpass_api/data/tilewise_geometry.h.html#L731">overpass_api/data/tilewise_geometry.h:731</a></li><li><a href="../src/overpass_api/data/tilewise_geometry.h.html#L732">overpass_api/data/tilewise_geometry.h:732</a></li><li><a href="../src/overpass_api/data/tilewise_geometry.h.html#L734">overpass_api/data/tilewise_geometry.h:734</a></li><li><a href="../src/overpass_api/data/tilewise_geometry.h.html#L735">overpass_api/data/tilewise_geometry.h:735</a></li></ul></main></body></html>

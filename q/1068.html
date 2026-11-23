@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1068</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1068</p><h1>Query 1068</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3339 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[out:json];
+wr(44.619009,-63.635800,44.649623,-63.605575)[&quot;network:wikipedia&quot;=&quot;en:Halifax Transit&quot;]-&gt;.s0;
+nw[~&quot;^turn:lanes:forward$&quot;~&quot;^left|through|through;right$&quot;][!&quot;man_made&quot;][&quot;postal_code&quot;]-&gt;.s1;
+.s0 map_to_area-&gt;.s2;
+.s2 &gt;-&gt;.s3;
+.s2 out qt skel;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

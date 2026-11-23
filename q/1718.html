@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1718</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1718</p><h1>Query 1718</h1><p class="muted">fuzz:3:output:1283 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:536870912][out:json];
+node(id:1716406414,2331043372,2437763633,2475552951,3515293490,3624057545,5821508648,6491960131,8014280877,10177459486,10964097683,13733743803)(if:is_closed())-&gt;.s0;
+way(around.s0:100)[!&quot;lamp:count&quot;]-&gt;.s1;
+way[&quot;golf&quot;=&quot;bunker&quot;](id:87207553,240061736,240199138,241141778,460616117,555494010,754155084,1059418684,1360466279,1450431373,1465741063)-&gt;.s2;
+wr(bn.s2)-&gt;.s3;
+.s2 out asc meta 100;
+.s3 out geom skel;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

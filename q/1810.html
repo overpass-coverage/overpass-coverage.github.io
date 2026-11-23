@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1810</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1810</p><h1>Query 1810</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3249 · 0.57 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  nwr[&quot;old_addr:housenumber&quot;](around:4828,44.645932,-63.586255);
+  nwr[&quot;natural&quot;=&quot;wetland&quot;](around:4828,44.645932,-63.586255);
+  way[&quot;lanes&quot;=&quot;3&quot;](around:4828,44.645932,-63.586255);
+  way[&quot;parking:left:orientation&quot;](around:4828,44.645932,-63.586255);
+  way[&quot;fire_hydrant:type&quot;=&quot;pillar&quot;](around:4828,44.645932,-63.586255);
+  way[&quot;electrified&quot;~&quot;no&quot;](around:1000,44.645932,-63.586255);
+  way[&quot;post:city&quot;~&quot;Dartmouth|Sheet\\ Harbour|Tangier&quot;](around:4828,44.645932,-63.586255);
+  way[&quot;leisure&quot;](around:4828,44.645932,-63.586255);
+  way[&quot;sport&quot;](around:4828,44.645932,-63.586255);
+  way[&quot;smoothness&quot;=&quot;good&quot;](around:500,44.645932,-63.586255);
+  nwr[&quot;admin_level&quot;~&quot;10|9&quot;](around:4828,44.645932,-63.586255);
+  way[&quot;light:method&quot;=&quot;LED&quot;](around:3000,44.645932,-63.586255);
+);
+out geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

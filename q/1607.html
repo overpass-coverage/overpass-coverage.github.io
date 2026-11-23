@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1607</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1607</p><h1>Query 1607</h1><p class="muted">fuzz:3:evaluators:790 · 0.15 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+nwr[&quot;cycleway:both&quot;=&quot;no&quot;][&quot;owner&quot;!=&quot;Halifax Regional Municipality&quot;](44.607992,-63.642666,44.743803,-63.588535)-&gt;.s0;
+make stat k0=((s0.sum(date(&quot;Emera&quot;))&gt;1)?(s0.set(count_by_role(&quot;out&quot;))):(((s0.min((0?(version()):(changeset())))&lt;2)?(s0.u((user()+timestamp()))):(s0.set(lrs_min(&quot;a;b;c&quot;)))))),k1=(-date(s0.max(timestamp()))),k2=(number(s0.u((is_closed()?(&quot;a&quot;):(type()))))+number(s0.u(type()))),k3=(-s0.max(abs(lat())))-&gt;.s1;
+way(around.s1:300)[&quot;surface&quot;=&quot;fine_gravel&quot;]-&gt;.s2;
+.s1 out skel center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

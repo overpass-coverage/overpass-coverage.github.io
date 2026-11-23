@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1132</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1132</p><h1>Query 1132</h1><p class="muted">fuzz:3:output:242 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25];
+way[&quot;maxspeed&quot;](if:number(t[&quot;voltage&quot;])&gt;20)(45.480768,-64.368629,45.483991,-64.304332)-&gt;.s0;
+node(way_cnt.s0:1)-&gt;.s1;
+wr[~&quot;^old&quot;~&quot;3&quot;](46.079804,-60.145138,46.140344,-59.865340)-&gt;.s2;
+way(around.s0:20)[&quot;lit&quot;]-&gt;.s3;
+node(way_link.s3:1)-&gt;.s4;
+.s0 out count;
+.s2 out noids 5 geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

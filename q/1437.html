@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1437</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1437</p><h1>Query 1437</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5942 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;operator:fr&quot;=&quot;Postes Canada&quot;](around:1000,45.582045,-61.005999);
+  node[&quot;railway&quot;=&quot;abandoned&quot;](around:3000,45.582045,-61.005999);
+  node[&quot;capacity&quot;=&quot;15 litres&quot;](around:1000,45.582045,-61.005999);
+  node[&quot;building&quot;=&quot;residential&quot;](around:1000,45.582045,-61.005999);
+  node[&quot;footway&quot;~&quot;crossing|sidewalk|traffic_island&quot;](around:3000,45.582045,-61.005999);
+  relation[&quot;postal_code&quot;](around:1000,45.582045,-61.005999);
+  node[&quot;plant:output:electricity&quot;=&quot;24 MW&quot;](around:1000,45.582045,-61.005999);
+  way[&quot;maxspeed&quot;=&quot;20&quot;](around:1000,45.582045,-61.005999);
+);
+out center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

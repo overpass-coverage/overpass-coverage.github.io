@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 80</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 80</p><h1>Query 80</h1><p class="muted">fuzz:3:evaluators:599 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+node[&quot;maxheight&quot;!=&quot;4.1&quot;](id:902122271,906195559,1144785204,1277492821,1426405025,1748973314,2332147597,3510910316,3517786244,6261811765,6432092464,8890002028)-&gt;.s0;
+make stat k0=(s0.u(number(t[&quot;addr:housenumber&quot;]))+s0.min((is_number(t[&quot;highway&quot;])?(&quot;&quot;):(timestamp())))),k1=s0.max((-length()))-&gt;.s1;
+for.s0-&gt;.s2 ((changeset()==lrs_max(&quot;a;b;c&quot;))) { make group value=_.val,count=count(nwr); }
+(.s2; - .s0;)-&gt;.s3;
+.s0 out skel;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

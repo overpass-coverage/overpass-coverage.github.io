@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 231</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 231</p><h1>Query 231</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:4025 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][timeout:60];
+nwr(poly:&#x27;44.269429 -65.764927 44.269242 -65.775182 44.257620 -65.773360&#x27;)-&gt;.s0;
+area[name=&quot;The Tittle&quot;][admin_level]-&gt;.s1;
+rel(area.s1)[&quot;building&quot;=&quot;shelter&quot;]-&gt;.s2;
+rel.s2(id:1621298,5405205,9300635,9470122,10264460,13345307,20297296,21212838,21456084)-&gt;.s3;
+make stat k0=(s0.max(count_by_role(&quot;out&quot;))*abs(s0.sum(date(t[&quot;water_source&quot;])))),::geom=center(s0.gcat(geom()))-&gt;.s4;
+.s0 out asc noids geom 17;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

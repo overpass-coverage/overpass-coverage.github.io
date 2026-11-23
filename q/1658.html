@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1658</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1658</p><h1>Query 1658</h1><p class="muted">fuzz:3:poi,areas:940 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+nw(if:number(t[&quot;colour&quot;])&gt;3)(44.541199,-65.117139,44.575752,-64.870351)[&quot;landuse&quot;!=&quot;grass&quot;][&quot;check_date&quot;=&quot;2026-10-14&quot;]-&gt;.s0;
+.s0 is_in-&gt;.s1;
+is_in(45.668464,-61.275445)-&gt;.s2;
+node(area.s2)[&quot;building&quot;=&quot;semidetached_house&quot;]-&gt;.s3;
+node(way_link.s2:3-)-&gt;.s4;
+.s2 map_to_area-&gt;.s5;
+foreach.s0-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s2 out ids qt 50;
+.s3 out skel;
+.s5 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

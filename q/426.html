@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 426</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 426</p><h1>Query 426</h1><p class="muted">fuzz:3:evaluators:300 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+node(around:10,45.269671,-62.301859)-&gt;.s0;
+.s0 convert stat k0=lrs_min(lrs_union(t[&quot;post:city&quot;],&quot;a;b;c&quot;)),::geom=center(geom()),::id=id(),k3=&quot;x;y&quot;,k1=date(user()),!&quot;maxspeed&quot;,k2=is_date(t[&quot;voltage&quot;])-&gt;.s1;
+way(r.s0)-&gt;.s2;
+node(around.s1:300)[&quot;lanes&quot;!~&quot;^1&quot;]-&gt;.s3;
+if ((!is_number(s3.u((timestamp()+timestamp()))))) { make yes n=s3.count(nwr)-&gt;.s4; }
+.s0 out count;
+.s4 out meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

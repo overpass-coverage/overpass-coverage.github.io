@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1074</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1074</p><h1>Query 1074</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:694 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:xml][timeout:60][maxsize:268435456][bbox:45.726115,-64.049676,45.755833,-63.819035];
+rel[&quot;plant:source&quot;=&quot;coal&quot;](45.082196,-63.336558,45.189880,-63.330655)-&gt;.s0;
+.s0 convert stat k1=t[&quot;phases&quot;],k3=is_tag(&quot;owner&quot;),::id=id(),k0=lrs_min(lrs_isect(id(),timestamp())),k2=user()-&gt;.s1;
+area[name=&quot;Round Island&quot;]-&gt;.s2;
+node(area.s2)[&quot;barrier&quot;=&quot;gate&quot;]-&gt;.s3;
+way(r.s0:&quot;forward&quot;)-&gt;.s4;
+out meta (44.804127,-63.508329,44.857736,-63.400576) geom;
+out meta;
+out asc ids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

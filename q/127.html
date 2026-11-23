@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 127</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 127</p><h1>Query 127</h1><p class="muted">fuzz:3:evaluators:616 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+nwr[&quot;amenity&quot;=&quot;post_box&quot;](45.679509,-63.263336,45.854100,-63.151253)-&gt;.s0;
+make info v=(is_number(s0.min((1?(&quot;1;2;3&quot;):(t[&quot;frequency&quot;]))))?((s0.set((is_number(t[&quot;layer&quot;])?(timestamp()):(&quot;x;y&quot;)))+s0.min(lrs_min(lrs_union(t[&quot;crossing&quot;],&quot;name&quot;))))):(s0.min((is_number(t[&quot;height&quot;])?(timestamp()):(timestamp()))))),n=1,c=number(((s0.sum((is_closed()?(uid()):(length())))&lt;10)?(s0.min(type())):(s0.min((id()+timestamp())))))-&gt;.s1;
+node.s1(if:(type()==suffix(suffix(&quot;a&quot;))))-&gt;.s2;
+node.s2(if:is_number((&quot;2018-01-01&quot;+(type()+id()))))-&gt;.s3;
+foreach.s1-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s2 out ids bb;
+.s3 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

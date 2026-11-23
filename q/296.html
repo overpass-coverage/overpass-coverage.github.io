@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 296</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 296</p><h1>Query 296</h1><p class="muted">fuzz:3:evaluators:725 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+wr(poly:&quot;45.514195 -64.621928 45.499204 -64.641104 45.482094 -64.638394 45.478928 -64.648135&quot;)(if:(((is_tag(&quot;addr:city&quot;)?(user()):(t[&quot;service&quot;]))+timestamp())!=lrs_min(suffix(t[&quot;crossing&quot;]))))(if:lrs_in((timestamp()+(is_date(t[&quot;support&quot;])?(id()):(t[&quot;owner&quot;]))),(is_number(t[&quot;addr:city&quot;])?(&quot;a&quot;):(type()))))-&gt;.s0;
+make stat k0=abs(s0.min((is_closed()?(count_members()):(lat()))))-&gt;.s1;
+way(around.s0:0)[&quot;surface&quot;~&quot;^di&quot;]-&gt;.s2;
+way(r.s2)-&gt;.s3;
+way.s3(if:(lon()&gt;=number(suffix(user()))))-&gt;.s4;
+.s4 out ids geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

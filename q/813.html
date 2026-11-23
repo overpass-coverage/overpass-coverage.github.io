@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 813</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 813</p><h1>Query 813</h1><p class="muted">fuzz:3:evaluators:857 · 0.00 s CPU · expected status <code>query-error: line N: parse error: count_tags(...) does not accept any arguments</code></p><pre class="query">[timeout:60][maxsize:536870912];
+node[&quot;is_sidepath:of:name&quot;](44.084290,-64.824195,44.149519,-64.642378)-&gt;.s0;
+node(way_cnt.s0:3-)-&gt;.s1;
+rel(r.s0)-&gt;.s2;
+node(way_cnt.s2:2-)-&gt;.s3;
+rel.s2(if:count_tags(1))-&gt;.s4;
+.s0 out count;
+.s2 out skel;
+.s3 out skel bb asc;
+</pre><h2>Lines only this query runs (7)</h2><ul><li><a href="../src/overpass_api/frontend/tokenizer_utils.cc.html#L507">overpass_api/frontend/tokenizer_utils.cc:507</a></li><li><a href="../src/overpass_api/frontend/tokenizer_utils.cc.html#L508">overpass_api/frontend/tokenizer_utils.cc:508</a></li><li><a href="../src/overpass_api/frontend/tokenizer_utils.cc.html#L509">overpass_api/frontend/tokenizer_utils.cc:509</a></li><li><a href="../src/overpass_api/frontend/tokenizer_utils.cc.html#L510">overpass_api/frontend/tokenizer_utils.cc:510</a></li><li><a href="../src/overpass_api/frontend/tokenizer_utils.cc.html#L511">overpass_api/frontend/tokenizer_utils.cc:511</a></li><li><a href="../src/overpass_api/frontend/tokenizer_utils.cc.html#L512">overpass_api/frontend/tokenizer_utils.cc:512</a></li><li><a href="../src/overpass_api/statements/tag_value.cc.html#L539">overpass_api/statements/tag_value.cc:539</a></li></ul></main></body></html>

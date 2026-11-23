@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 471</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 471</p><h1>Query 471</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:4431 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::&quot;count:ways&quot;,&quot;addr:province&quot;,&quot;poles&quot;,&quot;golf&quot;,::id)][maxsize:268435456];
+rel[&quot;shop&quot;=&quot;deli&quot;](44.910468,-63.589106,45.070557,-63.402331)-&gt;.s0;
+complete(2).s0-&gt;.s1 { way(bn)[&quot;lamp_mount&quot;]; node(w); }
+for.s1-&gt;.s2 (0) { convert item ::id=id(),g=_.val; }
+area[name=&quot;Mitchell Lake&quot;]-&gt;.s3;
+nwr(area.s3)[&quot;place&quot;=&quot;city&quot;]-&gt;.s4;
+.s1-&gt;._; foreach-&gt;.x((.x; &lt;;);)
+(._;)-&gt;.s5;
+foreach.s2-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s1 out qt count;
+.s3 out tags center asc 49;
+.s5 out count asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

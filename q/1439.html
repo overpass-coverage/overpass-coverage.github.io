@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1439</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1439</p><h1>Query 1439</h1><p class="muted">fuzz:3::2280 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+node(id:1019347505,1427068472,1986954933,2332143015,2485712377,3500194512,8810201088,12636587813)-&gt;.s0;
+rel(bn.s0)[&quot;building:levels&quot;!~&quot;1|12|16|2|3&quot;]-&gt;.s1;
+(.s0; .s1;)-&gt;.s2;
+rel.s1[&quot;amenity&quot;]-&gt;.s3;
+node(r.s1)-&gt;.s4;
+.s0 out body center;
+.s3 out tags bb asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

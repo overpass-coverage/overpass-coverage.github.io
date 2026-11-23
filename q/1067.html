@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1067</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1067</p><h1>Query 1067</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3284 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Roads&quot;;[&quot;loc_name&quot;~&quot;^Th&quot;][&quot;operator&quot;!~&quot;^Be&quot;];)(&quot;Other&quot;;[&quot;operator:en&quot;][&quot;maxheight&quot;!=&quot;4.1&quot;];&quot;amenity&quot;;)(&quot;Other&quot;;[&quot;is_in:province&quot;!=&quot;Nova Scotia&quot;];[&quot;building&quot;!=&quot;house&quot;];[&quot;surface&quot;!=&quot;compacted&quot;][&quot;building&quot;=&quot;shed&quot;];)][timeout:25][maxsize:1073741824];
+nw[&quot;turn:lanes&quot;=&quot;||right&quot;]-&gt;.s0;
+area[name=&quot;Tomahawk Lake&quot;]-&gt;.s1;
+rel(area.s1)[&quot;amenity&quot;=&quot;veterinary&quot;]-&gt;.s2;
+node(r.s2)-&gt;.s3;
+.s2-&gt;._; node(r); (._;)-&gt;.s4;
+.s0 &lt;-&gt;.s5;
+.s0 out body;
+.s3 out bb;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1338</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1338</p><h1>Query 1338</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:696 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;turn:lanes:forward&quot;=&quot;left|through|through;right&quot;](around:1000,45.887320,-61.110115);
+  relation[&quot;lanes&quot;](around:2000,45.887320,-61.110115);
+  relation[&quot;owner&quot;=&quot;Halifax Regional Municipality&quot;](around:500,45.887320,-61.110115);
+  way[&quot;vending&quot;=&quot;animal_feed&quot;](around:1000,45.887320,-61.110115);
+  relation[&quot;building&quot;~&quot;apartments|garage|industrial&quot;,i](around:1000,45.887320,-61.110115);
+);
+out center tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

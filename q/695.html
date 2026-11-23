@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 695</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 695</p><h1>Query 695</h1><p class="muted">fuzz:3:areas,complete:1495 · 0.21 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][bbox:44.748466,-65.534703,44.854159,-65.197781];
+way[&quot;maxspeed&quot;!~&quot;^4&quot;](45.616138,-63.775110,45.661242,-63.734327)-&gt;.s0;
+is_in(47.013973,-60.629109)-&gt;.s1;
+nwr(area.s1)(45.105030,-63.403568,45.165049,-63.300597)-&gt;.s2;
+.s1 is_in-&gt;.s3;
+node.s3(id:990653243,1319339835,1325299418,3518521398,3524485550,6010732013,6961329328,13733743803)-&gt;.s4;
+area[name=&quot;Goose Lake&quot;][boundary]-&gt;.s5;
+way(area.s5)[&quot;demolished:railway&quot;=&quot;rail&quot;]-&gt;.s6;
+.s3 out meta asc;
+.s4 out ids;
+.s5 out tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

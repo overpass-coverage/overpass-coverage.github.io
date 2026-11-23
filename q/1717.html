@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1717</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1717</p><h1>Query 1717</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:4478 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;admin_level&quot;=&quot;8&quot;][&quot;level&quot;~&quot;B4H\\ 3Y|cape|no|tree_r&quot;,i](around:1000,45.270646,-64.396968);
+  relation[&quot;natural&quot;~&quot;coastline|grassland|reef|ridge|rock|tree|wood&quot;](around:1000,45.270646,-64.396968);
+  node[&quot;grades&quot;=&quot;0-12&quot;](around:2000,45.270646,-64.396968);
+  node[&quot;fence_type&quot;~&quot;chain_link|hedge&quot;,i](around:2000,45.270646,-64.396968);
+  relation[&quot;power&quot;](around:500,45.270646,-64.396968);
+  nwr[&quot;power&quot;~&quot;^(generator|line|pole|transformer)$&quot;,i][&quot;emergency&quot;~&quot;Canada&quot;,i](around:1000,45.270646,-64.396968);
+  relation[&quot;postal_code&quot;~&quot;^(B2X\\ 1T5|B3G\\ 1R1|B4B\\ 2K1|B4C\\ 1G1|B4G\\ 1C9|B5A\\ 5R1)$&quot;](around:1000,45.270646,-64.396968);
+  nwr[&quot;highway&quot;](around:5000,45.270646,-64.396968);
+  node[&quot;voltage:primary&quot;=&quot;14400&quot;](around:1000,45.270646,-64.396968);
+  relation[&quot;plant:output:electricity&quot;=&quot;24 MW&quot;][&quot;lit&quot;~&quot;Mary\\ B|en:Can|rapids&quot;,i](around:5000,45.270646,-64.396968);
+  node[&quot;highway&quot;=&quot;motorway&quot;](around:1000,45.270646,-64.396968);
+  nwr[&quot;building&quot;~&quot;commercial|garage|industrial|semidetached_house|shed|yes&quot;](around:2000,45.270646,-64.396968);
+  node[&quot;voltage&quot;](around:2000,45.270646,-64.396968);
+  node[&quot;entrance&quot;~&quot;emergency&quot;](around:1000,45.270646,-64.396968);
+);
+out tags center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

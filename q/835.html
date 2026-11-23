@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 835</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 835</p><h1>Query 835</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2786 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::user,::version,::&quot;count:ways&quot;,::&quot;count:nodes&quot;,::&quot;count:areas&quot;,::&quot;count:relations&quot;,&quot;admin_level&quot;,&quot;land_area&quot;;false;&quot; &quot;)];
+nwr[&quot;ford&quot;=&quot;stepping_stones&quot;](if:(&quot;2018-01-01&quot;!=(lrs_min(t[&quot;crossing:markings&quot;])+user())))-&gt;.s0;
+node(way_cnt.s0:1-2)-&gt;.s1;
+.s1 &gt;-&gt;.s2;
+.s1 out tags geom 100 asc noids;
+.s2 out count qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

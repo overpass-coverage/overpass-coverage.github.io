@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 908</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 908</p><h1>Query 908</h1><p class="muted">fuzz:3:areas,complete:669 · 0.08 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+node(id:813760272,1063115110,1325065250,3503020491,5905435180,7993505549,8243986187,8629222985,12064272078,12138995855)(if:count_tags()&gt;5)-&gt;.s0;
+.s0 is_in-&gt;.s1;
+is_in(45.674183,-62.672901)-&gt;.s2;
+node(area.s2)(44.883550,-62.343001,44.903284,-62.313658)-&gt;.s3;
+foreach.s1-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s0 out skel geom qt;
+.s2 out skel;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

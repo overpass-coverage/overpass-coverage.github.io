@@ -1,0 +1,5 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 846</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 846</p><h1>Query 846</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5897 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][out:json];
+nw(45.340275,-64.491152,45.513737,-64.443589)[&quot;post:city&quot;=&quot;Upper Musquodoboit&quot;]-&gt;.s0;
+if ((((s0.max((t[&quot;height&quot;]==&quot;16&quot;?(lat()):(version())))&lt;-1)||(s0.min(number(timestamp()))&gt;0))&amp;&amp;(s0.min((count_distinct_by_role(&quot;stop&quot;)*length()))&gt;0))) { make yes n=s0.count(nwr)-&gt;.s1; } else { make no n=0-&gt;.s1; }
+.s0 out tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

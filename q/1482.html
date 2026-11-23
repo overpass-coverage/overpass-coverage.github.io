@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1482</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1482</p><h1>Query 1482</h1><p class="muted">fuzz:3:poi,areas:950 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;water_source&quot;)];
+rel[&quot;NHS&quot;=&quot;yes&quot;](44.621933,-63.701697,44.686761,-63.508349)-&gt;.s0;
+rel(bw.s0:&quot;west&quot;)-&gt;.s1;
+node(way_link.s1:3-)-&gt;.s2;
+rel.s0(if:is_closed())-&gt;.s3;
+.s2 &lt;-&gt;.s4;
+.s0 out skel qt;
+.s4 out skel (44.848574,-65.017636,44.920639,-64.878940);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

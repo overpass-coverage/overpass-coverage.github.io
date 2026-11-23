@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 313</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 313</p><h1>Query 313</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:254 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;postal_code&quot;~&quot;^(B0J\\ 1J0|B0R\\ 1C0|B2T\\ 1B6|B2X\\ 1T5|B3G\\ 1R1|B3K\\ 5W4|B4B\\ 2K1|B5A\\ 5R1)$&quot;,i](around:1000,43.797631,-65.286111);
+  way[&quot;land_area&quot;=&quot;administrative&quot;](around:1000,43.797631,-65.286111);
+  nwr[&quot;building&quot;=&quot;residential&quot;](around:1000,43.797631,-65.286111);
+  nwr[&quot;bridge:ref&quot;=&quot;HFX038&quot;](around:1000,43.797631,-65.286111);
+  way[&quot;support&quot;~&quot;^(ornamental|pole|unkn)$&quot;](around:1000,43.797631,-65.286111);
+  relation[&quot;landuse&quot;=&quot;quarry&quot;](around:1000,43.797631,-65.286111);
+  node[&quot;amenity&quot;~&quot;bench|bicycle_parking|drinking_water|nightclub|parking|veterinary|waste_basket&quot;](around:1000,43.797631,-65.286111);
+  relation[&quot;building:levels&quot;=&quot;16&quot;][&quot;royal_cypher&quot;~&quot;detach|no&quot;,i](around:1000,43.797631,-65.286111);
+  relation[&quot;unsigned_ref&quot;=&quot;6795&quot;](around:500,43.797631,-65.286111);
+  node[&quot;highway&quot;~&quot;footway|primary|stop|street_lamp|tertiary|trunk&quot;](around:1000,43.797631,-65.286111);
+  way[&quot;maxspeed&quot;~&quot;110|20|40|50|60|70&quot;,i](around:5000,43.797631,-65.286111);
+  way[&quot;access&quot;=&quot;yes&quot;](around:500,43.797631,-65.286111);
+  way[&quot;natural&quot;=&quot;bay&quot;](around:1000,43.797631,-65.286111);
+  way[&quot;length&quot;=&quot;1524&quot;](around:1000,43.797631,-65.286111);
+  relation[&quot;brand:wikidata&quot;=&quot;Q2974996&quot;](around:1000,43.797631,-65.286111);
+);
+out center tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

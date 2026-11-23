@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 792</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 792</p><h1>Query 792</h1><p class="muted">fuzz:3:evaluators:497 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+nwr(poly:&#x27;46.194269 -61.392762 46.191717 -61.397436 46.192185 -61.395876 46.190869 -61.394910&#x27;)-&gt;.s0;
+make stat k0=((s0.count(nw)&gt;42)?((-s0.count(ways))):(number(s0.u((suffix(t[&quot;natural&quot;])+user()))))),k1=abs(number(s0.set(type())))-&gt;.s1;
+rel.s0(id:2098399,8411360,9198089,11958489,11991367,12074961,13444914,21813007)-&gt;.s2;
+way.s0(if:is_closed())-&gt;.s3;
+make info v=s0.set(id()),n=1,c=date(s0.max(timestamp()))-&gt;.s4;
+.s3 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

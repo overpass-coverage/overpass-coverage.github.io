@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1764</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1764</p><h1>Query 1764</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:410 · 0.22 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  nwr[&quot;material&quot;~&quot;concrete|crusher\\ dust|steel|wood&quot;](around:3219,44.654347,-63.605023);
+  node[&quot;network&quot;=&quot;Transit Cape Breton&quot;](around:3219,44.654347,-63.605023);
+  node[&quot;lanes&quot;=&quot;4&quot;](around:3219,44.654347,-63.605023);
+  node[&quot;communication&quot;~&quot;line&quot;](around:500,44.654347,-63.605023);
+  relation[&quot;post:city&quot;=&quot;Upper Musquodoboit&quot;](around:3219,44.654347,-63.605023);
+  node[&quot;destination&quot;~&quot;Albro\\ Lake\\ Road|Saint\\ Croix;Newport;Ellershouse|Wright\\ Avenue&quot;,i][&quot;network:wikidata&quot;~&quot;69000;|long_j|yes&quot;,i](around:5000,44.654347,-63.605023);
+  node[&quot;horse&quot;=&quot;no&quot;](around:500,44.654347,-63.605023);
+  node[&quot;crossing&quot;=&quot;informal&quot;](around:3219,44.654347,-63.605023);
+  node[&quot;lanes:forward&quot;](around:3219,44.654347,-63.605023);
+  way[&quot;communication:mobile_phone&quot;=&quot;yes&quot;](around:5000,44.654347,-63.605023);
+  way[&quot;amenity&quot;~&quot;^(bicycle_parking|parking|place_of_worship|waste_basket)$&quot;][&quot;waste&quot;~&quot;steel&quot;,i](around:1000,44.654347,-63.605023);
+  node[&quot;natural&quot;](around:3219,44.654347,-63.605023);
+  way[&quot;unsigned_ref&quot;~&quot;5817|6795|6982&quot;](around:3219,44.654347,-63.605023);
+  node[&quot;tactile_paving&quot;~&quot;no&quot;](around:3219,44.654347,-63.605023);
+);
+out center tags 200;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

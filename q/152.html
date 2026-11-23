@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 152</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 152</p><h1>Query 152</h1><p class="muted">fuzz:3::1764 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;official_name&quot;)];
+nwr(45.599193,-60.960310,45.701096,-60.717160)[&quot;operator&quot;=&quot;Canada Post&quot;]-&gt;.s0;
+way(bn.s0)-&gt;.s1;
+rel[~&quot;^man&quot;~&quot;pi&quot;](around:1000,45.865302,-63.759127)-&gt;.s2;
+(.s2; - .s0;)-&gt;.s3;
+(.s2; .s1;)-&gt;.s4;
+.s0 out body geom qt;
+.s4 out body;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

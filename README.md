@@ -4,7 +4,7 @@ Line coverage of the [Overpass API](https://github.com/fossgis/Overpass-API) que
 (`osm3s_query`) by a fixed conformance corpus: a small set of queries chosen to exercise as much
 of the query engine as a large pool of generated queries does.
 
-Site: https://cldellow.github.io/overpass-coverage/
+Site: https://overpass-coverage.github.io/
 
 - `index.html`: line coverage by directory and file.
 - `src/<file>.html`: the source, with each instrumented line marked run or never run; click a

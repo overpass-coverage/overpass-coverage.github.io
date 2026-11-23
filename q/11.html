@@ -1,6 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 11</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 11</p><h1>Query 11</h1><p class="muted">fuzz:1::199 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-rel(id:5011755,10228120,20769287)-&gt;.s0;
-.s0 &gt;&gt;-&gt;.s1;
-.s0 out ids;
-.s1 out meta geom;
-</pre><h2>Lines only this query runs (9)</h2><ul><li><a href="../src/overpass_api/statements/recurse.cc.html#L461">overpass_api/statements/recurse.cc:461</a></li><li><a href="../src/overpass_api/statements/recurse.cc.html#L462">overpass_api/statements/recurse.cc:462</a></li><li><a href="../src/overpass_api/statements/recurse.cc.html#L463">overpass_api/statements/recurse.cc:463</a></li><li><a href="../src/overpass_api/statements/recurse.cc.html#L464">overpass_api/statements/recurse.cc:464</a></li><li><a href="../src/overpass_api/statements/recurse.cc.html#L465">overpass_api/statements/recurse.cc:465</a></li><li><a href="../src/overpass_api/statements/recurse.cc.html#L466">overpass_api/statements/recurse.cc:466</a></li><li><a href="../src/overpass_api/statements/recurse.cc.html#L467">overpass_api/statements/recurse.cc:467</a></li><li><a href="../src/overpass_api/statements/recurse.cc.html#L468">overpass_api/statements/recurse.cc:468</a></li><li><a href="../src/template_db/transaction.h.html#L115">template_db/transaction.h:115</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 11</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 11</p><h1>Query 11</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5075 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::&quot;count:ways&quot;,::type,&quot;addr:suburb&quot;,::count,::lon)][maxsize:1073741824];
+nw(around:500,44.857221,-63.287484)-&gt;.s0;
+node(around:10,45.727586,-62.104235,45.726800,-62.105933,45.724588,-62.107013)[&quot;brand&quot;]-&gt;.s1;
+foreach.s0((._; &gt;;);)
+(._;)-&gt;.s2;
+complete(4).s0-&gt;.s3 { way(around:0)[&quot;operator&quot;]; }
+foreach.s3-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s0 out meta 1;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

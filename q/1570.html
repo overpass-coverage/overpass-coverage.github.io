@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1570</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1570</p><h1>Query 1570</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2749 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Roads&quot;;[&quot;brand&quot;=&quot;Tesla Supercharger&quot;];)(&quot;Food&quot;;[&quot;highway&quot;!=&quot;stop&quot;][&quot;postal_code&quot;=&quot;B3G 1R1&quot;];)(&quot;Other&quot;;[&quot;voltage&quot;][&quot;grades&quot;];[&quot;created_by&quot;=&quot;JOSM&quot;];)][timeout:25][maxsize:1073741824];
+node[&quot;amenity&quot;=&quot;nightclub&quot;]-&gt;.s0;
+make info n=1,c=number(suffix(s0.min(suffix(type())))),v=s0.min((user()+user()))-&gt;.s1;
+.s0 out bb;
+out asc bb ids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

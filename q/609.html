@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 609</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 609</p><h1>Query 609</h1><p class="muted">fuzz:3:evaluators:672 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+rel(poly:&quot;44.191342 -65.590107 44.194054 -65.598133 44.196424 -65.601233 44.202579 -65.599092 44.209364 -65.606131 44.212177 -65.608611 44.199151 -65.625540 44.203299 -65.633757 44.165690 -65.633518 44.181074 -65.590517&quot;)-&gt;.s0;
+.s0 &lt;-&gt;.s1;
+.s0 &lt;&lt;-&gt;.s2;
+if (((!(s2.max(abs(0))&lt;1))||(s2.sum(date(t[&quot;lamp_mount&quot;]))&gt;=1))) { make yes n=s2.count(nwr)-&gt;.s3; } else { make no n=0-&gt;.s3; }
+.s1 out ids;
+.s3 out body;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

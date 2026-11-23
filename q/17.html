@@ -1,8 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 17</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 17</p><h1>Query 17</h1><p class="muted">fuzz:1:areas,complete:914 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-wr(poly:&#x27;43.900423 -65.344702 43.910240 -65.336853 43.907116 -65.350011 43.918174 -65.348719 43.906718 -65.366614 43.916777 -65.367253 43.927903 -65.366031 43.930370 -65.374163 43.924783 -65.376289 43.909461 -65.380159 43.930093 -65.385030 43.927113 -65.387407 43.927503 -65.390100 43.918514 -65.392962 43.916934 -65.419016 43.909835 -65.406042 43.915764 -65.422531 43.911426 -65.427022 43.879513 -65.417603 43.883636 -65.408231 43.878343 -65.410772 43.880178 -65.402793 43.874338 -65.402453 43.881078 -65.388762 43.883517 -65.378605 43.876553 -65.370538 43.876157 -65.367588 43.879895 -65.333391 43.895627 -65.337996 43.897719 -65.361152&#x27;)(46.038415,-61.224179,46.050006,-61.167666)-&gt;.s0;
-way(around.s0:300)[&quot;building&quot;~&quot;^semidetac&quot;]-&gt;.s1;
-wr(bn.s1)-&gt;.s2;
-complete(6).s2-&gt;.s3 { way(around:0)[&quot;owner&quot;]; }
-.s0 out count;
-.s2 out count;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 17</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 17</p><h1>Query 17</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2974 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Other&quot;;[&quot;fence_type&quot;!=&quot;hedge&quot;][&quot;voltage&quot;];[&quot;natural&quot;!=&quot;water&quot;][&quot;natural&quot;=&quot;tree&quot;];)(&quot;Shops&quot;;[&quot;sport&quot;!=&quot;ice_hockey;ice_skating&quot;];[&quot;bicycle&quot;][&quot;seamark:light:height&quot;=&quot;14&quot;];&quot;ref&quot;;)(&quot;Shops&quot;;[&quot;plant:output:electricity&quot;!=&quot;50 KW&quot;][&quot;admin_level&quot;=&quot;8&quot;];[&quot;support&quot;~&quot;^or&quot;];[&quot;tunnel&quot;!=&quot;culvert&quot;];)][timeout:60];
+wr(43.699944,-65.158917,43.736026,-65.077540)[&quot;maxspeed&quot;]-&gt;.s0;
+way.s0(1528872193)-&gt;.s1;
+(.s0; .s0;)-&gt;.s2;
+node(way_cnt.s0:3-)-&gt;.s3;
+node(way_link.s2:3-)-&gt;.s4;
+foreach.s2-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s4 out body;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

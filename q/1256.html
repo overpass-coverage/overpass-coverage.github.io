@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1256</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1256</p><h1>Query 1256</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5831 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Named things&quot;;[&quot;power&quot;][&quot;building:levels&quot;!=&quot;2&quot;];[&quot;voltage&quot;=&quot;25000&quot;][&quot;railway&quot;];&quot;amenity&quot;;)(&quot;Food&quot;;[&quot;poles&quot;];)(&quot;Food&quot;;[&quot;destination:right&quot;!~&quot;^Gr&quot;][&quot;building:levels&quot;~&quot;^7&quot;];[&quot;owner&quot;!=&quot;Canadian National Railway&quot;][&quot;smoothness&quot;=&quot;intermediate&quot;];[&quot;royal_cypher&quot;];)][timeout:180];
+node(id:825229055,906237461,1142924909,1325086367,1917920125,2328640797,2484302473,3614189407,3618781947,4724900674)[&quot;lanes&quot;=&quot;4&quot;](if:(lrs_max(&quot;1;2&quot;)!=number((is_tag(&quot;type&quot;)?(suffix(t[&quot;addr:county&quot;])):(type())))))-&gt;.s0;
+node(way_link.s0:1)-&gt;.s1;
+rel(bw.s0)-&gt;.s2;
+.s1 &lt;-&gt;.s3;
+.s3 &lt;&lt;-&gt;.s4;
+.s4 convert row ::id=id(),tags=count_tags();
+out;
+.s0 out skel;
+.s1 out tags geom qt 10;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

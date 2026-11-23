@@ -1,0 +1,5 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 928</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 928</p><h1>Query 928</h1><p class="muted">fuzz:3:evaluators:389 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+way(poly:&quot;45.171024 -63.083311 45.144185 -63.071638 45.156041 -63.067983 45.160110 -63.066003&quot;)-&gt;.s0;
+.s0 convert row k0=&quot;1;2&quot;,k2=abs(lat()),k1=abs(-1),::geom=center(geom())-&gt;.s1;
+.s1 out skel asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

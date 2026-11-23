@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 502</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 502</p><h1>Query 502</h1><p class="muted">fuzz:3:areas,complete:2080 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;covered&quot;)];
+nw[&quot;ford&quot;=&quot;stepping_stones&quot;](44.739259,-63.745265,44.805783,-63.519125)[~&quot;^wat&quot;~&quot;po&quot;]-&gt;.s0;
+rel(bn.s0)-&gt;.s1;
+.s0 &gt;&gt;-&gt;.s2;
+is_in(44.426717,-64.494824)-&gt;.s3;
+rel(area.s3)[&quot;building:levels&quot;=&quot;2&quot;]-&gt;.s4;
+.s0 &lt;-&gt;.s5;
+.s3 out meta geom qt;
+.s4 out tags geom (44.780615,-64.579476,44.863840,-64.542027);
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/core/geometry.cc.html#L1903">overpass_api/core/geometry.cc:1903</a></li></ul></main></body></html>

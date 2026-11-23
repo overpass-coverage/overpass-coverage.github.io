@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 142</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 142</p><h1>Query 142</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3116 · 0.09 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;roof:levels&quot;](around:25000,44.072367,-64.677658);
+  node[&quot;destination:ref&quot;=&quot;NS 111 South&quot;](around:500,44.072367,-64.677658);
+  node[&quot;height&quot;](around:5000,44.072367,-64.677658);
+  nwr[&quot;destination&quot;=&quot;Saint Croix;Newport;Ellershouse&quot;][&quot;destination:backward&quot;~&quot;6795|CA:NS:|Q60060|motorw&quot;,i](around:25000,44.072367,-64.677658);
+  relation[&quot;brand:wikidata&quot;~&quot;Q1032400|Q118558630|Q2241604|Q2974996|Q6006077|Q6970842&quot;](around:3000,44.072367,-64.677658);
+  nwr[&quot;postal_code&quot;](around:25000,44.072367,-64.677658);
+);
+out geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

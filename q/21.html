@@ -1,4 +1,20 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 21</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 21</p><h1>Query 21</h1><p class="muted">fuzz:1::1251 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-nwr(if:changeset()&gt;123000000)(if:t[&quot;landuse&quot;]==&quot;residential&quot;)(45.687121,-61.078237,45.709496,-61.072247)-&gt;.s0;
-.s0 out ids geom asc;
-</pre><h2>Lines only this query runs (4)</h2><ul><li><a href="../src/overpass_api/data/meta_collector.h.html#L195">overpass_api/data/meta_collector.h:195</a></li><li><a href="../src/overpass_api/statements/tag_value.h.html#L670">overpass_api/statements/tag_value.h:670</a></li><li><a href="../src/overpass_api/statements/tag_value.h.html#L674">overpass_api/statements/tag_value.h:674</a></li><li><a href="../src/overpass_api/statements/tag_value.h.html#L678">overpass_api/statements/tag_value.h:678</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 21</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 21</p><h1>Query 21</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5704 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;service:vehicle:oil_change&quot;=&quot;yes&quot;][&quot;network&quot;~&quot;Prince&quot;,i](around:1000,45.806766,-63.841123);
+  way[&quot;natural&quot;=&quot;land&quot;](around:4828,45.806766,-63.841123);
+  way[&quot;place&quot;~&quot;island|islet|locality|village&quot;](around:4828,45.806766,-63.841123);
+  relation[&quot;highway&quot;=&quot;trunk&quot;](around:4828,45.806766,-63.841123);
+  node[&quot;leisure&quot;](around:4828,45.806766,-63.841123);
+  node[&quot;landuse&quot;=&quot;meadow&quot;](around:4828,45.806766,-63.841123);
+  node[&quot;landform&quot;=&quot;esker&quot;](around:4828,45.806766,-63.841123);
+  way[&quot;postal_code&quot;~&quot;B0L\\ 1G0|B0R\\ 1C0|B2X\\ 1T5|B4B\\ 2E5|B4C\\ 1G1|B5A\\ 5R1&quot;,i](around:4828,45.806766,-63.841123);
+  nwr[&quot;landuse&quot;~&quot;farmland|meadow|quarry|residential|winter_sports&quot;](around:4828,45.806766,-63.841123);
+  nwr[&quot;capacity&quot;~&quot;127|15\\ litres|159\\ litres|48&quot;](around:4828,45.806766,-63.841123);
+  node[&quot;is_sidepath:of:name&quot;=&quot;Front Street&quot;](around:3000,45.806766,-63.841123);
+  way[&quot;utility&quot;=&quot;telecom;power&quot;](around:4828,45.806766,-63.841123);
+  relation[&quot;operator:wikidata&quot;](around:4828,45.806766,-63.841123);
+  nwr[&quot;golf&quot;=&quot;bunker&quot;](around:5000,45.806766,-63.841123);
+  way[&quot;utility&quot;=&quot;telecom&quot;](around:3000,45.806766,-63.841123);
+);
+out geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

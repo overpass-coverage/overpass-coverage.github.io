@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1468</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1468</p><h1>Query 1468</h1><p class="muted">fuzz:3:poi,areas:442 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;sport&quot;=&quot;ice_hockey;ice_skating&quot;](around:1000,44.025644,-66.147512);
+  node[&quot;industrial&quot;=&quot;warehouse&quot;](around:1000,44.025644,-66.147512);
+  node[&quot;sidewalk:left&quot;~&quot;no&quot;,i](around:1000,44.025644,-66.147512);
+  nwr[&quot;building:flats&quot;~&quot;^(15|18|5)$&quot;](around:1000,44.025644,-66.147512);
+  nwr[&quot;utility&quot;](around:1000,44.025644,-66.147512);
+  node[&quot;crossing&quot;=&quot;uncontrolled&quot;](around:3000,44.025644,-66.147512);
+  nwr[&quot;highway&quot;~&quot;^(footway|motorway_link|primary|street_lamp|tertiary|traffic_signals)$&quot;](around:1000,44.025644,-66.147512);
+  node[&quot;railway&quot;~&quot;^(rail|switch)$&quot;](around:500,44.025644,-66.147512);
+  relation[&quot;water_source&quot;~&quot;^(main)$&quot;,i](around:3000,44.025644,-66.147512);
+);
+out tags center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

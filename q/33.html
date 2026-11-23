@@ -1,9 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 33</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 33</p><h1>Query 33</h1><p class="muted">fuzz:1:areas,complete:1066 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-way[&quot;isced:level&quot;=&quot;4&quot;](id:240302534,240328697,258379087,358572205,1119242589,1446825311,1470166467,1528305642)(id:90168386,106855744,159580309,235840467,240214825,345327416,345337528,347955348,632238284,1035856827,1049978900,1185097663)-&gt;.s0;
-area[name=&quot;Bear River&quot;]-&gt;.s1;
-way(area.s1)(44.251677,-66.076065,44.305804,-66.034583)-&gt;.s2;
-complete(2).s2-&gt;.s3 { node(w); way(bn)[&quot;addr:county&quot;]; }
-(.s1; - .s0;)-&gt;.s4;
-(.s1; .s2;)-&gt;.s5;
-.s4 out body (45.191229,-61.217763,45.277305,-61.148498);
-</pre><h2>Lines only this query runs (16)</h2><ul><li><a href="../src/overpass_api/statements/id_query.cc.html#L163">overpass_api/statements/id_query.cc:163</a></li><li><a href="../src/overpass_api/statements/id_query.cc.html#L164">overpass_api/statements/id_query.cc:164</a></li><li><a href="../src/overpass_api/statements/id_query.cc.html#L165">overpass_api/statements/id_query.cc:165</a></li><li><a href="../src/overpass_api/statements/id_query.cc.html#L166">overpass_api/statements/id_query.cc:166</a></li><li><a href="../src/overpass_api/statements/query.cc.html#L782">overpass_api/statements/query.cc:782</a></li><li><a href="../src/overpass_api/statements/query.cc.html#L783">overpass_api/statements/query.cc:783</a></li><li><a href="../src/overpass_api/statements/query.cc.html#L784">overpass_api/statements/query.cc:784</a></li><li><a href="../src/overpass_api/statements/query.cc.html#L785">overpass_api/statements/query.cc:785</a></li><li><a href="../src/overpass_api/statements/query.cc.html#L786">overpass_api/statements/query.cc:786</a></li><li><a href="../src/overpass_api/statements/query.cc.html#L787">overpass_api/statements/query.cc:787</a></li><li><a href="../src/overpass_api/statements/query.cc.html#L788">overpass_api/statements/query.cc:788</a></li><li><a href="../src/overpass_api/statements/query.cc.html#L1030">overpass_api/statements/query.cc:1030</a></li><li><a href="../src/overpass_api/statements/query.cc.html#L1031">overpass_api/statements/query.cc:1031</a></li><li><a href="../src/overpass_api/statements/query.cc.html#L1032">overpass_api/statements/query.cc:1032</a></li><li><a href="../src/overpass_api/statements/query.cc.html#L1033">overpass_api/statements/query.cc:1033</a></li><li><a href="../src/overpass_api/statements/query.cc.html#L1034">overpass_api/statements/query.cc:1034</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 33</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 33</p><h1>Query 33</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2682 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::&quot;count:nodes&quot;,&quot;railway&quot;,::lon,&quot;man_made&quot;,::timestamp)][timeout:180];
+nwr[&quot;lanes:backward&quot;=&quot;2&quot;](46.137553,-60.266957,46.288718,-60.219962)[&quot;highway&quot;=&quot;motorway_link&quot;]-&gt;.s0;
+area[name=&quot;Loon Lake&quot;]-&gt;.s1;
+nwr(area.s1)[&quot;highway&quot;=&quot;bus_stop&quot;]-&gt;.s2;
+foreach.s1-&gt;.x((.x; &lt;;);)
+(._;)-&gt;.s3;
+rel(r.s1)-&gt;.s4;
+.s4 convert row ::id=id(),tags=count_tags();
+out;
+.s2 out bb meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

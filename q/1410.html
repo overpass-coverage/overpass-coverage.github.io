@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1410</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1410</p><h1>Query 1410</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3798 · 0.14 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  way[&quot;admin_level&quot;=&quot;5&quot;](around:1000,44.586795,-63.573161);
+  relation[&quot;operator&quot;~&quot;Accord|Berwick\\ Power\\ Commission|Emera|Glooscap\\ Energy|HalifaxHarbour\\ Bridges|Jason\\ Hiltz|Killam\\ Properties|South\\ Queens\\ Middle\\ School&quot;](around:1000,44.586795,-63.573161);
+  node[&quot;fence_type&quot;~&quot;^(chain_link|hedge)$&quot;](around:500,44.586795,-63.573161);
+  way[&quot;collection_times&quot;=&quot;08:00;Mo-Fr 08:00&quot;](around:1000,44.586795,-63.573161);
+  way[&quot;length&quot;=&quot;1524&quot;](around:2000,44.586795,-63.573161);
+  relation[&quot;destination:street:to&quot;~&quot;Prince\\ Albert\\ Road;Braemar\\ Drive|Tacoma\\ Drive\\ Main\\ Street&quot;,i](around:1000,44.586795,-63.573161);
+  nwr[&quot;destination&quot;=&quot;Chester : Yarmouth&quot;](around:5000,44.586795,-63.573161);
+  node[&quot;operator&quot;~&quot;Accord|Berwick\\ Power\\ Commission|Fundy\\ Ocean\\ Research\\ Centre\\ for\\ Energy|Halifax\\ Regional\\ Water\\ Commission|Municipality\\ of\\ the\\ District\\ of\\ Argyle|Nature\\ Conservancy\\ of\\ Canada|South\\ Queens\\ Middle\\ School&quot;](around:1000,44.586795,-63.573161);
+  nwr[&quot;voltage&quot;~&quot;^(0|12500|14400|7200)$&quot;,i](around:1000,44.586795,-63.573161);
+  way[&quot;rapids&quot;~&quot;^(yes)$&quot;](around:2000,44.586795,-63.573161);
+  node[&quot;postal_code&quot;~&quot;^(B2X\\ 1T5|B4B\\ 2K1|B4G\\ 1C9)$&quot;][&quot;sidewalk:right&quot;~&quot;track&quot;,i](around:1000,44.586795,-63.573161);
+  node[&quot;postal_code&quot;~&quot;B0L\\ 1G0|B2T\\ 1B4|B2X\\ 1T5|B3K\\ 5W4|B4C\\ 1G1|B4G\\ 1C9|B4H\\ 3Y2&quot;](around:1000,44.586795,-63.573161);
+  node[&quot;service&quot;](around:1000,44.586795,-63.573161);
+);
+out center tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

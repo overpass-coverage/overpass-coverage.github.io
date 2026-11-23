@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 565</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 565</p><h1>Query 565</h1><p class="muted">fuzz:3:areas,complete:420 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+node(44.076260,-65.266605,44.109211,-65.202510)[&quot;surface&quot;!~&quot;asphalt|concrete|dirt|fine_gravel|grass|gravel|paved|rock|unpaved&quot;][&quot;lanes&quot;!~&quot;^2&quot;]-&gt;.s0;
+node.s0(id:1046055072,1238048605,1427399844,1813332369,4549830060,9388753846)-&gt;.s1;
+node.s0[&quot;official_name&quot;!=&quot;Enterprise Rent-A-Car&quot;]-&gt;.s2;
+(.s1; .s2;)-&gt;.s3;
+.s2 convert row ::id=id(),tags=count_tags();
+out;
+.s0 out meta (44.665347,-63.560680,44.721275,-63.522602);
+.s2 out skel asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

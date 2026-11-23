@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1818</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1818</p><h1>Query 1818</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5808 · 2.78 s CPU · expected status <code>ok</code></p><pre class="query">[out:xml][maxsize:536870912];
+wr(if:1)[&quot;aeroway&quot;!=&quot;taxilane&quot;](46.538444,-60.486681,46.722017,-60.288439)-&gt;.s0;
+node(r.s0)[&quot;natural&quot;~&quot;^tr&quot;]-&gt;.s1;
+way(around.s0:100)[&quot;landuse&quot;=&quot;meadow&quot;]-&gt;.s2;
+node.s1(if:((&quot;a&quot;&lt;lrs_min(t[&quot;service&quot;]))&amp;&amp;(suffix(t[&quot;power&quot;])&gt;(is_closed()?(&quot;2018-01-01&quot;):(type())))))-&gt;.s3;
+.s0 out ids;
+.s2 out noids skel;
+.s3 out;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

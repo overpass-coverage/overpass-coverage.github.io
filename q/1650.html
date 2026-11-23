@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1650</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1650</p><h1>Query 1650</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3283 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::otype,::version,::&quot;count:relations&quot;;false;&quot; &quot;)][maxsize:268435456];
+way[&quot;residential&quot;=&quot;multi_family&quot;](46.542715,-61.096450,46.691496,-60.970005)(45.067557,-63.129300,45.293038,-62.985465)[!&quot;operator&quot;]-&gt;.s0;
+way.s0(45.655968,-64.538772,45.717311,-64.327526)-&gt;.s1;
+node(r.s0)[&quot;natural&quot;~&quot;^(beach|cape|grassland|ridge)$&quot;]-&gt;.s2;
+is_in(45.078620,-64.457214)-&gt;.s3;
+node(area.s3)(43.710284,-65.539920,43.737943,-65.490308)-&gt;.s4;
+node.s4(if:is_date(&quot;2018-01-01&quot;))-&gt;.s5;
+.s2 out meta asc;
+out meta bb;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

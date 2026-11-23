@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 842</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 842</p><h1>Query 842</h1><p class="muted">fuzz:3:poi,areas:1080 · 0.16 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][bbox:44.977264,-64.343639,44.985876,-64.240022];
+nw[&quot;brand:wikidata&quot;=&quot;Q2974996&quot;](if:uid()&gt;2000000)-&gt;.s0;
+is_in(44.319390,-64.259602)-&gt;.s1;
+way(area.s1)[&quot;brand:wikipedia&quot;=&quot;en:Walmart&quot;]-&gt;.s2;
+.s2 &lt;-&gt;.s3;
+wr(bn.s1)-&gt;.s4;
+is_in(46.056725,-61.387485)-&gt;.s5;
+node(area.s5)[&quot;height&quot;=&quot;58&quot;]-&gt;.s6;
+.s2 out count;
+.s6 out ids 16 (44.378805,-64.373318,44.448686,-64.360083);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

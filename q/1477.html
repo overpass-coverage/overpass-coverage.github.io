@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1477</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1477</p><h1>Query 1477</h1><p class="muted">fuzz:3:statements,areas:879 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+way[&quot;incline&quot;=&quot;10%&quot;](id:99838133,344352519,344506915,467976973,481077993,566840047,859801183,1218795656)[!&quot;surface&quot;]-&gt;.s0;
+nwr[&quot;unsigned_ref&quot;~&quot;^ns 33$&quot;,i][&quot;maxheight&quot;~&quot;3.3&quot;,i][~&quot;^lan&quot;~&quot;.&quot;]-&gt;.s1;
+.s0 &lt;-&gt;.s2;
+wr(bn.s0)-&gt;.s3;
+.s1 out tags center;
+.s2 out tags center;
+.s3 out ids geom (44.672280,-63.785231,44.717761,-63.727205);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

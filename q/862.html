@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 862</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 862</p><h1>Query 862</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5817 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:536870912][out:csv(&quot;place&quot;,::id,&quot;colour&quot;)][timeout:180];
+node(44.852387,-63.649215,44.870555,-63.599676)(poly:&quot;44.459107 -64.856506 44.471982 -64.862717 44.462711 -64.865315 44.467835 -64.871755 44.461553 -64.873659 44.466334 -64.883348 44.457210 -64.879436 44.453513 -64.875151 44.436781 -64.871155 44.435524 -64.859159&quot;)-&gt;.s0;
+node(around.s0:20)[&quot;natural&quot;]-&gt;.s1;
+rel(br.s0)[&quot;post:city&quot;=&quot;Tangier&quot;]-&gt;.s2;
+node.s1(if:is_date(suffix((id()+type()))))-&gt;.s3;
+.s2 map_to_area-&gt;.s4;
+.s2 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

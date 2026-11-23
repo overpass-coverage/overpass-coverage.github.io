@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1187</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1187</p><h1>Query 1187</h1><p class="muted">fuzz:3:evaluators:1034 · 0.08 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+way(id:67792805,85372051,98592868,98857480,99152643,149828395,162495498,342143066,635441956,787798850,1384466980)-&gt;.s0;
+way.s0(id:98592518,235760829,235876074,493963739,497521106)-&gt;.s1;
+.s0 convert stat ::id=id(),k0=(is_closed()?(((!t[&quot;surface&quot;]==&quot;yes&quot;)?(suffix(id())):(lrs_min(&quot;1;2&quot;)))):(suffix(suffix(suffix(t[&quot;addr:county&quot;]))))),members=per_member((role()==&quot;route&quot;)),angles=per_vertex(angle()&gt;90)-&gt;.s2;
+way(around.s0:300)[&quot;plant:output:electricity&quot;]-&gt;.s3;
+.s0 out tags;
+.s2 out ids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

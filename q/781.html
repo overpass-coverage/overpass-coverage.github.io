@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 781</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 781</p><h1>Query 781</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5066 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;building&quot;,::lat,::&quot;count:areas&quot;)];
+way(around:10,44.496791,-63.631040)-&gt;.s0;
+way.s0(98940683)-&gt;.s1;
+make info c=number(s0.u((1?(suffix(t[&quot;light:method&quot;])):(type())))),v=s0.min(&quot;x;y&quot;)-&gt;.s2;
+.s0 out 5 noids asc body bb;
+.s2 out skel bb;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 432</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 432</p><h1>Query 432</h1><p class="muted">fuzz:3:evaluators:1272 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][bbox:44.409971,-64.802556,44.549361,-64.486319];
+node[&quot;operator&quot;=&quot;Halifax Regional Municipality&quot;][&quot;height&quot;](poly:&#x27;45.363424 -63.241580 45.378558 -63.259077 45.360625 -63.285649 45.344503 -63.249065&#x27;)-&gt;.s0;
+.s0 &lt;&lt;-&gt;.s1;
+make stat k0=s0.max((&quot;x;y&quot;+id())),k1=abs(s0.min(number(t[&quot;addr:county&quot;]))),k2=s0.max((t[&quot;light:colour&quot;]==&quot;switch&quot;?(uid()):(count_distinct_members()))),k3=((s0.u(count_distinct_by_role(&quot;outer&quot;))!=s0.max(suffix(timestamp())))?(number(s0.u(suffix(type())))):(s0.max(count_members())))-&gt;.s2;
+.s2 convert item ::id=id(),k0=lrs_isect(type(),lrs_union(lrs_isect(lrs_union(t[&quot;oneway&quot;],&quot;name&quot;),&quot;1;2&quot;),timestamp())),k1=lrs_isect(lrs_union(&quot;a;b;c&quot;,&quot;1;2&quot;),t[&quot;support&quot;])-&gt;.s3;
+node(way_cnt.s1:1)-&gt;.s4;
+.s1 out meta qt (46.011835,-60.216176,46.110826,-60.183594);
+.s3 out skel bb asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

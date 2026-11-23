@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1263</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1263</p><h1>Query 1263</h1><p class="muted">fuzz:3:evaluators:997 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+node[&quot;seats&quot;=&quot;5&quot;][&quot;unsigned_ref&quot;]-&gt;.s0;
+way(bn.s0)-&gt;.s1;
+(.s0; - .s1;)-&gt;.s2;
+.s1 convert item k3=lrs_max(lrs_union(&quot;1;2&quot;,lrs_union(t[&quot;utility&quot;],&quot;name&quot;))),k2=t[&quot;frequency&quot;],members=per_member(mtype()),::=::,k1=lrs_isect(&quot;1;2&quot;,lrs_union(t[&quot;water&quot;],suffix(t[&quot;addr:street&quot;]))),::id=id(),k0=t[&quot;poles&quot;],::geom=center(trace(geom()))-&gt;.s3;
+if ((!((s2.count(nwr)==10)||(s2.count(nw)==-1)))) { make yes n=s2.count(nwr)-&gt;.s4; } else { make no n=0-&gt;.s4; }
+.s1 out body bb asc 45;
+.s4 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

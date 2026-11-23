@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 232</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 232</p><h1>Query 232</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1978 · 0.08 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  relation[&quot;operator&quot;=&quot;Accord&quot;](around:10000,44.805858,-63.977417);
+  way[&quot;waste&quot;~&quot;trash&quot;](around:10000,44.805858,-63.977417);
+  node[&quot;surface&quot;=&quot;compacted&quot;](around:5000,44.805858,-63.977417);
+  node[&quot;shelter&quot;=&quot;no&quot;](around:1000,44.805858,-63.977417);
+  node[&quot;length&quot;](around:10000,44.805858,-63.977417);
+  node[&quot;colour&quot;=&quot;Pink&quot;](around:10000,44.805858,-63.977417);
+  way[&quot;building&quot;=&quot;garage&quot;](around:10000,44.805858,-63.977417);
+  way[&quot;landuse&quot;~&quot;cemetery|farmland|grass|meadow|quarry|residential|winter_sports&quot;](around:5000,44.805858,-63.977417);
+  node[&quot;brand:wikidata&quot;=&quot;Q1032400&quot;](around:2000,44.805858,-63.977417);
+  node[&quot;operator:fr&quot;~&quot;^(Postes\\ Canada)$&quot;,i](around:500,44.805858,-63.977417);
+  node[&quot;population&quot;~&quot;12954|23|78&quot;](around:10000,44.805858,-63.977417);
+  way[&quot;brand&quot;=&quot;Pharmasave&quot;][&quot;service&quot;~&quot;127|roof&quot;,i](around:5000,44.805858,-63.977417);
+  way[&quot;building&quot;~&quot;apartments|commercial|house|shed&quot;](around:1000,44.805858,-63.977417);
+  relation[&quot;natural&quot;~&quot;^(beach|ridge|rock|tree|water)$&quot;,i](around:10000,44.805858,-63.977417);
+);
+out geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

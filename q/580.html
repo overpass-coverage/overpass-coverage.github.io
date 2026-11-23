@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 580</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 580</p><h1>Query 580</h1><p class="muted">fuzz:3:statements,areas:1289 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+way(poly:&quot;46.643551 -60.988446 46.644073 -60.996616 46.636465 -60.996393&quot;)(if:is_closed())(46.111374,-60.356819,46.125342,-59.992227)-&gt;.s0;
+.s0 map_to_area-&gt;.s1;
+area[name=&quot;Fox Lake&quot;]-&gt;.s2;
+nwr(area.s2)[&quot;surface&quot;=&quot;pebblestone&quot;]-&gt;.s3;
+.s1 &lt;&lt;-&gt;.s4;
+rel(bw.s0)-&gt;.s5;
+.s2 out body center;
+.s5 out meta 29;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

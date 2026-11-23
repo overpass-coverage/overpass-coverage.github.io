@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1497</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1497</p><h1>Query 1497</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1712 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][maxsize:268435456][out:json];
+node(46.272678,-60.642330,46.293188,-60.638200)-&gt;.s0;
+node(r.s0)-&gt;.s1;
+.s0-&gt;._; node(r); (._;)-&gt;.s2;
+.s0 is_in-&gt;.s3;
+node.s1(if:((uid()/lrs_min(&quot;1;2&quot;))&gt;lrs_max(&quot;a;b;c&quot;)))-&gt;.s4;
+.s1 out geom tags qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

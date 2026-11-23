@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 402</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 402</p><h1>Query 402</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1929 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[out:json];
+node[!&quot;voltage&quot;][&quot;tower:type&quot;=&quot;communication&quot;](46.230599,-61.370701,46.232398,-61.235976)[&quot;power&quot;~&quot;^gene&quot;]-&gt;.s0;
+(.s0; .s0 &gt;;)-&gt;.s1;
+.s1 local ll-&gt;.s2;
+is_in(45.555628,-64.437116)-&gt;.s3;
+rel(area.s3)[&quot;postal_code&quot;=&quot;B0T 1P0&quot;]-&gt;.s4;
+foreach.s1-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s3 out body noids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
