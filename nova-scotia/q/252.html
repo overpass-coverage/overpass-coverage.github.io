@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 252</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 252</p><h1>Query 252</h1><p class="muted">fuzz:3:evaluators:75 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+way[&quot;ford&quot;=&quot;stepping_stones&quot;]-&gt;.s0;
+.s0 convert stat k0=(abs(number(t[&quot;addr:street&quot;]))==suffix(t[&quot;maxspeed&quot;])),members=per_member(mtype()+&quot;/&quot;+ref()),k1=suffix(t[&quot;layer&quot;]),!&quot;light:method&quot;,::id=id()-&gt;.s1;
+.s1 convert row ::id=id(),tags=count_tags();
+out;
+.s1 out tags geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

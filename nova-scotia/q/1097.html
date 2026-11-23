@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1097</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1097</p><h1>Query 1097</h1><p class="muted">fuzz:3:statements,areas:314 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+nw(44.890761,-64.020307,45.143515,-63.743329)[&quot;surface&quot;](if:id()&gt;4000000000)(43.580308,-65.590930,43.601907,-65.523988)-&gt;.s0;
+way.s0[&quot;destination:forward&quot;=&quot;Wolfville : Bedford&quot;]-&gt;.s1;
+rel(r.s1)-&gt;.s2;
+way(around:0,45.003992,-63.534858,45.002263,-63.536370,45.002164,-63.538074,45.001633,-63.541527)[&quot;surface&quot;]-&gt;.s3;
+.s1 map_to_area-&gt;.s4;
+.s0 out tags;
+.s4 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 91</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 91</p><h1>Query 91</h1><p class="muted">fuzz:3:areas,complete:2238 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][bbox:43.538921,-65.568599,43.779749,-65.151777];
-wr[&quot;foot&quot;~&quot;^(designated|private|yes)$&quot;](if:number(t[&quot;junction:ref&quot;])&gt;30)(44.688818,-63.199574,44.785063,-63.184714)[&quot;natural&quot;~&quot;^(cape|land|reef|tree|tree_row|wood)$&quot;]-&gt;.s0;
-node(way_cnt.s0:1-2)-&gt;.s1;
-node.s1(44.533237,-65.632053,44.749711,-65.448346)-&gt;.s2;
-area[name=&quot;Green Bay&quot;]-&gt;.s3;
-nwr(area.s3)(44.627852,-63.670336,44.660387,-63.623556)-&gt;.s4;
-node(way_link.s2:3-)-&gt;.s5;
-.s3 out tags qt;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

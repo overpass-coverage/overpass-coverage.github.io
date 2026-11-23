@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1659</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1659</p><h1>Query 1659</h1><p class="muted">fuzz:3:evaluators:1197 · 0.69 s CPU · expected status <code>query-error: runtime error: Filters too weak in query statement: specify in addition a bbox, a tag filt</code></p><pre class="query">[timeout:60][maxsize:536870912];
-way(id:208799882,834074467,1563372306)-&gt;.s0;
-make info n=1,c=number(s0.max(type()))-&gt;.s1;
-way.s0(if:count_tags()&gt;4)-&gt;.s2;
-wr(bn.s2)[~&quot;^bui&quot;~&quot;pla&quot;]-&gt;.s3;
-.s1 out ids;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

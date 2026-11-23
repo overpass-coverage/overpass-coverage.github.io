@@ -1,6 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 995</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 995</p><h1>Query 995</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2726 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][out:csv(&quot;addr:county&quot;,&quot;tunnel&quot;,::changeset)][bbox:44.755221,-65.404559,45.020125,-65.360555];
-rel[&quot;restriction:conditional&quot;=&quot;no_left_turn @ (Mo-Fr 16:00-18:00)&quot;][&quot;landuse&quot;=&quot;meadow&quot;][&quot;waste&quot;=&quot;trash&quot;]-&gt;.s0;
-.s0 map_to_area-&gt;.s1;
-if ((((s0.min(abs(lon()))&gt;=3)?(s0.count(nodes)):(s0.count(nodes)))==number(s0.set(suffix(suffix(t[&quot;emergency&quot;])))))) { make yes n=s0.count(nwr)-&gt;.s2; }
-.s0 out qt count center;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

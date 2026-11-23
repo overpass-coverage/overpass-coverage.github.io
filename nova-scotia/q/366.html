@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 366</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 366</p><h1>Query 366</h1><p class="muted">fuzz:3:areas,complete:1184 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+node(if:t[&quot;landuse&quot;]==&quot;farmland&quot;)(id:780932951,862373049,989605516,1062611710,1146859663,1235211984,1318986467,3520282626,4338998380,4855871461,8586492111,8608862941)-&gt;.s0;
+area[name=&quot;First Lake&quot;]-&gt;.s1;
+node(area.s1)[&quot;demolished:building&quot;=&quot;garage&quot;]-&gt;.s2;
+node(around.s1:20)[&quot;building&quot;=&quot;house&quot;]-&gt;.s3;
+complete(2).s1-&gt;.s4 { node(w); way(bn)[&quot;addr:suburb&quot;]; }
+nwr(pivot.s1)-&gt;.s5;
+.s2 out meta geom;
+.s5 out ids qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

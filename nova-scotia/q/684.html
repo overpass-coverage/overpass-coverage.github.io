@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 684</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 684</p><h1>Query 684</h1><p class="muted">fuzz:3:poi,areas:160 · 0.14 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;highway&quot;=&quot;track&quot;][&quot;post_box:type&quot;~&quot;bounda&quot;,i](around:25000,43.826868,-66.110497);
+  way[&quot;camera:direction&quot;~&quot;^(15)$&quot;][&quot;light:method&quot;~&quot;18|30|steel|traffi&quot;,i](around:25000,43.826868,-66.110497);
+  way[&quot;shop&quot;=&quot;games&quot;](around:5000,43.826868,-66.110497);
+  way[&quot;unsigned_ref&quot;=&quot;7519&quot;](around:25000,43.826868,-66.110497);
+  way[&quot;surface&quot;~&quot;asphalt|dirt|ground|pebblestone&quot;,i][&quot;barrier&quot;~&quot;grassl|no&quot;,i](around:1000,43.826868,-66.110497);
+  relation[&quot;highway&quot;~&quot;crossing|path|stop&quot;](around:25000,43.826868,-66.110497);
+  nwr[&quot;operator&quot;](around:25000,43.826868,-66.110497);
+  node[&quot;admin_level&quot;=&quot;9&quot;](around:25000,43.826868,-66.110497);
+  node[&quot;power&quot;](around:25000,43.826868,-66.110497);
+);
+out center tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

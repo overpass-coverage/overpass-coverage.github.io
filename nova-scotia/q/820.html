@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 820</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 820</p><h1>Query 820</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1374 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;brand:wikidata&quot;~&quot;^(Q118558630|Q130546216|Q2974996|Q6970842|Q7366633)$&quot;,i](around:2000,44.674564,-63.806759);
+  relation[&quot;owner&quot;~&quot;^(Canadian\\ National\\ Railway|Halifax\\ Regional\\ Municipality|Halifax\\ Regional\\ Water\\ Commission|Pharmacist\\ Owner|Sackville\\ Manor|Sprigfield\\ Estates)$&quot;](around:5000,44.674564,-63.806759);
+  node[&quot;surface&quot;~&quot;concrete|gravel|ground|paved|rock&quot;,i](around:1000,44.674564,-63.806759);
+  relation[&quot;maxspeed:advisory&quot;=&quot;45&quot;][&quot;fixme&quot;~&quot;separa&quot;,i](around:1000,44.674564,-63.806759);
+  node[&quot;seamark:light:height&quot;=&quot;24&quot;](around:1000,44.674564,-63.806759);
+  nwr[&quot;nat_name:en&quot;=&quot;Trans-Canada Highway&quot;](around:1000,44.674564,-63.806759);
+  node[&quot;width&quot;=&quot;1&quot;](around:1000,44.674564,-63.806759);
+  way[&quot;bicycle&quot;~&quot;designated|yes&quot;](around:2000,44.674564,-63.806759);
+  node[&quot;material&quot;~&quot;aluminium|crusher\\ dust|steel|wood&quot;,i](around:1000,44.674564,-63.806759);
+  way[&quot;postal_code&quot;~&quot;B0R\\ 1C0|B0T\\ 1P0|B4C\\ 1G1|B4H\\ 3Y2&quot;](around:500,44.674564,-63.806759);
+);
+out body center qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

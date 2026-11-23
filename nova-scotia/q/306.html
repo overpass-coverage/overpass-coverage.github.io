@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 306</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 306</p><h1>Query 306</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3650 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::lat,&quot;addr:suburb&quot;)][maxsize:1073741824];
+way(id:4368486,99837755,854089070,1046357020)[&quot;tourism&quot;~&quot;^camp_&quot;,i]-&gt;.s0;
+.s0 convert row k0=((t[&quot;service&quot;]&lt;timestamp())&amp;&amp;((!0)&amp;&amp;lrs_in(id(),lrs_union(t[&quot;power&quot;],&quot;name&quot;)))),k2=number((1?(lrs_min(t[&quot;boundary&quot;])):((timestamp()+suffix(t[&quot;surface&quot;]))))),::id=id(),members=per_member((pos()&gt;2)),::geom=center(center(center(geom()))),k3=number(t[&quot;owner&quot;]),angles=per_vertex(angle()),k1=lrs_min(lrs_union(t[&quot;ref&quot;],&quot;name&quot;))-&gt;.s1;
+.s0 out ids asc bb noids;
+out meta asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

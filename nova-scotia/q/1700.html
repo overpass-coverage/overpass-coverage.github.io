@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1700</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1700</p><h1>Query 1700</h1><p class="muted">fuzz:3:areas,complete:19 · 0.09 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][bbox:44.833715,-64.037872,44.928552,-63.956999];
+wr[&quot;check_date&quot;](44.428640,-65.872064,44.513677,-65.678159)(poly:&quot;44.795956 -63.719086 44.815586 -63.779693 44.795060 -63.808774 44.786262 -63.785223 44.774416 -63.753567 44.760321 -63.722939&quot;)[&quot;NHS&quot;!=&quot;yes&quot;]-&gt;.s0;
+rel(r.s0)[&quot;light:lit&quot;=&quot;dusk-dawn&quot;]-&gt;.s1;
+(.s1; .s1;)-&gt;.s2;
+.s1 &gt;-&gt;.s3;
+is_in(44.246245,-65.804882)-&gt;.s4;
+rel(area.s4)[&quot;water_source&quot;=&quot;main&quot;]-&gt;.s5;
+.s4 out meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

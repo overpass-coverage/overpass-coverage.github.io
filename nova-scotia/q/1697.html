@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1697</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1697</p><h1>Query 1697</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:4345 · 0.09 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;shop&quot;~&quot;beverages|deli|games|shoes&quot;,i](around:2000,44.624714,-63.568720);
+  nwr[&quot;highway&quot;=&quot;primary&quot;](around:2000,44.624714,-63.568720);
+  way[&quot;shop&quot;~&quot;beverages|deli|games&quot;](around:2000,44.624714,-63.568720);
+  node[&quot;waterway&quot;~&quot;dam|stream&quot;,i](around:2000,44.624714,-63.568720);
+  node[&quot;amenity&quot;=&quot;restaurant&quot;](around:2000,44.624714,-63.568720);
+  way[&quot;maintained&quot;=&quot;Halifax Regional Municipality&quot;](around:2000,44.624714,-63.568720);
+  node[&quot;surface&quot;~&quot;compacted|grass|gravel|paved|unpaved&quot;](around:3000,44.624714,-63.568720);
+  way[&quot;golf&quot;=&quot;bunker&quot;](around:2000,44.624714,-63.568720);
+  nwr[&quot;brand&quot;=&quot;Laura Secord&quot;](around:3000,44.624714,-63.568720);
+  node[&quot;building&quot;=&quot;industrial&quot;](around:1000,44.624714,-63.568720);
+  node[&quot;unsigned_ref&quot;~&quot;2426|6757&quot;](around:2000,44.624714,-63.568720);
+  node[&quot;plant:output:electricity&quot;](around:2000,44.624714,-63.568720);
+  nwr[&quot;cyclestreet&quot;~&quot;^(yes)$&quot;][&quot;lane_markings&quot;~&quot;Pharma|Q34800&quot;,i](around:3000,44.624714,-63.568720);
+  node[&quot;light:colour&quot;=&quot;white&quot;](around:2000,44.624714,-63.568720);
+  node[&quot;maxspeed&quot;~&quot;100|110|30|60|70|80&quot;](around:3000,44.624714,-63.568720);
+);
+out center tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

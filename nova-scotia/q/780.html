@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 780</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 780</p><h1>Query 780</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:4964 · 0.14 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  nwr[&quot;fuel:diesel&quot;~&quot;^(yes)$&quot;](around:500,44.368606,-64.350529);
+  node[&quot;postal_code&quot;~&quot;B2T\\ 1B4|B3G\\ 1R1|B3K\\ 5W4|B5A\\ 5R1&quot;](around:3000,44.368606,-64.350529);
+  nwr[&quot;golf&quot;=&quot;green&quot;](around:5000,44.368606,-64.350529);
+  nwr[&quot;layer&quot;](around:3000,44.368606,-64.350529);
+  nwr[&quot;seamark:light:range&quot;=&quot;8&quot;](around:5000,44.368606,-64.350529);
+  relation[&quot;type&quot;](around:3000,44.368606,-64.350529);
+  node[&quot;parking:left:orientation&quot;=&quot;diagonal&quot;](around:3000,44.368606,-64.350529);
+  node[&quot;length&quot;=&quot;3&quot;](around:500,44.368606,-64.350529);
+  node[&quot;disused:amenity&quot;=&quot;fast_food&quot;](around:2000,44.368606,-64.350529);
+  node[&quot;landuse&quot;](around:3000,44.368606,-64.350529);
+  relation[&quot;power&quot;=&quot;transformer&quot;](around:3000,44.368606,-64.350529);
+  way[&quot;phases&quot;~&quot;^(3)$&quot;,i](around:2000,44.368606,-64.350529);
+);
+out body center qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 652</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 652</p><h1>Query 652</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3118 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:json];
-rel(if:(!is_number(count_distinct_by_role(&quot;highest_point&quot;))))(44.561740,-63.580146,44.565635,-63.550641)-&gt;.s0;
-.s0 &lt;-&gt;.s1;
-.s1 convert stat k1=user(),k0=(suffix((type()+user()))+lrs_max(&quot;a;b;c&quot;)),::geom=geom(),members=per_member(role()),::=::-&gt;.s2;
-.s1 &gt;-&gt;.s3;
-node(around.s0:300)[&quot;turn:lanes&quot;=&quot;||right&quot;]-&gt;.s4;
-.s4 out meta;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

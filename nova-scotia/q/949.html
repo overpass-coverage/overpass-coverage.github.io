@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 949</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 949</p><h1>Query 949</h1><p class="muted">fuzz:3:poi,areas:101 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  way[&quot;crossing:markings&quot;~&quot;^(lines|no)$&quot;](around:5000,45.238971,-62.854912);
+  node[&quot;brand:wikidata&quot;~&quot;Q1032400|Q118558630|Q2974996|Q53268|Q6970842|Q7366633&quot;,i](around:3000,45.238971,-62.854912);
+  nwr[&quot;memorial&quot;](around:4828,45.238971,-62.854912);
+  node[&quot;highway&quot;~&quot;footway|motorway|service|steps|tertiary&quot;](around:4828,45.238971,-62.854912);
+  relation[&quot;maxspeed&quot;=&quot;50&quot;](around:5000,45.238971,-62.854912);
+  way[&quot;boundary_type&quot;=&quot;territorial_waters&quot;](around:4828,45.238971,-62.854912);
+  relation[&quot;destination&quot;~&quot;^(Chester\\ :\\ Yarmouth|Highway\\ 104|Lunenburg;Mahone\\ Bay;Blockhouse|Mineville;Lake\\ Echo|Saint\\ Croix;Newport;Ellershouse)$&quot;][&quot;post:city&quot;~&quot;Canada|servic|tree&quot;,i](around:2000,45.238971,-62.854912);
+  nwr[&quot;bus&quot;~&quot;yes&quot;](around:4828,45.238971,-62.854912);
+  relation[&quot;sidewalk&quot;][&quot;addr:suburb&quot;~&quot;runway|yes|zebra&quot;,i](around:5000,45.238971,-62.854912);
+);
+out center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

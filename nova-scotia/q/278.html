@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 278</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 278</p><h1>Query 278</h1><p class="muted">fuzz:3:evaluators:398 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+node[!&quot;takeaway&quot;][&quot;seamark:light:range&quot;=&quot;8&quot;][&quot;waterway&quot;=&quot;river&quot;](45.097068,-64.590654,45.215075,-64.370573)-&gt;.s0;
+node.s0(if:((is_number(t[&quot;water&quot;])?((t[&quot;ref&quot;]==&quot;jeweller&quot;?(user()):(id()))):((user()+suffix(t[&quot;operator&quot;]))))&gt;lrs_min(&quot;a;b;c&quot;)))-&gt;.s1;
+.s0 convert stat k2=&quot;a;b;c&quot;,k1=(0?(lrs_min(lrs_union(t[&quot;poles&quot;],&quot;name&quot;))):((suffix(t[&quot;water&quot;])+(id()+t[&quot;maxspeed&quot;])))),k0=(timestamp()+lrs_min(&quot;1;2&quot;)),!&quot;admin_level&quot;,::id=id(),k3=lrs_in(abs(lon()),lrs_union(lrs_union(&quot;a;b;c&quot;,&quot;a;b;c&quot;),t[&quot;power&quot;]))-&gt;.s2;
+way(r.s2)-&gt;.s3;
+make stat k0=s2.min(uid()),k1=lrs_min(s2.min(count_members())),k2=lrs_union(lrs_min(s2.u(lrs_min(&quot;1;2&quot;))),((s2.count(nwr)&gt;=42)?(s2.min((t[&quot;addr:province&quot;]+user()))):(s2.max((suffix(t[&quot;lamp_mount&quot;])+timestamp()))))),k3=((s2.sum(date(timestamp()))&lt;3)?(abs(s2.count(nwr))):(s2.sum((is_closed()?(lon()):(number(t[&quot;frequency&quot;]))))))-&gt;.s4;
+.s4 out body;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

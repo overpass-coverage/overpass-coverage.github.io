@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 27</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 27</p><h1>Query 27</h1><p class="muted">fuzz:3:poi,areas:147 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+nw(poly:&quot;43.794909 -65.521879 43.781446 -65.517124 43.783000 -65.502231 43.788694 -65.501718&quot;)-&gt;.s0;
+rel(br.s0)-&gt;.s1;
+.s0 is_in-&gt;.s2;
+rel(bw.s0)[&quot;isced:level&quot;!~&quot;4&quot;]-&gt;.s3;
+nwr(pivot.s2)-&gt;.s4;
+.s4 convert row ::id=id(),tags=count_tags();
+out;
+.s2 out count;
+.s4 out meta 1;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

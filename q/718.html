@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 718</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 718</p><h1>Query 718</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5365 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-(
-  way[&quot;operator&quot;~&quot;^(Bell\\ Aliant|Fundy\\ Ocean\\ Research\\ Centre\\ for\\ Energy|Killam\\ Properties|Nova\\ Scotia\\ Nature\\ Trust\\ and\\ private\\ owner\\(s\\))$&quot;,i][&quot;sidewalk&quot;~&quot;post_b|water&quot;,i](around:1500,46.130355,-60.187594);
-  node[&quot;natural&quot;~&quot;^(grass|grassland|sand|scrub|water)$&quot;][&quot;operator:en&quot;~&quot;games|land|storag|tertia&quot;,i](around:1500,46.130355,-60.187594);
-  node[&quot;amenity&quot;](around:1000,46.130355,-60.187594);
-);
-out center;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

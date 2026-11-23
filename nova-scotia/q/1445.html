@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1445</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1445</p><h1>Query 1445</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:4403 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:268435456][out:popup(&quot;Named things&quot;;[&quot;natural&quot;!=&quot;tree_row&quot;][&quot;owner&quot;=&quot;Halifax Regional Water Commission&quot;];[&quot;utility&quot;!~&quot;^te&quot;];[&quot;natural&quot;!~&quot;^wo&quot;][&quot;height&quot;=&quot;8&quot;];)(&quot;Food&quot;;[&quot;brand:wikidata&quot;=&quot;Q1032400&quot;][&quot;natural&quot;!=&quot;grassland&quot;];)(&quot;Roads&quot;;[&quot;voltage&quot;];[&quot;cyclestreet&quot;~&quot;^ye&quot;][&quot;destination&quot;=&quot;Chester : Yarmouth&quot;];[&quot;bus&quot;=&quot;yes&quot;][&quot;highway&quot;!=&quot;trunk&quot;];)];
+wr(around:500,43.630250,-65.484580)[&quot;stop&quot;~&quot;^mi&quot;,i]-&gt;.s0;
+node(w.s0)[&quot;natural&quot;!~&quot;^coas&quot;]-&gt;.s1;
+area[name=&quot;Kejimkujik National Park of Canada&quot;][admin_level]-&gt;.s2;
+rel(area.s2)[&quot;unsigned_ref&quot;=&quot;6982&quot;]-&gt;.s3;
+.s1 out body;
+.s2 out (44.561265,-65.114702,44.613764,-65.093892);
+.s3 out 5 geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

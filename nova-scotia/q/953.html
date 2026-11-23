@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 953</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 953</p><h1>Query 953</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:693 · 0.34 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;parking:left:orientation&quot;~&quot;diagonal&quot;](around:3219,44.687533,-63.568289);
+  node[&quot;operator&quot;~&quot;Bell\\ Aliant|Emera|Jason\\ Hiltz&quot;](around:3219,44.687533,-63.568289);
+  way[&quot;electrified&quot;~&quot;^(no)$&quot;,i](around:2000,44.687533,-63.568289);
+  nwr[&quot;admin_level&quot;~&quot;5|8|9&quot;](around:3219,44.687533,-63.568289);
+  nwr[&quot;leisure&quot;=&quot;swimming_pool&quot;](around:5000,44.687533,-63.568289);
+  node[&quot;brand:wikidata&quot;=&quot;Q2241604&quot;](around:3219,44.687533,-63.568289);
+  way[&quot;brand&quot;=&quot;Royal Canadian Legion&quot;](around:2000,44.687533,-63.568289);
+  nwr[&quot;waterway&quot;~&quot;^(dam|rapids|river|stream)$&quot;](around:2000,44.687533,-63.568289);
+  way[&quot;crossing&quot;~&quot;informal|marked|traffic_signals|uncontrolled|unmarked&quot;,i](around:5000,44.687533,-63.568289);
+);
+out geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

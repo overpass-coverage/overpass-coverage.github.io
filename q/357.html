@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 357</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 357</p><h1>Query 357</h1><p class="muted">fuzz:3:areas,complete:897 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-rel(if:is_tag(&quot;voltage&quot;))(poly:&quot;45.188030 -63.582535 45.181325 -63.588457 45.174528 -63.581327&quot;)(id:2981641,11703666)-&gt;.s0;
-area[name=&quot;Chain Lakes&quot;]-&gt;.s1;
-node(area.s1)[&quot;crossing:island&quot;=&quot;no&quot;]-&gt;.s2;
-.s1 convert row ::id=id(),tags=count_tags();
-out;
-.s0 out tags 28;
-.s1 out body bb asc;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

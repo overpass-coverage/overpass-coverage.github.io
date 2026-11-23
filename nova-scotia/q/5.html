@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 5</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 5</p><h1>Query 5</h1><p class="muted">fuzz:3:poi,areas:402 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;segregated&quot;=&quot;no&quot;](around:3219,44.265890,-64.247615);
+  relation[&quot;place&quot;=&quot;village&quot;](around:3219,44.265890,-64.247615);
+  way[&quot;is_in:municipality&quot;~&quot;^(Halifax\\ Regional\\ Municipality)$&quot;,i](around:3219,44.265890,-64.247615);
+  way[&quot;maxspeed&quot;=&quot;30&quot;](around:3219,44.265890,-64.247615);
+  node[&quot;layer&quot;](around:3219,44.265890,-64.247615);
+  way[&quot;ford&quot;=&quot;stepping_stones&quot;](around:3000,44.265890,-64.247615);
+  node[&quot;loc_name&quot;](around:3219,44.265890,-64.247615);
+  relation[&quot;postal_code&quot;=&quot;B5A 5G3&quot;](around:500,44.265890,-64.247615);
+);
+out tags center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

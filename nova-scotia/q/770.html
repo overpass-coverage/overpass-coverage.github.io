@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 770</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 770</p><h1>Query 770</h1><p class="muted">fuzz:3:output:240 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][maxsize:268435456][out:csv(&quot;colour&quot;,&quot;landuse&quot;,::uid;true)];
+wr[&quot;population&quot;=&quot;12954&quot;](46.944942,-60.511427,47.052785,-60.456255)-&gt;.s0;
+nwr(44.216347,-65.319358,44.218884,-65.111577)[&quot;golf&quot;~&quot;^bun&quot;](if:changeset()&gt;41000000)[&quot;religion&quot;=&quot;christian&quot;]-&gt;.s1;
+way[&quot;destination:forward&quot;=&quot;Dartmouth ; Lawerncetown&quot;][&quot;destination:forward&quot;=&quot;CFB Halifax-Dockyard&quot;](44.312403,-64.521915,44.344093,-64.316864)-&gt;.s2;
+rel[&quot;surface&quot;](46.768676,-60.703841,46.771668,-60.684063)-&gt;.s3;
+.s1 out geom 17;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1826</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1826</p><h1>Query 1826</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5795 · 0.84 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  nwr[&quot;building:levels&quot;=&quot;2&quot;](around:4828,44.671482,-63.528723);
+  node[&quot;natural&quot;](around:4828,44.671482,-63.528723);
+  way[&quot;lit&quot;][&quot;golf&quot;~&quot;1&quot;,i](around:4828,44.671482,-63.528723);
+  nwr[&quot;material&quot;](around:3000,44.671482,-63.528723);
+  way[&quot;material&quot;~&quot;^(aluminium|concrete|crusher\\ dust)$&quot;](around:4828,44.671482,-63.528723);
+  nwr[&quot;operator&quot;](around:4828,44.671482,-63.528723);
+  way[&quot;stop&quot;=&quot;minor&quot;](around:4828,44.671482,-63.528723);
+  node[&quot;operator&quot;~&quot;Canada\\ Post|Halifax\\ Regional\\ Municipality&quot;](around:5000,44.671482,-63.528723);
+  way[&quot;admin_level&quot;=&quot;10&quot;](around:4828,44.671482,-63.528723);
+  node[&quot;barrier&quot;=&quot;fence&quot;](around:4828,44.671482,-63.528723);
+  nwr[&quot;unsigned_ref&quot;~&quot;1374|2426|5817|7519&quot;](around:4828,44.671482,-63.528723);
+  nwr[&quot;water&quot;~&quot;lake|pond|stream_pool&quot;,i][&quot;maxheight&quot;~&quot;6982&quot;,i](around:4828,44.671482,-63.528723);
+  node[&quot;branch&quot;=&quot;Kentville&quot;](around:4828,44.671482,-63.528723);
+);
+out geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

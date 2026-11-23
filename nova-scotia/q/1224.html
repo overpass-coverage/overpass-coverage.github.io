@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1224</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1224</p><h1>Query 1224</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:4453 · 0.10 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][out:csv(::&quot;count:relations&quot;;false;&quot;|&quot;)];
+rel[&quot;amenity&quot;=&quot;veterinary&quot;][!&quot;lanes:psv&quot;]-&gt;.s0;
+way(r.s0:&quot;inner&quot;)-&gt;.s1;
+foreach.s1(._ out ids;)
+(._;)-&gt;.s2;
+is_in(44.678838,-63.593725)-&gt;.s3;
+rel(area.s3)[&quot;amenity&quot;=&quot;nightclub&quot;]-&gt;.s4;
+foreach.s3-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s4 out qt (44.693490,-65.635932,44.750437,-65.539855) meta bb;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

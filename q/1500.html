@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1500</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1500</p><h1>Query 1500</h1><p class="muted">fuzz:3:areas,complete:1570 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-rel[&quot;building&quot;!~&quot;apartments|commercial|detached|garage|hangar|industrial|nursing_home|residential|retail|shelter|static_caravan|synagogue|warehouse&quot;](id:1745268,6844699,13337196,20453741)-&gt;.s0;
-rel.s0[!&quot;landuse&quot;]-&gt;.s1;
-(.s1; .s0;)-&gt;.s2;
-.s2 &lt;&lt;-&gt;.s3;
-node(r.s0)-&gt;.s4;
-.s1 out meta (44.286390,-64.524820,44.361175,-64.478740);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

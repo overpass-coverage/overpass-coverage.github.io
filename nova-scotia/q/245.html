@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 245</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 245</p><h1>Query 245</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:4595 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][maxsize:1073741824];
+way(around:250,45.574776,-62.673492)(if:is_tag(&quot;highway&quot;))-&gt;.s0;
+wr(bn.s0)-&gt;.s1;
+make stat k0=number(s1.set((timestamp()+&quot;2018-01-01&quot;))),k1=(-s1.sum(count_distinct_members())),k2=((s1.min((1?(lat()):(lat())))&gt;=10)?(s1.count(relations)):(date(s1.max(timestamp()))))-&gt;.s2;
+(.s0; - .s2;)-&gt;.s3;
+.s3 convert row ::id=id(),tags=count_tags();
+out;
+.s2 out qt skel;
+.s3 out noids ids (44.286877,-64.535639,44.354908,-64.399679);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

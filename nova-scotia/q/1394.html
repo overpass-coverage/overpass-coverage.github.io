@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1394</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1394</p><h1>Query 1394</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:848 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:268435456][out:xml];
+node[&quot;operator&quot;!~&quot;Accord|Bell\\ Aliant|Canada\\ Post|Emera|Fundy\\ Ocean\\ Research\\ Centre\\ for\\ Energy|Glooscap\\ Energy|Jason\\ Hiltz|Killam\\ Properties|Municipality\\ of\\ the\\ District\\ of\\ Argyle|Nova\\ Scotia\\ Power|South\\ Queens\\ Middle\\ School&quot;](44.606012,-64.025072,44.793566,-63.742303)(46.466453,-60.780212,46.566628,-60.726499)-&gt;.s0;
+area[name=&quot;Pictou Landing First Nation&quot;]-&gt;.s1;
+nwr(area.s1)[&quot;turn:lanes:forward&quot;=&quot;left|through|through;right&quot;]-&gt;.s2;
+node[~&quot;^old_addr:housenumber$&quot;~&quot;^25$&quot;][&quot;crossing&quot;][&quot;sidewalk&quot;!=&quot;right&quot;]-&gt;.s3;
+.s0 out (44.366256,-64.552636,44.392757,-64.527291) body qt 1;
+.s1 out;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

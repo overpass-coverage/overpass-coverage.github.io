@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1319</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1319</p><h1>Query 1319</h1><p class="muted">fuzz:3:evaluators:103 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;fire_hydrant:position&quot;)];
-wr[&quot;bridge:name&quot;=&quot;Sussex Street Bridge&quot;][&quot;building&quot;=&quot;shed&quot;][&quot;place&quot;=&quot;village&quot;]-&gt;.s0;
-way.s0(if:(abs((t[&quot;crossing:markings&quot;]==&quot;Lower Mill (River Lake #1)&quot;?(version()):(length())))==abs(abs(count_tags()))))-&gt;.s1;
-.s0 convert stat ::id=id(),!&quot;addr:locality&quot;,k0=is_closed(),members=per_member(pos()),k1=id()-&gt;.s2;
-.s1 convert row k1=length(),::=::,k0=(0?(((suffix(t[&quot;highway&quot;])&gt;type())?(suffix(&quot;2018-01-01&quot;)):((&quot;right&quot;+t[&quot;addr:province&quot;])))):(lrs_min(t[&quot;amenity&quot;])))-&gt;.s3;
-.s1 out skel;
-.s3 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

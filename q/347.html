@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 347</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 347</p><h1>Query 347</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5748 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:536870912][out:json][timeout:25];
-node(45.596869,-62.498422,45.645543,-62.436664)-&gt;.s0;
-.s0 &lt;&lt;-&gt;.s1;
-way(bn.s1)-&gt;.s2;
-rel(bn.s0)[!&quot;seamark:light:range&quot;]-&gt;.s3;
-make stat k0=lrs_union(((s3.max((-count_distinct_by_role(&quot;hail_and_ride&quot;)))&gt;2)?(s3.min(lrs_min(t[&quot;support&quot;]))):(s3.set(count_distinct_members()))),suffix(s3.min((suffix(t[&quot;admin_level&quot;])+timestamp())))),k1=s3.max((-count_members()))-&gt;.s4;
-.s3 out body;
-.s4 out qt meta noids;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

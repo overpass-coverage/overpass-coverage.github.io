@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 620</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 620</p><h1>Query 620</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5132 · 0.16 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  nwr[&quot;direction&quot;](around:5000,45.818312,-64.208340);
+  nwr[&quot;building&quot;~&quot;apartments|detached|hangar|retail|shed|synagogue|warehouse|yes&quot;](around:1500,45.818312,-64.208340);
+  way[&quot;fee&quot;~&quot;no&quot;,i](around:3000,45.818312,-64.208340);
+  nwr[&quot;voltage&quot;](around:500,45.818312,-64.208340);
+  way[&quot;destination:symbol:forward&quot;=&quot;airport;toll&quot;](around:3000,45.818312,-64.208340);
+  node[&quot;foot&quot;~&quot;designated|private|yes&quot;,i](around:3000,45.818312,-64.208340);
+  nwr[&quot;brand&quot;=&quot;Sunglass Hut&quot;](around:5000,45.818312,-64.208340);
+  node[&quot;length&quot;](around:1500,45.818312,-64.208340);
+  way[&quot;crossing&quot;~&quot;^(informal|marked|uncontrolled|unmarked)$&quot;,i](around:2000,45.818312,-64.208340);
+);
+out geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1722</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1722</p><h1>Query 1722</h1><p class="muted">fuzz:3:poi,areas:1134 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+way[!&quot;power&quot;](if:count_tags()&gt;3)[&quot;sidewalk&quot;!=&quot;right&quot;](46.244417,-60.331295,46.267528,-60.160092)-&gt;.s0;
+.s0 is_in-&gt;.s1;
+way.s0(44.719966,-63.233434,44.818222,-63.182948)-&gt;.s2;
+node(way_link.s0:2-)-&gt;.s3;
+way(pivot.s1)-&gt;.s4;
+foreach.s0-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s0 out body bb;
+.s1 out tags geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 342</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 342</p><h1>Query 342</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:4469 · 0.16 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][out:xml][maxsize:268435456];
-nw(poly:&#x27;44.993782 -64.923840 45.004240 -64.924713 45.006881 -64.967478 44.973568 -64.984792&#x27;)-&gt;.s0;
-make stat k0=s0.set(suffix(t[&quot;light:method&quot;])),k1=abs(number(s0.max(lrs_min(&quot;1;2&quot;)))),k2=number(s0.u((1?(type()):(&quot;scrub&quot;)))),k3=s0.min(number(timestamp())),::geom=trace(s0.gcat(geom()))-&gt;.s1;
-.s0-&gt;._; node(r); (._;)-&gt;.s2;
-way(around.s0:0)[~&quot;^mat&quot;~&quot;conc&quot;]-&gt;.s3;
-rel(bn.s1:&quot;admin_centre&quot;)-&gt;.s4;
-.s2 out body geom asc 13;
-.s3 out asc noids count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

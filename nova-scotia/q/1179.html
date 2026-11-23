@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1179</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1179</p><h1>Query 1179</h1><p class="muted">fuzz:3:output:1335 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;boundary&quot;,::lon,::&quot;count:relations&quot;,::&quot;count:areas&quot;,&quot;addr:postcode&quot;,::uid,&quot;light:lit&quot;,::id)];
+rel[!&quot;natural&quot;](id:1420097,2419037,2911688,2973794,4872485,12041208,13567514,13836107,13908918,18023051,20268029,21460581)-&gt;.s0;
+nw[&quot;step_count&quot;=&quot;20&quot;][&quot;maxspeed&quot;=&quot;20&quot;](45.491570,-61.293609,45.666909,-61.172387)[&quot;power&quot;!~&quot;^conv&quot;]-&gt;.s1;
+nw(44.999638,-64.624402,45.126743,-64.575268)[&quot;cables&quot;=&quot;1&quot;][&quot;lanes&quot;]-&gt;.s2;
+.s2 &lt;-&gt;.s3;
+.s0 &lt;&lt;-&gt;.s4;
+.s0 out 100 geom asc tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

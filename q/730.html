@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 730</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 730</p><h1>Query 730</h1><p class="muted">fuzz:3:evaluators:316 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-way[&quot;natural&quot;=&quot;cape&quot;](45.174687,-61.447520,45.187150,-61.359149)[&quot;leisure&quot;!~&quot;^pa&quot;]-&gt;.s0;
-node(r.s0)-&gt;.s1;
-make stat k0=number(s0.u(lrs_min(lrs_union(t[&quot;power&quot;],&quot;name&quot;)))),k1=number(s0.u(&quot;a&quot;)),k2=s0.min(abs(lon())),::geom=hull(s0.gcat(geom()))-&gt;.s2;
-make stat k0=date(s0.max(timestamp())),k1=s0.min(abs(lat()))-&gt;.s3;
-.s2 out ids 19;
-.s3 out ids asc (44.630340,-63.588008,44.647633,-63.582409);
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/geometry_endomorphisms.cc.html#L73">overpass_api/statements/geometry_endomorphisms.cc:73</a></li></ul></main></body></html>

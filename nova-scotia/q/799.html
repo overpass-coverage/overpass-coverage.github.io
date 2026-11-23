@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 799</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 799</p><h1>Query 799</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2099 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][maxsize:536870912][out:csv(::otype,::&quot;count:nodes&quot;,::&quot;count:relations&quot;,::lat,::count,&quot;tunnel&quot;,::type;false;&quot;::&quot;)];
+way(around:1000,44.319390,-64.259602)-&gt;.s0;
+node(way_link.s0:1)-&gt;.s1;
+nwr[&quot;width&quot;=&quot;4.0&quot;][&quot;amenity&quot;~&quot;was&quot;,i][!&quot;access&quot;]-&gt;.s2;
+.s2 is_in-&gt;.s3;
+.s1 out geom body;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

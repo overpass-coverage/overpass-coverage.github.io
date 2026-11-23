@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 531</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 531</p><h1>Query 531</h1><p class="muted">fuzz:3::980 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;destination&quot;)];
-node(if:number(t[&quot;disused:aeroway&quot;])&gt;6)(45.498674,-61.414994,45.500147,-61.366198)(if:number(t[&quot;lane_markings&quot;])&gt;25)-&gt;.s0;
-node(way_cnt.s0:1-2)-&gt;.s1;
-wr[&quot;destination:symbol:forward&quot;=&quot;airport;toll&quot;][&quot;operator&quot;=&quot;Fundy Ocean Research Centre for Energy&quot;](45.104053,-63.541800,45.126068,-63.478303)(if:changeset()&gt;21000000)-&gt;.s2;
-way(around.s0:20)[&quot;postal_code&quot;=&quot;B4E 3G7&quot;]-&gt;.s3;
-.s3 &gt;-&gt;.s4;
-.s2 out body center;
-.s4 out meta asc;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

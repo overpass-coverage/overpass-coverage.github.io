@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1463</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1463</p><h1>Query 1463</h1><p class="muted">fuzz:3:output:956 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;name:en&quot;,&quot;water&quot;,::timestamp,::&quot;count:ways&quot;,::lat,::count,::user,::version,&quot;lanes:backward&quot;)];
+node(poly:&#x27;43.975502 -65.464666 43.975026 -65.465874 43.975144 -65.482064 43.974237 -65.487878&#x27;)[&quot;brand:wikipedia&quot;!=&quot;en:Walmart&quot;]-&gt;.s0;
+node(way_cnt.s0:3-)-&gt;.s1;
+.s0 &lt;-&gt;.s2;
+.s2 &gt;-&gt;.s3;
+node(around.s1:20)[&quot;owner&quot;=&quot;Halifax Regional Water Commission&quot;]-&gt;.s4;
+.s0 out 2 ids asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

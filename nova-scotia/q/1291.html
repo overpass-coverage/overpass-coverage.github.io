@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1291</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1291</p><h1>Query 1291</h1><p class="muted">fuzz:3:output:357 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:xml][timeout:25];
+node[&quot;building:flats&quot;=&quot;15&quot;][&quot;sport&quot;=&quot;pickleball&quot;]-&gt;.s0;
+.s0 &lt;&lt;-&gt;.s1;
+wr[&quot;postal_code&quot;!=&quot;B3K 5W4&quot;][&quot;man_made&quot;=&quot;survey_point&quot;][!&quot;material&quot;](45.383474,-62.661945,45.515910,-62.580664)-&gt;.s2;
+.s0 out 2 qt body;
+.s1 out meta;
+.s2 out geom tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

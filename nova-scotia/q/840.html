@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 840</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 840</p><h1>Query 840</h1><p class="muted">fuzz:3:poi,areas:1229 · 0.22 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+nw(44.206629,-64.322171,44.385536,-64.272002)[&quot;waterway&quot;!=&quot;rapids&quot;]-&gt;.s0;
+.s0 &lt;&lt;-&gt;.s1;
+.s1 map_to_area-&gt;.s2;
+node(way_link.s0:2-)-&gt;.s3;
+node.s1(id:912861166,980011761,1046055072,1146298041,1319074643,3505371869,4548378399,4930849158,6378934528,11779127922)-&gt;.s4;
+.s0 out meta;
+.s1 out ids geom;
+.s3 out ids 37;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

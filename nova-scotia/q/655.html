@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 655</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 655</p><h1>Query 655</h1><p class="muted">fuzz:3:evaluators:236 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+node[&quot;fence_type&quot;~&quot;^he&quot;][&quot;destination:ref:to:lanes&quot;=&quot;|102 South;101 West|&quot;][&quot;operator&quot;]-&gt;.s0;
+make info v=lrs_union(lrs_min(s0.max(user())),s0.max(lrs_min(t[&quot;addr:street&quot;])))-&gt;.s1;
+make stat k0=s1.set(suffix(t[&quot;crossing&quot;])),k1=s1.max((t[&quot;maxheight&quot;]==&quot;3&quot;?(uid()):(0))),k2=s1.min(lrs_max(lrs_union(t[&quot;height&quot;],&quot;name&quot;))),::geom=s1.gcat(center(geom()))-&gt;.s2;
+.s1 out tags center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

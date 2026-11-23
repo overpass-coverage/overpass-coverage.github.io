@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 210</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 210</p><h1>Query 210</h1><p class="muted">fuzz:3:output:935 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:536870912][bbox:45.039982,-62.141832,45.162247,-61.979700][out:csv(::&quot;count:ways&quot;,::version,::uid,::otype,::timestamp)][timeout:180];
+nwr[&quot;place&quot;=&quot;city&quot;][&quot;residential&quot;!=&quot;multi_family&quot;](44.652236,-63.523061,44.749076,-63.458578)[&quot;group_only&quot;!~&quot;no&quot;]-&gt;.s0;
+way.s0(if:number(t[&quot;admin_level&quot;])&gt;41)-&gt;.s1;
+way.s0[&quot;type&quot;~&quot;^ro&quot;]-&gt;.s2;
+.s0 out body;
+.s1 out skel 9 (44.644748,-64.158567,44.716138,-64.058807);
+.s2 out (45.019824,-64.888363,45.026146,-64.827979) ids bb qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 117</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 117</p><h1>Query 117</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2375 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][timeout:60][maxsize:268435456];
-nw(43.989405,-65.660920,44.135008,-65.458104)(if:date(timestamp())&gt;date(&quot;2009-01-01&quot;))[&quot;destination:forward&quot;=&quot;Dartmouth ; Lawerncetown&quot;](if:(abs(lrs_max(&quot;a;b;c&quot;))&gt;date((timestamp()+suffix(t[&quot;natural&quot;])))))-&gt;.s0;
-node(around.s0:300)[&quot;surface&quot;=&quot;unpaved&quot;]-&gt;.s1;
-nw[~&quot;^destination:ref:backward$&quot;~&quot;^NS 201$&quot;]-&gt;.s2;
-.s2 convert stat k2=number(t[&quot;height&quot;]),k1=count_members(),::=::,k0=type()-&gt;.s3;
-rel(bw.s0)[&quot;golf_cart&quot;~&quot;^desig&quot;,i]-&gt;.s4;
-.s2 out count;
-.s3 out meta geom qt;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 468</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 468</p><h1>Query 468</h1><p class="muted">fuzz:3:evaluators:541 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+way[&quot;lanes:forward&quot;!~&quot;^2&quot;](id:76497594,105546772,149941092,951227650,1185097654,1258948097,1435848550,1465741063,1530465235)(if:(1&amp;&amp;is_closed()))-&gt;.s0;
+make stat k0=s0.max((t[&quot;oneway&quot;]==&quot;bench&quot;?(count_distinct_members()):(uid()))),k1=number((s0.set((is_date(t[&quot;admin_level&quot;])?(timestamp()):(t[&quot;lamp_mount&quot;])))+s0.max((id()+id())))),k2=s0.sum(lat()),k3=number(((number(s0.u(suffix(t[&quot;land_area&quot;])))&gt;=-1)?(s0.u((is_number(t[&quot;layer&quot;])?(&quot;yes&quot;):(type())))):(s0.u((user()+timestamp())))))-&gt;.s1;
+.s0 out meta;
+.s1 out ids center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

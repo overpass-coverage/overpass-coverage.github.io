@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 171</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 171</p><h1>Query 171</h1><p class="muted">fuzz:3:statements,areas:1181 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+node[&quot;highway&quot;=&quot;unclassified&quot;](id:1325038693,1325463246,1715506587,2438182204,3512498172,3513785970,3523975721,3541675448,4558586737,6914074043,6943761474,12316956607)-&gt;.s0;
+way(bn.s0)-&gt;.s1;
+area[name=&quot;Little Narrows&quot;]-&gt;.s2;
+way(area.s2)[&quot;maxspeed:forward&quot;=&quot;60&quot;]-&gt;.s3;
+nw[&quot;flag:wikidata&quot;~&quot;^q80110$&quot;,i][~&quot;vend&quot;~&quot;an&quot;,i][~&quot;onew&quot;~&quot;no&quot;,i]-&gt;.s4;
+rel(r.s2)-&gt;.s5;
+.s3 out tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

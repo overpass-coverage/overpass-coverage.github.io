@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 122</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 122</p><h1>Query 122</h1><p class="muted">fuzz:3:evaluators:235 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-rel(poly:&#x27;46.003638 -61.257776 46.017228 -61.250781 46.012528 -61.269689 45.969025 -61.320838&#x27;)-&gt;.s0;
-node(way_cnt.s0:1-2)-&gt;.s1;
-.s0 convert stat k3=is_tag(&quot;owner&quot;),k2=(changeset()!=lrs_min(lrs_isect(&quot;a;b;c&quot;,t[&quot;phases&quot;]))),::geom=center(geom()),k0=count_members(),members=per_member(role()),!&quot;operator&quot;,k1=lrs_union((1?(&quot;x;y&quot;):(id())),id())-&gt;.s2;
-.s2 convert row ::id=id(),tags=count_tags();
-out;
-.s2 out ids;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/per_member.h.html#L399">overpass_api/statements/per_member.h:399</a></li></ul></main></body></html>

@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1802</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1802</p><h1>Query 1802</h1><p class="muted">fuzz:3:evaluators:1057 · 0.44 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-nwr[&quot;operator&quot;~&quot;^Bell\\ &quot;][&quot;amenity&quot;!~&quot;bench|bicycle_parking|drinking_water|nightclub|parking|place_of_worship|post_box|veterinary&quot;](44.656382,-63.592416,44.712765,-63.392267)-&gt;.s0;
-if ((((s0.count(ways)&gt;=1e3)?(s0.u(suffix(suffix(t[&quot;support&quot;])))):(s0.min((&quot;x;y&quot;+id()))))&lt;s0.set((t[&quot;waterway&quot;]==&quot;Albro Lake Road&quot;?(t[&quot;crossing&quot;]):(type()))))) { make yes n=s0.count(nwr)-&gt;.s1; } else { make no n=0-&gt;.s1; }
-node.s0(id:1230183600,2438148781,2502255874,3505826243,3510766146,5053966879,5906431778,6195331308)-&gt;.s2;
-if ((number(s1.u(lrs_min(&quot;a;b;c&quot;)))&gt;2)) { make yes n=s1.count(nwr)-&gt;.s3; } else { make no n=0-&gt;.s3; }
-.s3 out body center;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

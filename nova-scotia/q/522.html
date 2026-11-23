@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 522</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 522</p><h1>Query 522</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:908 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  nwr[&quot;colour&quot;](around:1000,43.989097,-65.586922);
+  way[&quot;horse&quot;=&quot;no&quot;](around:3000,43.989097,-65.586922);
+  way[&quot;destination:street&quot;=&quot;Nantucket Avenue&quot;](around:1000,43.989097,-65.586922);
+  nwr[&quot;entrance&quot;~&quot;emergency&quot;](around:1000,43.989097,-65.586922);
+  way[&quot;bridge:ref&quot;~&quot;^(HFX019|HFX038|HFX245)$&quot;,i](around:1000,43.989097,-65.586922);
+  way[&quot;surface&quot;=&quot;gravel&quot;](around:2000,43.989097,-65.586922);
+  nwr[&quot;check_date&quot;](around:1000,43.989097,-65.586922);
+  nwr[&quot;post:city&quot;~&quot;^(Scotsburn|Sheet\\ Harbour|Tangier|Upper\\ Musquodoboit)$&quot;,i][&quot;ocean&quot;~&quot;Member|primar&quot;,i](around:1000,43.989097,-65.586922);
+  node[&quot;leisure&quot;=&quot;bleachers&quot;](around:1000,43.989097,-65.586922);
+);
+out tags center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 405</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 405</p><h1>Query 405</h1><p class="muted">fuzz:3:areas,complete:2767 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-nwr[&quot;post:city&quot;!=&quot;Tangier&quot;][&quot;length&quot;!~&quot;^4&quot;](45.652361,-61.258796,45.658161,-61.235646)-&gt;.s0;
-rel(bw.s0)-&gt;.s1;
-node(way_link.s0:1)-&gt;.s2;
-node.s2(id:812038679,834871213,910584614,1319190336,2331219347,2475647557,3492310958,3538876406,4611956332,6439941935,6856282720,7134199285)-&gt;.s3;
-.s0 is_in-&gt;.s4;
-foreach.s1-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
-.s2 out tags asc;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 163</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 163</p><h1>Query 163</h1><p class="muted">fuzz:3:evaluators:1181 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-node[&quot;highway&quot;=&quot;unclassified&quot;](id:1325038693,1325463246,1715506587,2438182204,3512498172,3513785970,3523975721,3541675448,4558586737,6914074043,6943761474,12316956607)-&gt;.s0;
-way(bn.s0)-&gt;.s1;
-.s1 convert stat k0=id(),k1=lrs_union(lrs_isect(user(),user()),lrs_isect(&quot;a;b;c&quot;,lrs_isect(&quot;a;b;c&quot;,lrs_union(t[&quot;light:lit&quot;],&quot;name&quot;))))-&gt;.s2;
-make stat k0=((s1.count(nwr)&gt;=1)?(s1.sum(lrs_max(&quot;a;b;c&quot;))):((-s1.sum(lrs_max(&quot;a;b;c&quot;))))),k1=lrs_min(((s1.sum(lrs_min(&quot;a;b;c&quot;))&lt;0.5)?(s1.u((is_date(t[&quot;oneway&quot;])?(id()):(id())))):(s1.min(t[&quot;source&quot;]))))-&gt;.s3;
-node(way_link.s2:3-)-&gt;.s4;
-foreach.s0-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
-.s3 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 144</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 144</p><h1>Query 144</h1><p class="muted">fuzz:3:evaluators:1308 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;telecom:medium&quot;)];
+way[&quot;unsigned_ref&quot;=&quot;6991&quot;]-&gt;.s0;
+.s0 convert item ::id=id(),::=::,k1=(id()+(lrs_min(&quot;1;2&quot;)+(is_date(t[&quot;frequency&quot;])?(suffix(t[&quot;land_area&quot;])):(t[&quot;admin_level&quot;])))),k0=user()-&gt;.s1;
+.s1 convert stat k0=(is_number(suffix(t[&quot;building&quot;]))?((0?(timestamp()):(&quot;x;y&quot;))):((t[&quot;addr:province&quot;]+&quot;100&quot;))),!&quot;admin_level&quot;,::=::-&gt;.s2;
+node(way_link.s2:2-)-&gt;.s3;
+node(way_link.s1:3-)-&gt;.s4;
+.s1 out tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 62</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 62</p><h1>Query 62</h1><p class="muted">fuzz:3:evaluators:750 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+node[&quot;natural&quot;~&quot;^ca&quot;](around:50,46.119331,-60.753603)[&quot;bridge:name&quot;!~&quot;^Paint\\ Brook&quot;]-&gt;.s0;
+node(way_link.s0:1)-&gt;.s1;
+make stat k0=date(s0.max(timestamp())),k1=(s0.min(lrs_max(&quot;a;b;c&quot;))+number(s0.u((0?(suffix(t[&quot;owner&quot;])):(user()))))),::geom=trace(s0.gcat(geom()))-&gt;.s2;
+.s2 convert row k1=is_number(count_distinct_by_role(&quot;highest_point&quot;)),::id=id(),k2=lrs_min(lrs_union(t[&quot;voltage&quot;],&quot;name&quot;)),k3=(date(lrs_min(t[&quot;operator:wikidata&quot;]))&lt;abs(uid())),::geom=hull(geom()),k0=is_number((-number(t[&quot;operator:wikidata&quot;])))-&gt;.s3;
+.s1 out tags asc;
+.s2 out skel geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

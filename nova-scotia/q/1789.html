@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1789</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1789</p><h1>Query 1789</h1><p class="muted">fuzz:3:poi,areas:948 · 0.34 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  nwr[&quot;area&quot;=&quot;yes&quot;](around:10000,46.145178,-60.168977);
+  node[&quot;memorial&quot;=&quot;cenotaph&quot;](around:10000,46.145178,-60.168977);
+  nwr[&quot;tracktype&quot;=&quot;grade2&quot;][&quot;surface&quot;~&quot;25000|both|place_|uncont&quot;,i](around:5000,46.145178,-60.168977);
+  nwr[&quot;sport&quot;=&quot;ice_hockey;ice_skating&quot;](around:3000,46.145178,-60.168977);
+  relation[&quot;man_made&quot;~&quot;goods_conveyor|mast|pier|planter|storage_tank|tower|utility_pole&quot;,i](around:1000,46.145178,-60.168977);
+  nwr[&quot;building&quot;~&quot;hangar|house|static_caravan|synagogue|warehouse|yes&quot;](around:10000,46.145178,-60.168977);
+  way[&quot;seamark:light:height&quot;](around:1000,46.145178,-60.168977);
+  way[&quot;gauge&quot;~&quot;1435&quot;](around:3000,46.145178,-60.168977);
+);
+out geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

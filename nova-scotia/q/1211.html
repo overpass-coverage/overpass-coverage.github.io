@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1211</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1211</p><h1>Query 1211</h1><p class="muted">fuzz:3:poi,areas:856 · 0.09 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+node[&quot;building&quot;](id:904608783,912873712,1015273565,1343851497,1474799692,1749073594,2330044736,2336717203,2436003645,3513689058,3934624755,4342958655)(id:988512187,1147267654,1156779137,1613787057,2212126366,2474748934,2479659247,3515045835,3603051438,7471506437,9206798026,13138018147)-&gt;.s0;
+is_in(45.180297,-63.057383)-&gt;.s1;
+way(area.s1)[&quot;bridge:name&quot;=&quot;Paint Brook (Elmsvale)&quot;]-&gt;.s2;
+(.s0; - .s2;)-&gt;.s3;
+rel(bw.s2)[&quot;destination:street&quot;~&quot;^Barringt&quot;,i]-&gt;.s4;
+.s3 is_in-&gt;.s5;
+.s2 out count;
+.s3 out meta;
+.s4 out body;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

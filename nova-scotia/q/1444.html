@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1444</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1444</p><h1>Query 1444</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1861 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][out:csv(::id,::user,&quot;waterway&quot;,::version,::lon,&quot;operator:wikidata&quot;,::uid)][timeout:60];
+way[~&quot;^sea&quot;~&quot;5&quot;][&quot;width&quot;=&quot;2&quot;][&quot;lamp_mount&quot;=&quot;bent_mast&quot;](44.765225,-63.019778,44.819674,-62.823110)-&gt;.s0;
+area[name=&quot;Smiths Cove&quot;]-&gt;.s1;
+nwr(area.s1)[&quot;tunnel&quot;=&quot;culvert&quot;]-&gt;.s2;
+(.s1; - .s2;)-&gt;.s3;
+node(way_cnt.s1:1)-&gt;.s4;
+.s4 out skel geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

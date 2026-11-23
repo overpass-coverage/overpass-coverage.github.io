@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1294</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1294</p><h1>Query 1294</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:4597 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][out:csv(&quot;addr:suburb&quot;,::version)][timeout:60][bbox:44.540368,-63.810330,44.771643,-63.711887];
+way[&quot;owner&quot;=&quot;Halifax Regional Water Commission&quot;](45.829781,-63.899582,45.867594,-63.623570)-&gt;.s0;
+if ((((s0.sum((-lon()))&gt;1)?(s0.min(changeset())):(s0.u(&quot;1;2;3&quot;)))&lt;(s0.u(count_distinct_by_role(&quot;admin_centre&quot;))+s0.u((1?(user()):(&quot;yes&quot;)))))) { make yes n=s0.count(nwr)-&gt;.s1; } else { make no n=0-&gt;.s1; }
+node(way_cnt.s1:1)-&gt;.s2;
+.s2 out noids meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

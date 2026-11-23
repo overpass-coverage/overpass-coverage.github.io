@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1189</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1189</p><h1>Query 1189</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2926 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  nwr[&quot;operator:wikipedia&quot;~&quot;en:Canada\\ Post&quot;](around:5000,45.606073,-63.893220);
+  way[&quot;population&quot;](around:3219,45.606073,-63.893220);
+  relation[&quot;post:city&quot;~&quot;Dartmouth|Sheet\\ Harbour|Tangier|Upper\\ Musquodoboit&quot;](around:3219,45.606073,-63.893220);
+  node[&quot;amenity&quot;][&quot;foot&quot;~&quot;30|Halifa|no|no_lef&quot;,i](around:3219,45.606073,-63.893220);
+  relation[&quot;footway&quot;~&quot;^(crossing|sidewalk|traffic_island)$&quot;][&quot;addr:street&quot;~&quot;yes&quot;,i](around:3219,45.606073,-63.893220);
+  way[&quot;golf&quot;=&quot;tee&quot;](around:3219,45.606073,-63.893220);
+  nwr[&quot;railway&quot;=&quot;abandoned&quot;](around:3219,45.606073,-63.893220);
+  way[&quot;height&quot;=&quot;10&quot;](around:3219,45.606073,-63.893220);
+  way[&quot;maxspeed&quot;~&quot;100|110|20|30|50|80&quot;,i](around:3219,45.606073,-63.893220);
+  nwr[&quot;crossing&quot;~&quot;informal|marked&quot;](around:3219,45.606073,-63.893220);
+  relation[&quot;natural&quot;=&quot;sand&quot;](around:2000,45.606073,-63.893220);
+  nwr[&quot;collection_times&quot;~&quot;08:00;\\ Mo\\-Fr\\ 08:00|08:00;Mo\\-Fr\\ 08:00&quot;](around:3219,45.606073,-63.893220);
+  nwr[&quot;brand&quot;=&quot;Canada Post&quot;](around:1000,45.606073,-63.893220);
+  node[&quot;golf&quot;=&quot;tee&quot;](around:3219,45.606073,-63.893220);
+);
+out center tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

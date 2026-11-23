@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 96</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 96</p><h1>Query 96</h1><p class="muted">fuzz:3::121 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+rel(id:8510708,9194923,9239409,9334293,13467181,17833792,18459359,20138088,20198143)[&quot;surface&quot;](id:1339394,1429952,9229035,12120225,13448036,13466761,13467192,21101319)-&gt;.s0;
+rel.s0(id:1619308,10229096,12143760,13437456,13467304,17353125,17520503,19370194,20125270,20125272,21787165)-&gt;.s1;
+rel.s1(id:2260370,3029281,5135289,10264460,12075011,12550922,13466761,14219143,20963847,21093059)-&gt;.s2;
+way(r.s0)[&quot;incline&quot;~&quot;^1&quot;,i]-&gt;.s3;
+foreach.s3-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s2 out body 1;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 544</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 544</p><h1>Query 544</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5754 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  way[&quot;unsigned_ref&quot;=&quot;6982&quot;][&quot;bridge&quot;~&quot;4|Q80110|Upper\\ &quot;,i](around:5000,43.752591,-64.974682);
+  node[&quot;destination:ref&quot;=&quot;east&quot;](around:1500,43.752591,-64.974682);
+  node[&quot;leisure&quot;=&quot;playground&quot;](around:5000,43.752591,-64.974682);
+  nwr[&quot;athletics&quot;=&quot;long_jump&quot;](around:1500,43.752591,-64.974682);
+  node[&quot;level&quot;](around:1500,43.752591,-64.974682);
+  node[&quot;natural&quot;~&quot;coastline|grassland|land|peak|ridge|tree_row|wood&quot;](around:500,43.752591,-64.974682);
+  node[&quot;unsigned_ref&quot;~&quot;2426|5817|6763|6982|6991|NS\\ 33&quot;,i](around:1500,43.752591,-64.974682);
+  way[&quot;cables&quot;=&quot;12&quot;](around:1500,43.752591,-64.974682);
+  node[&quot;fire_hydrant:position&quot;=&quot;parking_lot&quot;][&quot;fixme&quot;~&quot;bollar|huntin|trunk&quot;,i](around:1500,43.752591,-64.974682);
+  way[&quot;railway&quot;~&quot;abandoned|level_crossing|rail|switch&quot;](around:1500,43.752591,-64.974682);
+);
+out geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1765</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1765</p><h1>Query 1765</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:4506 · 1.87 s CPU · expected status <code>ok</code></p><pre class="query">[out:json];
+node[&quot;highway&quot;][!&quot;lamp_mount&quot;](44.656614,-63.619832,44.833808,-63.387870)-&gt;.s0;
+.s0 &lt;&lt;-&gt;.s1;
+node.s0(if:lrs_in((timestamp()+(t[&quot;name&quot;]==&quot;Membertou Interchange&quot;?(t[&quot;emergency&quot;]):(&quot;&quot;))),&quot;1;2&quot;))-&gt;.s2;
+is_in(45.795381,-61.217068)-&gt;.s3;
+nwr(area.s3)(45.229911,-62.676087,45.275397,-62.559902)-&gt;.s4;
+node.s2(if:lrs_in(lrs_min(t[&quot;amenity&quot;]),lrs_union(&quot;1;2&quot;,lrs_isect(&quot;a;b;c&quot;,&quot;a;b;c&quot;))))-&gt;.s5;
+foreach.s4-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+out meta qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

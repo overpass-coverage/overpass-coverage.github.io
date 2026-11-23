@@ -1,0 +1,16 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1562</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1562</p><h1>Query 1562</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5851 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  nwr[&quot;capacity&quot;=&quot;15 litres&quot;](around:2000,46.213135,-60.243460);
+  nwr[&quot;destination:ref:to:forward&quot;=&quot;NS 1 ; NS 201&quot;](around:2000,46.213135,-60.243460);
+  way[&quot;postal_code&quot;](around:2000,46.213135,-60.243460);
+  relation[&quot;building:levels&quot;~&quot;12|19|3&quot;,i](around:2000,46.213135,-60.243460);
+  way[&quot;destination&quot;=&quot;Woodside Industrial Park&quot;](around:2000,46.213135,-60.243460);
+  way[&quot;collection_times&quot;=&quot;08:00;Mo-Fr 08:00&quot;](around:2000,46.213135,-60.243460);
+  way[&quot;step_count&quot;=&quot;20&quot;](around:2000,46.213135,-60.243460);
+  relation[&quot;parking&quot;~&quot;surface&quot;](around:1000,46.213135,-60.243460);
+  way[&quot;layer&quot;=&quot;-1&quot;](around:2000,46.213135,-60.243460);
+  node[&quot;amenity&quot;~&quot;bicycle_parking|nightclub|waste_basket&quot;,i](around:1000,46.213135,-60.243460);
+  way[&quot;building:flats&quot;=&quot;15&quot;](around:2000,46.213135,-60.243460);
+);
+out geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1425</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1425</p><h1>Query 1425</h1><p class="muted">fuzz:3:poi,areas:1083 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+rel[&quot;operator&quot;!=&quot;Killam Properties&quot;][&quot;lanes:forward&quot;!=&quot;2&quot;][&quot;group_only&quot;=&quot;no&quot;](43.948070,-65.627186,44.030124,-65.546659)-&gt;.s0;
+area[name=&quot;Middleton&quot;]-&gt;.s1;
+nwr(area.s1)[&quot;beauty&quot;=&quot;tanning&quot;]-&gt;.s2;
+.s2 &gt;&gt;-&gt;.s3;
+rel(br.s1)-&gt;.s4;
+node(w.s1)[&quot;fuel:diesel&quot;=&quot;yes&quot;]-&gt;.s5;
+.s1 out count;
+.s2 out meta 34;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

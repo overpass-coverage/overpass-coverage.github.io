@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1001</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1001</p><h1>Query 1001</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2139 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[bbox:45.164077,-62.239025,45.237256,-62.119798][out:xml][maxsize:268435456];
-nwr(44.863719,-64.940643,45.046556,-64.893553)[&quot;incline&quot;~&quot;^(10%)$&quot;]-&gt;.s0;
-make stat k0=number(s0.u(changeset())),k1=abs(((s0.max(lat())&lt;1e3)?(s0.count(nr)):(s0.min(lrs_max(lrs_union(t[&quot;type&quot;],&quot;name&quot;)))))),::geom=center(trace(s0.gcat(geom())))-&gt;.s1;
-.s1 convert row k3=lrs_isect((timestamp()+&quot;&quot;),lrs_isect(lrs_isect(&quot;1;2&quot;,&quot;a;b;c&quot;),lrs_isect(lrs_union(t[&quot;lamp_mount&quot;],&quot;name&quot;),&quot;a;b;c&quot;))),k2=lrs_min(type()),::=::,k0=&quot;x;y&quot;,::id=id(),k1=lrs_min((t[&quot;post:city&quot;]==&quot;designated&quot;?(timestamp()):(user())))-&gt;.s2;
-node(w.s2)-&gt;.s3;
-.s1 out count;
-.s2 out bb tags;
-out qt skel center;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 933</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 933</p><h1>Query 933</h1><p class="muted">fuzz:3:areas,complete:2871 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+rel(poly:&#x27;45.068113 -62.230164 45.061493 -62.238480 45.060017 -62.236094 45.059561 -62.234616&#x27;)(if:t[&quot;owner&quot;]==&quot;Canadian National Railway&quot;)-&gt;.s0;
+node(around.s0:20)[&quot;water&quot;~&quot;^po&quot;]-&gt;.s1;
+area[name=&quot;Seal Cove&quot;][admin_level]-&gt;.s2;
+rel(area.s2)(44.717818,-63.718558,44.759793,-63.582773)-&gt;.s3;
+complete(5).s1-&gt;.s4 { node(w); way(bn)[&quot;light:colour&quot;]; }
+way(around.s4:20)[&quot;unsigned_ref&quot;=&quot;6991&quot;]-&gt;.s5;
+.s0 out count;
+.s2 out ids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

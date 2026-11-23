@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1065</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1065</p><h1>Query 1065</h1><p class="muted">fuzz:3:output:1477 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][out:popup(&quot;Shops&quot;;[&quot;restriction:conditional&quot;];)(&quot;Food&quot;;[&quot;destination:street:to&quot;~&quot;^Pr&quot;][&quot;sidewalk:right&quot;=&quot;separate&quot;];[&quot;operator&quot;=&quot;Glooscap Energy&quot;];[&quot;destination:street&quot;];&quot;ref&quot;;)(&quot;Other&quot;;[&quot;building:levels&quot;!~&quot;^7&quot;];)];
+way(id:240052118,347645707,590572673)[&quot;lanes:forward&quot;=&quot;1&quot;][&quot;building:levels&quot;=&quot;19&quot;](44.656731,-63.493781,44.824799,-63.262577)-&gt;.s0;
+node(around.s0:20)[&quot;poles&quot;~&quot;^(bipole|monopole)$&quot;]-&gt;.s1;
+wr(44.243498,-64.386046,44.290775,-64.117030)[&quot;waterway&quot;!=&quot;river&quot;](if:number(t[&quot;maxspeed&quot;])&gt;15)-&gt;.s2;
+node[&quot;network&quot;=&quot;DART&quot;][&quot;capacity&quot;](45.158958,-62.666855,45.253904,-62.579211)-&gt;.s3;
+.s1 out body center noids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

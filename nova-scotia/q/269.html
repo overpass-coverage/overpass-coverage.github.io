@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 269</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 269</p><h1>Query 269</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3662 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Roads&quot;;[&quot;surface&quot;=&quot;ground&quot;][&quot;NHS&quot;!~&quot;^ye&quot;];[&quot;surface&quot;~&quot;^co&quot;];&quot;highway&quot;;)][timeout:25];
+way(44.703713,-64.942882,44.782100,-64.803929)[&quot;telecom:medium&quot;=&quot;fibre&quot;][&quot;branch&quot;=&quot;Kentville&quot;](poly:&#x27;44.494047 -63.886386 44.499252 -63.887397 44.503614 -63.879131 44.503769 -63.889349 44.505903 -63.893829 44.509374 -63.896755 44.513127 -63.899983 44.512138 -63.902247 44.502994 -63.909356 44.520918 -63.926217 44.516683 -63.931922 44.512626 -63.930932 44.504169 -63.923948 44.500581 -63.922371 44.503688 -63.943437 44.502465 -63.951378 44.489968 -63.938181 44.489587 -63.927670 44.483570 -63.940418 44.483127 -63.921129 44.474099 -63.926216 44.469298 -63.922780 44.468602 -63.916933 44.465330 -63.914149 44.482734 -63.903445 44.475884 -63.888868 44.487490 -63.898374 44.487382 -63.885264 44.486882 -63.874268 44.488138 -63.881089&#x27;)-&gt;.s0;
+area[name=&quot;Tomahawk Lake&quot;]-&gt;.s1;
+node(area.s1)[&quot;fire_hydrant:type&quot;=&quot;pillar&quot;]-&gt;.s2;
+(.s0; - .s1;)-&gt;.s3;
+(.s2; - .s2;)-&gt;.s4;
+.s3 convert row ::id=id(),tags=count_tags();
+out;
+.s0 out qt 17 geom;
+.s2 out (43.763135,-65.674985,43.862958,-65.657625) noids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

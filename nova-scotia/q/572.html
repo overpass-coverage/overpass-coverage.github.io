@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 572</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 572</p><h1>Query 572</h1><p class="muted">fuzz:3:statements,areas:67 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+wr(if:date(timestamp())&gt;date(&quot;2016-01-01&quot;))[&quot;created_by&quot;~&quot;^JO&quot;][&quot;bridge:name&quot;=&quot;Mill Brook&quot;]-&gt;.s0;
+.s0 &gt;-&gt;.s1;
+area[name=&quot;East Bay&quot;]-&gt;.s2;
+node(area.s2)[&quot;electrified&quot;=&quot;no&quot;]-&gt;.s3;
+.s0 map_to_area-&gt;.s4;
+.s0 out tags;
+.s2 out skel asc (44.633333,-63.616191,44.661780,-63.564211);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

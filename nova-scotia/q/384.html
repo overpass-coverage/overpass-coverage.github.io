@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 384</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 384</p><h1>Query 384</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5301 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][out:popup(&quot;Roads&quot;;[&quot;bridge:name&quot;=&quot;Mill Brook&quot;][&quot;level&quot;=&quot;1-6&quot;];[&quot;operator&quot;=&quot;Berwick Power Commission&quot;][&quot;power&quot;~&quot;^tr&quot;];[&quot;natural&quot;~&quot;^ri&quot;];&quot;highway&quot;;)(&quot;Food&quot;;[&quot;water_source&quot;][&quot;tactile_paving&quot;=&quot;no&quot;];[&quot;brand:en&quot;~&quot;^RB&quot;];[&quot;beauty&quot;=&quot;tanning&quot;];&quot;name&quot;;)(&quot;Food&quot;;[&quot;amenity&quot;];&quot;highway&quot;;)];
+nwr(45.136808,-63.789494,45.138751,-63.766993)-&gt;.s0;
+rel(br.s0)-&gt;.s1;
+if ((s1.count(ways)==0.5)) { make yes n=s1.count(nwr)-&gt;.s2; } else { make no n=0-&gt;.s2; }
+.s1 out meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

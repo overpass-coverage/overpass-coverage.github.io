@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 538</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 538</p><h1>Query 538</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3788 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  way[&quot;landuse&quot;][&quot;fence_type&quot;~&quot;Q22416&quot;,i](around:500,45.795381,-61.217068);
+  nwr[&quot;parking:left:orientation&quot;=&quot;diagonal&quot;](around:1000,45.795381,-61.217068);
+  relation[&quot;operator&quot;=&quot;Nova Scotia Nature Trust and private owner(s)&quot;](around:3000,45.795381,-61.217068);
+  relation[&quot;height&quot;~&quot;10|58|6|8&quot;](around:500,45.795381,-61.217068);
+  nwr[&quot;landuse&quot;](around:3000,45.795381,-61.217068);
+  node[&quot;operator&quot;~&quot;Berwick\\ Power\\ Commission|Emera|Glooscap\\ Energy|Jason\\ Hiltz|Parkbridge|Shared&quot;](around:2000,45.795381,-61.217068);
+  relation[&quot;natural&quot;=&quot;bay&quot;][&quot;building&quot;~&quot;10|Albro\\ |CA&quot;,i](around:3000,45.795381,-61.217068);
+  way[&quot;maintained&quot;=&quot;Halifax Regional Municipality&quot;](around:3000,45.795381,-61.217068);
+  way[&quot;fenced&quot;=&quot;yes&quot;](around:500,45.795381,-61.217068);
+  node[&quot;handicap&quot;=&quot;3&quot;](around:3000,45.795381,-61.217068);
+);
+out geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1387</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1387</p><h1>Query 1387</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1738 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;restriction&quot;~&quot;no_left_turn&quot;][&quot;building:levels&quot;~&quot;Nova\\ S|Royal\\ |coal|rail&quot;,i](around:3000,44.258945,-64.286990);
+  node[&quot;shop&quot;=&quot;deli&quot;](around:2000,44.258945,-64.286990);
+  node[&quot;destination&quot;~&quot;Commodore\\ Drive|Lunenburg;Mahone\\ Bay;Blockhouse|Wright\\ Avenue&quot;](around:3000,44.258945,-64.286990);
+  way[&quot;highway&quot;=&quot;turning_circle&quot;](around:3000,44.258945,-64.286990);
+  node[&quot;tower:type&quot;=&quot;communication&quot;](around:3000,44.258945,-64.286990);
+  way[&quot;tourism&quot;=&quot;camp_pitch&quot;](around:3000,44.258945,-64.286990);
+  node[&quot;telecom:medium&quot;~&quot;fibre&quot;](around:3000,44.258945,-64.286990);
+  relation[&quot;crossing&quot;~&quot;marked|uncontrolled|unmarked&quot;][&quot;crossing:markings&quot;~&quot;CA:NS:|Jason\\ |no|yes&quot;,i](around:500,44.258945,-64.286990);
+);
+out center tags 200;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

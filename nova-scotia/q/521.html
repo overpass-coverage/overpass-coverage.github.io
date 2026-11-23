@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 521</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 521</p><h1>Query 521</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5738 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;postal_code&quot;=&quot;B4E 3G7&quot;](around:1000,45.475759,-63.572815);
+  relation[&quot;handicap&quot;=&quot;2&quot;](around:5000,45.475759,-63.572815);
+  node[&quot;brand&quot;~&quot;Canadian\\ Tire|Dero|Laura\\ Secord|Pharmasave|Sunglass\\ Hut&quot;,i](around:3219,45.475759,-63.572815);
+  nwr[&quot;oneway&quot;~&quot;^(no|yes)$&quot;](around:3000,45.475759,-63.572815);
+  node[&quot;resource&quot;=&quot;aggregate&quot;](around:3000,45.475759,-63.572815);
+  node[&quot;golf&quot;~&quot;fairway|green&quot;,i](around:5000,45.475759,-63.572815);
+  relation[&quot;operator:wikidata&quot;~&quot;Q1032001|Q3345333|Q3480058|Q6764023&quot;](around:3219,45.475759,-63.572815);
+  node[&quot;ocean&quot;~&quot;yes&quot;](around:3219,45.475759,-63.572815);
+  way[&quot;maxspeed&quot;=&quot;40&quot;](around:1000,45.475759,-63.572815);
+  nwr[&quot;operator:wikipedia&quot;=&quot;en:Canada Post&quot;][&quot;height&quot;~&quot;5817|7200|white|yes&quot;,i](around:3219,45.475759,-63.572815);
+  nwr[&quot;maxspeed&quot;=&quot;80&quot;](around:3000,45.475759,-63.572815);
+  nwr[&quot;roof:colour&quot;=&quot;white&quot;](around:3000,45.475759,-63.572815);
+  node[&quot;postal_code&quot;=&quot;B4B 2K1&quot;](around:3000,45.475759,-63.572815);
+  node[&quot;natural&quot;=&quot;scrub&quot;](around:500,45.475759,-63.572815);
+  node[&quot;turn:lanes:forward&quot;=&quot;left|through|through;right&quot;](around:3219,45.475759,-63.572815);
+);
+out center tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

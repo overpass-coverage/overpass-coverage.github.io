@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 261</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 261</p><h1>Query 261</h1><p class="muted">fuzz:3:output:781 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][out:popup(&quot;Roads&quot;;[&quot;highway&quot;=&quot;service&quot;][&quot;power&quot;];&quot;amenity&quot;;)(&quot;Named things&quot;;[&quot;post:city&quot;~&quot;^Up&quot;][&quot;resource&quot;];[&quot;surface&quot;][&quot;natural&quot;=&quot;scrub&quot;];[&quot;building&quot;!~&quot;^se&quot;][&quot;roof:levels&quot;=&quot;0&quot;];&quot;highway&quot;;)];
+rel(id:2975661,3238127,7007811,7116664,7209359,9239034,13337094,13337096,17429406)-&gt;.s0;
+rel.s0[&quot;water&quot;!=&quot;stream_pool&quot;]-&gt;.s1;
+rel.s1(if:t[&quot;building&quot;]==&quot;detached&quot;)-&gt;.s2;
+.s2 &gt;&gt;-&gt;.s3;
+.s0 &lt;-&gt;.s4;
+.s0 out ids;
+.s1 out meta noids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

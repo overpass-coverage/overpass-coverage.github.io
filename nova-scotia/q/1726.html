@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1726</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1726</p><h1>Query 1726</h1><p class="muted">fuzz:3:statements,areas:62 · 1.13 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+way(43.519089,-65.577424,43.617854,-65.328811)[&quot;maxspeed:forward&quot;~&quot;^6&quot;,i][&quot;type&quot;=&quot;multipolygon&quot;]-&gt;.s0;
+nw(if:length()&gt;100)[&quot;is_in:province&quot;!=&quot;Nova Scotia&quot;](poly:&quot;46.162852 -60.048549 46.164323 -60.053238 46.163206 -60.053751 46.164278 -60.058399 46.162995 -60.058529 46.160278 -60.057529 46.159562 -60.057105 46.159102 -60.056425 46.157829 -60.053734 46.158292 -60.050739&quot;)-&gt;.s1;
+is_in(43.848970,-64.963905)-&gt;.s2;
+nwr(area.s2)(46.176636,-59.984312,46.217712,-59.932616)-&gt;.s3;
+way.s3[&quot;unsigned_ref&quot;]-&gt;.s4;
+rel(r.s4)[&quot;access&quot;!=&quot;yes&quot;]-&gt;.s5;
+.s1 out meta asc;
+.s3 out meta geom asc;
+.s5 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

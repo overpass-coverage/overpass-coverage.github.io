@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1656</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1656</p><h1>Query 1656</h1><p class="muted">fuzz:3:poi,areas:412 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  relation[&quot;capacity&quot;](around:1000,44.662719,-63.957820);
+  way[&quot;postal_code&quot;~&quot;^(B0J\\ 1J0|B2T\\ 1B6|B3K\\ 5W4|B4G\\ 1C9)$&quot;](around:1000,44.662719,-63.957820);
+  nwr[&quot;post:city&quot;](around:1000,44.662719,-63.957820);
+  nwr[&quot;is_in:province&quot;~&quot;Nova\\ Scotia&quot;][&quot;is_in:province&quot;~&quot;3|CA|forwar&quot;,i](around:1000,44.662719,-63.957820);
+  node[&quot;natural&quot;~&quot;^(bay|peak|scrub|tree)$&quot;](around:1000,44.662719,-63.957820);
+  way[&quot;loc_name&quot;=&quot;The Rotary&quot;](around:5000,44.662719,-63.957820);
+  nwr[&quot;turn:lanes:forward&quot;=&quot;left|through|through;right&quot;](around:1000,44.662719,-63.957820);
+  nwr[&quot;crossing&quot;=&quot;informal&quot;](around:1000,44.662719,-63.957820);
+  node[&quot;support&quot;~&quot;ornamental|pole&quot;](around:1000,44.662719,-63.957820);
+  node[&quot;admin_level&quot;=&quot;8&quot;](around:2000,44.662719,-63.957820);
+  node[&quot;man_made&quot;~&quot;goods_conveyor|planter|storage_tank|survey_point|tower|utility_pole&quot;,i](around:1000,44.662719,-63.957820);
+  nwr[&quot;destination:ref&quot;~&quot;^(2\\ North|NS\\ 111\\ :\\ NS\\ 2\\ IN|NS\\ 111\\ South|east)$&quot;](around:5000,44.662719,-63.957820);
+  node[&quot;building&quot;~&quot;commercial|hangar|semidetached_house|synagogue|warehouse&quot;,i](around:5000,44.662719,-63.957820);
+  way[&quot;maxspeed&quot;](around:1000,44.662719,-63.957820);
+  way[&quot;man_made&quot;~&quot;^(goods_conveyor|storage_tank|survey_point|tower|utility_pole)$&quot;](around:3000,44.662719,-63.957820);
+);
+out center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

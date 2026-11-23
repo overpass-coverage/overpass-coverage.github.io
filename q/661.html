@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 661</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 661</p><h1>Query 661</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:4247 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][out:json][maxsize:268435456];
-way[~&quot;^pos&quot;~&quot;comm&quot;](poly:&#x27;43.854708 -65.545373 43.857711 -65.539697 43.858237 -65.541911 43.864086 -65.536578 43.860897 -65.558924 43.857213 -65.579074 43.841208 -65.557589 43.848552 -65.547616 43.846095 -65.540523 43.851995 -65.537745&#x27;)-&gt;.s0;
-.s0 &gt;&gt;-&gt;.s1;
-.s1 convert item k1=lrs_max(&quot;a;b;c&quot;),k2=length(),k3=is_number(suffix((1?(suffix(t[&quot;light:lit&quot;])):(type())))),::id=id(),k0=id()-&gt;.s2;
-nw[&quot;maxspeed:advisory&quot;~&quot;^45$&quot;][&quot;highway&quot;!~&quot;^un&quot;]-&gt;.s3;
-way[&quot;is_sidepath:of:name&quot;~&quot;^Jesse Jaggard Drive$&quot;][&quot;population&quot;~&quot;78&quot;,i]-&gt;.s4;
-.s1 out noids tags asc;
-.s2 out meta bb;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

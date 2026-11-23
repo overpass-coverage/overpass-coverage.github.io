@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 478</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 478</p><h1>Query 478</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:4179 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;plant:output:electricity&quot;~&quot;24\\ MW|50\\ KW&quot;](around:1500,45.523363,-62.642472);
+  node[&quot;amenity&quot;~&quot;bicycle_parking|place_of_worship|restaurant|veterinary&quot;](around:1500,45.523363,-62.642472);
+  node[&quot;natural&quot;~&quot;coastline|grass|reef|wetland|wood&quot;,i](around:1500,45.523363,-62.642472);
+  relation[&quot;destination:forward&quot;=&quot;Wolfville : Bedford&quot;](around:1500,45.523363,-62.642472);
+  node[&quot;post:city&quot;~&quot;Scotsburn|Tangier&quot;,i](around:5000,45.523363,-62.642472);
+  relation[&quot;highway&quot;=&quot;path&quot;](around:5000,45.523363,-62.642472);
+  node[&quot;population&quot;=&quot;78&quot;](around:1500,45.523363,-62.642472);
+  nwr[&quot;disused:amenity&quot;=&quot;fast_food&quot;](around:1500,45.523363,-62.642472);
+  way[&quot;maxspeed&quot;=&quot;80&quot;](around:500,45.523363,-62.642472);
+  nwr[&quot;start_date&quot;~&quot;^(2009)$&quot;](around:1500,45.523363,-62.642472);
+  nwr[&quot;golf&quot;=&quot;tee&quot;](around:1500,45.523363,-62.642472);
+  node[&quot;natural&quot;=&quot;beach&quot;](around:500,45.523363,-62.642472);
+  node[&quot;building&quot;~&quot;house|industrial|nursing_home|retail|shed|warehouse|yes&quot;,i](around:1000,45.523363,-62.642472);
+);
+out center tags 200;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

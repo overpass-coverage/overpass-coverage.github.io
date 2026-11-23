@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 32</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 32</p><h1>Query 32</h1><p class="muted">fuzz:3:evaluators:369 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;height&quot;)];
+nw(around:1000,44.088947,-64.704945)-&gt;.s0;
+node(way_cnt.s0:1)-&gt;.s1;
+node(way_link.s0:3-)-&gt;.s2;
+for.s0-&gt;.s3 (keys()) { convert item ::id=id(),g=_.val; }
+.s3 out tags bb;
+</pre><h2>Lines only this query runs (2)</h2><ul><li><a href="../src/overpass_api/statements/tag_value.cc.html#L333">overpass_api/statements/tag_value.cc:333</a></li><li><a href="../src/overpass_api/statements/tag_value.h.html#L461">overpass_api/statements/tag_value.h:461</a></li></ul></main></body></html>

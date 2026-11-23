@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 812</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 812</p><h1>Query 812</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2545 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Roads&quot;;[&quot;operator&quot;!=&quot;Killam Properties&quot;][&quot;destination:ref:to&quot;!~&quot;^31&quot;];&quot;ref&quot;;)(&quot;Food&quot;;[&quot;post:city&quot;!=&quot;Upper Musquodoboit&quot;];[&quot;admin_level&quot;=&quot;9&quot;];&quot;name&quot;;)(&quot;Named things&quot;;[&quot;is_in:country_code&quot;!~&quot;^CA&quot;][&quot;memorial&quot;=&quot;cenotaph&quot;];[&quot;crossing:markings&quot;];[&quot;unsigned_ref&quot;=&quot;5817&quot;][&quot;brand:wikidata&quot;!~&quot;^Q1&quot;];&quot;highway&quot;;)];
+wr[&quot;crossing:markings&quot;~&quot;^n&quot;](43.578354,-65.647322,43.706309,-65.589189)[&quot;operator&quot;=&quot;Emera&quot;]-&gt;.s0;
+way.s0(if:id()&gt;1000000000)-&gt;.s1;
+area[name=&quot;Calf Island&quot;]-&gt;.s2;
+way(area.s2)[&quot;step_count&quot;=&quot;20&quot;]-&gt;.s3;
+.s0 out asc;
+.s2 out meta 5 bb;
+.s3 out center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

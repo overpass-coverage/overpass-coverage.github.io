@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 48</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 48</p><h1>Query 48</h1><p class="muted">fuzz:3:evaluators:213 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-way(id:84476229,117518281,122678959)-&gt;.s0;
-way.s0(if:(date((t[&quot;footway&quot;]+t[&quot;operator:wikidata&quot;]))!=(-(0.5-uid()))))-&gt;.s1;
-way(r.s1)-&gt;.s2;
-make stat k0=lrs_min(lrs_union(s2.u(changeset()),s2.u((&quot;a&quot;+t[&quot;light:method&quot;])))),k1=s2.min(1e3),k2=abs(s2.sum((count_distinct_by_role(&quot;link&quot;)*count_by_role(&quot;outer&quot;))))-&gt;.s3;
-.s1 convert item k1=(lrs_min(lrs_union(&quot;1;2&quot;,lrs_union(t[&quot;height&quot;],&quot;name&quot;)))/lat()),k0=suffix(t[&quot;addr:housenumber&quot;]),!&quot;poles&quot;,::id=id(),k2=lrs_isect(lrs_union(lrs_isect(&quot;a;b;c&quot;,lrs_union(t[&quot;created_by&quot;],&quot;name&quot;)),lrs_union(t[&quot;fire_hydrant:position&quot;],&quot;a;b;c&quot;)),lrs_union(lrs_union(&quot;1;2&quot;,t[&quot;light:lit&quot;]),lrs_union(&quot;a;b;c&quot;,&quot;1;2&quot;)))-&gt;.s4;
-.s1 out tags;
-.s2 out tags bb 1;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

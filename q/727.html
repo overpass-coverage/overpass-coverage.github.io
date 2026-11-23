@@ -1,6 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 727</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 727</p><h1>Query 727</h1><p class="muted">fuzz:3:evaluators:1358 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-wr[&quot;check_date&quot;=&quot;2026-10-14&quot;]-&gt;.s0;
-.s0 convert item k1=number(suffix(t[&quot;water_source&quot;])),k0=(is_date(suffix(t[&quot;natural&quot;]))?(count_distinct_by_role(&quot;link&quot;)):((lrs_in(suffix(t[&quot;boundary&quot;]),lrs_union(t[&quot;addr:street&quot;],&quot;name&quot;))?(&quot;1;2;3&quot;):(suffix(t[&quot;lanes&quot;]))))),k2=suffix(lrs_min(t[&quot;addr:city&quot;]))-&gt;.s1;
-make stat k0=s0.u(type()),k1=number(s0.min((suffix(t[&quot;light:method&quot;])+t[&quot;operator:wikidata&quot;]))),k2=suffix(s0.set(suffix(t[&quot;addr:locality&quot;]))),k3=number(s0.u((type()+suffix(t[&quot;fire_hydrant:type&quot;]))))-&gt;.s2;
-.s0 out tags;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

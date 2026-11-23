@@ -1,6 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 407</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 407</p><h1>Query 407</h1><p class="muted">fuzz:3:evaluators:1193 · 0.14 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;operator:wikipedia&quot;)];
-nw(44.635051,-63.672634,44.793719,-63.508124)[&quot;amenity&quot;=&quot;post_box&quot;]-&gt;.s0;
-.s0 convert stat k2=(count_distinct_by_role(&quot;east&quot;)+lrs_max(lrs_union(&quot;1;2&quot;,&quot;a;b;c&quot;))),angles=per_vertex(pos()),k3=is_date((suffix(user())+suffix(t[&quot;addr:suburb&quot;]))),k0=length(),k1=lrs_min(&quot;a;b;c&quot;)-&gt;.s1;
-.s0 out ids bb;
-.s1 out tags qt;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

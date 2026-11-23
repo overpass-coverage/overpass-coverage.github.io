@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1354</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1354</p><h1>Query 1354</h1><p class="muted">fuzz:3:evaluators:239 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+way(45.420895,-62.260682,45.570939,-62.258168)(id:149933401,240199271,240691829,687207112,1084148909,1465741063)(45.375088,-63.263228,45.673324,-63.097139)-&gt;.s0;
+.s0 &gt;-&gt;.s1;
+make stat k0=s1.max((count_distinct_by_role(&quot;bus_stop&quot;)+uid())),k1=(s1.max((is_closed()?(version()):(number(t[&quot;amenity&quot;]))))-abs(s1.count(nw))),k2=s1.max(version()),k3=lrs_union(((s1.sum((count_distinct_members()+count_tags()))&lt;0.5)?(s1.max(suffix(type()))):(s1.max(suffix(t[&quot;name&quot;])))),s1.max(lon()))-&gt;.s2;
+.s0 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 104</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 104</p><h1>Query 104</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5168 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:popup(&quot;Other&quot;;[&quot;office&quot;!~&quot;^ed&quot;][&quot;postal_code&quot;!~&quot;^B3&quot;];&quot;name&quot;;)(&quot;Food&quot;;[&quot;destination:street:to&quot;][&quot;vending&quot;!=&quot;animal_feed&quot;];[&quot;building:levels&quot;=&quot;3&quot;];[&quot;building&quot;=&quot;retail&quot;];&quot;name&quot;;)];
+nw[&quot;surface&quot;=&quot;gravel&quot;](45.537654,-62.675425,45.677215,-62.597562)-&gt;.s0;
+node(way_link.s0:1)-&gt;.s1;
+rel(br.s0)[&quot;collection_times&quot;=&quot;08:00; Mo-Fr 08:00&quot;]-&gt;.s2;
+.s0 map_to_area-&gt;.s3;
+.s0 &lt;&lt;-&gt;.s4;
+.s3 out (46.423147,-61.103337,46.470743,-61.099039) geom;
+.s4 out bb (45.050190,-61.937712,45.069296,-61.932126) meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

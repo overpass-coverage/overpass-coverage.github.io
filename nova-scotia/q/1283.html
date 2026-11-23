@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1283</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1283</p><h1>Query 1283</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5981 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][bbox:45.440181,-63.268709,45.676096,-63.184343][out:csv(::timestamp,::&quot;count:relations&quot;,&quot;maxheight&quot;;true)];
+way(44.834296,-65.391167,44.907966,-65.178012)[&quot;network&quot;=&quot;Transit Cape Breton&quot;](id:116960185,122345100,1004833769,1217464483,1484401915)[&quot;direction&quot;=&quot;forward&quot;]-&gt;.s0;
+node(way_link.s0:2-)-&gt;.s1;
+make info n=1,v=s0.max(suffix(t[&quot;emergency&quot;]))-&gt;.s2;
+way.s0[&quot;building:levels&quot;]-&gt;.s3;
+.s0 out meta qt;
+.s2 out meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

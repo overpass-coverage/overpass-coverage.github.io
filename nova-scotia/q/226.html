@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 226</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 226</p><h1>Query 226</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:360 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][out:csv(&quot;utility&quot;,::lat,::user,::type,::&quot;count:nodes&quot;;false;&quot;|&quot;)];
+node(44.343913,-64.813935,44.381664,-64.805332)-&gt;.s0;
+node.s0(if:is_number((lrs_min(&quot;a;b;c&quot;)+(type()+user()))))-&gt;.s1;
+.s1 &lt;&lt;-&gt;.s2;
+.s1 map_to_area-&gt;.s3;
+foreach.s3-&gt;.x((.x; &gt;;);)
+(._;)-&gt;.s4;
+.s0 out meta asc;
+.s1 out meta;
+.s4 out body geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

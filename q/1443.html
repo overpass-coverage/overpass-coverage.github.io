@@ -1,6 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1443</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1443</p><h1>Query 1443</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:529 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;access&quot;,::&quot;count:ways&quot;,::version,::changeset,::lon,::otype)][timeout:25];
-wr(if:(((t[&quot;layer&quot;]==&quot;paved&quot;||t[&quot;emergency&quot;]==&quot;stream_pool&quot;)?(lrs_min(&quot;a;b;c&quot;)):((is_number(t[&quot;utility&quot;])?(user()):(user()))))&gt;lrs_min(t[&quot;golf&quot;])))[&quot;craft&quot;=&quot;goldsmith&quot;][&quot;amenity&quot;!~&quot;bench|bicycle_parking|drinking_water|nightclub|parking|place_of_worship|post_box|restaurant|veterinary|waste_basket&quot;]-&gt;.s0;
-way.s0(if:(number(timestamp())&gt;=date(suffix(user()))))-&gt;.s1;
-node.s0(45.329680,-64.517191,45.472208,-64.375985)-&gt;.s2;
-.s2 out qt center body (44.720418,-65.690840,44.741747,-65.587805);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

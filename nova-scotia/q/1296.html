@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1296</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1296</p><h1>Query 1296</h1><p class="muted">fuzz:3:evaluators:463 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+way(45.037473,-61.783821,45.253681,-61.687279)[&quot;area&quot;~&quot;^y&quot;,i][&quot;service:bicycle:retail&quot;=&quot;yes&quot;]-&gt;.s0;
+.s0 convert item k2=count_by_role(&quot;link&quot;),k0=date(lrs_min(&quot;a;b;c&quot;)),::geom=geom(),k1=lrs_min(lrs_union(t[&quot;power&quot;],lrs_union(t[&quot;colour&quot;],&quot;name&quot;)))-&gt;.s1;
+.s0 &lt;-&gt;.s2;
+.s0 convert row k2=(is_closed()?((suffix(id())+user())):(suffix(t[&quot;water_source&quot;]))),k0=changeset(),k1=user(),members=per_member((pos()&gt;2)),k3=lrs_isect(lrs_isect(lrs_union(t[&quot;surface&quot;],t[&quot;power&quot;]),&quot;1;2&quot;),lrs_isect(timestamp(),t[&quot;highway&quot;]))-&gt;.s3;
+for.s3-&gt;.s4 (is_closed()) { make group value=_.val,count=count(nwr); }
+.s3 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

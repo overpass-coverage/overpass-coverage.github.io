@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 880</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 880</p><h1>Query 880</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2608 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][out:popup(&quot;Shops&quot;;[&quot;highway&quot;!~&quot;^cy&quot;];&quot;highway&quot;;)(&quot;Other&quot;;[&quot;utility&quot;~&quot;^te&quot;][&quot;man_made&quot;=&quot;utility_pole&quot;];[&quot;sidewalk:both&quot;~&quot;^no&quot;][&quot;colour&quot;=&quot;Pink&quot;];[&quot;population&quot;=&quot;78&quot;][&quot;destination:right&quot;~&quot;^Gr&quot;];&quot;ref&quot;;)(&quot;Roads&quot;;[&quot;power&quot;=&quot;line&quot;];&quot;highway&quot;;)];
+way[&quot;destination&quot;=&quot;Albro Lake Road&quot;](if:uid()&gt;16000000)-&gt;.s0;
+.s0 &lt;&lt;-&gt;.s1;
+node(way_link.s1:2-)-&gt;.s2;
+.s1 out count asc geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

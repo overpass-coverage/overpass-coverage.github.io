@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 986</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 986</p><h1>Query 986</h1><p class="muted">fuzz:3:evaluators:1348 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+nw[&quot;voltage:primary&quot;=&quot;14400&quot;][&quot;service:bicycle:retail&quot;=&quot;yes&quot;](45.431703,-61.935888,45.506750,-61.667512)-&gt;.s0;
+make stat k0=s0.max(number(user())),k1=s0.u((type()+user())),k2=number(s0.min((timestamp()+type()))),k3=s0.min(user())-&gt;.s1;
+.s0 out meta bb;
+.s1 out skel 25;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

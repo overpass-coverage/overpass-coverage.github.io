@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 605</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 605</p><h1>Query 605</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5641 · 0.25 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  way[&quot;postal_code&quot;~&quot;B0J\\ 1J0|B0S\\ 1K0|B0T\\ 1P0|B2T\\ 1B4|B2Z\\ 1N7|B3K\\ 5W4&quot;](around:3000,45.110776,-64.497703);
+  nwr[&quot;surface&quot;~&quot;asphalt|ground|paved|pebblestone&quot;](around:2000,45.110776,-64.497703);
+  node[&quot;land_area&quot;~&quot;administrative&quot;,i](around:5000,45.110776,-64.497703);
+  nwr[&quot;natural&quot;](around:3000,45.110776,-64.497703);
+  nwr[&quot;amenity&quot;=&quot;waste_basket&quot;](around:3000,45.110776,-64.497703);
+  nwr[&quot;landuse&quot;](around:3000,45.110776,-64.497703);
+  node[&quot;bridge&quot;](around:2000,45.110776,-64.497703);
+  way[&quot;foot&quot;=&quot;yes&quot;](around:3000,45.110776,-64.497703);
+  way[&quot;sidewalk:left&quot;=&quot;no&quot;](around:5000,45.110776,-64.497703);
+);
+out geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

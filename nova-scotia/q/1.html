@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1</p><h1>Query 1</h1><p class="muted">fuzz:3:evaluators:1419 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+nwr[!&quot;lanes:forward&quot;](45.164481,-64.636202,45.188831,-64.362372)[&quot;operator:fr&quot;=&quot;Postes Canada&quot;]-&gt;.s0;
+nwr.s0(if:(!t[&quot;maxspeed&quot;]==&quot;water&quot;))-&gt;.s1;
+(.s1; - .s1;)-&gt;.s2;
+make stat k0=((s0.count(ways)&gt;42)?(((s0.min(abs(count_distinct_by_role(&quot;forward&quot;)))&gt;=-1)?(s0.min(number(&quot;yes&quot;))):(s0.count(nwr)))):(s0.max(lat()))),k1=date(s0.max(timestamp())),::geom=s0.gcat(center(geom()))-&gt;.s3;
+(.s3; .s3;)-&gt;.s4;
+.s0 out meta 14;
+.s1 out tags;
+.s2 out ids qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

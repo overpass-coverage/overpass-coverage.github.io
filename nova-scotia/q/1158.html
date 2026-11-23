@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1158</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1158</p><h1>Query 1158</h1><p class="muted">fuzz:3:evaluators:284 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+way(id:156715364,505881481,526161680,751051738,1035846392,1115822491,1212954874,1425366686)-&gt;.s0;
+node(way_cnt.s0:2-)-&gt;.s1;
+.s0 convert item members=per_member(mtype()+&quot;/&quot;+ref()),k0=(((t[&quot;colour&quot;]==&quot;territorial_waters&quot;&amp;&amp;t[&quot;light:lit&quot;]==&quot;sidewalk&quot;)?(user()):(lrs_min(lrs_union(t[&quot;building&quot;],&quot;name&quot;))))+version()),::id=id(),::geom=geom(),k1=number(number(t[&quot;light:lit&quot;])),k2=lrs_union(lrs_isect(&quot;a;b;c&quot;,type()),&quot;a;b;c&quot;)-&gt;.s2;
+rel(r.s2)-&gt;.s3;
+.s1 out body bb asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

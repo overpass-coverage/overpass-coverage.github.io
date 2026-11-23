@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1383</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1383</p><h1>Query 1383</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:208 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;addr:postcode&quot;,::&quot;count:relations&quot;;false;&quot; &quot;)][maxsize:1073741824];
+rel(id:1416774,4027047,4872485,7075967,8178153,9303498,11872469,13467241,19698322,20640205)(if:(version()==(-date(user()))))(if:is_closed())-&gt;.s0;
+rel.s0(id:2263870,2273165,9219288,9244590,10230165,12125192,12139991,13463007,13474126,14126538,21812640)-&gt;.s1;
+rel(bw.s1)-&gt;.s2;
+wr(bn.s0)-&gt;.s3;
+node(w.s1)[&quot;colour&quot;=&quot;Pink&quot;]-&gt;.s4;
+.s1 out meta;
+.s2 out geom tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

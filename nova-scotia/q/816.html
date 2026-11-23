@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 816</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 816</p><h1>Query 816</h1><p class="muted">fuzz:3:statements,areas:283 · 0.13 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;post:city&quot;)];
+node[&quot;sport&quot;=&quot;ice_hockey;ice_skating&quot;](id:1140662690,1144616248,1324087224,2489923410,3491789989,3512498172,3536840820,3542454610,5361936873,7168309703)[&quot;religion&quot;=&quot;christian&quot;]-&gt;.s0;
+is_in(44.594604,-63.601381)-&gt;.s1;
+nwr(area.s1)[&quot;piste:type&quot;=&quot;nordic&quot;]-&gt;.s2;
+way(r.s2:&quot;route&quot;)[&quot;natural&quot;=&quot;coastline&quot;]-&gt;.s3;
+.s2 map_to_area-&gt;.s4;
+.s2 out ids 21 (45.973969,-59.745989,46.016403,-59.727268);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

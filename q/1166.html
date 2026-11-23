@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1166</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1166</p><h1>Query 1166</h1><p class="muted">fuzz:3:output:1264 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Named things&quot;;[&quot;oneway&quot;~&quot;^no&quot;][&quot;destination:ref&quot;=&quot;east&quot;];)][timeout:25];
-wr(around:250,45.162033,-61.553336)(if:uid()&gt;24000000)-&gt;.s0;
-rel(bw.s0:&quot;side_stream&quot;)-&gt;.s1;
-rel.s1(id:13757679,21194273)-&gt;.s2;
-node(r.s0)-&gt;.s3;
-node(way_cnt.s3:2-)-&gt;.s4;
-foreach.s4-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
-.s3 out ids qt noids bb;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

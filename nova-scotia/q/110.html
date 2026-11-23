@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 110</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 110</p><h1>Query 110</h1><p class="muted">fuzz:3:evaluators:299 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+node(around:50,45.352500,-63.255265)-&gt;.s0;
+.s0 &lt;&lt;-&gt;.s1;
+.s0 &lt;&lt;-&gt;.s2;
+way(bn.s0)[&quot;craft&quot;]-&gt;.s3;
+.s2 convert row k0=((lrs_min(t[&quot;addr:district&quot;])&lt;(t[&quot;landuse&quot;]+t[&quot;ref&quot;]))?(count_distinct_by_role(&quot;main_stream&quot;)):(((suffix(t[&quot;addr:city&quot;])&lt;t[&quot;addr:province&quot;])?((t[&quot;oneway&quot;]==&quot;Bishopville Road&quot;?(uid()):(lon()))):(number(t[&quot;natural&quot;])))))-&gt;.s4;
+.s1 out skel center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

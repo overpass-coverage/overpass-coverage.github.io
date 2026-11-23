@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1676</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1676</p><h1>Query 1676</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2971 · 0.60 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::id,&quot;utility&quot;,::&quot;count:relations&quot;,::lon,&quot;boundary&quot;,::count,::user,::uid,&quot;barrier&quot;;true;&quot;|&quot;)];
+way(poly:&#x27;44.868226 -63.659262 44.867354 -63.672053 44.874153 -63.682402&#x27;)(poly:&#x27;45.663333 -62.512469 45.663509 -62.513900 45.661878 -62.518947 45.658079 -62.511703&#x27;)(id:239372899,345800047,431150444,1237478218)-&gt;.s0;
+node(w.s0)[&quot;amenity&quot;~&quot;^(bicycle_parking|drinking_water|nightclub|post_box|restaurant|veterinary|waste_basket)$&quot;]-&gt;.s1;
+is_in(45.176187,-63.318447)-&gt;.s2;
+nwr(area.s2)[&quot;surface&quot;=&quot;dirt&quot;]-&gt;.s3;
+.s3 &gt;&gt;-&gt;.s4;
+.s4 out meta (46.629348,-61.055626,46.646242,-60.936909);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

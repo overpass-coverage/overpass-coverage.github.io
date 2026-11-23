@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 257</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 257</p><h1>Query 257</h1><p class="muted">fuzz:3::1786 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+nw(if:length()&gt;10)[&quot;man_made&quot;](poly:&#x27;44.972754 -62.032567 44.981781 -62.024978 44.984907 -62.015682 44.997090 -62.026605 44.991408 -62.048588 45.007272 -62.046280 44.989593 -62.067532 44.981450 -62.065141 44.983878 -62.066616 44.991065 -62.074194 44.985471 -62.072308 44.978982 -62.070172 44.981279 -62.074954 44.980892 -62.084445 44.980500 -62.100434 44.975891 -62.086816 44.974763 -62.096896 44.972375 -62.097593 44.965333 -62.083146 44.959549 -62.085029 44.957189 -62.072757 44.956981 -62.059742 44.946804 -62.056101 44.947406 -62.055754 44.959809 -62.056432 44.954108 -62.051352 44.950114 -62.033036 44.957663 -62.037833 44.953349 -62.030868 44.959535 -62.039343&#x27;)-&gt;.s0;
+.s0 &lt;-&gt;.s1;
+node(way_cnt.s1:2-)-&gt;.s2;
+.s2 &gt;&gt;-&gt;.s3;
+way(around.s1:20)[!&quot;fence_type&quot;]-&gt;.s4;
+.s0 out skel center qt;
+.s3 out tags;
+.s4 out meta geom asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

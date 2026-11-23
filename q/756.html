@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 756</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 756</p><h1>Query 756</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3435 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;access&quot;,&quot;crossing&quot;,::timestamp,::&quot;count:areas&quot;,::version;true;&quot; &quot;)][timeout:60][maxsize:268435456];
-nwr[&quot;bridge:name&quot;=&quot;Sussex Street Bridge&quot;](if:version()&gt;5)-&gt;.s0;
-node(w.s0)-&gt;.s1;
-node(around.s1:300)[&quot;brand:wikidata&quot;~&quot;^(Q1032400|Q118558630|Q130546216|Q2241604|Q2974996|Q53268|Q6006077|Q62537250|Q6970842|Q7366633)$&quot;,i]-&gt;.s2;
-rel(bn.s0)-&gt;.s3;
-for.s1-&gt;.s4 ((id()&gt;changeset())) { make group value=_.val,n=count(nodes),w=count(ways); }
-.s2 out ids asc;
-.s4 out tags;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 159</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 159</p><h1>Query 159</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5752 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;operator&quot;=&quot;Shared&quot;](around:1000,45.669382,-62.554930);
+  node[&quot;tactile_paving&quot;~&quot;no&quot;,i](around:1000,45.669382,-62.554930);
+  way[&quot;shop&quot;~&quot;^(beverages|hunting)$&quot;](around:3000,45.669382,-62.554930);
+  node[&quot;bridge:name&quot;=&quot;Paint Brook (Elmsvale)&quot;](around:3000,45.669382,-62.554930);
+  relation[&quot;sidewalk:both&quot;~&quot;^(no)$&quot;,i](around:3000,45.669382,-62.554930);
+  nwr[&quot;seamark:light:height&quot;~&quot;14|16|24&quot;](around:5000,45.669382,-62.554930);
+  nwr[&quot;network&quot;~&quot;^(CA:NS:S|DART|Halifax\\ Transit|Transit\\ Cape\\ Breton)$&quot;](around:3000,45.669382,-62.554930);
+  node[&quot;smoothness&quot;=&quot;intermediate&quot;](around:3000,45.669382,-62.554930);
+  node[&quot;leisure&quot;~&quot;^(fishing|playground|swimming_pool)$&quot;,i](around:3000,45.669382,-62.554930);
+  node[&quot;maxheight&quot;](around:3000,45.669382,-62.554930);
+  node[&quot;maxspeed&quot;=&quot;110&quot;](around:3000,45.669382,-62.554930);
+  nwr[&quot;operator:wikidata&quot;=&quot;Q1032001&quot;](around:3000,45.669382,-62.554930);
+  way[&quot;postal_code&quot;~&quot;^(B0S\\ 1K0|B2X\\ 1T5|B2Z\\ 1N7|B4B\\ 2K1|B4E\\ 3G7|B4G\\ 1C9)$&quot;,i](around:500,45.669382,-62.554930);
+  way[&quot;religion&quot;](around:1000,45.669382,-62.554930);
+  node[&quot;height&quot;=&quot;54&quot;](around:3000,45.669382,-62.554930);
+);
+out tags center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 247</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 247</p><h1>Query 247</h1><p class="muted">fuzz:3:evaluators:431 · 0.13 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-wr(45.001606,-63.452647,45.020275,-63.446931)-&gt;.s0;
-make info c=((s0.min(number(&quot;yes&quot;))==2)?(number(s0.max(lrs_min(&quot;1;2&quot;)))):((s0.sum(lrs_min(lrs_union(t[&quot;surface&quot;],&quot;name&quot;)))-s0.min(count_by_role(&quot;link&quot;))))),v=(s0.set(lrs_min(lrs_union(t[&quot;ref&quot;],&quot;name&quot;)))+s0.set(t[&quot;admin_level&quot;]))-&gt;.s1;
-node(way_link.s1:3-)-&gt;.s2;
-.s0 &lt;&lt;-&gt;.s3;
-.s0 out skel bb 49;
-.s2 out count;
-.s3 out skel bb qt (44.150084,-65.765177,44.165022,-65.738817);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

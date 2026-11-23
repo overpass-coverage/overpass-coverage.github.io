@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1104</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1104</p><h1>Query 1104</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5191 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Shops&quot;;[&quot;admin_level&quot;];[&quot;support&quot;~&quot;^or&quot;][&quot;highway&quot;];[&quot;surface&quot;][&quot;emergency&quot;=&quot;fire_hydrant&quot;];)][timeout:25][maxsize:536870912];
+node(45.932019,-60.471208,46.109966,-60.312859)[&quot;water&quot;~&quot;^strea&quot;][&quot;lane_markings&quot;!=&quot;no&quot;]-&gt;.s0;
+way(r.s0:&quot;link&quot;)[!&quot;postal_code&quot;]-&gt;.s1;
+.s0 &lt;-&gt;.s2;
+rel(bn.s2:&quot;admin_centre&quot;)-&gt;.s3;
+.s1 out 1 skel qt center;
+.s2 out center skel;
+.s3 out noids tags geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

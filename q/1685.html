@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1685</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1685</p><h1>Query 1685</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:4144 · 0.63 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][out:csv(::version,::uid,::count,::&quot;count:relations&quot;)][timeout:25];
-nwr(46.089062,-60.223022,46.260626,-59.984088)[&quot;surface&quot;!~&quot;concrete|fine_gravel|grass|gravel|ground|pebblestone&quot;]-&gt;.s0;
-.s0 &lt;&lt;-&gt;.s1;
-way.s0[&quot;collection_times&quot;]-&gt;.s2;
-.s1 convert stat !&quot;footway&quot;,::id=id(),k0=lrs_isect(lrs_union(&quot;a;b;c&quot;,lrs_isect(t[&quot;name&quot;],&quot;a;b;c&quot;)),lrs_isect(&quot;a;b;c&quot;,lrs_union(&quot;a;b;c&quot;,&quot;a;b;c&quot;)))-&gt;.s3;
-.s0 out bb skel 5;
-.s2 out skel asc;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

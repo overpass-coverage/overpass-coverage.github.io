@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1257</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1257</p><h1>Query 1257</h1><p class="muted">fuzz:3:evaluators:439 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+rel[&quot;cyclestreet&quot;=&quot;yes&quot;](id:1260308,1418389,1530313,3172506,5342447,5439432,7114019,9443531,11666500,17449601,21812685)(if:is_closed())-&gt;.s0;
+node(r.s0:&quot;route&quot;)-&gt;.s1;
+(.s1; .s1;)-&gt;.s2;
+make stat k0=(((s1.sum(abs(count_members()))&gt;1)?(s1.count(nr)):(s1.sum((count_tags()--1))))*s1.count(nw)),k1=number(s1.u(lrs_min(&quot;a;b;c&quot;))),k2=lrs_min(s1.u(lrs_min(lrs_union(t[&quot;material&quot;],&quot;name&quot;))))-&gt;.s3;
+.s3 convert row ::id=id(),tags=count_tags();
+out;
+.s2 out count;
+.s3 out tags geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

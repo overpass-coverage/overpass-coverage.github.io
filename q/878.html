@@ -1,6 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 878</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 878</p><h1>Query 878</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5685 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][timeout:60];
-node(poly:&quot;45.606501 -62.650308 45.610583 -62.655323 45.600722 -62.647697&quot;)(id:911803444,1316282372,1365819723,1432221412,2435954902,2482601400,2493033797,4611956332,5345156387,13302905862)(43.700206,-65.329256,43.735146,-64.940040)-&gt;.s0;
-if ((s0.count(nw)&lt;-1)) { make yes n=s0.count(nwr)-&gt;.s1; }
-if ((!(s1.max(abs(count_distinct_by_role(&quot;forward&quot;)))&gt;=3))) { make yes n=s1.count(nwr)-&gt;.s2; } else { make no n=0-&gt;.s2; }
-out ids;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/aggregators.cc.html#L89">overpass_api/statements/aggregators.cc:89</a></li></ul></main></body></html>

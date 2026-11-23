@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1308</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1308</p><h1>Query 1308</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1100 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:xml][maxsize:536870912];
-node[&quot;resource&quot;=&quot;aggregate&quot;][&quot;highway&quot;](45.018428,-64.430050,45.198781,-64.284926)-&gt;.s0;
-node(w.s0)[!&quot;laundry&quot;]-&gt;.s1;
-.s0 convert stat k1=suffix(lrs_min(lrs_union(&quot;1;2&quot;,lrs_union(t[&quot;addr:suburb&quot;],&quot;name&quot;)))),k2=abs((-uid())),!&quot;water_source&quot;,::id=id(),k0=((abs(count_by_role(&quot;backward&quot;))!=(is_tag(&quot;surface&quot;)?(number(t[&quot;layer&quot;])):(count_distinct_members())))?((is_closed()?(t[&quot;type&quot;]):(number(t[&quot;natural&quot;])))):(((!is_number(t[&quot;utility&quot;]))?(id()):((t[&quot;addr:postcode&quot;]+timestamp())))))-&gt;.s2;
-.s1 convert item k1=(((is_tag(&quot;addr:county&quot;)?(changeset()):(length()))&gt;=count_members())||0),k0=is_number(lrs_min(lrs_isect(&quot;1;2&quot;,lrs_union(t[&quot;colour&quot;],&quot;name&quot;))))-&gt;.s3;
-.s1 out body;
-.s2 out ids geom 47;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

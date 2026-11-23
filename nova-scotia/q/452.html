@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 452</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 452</p><h1>Query 452</h1><p class="muted">fuzz:3:evaluators:482 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+wr(45.064435,-61.701474,45.263271,-61.436380)[&quot;takeaway&quot;!=&quot;yes&quot;]-&gt;.s0;
+rel.s0(if:(user()&gt;id()))-&gt;.s1;
+for.s0-&gt;.s2 (lrs_min(lrs_union(t[&quot;building&quot;],&quot;name&quot;))) { ._ out count; }
+rel.s1(45.304054,-63.360256,45.445480,-63.140138)-&gt;.s3;
+way(around.s3:100)[~&quot;^nat&quot;~&quot;ro&quot;]-&gt;.s4;
+.s1 out tags center qt;
+.s2 out count;
+.s4 out tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

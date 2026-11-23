@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 785</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 785</p><h1>Query 785</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:4842 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Food&quot;;[&quot;old_addr:housenumber&quot;!=&quot;39&quot;];)(&quot;Food&quot;;[&quot;is_in:country_code&quot;=&quot;CA&quot;];[&quot;aeroway&quot;!=&quot;runway&quot;][&quot;surface&quot;];[&quot;aeroway&quot;~&quot;^ru&quot;][&quot;operator&quot;];&quot;amenity&quot;;)][timeout:60];
+nwr[&quot;street_cabinet&quot;=&quot;street_lighting&quot;]-&gt;.s0;
+complete(4).s0-&gt;.s1 { way(bn)[&quot;building&quot;]; node(w); }
+node(way_cnt.s0:3-)-&gt;.s2;
+node.s2(45.525383,-61.004019,45.643122,-60.834407)-&gt;.s3;
+.s1 out asc skel;
+out meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

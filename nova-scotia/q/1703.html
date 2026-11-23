@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1703</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1703</p><h1>Query 1703</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5559 · 0.09 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  nwr[&quot;phases&quot;=&quot;3&quot;](around:3000,44.449627,-65.015005);
+  node[&quot;boundary_type&quot;~&quot;territorial_waters&quot;](around:25000,44.449627,-65.015005);
+  node[&quot;lanes&quot;~&quot;1|3|4&quot;](around:25000,44.449627,-65.015005);
+  way[&quot;utility&quot;=&quot;telecom&quot;](around:25000,44.449627,-65.015005);
+  relation[&quot;turn:lanes:forward&quot;=&quot;left|through|through;right&quot;](around:25000,44.449627,-65.015005);
+  way[&quot;place&quot;~&quot;island|islet|locality&quot;,i](around:3000,44.449627,-65.015005);
+  nwr[&quot;vending&quot;=&quot;animal_feed&quot;](around:25000,44.449627,-65.015005);
+  node[&quot;noexit&quot;~&quot;yes&quot;,i](around:25000,44.449627,-65.015005);
+  way[&quot;lane_markings&quot;=&quot;no&quot;](around:1000,44.449627,-65.015005);
+  way[&quot;is_in:province&quot;=&quot;Nova Scotia&quot;][&quot;lanes&quot;~&quot;2|Canada|alumin&quot;,i](around:25000,44.449627,-65.015005);
+  relation[&quot;admin_level&quot;~&quot;10|5|8&quot;](around:2000,44.449627,-65.015005);
+  node[&quot;is_in:municipality&quot;~&quot;Halifax\\ Regional\\ Municipality&quot;](around:1000,44.449627,-65.015005);
+  way[&quot;highway&quot;~&quot;residential|traffic_signals&quot;](around:500,44.449627,-65.015005);
+);
+out body center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

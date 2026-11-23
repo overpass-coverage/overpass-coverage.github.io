@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1778</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1778</p><h1>Query 1778</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5100 · 0.28 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  relation[&quot;colour&quot;~&quot;Pink|orange|red&quot;](around:1000,44.675850,-63.481048);
+  way[&quot;height&quot;][&quot;layer&quot;~&quot;B4B\\ 2E|shoes|yes&quot;,i](around:3000,44.675850,-63.481048);
+  node[&quot;length&quot;~&quot;^(1\\.5|2|2\\.6|3)$&quot;](around:500,44.675850,-63.481048);
+  way[&quot;post:city&quot;~&quot;^(Dartmouth|Tangier|Upper\\ Musquodoboit)$&quot;](around:3000,44.675850,-63.481048);
+  nwr[&quot;material&quot;~&quot;aluminium|crusher\\ dust|metal|steel|wood&quot;,i](around:2000,44.675850,-63.481048);
+  way[&quot;brand&quot;](around:1000,44.675850,-63.481048);
+  relation[&quot;fence_type&quot;~&quot;chain_link|hedge&quot;](around:1000,44.675850,-63.481048);
+  nwr[&quot;natural&quot;=&quot;land&quot;](around:1000,44.675850,-63.481048);
+  way[&quot;length&quot;~&quot;^(1524|2|2\\.6|3)$&quot;](around:1000,44.675850,-63.481048);
+  way[&quot;parking:left:orientation&quot;~&quot;diagonal&quot;](around:1000,44.675850,-63.481048);
+  node[&quot;layer&quot;=&quot;-1&quot;](around:1000,44.675850,-63.481048);
+  way[&quot;brand:wikidata&quot;=&quot;Q53268&quot;][&quot;gauge&quot;~&quot;9|design|ice_ho&quot;,i](around:1000,44.675850,-63.481048);
+  relation[&quot;operator:en&quot;](around:1000,44.675850,-63.481048);
+  nwr[&quot;seamark:light:category&quot;~&quot;^(rear)$&quot;](around:3000,44.675850,-63.481048);
+  node[&quot;building&quot;](around:3000,44.675850,-63.481048);
+);
+out body center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

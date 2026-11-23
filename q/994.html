@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 994</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 994</p><h1>Query 994</h1><p class="muted">fuzz:3:evaluators:468 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-nw[&quot;bridge:name&quot;=&quot;Lower Mill (River Lake #1)&quot;]-&gt;.s0;
-if ((number(s0.u(t[&quot;water_source&quot;]))&lt;0)) { make yes n=s0.count(nwr)-&gt;.s1; } else { make no n=0-&gt;.s1; }
-.s1 convert stat ::=::,k1=t[&quot;emergency&quot;],!&quot;waterway&quot;,k0=suffix(timestamp())-&gt;.s2;
-wr(bn.s1)-&gt;.s3;
-for.s1-&gt;.s4 (is_number(suffix(id()))) { make group value=_.val,count=count(nwr); }
-.s1 out body qt;
-.s4 out body;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

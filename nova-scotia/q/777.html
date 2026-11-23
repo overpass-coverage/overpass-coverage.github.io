@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 777</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 777</p><h1>Query 777</h1><p class="muted">fuzz:3:areas,complete:548 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][bbox:44.798665,-64.108907,44.963603,-63.885964];
+nw(if:is_tag(&quot;postal_code&quot;))(around:250,45.031559,-63.599195)-&gt;.s0;
+area[name=&quot;Fox Island&quot;][&quot;type&quot;=&quot;multipolygon&quot;]-&gt;.s1;
+rel(area.s1)[&quot;parking:lane:right&quot;=&quot;parallel&quot;]-&gt;.s2;
+node(way_cnt.s2:2-)-&gt;.s3;
+node(way_cnt.s0:1-2)-&gt;.s4;
+rel(pivot.s1)-&gt;.s5;
+.s0 out body center;
+.s2 out meta center;
+.s4 out skel center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1572</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1572</p><h1>Query 1572</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5502 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][timeout:180][out:xml];
-wr(45.292875,-61.967569,45.301843,-61.933863)[&quot;building:levels&quot;=&quot;16&quot;](if:(lrs_max(lrs_union(t[&quot;addr:interpolation&quot;],&quot;a;b;c&quot;))!=lrs_max(lrs_isect(t[&quot;frequency&quot;],&quot;a;b;c&quot;))))-&gt;.s0;
-wr(bn.s0)-&gt;.s1;
-area[name=&quot;Pond Cove&quot;]-&gt;.s2;
-rel(area.s2)[&quot;ocean&quot;=&quot;yes&quot;]-&gt;.s3;
-.s1 &lt;-&gt;.s4;
-.s0 out body noids;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

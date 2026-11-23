@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 577</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 577</p><h1>Query 577</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1188 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:csv(&quot;lane_markings&quot;,::&quot;count:ways&quot;,::user,::otype,&quot;communication&quot;,::type;false;&quot;	&quot;)];
-way(45.620884,-61.418400,45.639443,-61.378730)-&gt;.s0;
-node(way_cnt.s0:1)-&gt;.s1;
-complete(6).s0-&gt;.s2 { way(around:0)[&quot;addr:district&quot;]; }
-.s2 convert row k1=number(t[&quot;lamp_mount&quot;]),members=per_member(mtype()),k0=&quot;a;b;c&quot;,::id=id()-&gt;.s3;
-(.s2; .s3;)-&gt;.s4;
-.s3 out qt geom body;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

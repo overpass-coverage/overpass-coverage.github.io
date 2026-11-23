@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1072</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1072</p><h1>Query 1072</h1><p class="muted">fuzz:3:output:1016 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][maxsize:536870912];
+nw(poly:&#x27;45.851502 -64.177383 45.851020 -64.181056 45.844489 -64.182668 45.847360 -64.169899&#x27;)-&gt;.s0;
+way(around.s0:100)[&quot;man_made&quot;]-&gt;.s1;
+node(way_link.s1:2-)-&gt;.s2;
+node(around.s2:0)[&quot;lanes:backward&quot;!=&quot;2&quot;]-&gt;.s3;
+.s0 convert row ::id=id(),tags=count_tags();
+out;
+.s1 out tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

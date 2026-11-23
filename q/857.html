@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 857</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 857</p><h1>Query 857</h1><p class="muted">fuzz:3:output:613 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][timeout:25][maxsize:1073741824];
-wr[&quot;disused:aeroway&quot;=&quot;runway&quot;][&quot;natural&quot;!=&quot;peak&quot;](if:changeset()&gt;97000000)-&gt;.s0;
-node(r.s0)[&quot;building&quot;]-&gt;.s1;
-node(w.s1)[&quot;destination&quot;]-&gt;.s2;
-nw[~&quot;^roo&quot;~&quot;gab&quot;](44.249355,-65.607775,44.373787,-65.518125)(45.832245,-60.693706,46.066608,-60.506446)[&quot;material&quot;=&quot;aluminium&quot;]-&gt;.s3;
-.s1 &lt;&lt;-&gt;.s4;
-.s3 out ids;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

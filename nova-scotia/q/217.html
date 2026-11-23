@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 217</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 217</p><h1>Query 217</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:4909 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:csv(::lon,::type,&quot;structure&quot;,&quot;name:en&quot;,&quot;noexit&quot;,&quot;access&quot;,::&quot;count:ways&quot;;false;&quot;	&quot;)];
+way(around:50,45.082517,-64.359879)-&gt;.s0;
+.s0 convert row ::id=id(),::geom=geom(),k2=date(user()),k0=(((t[&quot;natural&quot;]==&quot;no&quot;||t[&quot;height&quot;]==&quot;airport;toll&quot;)?(type()):(suffix(type())))+((0?(id()):(&quot;x;y&quot;))+suffix(t[&quot;footway&quot;]))),k1=(-date(lrs_min(t[&quot;addr:city&quot;]))),k3=lrs_in(((!is_date(t[&quot;land_area&quot;]))?(lon()):(t[&quot;addr:district&quot;])),lrs_union(t[&quot;phases&quot;],&quot;name&quot;)),members=per_member((pos()&gt;0)),::=::-&gt;.s1;
+.s1 map_to_area-&gt;.s2;
+way(r.s1)-&gt;.s3;
+node(way_link.s2:1)-&gt;.s4;
+.s3 out body;
+.s4 out qt ids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

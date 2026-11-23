@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 791</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 791</p><h1>Query 791</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3281 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;frequency&quot;,&quot;addr:street&quot;,::&quot;count:nodes&quot;,&quot;bridge&quot;;true)][timeout:60];
-way[&quot;telecom:medium&quot;=&quot;fibre&quot;][&quot;phases&quot;=&quot;3&quot;](44.598293,-63.429155,44.651784,-63.413954)-&gt;.s0;
-node(way_cnt.s0:3-)-&gt;.s1;
-area[name=&quot;Little Harbour Lake&quot;]-&gt;.s2;
-node(area.s2)[&quot;natural&quot;=&quot;tree_row&quot;]-&gt;.s3;
-.s0 &lt;-&gt;.s4;
-way(around.s1:0)[&quot;operator&quot;!~&quot;Accord|Bell\\ Aliant|Berwick\\ Power\\ Commission|Halifax\\ Regional\\ Municipality|Halifax\\ Regional\\ Water\\ Commission|Parkbridge|Shared|South\\ Queens\\ Middle\\ School&quot;]-&gt;.s5;
-.s5 out geom 17 meta;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

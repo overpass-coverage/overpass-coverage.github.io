@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1398</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1398</p><h1>Query 1398</h1><p class="muted">fuzz:3:statements,areas:3 · 1.14 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+wr[&quot;frequency&quot;=&quot;60&quot;](46.076622,-60.947682,46.082231,-60.796431)(if:is_closed())[&quot;highway&quot;=&quot;tertiary&quot;]-&gt;.s0;
+node.s0(id:816235204,1715296587,4580253560,6031444404)-&gt;.s1;
+node(w.s1:-1)-&gt;.s2;
+nwr[&quot;entrance&quot;~&quot;^emergency$&quot;,i]-&gt;.s3;
+is_in(45.475759,-63.572815)-&gt;.s4;
+rel(area.s4)(44.699991,-62.855487,44.730246,-62.852904)-&gt;.s5;
+.s1 out count;
+.s5 out body asc;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/data/tilewise_geometry.h.html#L747">overpass_api/data/tilewise_geometry.h:747</a></li></ul></main></body></html>

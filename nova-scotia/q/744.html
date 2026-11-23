@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 744</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 744</p><h1>Query 744</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1504 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;building:levels&quot;,::otype,&quot;created_by&quot;,&quot;natural&quot;,::version)][maxsize:268435456][timeout:25];
+nwr(if:is_closed())[&quot;post:city&quot;=&quot;Sheet Harbour&quot;](poly:&quot;44.467554 -65.003508 44.469847 -65.004245 44.469788 -65.005264 44.468435 -65.007845 44.465042 -65.011065 44.463417 -65.005264&quot;)(45.430474,-64.367324,45.534285,-64.305637)-&gt;.s0;
+complete(1).s0-&gt;.s1 { node(w); way(bn)[&quot;light:method&quot;]; }
+way(r.s1)[~&quot;^lit&quot;~&quot;n&quot;]-&gt;.s2;
+way(bn.s0)[&quot;incline&quot;~&quot;^1&quot;]-&gt;.s3;
+.s1 &lt;-&gt;.s4;
+.s1 out (43.986195,-64.955027,44.001957,-64.929898) body bb 100;
+.s4 out asc (44.663150,-63.603529,44.677350,-63.502748) noids geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

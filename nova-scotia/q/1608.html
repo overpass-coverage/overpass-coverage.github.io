@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1608</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1608</p><h1>Query 1608</h1><p class="muted">fuzz:3::1581 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+way[&quot;unsigned_ref&quot;=&quot;7519&quot;](around:250,45.097653,-62.966289)(if:count_tags()&gt;2)-&gt;.s0;
+way.s0(id:70601739,274456670,500263272,627838978,765171161)-&gt;.s1;
+rel(poly:&quot;45.587685 -61.280978 45.590283 -61.278335 45.592921 -61.286988 45.608773 -61.288514 45.593402 -61.298787 45.595890 -61.297929 45.605569 -61.295280 45.598484 -61.306274 45.612643 -61.305342 45.604651 -61.312894 45.598232 -61.320196 45.586688 -61.332755 45.591076 -61.345967 45.577857 -61.348244 45.576068 -61.359144 45.574553 -61.338488 45.572515 -61.338369 45.567719 -61.350603 45.570531 -61.330063 45.560451 -61.340942 45.564987 -61.325043 45.563556 -61.326846 45.558740 -61.330958 45.560857 -61.319872 45.549287 -61.311187 45.543872 -61.303773 45.566996 -61.293824 45.565371 -61.287595 45.562875 -61.270165 45.569660 -61.288485&quot;)-&gt;.s2;
+way(around.s1:100)[&quot;flag:wikidata&quot;=&quot;Q80110&quot;]-&gt;.s3;
+.s1 &gt;-&gt;.s4;
+foreach.s1-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s3 out tags;
+.s4 out ids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

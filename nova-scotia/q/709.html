@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 709</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 709</p><h1>Query 709</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1656 · 1.28 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::lon,::type,&quot;leisure&quot;,::timestamp,&quot;name:en&quot;,::user,::version)][maxsize:536870912][timeout:180];
+nwr(44.770072,-63.731069,44.810309,-63.706734)-&gt;.s0;
+.s0 convert row ::id=id(),::geom=geom(),::=::,k0=abs(abs(uid())),members=per_member((pos()&gt;3)),!&quot;poles&quot;,k1=lrs_in(&quot;&quot;,lrs_union(t[&quot;operator:wikidata&quot;],lrs_union(t[&quot;owner&quot;],&quot;name&quot;)))-&gt;.s1;
+make stat k0=abs(s0.sum(number(type()))),k1=number(s0.u(count_distinct_by_role(&quot;stop&quot;))),k2=s0.max(count_members()),k3=number(s0.u((&quot;1;2;3&quot;+&quot;2018-01-01&quot;))),::geom=center(trace(s0.gcat(geom())))-&gt;.s2;
+foreach.s1-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s0 out skel 40 (45.781856,-60.170007,45.849371,-60.031054);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 843</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 843</p><h1>Query 843</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:4898 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Other&quot;;[&quot;gauge&quot;~&quot;^14&quot;][&quot;is_in:city&quot;!=&quot;Dartmouth&quot;];[&quot;building&quot;=&quot;shed&quot;];&quot;highway&quot;;)(&quot;Shops&quot;;[&quot;leisure&quot;=&quot;pitch&quot;];&quot;ref&quot;;)(&quot;Roads&quot;;[&quot;utility&quot;=&quot;telecom&quot;];[&quot;maxspeed&quot;];[&quot;flag:wikidata&quot;!~&quot;^Q8&quot;];&quot;amenity&quot;;)];
+node(44.497618,-64.155087,44.513382,-64.091801)(if:(!0))-&gt;.s0;
+node.s0(if:(!t[&quot;boundary&quot;]==&quot;forward&quot;))-&gt;.s1;
+foreach.s1-&gt;.x(.x out ids;)
+(._;)-&gt;.s2;
+node(way_cnt.s1:2-)-&gt;.s3;
+(.s0; - .s3;)-&gt;.s4;
+.s0 out;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

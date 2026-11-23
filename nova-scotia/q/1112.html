@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1112</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1112</p><h1>Query 1112</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5200 · 0.12 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  way[&quot;destination&quot;~&quot;Bible\\ Hill;Tatamagouche|Port\\ Hawkesbury;Antigonish;Canso\\ Causeway|Woodside\\ Industrial\\ Park&quot;](around:5000,43.713103,-65.440846);
+  way[&quot;golf&quot;~&quot;bunker|hole&quot;](around:5000,43.713103,-65.440846);
+  node[&quot;brand:wikidata&quot;~&quot;Q1032400|Q118558630|Q53268|Q62537250|Q7366633&quot;][&quot;wetland&quot;~&quot;duplex&quot;,i](around:2000,43.713103,-65.440846);
+  node[&quot;voltage&quot;=&quot;600&quot;](around:5000,43.713103,-65.440846);
+  relation[&quot;type&quot;~&quot;^(boundary|neighbourhood|route|wastewater)$&quot;](around:3000,43.713103,-65.440846);
+  node[&quot;amenity&quot;=&quot;place_of_worship&quot;](around:5000,43.713103,-65.440846);
+  nwr[&quot;unsigned_ref&quot;~&quot;6763|6940|6982|6991&quot;](around:5000,43.713103,-65.440846);
+  way[&quot;barrier&quot;~&quot;fence|gate&quot;](around:5000,43.713103,-65.440846);
+  relation[&quot;landuse&quot;~&quot;cemetery|farmland|meadow|quarry&quot;][&quot;frequency&quot;~&quot;70|Gloosc|no|yes&quot;,i](around:5000,43.713103,-65.440846);
+  way[&quot;bus&quot;~&quot;^(yes)$&quot;,i](around:2000,43.713103,-65.440846);
+  nwr[&quot;railway&quot;~&quot;level_crossing|rail|switch&quot;](around:5000,43.713103,-65.440846);
+  relation[&quot;ford&quot;~&quot;stepping_stones&quot;](around:5000,43.713103,-65.440846);
+  way[&quot;waterway&quot;~&quot;^(dam|rapids|stream)$&quot;,i](around:5000,43.713103,-65.440846);
+  nwr[&quot;access&quot;~&quot;customers|no|private|yes&quot;,i](around:5000,43.713103,-65.440846);
+);
+out body center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

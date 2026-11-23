@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1525</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1525</p><h1>Query 1525</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3601 · 0.61 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::&quot;count:nodes&quot;,::count,::version,::&quot;count:ways&quot;,::otype,&quot;addr:postcode&quot;,::&quot;count:relations&quot;;false)][maxsize:536870912];
+nw(around:100,44.684573,-63.492342)-&gt;.s0;
+for.s0-&gt;.s1 (lrs_max(&quot;1;2&quot;)) { make group value=_.val,n=count(nodes),w=count(ways); }
+node(r.s0)[&quot;boundary&quot;~&quot;^adminis&quot;]-&gt;.s2;
+.s0-&gt;._; foreach-&gt;.x(node(w)-&gt;.n; .n out count;)
+(._;)-&gt;.s3;
+.s0 out 100 meta;
+.s1 out;
+.s3 out meta (44.643696,-63.595804,44.692581,-63.551924) asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

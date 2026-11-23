@@ -1,6 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 175</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 175</p><h1>Query 175</h1><p class="muted">fuzz:3:evaluators:487 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-node(id:813437163,980011761,1147237571,1692126767,2328785507,2330040649,3513779727,3803575736,6694944705)-&gt;.s0;
-.s0 convert stat k1=lrs_union(t[&quot;fire_hydrant:type&quot;],&quot;name&quot;),k2=&quot;a;b;c&quot;,k3=(lrs_in(suffix(user()),&quot;a;b;c&quot;)?(lrs_min(lrs_union(t[&quot;owner&quot;],&quot;name&quot;))):(suffix(t[&quot;height&quot;]))),k0=suffix((is_date(type())?(id()):(id()))),::geom=center(hull(geom()))-&gt;.s1;
-way(bn.s1)[&quot;golf_cart&quot;!=&quot;designated&quot;]-&gt;.s2;
-.s1 out skel qt 3;
-</pre><h2>Lines only this query runs (2)</h2><ul><li><a href="../src/overpass_api/core/geometry.cc.html#L2320">overpass_api/core/geometry.cc:2320</a></li><li><a href="../src/overpass_api/core/geometry.cc.html#L2499">overpass_api/core/geometry.cc:2499</a></li></ul></main></body></html>

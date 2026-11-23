@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 362</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 362</p><h1>Query 362</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:630 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  relation[&quot;natural&quot;~&quot;^(bay|land|scrub)$&quot;][&quot;crossing:island&quot;~&quot;Parkbr|Q70598|alumin|en:Hal&quot;,i](around:500,46.244251,-61.296720);
+  node[&quot;power&quot;~&quot;line|pole|tower|transformer&quot;](around:1000,46.244251,-61.296720);
+  relation[&quot;landuse&quot;=&quot;residential&quot;](around:1000,46.244251,-61.296720);
+  nwr[&quot;surface&quot;=&quot;concrete&quot;][&quot;communication&quot;~&quot;fairwa|no|place_|power&quot;,i](around:1000,46.244251,-61.296720);
+  node[&quot;amenity&quot;=&quot;post_box&quot;](around:1000,46.244251,-61.296720);
+  way[&quot;operator&quot;=&quot;Bell Aliant&quot;](around:3000,46.244251,-61.296720);
+  node[&quot;maintained&quot;=&quot;Halifax Regional Municipality&quot;](around:3000,46.244251,-61.296720);
+  way[&quot;network:wikidata&quot;=&quot;Q7059806&quot;](around:1000,46.244251,-61.296720);
+  relation[&quot;voltage:primary&quot;=&quot;14400&quot;][&quot;is_sidepath:of:name&quot;~&quot;gate|locali|metal|yes&quot;,i](around:1000,46.244251,-61.296720);
+  node[&quot;postal_code&quot;][&quot;tunnel&quot;~&quot;15|B0J\\ 1J|Canada|yes&quot;,i](around:2000,46.244251,-61.296720);
+  relation[&quot;water&quot;~&quot;lake|pond&quot;](around:500,46.244251,-61.296720);
+  nwr[&quot;postal_code&quot;~&quot;^(B2T\\ 1B2|B2X\\ 1T5|B5A\\ 5R1)$&quot;](around:1000,46.244251,-61.296720);
+);
+out geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

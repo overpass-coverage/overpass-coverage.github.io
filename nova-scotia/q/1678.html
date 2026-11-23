@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1678</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1678</p><h1>Query 1678</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2566 · 0.08 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;parking&quot;=&quot;surface&quot;](around:4828,45.008727,-64.027105);
+  way[&quot;landuse&quot;](around:4828,45.008727,-64.027105);
+  way[&quot;laundry&quot;](around:3000,45.008727,-64.027105);
+  way[&quot;natural&quot;][&quot;operator:wikidata&quot;~&quot;reside|teleco|traffi&quot;,i](around:3000,45.008727,-64.027105);
+  node[&quot;golf&quot;=&quot;bunker&quot;][&quot;cables&quot;~&quot;5&quot;,i](around:4828,45.008727,-64.027105);
+  way[&quot;microbrewery&quot;~&quot;^(yes)$&quot;](around:4828,45.008727,-64.027105);
+  nwr[&quot;brand&quot;](around:4828,45.008727,-64.027105);
+  way[&quot;operator&quot;~&quot;Killam\\ Properties|Nova\\ Scotia\\ Power|Parkbridge&quot;,i](around:1000,45.008727,-64.027105);
+  relation[&quot;type&quot;](around:1000,45.008727,-64.027105);
+  relation[&quot;highway&quot;=&quot;bus_stop&quot;](around:4828,45.008727,-64.027105);
+  way[&quot;man_made&quot;~&quot;^(planter|storage_tank|tower)$&quot;](around:1000,45.008727,-64.027105);
+  nwr[&quot;brand&quot;](around:3000,45.008727,-64.027105);
+  way[&quot;natural&quot;=&quot;land&quot;](around:500,45.008727,-64.027105);
+  node[&quot;street_cabinet&quot;](around:4828,45.008727,-64.027105);
+);
+out body center qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

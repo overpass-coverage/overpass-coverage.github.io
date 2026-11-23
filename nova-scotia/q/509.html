@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 509</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 509</p><h1>Query 509</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5266 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:csv(&quot;railway&quot;,&quot;addr:postcode&quot;,::lat,&quot;addr:suburb&quot;)][maxsize:536870912][bbox:45.444986,-62.879765,45.461548,-62.779732];
+wr[&quot;emergency&quot;!~&quot;fire_hydrant&quot;](43.701611,-65.806544,43.885670,-65.737238)[&quot;owner&quot;=&quot;Sprigfield Estates&quot;][&quot;admin_level&quot;=&quot;9&quot;]-&gt;.s0;
+way(bn.s0)-&gt;.s1;
+complete(3).s0-&gt;.s2 { node(w); way(bn)[&quot;utility&quot;]; }
+way.s0[&quot;lanes:psv&quot;=&quot;1&quot;]-&gt;.s3;
+way(bn.s2)-&gt;.s4;
+.s3 out qt meta geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 614</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 614</p><h1>Query 614</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5033 · 0.08 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][maxsize:1073741824][out:csv(&quot;leisure&quot;,::version)];
+way[&quot;surface&quot;=&quot;compacted&quot;](id:112015326,129267872,235906250,236010046,344766194,375790383,590629297,681645594,787796907,991608766,1517075588)[&quot;is_in:province&quot;!=&quot;Nova Scotia&quot;]-&gt;.s0;
+is_in(45.908486,-61.493878)-&gt;.s1;
+node(area.s1)[&quot;brand:wikidata&quot;=&quot;Q2241604&quot;]-&gt;.s2;
+way.s1(if:is_date(t[&quot;oneway&quot;]))-&gt;.s3;
+.s1 map_to_area-&gt;.s4;
+foreach.s0-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s2 out meta qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
