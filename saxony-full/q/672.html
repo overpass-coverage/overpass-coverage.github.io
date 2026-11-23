@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 672</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 672</p><h1>Query 672</h1><p class="muted">fuzz:3:history,complete:2802 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;addr:country&quot;)];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 672</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 672</p><h1>Query 672</h1><p class="muted">fuzz:3:history,complete:2802 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;addr:country&quot;)];
 nw(51.305630,14.704840,51.456374,14.761133)[&quot;railway:signal:combined:states&quot;][&quot;brand&quot;=&quot;Mitteldeutsche Regiobahn&quot;]-&gt;.s0;
 timeline(node,2750992037)-&gt;.s1;
 retro(date(&quot;2025-07-25T05:39:25Z&quot;)) { node(51.503375,14.603287,51.597823,14.826742)[&quot;seamark:notice:information&quot;~&quot;^(Wasserski)$&quot;][&quot;destination:ref&quot;=&quot;B 115&quot;]-&gt;.s2; .s2 out ids; }
@@ -6,4 +6,4 @@ way(r.s2)-&gt;.s3;
 .s3 convert row ::id=id(),tags=count_tags();
 out;
 .s1 out body bb 19;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

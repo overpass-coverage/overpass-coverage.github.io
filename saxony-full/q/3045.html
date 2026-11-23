@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 3045</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 3045</p><h1>Query 3045</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:332 · 1.75 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;man_made&quot;,::&quot;count:relations&quot;,&quot;electrified&quot;,::changeset,&quot;addr:city&quot;)][maxsize:536870912];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 3045</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 3045</p><h1>Query 3045</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:332 · 1.75 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;man_made&quot;,::&quot;count:relations&quot;,&quot;electrified&quot;,::changeset,&quot;addr:city&quot;)][maxsize:536870912];
 node(50.851723,13.180415,50.991785,13.535492)[&quot;network&quot;=&quot;swn&quot;](50.944803,14.010915,50.982059,14.116612)[&quot;flow_control&quot;~&quot;^en&quot;]-&gt;.s0;
 node.s0(if:is_date(t[&quot;natural&quot;]))-&gt;.s1;
 area[name=&quot;Moldava&quot;][boundary]-&gt;.s2;
@@ -8,4 +8,4 @@ is_in(51.391700,12.625585)-&gt;.s5;
 nwr(area.s5)[&quot;railway:radio&quot;=&quot;gsm-r&quot;]-&gt;.s6;
 .s0 out tags (50.715996,12.183721,50.789622,12.287412);
 .s6 out (51.069870,12.981568,51.085956,13.112561) skel center;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

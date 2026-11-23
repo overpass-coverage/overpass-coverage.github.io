@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 0</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 0</p><h1>Query 0</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:975 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[bbox:44.665179,-65.312183,44.720067,-65.207854][out:xml][maxsize:536870912][timeout:25];
-wr(if:((is_date(t[&quot;water&quot;])||is_date(user()))||((is_tag(&quot;oneway&quot;)?(count_by_role(&quot;highest_point&quot;)):(count_members()))&lt;number(user()))))[&quot;operator&quot;](45.406177,-62.833733,45.500358,-62.825764)-&gt;.s0;
-rel.s0(if:lrs_in((lrs_min(&quot;a;b;c&quot;)+suffix(t[&quot;emergency&quot;])),lrs_isect(lrs_union(&quot;1;2&quot;,&quot;1;2&quot;),lrs_union(&quot;a;b;c&quot;,&quot;1;2&quot;))))-&gt;.s1;
-if (lrs_in(&quot;&quot;,lrs_min(s0.max((&quot;x;y&quot;+user()))))) { make yes n=s0.count(nwr)-&gt;.s2; } else { make no n=0-&gt;.s2; }
-wr(bn.s1)-&gt;.s3;
-area[name=&quot;Sucker Lake&quot;][&quot;type&quot;=&quot;multipolygon&quot;]-&gt;.s4;
-node(area.s4)[&quot;length&quot;=&quot;3&quot;]-&gt;.s5;
-.s2 out meta asc noids;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

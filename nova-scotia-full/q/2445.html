@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2445</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2445</p><h1>Query 2445</h1><p class="muted">fuzz:4:history,complete,output:995 · 4.46 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][out:popup(&quot;Named things&quot;;[&quot;boundary&quot;=&quot;administrative&quot;];)(&quot;Food&quot;;[&quot;sidewalk:right&quot;];[&quot;denomination&quot;!=&quot;sunni&quot;][&quot;postal_code&quot;!=&quot;B0T 1P0&quot;];&quot;highway&quot;;)][date:&quot;2011-06-14T18:43:56Z&quot;];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2445</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2445</p><h1>Query 2445</h1><p class="muted">fuzz:4:history,complete,output:995 · 4.46 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][out:popup(&quot;Named things&quot;;[&quot;boundary&quot;=&quot;administrative&quot;];)(&quot;Food&quot;;[&quot;sidewalk:right&quot;];[&quot;denomination&quot;!=&quot;sunni&quot;][&quot;postal_code&quot;!=&quot;B0T 1P0&quot;];&quot;highway&quot;;)][date:&quot;2011-06-14T18:43:56Z&quot;];
 wr(if:version()&gt;5)(poly:&#x27;45.773137 -63.148427 45.775230 -63.175934 45.786271 -63.164955 45.791917 -63.259066&#x27;)(if:count_tags()&gt;3)-&gt;.s0;
 complete(2).s0-&gt;.s1 { way(bn)[&quot;support&quot;]; node(w); }
 complete(1).s0-&gt;.s2 { way(around:0)[&quot;owner&quot;]; }
@@ -6,4 +6,4 @@ complete(1).s0-&gt;.s2 { way(around:0)[&quot;owner&quot;]; }
 (.s0; - .s3;)-&gt;.s4;
 foreach.s3-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
 .s0 out body;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

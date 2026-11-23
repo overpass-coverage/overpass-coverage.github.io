@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 267</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 267</p><h1>Query 267</h1><p class="muted">fuzz:3:areas,complete:445 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-way[&quot;fence_type&quot;=&quot;hedge&quot;][&quot;height&quot;=&quot;58&quot;][&quot;lane_markings&quot;!~&quot;no|yes&quot;]-&gt;.s0;
-area[name=&quot;False Passage&quot;][&quot;type&quot;=&quot;multipolygon&quot;]-&gt;.s1;
-way(area.s1)[&quot;colour&quot;=&quot;red&quot;]-&gt;.s2;
-rel(pivot.s1)-&gt;.s3;
-node(around.s3:300)[&quot;bridge&quot;~&quot;^y&quot;]-&gt;.s4;
-.s1 out body;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

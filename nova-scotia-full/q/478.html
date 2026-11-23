@@ -1,8 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 478</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 478</p><h1>Query 478</h1><p class="muted">fuzz:4:history,complete,evaluators:705 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][date:&quot;2010-09-10T23:28:30Z&quot;];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 478</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 478</p><h1>Query 478</h1><p class="muted">fuzz:4:history,complete,evaluators:705 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][date:&quot;2010-09-10T23:28:30Z&quot;];
 nwr[&quot;water&quot;!~&quot;^la&quot;][&quot;check_date&quot;=&quot;2026-10-14&quot;]-&gt;.s0;
 make info c=date(s0.max(timestamp())),n=1,v=lrs_min(s0.u((1?(user()):(suffix(t[&quot;admin_level&quot;])))))-&gt;.s1;
 for.s1-&gt;.s2 (lrs_in((user()+type()),lrs_union(&quot;a;b;c&quot;,&quot;1;2&quot;))) { ._ out count; }
 node(w.s0)-&gt;.s3;
 .s0 out count;
 .s2 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

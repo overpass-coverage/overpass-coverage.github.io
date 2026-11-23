@@ -1,7 +1,7 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 401</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 401</p><h1>Query 401</h1><p class="muted">fuzz:4:evaluators:338 · 0.24 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 401</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 401</p><h1>Query 401</h1><p class="muted">fuzz:4:evaluators:338 · 0.24 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
 nwr(around:10,51.360212,12.389017)-&gt;.s0;
 rel.s0(id:2034632,2366824,3420558,6648720,20964572)-&gt;.s1;
 make stat k0=s0.u(t[&quot;bus&quot;]),k1=(lrs_in(&quot;1;2;3&quot;,s0.max((type()+timestamp())))?(suffix(s0.min(number(t[&quot;railway&quot;])))):(lrs_min(s0.u(suffix(t[&quot;gauge&quot;]))))),::geom=hull(s0.gcat(geom()))-&gt;.s2;
 foreach.s0-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
 .s0 out skel;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

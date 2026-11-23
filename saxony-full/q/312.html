@@ -1,8 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 312</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 312</p><h1>Query 312</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3740 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][out:json][timeout:180];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 312</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 312</p><h1>Query 312</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3740 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][out:json][timeout:180];
 wr[&quot;handrail&quot;=&quot;yes&quot;](51.081011,12.623015,51.130172,12.814642)-&gt;.s0;
 complete(3).s0-&gt;.s1 { node(w); way(bn)[&quot;addr:country&quot;]; }
 way.s1(if:is_date(suffix(timestamp())))-&gt;.s2;
 (.s0; .s2;)-&gt;.s3;
 way.s0(if:(is_number(user())&amp;&amp;(!t[&quot;smoothness&quot;]==&quot;yes&quot;)))-&gt;.s4;
 .s3 out skel;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

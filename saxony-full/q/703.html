@@ -1,7 +1,7 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 703</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 703</p><h1>Query 703</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1248 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][out:csv(::lon,&quot;backrest&quot;,::type,::count)];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 703</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 703</p><h1>Query 703</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1248 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][out:csv(::lon,&quot;backrest&quot;,::type,::count)];
 nw(51.089206,14.510008,51.278682,14.556419)(if:(number(&quot;DRK-Kreisverband Zittau e.V.&quot;)&lt;number(timestamp())))[&quot;leisure&quot;=&quot;playground&quot;]-&gt;.s0;
 .s0 &gt;-&gt;.s1;
 foreach.s0-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
 .s0 out ids asc;
 .s1 out body;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,8 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1290</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1290</p><h1>Query 1290</h1><p class="muted">fuzz:4:evaluators:816 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1290</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1290</p><h1>Query 1290</h1><p class="muted">fuzz:4:evaluators:816 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
 nwr(51.334165,12.922109,51.356402,13.172512)[&quot;generator:method&quot;=&quot;photovoltaic&quot;]-&gt;.s0;
 node.s0[&quot;noexit&quot;=&quot;yes&quot;]-&gt;.s1;
 make stat k0=abs((-s0.max((1?(count_distinct_by_role(&quot;bench&quot;)):(0.5))))),k1=s0.min(user()),k2=s0.min(count_by_role(&quot;via&quot;)),k3=s0.count(deriveds)-&gt;.s2;
 node(around.s2:100)[&quot;highway&quot;~&quot;^turning&quot;]-&gt;.s3;
 node(way_cnt.s3:3-)-&gt;.s4;
 .s4 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

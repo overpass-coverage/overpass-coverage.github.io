@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2200</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2200</p><h1>Query 2200</h1><p class="muted">fuzz:4:history,complete,output:827 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:csv(&quot;name:en&quot;,::otype,::uid)][maxsize:536870912];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2200</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2200</p><h1>Query 2200</h1><p class="muted">fuzz:4:history,complete,output:827 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:csv(&quot;name:en&quot;,::otype,::uid)][maxsize:536870912];
 node(id:1213133852,1710397246,1835706653,4868767438,5152482868,7357621512,12215610056,13432164302)-&gt;.s0;
 complete(5).s0-&gt;.s1 { way(around:0)[&quot;addr:housenumber&quot;]; }
 complete(1).s1-&gt;.s2 { way(bn)[&quot;addr:country&quot;]; node(w); }
@@ -6,4 +6,4 @@ complete(6).s0-&gt;.s3 { node(w); way(bn)[&quot;bicycle&quot;]; }
 way.s1(if:date(timestamp())&gt;date(&quot;2017-01-01&quot;))-&gt;.s4;
 .s1 out meta 34 (50.941695,13.854360,50.987374,13.909817);
 .s2 out body 5;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

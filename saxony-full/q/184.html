@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 184</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 184</p><h1>Query 184</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:35 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][timeout:180];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 184</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 184</p><h1>Query 184</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:35 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][timeout:180];
 wr[&quot;lanes:forward&quot;=&quot;1&quot;](51.329925,13.048721,51.449225,13.244676)(newer:&quot;2012-09-20T21:44:04Z&quot;)-&gt;.s0;
 .s0 map_to_area-&gt;.s1;
 node(around.s0:20)[&quot;fee&quot;=&quot;no&quot;]-&gt;.s2;
@@ -8,4 +8,4 @@ foreach.s0-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
 .s0 out tags geom qt;
 .s2 out meta bb;
 .s3 out meta 5;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

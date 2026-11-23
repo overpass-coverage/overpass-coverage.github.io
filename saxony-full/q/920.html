@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 920</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 920</p><h1>Query 920</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1278 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][maxsize:268435456][timeout:25][date:&quot;2025-01-16T15:55:18Z&quot;];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 920</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 920</p><h1>Query 920</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1278 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][maxsize:268435456][timeout:25][date:&quot;2025-01-16T15:55:18Z&quot;];
 nwr(if:(number(t[&quot;addr:country&quot;])==&quot;1;2;3&quot;))[&quot;destination:street:lanes&quot;=&quot;Omsewitzer Ring|||Harry-Dember-Straße&quot;](around:10,51.389924,13.397419)(newer:&quot;2018-11-12T18:42:08Z&quot;)-&gt;.s0;
 timeline(way,446265773,2)-&gt;.s1;
 .s0 &lt;&lt;-&gt;.s2;
@@ -6,4 +6,4 @@ node(way_cnt.s2:1-2)-&gt;.s3;
 node(w.s3)[&quot;access&quot;!~&quot;customers|no|permissive|private&quot;]-&gt;.s4;
 complete(6).s3-&gt;.s5 { node(w); way(bn)[&quot;surface&quot;]; }
 .s4 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

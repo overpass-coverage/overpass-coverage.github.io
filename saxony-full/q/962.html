@@ -1,8 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 962</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 962</p><h1>Query 962</h1><p class="muted">fuzz:4:evaluators:380 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 962</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 962</p><h1>Query 962</h1><p class="muted">fuzz:4:evaluators:380 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
 node(around:100,50.414378,12.958344)-&gt;.s0;
 .s0 convert row k2=type(),k1=(is_date(suffix(t[&quot;landuse&quot;]))&amp;&amp;is_number(t[&quot;leaf_cycle&quot;])),::=::,k0=lrs_isect(count_members(),suffix(timestamp())),::id=id()-&gt;.s1;
 node(w.s0)[&quot;is_in:city&quot;=&quot;Dresden&quot;]-&gt;.s2;
 node.s2(id:2049895047,3334808898,4630366595,5398688275,6260388620,10269754313,11704167812)-&gt;.s3;
 rel(r.s2)-&gt;.s4;
 .s4 out body bb;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

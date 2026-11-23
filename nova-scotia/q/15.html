@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 15</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 15</p><h1>Query 15</h1><p class="muted">fuzz:3:evaluators:1432 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-nwr[&quot;destination&quot;=&quot;Lunenburg;Mahone Bay;Blockhouse&quot;](if:(count_distinct_by_role(&quot;both&quot;)&gt;&quot;1;2;3&quot;))(if:number(t[&quot;lit&quot;])&gt;26)-&gt;.s0;
-.s0 convert stat k1=((lrs_in(user(),&quot;1;2&quot;)&amp;&amp;(!is_date(t[&quot;water_source&quot;])))?(((-1&gt;=uid())?((&quot;yes&quot;+id())):(t[&quot;addr:housenumber&quot;]))):((0?((is_date(t[&quot;fire_hydrant:type&quot;])?(type()):(type()))):(id())))),::geom=lstr(pt(44.674581,-64.109344),pt(44.675581,-64.107344)),k2=lrs_union(lrs_isect(t[&quot;material&quot;],lrs_union(lrs_union(t[&quot;lamp_mount&quot;],&quot;name&quot;),&quot;a;b;c&quot;)),lrs_isect(suffix(t[&quot;operator&quot;]),lrs_union(t[&quot;lamp_mount&quot;],lrs_union(t[&quot;fire_hydrant:position&quot;],&quot;name&quot;)))),k0=t[&quot;land_area&quot;]==&quot;hole&quot;-&gt;.s1;
-make stat k0=lrs_union((s1.max(&quot;1;2;3&quot;)+s1.max((is_date(t[&quot;oneway&quot;])?(type()):(id())))),s1.max(number(t[&quot;type&quot;])))-&gt;.s2;
-node.s0(if:lrs_in(t[&quot;fire_hydrant:position&quot;],t[&quot;light:lit&quot;]))-&gt;.s3;
-.s2 out meta bb;
-.s3 out tags;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2165</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2165</p><h1>Query 2165</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2659 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][bbox:44.318090,-65.183614,44.473407,-64.944350][timeout:25];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2165</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2165</p><h1>Query 2165</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2659 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][bbox:44.318090,-65.183614,44.473407,-64.944350][timeout:25];
 node[&quot;post:city&quot;=&quot;Dartmouth&quot;](44.361892,-64.413459,44.443011,-64.143501)[~&quot;^tak&quot;~&quot;y&quot;]-&gt;.s0;
 node(around.s0:20)[~&quot;^wat&quot;~&quot;ri&quot;]-&gt;.s1;
 node.s0(if:is_number(t[&quot;poles&quot;]))-&gt;.s2;
@@ -7,4 +7,4 @@ rel(area.s3)[&quot;type&quot;=&quot;boundary&quot;]-&gt;.s4;
 .s4 convert row ::id=id(),tags=count_tags();
 out;
 .s3 out center asc;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1773</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1773</p><h1>Query 1773</h1><p class="muted">fuzz:3:evaluators:145 · 0.24 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;is_sidepath:of:name&quot;)];
-node(poly:&#x27;44.615560 -63.592334 44.616231 -63.595004 44.622181 -63.613600 44.600446 -63.638035 44.601925 -63.671907 44.588383 -63.667843 44.566040 -63.627781 44.566618 -63.605365 44.574513 -63.604032 44.596222 -63.589042&#x27;)-&gt;.s0;
-node.s0(if:(1||is_number(suffix(timestamp()))))-&gt;.s1;
-node.s0(45.334579,-62.091424,45.400957,-61.856023)-&gt;.s2;
-node(around.s1:100)[&quot;structure&quot;=&quot;solid&quot;]-&gt;.s3;
-.s0 out ids geom asc;
-.s1 out skel;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

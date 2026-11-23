@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 358</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 358</p><h1>Query 358</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5316 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:json];
-node(id:1146813366)[!&quot;voltage&quot;]-&gt;.s0;
-complete(6).s0-&gt;.s1 { way(bn)[&quot;material&quot;]; node(w); }
-if ((s0.min(changeset())&gt;s0.max(date(timestamp())))) { make yes n=s0.count(nwr)-&gt;.s2; } else { make no n=0-&gt;.s2; }
-.s1 &lt;&lt;-&gt;.s3;
-make stat k0=lrs_union(lrs_union(s1.u(lrs_min(t[&quot;lamp_mount&quot;])),s1.min((is_number(t[&quot;layer&quot;])?(type()):(&quot;a&quot;)))),s1.u((&quot;2018-01-01&quot;+t[&quot;boundary&quot;]))),k1=abs(date(s1.max(timestamp()))),k2=s1.max(abs(count_members())),k3=s1.max(suffix(user()))-&gt;.s4;
-.s3 out tags qt;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

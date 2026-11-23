@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1576</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1576</p><h1>Query 1576</h1><p class="muted">fuzz:3::2028 · 0.12 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;addr:postcode&quot;)];
-nwr(45.943624,-60.107762,45.957959,-60.085113)[&quot;destination:forward&quot;=&quot;Dartmouth ; Lawerncetown&quot;][&quot;flag:wikidata&quot;!~&quot;^Q80&quot;]-&gt;.s0;
-node(w.s0)-&gt;.s1;
-nwr[&quot;building&quot;=&quot;house&quot;](44.572017,-63.668698,44.766180,-63.388856)[&quot;building:levels&quot;]-&gt;.s2;
-(.s0; - .s2;)-&gt;.s3;
-rel(bw.s3)-&gt;.s4;
-.s0 out ids 36;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

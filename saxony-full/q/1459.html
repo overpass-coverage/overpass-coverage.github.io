@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1459</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1459</p><h1>Query 1459</h1><p class="muted">fuzz:4:evaluators:813 · 0.51 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;bus&quot;)];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1459</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1459</p><h1>Query 1459</h1><p class="muted">fuzz:4:evaluators:813 · 0.51 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;bus&quot;)];
 wr(51.055304,14.447484,51.104409,14.469390)-&gt;.s0;
 nwr.s0(if:(lrs_max(&quot;1;2;3&quot;)&lt;=(abs(id())-lon())))-&gt;.s1;
 node.s1(id:2430071275,2668606520,3635736686,3887588107,5760289427,12057554221)-&gt;.s2;
@@ -6,4 +6,4 @@ way(r.s2)-&gt;.s3;
 .s1 out tags geom;
 .s2 out body asc;
 .s3 out meta bb 19;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

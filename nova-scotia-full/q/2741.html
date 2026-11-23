@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2741</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2741</p><h1>Query 2741</h1><p class="muted">fuzz:4:history,complete,evaluators:946 · 4.18 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][date:&quot;2018-10-12T20:27:50Z&quot;];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2741</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2741</p><h1>Query 2741</h1><p class="muted">fuzz:4:history,complete,evaluators:946 · 4.18 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][date:&quot;2018-10-12T20:27:50Z&quot;];
 rel(46.119214,-60.782216,46.176661,-60.381404)(if:is_number(t[&quot;lanes&quot;]))(around:100,45.828674,-64.194381)-&gt;.s0;
 .s0 &lt;&lt;-&gt;.s1;
 for.s1-&gt;.s2 (lrs_min(lrs_union(t[&quot;fire_hydrant:position&quot;],&quot;name&quot;))) { make group value=_.val,n=count(nodes),w=count(ways); }
@@ -7,4 +7,4 @@ way(around.s0:0)[&quot;construction&quot;~&quot;^motorw&quot;,i]-&gt;.s3;
 .s2 out tags qt;
 .s3 out skel 49;
 .s4 out tags;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

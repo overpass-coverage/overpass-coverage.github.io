@@ -1,8 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1996</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1996</p><h1>Query 1996</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1717 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][timeout:60];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1996</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1996</p><h1>Query 1996</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1717 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][timeout:60];
 rel[&quot;electrified&quot;!~&quot;no&quot;](45.311055,-62.387851,45.344012,-62.250109)[&quot;height&quot;=&quot;54&quot;]-&gt;.s0;
 wr[&quot;colour&quot;~&quot;^Pink$&quot;][&quot;land_area&quot;!=&quot;administrative&quot;][!&quot;natural&quot;]-&gt;.s1;
 complete(6).s0-&gt;.s2 { way(bn)[&quot;height&quot;]; node(w); }
 way.s2[&quot;lanes&quot;~&quot;^4&quot;]-&gt;.s3;
 .s0 out ids;
 .s3 out skel center asc;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

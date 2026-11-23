@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 140</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 140</p><h1>Query 140</h1><p class="muted">fuzz:3:history,complete:358 · 0.10 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;information&quot;)][date:&quot;2019-10-06T20:23:42Z&quot;];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 140</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 140</p><h1>Query 140</h1><p class="muted">fuzz:3:history,complete:358 · 0.10 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;information&quot;)][date:&quot;2019-10-06T20:23:42Z&quot;];
 way[&quot;wheelchair&quot;=&quot;limited&quot;](51.035735,14.274145,51.150065,14.356680)-&gt;.s0;
 complete(1).s0-&gt;.s1 { way(bn)[&quot;railway&quot;]; node(w); }
 .s0 &gt;-&gt;.s2;
@@ -6,4 +6,4 @@ way.s1(if:length()&gt;10)-&gt;.s3;
 .s1 out ids;
 .s2 out body bb;
 .s3 out skel qt (50.952053,13.940536,51.048565,14.001361);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

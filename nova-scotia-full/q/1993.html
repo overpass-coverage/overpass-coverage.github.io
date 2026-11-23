@@ -1,8 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1993</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1993</p><h1>Query 1993</h1><p class="muted">fuzz:4:history,complete,evaluators:508 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1993</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1993</p><h1>Query 1993</h1><p class="muted">fuzz:4:history,complete,evaluators:508 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
 rel[&quot;check_date&quot;=&quot;2026-06-11&quot;](if:is_date(lrs_min(timestamp())))(id:2980112,3029290,3172171,12041208,12148034,13341678,13463109,13466795,13827795)(newer:&quot;2018-04-05T01:56:58Z&quot;)-&gt;.s0;
 rel(r.s0)-&gt;.s1;
 make info n=1,c=s1.max(number(suffix(t[&quot;ref&quot;])))-&gt;.s2;
 make stat k0=s1.sum(1e3),k1=(-s1.count(ways)),k2=s1.max(suffix(timestamp())),k3=suffix(((s1.count(relations)&gt;10)?(s1.set((is_number(t[&quot;addr:district&quot;])?(t[&quot;name&quot;]):(id())))):(s1.max(count_tags())))),::geom=hull(s1.gcat(geom()))-&gt;.s3;
 .s2 out skel geom;
 .s3 out meta geom;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

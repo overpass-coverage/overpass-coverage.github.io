@@ -1,8 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2115</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2115</p><h1>Query 2115</h1><p class="muted">fuzz:4:evaluators:187 · 0.19 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2115</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2115</p><h1>Query 2115</h1><p class="muted">fuzz:4:evaluators:187 · 0.19 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
 node(id:245039241,2149077991,2682089271,3071733703,4070211114,4787049379,5554115895,5757198448,12732708387)-&gt;.s0;
 node.s0(if:(lrs_min(lrs_isect(t[&quot;building:levels&quot;],&quot;a;b;c&quot;))==number((&quot;yes&quot;+type()))))-&gt;.s1;
 .s0 &lt;&lt;-&gt;.s2;
 node(r.s0)-&gt;.s3;
 for.s2-&gt;.s4 (((is_number(t[&quot;landuse&quot;])||t[&quot;smoothness&quot;]==&quot;bad&quot;)?(lrs_min(t[&quot;source&quot;])):(suffix(t[&quot;addr:housenumber&quot;])))) { convert item ::id=id(),g=_.val; }
 .s0 out skel qt;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

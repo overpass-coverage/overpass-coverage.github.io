@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1574</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1574</p><h1>Query 1574</h1><p class="muted">fuzz:3:history,complete:337 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1574</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1574</p><h1>Query 1574</h1><p class="muted">fuzz:3:history,complete:337 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
 nw(50.856057,13.520169,50.882631,13.536104)(newer:&quot;2013-08-02T10:44:43Z&quot;)-&gt;.s0;
 complete(4).s0-&gt;.s1 { way(bn)[&quot;addr:city&quot;]; node(w); }
 way(around.s1:300)[&quot;destination:forward&quot;=&quot;Rückersdorf&quot;]-&gt;.s2;
@@ -6,4 +6,4 @@ complete(4).s2-&gt;.s3 { way(around:0)[&quot;lit&quot;]; }
 node(way_cnt.s1:1)-&gt;.s4;
 .s2 out body;
 .s4 out skel geom;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

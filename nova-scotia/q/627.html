@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 627</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 627</p><h1>Query 627</h1><p class="muted">fuzz:3:evaluators:767 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-rel(around:250,44.413178,-65.493643)-&gt;.s0;
-.s0 convert item ::id=id(),k0=(-number(timestamp())),k1=lrs_union(lrs_union(lrs_isect(lrs_union(t[&quot;colour&quot;],&quot;name&quot;),&quot;1;2&quot;),&quot;1;2&quot;),lrs_min(t[&quot;footway&quot;])),!&quot;building&quot;-&gt;.s1;
-if ((number(s0.u(suffix(&quot;1;2;3&quot;)))&gt;1)) { make yes n=s0.count(nwr)-&gt;.s2; } else { make no n=0-&gt;.s2; }
-.s0 &lt;-&gt;.s3;
-foreach.s2-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
-.s3 out tags;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 433</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 433</p><h1>Query 433</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:646 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][timeout:60][out:csv(::timestamp,&quot;emergency&quot;,::lat,&quot;addr:locality&quot;,&quot;barrier&quot;)];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 433</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 433</p><h1>Query 433</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:646 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][timeout:60][out:csv(::timestamp,&quot;emergency&quot;,::lat,&quot;addr:locality&quot;,&quot;barrier&quot;)];
 way(id:235758181,257025776,460407465,460993161,468026789,480659798,549948376,1137632312,1315426049,1448304487,1459342125,1464908058)[&quot;destination:ref&quot;=&quot;NS 111 : NS 2 IN&quot;]-&gt;.s0;
 node(r.s0)[!&quot;junction:ref&quot;]-&gt;.s1;
 (.s0; .s1;)-&gt;.s2;
@@ -6,4 +6,4 @@ node(way_cnt.s2:3-)-&gt;.s3;
 make stat k0=(-((s2.min(count_distinct_by_role(&quot;main_stream&quot;))&gt;3)?(s2.count(ways)):(number(s2.u((type()+timestamp())))))),k1=s2.sum((1?(lat()):(id()))),k2=(-(s2.sum((-lat()))-s2.count(wr))),::geom=s2.gcat(geom())-&gt;.s4;
 .s2 out ids noids asc;
 out asc noids meta bb;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2412</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2412</p><h1>Query 2412</h1><p class="muted">fuzz:3:history,complete:1579 · 2.06 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2011-03-24T20:52:29Z&quot;,&quot;2024-05-20T16:24:48Z&quot;];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2412</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2412</p><h1>Query 2412</h1><p class="muted">fuzz:3:history,complete:1579 · 2.06 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2011-03-24T20:52:29Z&quot;,&quot;2024-05-20T16:24:48Z&quot;];
 rel(id:9107551,11777336,20114065,20128066,21293956)-&gt;.s0;
 complete(5).s0-&gt;.s1 { way(bn)[&quot;addr:locality&quot;]; node(w); }
 (.s0; .s1;)-&gt;.s2;
@@ -7,4 +7,4 @@ complete(3).s1-&gt;.s4 { way(around:0)[&quot;addr:street&quot;]; }
 foreach.s4-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
 .s3 out tags;
 .s4 out tags;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

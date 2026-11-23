@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 24</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 24</p><h1>Query 24</h1><p class="muted">fuzz:3:evaluators:1070 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-nw(if:is_date(version()))[&quot;crossing:markings&quot;!~&quot;lines|no|yes|zebra&quot;](around:10,43.885979,-64.899077)-&gt;.s0;
-make stat k0=(s0.min(length())-(number(s0.u((t[&quot;light:colour&quot;]==&quot;roof&quot;?(timestamp()):(user()))))+s0.count(deriveds))),k1=((s0.sum(abs(count_members()))&lt;-1)?(suffix(s0.set(type()))):(s0.min(suffix(t[&quot;fire_hydrant:type&quot;])))),k2=number((s0.max(3)+s0.min((is_tag(&quot;lanes&quot;)?(id()):(t[&quot;addr:district&quot;]))))),k3=number(s0.u(count_by_role(&quot;stop&quot;)))-&gt;.s1;
-way(r.s1)-&gt;.s2;
-way(bn.s2)-&gt;.s3;
-make info v=s0.set(count_distinct_by_role(&quot;&quot;))-&gt;.s4;
-.s2 out skel geom;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

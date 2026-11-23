@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2437</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2437</p><h1>Query 2437</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:98 · 0.09 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::user,::id,::otype,::type,::version,&quot;gauge&quot;,::changeset;false;&quot;::&quot;)][maxsize:1073741824][timeout:180];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2437</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2437</p><h1>Query 2437</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:98 · 0.09 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::user,::id,::otype,::type,::version,&quot;gauge&quot;,::changeset;false;&quot;::&quot;)][maxsize:1073741824][timeout:180];
 node(51.038097,13.668125,51.046266,13.682435)-&gt;.s0;
 nwr(around:50,51.127544,13.782194,51.126023,13.781998,51.128219,13.778537)[&quot;surface&quot;]-&gt;.s1;
 node(r.s1)[&quot;demolished:man_made&quot;~&quot;^si&quot;]-&gt;.s2;
@@ -6,4 +6,4 @@ rel.s1(if:date(timestamp())&gt;date(&quot;2023-01-01&quot;))-&gt;.s3;
 .s1 &lt;-&gt;.s4;
 .s0 out count qt 100;
 .s3 out body (50.770138,12.879613,50.854174,12.937122);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

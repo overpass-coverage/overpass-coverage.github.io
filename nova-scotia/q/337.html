@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 337</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 337</p><h1>Query 337</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:4866 · 0.00 s CPU · expected status <code>query-error: line N: parse error: count_tags(...) must be called in a context where it can evaluate an </code></p><pre class="query">[maxsize:268435456][timeout:60][out:csv(::timestamp,::version,&quot;light:method&quot;,::id,::&quot;count:ways&quot;,::otype,::&quot;count:nodes&quot;;true)];
-nwr(44.643882,-63.687056,44.670317,-63.669943)-&gt;.s0;
-node(around.s0:100)[&quot;highway&quot;!~&quot;^ser&quot;]-&gt;.s1;
-node(way_cnt.s0:2-)-&gt;.s2;
-make stat k0=s1.count(nodes),k1=s1.min(lrs_max(lrs_union(t[&quot;lamp_mount&quot;],&quot;name&quot;))),k2=(-s1.min((-length()))),k3=abs(((number(s1.u(suffix(suffix(t[&quot;phases&quot;]))))==-1)?(s1.max(length())):(s1.sum(lrs_max(&quot;1;2&quot;))))),::geom=center(s1.gcat(center(geom()))),bad=count_tags(1)-&gt;.s3;
-.s3 convert row k2=lrs_in(suffix(42),lrs_isect(lrs_isect(t[&quot;utility&quot;],lrs_union(t[&quot;light:method&quot;],&quot;name&quot;)),&quot;1;2&quot;)),::id=id(),k1=(!(lat()==(t[&quot;light:method&quot;]==&quot;bench&quot;?(-1):(lon())))),k0=abs(count_distinct_members()),::=::-&gt;.s4;
-out body 100 qt;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/tag_value.cc.html#L464">overpass_api/statements/tag_value.cc:464</a></li></ul></main></body></html>

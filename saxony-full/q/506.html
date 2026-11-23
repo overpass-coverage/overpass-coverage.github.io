@@ -1,8 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 506</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 506</p><h1>Query 506</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2093 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;sidewalk&quot;,&quot;tracktype&quot;,::count,::&quot;count:nodes&quot;,::otype;true;&quot;|&quot;)][maxsize:268435456][timeout:25];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 506</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 506</p><h1>Query 506</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2093 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;sidewalk&quot;,&quot;tracktype&quot;,::count,::&quot;count:nodes&quot;,::otype;true;&quot;|&quot;)][maxsize:268435456][timeout:25];
 node[&quot;barrier&quot;!~&quot;^bol&quot;](id:11230505012)-&gt;.s0;
 if ((s0.sum(number(t[&quot;wheelchair&quot;]))==0.5)) { make yes n=s0.count(nwr)-&gt;.s1; } else { make no n=0-&gt;.s1; }
 node(way_link.s1:2-)-&gt;.s2;
 .s0 out body asc 1;
 .s1 out qt (50.600009,13.453139,50.678896,13.502549) body;
 .s2 out body;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

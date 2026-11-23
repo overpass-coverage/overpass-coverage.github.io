@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1843</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1843</p><h1>Query 1843</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2392 · 4.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][out:csv(::&quot;count:relations&quot;,&quot;man_made&quot;)];
-nw[&quot;man_made&quot;!=&quot;tower&quot;](44.619609,-63.652562,44.699001,-63.414345)-&gt;.s0;
-wr(bn.s0)-&gt;.s1;
-.s1 &lt;-&gt;.s2;
-.s0 convert row k1=date((suffix(type())+(t[&quot;layer&quot;]+&quot;1;2;3&quot;))),k0=(!lrs_in(suffix(t[&quot;phases&quot;]),timestamp())),k2=(abs(lon())-lrs_max(t[&quot;emergency&quot;]))-&gt;.s3;
-is_in(44.868874,-65.248236)-&gt;.s4;
-node(area.s4)[&quot;check_date&quot;=&quot;2023-08-06&quot;]-&gt;.s5;
-.s4 out skel center asc 43;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

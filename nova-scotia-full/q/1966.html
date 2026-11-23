@@ -1,8 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1966</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1966</p><h1>Query 1966</h1><p class="muted">fuzz:4:evaluators:651 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1966</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1966</p><h1>Query 1966</h1><p class="muted">fuzz:4:evaluators:651 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
 way(44.483556,-64.075567,44.525901,-64.052152)[&quot;leisure&quot;~&quot;^pi&quot;,i](id:93279466,450121644,464699123,576850747,887705352,1481661179)-&gt;.s0;
 make stat k0=s0.min(count_tags()),k1=((s0.count(nodes)&gt;-1)?((s0.min(count_tags())+s0.count(relations))):(date(s0.max(timestamp()))))-&gt;.s1;
 node.s1(44.055308,-66.217577,44.225713,-66.134808)-&gt;.s2;
 (.s2; - .s1;)-&gt;.s3;
 if ((s3.max(lrs_max(&quot;a;b;c&quot;))&gt;1)) { make yes n=s3.count(nwr)-&gt;.s4; } else { make no n=0-&gt;.s4; }
 .s3 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

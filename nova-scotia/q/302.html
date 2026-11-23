@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 302</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 302</p><h1>Query 302</h1><p class="muted">fuzz:3:output:869 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][out:csv(&quot;addr:city&quot;,::changeset,&quot;crossing:markings&quot;,::count;true;&quot;,&quot;)];
-wr[&quot;maintained&quot;!=&quot;Halifax Regional Municipality&quot;][&quot;to&quot;=&quot;Green Route&quot;](if:date(timestamp())&gt;date(&quot;2022-01-01&quot;))-&gt;.s0;
-node(w.s0)[~&quot;^bui&quot;~&quot;1&quot;]-&gt;.s1;
-node.s0(id:2478384560,9936443329)-&gt;.s2;
-node(way_link.s2:3-)-&gt;.s3;
-(.s3; .s2;)-&gt;.s4;
-.s1 out center (44.635330,-63.778170,44.644734,-63.660938) 2 meta;
-.s2 out meta (45.855582,-60.549616,45.904779,-60.445588);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

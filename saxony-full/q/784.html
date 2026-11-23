@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 784</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 784</p><h1>Query 784</h1><p class="muted">fuzz:4:poi,areas:876 · 0.14 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][bbox:50.210935,12.139505,50.438845,12.239363];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 784</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 784</p><h1>Query 784</h1><p class="muted">fuzz:4:poi,areas:876 · 0.14 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][bbox:50.210935,12.139505,50.438845,12.239363];
 nw[&quot;capacity&quot;=&quot;93&quot;](if:number(t[&quot;amenity&quot;])&gt;15)(50.780047,13.567697,50.932829,13.764781)-&gt;.s0;
 is_in(51.017634,14.577697)-&gt;.s1;
 rel(area.s1)[&quot;to&quot;=&quot;Wolkenstein, Markt&quot;]-&gt;.s2;
@@ -9,4 +9,4 @@ rel(bw.s4)-&gt;.s5;
 foreach.s5-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
 .s3 out skel bb qt;
 .s6 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

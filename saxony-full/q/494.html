@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 494</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 494</p><h1>Query 494</h1><p class="muted">fuzz:4:history,complete,output:931 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][maxsize:536870912][out:csv(::&quot;count:areas&quot;,&quot;lit&quot;,::lon,&quot;landuse&quot;)][bbox:50.897341,14.249226,51.174129,14.565016][date:&quot;2024-01-06T13:44:24Z&quot;];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 494</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 494</p><h1>Query 494</h1><p class="muted">fuzz:4:history,complete,output:931 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][maxsize:536870912][out:csv(::&quot;count:areas&quot;,&quot;lit&quot;,::lon,&quot;landuse&quot;)][bbox:50.897341,14.249226,51.174129,14.565016][date:&quot;2024-01-06T13:44:24Z&quot;];
 way(around:50,50.622766,12.624007)-&gt;.s0;
 way.s0(50.924242,13.663159,51.073198,13.910273)-&gt;.s1;
 complete(5).s1-&gt;.s2 { way(bn)[&quot;lit&quot;]; node(w); }
@@ -6,4 +6,4 @@ complete(5).s1-&gt;.s2 { way(bn)[&quot;lit&quot;]; node(w); }
 foreach.s0-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
 .s2 out (51.345659,12.327261,51.348216,12.452597) skel geom;
 .s3 out 2 qt;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

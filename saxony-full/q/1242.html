@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1242</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1242</p><h1>Query 1242</h1><p class="muted">fuzz:4:evaluators:534 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;emergency&quot;)];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1242</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1242</p><h1>Query 1242</h1><p class="muted">fuzz:4:evaluators:534 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;emergency&quot;)];
 nw[&quot;bin&quot;=&quot;yes&quot;](51.192632,13.101028,51.449623,13.442801)[&quot;route_ref&quot;=&quot;140&quot;]-&gt;.s0;
 make stat k0=(lrs_in(&quot;a&quot;,s0.min(suffix(type())))?(s0.max((t[&quot;lane_markings&quot;]==&quot;no&quot;?(uid()):(number(t[&quot;bus&quot;]))))):(date(s0.max(timestamp())))),k1=s0.u(count_tags()),k2=number(s0.u((type()+&quot;Landratsamt Mittelsachsen&quot;)))-&gt;.s1;
 (.s0; - .s1;)-&gt;.s2;
@@ -7,4 +7,4 @@ foreach.s2-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
 .s0 out count;
 .s2 out count;
 .s3 out skel bb asc;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

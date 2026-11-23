@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1755</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1755</p><h1>Query 1755</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1799 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][timeout:25][out:csv(::&quot;count:relations&quot;,::lon,&quot;lanes:forward&quot;,::user,&quot;lanes:forward&quot;,::uid,::type)];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1755</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1755</p><h1>Query 1755</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1799 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][timeout:25][out:csv(::&quot;count:relations&quot;,::lon,&quot;lanes:forward&quot;,::user,&quot;lanes:forward&quot;,::uid,::type)];
 nw(if:(suffix((is_date(t[&quot;source&quot;])?(timestamp()):(t[&quot;addr:street&quot;])))&gt;timestamp()))(44.641592,-63.677394,44.725408,-63.429458)[&quot;destination:ref:to:forward&quot;=&quot;NS 1 ; NS 201&quot;]-&gt;.s0;
 retro(date(&quot;2017-04-11T12:45:17Z&quot;)) { node[&quot;rapids&quot;=&quot;yes&quot;](44.690618,-62.974317,44.743921,-62.783751)-&gt;.s1; .s1 out ids; }
 area[name=&quot;Tomahawk Lake&quot;]-&gt;.s2;
@@ -8,4 +8,4 @@ area[name=&quot;Sellars Cove&quot;]-&gt;.s5;
 node(area.s5)[&quot;operator&quot;=&quot;Jason Hiltz&quot;]-&gt;.s6;
 .s2 out meta;
 .s4 out asc tags;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

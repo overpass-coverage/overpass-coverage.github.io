@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 179</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 179</p><h1>Query 179</h1><p class="muted">fuzz:3:evaluators:1273 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-rel(45.051649,-61.947412,45.105796,-61.922925)[&quot;place&quot;=&quot;island&quot;]-&gt;.s0;
-make info c=abs(s0.count(nr)),n=1-&gt;.s1;
-make stat k0=lrs_union(((number(s1.u(lrs_min(&quot;a;b;c&quot;)))&gt;=3)?(s1.set(lrs_min(lrs_union(t[&quot;light:method&quot;],&quot;name&quot;)))):(s1.u((&quot;yes&quot;+id())))),s1.min((type()+suffix(t[&quot;voltage&quot;])))),k1=s1.max(lrs_min(lrs_union(t[&quot;addr:suburb&quot;],&quot;name&quot;))),::geom=trace(s1.gcat(geom()))-&gt;.s2;
-node(way_link.s2:1)-&gt;.s3;
-.s1 out ids asc;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

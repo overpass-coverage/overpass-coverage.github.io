@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 525</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 525</p><h1>Query 525</h1><p class="muted">fuzz:3::1035 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-node(45.095890,-63.556330,45.145317,-63.253337)(poly:&quot;44.694240 -63.794267 44.695265 -63.804780 44.655008 -63.816581&quot;)-&gt;.s0;
-wr(poly:&#x27;43.808665 -65.588242 43.809803 -65.597264 43.808843 -65.601528 43.815480 -65.597962 43.808105 -65.604776 43.814546 -65.604157 43.811421 -65.605690 43.810989 -65.606048 43.817333 -65.604126 43.813169 -65.608495 43.811610 -65.618451 43.806135 -65.615274 43.803585 -65.624984 43.803461 -65.618169 43.796807 -65.622165 43.800268 -65.615446 43.800211 -65.613707 43.799261 -65.611046 43.798153 -65.607596 43.796475 -65.606776 43.793046 -65.605625 43.799140 -65.606311 43.799148 -65.605517 43.797204 -65.601491 43.800210 -65.604022 43.793250 -65.596345 43.799909 -65.602211 43.796025 -65.593101 43.799552 -65.592700 43.803233 -65.601640&#x27;)(45.234032,-63.393582,45.238160,-63.385576)-&gt;.s1;
-node(around.s0:300)[&quot;crossing:signals&quot;!=&quot;no&quot;]-&gt;.s2;
-way(around.s1:300)[&quot;is_in:province&quot;~&quot;^(Nova\\ Scotia)$&quot;]-&gt;.s3;
-.s1 convert row ::id=id(),tags=count_tags();
-out;
-.s0 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

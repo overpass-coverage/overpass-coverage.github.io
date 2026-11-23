@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Overpass API corpus coverage</title>
+<title>Overpass API regression suite coverage</title>
 <style>
 :root { --bg:#fff; --fg:#1b1f24; --muted:#59636e; --line:#d1d9e0; --link:#0969da; }
 @media (prefers-color-scheme: dark) { :root { --bg:#0d1117; --fg:#e6edf3; --muted:#9198a1; --line:#3d444d; --link:#4493f8; } }
@@ -19,16 +19,14 @@ ul.runs a { font-weight:600; font-size:16px; }
 </head>
 <body>
 <main>
-<h1>Overpass API: conformance corpus coverage</h1>
-<p>A conformance corpus is a fixed set of queries that exercises as much of the
+<h1>Overpass API: regression suite coverage</h1>
+<p>A regression suite is a fixed set of queries that exercises as much of the
 <a href="https://github.com/fossgis/Overpass-API">Overpass API</a> query engine as a large pool of generated
 queries does, with results that reproduce exactly from run to run, so it can be re-run on every change.
-Each run below shows, for every source file of the query binary, which lines its corpus runs and which
+Each run below shows, for every source file of the query binary, which lines its suite runs and which
 queries run them.</p>
 <ul class="runs">
   <!-- One entry per run; each run lives in its own directory. -->
-  <li><a href="nova-scotia/">Nova Scotia</a>
-    <div class="muted">1,846 queries on the public Geofabrik extract of 2026-11-08 (no history) · upstream master 8edf11b</div></li>
   <li><a href="nova-scotia-full/">Nova Scotia, full</a>
     <div class="muted">2,868 queries on one database with history and areas (Geofabrik full-history extract, latest edit 2026-11-15) · upstream master 8edf11b</div></li>
   <li><a href="nova-scotia-full-shrunk/">Nova Scotia, full, shrunk</a>

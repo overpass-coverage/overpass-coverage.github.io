@@ -1,8 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 679</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 679</p><h1>Query 679</h1><p class="muted">fuzz:4:history,complete,output:459 · 0.12 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][out:csv(::lat,&quot;parking&quot;;true;&quot; &quot;)][date:&quot;2010-12-31T09:18:04Z&quot;];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 679</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 679</p><h1>Query 679</h1><p class="muted">fuzz:4:history,complete,output:459 · 0.12 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][out:csv(::lat,&quot;parking&quot;;true;&quot; &quot;)][date:&quot;2010-12-31T09:18:04Z&quot;];
 node(51.094975,13.754764,51.143194,13.824413)[&quot;shelter_type&quot;](if:number(t[&quot;network:wikidata&quot;])&gt;5)-&gt;.s0;
 .s0 &gt;&gt;-&gt;.s1;
 complete(5).s0-&gt;.s2 { node(w); way(bn)[&quot;addr:postcode&quot;]; }
 complete(5).s2-&gt;.s3 { way(around:0)[&quot;addr:postcode&quot;]; }
 .s0 out qt meta;
 .s2 out qt noids meta;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

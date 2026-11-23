@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1544</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1544</p><h1>Query 1544</h1><p class="muted">fuzz:4:evaluators:923 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;bicycle&quot;)];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1544</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1544</p><h1>Query 1544</h1><p class="muted">fuzz:4:evaluators:923 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;bicycle&quot;)];
 way(id:149828395,240199271,503366808,537199672,1002207414,1004628967,1463655608)(poly:&quot;44.702961 -63.587835 44.703244 -63.588964 44.703691 -63.589306 44.702539 -63.592939 44.701373 -63.590636 44.699650 -63.590805 44.699760 -63.590694 44.699826 -63.590509 44.700895 -63.588053 44.701756 -63.587590&quot;)-&gt;.s0;
 for.s0-&gt;.s1 ((-lrs_min(&quot;1;2&quot;))) { convert item ::id=id(),g=_.val; }
 make info c=s0.count(deriveds),n=1,v=s0.min(uid())-&gt;.s2;
@@ -6,4 +6,4 @@ way(r.s2)[&quot;foot&quot;=&quot;yes&quot;]-&gt;.s3;
 make stat k0=number(suffix(s2.set(id()))),::geom=hull(s2.gcat(geom()))-&gt;.s4;
 .s3 out count;
 .s4 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

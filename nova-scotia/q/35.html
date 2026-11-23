@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 35</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 35</p><h1>Query 35</h1><p class="muted">fuzz:3:evaluators:450 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;couplings&quot;)];
-nw(45.566033,-62.060016,45.638644,-61.821493)[&quot;maxspeed&quot;=&quot;20&quot;]-&gt;.s0;
-.s0 &lt;&lt;-&gt;.s1;
-node(r.s0:&quot;from&quot;)-&gt;.s2;
-.s0 convert item k1=lrs_isect(length(),lrs_union(lrs_isect(t[&quot;lanes&quot;],t[&quot;structure&quot;]),lrs_union(lrs_union(t[&quot;maxheight&quot;],&quot;name&quot;),&quot;1;2&quot;))),k0=is_number((is_date(&quot;&quot;)?(id()):(lrs_min(&quot;a;b;c&quot;)))),::geom=poly(lstr(pt(44.851036,-64.693130),pt(44.852036,-64.693130),pt(44.852036,-64.692130),pt(44.851036,-64.693130)))-&gt;.s3;
-.s2 out tags bb;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

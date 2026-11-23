@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1121</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1121</p><h1>Query 1121</h1><p class="muted">fuzz:3:history,complete:448 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1121</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1121</p><h1>Query 1121</h1><p class="muted">fuzz:3:history,complete:448 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
 nw(if:version()&gt;4)(45.877756,-59.978159,46.038536,-59.749671)[&quot;boundary&quot;=&quot;administrative&quot;]-&gt;.s0;
 complete(5).s0-&gt;.s1 { way(bn)[&quot;addr:county&quot;]; node(w); }
 way.s0[&quot;highway&quot;=&quot;residential&quot;]-&gt;.s2;
@@ -6,4 +6,4 @@ way.s0[&quot;highway&quot;=&quot;residential&quot;]-&gt;.s2;
 out;
 .s0 out skel;
 .s2 out tags (44.548220,-64.777181,44.591882,-64.715202);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 689</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 689</p><h1>Query 689</h1><p class="muted">fuzz:4:poi,areas:705 · 0.10 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 689</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 689</p><h1>Query 689</h1><p class="muted">fuzz:4:poi,areas:705 · 0.10 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
 node(id:309777082,616477174,1480481964,2176816884,4166251072,6145829856,9410355666,14133027898)(id:259791683,1240978009,9500788632)(50.929152,13.656279,51.045212,13.935176)[&quot;roof:colour&quot;=&quot;gray&quot;]-&gt;.s0;
 node.s0(id:4868767438,6296135756,10798683884)-&gt;.s1;
 is_in(50.983478,13.301987)-&gt;.s2;
@@ -8,4 +8,4 @@ node.s0[~&quot;^pos&quot;~&quot;01&quot;]-&gt;.s4;
 foreach.s2-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
 .s0 out skel geom asc;
 .s4 out meta;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

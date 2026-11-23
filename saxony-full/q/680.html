@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 680</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 680</p><h1>Query 680</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3324 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:json][bbox:50.635375,12.340033,50.772304,12.482055][maxsize:1073741824];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 680</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 680</p><h1>Query 680</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3324 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:json][bbox:50.635375,12.340033,50.772304,12.482055][maxsize:1073741824];
 wr(if:is_tag(&quot;sidewalk&quot;))(if:is_tag(&quot;amenity&quot;))(poly:&quot;50.979329 14.617262 50.997901 14.608921 50.981948 14.603172 50.961701 14.581796 50.954399 14.562608 50.927902 14.641889 50.940792 14.639727 50.947143 14.649741 50.956286 14.632645 50.948956 14.652217&quot;)-&gt;.s0;
 .s0 map_to_area-&gt;.s1;
 for.s0-&gt;.s2 (is_date(count_members())) { ._ out count; }
@@ -6,4 +6,4 @@ for.s0-&gt;.s2 (is_date(count_members())) { ._ out count; }
 for.s2-&gt;.s4 (((timestamp()+id())==lrs_min(&quot;1;2&quot;))) { ._ out count; }
 out body noids qt;
 .s2 out qt center;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

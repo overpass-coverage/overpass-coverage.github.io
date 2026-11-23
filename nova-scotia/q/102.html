@@ -1,6 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 102</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 102</p><h1>Query 102</h1><p class="muted">fuzz:3:evaluators:331 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-wr(45.805057,-63.549818,45.843455,-63.417592)[&quot;surface&quot;=&quot;paved&quot;]-&gt;.s0;
-.s0 convert item !&quot;type&quot;,angles=per_vertex(angle()&gt;90),::id=id(),k0=((t[&quot;frequency&quot;]!=suffix(user()))?((lrs_in(user(),&quot;1;2&quot;)?(suffix(&quot;1;2;3&quot;)):(suffix(id())))):(((id()==id())?((suffix(t[&quot;addr:county&quot;])+&quot;x;y&quot;)):(count_members())))),::geom=center(geom())-&gt;.s1;
-.s0 out count;
-.s1 out ids asc;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,6 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 597</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 597</p><h1>Query 597</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2889 · 0.34 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][out:xml][timeout:180];
-nwr(if:(!((-lon())==lon())))[&quot;surface&quot;!~&quot;asphalt|compacted|concrete|dirt|fine_gravel|grass|gravel|ground|paved|pebblestone|rock|unpaved&quot;](around:1000,43.751967,-66.114552)-&gt;.s0;
-.s0 convert item k0=is_number(user()),!&quot;created_by&quot;,k1=(is_date(t[&quot;light:method&quot;])?(id()):(0)),::id=id()-&gt;.s1;
-out 17 bb tags;
-.s1 out ids geom;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

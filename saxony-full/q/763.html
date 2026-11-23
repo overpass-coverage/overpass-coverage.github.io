@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 763</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 763</p><h1>Query 763</h1><p class="muted">fuzz:4:evaluators:262 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 763</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 763</p><h1>Query 763</h1><p class="muted">fuzz:4:evaluators:262 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
 wr(around:10,50.785794,13.727007)[~&quot;^hig&quot;~&quot;stree&quot;](50.800760,14.031734,51.035568,14.090678)-&gt;.s0;
 .s0 convert row k0=((lrs_min(lrs_union(t[&quot;backrest&quot;],&quot;name&quot;))+lrs_min(t[&quot;emergency&quot;]))!=lrs_min(lrs_isect(lrs_union(t[&quot;building&quot;],&quot;name&quot;),&quot;1;2&quot;))),members=per_member(pos()),::id=id(),!&quot;lanes&quot;,angles=per_vertex(pos())-&gt;.s1;
 node.s1(id:1754855409,1791429413,2161563735,3990088809,4218244713,4777054904,9834824489,13986037409)-&gt;.s2;
@@ -6,4 +6,4 @@ node(w.s2:2)[&quot;leisure&quot;]-&gt;.s3;
 make info c=number(s1.min((suffix(t[&quot;tourism&quot;])+id()))),v=s1.u(id()),n=1-&gt;.s4;
 .s0 out body;
 .s1 out meta (51.339394,12.260040,51.432608,12.379750);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

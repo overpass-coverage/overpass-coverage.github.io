@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 966</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 966</p><h1>Query 966</h1><p class="muted">fuzz:3:evaluators:624 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-way[&quot;capacity&quot;!~&quot;^15\\ l&quot;](id:344623592,474491006)-&gt;.s0;
-way.s0(if:is_number((user()+user())))-&gt;.s1;
-if ((s0.sum((is_number(t[&quot;poles&quot;])?(lon()):(count_distinct_by_role(&quot;out&quot;))))&gt;=42)) { make yes n=s0.count(nwr)-&gt;.s2; }
-(.s1; .s2;)-&gt;.s3;
-way(around.s1:100)[&quot;collection_times&quot;~&quot;^08:00;Mo&quot;]-&gt;.s4;
-.s2 out skel;
-.s3 out skel asc;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

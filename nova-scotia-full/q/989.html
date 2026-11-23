@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 989</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 989</p><h1>Query 989</h1><p class="muted">fuzz:3:history,complete:96 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][date:&quot;2013-08-29T17:22:39Z&quot;];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 989</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 989</p><h1>Query 989</h1><p class="muted">fuzz:3:history,complete:96 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][date:&quot;2013-08-29T17:22:39Z&quot;];
 way(id:71361766,77592391,93168929,382682743,461947003,535260634)(if:count_tags()&gt;1)-&gt;.s0;
 node(way_cnt.s0:3-)-&gt;.s1;
 complete(3).s0-&gt;.s2 { way(around:0)[&quot;addr:street&quot;]; }
@@ -6,4 +6,4 @@ complete(4).s2-&gt;.s3 { way(around:0)[&quot;light:colour&quot;]; }
 .s2 convert row ::id=id(),tags=count_tags();
 out;
 .s2 out meta qt;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

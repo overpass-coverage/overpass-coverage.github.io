@@ -1,8 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 705</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 705</p><h1>Query 705</h1><p class="muted">fuzz:4:evaluators:829 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 705</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 705</p><h1>Query 705</h1><p class="muted">fuzz:4:evaluators:829 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
 nw(around:250,45.137779,-63.778243)[&quot;surface&quot;~&quot;^(asphalt|fine_gravel|grass|ground|paved|pebblestone|rock)$&quot;,i]-&gt;.s0;
 rel(bn.s0)[&quot;natural&quot;=&quot;tree&quot;]-&gt;.s1;
 make stat k0=s0.u(lrs_min(&quot;1;2&quot;)),k1=s0.max(count_distinct_by_role(&quot;route&quot;)),k2=s0.min((lat()/count_distinct_by_role(&quot;house&quot;))),k3=suffix(lrs_union(s0.min(&quot;yes&quot;),s0.set(user())))-&gt;.s2;
 .s0 out ids;
 .s1 out body 13;
 .s2 out meta bb;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

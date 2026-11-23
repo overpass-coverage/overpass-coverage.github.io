@@ -1,7 +1,7 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 377</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 377</p><h1>Query 377</h1><p class="muted">fuzz:4:evaluators:367 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;crossing&quot;)];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 377</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 377</p><h1>Query 377</h1><p class="muted">fuzz:4:evaluators:367 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;crossing&quot;)];
 way(44.000372,-65.486662,44.016837,-65.462815)[&quot;turn:lanes:forward&quot;!=&quot;left|through|through;right&quot;]-&gt;.s0;
 for.s0-&gt;.s1 (user()) { make group value=_.val,n=count(nodes),w=count(ways); }
 make stat k0=abs(s0.sum(count_by_role(&quot;&quot;))),k1=(-s0.count(nwr)),k2=s0.sum(lrs_min(t[&quot;created_by&quot;]))-&gt;.s2;
 way(r.s1)[&quot;industrial&quot;!~&quot;^ware&quot;]-&gt;.s3;
 .s1 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

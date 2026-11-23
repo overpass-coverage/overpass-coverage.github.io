@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 29</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 29</p><h1>Query 29</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:5474 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::uid,::&quot;count:areas&quot;,&quot;maxheight&quot;)][maxsize:268435456][timeout:180];
-node(45.257890,-62.336471,45.281452,-62.267247)-&gt;.s0;
-.s0 &lt;-&gt;.s1;
-rel(bn.s0)-&gt;.s2;
-make info c=number(lrs_min(s2.u((is_closed()?(id()):(timestamp()))))),v=(s2.min((is_tag(&quot;boundary&quot;)?(&quot;x;y&quot;):(timestamp())))+s2.u(lrs_min(t[&quot;light:method&quot;])))-&gt;.s3;
-make info v=suffix(s0.max(suffix(timestamp()))),n=1-&gt;.s4;
-.s0 out (43.681793,-65.201431,43.753559,-65.067865) tags;
-.s2 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

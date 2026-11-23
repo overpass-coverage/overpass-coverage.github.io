@@ -1,8 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 821</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 821</p><h1>Query 821</h1><p class="muted">fuzz:4:history,complete,evaluators:45 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][date:&quot;2019-06-22T20:40:01Z&quot;];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 821</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 821</p><h1>Query 821</h1><p class="muted">fuzz:4:history,complete,evaluators:45 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][date:&quot;2019-06-22T20:40:01Z&quot;];
 node[&quot;operator&quot;!=&quot;Accord&quot;](id:981326064,988476143,1230141453,1987561463,13129572385)(if:(date(suffix(t[&quot;addr:county&quot;]))==number(t[&quot;emergency&quot;])))-&gt;.s0;
 .s0 &lt;&lt;-&gt;.s1;
 make stat k0=s0.count(relations),k1=number(s0.u(suffix(timestamp()))),::geom=center(s0.gcat(center(geom())))-&gt;.s2;
 .s0 out body bb;
 .s1 out tags;
 .s2 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

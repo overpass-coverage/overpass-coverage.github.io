@@ -1,8 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1480</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1480</p><h1>Query 1480</h1><p class="muted">fuzz:4:history,complete,evaluators:202 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1480</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1480</p><h1>Query 1480</h1><p class="muted">fuzz:4:history,complete,evaluators:202 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
 wr[&quot;width&quot;=&quot;3.60&quot;](51.123448,12.575929,51.216740,12.729699)-&gt;.s0;
 timeline(node,12596593454)-&gt;.s1;
 make stat k0=number(((s1.count(ways)&gt;2)?(s1.max(count_distinct_by_role(&quot;inner&quot;))):(s1.set(suffix(t[&quot;barrier&quot;]))))),k1=s1.count(deriveds),k2=number(s1.set(t[&quot;material&quot;]))-&gt;.s2;
 rel.s0(if:(!(abs(count_distinct_members())&lt;count_tags())))-&gt;.s3;
 .s2 out tags 15;
 .s3 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

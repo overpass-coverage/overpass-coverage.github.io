@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1077</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1077</p><h1>Query 1077</h1><p class="muted">fuzz:3:evaluators:1462 · 0.45 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-wr(if:(date((&quot;yes&quot;+id()))&gt;(is_date(&quot;2018-01-01&quot;)?(count_by_role(&quot;outer&quot;)):((-lat())))))(44.144759,-65.706758,44.191012,-65.705161)-&gt;.s0;
-make stat k0=s0.set(timestamp()),k1=s0.max(number(type())),k2=s0.sum((count_distinct_members()/count_by_role(&quot;hail_and_ride&quot;)))-&gt;.s1;
-(.s1; .s1;)-&gt;.s2;
-.s0 out tags center 41;
-.s2 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

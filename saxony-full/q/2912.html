@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2912</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2912</p><h1>Query 2912</h1><p class="muted">fuzz:4:poi,areas:878 · 2.26 s CPU · expected status <code>query-error: runtime error: Filters too weak in query statement: specify in addition a bbox, a tag filt</code></p><pre class="query">[timeout:60][maxsize:536870912];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2912</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2912</p><h1>Query 2912</h1><p class="muted">fuzz:4:poi,areas:878 · 2.26 s CPU · expected status <code>query-error: runtime error: Filters too weak in query statement: specify in addition a bbox, a tag filt</code></p><pre class="query">[timeout:60][maxsize:536870912];
 way[!&quot;operator&quot;](50.454789,11.956830,50.553837,12.159482)-&gt;.s0;
 rel(bw.s0)-&gt;.s1;
 wr(bn.s1)[&quot;landuse&quot;]-&gt;.s2;
@@ -7,4 +7,4 @@ node(area.s3)[&quot;denotation&quot;=&quot;urban&quot;]-&gt;.s4;
 .s0 out skel asc;
 .s3 out ids qt;
 .s4 out skel asc;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,7 +1,7 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1359</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 1359</p><h1>Query 1359</h1><p class="muted">fuzz:4:evaluators:62 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1359</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1359</p><h1>Query 1359</h1><p class="muted">fuzz:4:evaluators:62 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
 node(id:911488470,1208020052,2434687913,4565579782,5995989458,8032351246,13123581304)-&gt;.s0;
 for.s0-&gt;.s1 ((-count_tags())) { ._ out count; }
 for.s0-&gt;.s2 (count_tags()) { make group value=_.val,count=count(nwr); }
 node.s0(if:(lrs_in(suffix(&quot;both&quot;),lrs_union(lrs_union(t[&quot;light:colour&quot;],&quot;name&quot;),t[&quot;colour&quot;]))||is_date(user())))-&gt;.s3;
 .s0 out ids center 9;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

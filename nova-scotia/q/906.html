@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 906</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 906</p><h1>Query 906</h1><p class="muted">fuzz:3:evaluators:211 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-nwr[&quot;access&quot;=&quot;private&quot;](if:(((is_tag(&quot;landuse&quot;)?(t[&quot;addr:street&quot;]):(&quot;yes&quot;))&lt;type())||is_tag(&quot;material&quot;)))(44.957091,-63.474342,45.137893,-63.216745)(if:is_number(t[&quot;oneway&quot;]))-&gt;.s0;
-rel(bn.s0)-&gt;.s1;
-way(r.s0:&quot;backward&quot;)[&quot;restriction&quot;]-&gt;.s2;
-.s2 &lt;-&gt;.s3;
-.s0 out ids center;
-.s3 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

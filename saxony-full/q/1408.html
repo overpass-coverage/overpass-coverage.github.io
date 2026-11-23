@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1408</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1408</p><h1>Query 1408</h1><p class="muted">fuzz:3:areas,complete:2889 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][bbox:50.399394,12.332942,50.487405,12.595806];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1408</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1408</p><h1>Query 1408</h1><p class="muted">fuzz:3:areas,complete:2889 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][bbox:50.399394,12.332942,50.487405,12.595806];
 nwr(50.836872,14.150401,50.976677,14.202840)[&quot;destination&quot;=&quot;Dresden-Zentrum;Zollamt&quot;]-&gt;.s0;
 area[name=&quot;Rodewisch&quot;]-&gt;.s1;
 node(area.s1)[&quot;public_transport&quot;=&quot;stop_area&quot;]-&gt;.s2;
@@ -9,4 +9,4 @@ way(r.s1)-&gt;.s6;
 foreach.s6-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
 .s0 out ids bb (50.572016,12.173567,50.665166,12.282448);
 .s1 out ids center;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

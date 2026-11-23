@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 3102</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 3102</p><h1>Query 3102</h1><p class="muted">fuzz:3:history,complete:545 · 4.47 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 3102</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 3102</p><h1>Query 3102</h1><p class="muted">fuzz:3:history,complete:545 · 4.47 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
 way(51.016470,13.803931,51.058705,13.859817)[&quot;abandoned:railway&quot;!~&quot;^ra&quot;]-&gt;.s0;
 way.s0[&quot;healthcare:speciality&quot;=&quot;plastic_surgery&quot;]-&gt;.s1;
 (.s0; - .s1;)-&gt;.s2;
@@ -6,4 +6,4 @@ foreach.s2-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
 .s0 out meta;
 .s1 out ids 44 (50.460708,12.154276,50.542886,12.169941);
 .s2 out meta (50.795721,12.994724,50.823122,13.044747);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

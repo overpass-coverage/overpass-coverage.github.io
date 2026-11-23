@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 275</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 275</p><h1>Query 275</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1025 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][maxsize:1073741824][timeout:25];
-nw[&quot;destination:symbol:forward&quot;=&quot;motorway;airport&quot;]-&gt;.s0;
-make stat k0=s0.count(nr),k1=s0.max(number(t[&quot;lamp_mount&quot;])),k2=s0.min(lrs_min(lrs_union(t[&quot;addr:province&quot;],&quot;name&quot;))),::geom=trace(s0.gcat(geom()))-&gt;.s1;
-.s1 &gt;-&gt;.s2;
-foreach.s1-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
-.s0 out asc;
-.s1 out center tags;
-.s2 out noids meta;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

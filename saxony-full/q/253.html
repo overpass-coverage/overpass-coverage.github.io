@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 253</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 253</p><h1>Query 253</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3130 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 253</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 253</p><h1>Query 253</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3130 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
 way[&quot;traffic_mode&quot;=&quot;passenger&quot;]-&gt;.s0;
 .s0 convert item k0=lat(),k1=(((user()+suffix(t[&quot;cycleway:both&quot;]))+lrs_min(t[&quot;tactile_paving&quot;]))+suffix(t[&quot;power&quot;])),::=::,::id=id()-&gt;.s1;
 rel(bn.s1)-&gt;.s2;
@@ -9,4 +9,4 @@ foreach.s0-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
 .s2 convert row ::id=id(),tags=count_tags();
 out;
 .s4 out center body noids (50.995190,13.591565,51.012601,13.704891);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

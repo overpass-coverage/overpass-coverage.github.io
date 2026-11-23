@@ -1,8 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full, shrunk)</a> / query 1</p><h1>Query 1</h1><p class="muted">fuzz:4:history,complete,evaluators:720 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:536870912][adiff:&quot;2012-03-25T00:38:44Z&quot;,&quot;2022-08-01T01:02:30Z&quot;];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full, shrunk)</a> / query 1</p><h1>Query 1</h1><p class="muted">fuzz:4:history,complete,evaluators:720 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:536870912][adiff:&quot;2012-03-25T00:38:44Z&quot;,&quot;2022-08-01T01:02:30Z&quot;];
 way(poly:&quot;45.190723 -63.696923 45.205231 -63.691495 45.178984 -63.744577&quot;)[&quot;aeroway&quot;=&quot;taxilane&quot;][&quot;aeroway&quot;=&quot;runway&quot;]-&gt;.s0;
 .s0 convert item k1=number(suffix(suffix(timestamp()))),angles=per_vertex(angle()&gt;90),k0=number(t[&quot;addr:locality&quot;]),members=per_member(pos())-&gt;.s1;
 make stat k0=s1.max((count_tags()-version())),k1=s1.sum(0),k2=s1.count(wr)-&gt;.s2;
 way.s2(if:is_number(t[&quot;surface&quot;]))-&gt;.s3;
 .s0 convert row k1=(number(&quot;&quot;)+length()),k0=((1?(suffix(t[&quot;material&quot;])):((type()+type())))+((t[&quot;footway&quot;]==&quot;50 KW&quot;?(id()):(id()))+timestamp())),::id=id()-&gt;.s4;
 .s3 out skel 16;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1698</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1698</p><h1>Query 1698</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3883 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][timeout:180][out:csv(::lat,::&quot;count:nodes&quot;;true)];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1698</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1698</p><h1>Query 1698</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3883 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][timeout:180][out:csv(::lat,::&quot;count:nodes&quot;;true)];
 node(around:50,51.199058,12.316307)-&gt;.s0;
 node(way_cnt.s0:1-2)-&gt;.s1;
 rel(br.s0)-&gt;.s2;
@@ -6,4 +6,4 @@ make info c=number(((s0.min(date(t[&quot;addr:suburb&quot;]))&gt;3)?(s0.set(user
 rel(bw.s2)[&quot;network&quot;!~&quot;^CZ:na&quot;]-&gt;.s4;
 .s2 out skel geom;
 .s3 out skel;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2505</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2505</p><h1>Query 2505</h1><p class="muted">fuzz:3:history,complete:2381 · 0.76 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2505</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2505</p><h1>Query 2505</h1><p class="muted">fuzz:3:history,complete:2381 · 0.76 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
 nwr(45.430601,-63.567440,45.472413,-63.540500)-&gt;.s0;
 complete(2).s0-&gt;.s1 { way(bn)[&quot;addr:city&quot;]; node(w); }
 complete(4).s1-&gt;.s2 { way(bn)[&quot;source&quot;]; node(w); }
@@ -8,4 +8,4 @@ foreach.s3-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
 .s1 out tags 37;
 .s2 out tags bb;
 .s4 out meta geom;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 427</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 427</p><h1>Query 427</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3763 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824];
-wr[&quot;highway&quot;=&quot;bus_stop&quot;](44.904473,-64.938328,45.014742,-64.864681)-&gt;.s0;
-way(44.821950,-63.587343,44.916688,-63.264182)(45.396904,-64.251950,45.431615,-64.098062)[&quot;access&quot;!=&quot;private&quot;](if:is_closed())-&gt;.s1;
-way.s1(if:is_number(t[&quot;service&quot;]))-&gt;.s2;
-way.s2(id:99090004,344621461,466742208,486611680,492785515,1002712111,1431563760)-&gt;.s3;
-.s0 out (44.572467,-63.664176,44.667711,-63.543672) 5 tags qt;
-.s1 out bb body;
-.s3 out skel bb;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

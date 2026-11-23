@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1574</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1574</p><h1>Query 1574</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:669 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][out:json][maxsize:268435456];
-wr(if:is_date(t[&quot;addr:housenumber&quot;]))[&quot;owner&quot;!~&quot;^Sprigfiel&quot;](45.586849,-60.727512,45.690573,-60.480368)-&gt;.s0;
-.s0 convert row members=per_member(role()),k0=type(),::id=id(),!&quot;addr:interpolation&quot;,::=::-&gt;.s1;
-.s0 map_to_area-&gt;.s2;
-node(way_cnt.s1:1)-&gt;.s3;
-node(way_cnt.s2:1)-&gt;.s4;
-.s0 out meta bb;
-.s3 out geom skel;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

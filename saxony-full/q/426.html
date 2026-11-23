@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 426</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 426</p><h1>Query 426</h1><p class="muted">fuzz:4:history,complete,evaluators:567 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 426</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 426</p><h1>Query 426</h1><p class="muted">fuzz:4:history,complete,evaluators:567 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
 nwr(51.133815,13.289065,51.151739,13.327600)[&quot;smoothness&quot;=&quot;good&quot;](if:(count_distinct_by_role(&quot;subarea&quot;)&lt;lrs_max(t[&quot;addr:housenumber&quot;])))-&gt;.s0;
 nwr.s0(if:(t[&quot;addr:street&quot;]==&quot;cliff&quot;&amp;&amp;lrs_in((id()+&quot;a&quot;),user())))-&gt;.s1;
 node(way_link.s1:1)-&gt;.s2;
@@ -6,4 +6,4 @@ node.s2(if:is_date(t[&quot;network&quot;]))-&gt;.s3;
 node.s3(if:((type()!=&quot;yes&quot;)||(lrs_max(&quot;a;b;c&quot;)&lt;lrs_max(&quot;a;b;c&quot;))))-&gt;.s4;
 .s0 out body asc (51.165797,13.242340,51.261222,13.355432);
 .s2 out meta qt;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

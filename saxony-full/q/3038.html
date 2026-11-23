@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 3038</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 3038</p><h1>Query 3038</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2080 · 4.96 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;addr:housenumber&quot;,&quot;fire_hydrant:position&quot;,::count,::uid,::timestamp,::lat;false;&quot;;&quot;)][timeout:180][maxsize:536870912];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 3038</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 3038</p><h1>Query 3038</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2080 · 4.96 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;addr:housenumber&quot;,&quot;fire_hydrant:position&quot;,::count,::uid,::timestamp,::lat;false;&quot;;&quot;)][timeout:180][maxsize:536870912];
 nw(if:lrs_in(type(),(is_closed()?(user()):(&quot;x;y&quot;))))[&quot;start_date&quot;=&quot;2005-09-01&quot;]-&gt;.s0;
 is_in(50.963431,14.063763)-&gt;.s1;
 nwr(area.s1)[&quot;surface&quot;=&quot;paved&quot;]-&gt;.s2;
@@ -6,4 +6,4 @@ nwr(area.s1)[&quot;surface&quot;=&quot;paved&quot;]-&gt;.s2;
 foreach.s1-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
 .s1 out 1 qt meta center;
 .s3 out meta 2 bb;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

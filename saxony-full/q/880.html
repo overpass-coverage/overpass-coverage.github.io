@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 880</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 880</p><h1>Query 880</h1><p class="muted">fuzz:4:poi,areas:588 · 0.10 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 880</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 880</p><h1>Query 880</h1><p class="muted">fuzz:4:poi,areas:588 · 0.10 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
 nwr[&quot;roof:material&quot;~&quot;^(roof_tiles|tar_paper)$&quot;](50.425959,12.292555,50.613188,12.426526)[&quot;operator&quot;=&quot;Bauernhof Schreiter&quot;]-&gt;.s0;
 is_in(50.564247,12.626123)-&gt;.s1;
 nwr(area.s1)[&quot;destination:lanes:forward&quot;=&quot;Stadt Wehlen;Mockethal|Zentrum;Dresden;Radeberg;Pillnitz&quot;]-&gt;.s2;
@@ -6,4 +6,4 @@ node(way_link.s1:1)-&gt;.s3;
 foreach.s3-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
 .s1 out body bb asc;
 .s3 out meta geom;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

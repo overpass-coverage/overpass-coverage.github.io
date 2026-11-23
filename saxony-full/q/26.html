@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 26</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 26</p><h1>Query 26</h1><p class="muted">fuzz:4:history,complete,evaluators:702 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 26</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 26</p><h1>Query 26</h1><p class="muted">fuzz:4:history,complete,evaluators:702 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
 node(50.737486,12.740285,50.922715,12.759439)(if:1)[&quot;building:levels&quot;=&quot;5&quot;]-&gt;.s0;
 timeline(node,9932496242)-&gt;.s1;
 node.s0(if:is_date(t[&quot;amenity&quot;]))-&gt;.s2;
@@ -8,4 +8,4 @@ node(way_link.s2:2-)-&gt;.s5;
 .s5 convert row ::id=id(),tags=count_tags();
 out;
 .s1 out skel geom (50.307173,12.421001,50.390813,12.553007);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

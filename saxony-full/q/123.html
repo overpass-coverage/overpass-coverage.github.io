@@ -1,8 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 123</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 123</p><h1>Query 123</h1><p class="muted">fuzz:4:history,complete,evaluators:286 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 123</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 123</p><h1>Query 123</h1><p class="muted">fuzz:4:history,complete,evaluators:286 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
 nw(around:100,50.963086,14.240472)-&gt;.s0;
 node(w.s0)-&gt;.s1;
 .s1 &gt;&gt;-&gt;.s2;
 .s1 convert row k2=((is_closed()?(0.5):(suffix(type())))+lon()),k3=lrs_min(lrs_union(lrs_isect(&quot;a;b;c&quot;,&quot;a;b;c&quot;),lrs_isect(t[&quot;tactile_paving&quot;],t[&quot;addr:country&quot;]))),k1=number(type()),::id=id(),k0=(timestamp()+count_distinct_by_role(&quot;historic&quot;))-&gt;.s3;
 .s1 convert row k3=lrs_union(lrs_union(t[&quot;width&quot;],&quot;name&quot;),t[&quot;tactile_paving&quot;]),k2=(&quot;x;y&quot;!=id()),::geom=center(trace(geom())),k1=lrs_isect(lrs_min(&quot;a;b;c&quot;),lrs_union(lrs_isect(lrs_union(t[&quot;roof:shape&quot;],&quot;name&quot;),&quot;1;2&quot;),timestamp())),::id=id(),k0=date((is_tag(&quot;maxspeed&quot;)?(id()):(suffix(timestamp())))),::=::,!&quot;access&quot;-&gt;.s4;
 .s3 out skel;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

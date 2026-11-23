@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1316</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1316</p><h1>Query 1316</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:4416 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::user,&quot;name:en&quot;,::type,::version;false;&quot;;&quot;)][maxsize:1073741824];
-wr(44.510906,-64.337497,44.516707,-64.263838)[&quot;power&quot;=&quot;converter&quot;]-&gt;.s0;
-node(around.s0:100)[&quot;highway&quot;~&quot;^traffic&quot;,i]-&gt;.s1;
-.s0 convert row k0=timestamp(),!&quot;type&quot;,k1=(!(t[&quot;support&quot;]==&quot;administrative&quot;||(!0))),k2=lrs_min(lrs_union(lrs_union(lrs_union(t[&quot;amenity&quot;],&quot;name&quot;),&quot;1;2&quot;),id())),members=per_member(mtype()+&quot;/&quot;+ref()),k3=(!is_date(t[&quot;addr:locality&quot;]))-&gt;.s2;
-.s1 out skel noids geom;
-.s2 out meta;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

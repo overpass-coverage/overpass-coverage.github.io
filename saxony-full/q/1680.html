@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1680</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1680</p><h1>Query 1680</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3957 · 0.15 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][bbox:50.997611,13.546853,51.141955,13.894925][out:csv(&quot;leaf_cycle&quot;,&quot;emergency&quot;,::type,&quot;tourism&quot;;false;&quot;	&quot;)];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1680</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1680</p><h1>Query 1680</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3957 · 0.15 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][bbox:50.997611,13.546853,51.141955,13.894925][out:csv(&quot;leaf_cycle&quot;,&quot;emergency&quot;,::type,&quot;tourism&quot;;false;&quot;	&quot;)];
 nwr(51.141831,12.630750,51.146563,12.665785)[&quot;check_date:opening_hours&quot;=&quot;2024-02-03&quot;][&quot;generator:output:electricity&quot;~&quot;^y&quot;]-&gt;.s0;
 wr(bn.s0)[&quot;network:wikidata&quot;]-&gt;.s1;
 .s1 &gt;&gt;-&gt;.s2;
@@ -6,4 +6,4 @@ make info c=((s2.min(lrs_max(&quot;a;b;c&quot;))*s2.count(wr))+(-s2.sum(date(&qu
 .s1 &lt;-&gt;.s4;
 .s0 out tags bb noids;
 out 100 center ids;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

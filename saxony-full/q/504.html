@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 504</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 504</p><h1>Query 504</h1><p class="muted">fuzz:3::2675 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;ref:IFOPT&quot;)];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 504</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 504</p><h1>Query 504</h1><p class="muted">fuzz:3::2675 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;ref:IFOPT&quot;)];
 nwr[&quot;shoulder&quot;=&quot;no&quot;][&quot;barrier&quot;=&quot;lift_gate&quot;](50.246937,12.115543,50.440638,12.373809)(51.021277,14.147841,51.175131,14.357421)-&gt;.s0;
 .s0 &gt;-&gt;.s1;
 .s0 &gt;&gt;-&gt;.s2;
@@ -7,4 +7,4 @@ nwr[&quot;shoulder&quot;=&quot;no&quot;][&quot;barrier&quot;=&quot;lift_gate&quo
 foreach.s1-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
 .s2 out skel asc 17;
 .s3 out body bb;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

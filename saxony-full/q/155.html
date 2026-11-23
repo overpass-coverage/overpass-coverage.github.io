@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 155</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 155</p><h1>Query 155</h1><p class="muted">fuzz:4:history,complete,evaluators:409 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;shop&quot;)][date:&quot;2012-07-22T14:45:19Z&quot;];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 155</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 155</p><h1>Query 155</h1><p class="muted">fuzz:4:history,complete,evaluators:409 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;shop&quot;)][date:&quot;2012-07-22T14:45:19Z&quot;];
 rel(51.231435,13.275640,51.319431,13.302106)[&quot;abandoned:amenity&quot;=&quot;school&quot;]-&gt;.s0;
 .s0 convert row k1=(suffix(suffix(t[&quot;tracktype&quot;]))+suffix(t[&quot;public_transport&quot;])),k2=suffix((t[&quot;barrier&quot;]+user())),k0=(is_date(count_by_role(&quot;stop_position&quot;))?(((is_date(t[&quot;ref&quot;])?(id()):(&quot;container&quot;))+id())):(suffix((is_tag(&quot;building:levels&quot;)?(timestamp()):(suffix(t[&quot;roof:levels&quot;]))))))-&gt;.s1;
 .s0 convert item k0=is_number(t[&quot;source&quot;]),::=::,k2=t[&quot;cycleway:both&quot;],k1=type()-&gt;.s2;
@@ -7,4 +7,4 @@ node(way_link.s0:3-)-&gt;.s4;
 .s1 out body geom;
 .s2 out count;
 .s4 out body geom;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

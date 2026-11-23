@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 938</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 938</p><h1>Query 938</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2618 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][timeout:180];
-way[&quot;old_addr:housenumber&quot;=&quot;39&quot;]-&gt;.s0;
-way.s0[&quot;fuel:diesel&quot;=&quot;yes&quot;]-&gt;.s1;
-way.s0(if:lrs_in((is_number(t[&quot;surface&quot;])?(lrs_min(lrs_union(t[&quot;structure&quot;],&quot;name&quot;))):(suffix(suffix(t[&quot;voltage&quot;])))),user()))-&gt;.s2;
-way.s0(44.748013,-65.556941,44.832258,-65.236584)-&gt;.s3;
-out noids geom meta;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

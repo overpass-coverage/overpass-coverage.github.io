@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2636</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2636</p><h1>Query 2636</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2041 · 0.18 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::changeset,::&quot;count:relations&quot;,::otype,::lon,&quot;hazmat&quot;;false;&quot;	&quot;)];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2636</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2636</p><h1>Query 2636</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2041 · 0.18 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::changeset,::&quot;count:relations&quot;,::otype,::lon,&quot;hazmat&quot;;false;&quot;	&quot;)];
 rel(id:155985,2471308,2782495,4462775,5724813,7034274,8791281,10431097,12359086,12549466,14618273,14864677)(50.884690,13.536522,51.115459,13.759213)[&quot;from&quot;=&quot;Sebnitz&quot;]-&gt;.s0;
 for.s0-&gt;.s1 (&quot;Mitteldeutscher Verkehrsverbund&quot;) { make group value=_.val,count=count(nwr); }
 node(around.s1:20)[&quot;to&quot;~&quot;^Löt&quot;,i]-&gt;.s2;
@@ -7,4 +7,4 @@ rel(area.s3)(50.764619,12.893140,50.857404,12.930657)-&gt;.s4;
 (.s0; - .s3;)-&gt;.s5;
 foreach.s5-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
 .s4 out center meta noids;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

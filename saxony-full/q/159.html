@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 159</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 159</p><h1>Query 159</h1><p class="muted">fuzz:4:evaluators:854 · 0.14 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 159</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 159</p><h1>Query 159</h1><p class="muted">fuzz:4:evaluators:854 · 0.14 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
 nwr(51.495072,14.363467,51.520558,14.429953)-&gt;.s0;
 make stat k0=s0.min(number(t[&quot;parking&quot;])),k1=s0.max(date(type())),k2=lrs_union(lrs_min(s0.set((is_closed()?(type()):(type())))),s0.min(suffix(timestamp()))),k3=(s0.count(nwr)/number(s0.u((user()+type()))))-&gt;.s1;
 node(way_cnt.s0:1-2)-&gt;.s2;
@@ -6,4 +6,4 @@ node(way_cnt.s1:1-2)-&gt;.s3;
 rel.s1(51.224795,14.348661,51.374507,14.562714)-&gt;.s4;
 .s1 out skel asc;
 .s3 out skel asc;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

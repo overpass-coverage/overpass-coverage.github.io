@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 906</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 906</p><h1>Query 906</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1021 · 0.18 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:json];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 906</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 906</p><h1>Query 906</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1021 · 0.18 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:json];
 wr(51.376674,13.396871,51.403174,13.397968)-&gt;.s0;
 timeline(relation,15323317,4)-&gt;.s1;
 .s1 &lt;-&gt;.s2;
@@ -8,4 +8,4 @@ node(area.s4)(50.686106,12.562698,50.708169,12.647777)-&gt;.s5;
 foreach.s2-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
 .s0 out 100 body;
 .s5 out center count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

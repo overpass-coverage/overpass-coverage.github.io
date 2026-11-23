@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 540</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 540</p><h1>Query 540</h1><p class="muted">fuzz:4:evaluators:461 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 540</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 540</p><h1>Query 540</h1><p class="muted">fuzz:4:evaluators:461 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
 rel(id:391115,2098373,3245435,5383957,5407984,12041593,13699146,17948924,20071413,21086659,21099566,21261544)-&gt;.s0;
 .s0 convert row k0=(changeset()&gt;=1e3),::id=id()-&gt;.s1;
 make stat k0=s1.sum(uid()),k1=s1.min(number(&quot;a&quot;)),::geom=s1.gcat(center(geom()))-&gt;.s2;
@@ -6,4 +6,4 @@ node(way_cnt.s0:3-)-&gt;.s3;
 node(way_cnt.s1:2-)-&gt;.s4;
 foreach.s0-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
 .s4 out body;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

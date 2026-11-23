@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 795</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 795</p><h1>Query 795</h1><p class="muted">fuzz:4:evaluators:490 · 0.17 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 795</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 795</p><h1>Query 795</h1><p class="muted">fuzz:4:evaluators:490 · 0.17 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
 nw(if:1)(poly:&#x27;51.346165 14.355693 51.350852 14.352010 51.334111 14.328600 51.319590 14.320366 51.299753 14.317411 51.298965 14.345736 51.301403 14.355208 51.306437 14.369741 51.316651 14.375515 51.318856 14.367796&#x27;)(if:(is_date((t[&quot;highway&quot;]+type()))&amp;&amp;((is_tag(&quot;level&quot;)&amp;&amp;is_date(t[&quot;highway&quot;]))&amp;&amp;(!is_date(t[&quot;access&quot;])))))-&gt;.s0;
 wr(bn.s0)-&gt;.s1;
 .s1 &lt;&lt;-&gt;.s2;
@@ -6,4 +6,4 @@ node(r.s0:&quot;forward&quot;)-&gt;.s3;
 node(way_link.s1:2-)-&gt;.s4;
 .s1 out tags center;
 .s4 out body;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 225</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 225</p><h1>Query 225</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1020 · 0.19 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;created_by&quot;,::version,::&quot;count:ways&quot;,&quot;telecom:medium&quot;,::&quot;count:nodes&quot;,&quot;tunnel&quot;;false;&quot;,&quot;)][maxsize:268435456];
-nwr(44.959219,-64.952955,44.996020,-64.890059)[!&quot;oneway&quot;]-&gt;.s0;
-rel.s0[&quot;postal_code&quot;=&quot;B4C 1G1&quot;]-&gt;.s1;
-.s0 convert row k0=(lrs_min(lrs_isect(t[&quot;voltage&quot;],&quot;1;2&quot;))&lt;=length()),k1=is_date(timestamp())-&gt;.s2;
-node(way_link.s1:3-)-&gt;.s3;
-.s2 convert stat k2=-1,k0=is_tag(&quot;maxspeed&quot;),::id=id(),!&quot;operator:wikidata&quot;,k1=(is_number(t[&quot;maxheight&quot;])?(&quot;3&quot;):(suffix(number(t[&quot;addr:housenumber&quot;]))))-&gt;.s4;
-.s0 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

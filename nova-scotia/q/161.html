@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 161</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 161</p><h1>Query 161</h1><p class="muted">fuzz:3:evaluators:1059 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;roof:levels&quot;)];
-rel(id:1355331,1672189,3172963,7057402,7061545,7072883,9155651,10237512,12023372,13345269,20363729,20743062)-&gt;.s0;
-.s0 convert row k0=lrs_union(lrs_isect(id(),t[&quot;source&quot;]),&quot;a;b;c&quot;),::=::,k1=lrs_min(lon())-&gt;.s1;
-node(way_link.s1:2-)-&gt;.s2;
-nwr.s1(if:is_closed())-&gt;.s3;
-.s1 out body qt;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/set_list_operators.cc.html#L286">overpass_api/statements/set_list_operators.cc:286</a></li></ul></main></body></html>

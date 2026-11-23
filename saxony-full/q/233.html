@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 233</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 233</p><h1>Query 233</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2375 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][timeout:60][maxsize:268435456];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 233</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 233</p><h1>Query 233</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2375 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][timeout:60][maxsize:268435456];
 nw(50.360528,12.185295,50.506131,12.388111)(if:date(timestamp())&gt;date(&quot;2009-01-01&quot;))[&quot;operator&quot;=&quot;FSV Luppa e.V.&quot;](if:(abs(lrs_max(&quot;a;b;c&quot;))&gt;date((timestamp()+suffix(t[&quot;source&quot;])))))-&gt;.s0;
 node(around.s0:300)[&quot;lit&quot;=&quot;yes&quot;]-&gt;.s1;
 nw[~&quot;^contact:webcam$&quot;~&quot;^https://www.terra-hd.de/hochwald/$&quot;]-&gt;.s2;
@@ -6,4 +6,4 @@ nw[~&quot;^contact:webcam$&quot;~&quot;^https://www.terra-hd.de/hochwald/$&quot;
 rel(bw.s0)[&quot;recycling_type&quot;~&quot;^cont&quot;,i]-&gt;.s4;
 .s2 out count;
 .s3 out meta geom qt;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2325</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2325</p><h1>Query 2325</h1><p class="muted">fuzz:4:history,areas,complete,statements:905 · 0.13 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2325</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2325</p><h1>Query 2325</h1><p class="muted">fuzz:4:history,areas,complete,statements:905 · 0.13 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
 nwr(45.011637,-63.616333,45.031773,-63.569958)(if:date(timestamp())&gt;date(&quot;2019-01-01&quot;))(if:is_tag(&quot;operator:wikipedia&quot;))-&gt;.s0;
 is_in(45.818312,-64.208340)-&gt;.s1;
 way(area.s1)[&quot;utility&quot;=&quot;power&quot;]-&gt;.s2;
@@ -7,4 +7,4 @@ complete(2).s3-&gt;.s4 { node(w); way(bn)[&quot;addr:district&quot;]; }
 .s4-&gt;._; foreach-&gt;.x(.x out ids;)
 (._;)-&gt;.s5;
 .s1 out meta geom qt (44.624357,-63.601841,44.643069,-63.554407);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

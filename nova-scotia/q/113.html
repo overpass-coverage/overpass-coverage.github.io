@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 113</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 113</p><h1>Query 113</h1><p class="muted">fuzz:3:evaluators:680 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-node(if:((is_closed()&amp;&amp;t[&quot;owner&quot;]==&quot;ornamental&quot;)&amp;&amp;((t[&quot;admin_level&quot;]==&quot;Nature Conservancy of Canada&quot;?(t[&quot;light:colour&quot;]):(&quot;yes&quot;))==(is_date(t[&quot;maxheight&quot;])?(suffix(t[&quot;fire_hydrant:type&quot;])):(suffix(t[&quot;crossing:markings&quot;]))))))[&quot;vending&quot;=&quot;animal_feed&quot;]-&gt;.s0;
-node(around.s0:100)[&quot;brand:wikidata&quot;]-&gt;.s1;
-rel(r.s0)[&quot;water&quot;!~&quot;^la&quot;]-&gt;.s2;
-.s1 convert stat k1=date(((0?(type()):(type()))+(t[&quot;light:method&quot;]==&quot;3&quot;?(&quot;a&quot;):(timestamp())))),::id=id(),k0=(!((is_closed()?(type()):(id()))!=lrs_min(t[&quot;addr:street&quot;]))),::geom=geom(),k2=(lrs_min(&quot;a;b;c&quot;)&gt;(id()+count_tags()))-&gt;.s3;
-node.s1(if:(&quot;yes&quot;&lt;type()))-&gt;.s4;
-foreach.s0-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
-.s0 out ids center qt (45.738006,-61.415376,45.746721,-61.285359);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

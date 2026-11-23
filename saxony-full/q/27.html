@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 27</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 27</p><h1>Query 27</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1391 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][out:xml][maxsize:536870912];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 27</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 27</p><h1>Query 27</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1391 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][out:xml][maxsize:536870912];
 nwr[~&quot;^gau&quot;~&quot;14&quot;][&quot;to&quot;=&quot;Umspannwerk Düben&quot;][!&quot;destination&quot;]-&gt;.s0;
 way.s0(if:1)-&gt;.s1;
 for.s1-&gt;.s2 (keys()) { ._ out count; }
@@ -8,4 +8,4 @@ node(around.s4:300)[~&quot;^che&quot;~&quot;2026\\-&quot;]-&gt;.s5;
 .s2 out skel center asc;
 .s3 out skel bb 7 (50.849899,14.786477,50.946077,14.787532);
 .s5 out count (50.292509,12.136662,50.357271,12.242206);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

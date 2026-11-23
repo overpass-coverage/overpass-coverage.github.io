@@ -1,8 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 518</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 518</p><h1>Query 518</h1><p class="muted">fuzz:4:history,complete,evaluators:862 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 518</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 518</p><h1>Query 518</h1><p class="muted">fuzz:4:history,complete,evaluators:862 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
 node(id:1054100565,1654946919)-&gt;.s0;
 make info v=lrs_min(s0.set(lrs_min(&quot;1;2&quot;)))-&gt;.s1;
 node(w.s0)-&gt;.s2;
 node(way_link.s2:1)-&gt;.s3;
 make stat k0=s1.set(suffix(t[&quot;foot&quot;])),k1=((s1.sum((length()/lon()))&gt;0.5)?(date(s1.max(timestamp()))):((number(s1.u((type()+timestamp())))+s1.min(date(type()))))),k2=date(s1.max(timestamp()))-&gt;.s4;
 .s3 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

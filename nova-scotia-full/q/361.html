@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 361</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 361</p><h1>Query 361</h1><p class="muted">fuzz:4:output:553 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::&quot;count:relations&quot;,::count,::lon,::uid,&quot;communication&quot;,::user;false)][maxsize:268435456][timeout:180];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 361</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 361</p><h1>Query 361</h1><p class="muted">fuzz:4:output:553 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::&quot;count:relations&quot;,::count,::lon,::uid,&quot;communication&quot;,::user;false)][maxsize:268435456][timeout:180];
 node(around:500,44.393775,-64.528287)-&gt;.s0;
 node(w.s0:1)-&gt;.s1;
 nw(if:is_tag(&quot;width&quot;))[&quot;destination:ref&quot;=&quot;east&quot;](45.628805,-61.661586,45.648735,-61.648645)-&gt;.s2;
@@ -6,4 +6,4 @@ way(bn.s0)[&quot;maxheight&quot;=&quot;4.1&quot;]-&gt;.s3;
 way.s3(45.035697,-64.551893,45.144169,-64.172524)-&gt;.s4;
 foreach.s0-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
 .s0 out center skel;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

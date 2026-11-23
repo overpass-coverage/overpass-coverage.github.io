@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 100</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 100</p><h1>Query 100</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2750 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][out:csv(::uid,::changeset,::version;true)];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 100</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 100</p><h1>Query 100</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2750 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][out:csv(::uid,::changeset,::version;true)];
 node(id:1019357366,1361539885,2332237249,2332283473,3512540469,4781077227,5995989458,6266928477,12636587813)(if:uid()&gt;11000000)-&gt;.s0;
 timeline(relation,3173619,3)-&gt;.s1;
 way.s1(if:is_date(suffix(timestamp())))-&gt;.s2;
@@ -8,4 +8,4 @@ make stat k0=((number(s4.u((1?(id()):(id()))))==2)?(s4.max(date(user()))):(s4.su
 .s1 convert row ::id=id(),tags=count_tags();
 out;
 .s5 out count center;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

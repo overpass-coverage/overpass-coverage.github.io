@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full)</a> / query 2</p><h1>Query 2</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3164 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::&quot;count:nodes&quot;,&quot;admin_level&quot;,::changeset;false;&quot;,&quot;)][timeout:60];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2</p><h1>Query 2</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3164 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::&quot;count:nodes&quot;,&quot;admin_level&quot;,::changeset;false;&quot;,&quot;)][timeout:60];
 way(around:500,43.604508,-65.395599)-&gt;.s0;
 .s0 convert row k2=number(lrs_min(lrs_union(lrs_union(t[&quot;addr:street&quot;],&quot;name&quot;),t[&quot;power&quot;]))),k0=abs(uid()),k1=timestamp(),::geom=hull(geom())-&gt;.s1;
 (.s1; .s1;)-&gt;.s2;
@@ -9,4 +9,4 @@ foreach.s3-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
 .s3 convert row ::id=id(),tags=count_tags();
 out;
 .s3 out 5 body;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

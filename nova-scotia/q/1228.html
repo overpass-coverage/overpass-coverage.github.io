@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1228</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 1228</p><h1>Query 1228</h1><p class="muted">fuzz:3:areas,complete:2899 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;name&quot;)];
-wr[&quot;water&quot;=&quot;pond&quot;](44.652772,-64.032176,44.772699,-63.850485)[&quot;bicycle_parking&quot;!=&quot;bollard&quot;]-&gt;.s0;
-way.s0(id:62302212,132241414,243874855,492807824,528505737,584465302,668920777,693053435,1019345163,1487013905)-&gt;.s1;
-area[name=&quot;MacKinnons Cove&quot;]-&gt;.s2;
-nwr(area.s2)(45.625653,-62.560568,45.668677,-62.432654)-&gt;.s3;
-node(around.s1:300)[&quot;waterway&quot;~&quot;^d&quot;,i]-&gt;.s4;
-.s1 out tags;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

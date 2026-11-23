@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 971</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 971</p><h1>Query 971</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1877 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;fire_hydrant:position&quot;,&quot;building:levels&quot;,&quot;addr:city&quot;,::uid,::count,::changeset,::lon;false;&quot;::&quot;)][timeout:60][maxsize:1073741824][date:&quot;2020-02-02T14:14:19Z&quot;];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 971</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 971</p><h1>Query 971</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1877 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;fire_hydrant:position&quot;,&quot;building:levels&quot;,&quot;addr:city&quot;,::uid,::count,::changeset,::lon;false;&quot;::&quot;)][timeout:60][maxsize:1073741824][date:&quot;2020-02-02T14:14:19Z&quot;];
 node[&quot;date&quot;=&quot;2012-09-16&quot;][&quot;maxspeed&quot;~&quot;^7&quot;,i](50.583091,13.289631,50.736169,13.461228)(changed:&quot;2024-07-07T17:43:02Z&quot;,&quot;2025-12-23T13:43:50Z&quot;)[&quot;building&quot;=&quot;apartments&quot;]-&gt;.s0;
 node.s0[&quot;roof:levels&quot;]-&gt;.s1;
 make stat k0=abs(s1.count(nw))-&gt;.s2;
@@ -6,4 +6,4 @@ node(around.s0:100)[&quot;natural&quot;!=&quot;wood&quot;]-&gt;.s3;
 make stat k0=(s2.min(abs(changeset()))-(number(s2.u(id()))+s2.min(changeset())))-&gt;.s4;
 foreach.s3-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
 .s4 out meta;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

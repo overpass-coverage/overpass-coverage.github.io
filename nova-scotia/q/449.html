@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 449</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 449</p><h1>Query 449</h1><p class="muted">fuzz:3:evaluators:735 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-way[&quot;light:lit&quot;=&quot;dusk-dawn&quot;](45.055829,-62.658413,45.071277,-62.646169)(poly:&#x27;44.795301 -63.708935 44.799638 -63.712811 44.792510 -63.719884 44.793898 -63.703761&#x27;)-&gt;.s0;
-node(way_cnt.s0:1-2)-&gt;.s1;
-if ((s1.min((-changeset()))&gt;100)) { make yes n=s1.count(nwr)-&gt;.s2; } else { make no n=0-&gt;.s2; }
-node(way_cnt.s2:1)-&gt;.s3;
-.s2 convert row k2=is_tag(&quot;fire_hydrant:position&quot;),k1=lrs_min(id()),::id=id(),k3=lrs_union(t[&quot;golf&quot;],lrs_union(&quot;1;2&quot;,t[&quot;crossing&quot;])),k0=lrs_min(lrs_isect(lrs_union(&quot;1;2&quot;,lrs_union(t[&quot;amenity&quot;],&quot;name&quot;)),lrs_isect(lrs_union(t[&quot;structure&quot;],&quot;name&quot;),lrs_union(t[&quot;landuse&quot;],&quot;name&quot;))))-&gt;.s4;
-.s0 out tags 18;
-.s2 out ids qt;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

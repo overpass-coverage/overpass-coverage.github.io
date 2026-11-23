@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2741</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2741</p><h1>Query 2741</h1><p class="muted">fuzz:3::1003 · 0.28 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;material&quot;)];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2741</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2741</p><h1>Query 2741</h1><p class="muted">fuzz:3::1003 · 0.28 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;material&quot;)];
 wr(51.308119,12.239222,51.457485,12.406779)(if:is_closed())(if:number(t[&quot;lanes:backward&quot;])&gt;37)[&quot;surface&quot;=&quot;asphalt&quot;]-&gt;.s0;
 node(around.s0:100)[&quot;waste&quot;=&quot;organic&quot;]-&gt;.s1;
 .s0 &gt;&gt;-&gt;.s2;
@@ -6,4 +6,4 @@ wr[&quot;railway:position&quot;=&quot;60.2&quot;][&quot;field_margin&quot;!=&quo
 wr[&quot;crossing&quot;=&quot;unmarked&quot;](50.753971,12.806058,50.857396,13.015201)(51.012757,12.654589,51.091062,12.750691)-&gt;.s4;
 .s0 out meta qt;
 .s1 out tags (50.791610,12.913900,50.888868,12.993284);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 82</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 82</p><h1>Query 82</h1><p class="muted">fuzz:4:history,complete,evaluators:146 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2026-07-21T14:37:42Z&quot;,&quot;2026-10-09T14:40:31Z&quot;];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 82</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 82</p><h1>Query 82</h1><p class="muted">fuzz:4:history,complete,evaluators:146 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2026-07-21T14:37:42Z&quot;,&quot;2026-10-09T14:40:31Z&quot;];
 wr[&quot;operator&quot;=&quot;Michael Wittig&quot;][&quot;barrier&quot;=&quot;retaining_wall&quot;](51.062653,13.071816,51.277777,13.217821)(51.282521,13.937172,51.453142,14.182493)-&gt;.s0;
 rel(r.s0)-&gt;.s1;
 make info v=(((s0.count(wr)&gt;=10)||(number(s0.u(count_tags()))&lt;1e3))?(lrs_min(s0.set(suffix(id())))):(s0.set(timestamp()))),c=s0.sum(length())-&gt;.s2;
@@ -7,4 +7,4 @@ node(around.s1:20)[&quot;tracktype&quot;!=&quot;grade5&quot;]-&gt;.s4;
 .s0 out tags;
 .s1 out tags qt;
 .s2 out skel asc 23 (50.779919,12.703092,50.798176,12.785840);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

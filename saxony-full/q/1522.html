@@ -1,8 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1522</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1522</p><h1>Query 1522</h1><p class="muted">fuzz:3:areas,complete:271 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;bin&quot;)];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1522</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1522</p><h1>Query 1522</h1><p class="muted">fuzz:3:areas,complete:271 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;bin&quot;)];
 node(id:70591307,117728622,446202029,596428463,1364140957,1861597976,2325524916,2600327320,2724951460,5071727936,6214367522)[&quot;maxspeed&quot;=&quot;30&quot;]-&gt;.s0;
 area[name=&quot;Kirchteich&quot;]-&gt;.s1;
 rel(area.s1)[&quot;destination&quot;=&quot;Spree&quot;]-&gt;.s2;
 node(way_cnt.s0:1-2)-&gt;.s3;
 foreach.s3-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
 .s2 out tags;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1592</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1592</p><h1>Query 1592</h1><p class="muted">fuzz:4:output:676 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][out:json][timeout:25];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1592</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1592</p><h1>Query 1592</h1><p class="muted">fuzz:4:output:676 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][out:json][timeout:25];
 node(if:length()&gt;10)[&quot;check_date&quot;=&quot;2023-12-22&quot;]-&gt;.s0;
 nw(around:50,50.984429,13.553049)[&quot;material&quot;~&quot;^conc&quot;,i][&quot;building:levels&quot;!=&quot;2&quot;]-&gt;.s1;
 way(r.s1:&quot;stop&quot;)[&quot;abandoned:building&quot;=&quot;ruins&quot;]-&gt;.s2;
@@ -7,4 +7,4 @@ node(around.s0:0)[&quot;building&quot;=&quot;apartments&quot;]-&gt;.s4;
 .s0 out 2 geom ids;
 .s1 out skel;
 .s4 out skel asc 24;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

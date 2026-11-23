@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1629</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1629</p><h1>Query 1629</h1><p class="muted">fuzz:3:areas,complete:2486 · 0.13 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1629</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1629</p><h1>Query 1629</h1><p class="muted">fuzz:3:areas,complete:2486 · 0.13 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
 node(if:count_tags()&gt;0)[&quot;to&quot;=&quot;Löthain&quot;][&quot;foot&quot;~&quot;^n&quot;,i]-&gt;.s0;
 .s0 &gt;&gt;-&gt;.s1;
 area[name=&quot;Großer Teich&quot;]-&gt;.s2;
@@ -8,4 +8,4 @@ complete(4).s2-&gt;.s5 { node(w); way(bn)[&quot;landuse&quot;]; }
 .s1 out tags 47;
 .s4 out tags;
 .s5 out tags center asc;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,7 +1,7 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 770</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 770</p><h1>Query 770</h1><p class="muted">fuzz:4:evaluators:867 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 770</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 770</p><h1>Query 770</h1><p class="muted">fuzz:4:evaluators:867 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
 nwr(if:is_number((count_tags()/lon())))(51.097455,14.342776,51.165717,14.468158)[&quot;shoulder&quot;=&quot;no&quot;]-&gt;.s0;
 .s0 convert stat k1=id(),!&quot;foot&quot;,::id=id(),k3=suffix(t[&quot;oneway&quot;]),k0=(lrs_min(lrs_union(lrs_union(t[&quot;check_date&quot;],&quot;name&quot;),lrs_union(t[&quot;level&quot;],&quot;name&quot;)))+user()),k2=lrs_min(lrs_union(user(),lrs_union(&quot;a;b;c&quot;,&quot;a;b;c&quot;))),members=per_member(role())-&gt;.s1;
 node(way_cnt.s1:2-)-&gt;.s2;
 .s0 out skel center;
 .s1 out meta qt;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

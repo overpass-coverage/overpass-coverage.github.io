@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 537</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 537</p><h1>Query 537</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3872 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][out:json];
-way[&quot;natural&quot;=&quot;land&quot;](45.747674,-62.723248,45.773683,-62.679583)(45.039665,-64.685659,45.128489,-64.333985)-&gt;.s0;
-way(around.s0:0)[&quot;material&quot;]-&gt;.s1;
-way(around.s1:300)[&quot;phases&quot;=&quot;1&quot;]-&gt;.s2;
-.s0 is_in-&gt;.s3;
-node.s3(if:((-(-count_distinct_members()))==((is_tag(&quot;post:city&quot;)?(id()):(count_distinct_members()))-count_distinct_members())))-&gt;.s4;
-.s0 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

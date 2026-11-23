@@ -1,8 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 350</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 350</p><h1>Query 350</h1><p class="muted">fuzz:3::1604 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;addr:place&quot;)];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 350</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 350</p><h1>Query 350</h1><p class="muted">fuzz:3::1604 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;addr:place&quot;)];
 node(id:1067757852,2305538044,2549381888,3110666186,3517763605,4413143722,6878132268,7648646417,10253390436,13972365299)[&quot;access&quot;!~&quot;customers|no|private|yes&quot;]-&gt;.s0;
 node.s0[&quot;surface&quot;!=&quot;unpaved&quot;]-&gt;.s1;
 way(around.s1:100)[&quot;fire_hydrant:position&quot;=&quot;green&quot;]-&gt;.s2;
 node(around.s2:20)[&quot;highway&quot;=&quot;primary&quot;]-&gt;.s3;
 way(around.s2:300)[&quot;barrier&quot;]-&gt;.s4;
 .s4 out skel 31;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

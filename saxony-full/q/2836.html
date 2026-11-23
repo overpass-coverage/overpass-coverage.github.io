@@ -1,8 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2836</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2836</p><h1>Query 2836</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2592 · 3.99 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:536870912][out:csv(::&quot;count:areas&quot;,::&quot;count:nodes&quot;,::type,::&quot;count:ways&quot;,::count,::otype,&quot;name&quot;)][timeout:25];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2836</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2836</p><h1>Query 2836</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2592 · 3.99 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:536870912][out:csv(::&quot;count:areas&quot;,::&quot;count:nodes&quot;,::type,::&quot;count:ways&quot;,::count,::otype,&quot;name&quot;)][timeout:25];
 node(50.912073,14.054766,50.929463,14.098194)-&gt;.s0;
 .s0 is_in-&gt;.s1;
 make stat k0=number(s0.u((0?(id()):(type())))),k1=lrs_union(s0.min((0?(type()):(type()))),((s0.sum(uid())&gt;3)?(s0.min((is_closed()?(id()):(user())))):(s0.min(t[&quot;operator&quot;])))),::geom=s0.gcat(geom())-&gt;.s2;
 way.s2(id:106643490,137999613,402716269,674519889,850491229,1304131688,1325627096,1530814464)-&gt;.s3;
 .s0 &lt;-&gt;.s4;
 .s0 out skel center qt;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

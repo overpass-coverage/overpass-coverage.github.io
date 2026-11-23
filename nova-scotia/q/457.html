@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 457</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia)</a> / query 457</p><h1>Query 457</h1><p class="muted">fuzz:3:evaluators:752 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;name&quot;)];
-nw(if:is_date(t[&quot;support&quot;]))[&quot;lanes&quot;=&quot;1&quot;][&quot;operator&quot;=&quot;Killam Properties&quot;]-&gt;.s0;
-make info n=1,c=(s0.count(wr)-s0.min(abs(uid())))-&gt;.s1;
-make stat k0=s1.sum((number(t[&quot;highway&quot;])*count_members())),k1=((s1.sum(lon())&gt;0.5)?(s1.min((is_closed()?(id()):(count_distinct_members())))):(s1.count(ways))),k2=s1.min(changeset()),k3=s1.set(number(t[&quot;boundary&quot;]))-&gt;.s2;
-.s2 &gt;&gt;-&gt;.s3;
-node(w.s2)[&quot;height&quot;=&quot;54&quot;]-&gt;.s4;
-.s2 out meta bb;
-.s3 out body geom asc;
-</pre><h2>Lines only this query runs (4)</h2><ul><li><a href="../src/overpass_api/statements/item_geometry.h.html#L70">overpass_api/statements/item_geometry.h:70</a></li><li><a href="../src/overpass_api/statements/item_geometry.h.html#L347">overpass_api/statements/item_geometry.h:347</a></li><li><a href="../src/overpass_api/statements/item_geometry.h.html#L348">overpass_api/statements/item_geometry.h:348</a></li><li><a href="../src/overpass_api/statements/ternary_operator.cc.html#L195">overpass_api/statements/ternary_operator.cc:195</a></li></ul></main></body></html>
