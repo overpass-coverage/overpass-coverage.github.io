@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1579</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1579</p><h1>Query 1579</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3102 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:json];
-node(id:5118328324,5175129949)[&quot;contact:website&quot;!~&quot;https://www\\.xn\\-\\-feinbckerei\\-bresan\\-ptb\\.de/&quot;]-&gt;.s0;
-.s0 is_in-&gt;.s1;
-area[name=&quot;Brockwitz&quot;][admin_level]-&gt;.s2;
-nwr(area.s2)[&quot;operator:wikidata&quot;=&quot;Q1304269&quot;]-&gt;.s3;
-node(r.s3)[&quot;survey:date&quot;~&quot;^2014\\-&quot;,i]-&gt;.s4;
-out meta geom;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

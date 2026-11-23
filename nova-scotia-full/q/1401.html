@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1401</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1401</p><h1>Query 1401</h1><p class="muted">fuzz:4:history,complete,evaluators:675 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-way(id:97641299,159582826,933091102)-&gt;.s0;
-rel(r.s0)[&quot;highway&quot;=&quot;crossing&quot;]-&gt;.s1;
-way.s0(if:(((&quot;1;2;3&quot;+user())+t[&quot;operator:wikidata&quot;])&lt;timestamp()))-&gt;.s2;
-(.s2; .s2;)-&gt;.s3;
-foreach.s2-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
-.s0 out body;
-.s1 out ids (44.761766,-63.712173,44.795650,-63.639042);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

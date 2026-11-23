@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 232</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 232</p><h1>Query 232</h1><p class="muted">fuzz:4:history,complete,evaluators:690 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-node(id:1692125192,3511384583,3542454610,3779507511,7297896783)(id:1235372450,1689756962,3934624755,4995271431)[&quot;waterway&quot;!~&quot;^str&quot;]-&gt;.s0;
-node(way_cnt.s0:3-)-&gt;.s1;
-if ((number(s1.u(suffix(&quot;yes&quot;)))==0)) { make yes n=s1.count(nwr)-&gt;.s2; } else { make no n=0-&gt;.s2; }
-for.s2-&gt;.s3 (is_date(t[&quot;addr:suburb&quot;])) { convert item ::id=id(),g=_.val; }
-.s3 out meta bb 11;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

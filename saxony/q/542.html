@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 542</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 542</p><h1>Query 542</h1><p class="muted">fuzz:4:evaluators:661 · 0.00 s CPU · expected status <code>query-error: line N: parse error: &quot;,&quot; cannot be used as binary operator</code></p><pre class="query">node(6266472543)-&gt;.s0;
+node.s0-&gt;.s1;
+node.s1-&gt;.s2;
+make stat k0=lrs_union(s2.set(number(t))),k1=s2.max(count_tags()),bad=date(1,2)-&gt;.s3;
+.s2 out;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

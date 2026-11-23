@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1077</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1077</p><h1>Query 1077</h1><p class="muted">fuzz:4:evaluators:3 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-node[&quot;passenger_lines&quot;][&quot;water_source&quot;=&quot;canal&quot;][&quot;network&quot;]-&gt;.s0;
-make stat k0=s0.min(suffix(id())),k1=number(s0.u((is_closed()?(id()):(t[&quot;source&quot;])))),k2=s0.count(ways)-&gt;.s1;
-for.s1-&gt;.s2 (lrs_min(lrs_isect(lrs_union(t[&quot;gauge&quot;],&quot;name&quot;),lrs_union(t[&quot;maxspeed&quot;],&quot;name&quot;)))) { make group value=_.val,count=count(nwr); }
-.s1 out tags;
-.s2 out tags;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

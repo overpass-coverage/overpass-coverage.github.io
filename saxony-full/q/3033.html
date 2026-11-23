@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 3033</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 3033</p><h1>Query 3033</h1><p class="muted">fuzz:4:history,complete,output:773 · 3.21 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][out:csv(&quot;power&quot;,&quot;gauge&quot;,::timestamp,&quot;service&quot;;true)][maxsize:268435456][bbox:50.789738,12.600330,50.888324,12.694560][date:&quot;2008-11-17T20:02:43Z&quot;];
-node(if:version()&gt;4)(changed:&quot;2015-08-30T13:05:20Z&quot;,&quot;2025-05-04T17:31:24Z&quot;)(around:100,50.487124,12.090749)[&quot;wheelchair&quot;!~&quot;^n&quot;]-&gt;.s0;
-node.s0[&quot;tourism&quot;=&quot;information&quot;]-&gt;.s1;
-.s0 &lt;&lt;-&gt;.s2;
-complete(3).s0-&gt;.s3 { way(bn)[&quot;amenity&quot;]; node(w); }
-out tags asc (50.737254,12.345249,50.824896,12.452820);
-.s1 out meta qt;
-.s2 out 2 body;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

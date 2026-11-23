@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1837</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1837</p><h1>Query 1837</h1><p class="muted">fuzz:4:evaluators:63 · 0.00 s CPU · expected status <code>query-error: line N: parse error: count_tags(...) does not accept any arguments</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-node(if:is_closed())(id:1822184410,2482989884,2493033797,3542986763,4687139609,4781076852)[~&quot;^man&quot;~&quot;storag&quot;]-&gt;.s0;
-.s0 convert stat ::geom=center(geom()),k0=(is_closed()?(count_tags()):(count_distinct_members())),::id=id(),k1=lrs_union(t[&quot;footway&quot;],&quot;name&quot;),bad=count_tags(1),::=::-&gt;.s1;
-node(r.s1)[&quot;parking:lane:right&quot;=&quot;parallel&quot;]-&gt;.s2;
-.s1 out tags;
-.s2 out count;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/tag_value.cc.html#L539">overpass_api/statements/tag_value.cc:539</a></li></ul></main></body></html>

@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1475</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1475</p><h1>Query 1475</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:544 · 0.29 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][timeout:60];
-nwr(51.131489,13.847132,51.139872,13.912114)(if:(((is_closed()?(changeset()):(lat()))&gt;=lrs_min(lrs_union(t[&quot;emergency&quot;],&quot;name&quot;)))||((&quot;a&quot;+suffix(t[&quot;addr:postcode&quot;]))==number(t[&quot;material&quot;]))))-&gt;.s0;
-.s0 &lt;-&gt;.s1;
-.s0 &gt;-&gt;.s2;
-.s1 convert stat k2=type(),k1=lrs_min(lrs_union(lrs_union(lrs_union(t[&quot;public_transport&quot;],&quot;name&quot;),&quot;a;b;c&quot;),lrs_isect(&quot;1;2&quot;,&quot;a;b;c&quot;))),k0=((type()==type())?(number(t[&quot;power&quot;])):((1?(count_members()):(count_members())))),k3=lrs_union(t[&quot;building&quot;],t[&quot;lane_markings&quot;]),::id=id()-&gt;.s3;
-.s0 out body asc;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

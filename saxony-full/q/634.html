@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 634</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 634</p><h1>Query 634</h1><p class="muted">fuzz:4:history,areas,complete,statements:979 · 0.70 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2011-12-26T13:16:39Z&quot;];
-node(id:296146848,3079264269,5552084805,12215610056,13955254843)[&quot;oneway&quot;=&quot;yes&quot;](51.122011,14.724874,51.130028,15.036456)-&gt;.s0;
-.s0 &lt;-&gt;.s1;
-is_in(50.839190,13.071872)-&gt;.s2;
-node(area.s2)(51.468433,12.193522,51.476527,12.264102)-&gt;.s3;
-nwr[&quot;operator&quot;~&quot;^Landratsamt Mittelsachsen$&quot;][&quot;population&quot;!~&quot;^26&quot;]-&gt;.s4;
-.s1 compare(delta:lat())-&gt;.s5;
-.s1 out ids asc 6 (51.483353,12.292665,51.559762,12.366060);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

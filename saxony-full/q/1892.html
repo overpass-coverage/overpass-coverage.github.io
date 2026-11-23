@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1892</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1892</p><h1>Query 1892</h1><p class="muted">fuzz:4:history,areas,complete,statements:328 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2024-12-05T20:46:11Z&quot;,&quot;2026-01-25T12:12:34Z&quot;];
-rel[~&quot;^cro&quot;~&quot;unma&quot;](poly:&quot;50.939551 13.691458 50.907440 13.698028 50.900233 13.707131 50.913822 13.750991&quot;)(id:6276497,6803584,8358629,12634023,13059926,13133539)-&gt;.s0;
-retro(date(&quot;2011-05-05T09:41:48Z&quot;)) { way(id:51850396)-&gt;.s1; .s1 out ids; }
-.s1 &lt;-&gt;.s2;
-.s1 compare(delta:is_tag(&quot;entrance&quot;))-&gt;.s3;
-.s1 out tags;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/compare.cc.html#L70">overpass_api/statements/compare.cc:70</a></li></ul></main></body></html>

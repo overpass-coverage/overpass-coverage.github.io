@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 438</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 438</p><h1>Query 438</h1><p class="muted">fuzz:4:history,complete,output:188 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][timeout:25][out:csv(&quot;entrance&quot;,::lat,&quot;roof:shape&quot;,::&quot;count:areas&quot;,::version,::&quot;count:ways&quot;,::&quot;count:relations&quot;,&quot;cycleway:both&quot;,::count)];
-way(51.050184,14.957901,51.091221,14.973975)[&quot;check_date:currency:XBT&quot;=&quot;2025-07-05&quot;][&quot;maxspeed:type&quot;=&quot;DE:zone30&quot;][!&quot;roof:shape&quot;]-&gt;.s0;
-way.s0[!&quot;highway&quot;]-&gt;.s1;
-node(way_link.s1:2-)-&gt;.s2;
-complete(6).s2-&gt;.s3 { way(around:0)[&quot;building:levels&quot;]; }
-node(around.s2:300)[&quot;waterway&quot;!~&quot;ditch|drain|stream&quot;]-&gt;.s4;
-.s1 out tags qt;
-.s4 out qt ids;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 80</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 80</p><h1>Query 80</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:486 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[bbox:50.359779,12.187504,50.585447,12.475632][maxsize:268435456][timeout:180][out:csv(::&quot;count:ways&quot;,::&quot;count:nodes&quot;,::id,&quot;roof:shape&quot;,&quot;service&quot;,&quot;roof:shape&quot;,::otype,::user)];
-nw[&quot;is_in&quot;=&quot;Mittelsachsen,Chemnitz,Sachsen,Bundesrepublik Deutschland,Europe&quot;](if:(is_number(t[&quot;layer&quot;])||((-length())&gt;lon())))(if:uid()&gt;14000000)-&gt;.s0;
-node.s0(if:(is_tag(&quot;building&quot;)||(!(count_members()&lt;=changeset()))))-&gt;.s1;
-node.s1(if:(0||((count_members()+uid())==(is_tag(&quot;network&quot;)?(uid()):(version())))))-&gt;.s2;
-.s2 convert row ::id=id(),tags=count_tags();
-out;
-.s2 out skel geom;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

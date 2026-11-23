@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 472</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 472</p><h1>Query 472</h1><p class="muted">fuzz:4:history,complete,evaluators:527 · 2.61 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2010-06-17T17:38:32Z&quot;];
+rel(around:1000,50.498322,12.762345)-&gt;.s0;
+.s0 convert row k2=user(),k0=lrs_min(2),k3=(!(!is_closed())),k1=&quot;1;2&quot;,::id=id()-&gt;.s1;
+rel.s0-&gt;.s2;
+.s2 out;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/tag_value.h.html#L792">overpass_api/statements/tag_value.h:792</a></li></ul></main></body></html>

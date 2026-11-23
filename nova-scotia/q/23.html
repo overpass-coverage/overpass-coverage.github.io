@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 23</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 23</p><h1>Query 23</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:469 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">way(623446163)-&gt;.s0;
+nw[~&quot;^destination$&quot;~&quot;^Highway 104$&quot;][!&quot;plant:output:electricity&quot;]-&gt;.s1;
+.s1 &gt;-&gt;.s2;
+for.s2-&gt;.s3 (lrs_max(id())) { make group value=_.val,w=count(ways); }
+area[name=&quot;Black Brook Lake&quot;]-&gt;.s4;
+way(area.s4)[&quot;power&quot;=&quot;minor_line&quot;]-&gt;.s5;
+.s1 out;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

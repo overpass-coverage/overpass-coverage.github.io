@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 651</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 651</p><h1>Query 651</h1><p class="muted">fuzz:3:history,complete:1978 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-wr(46.356988,-60.850001,46.496749,-60.607721)[&quot;plant:source&quot;!=&quot;coal&quot;]-&gt;.s0;
-node(way_link.s0:3-)-&gt;.s1;
-complete(6).s1-&gt;.s2 { node(w); way(bn)[&quot;power&quot;]; }
-node.s1(id:833410288,1062782630,1143086646,4841852805,5345156387,8122956824)-&gt;.s3;
-node(r.s3)[&quot;frequency&quot;!~&quot;^6&quot;]-&gt;.s4;
-.s0 out skel qt;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

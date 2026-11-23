@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2707</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2707</p><h1>Query 2707</h1><p class="muted">fuzz:3:history,complete:1607 · 0.56 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2018-07-29T00:36:36Z&quot;,&quot;2021-11-16T08:24:37Z&quot;];
-node(44.500927,-64.133292,44.529344,-64.067812)[&quot;collection_times&quot;=&quot;08:00;Mo-Fr 08:00&quot;][&quot;water_source&quot;=&quot;main&quot;](changed:&quot;2011-07-18T21:54:22Z&quot;,&quot;2018-09-04T16:45:39Z&quot;)-&gt;.s0;
-retro(date(&quot;2017-01-09T15:06:49Z&quot;)) { way[&quot;power&quot;=&quot;pole&quot;](id:71441142,77306574,224252370,345552278,347958166,469079379,619211804,955828326,1137632312,1475423464)[&quot;surface&quot;=&quot;concrete&quot;](44.620274,-64.723846,44.795329,-64.627027)-&gt;.s1; .s1 out ids; }
-complete(2).s0-&gt;.s2 { way(bn)[&quot;source&quot;]; node(w); }
-way(around.s1:20)[&quot;building&quot;=&quot;nursing_home&quot;]-&gt;.s3;
-rel(bw.s2:&quot;part&quot;)-&gt;.s4;
-foreach.s4-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
-.s2 out skel bb (45.437770,-63.112688,45.452283,-63.075642);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

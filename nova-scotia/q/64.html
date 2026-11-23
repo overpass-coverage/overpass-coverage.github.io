@@ -1,0 +1,5 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 64</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 64</p><h1>Query 64</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3105 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">node(id:1046055072,2328598619)-&gt;.s0;
+.s0 &lt;&lt;-&gt;.s1;
+make stat k0=(s0.sum((0?(count_by_role(&quot;in&quot;)):(version())))-s0.min(uid())),k1=(-date(s0.max(timestamp()))),k2=s0.u(lrs_min(&quot;a;b;c&quot;))-&gt;.s2;
+.s0 out;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

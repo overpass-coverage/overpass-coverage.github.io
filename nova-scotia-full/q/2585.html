@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2585</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2585</p><h1>Query 2585</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3669 · 0.31 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:popup(&quot;Shops&quot;;[&quot;golf&quot;=&quot;fairway&quot;];[&quot;unsigned_ref&quot;!=&quot;6763&quot;];)][maxsize:536870912][date:&quot;2010-10-25T12:15:57Z&quot;];
-wr(45.730167,-60.520257,45.881421,-60.448641)(newer:&quot;2015-05-22T04:24:31Z&quot;)[&quot;postal_code&quot;~&quot;^B4E&quot;]-&gt;.s0;
-node.s0(44.521498,-65.667775,44.743805,-65.402755)-&gt;.s1;
-.s0 convert item k3=(is_number(id())?(lrs_min(t[&quot;building&quot;])):((0?(&quot;yes&quot;):(suffix(t[&quot;fire_hydrant:type&quot;]))))),k0=is_number(suffix((is_number(t[&quot;oneway&quot;])?(&quot;2018-01-01&quot;):(t[&quot;lamp_mount&quot;])))),k2=suffix(((t[&quot;height&quot;]==&quot;2&quot;?(timestamp()):(t[&quot;addr:suburb&quot;]))+lrs_min(t[&quot;maxheight&quot;]))),!&quot;land_area&quot;,k1=lrs_min((0?(t[&quot;light:lit&quot;]):(id())))-&gt;.s2;
-.s2 is_in-&gt;.s3;
-way[&quot;destination:street:to&quot;=&quot;Prince Albert Road;Braemar Drive&quot;][&quot;natural&quot;!~&quot;^tr&quot;]-&gt;.s4;
-.s2 out body bb 32;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

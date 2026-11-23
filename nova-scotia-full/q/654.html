@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 654</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 654</p><h1>Query 654</h1><p class="muted">fuzz:3:areas,complete:1025 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;railway&quot;)];
-node(id:842839577,1135287515,1235237842,4549490565,4879561376,9220211130,13130691861)(id:912896952,1803453843,2332459695,3511558242,4589316706,13323775584)(if:id()&gt;6000000000)-&gt;.s0;
-area[name=&quot;Big Molly Upsim Lake&quot;]-&gt;.s1;
-way(area.s1)[&quot;water&quot;=&quot;pond&quot;]-&gt;.s2;
-.s2 &gt;-&gt;.s3;
-.s0 out count;
-.s2 out skel 44;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 142</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 142</p><h1>Query 142</h1><p class="muted">fuzz:4:evaluators:12 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-nwr[&quot;natural&quot;=&quot;scrub&quot;](45.041081,-64.423423,45.127830,-64.290587)-&gt;.s0;
-.s0 convert row k0=(is_date(type())?(lrs_min(timestamp())):((0?(type()):(timestamp())))),::=::,!&quot;addr:housenumber&quot;,k1=lrs_union(lrs_isect(lrs_union(t[&quot;light:method&quot;],&quot;name&quot;),lrs_union(t[&quot;natural&quot;],&quot;name&quot;)),&quot;1;2&quot;)-&gt;.s1;
-way(around.s1:300)[&quot;access&quot;!~&quot;customers|no|private|yes&quot;]-&gt;.s2;
-for.s0-&gt;.s3 (abs(count_distinct_members())) { make group value=_.val,count=count(nwr); }
-.s1 out body geom asc 11;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

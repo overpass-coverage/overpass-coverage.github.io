@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2297</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2297</p><h1>Query 2297</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:479 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::&quot;count:areas&quot;,&quot;ref&quot;,&quot;type&quot;,::&quot;count:nodes&quot;,::changeset,&quot;lanes&quot;;false)][timeout:60];
-node(id:1319371033,2439142179)-&gt;.s0;
-node(way_cnt.s0:1-2)-&gt;.s1;
-if ((s1.count(nwr)&gt;=100)) { make yes n=s1.count(nwr)-&gt;.s2; } else { make no n=0-&gt;.s2; }
-node[&quot;plant:source&quot;~&quot;^coal$&quot;][~&quot;post&quot;~&quot;Up&quot;,i][&quot;lanes&quot;!=&quot;2&quot;]-&gt;.s3;
-.s1 out (45.316130,-63.344706,45.399667,-63.224968) center count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

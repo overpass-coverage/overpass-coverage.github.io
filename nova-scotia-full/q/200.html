@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 200</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 200</p><h1>Query 200</h1><p class="muted">fuzz:3::2139 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;service&quot;)][bbox:45.791391,-61.325605,45.901708,-61.112893];
-node(id:814216103,911809346,1143086646,1144796978,2488748395,2511029990,13323775584)[&quot;shop&quot;](id:1230199079,3542996560,4625705549,6013927983,12961545188)-&gt;.s0;
-node.s0(45.902925,-61.206376,46.068447,-61.114920)-&gt;.s1;
-node.s1(if:date(timestamp())&gt;date(&quot;2025-01-01&quot;))-&gt;.s2;
-node.s2(id:2190586085,2439930410,8754181331,14040167100)-&gt;.s3;
-foreach.s1-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
-.s1 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

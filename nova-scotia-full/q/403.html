@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 403</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 403</p><h1>Query 403</h1><p class="muted">fuzz:4:history,areas,complete,statements:500 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-nwr(newer:&quot;2018-11-15T16:21:16Z&quot;)(around:50,44.666444,-64.831321)-&gt;.s0;
-retro(date(&quot;2013-06-05T00:45:12Z&quot;)) { way(44.724385,-63.583808,44.779051,-63.354705)[&quot;emergency&quot;=&quot;fire_hydrant&quot;]-&gt;.s1; .s1 out ids; }
-(.s1; - .s0;)-&gt;.s2;
-way(bn.s1)-&gt;.s3;
-.s0 out meta asc 26;
-.s3 out ids 13;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

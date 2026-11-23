@@ -1,0 +1,5 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 570</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 570</p><h1>Query 570</h1><p class="muted">fuzz:4:evaluators:534 · 0.45 s CPU · expected status <code>ok</code></p><pre class="query">nw[&quot;natural&quot;=&quot;bay&quot;]-&gt;.s0;
+make stat k0=(lrs_in(&quot;a&quot;,s0.min(suffix(type())))?(s0.max((t[&quot;emergency&quot;]==&quot;3&quot;?(uid()):(number(t[&quot;fire_hydrant:type&quot;]))))):(date(s0.max(timestamp())))),k1=s0.u(count_tags()),k2=number(s0.u((type()+&quot;NS 111 South&quot;)))-&gt;.s1;
+(.s0; - .s1;)-&gt;.s2;
+foreach.s2-&gt;.it{ .it out; }
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

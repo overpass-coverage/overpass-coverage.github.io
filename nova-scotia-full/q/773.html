@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 773</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 773</p><h1>Query 773</h1><p class="muted">fuzz:4:evaluators:168 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-nwr(around:1000,44.427971,-64.819627)-&gt;.s0;
-for.s0-&gt;.s1 (number(lrs_min(lrs_union(t[&quot;owner&quot;],&quot;name&quot;)))) { ._ out count; }
-way.s0(45.725030,-63.808937,45.754390,-63.660073)-&gt;.s2;
-way.s2[&quot;operator&quot;!=&quot;South Queens Middle School&quot;]-&gt;.s3;
-.s0 out tags (44.594796,-63.482575,44.602911,-63.439522);
-.s2 out body qt;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 170</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 170</p><h1>Query 170</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:97 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:popup(&quot;Named things&quot;;[&quot;waterway&quot;=&quot;stream&quot;];[&quot;lanes&quot;!=&quot;4&quot;][&quot;foot&quot;=&quot;designated&quot;];&quot;amenity&quot;;)(&quot;Roads&quot;;[&quot;construction&quot;!=&quot;motorway_link&quot;];)(&quot;Named things&quot;;[&quot;old_addr:housenumber&quot;][&quot;building&quot;!=&quot;retail&quot;];[&quot;destination&quot;~&quot;^Sa&quot;][&quot;brand:wikidata&quot;~&quot;^Q7&quot;];)];
-nwr(around:1000,45.067534,-64.447217)(newer:&quot;2025-08-19T13:40:45Z&quot;)-&gt;.s0;
-complete(2).s0-&gt;.s1 { way(bn)[&quot;lanes&quot;]; node(w); }
-for.s0-&gt;.s2 (keys()) { make group value=_.val,count=count(nwr); }
-.s0 out qt 5 noids count;
-.s2 out;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

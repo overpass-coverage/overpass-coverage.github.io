@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1409</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1409</p><h1>Query 1409</h1><p class="muted">fuzz:4:history,complete,output:324 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][timeout:60][maxsize:1073741824];
-way(if:changeset()&gt;85000000)[&quot;entrance&quot;!=&quot;yes&quot;](id:30912428,151392599,270891813,312113535,313230688,419007778,544511409,555164782,786130933,1505097292)-&gt;.s0;
-retro(date(&quot;2024-03-04T15:42:25Z&quot;)) { rel(newer:&quot;2011-04-13T22:11:57Z&quot;)[&quot;hazmat&quot;=&quot;designated&quot;](51.313393,12.376388,51.352981,12.545253)[&quot;recycling_type&quot;=&quot;container&quot;](50.347816,12.772911,50.472110,13.068756)-&gt;.s1; .s1 out ids; }
-.s0 &lt;-&gt;.s2;
-(.s0; - .s1;)-&gt;.s3;
-node(r.s0)[&quot;building:levels&quot;=&quot;5&quot;]-&gt;.s4;
-complete(3).s1-&gt;.s5 { node(w); way(bn)[&quot;leaf_type&quot;]; }
-.s2 out count geom;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

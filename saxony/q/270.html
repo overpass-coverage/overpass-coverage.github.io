@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 270</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 270</p><h1>Query 270</h1><p class="muted">fuzz:4:poi,areas:436 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">nw[&quot;fire_hydrant:position&quot;=&quot;green&quot;](51.161729,13.896510,51.203246,14.130411)-&gt;.s0;
+way(r.s0)[&quot;start_date&quot;=&quot;2005-09-01&quot;]-&gt;.s1;
+.s0 is_in-&gt;.s3;
+.s3 &gt;&gt;-&gt;.s4;
+.s4 out;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

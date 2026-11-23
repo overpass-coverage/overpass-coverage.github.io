@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2006</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2006</p><h1>Query 2006</h1><p class="muted">fuzz:4:history,complete,evaluators:879 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-way(id:344555206,641573484,686145939,1424788977)[&quot;sidewalk&quot;~&quot;^ri&quot;]-&gt;.s0;
-wr(bn.s0)[&quot;operator:fr&quot;=&quot;Postes Canada&quot;]-&gt;.s1;
-make info v=s1.set((0?(suffix(t[&quot;highway&quot;])):(t[&quot;fire_hydrant:type&quot;]))),c=(date(s1.max(timestamp()))-(number(s1.u(id()))/number(s1.u((id()+id())))))-&gt;.s2;
-.s0 out tags center 36;
-.s2 out body qt 45 (45.634919,-61.559569,45.734391,-61.529437);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

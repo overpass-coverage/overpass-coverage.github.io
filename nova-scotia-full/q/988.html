@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 988</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 988</p><h1>Query 988</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3998 · 0.12 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][out:xml][timeout:180];
-wr(poly:&quot;46.976958 -60.458805 46.974230 -60.459935 46.971517 -60.465614 46.969273 -60.480329 46.962621 -60.484270 46.945744 -60.457406 46.940306 -60.453533 46.946504 -60.448720 46.947423 -60.447631 46.948775 -60.437001&quot;)-&gt;.s0;
-way(r.s0)-&gt;.s1;
-(.s1; - .s0;)-&gt;.s2;
-if (((s2.max(id())+s2.set(number(t[&quot;crossing&quot;])))!=s2.max((t[&quot;amenity&quot;]==&quot;telecom;power&quot;?(suffix(t[&quot;structure&quot;])):(user()))))) { make yes n=s2.count(nwr)-&gt;.s3; }
-node(way_link.s3:2-)-&gt;.s4;
-out body;
-.s1 out noids asc (44.383065,-66.175452,44.480346,-66.163770) tags;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

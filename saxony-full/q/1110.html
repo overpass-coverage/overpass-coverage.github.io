@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1110</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1110</p><h1>Query 1110</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1788 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][timeout:60][out:csv(::&quot;count:ways&quot;,::lon,::user,::&quot;count:relations&quot;,::changeset,&quot;natural&quot;)][date:&quot;2012-04-14T00:05:57Z&quot;];
-wr[&quot;destination:forward&quot;=&quot;Wurzen;Luppa&quot;](51.089491,14.288910,51.241278,14.655979)(51.463451,14.338881,51.552178,14.454539)-&gt;.s0;
-timeline(way,102655492,3)-&gt;.s1;
-rel.s1(id:9361,1369463,5267834,7224689,7489421,8908789)-&gt;.s2;
-.s1 &gt;-&gt;.s3;
-foreach.s0-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
-.s1 out geom;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

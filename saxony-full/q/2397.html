@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2397</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2397</p><h1>Query 2397</h1><p class="muted">fuzz:4:history,complete,evaluators:953 · 0.08 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2018-07-06T14:58:22Z&quot;];
-rel[&quot;plant:output:electricity&quot;=&quot;75 kW&quot;](poly:&quot;51.029049 12.920014 51.004011 12.879112 50.989827 12.926305 50.995807 12.943560&quot;)(changed:&quot;2017-03-22T15:36:52Z&quot;)-&gt;.s0;
-.s0 &lt;-&gt;.s1;
-for.s0-&gt;.s2 ((!is_date(t[&quot;level&quot;]))) { ._ out count; }
-(.s1; - .s2;)-&gt;.s3;
-make stat k0=s2.sum((changeset()+version())),k1=s2.sum((id()-lon()))-&gt;.s4;
-.s4 out meta qt (50.535961,12.600815,50.611885,12.620565);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

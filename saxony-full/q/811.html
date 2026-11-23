@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 811</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 811</p><h1>Query 811</h1><p class="muted">fuzz:4:history,complete,evaluators:284 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][adiff:&quot;2011-05-15T15:13:58Z&quot;,&quot;2014-02-23T15:20:38Z&quot;];
-way[&quot;demolished:man_made&quot;=&quot;silo&quot;]-&gt;.s0;
-node(r.s0)-&gt;.s1;
-complete(4).s0-&gt;.s2 { way(bn)[&quot;waterway&quot;]; node(w); }
-.s1 convert stat ::=::,k1=lrs_union(lrs_union(t[&quot;parking&quot;],&quot;name&quot;),lrs_union(t[&quot;bicycle&quot;],&quot;name&quot;)),k0=lrs_union(lrs_union(&quot;a;b;c&quot;,lrs_union(lrs_union(t[&quot;man_made&quot;],&quot;name&quot;),&quot;1;2&quot;)),lrs_isect(&quot;1;2&quot;,lrs_union(t[&quot;addr:suburb&quot;],&quot;name&quot;))),k2=lrs_in(suffix(t[&quot;width&quot;]),id())-&gt;.s3;
-.s3 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

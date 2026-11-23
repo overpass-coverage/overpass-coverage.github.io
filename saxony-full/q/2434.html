@@ -1,6 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2434</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2434</p><h1>Query 2434</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2892 · 3.79 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:536870912][out:json][date:&quot;2011-05-29T13:44:47Z&quot;];
-nwr(50.898847,13.342633,50.904886,13.351843)-&gt;.s0;
-nwr[&quot;uic_ref&quot;~&quot;^714259$&quot;][&quot;lane_markings&quot;~&quot;no&quot;,i][&quot;kerb&quot;!=&quot;lowered&quot;]-&gt;.s1;
-make stat k0=s1.max(&quot;1;2;3&quot;),k1=(((s1.min(count_distinct_by_role(&quot;stop_exit_only&quot;))&gt;=100)||(number(s1.u(lrs_min(&quot;1;2&quot;)))==0.5))?(s1.min(version())):(date(s1.max(timestamp())))),k2=date(s1.max(timestamp())),k3=s1.count(relations)-&gt;.s2;
-.s1 out center ids;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

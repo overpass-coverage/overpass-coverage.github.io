@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1679</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1679</p><h1>Query 1679</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1937 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::timestamp,::version)][maxsize:536870912][bbox:51.024619,12.523103,51.187647,12.734618][date:&quot;2018-11-12T18:42:08Z&quot;];
-way[&quot;check_date&quot;!~&quot;^2026\\-&quot;][!&quot;highway&quot;](around:100,50.548812,12.143539)-&gt;.s0;
-way.s0[&quot;electrified&quot;!=&quot;no&quot;]-&gt;.s1;
-way[&quot;destination&quot;=&quot;Spree&quot;]-&gt;.s2;
-.s1 out body;
-.s2 out (51.221201,14.293870,51.277645,14.398011) tags center;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

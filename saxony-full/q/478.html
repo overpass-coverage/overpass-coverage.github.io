@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 478</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 478</p><h1>Query 478</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1039 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:csv(::id,&quot;level&quot;)][maxsize:268435456];
-nw[&quot;destination:forward&quot;](around:100,50.656257,13.213841)-&gt;.s0;
-node(way_cnt.s0:3-)-&gt;.s1;
-.s1 convert row ::id=id(),tags=count_tags();
-out;
-.s0 out asc body;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

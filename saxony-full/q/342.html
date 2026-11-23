@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 342</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 342</p><h1>Query 342</h1><p class="muted">fuzz:3:history,complete:2945 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-rel(poly:&quot;51.391266 12.424525 51.384188 12.381417 51.372218 12.385261 51.327094 12.415367&quot;)(newer:&quot;2013-06-28T18:25:16Z&quot;)(if:length()&gt;10)[&quot;highway&quot;]-&gt;.s0;
-way(bn.s0)[&quot;fee&quot;=&quot;no&quot;]-&gt;.s1;
-rel.s0[&quot;waterway&quot;~&quot;^(ditch|drain|stream)$&quot;]-&gt;.s2;
-(.s1; .s2;)-&gt;.s3;
-(.s1; .s2;)-&gt;.s4;
-.s1 out count;
-.s2 out meta center;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1461</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1461</p><h1>Query 1461</h1><p class="muted">fuzz:4:evaluators:478 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-wr(44.909595,-63.926590,44.926591,-63.878623)[&quot;crossing&quot;!=&quot;unmarked&quot;]-&gt;.s0;
-.s0 convert row angles=per_vertex(pos()),!&quot;owner&quot;,::=::,k0=suffix(((type()!=t[&quot;crossing&quot;])?(count_members()):((suffix(t[&quot;footway&quot;])+t[&quot;light:lit&quot;])))),::id=id()-&gt;.s1;
-node(around.s1:300)[&quot;unsigned_ref&quot;=&quot;6940&quot;]-&gt;.s2;
-(.s2; - .s2;)-&gt;.s3;
-.s2 out meta (45.111979,-63.439235,45.120146,-63.369947);
-.s3 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

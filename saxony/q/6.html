@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 6</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 6</p><h1>Query 6</h1><p class="muted">fuzz:4:history,complete,output:214 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;landuse&quot;,::version,::otype;true;&quot;;&quot;)][date:&quot;2019-10-22T09:37:34Z&quot;];
+rel(newer:&quot;2015-11-04T18:00:25Z&quot;)(id:1974195,8251234,10625682,18157493)-&gt;.s0;
+complete(3).s0-&gt;.s1 { way(bn)[&quot;building&quot;]; node(w); }
+.s0 out  bb tags noids;
+.s1 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

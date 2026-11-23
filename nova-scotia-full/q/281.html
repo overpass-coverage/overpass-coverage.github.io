@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 281</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 281</p><h1>Query 281</h1><p class="muted">fuzz:4:history,complete,evaluators:962 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][date:&quot;2015-06-28T22:55:21Z&quot;];
-way(if:1)(44.668335,-63.156157,44.717399,-63.106035)-&gt;.s0;
-way.s0(44.699081,-64.891687,44.944606,-64.732890)-&gt;.s1;
-for.s1-&gt;.s2 ((!is_number(suffix(t[&quot;addr:suburb&quot;])))) { convert item ::id=id(),g=_.val; }
-complete(1).s0-&gt;.s3 { node(w); way(bn)[&quot;addr:housenumber&quot;]; }
-.s0 convert stat k0=count_distinct_by_role(&quot;from&quot;),k1=is_number((t[&quot;addr:county&quot;]==&quot;yes&quot;?(t[&quot;emergency&quot;]):(lrs_min(lrs_union(t[&quot;addr:locality&quot;],&quot;name&quot;)))))-&gt;.s4;
-.s3 out skel;
-.s4 out body;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1961</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1961</p><h1>Query 1961</h1><p class="muted">fuzz:4:history,complete,evaluators:161 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;sidewalk&quot;)];
-node[&quot;passenger_lines&quot;=&quot;2&quot;](around:10,50.503418,12.932099)[&quot;historic&quot;=&quot;memorial&quot;]-&gt;.s0;
-wr(bn.s0)-&gt;.s1;
-.s0 &lt;&lt;-&gt;.s2;
-make stat k0=((s2.count(ways)/s2.count(nr))-s2.sum(count_tags())),k1=s2.max((t[&quot;layer&quot;]==&quot;stone:plates&quot;?(t[&quot;smoothness&quot;]):(id()))),k2=s2.count(nw),k3=(-date(s2.max(timestamp())))-&gt;.s3;
-node.s0(id:702474607,726534654,2012521449,2143348500,2458280752,2668606520,3161209719,6089661915,9574578668,14100848566)-&gt;.s4;
-.s0 out body 14;
-.s2 out meta;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

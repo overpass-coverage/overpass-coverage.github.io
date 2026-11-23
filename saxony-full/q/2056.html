@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2056</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2056</p><h1>Query 2056</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:129 · 0.62 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:536870912][out:csv(::&quot;count:nodes&quot;,::timestamp,::lon,::&quot;count:relations&quot;,::id,::otype;true)][date:&quot;2013-03-28T21:04:19Z&quot;];
-way[&quot;operator&quot;](id:282081798,352751764,883114608,1131170181)[&quot;shelter_type&quot;=&quot;public_transport&quot;]-&gt;.s0;
-way(r.s0:&quot;&quot;)-&gt;.s1;
-rel(r.s1)-&gt;.s2;
-node(r.s0)[&quot;destination:forward&quot;~&quot;^(Corona\\-Ambulanz|Eger\\ \\(Cheb\\)|Görlitz|Hof;Pirk|Moritzburg|Rückersdorf|Wurzen;Luppa|Zwickau;Rodewisch)$&quot;]-&gt;.s3;
-is_in(50.766514,12.726509)-&gt;.s4;
-nwr(area.s4)[&quot;razed:man_made&quot;=&quot;tower&quot;]-&gt;.s5;
-.s5 out skel qt (50.922061,12.671033,50.992175,12.714106);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

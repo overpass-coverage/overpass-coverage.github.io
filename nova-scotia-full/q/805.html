@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 805</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 805</p><h1>Query 805</h1><p class="muted">fuzz:3:history,complete:870 · 1.08 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;name&quot;)][date:&quot;2015-05-05T00:43:29Z&quot;];
-node(2331214955)(46.419163,-61.119347,46.467981,-61.099401)(newer:&quot;2012-04-21T22:31:31Z&quot;)[&quot;communication:mobile_phone&quot;=&quot;yes&quot;]-&gt;.s0;
-rel(bn.s0)[&quot;light:lit&quot;~&quot;^(dusk\\-dawn)$&quot;,i]-&gt;.s1;
-node.s0(if:is_closed())-&gt;.s2;
-node.s0(if:uid()&gt;23000000)-&gt;.s3;
-rel(br.s2)[&quot;operator&quot;=&quot;Nova Scotia Nature Trust and private owner(s)&quot;]-&gt;.s4;
-.s0 out skel bb;
-.s4 out ids qt 18 (46.205272,-60.943125,46.230482,-60.907767);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

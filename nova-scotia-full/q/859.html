@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 859</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 859</p><h1>Query 859</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:657 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][out:csv(&quot;telecom:medium&quot;,&quot;operator:wikidata&quot;,::version,&quot;power&quot;)];
-node[&quot;length&quot;=&quot;3&quot;][&quot;network:wikipedia&quot;!~&quot;^en:Halifa&quot;](if:changeset()&gt;30000000)-&gt;.s0;
-way(around.s0:300)[&quot;amenity&quot;=&quot;bicycle_parking&quot;]-&gt;.s1;
-(.s1; .s0;)-&gt;.s2;
-nw[&quot;shop&quot;=&quot;beverages&quot;][&quot;segregated&quot;]-&gt;.s3;
-way.s1(if:date(timestamp())&gt;date(&quot;2025-01-01&quot;))-&gt;.s4;
-.s4 out 1 meta;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

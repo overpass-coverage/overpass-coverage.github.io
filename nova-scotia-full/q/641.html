@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 641</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 641</p><h1>Query 641</h1><p class="muted">fuzz:4:history,complete,evaluators:986 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-wr(if:is_number(lrs_min(lrs_isect(&quot;a;b;c&quot;,t[&quot;addr:housenumber&quot;]))))[&quot;highway&quot;=&quot;crossing&quot;](around:50,45.540621,-64.484945)-&gt;.s0;
-if ((!(number(s0.u((suffix(t[&quot;addr:suburb&quot;])+suffix(t[&quot;addr:district&quot;]))))&lt;1e3))) { make yes n=s0.count(nwr)-&gt;.s1; }
-.s0 convert item k2=lrs_union(t[&quot;amenity&quot;],(type()+timestamp())),k0=suffix((is_number(&quot;5&quot;)?(suffix(t[&quot;voltage&quot;])):(id()))),::id=id(),k1=is_number(t[&quot;operator&quot;])-&gt;.s2;
-(.s2; .s1;)-&gt;.s3;
-.s0 out skel center;
-.s3 out ids;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

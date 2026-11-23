@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1833</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1833</p><h1>Query 1833</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:142 · 0.00 s CPU · expected status <code>query-error: line N: parse error: per_member(...) must have one or more arguments</code></p><pre class="query">[timeout:180];
-way(id:461402055,469492107,597941271)(id:107466484,169176783,169183506,170146502,188070511,235555700,241185191,467474913,624802423,687207112,1112794151,1213449495)-&gt;.s0;
-nwr[~&quot;^laundry$&quot;~&quot;^yes$&quot;][!&quot;tactile_paving&quot;]-&gt;.s1;
-(.s0; .s1;)-&gt;.s2;
-.s0 convert stat k0=is_number(t[&quot;phases&quot;]),angles=per_vertex(angle()),k3=suffix(id()),!&quot;fire_hydrant:type&quot;,k1=timestamp(),k2=lrs_isect(lrs_isect(t[&quot;emergency&quot;],&quot;1;2&quot;),lrs_isect(&quot;a;b;c&quot;,lrs_isect(&quot;1;2&quot;,&quot;1;2&quot;))),bad=per_member(),members=per_member(ref())-&gt;.s3;
-.s3 &gt;-&gt;.s4;
-.s1 out meta geom;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

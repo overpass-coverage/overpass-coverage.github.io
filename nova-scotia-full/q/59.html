@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 59</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 59</p><h1>Query 59</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3317 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][diff:&quot;2017-03-01T17:30:10Z&quot;];
-nw(if:(!is_number(suffix(&quot;2018-01-01&quot;))))(45.209575,-61.613837,45.216332,-61.497523)[&quot;brand&quot;=&quot;Pharmasave&quot;]-&gt;.s0;
-make stat k0=s0.max(number(timestamp())),k1=s0.u((id()+suffix(t[&quot;addr:county&quot;]))),k2=s0.u((0?(user()):(user()))),k3=s0.min(changeset())-&gt;.s1;
-node[&quot;cyclestreet&quot;~&quot;^yes$&quot;]-&gt;.s2;
-.s2 compare-&gt;.s3;
-.s1 out meta geom 5;
-.s2 out geom body;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,4 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 95</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full, shrunk)</a> / query 95</p><h1>Query 95</h1><p class="muted">fuzz:4:evaluators:12 · 2.67 s CPU · expected status <code>ok</code></p><pre class="query">nwr[&quot;access&quot;=&quot;permissive&quot;]-&gt;.s0;
-.s0 convert row k0=(is_date(type())?(lrs_min(timestamp())):((0?(type()):(timestamp())))),::=::,!&quot;addr:street&quot;,k1=lrs_union(lrs_isect(lrs_union(t[&quot;waterway&quot;],&quot;name&quot;),lrs_union(t[&quot;source&quot;],&quot;name&quot;)),&quot;1;2&quot;)-&gt;.s1;
-.s0 out;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

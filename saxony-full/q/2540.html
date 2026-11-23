@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2540</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2540</p><h1>Query 2540</h1><p class="muted">fuzz:3:history,complete:1058 · 0.87 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;check_date&quot;)];
-way[&quot;rooms&quot;](around:500,51.184195,13.613490)(changed:&quot;2015-10-07T07:14:11Z&quot;,&quot;2019-10-06T20:23:42Z&quot;)(51.105871,13.962179,51.236068,14.127798)-&gt;.s0;
-way.s0(51.059907,14.146250,51.166085,14.214180)-&gt;.s1;
-way.s1(51.083377,13.725590,51.165804,13.869710)-&gt;.s2;
-complete(6).s0-&gt;.s3 { node(w); way(bn)[&quot;surface&quot;]; }
-rel(bn.s1)-&gt;.s4;
-.s1 out meta;
-.s3 out meta;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

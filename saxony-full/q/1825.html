@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1825</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1825</p><h1>Query 1825</h1><p class="muted">fuzz:3:history,complete:2123 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-nwr(50.811326,13.113597,50.901264,13.114895)[&quot;check_date:shelter&quot;=&quot;2022-10-10&quot;]-&gt;.s0;
-timeline(relation,4147029,2)-&gt;.s1;
-wr(bn.s0)-&gt;.s2;
-.s2 convert row ::id=id(),tags=count_tags();
-out;
-.s2 out ids 12;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

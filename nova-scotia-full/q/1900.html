@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1900</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1900</p><h1>Query 1900</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2118 · 0.30 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:536870912][timeout:60][out:json];
-nwr[&quot;destination&quot;=&quot;Lunenburg;Mahone Bay;Blockhouse&quot;](changed:&quot;2015-05-13T18:43:06Z&quot;)(45.497610,-63.213140,45.624277,-63.064128)[&quot;postal_code&quot;=&quot;B3K 5W4&quot;]-&gt;.s0;
-for.s0-&gt;.s1 (lrs_min(t[&quot;structure&quot;])) { make group value=_.val,count=count(nwr); }
-rel.s0(id:1618217,1619523,5125813,5369627,7068028,10213348,13460313,14087370,20963875)-&gt;.s2;
-.s0 &gt;&gt;-&gt;.s3;
-.s2 out 17 ids center;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

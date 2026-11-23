@@ -32,14 +32,10 @@ Each run below shows, for every source file of the query binary, which lines its
 queries run them.</p>
 <ul class="runs">
   <!-- One entry per run; each run lives in its own directory. -->
-  <li><div class="head"><a href="nova-scotia-full/">Nova Scotia, full</a> <a class="dl" href="nova-scotia-full/corpus.jsonl" download>corpus.jsonl · 2.1 MB</a></div>
-    <div class="muted">2,868 queries on one database with history and areas (Geofabrik full-history extract, latest edit 2026-11-15) · upstream master 8edf11b</div></li>
-  <li><div class="head"><a href="nova-scotia-full-shrunk/">Nova Scotia, full, shrunk</a> <a class="dl" href="nova-scotia-full-shrunk/corpus.jsonl" download>corpus.jsonl · 224 KB</a></div>
-    <div class="muted">the same coverage in 612 queries, each cut down to what it contributes (93% less text) · upstream master 8edf11b</div></li>
-  <li><div class="head"><a href="saxony-full/">Saxony, full</a> <a class="dl" href="saxony-full/corpus.jsonl" download>corpus.jsonl · 2.2 MB</a></div>
-    <div class="muted">3,110 queries on one database with history and areas (Geofabrik full-history extract of Sachsen, latest edit 2026-11-16) · upstream master 8edf11b</div></li>
-  <li><div class="head"><a href="saxony-full-shrunk/">Saxony, full, shrunk</a> <a class="dl" href="saxony-full-shrunk/corpus.jsonl" download>corpus.jsonl · 264 KB</a></div>
-    <div class="muted">the same coverage in 692 queries, each cut down to what it contributes (92% less text) · upstream master 8edf11b</div></li>
+  <li><div class="head"><a href="nova-scotia/">Nova Scotia</a> <a class="dl" href="nova-scotia/corpus.jsonl" download>corpus.jsonl · 224 KB</a></div>
+    <div class="muted">612 queries that run 68.5% of the query binary's lines · Geofabrik full-history extract with areas, latest edit 2026-11-15 · upstream master 8edf11b</div></li>
+  <li><div class="head"><a href="saxony/">Saxony</a> <a class="dl" href="saxony/corpus.jsonl" download>corpus.jsonl · 264 KB</a></div>
+    <div class="muted">692 queries that run 69.1% of the query binary's lines · Geofabrik full-history extract of Sachsen with areas, latest edit 2026-11-16 · upstream master 8edf11b</div></li>
 </ul>
 <h2>Run a suite yourself</h2>
 <p>Each run's <code>corpus.jsonl</code> (linked above) holds its queries, one JSON object per line. To compare two builds, save this as <code>run.py</code>, run it once per build on the same database, and diff the results:</p>

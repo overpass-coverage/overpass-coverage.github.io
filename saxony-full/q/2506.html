@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2506</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2506</p><h1>Query 2506</h1><p class="muted">fuzz:3:history,complete:2584 · 0.29 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][date:&quot;2017-04-23T17:55:54Z&quot;];
-nwr(51.071289,13.375976,51.228949,13.610545)[&quot;service&quot;=&quot;yard&quot;]-&gt;.s0;
-retro(date(&quot;2022-11-16T16:26:49Z&quot;)) { nwr(51.052043,12.969062,51.186230,13.298334)(if:version()&gt;3)[&quot;surveillance:zone&quot;=&quot;parking_entrance&quot;](50.386293,12.544942,50.476516,12.637926)-&gt;.s1; .s1 out ids; }
-rel.s1(id:247061,450875,6276391,10931347,12998757,13129750,14193226,14451136,14641160,18589684)-&gt;.s2;
-complete(1).s0-&gt;.s3 { way(bn)[&quot;access&quot;]; node(w); }
-.s0 out skel center asc;
-.s3 out body geom;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

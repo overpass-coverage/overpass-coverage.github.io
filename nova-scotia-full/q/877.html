@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 877</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 877</p><h1>Query 877</h1><p class="muted">fuzz:4:evaluators:435 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][bbox:45.038160,-64.588704,45.085056,-64.311697];
-node(43.688311,-65.135938,43.709718,-65.088062)-&gt;.s0;
-node.s0(if:is_number(count_members()))-&gt;.s1;
-node.s0(id:5048475298,5053966879)-&gt;.s2;
-make stat k0=s2.sum((id()/count_distinct_by_role(&quot;east&quot;))),::geom=hull(s2.gcat(geom()))-&gt;.s3;
-.s1 &gt;&gt;-&gt;.s4;
-.s0 out meta qt 31;
-.s1 out ids qt;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

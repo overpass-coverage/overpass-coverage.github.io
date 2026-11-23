@@ -1,6 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2247</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2247</p><h1>Query 2247</h1><p class="muted">fuzz:4:evaluators:744 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;building:material&quot;)];
-way[!&quot;railway:pzb&quot;](around:50,50.974751,13.784685)-&gt;.s0;
-node(way_cnt.s0:2-)-&gt;.s1;
-if (lrs_in(&quot;yes&quot;,s0.set(suffix(timestamp())))) { make yes n=s0.count(nwr)-&gt;.s2; } else { make no n=0-&gt;.s2; }
-.s2 out body qt;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

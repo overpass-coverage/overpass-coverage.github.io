@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 806</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 806</p><h1>Query 806</h1><p class="muted">fuzz:4:history,complete,evaluators:935 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2015-06-18T13:28:55Z&quot;];
-node[&quot;operator:en&quot;=&quot;Canada Post&quot;][&quot;population&quot;=&quot;12954&quot;](45.429904,-63.849695,45.446407,-63.829712)-&gt;.s0;
-.s0 convert stat k3=timestamp(),k0=(suffix((0?(type()):(t[&quot;frequency&quot;])))+(count_distinct_by_role(&quot;generator&quot;)+t[&quot;man_made&quot;])),k2=(!is_date(&quot;x;y&quot;)),k1=timestamp(),::geom=geom()-&gt;.s1;
-node.s0(44.222165,-64.703098,44.513637,-64.319596)-&gt;.s2;
-if (((s0.sum(lrs_min(t[&quot;lanes&quot;]))==10)||(s0.sum(count_distinct_members())==s0.min(abs(count_tags()))))) { make yes n=s0.count(nwr)-&gt;.s3; } else { make no n=0-&gt;.s3; }
-.s1 &gt;-&gt;.s4;
-.s2 out count;
-.s4 out body 18 (44.748577,-65.305770,44.817645,-65.284544);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

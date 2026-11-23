@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2701</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2701</p><h1>Query 2701</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3385 · 0.25 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][out:csv(&quot;lamp_mount&quot;,&quot;bridge&quot;,::&quot;count:ways&quot;;false)][timeout:60];
-nw[&quot;surface&quot;=&quot;paved&quot;][&quot;building:levels&quot;~&quot;^2&quot;](44.883089,-62.369973,45.002409,-62.347398)-&gt;.s0;
-way(around.s0:300)[&quot;natural&quot;!~&quot;^sc&quot;]-&gt;.s1;
-for.s1-&gt;.s2 (keys()) { ._ out count; }
-wr(bn.s1)[&quot;surface&quot;=&quot;unpaved&quot;]-&gt;.s3;
-.s0 out meta asc;
-.s1 out meta;
-.s2 out 5 meta;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1395</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1395</p><h1>Query 1395</h1><p class="muted">fuzz:4:history,complete,output:272 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:popup(&quot;Shops&quot;;[&quot;construction&quot;=&quot;motorway_link&quot;];[&quot;man_made&quot;=&quot;storage_tank&quot;][&quot;sidewalk:right&quot;];[&quot;check_date&quot;][&quot;crossing:markings&quot;];&quot;amenity&quot;;)(&quot;Other&quot;;[&quot;operator&quot;~&quot;^Pa&quot;][&quot;seats&quot;=&quot;4&quot;];&quot;ref&quot;;)];
-way(around:250,45.629772,-62.645467)-&gt;.s0;
-timeline(node,1456013165)-&gt;.s1;
-complete(2).s0-&gt;.s2 { way(bn)[&quot;lanes&quot;]; node(w); }
-way.s0(45.173206,-61.355666,45.333406,-61.285748)-&gt;.s3;
-complete(2).s1-&gt;.s4 { way(bn)[&quot;lanes&quot;]; node(w); }
-.s0 out asc geom meta;
-.s4 out qt count noids 5 bb;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

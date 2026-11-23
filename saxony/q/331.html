@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 331</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 331</p><h1>Query 331</h1><p class="muted">fuzz:4:history,areas,complete,statements:413 · 0.32 s CPU · expected status <code>ok</code></p><pre class="query">[adiff:&quot;2012-05-22T00:26:34Z&quot;,&quot;2021-11-26T20:05:24Z&quot;];
+wr[&quot;water_source&quot;]-&gt;.s0;
+way(bn.s0)-&gt;.s1;
+wr(bn.s1)-&gt;.s2;
+.s2 compare(delta:lat())-&gt;.s4;
+.s1 out;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,4 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 526</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 526</p><h1>Query 526</h1><p class="muted">fuzz:4:evaluators:904 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">way[&quot;brand&quot;=&quot;Mitteldeutsche Regiobahn&quot;]-&gt;.s0;
+way.s0(if:(((is_number(t[&quot;railway&quot;])?(count_tags()):(count_distinct_members()))!=date(type()))||is_number(count_distinct_members())))-&gt;.s2;
+.s0 out;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

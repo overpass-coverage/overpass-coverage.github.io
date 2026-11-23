@@ -1,5 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 546</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full, shrunk)</a> / query 546</p><h1>Query 546</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:142 · 0.00 s CPU · expected status <code>query-error: line N: parse error: per_member(...) must have one or more arguments</code></p><pre class="query">way(332251832)-&gt;.s0;
-nwr[!&quot;noexit&quot;]-&gt;.s1;
-.s0 convert stat k0=is_number(t),angles=per_vertex(angle()),k3=suffix(id()),!&quot;bus&quot;,k1=timestamp(),k2=lrs_isect(lrs_isect(&quot;1;2&quot;)),bad=per_member(),members=per_member(ref())-&gt;.s3;
-.s1 out;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/per_member.h.html#L78">overpass_api/statements/per_member.h:78</a></li></ul></main></body></html>

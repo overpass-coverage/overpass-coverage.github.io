@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1731</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1731</p><h1>Query 1731</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3102 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:json];
-node(id:854068177,1630464113)[&quot;destination:symbol:forward&quot;!~&quot;airport;toll|motorway;airport&quot;]-&gt;.s0;
-.s0 is_in-&gt;.s1;
-area[name=&quot;Big Lake&quot;][admin_level]-&gt;.s2;
-nwr(area.s2)[&quot;destination&quot;=&quot;Wright Avenue&quot;]-&gt;.s3;
-node(r.s3)[&quot;level&quot;~&quot;^1&quot;,i]-&gt;.s4;
-out meta geom;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 749</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 749</p><h1>Query 749</h1><p class="muted">fuzz:3:areas,complete:1935 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-wr(if:count_tags()&gt;1)(45.527498,-63.296696,45.562744,-63.280241)-&gt;.s0;
-.s0 &gt;&gt;-&gt;.s1;
-.s0 &gt;&gt;-&gt;.s2;
-rel(r.s2)-&gt;.s3;
-.s3 &lt;&lt;-&gt;.s4;
-.s2 out meta center;
-.s4 out body center;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

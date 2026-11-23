@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2966</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2966</p><h1>Query 2966</h1><p class="muted">fuzz:3:history,complete:200 · 3.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][bbox:51.302884,13.275184,51.511057,13.633442][date:&quot;2009-03-23T15:33:51Z&quot;];
-wr(if:number(t[&quot;check_date:surface&quot;])&gt;13)(poly:&quot;50.327414 12.312625 50.324712 12.314042 50.323341 12.310022 50.316236 12.316183 50.316539 12.318083 50.311172 12.317935&quot;)-&gt;.s0;
-rel(bn.s0)-&gt;.s1;
-complete(4).s0-&gt;.s2 { way(around:0)[&quot;surface&quot;]; }
-.s0 convert row ::id=id(),tags=count_tags();
-out;
-.s1 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

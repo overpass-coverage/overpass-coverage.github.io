@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2778</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2778</p><h1>Query 2778</h1><p class="muted">fuzz:4:statements,areas:643 · 4.56 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-nw(51.331629,12.471799,51.373581,12.512115)-&gt;.s0;
-node(around.s0:300)[&quot;roof:orientation&quot;=&quot;across&quot;]-&gt;.s1;
-.s0 &lt;-&gt;.s2;
-(.s2; .s2 &gt;;)-&gt;.s3;
-.s3 local-&gt;.s4;
-.s2 &lt;-&gt;.s5;
-.s3 out body;
-</pre><h2>Lines only this query runs (2)</h2><ul><li><a href="../src/overpass_api/statements/localize.cc.html#L794">overpass_api/statements/localize.cc:794</a></li><li><a href="../src/overpass_api/statements/localize.cc.html#L796">overpass_api/statements/localize.cc:796</a></li></ul></main></body></html>

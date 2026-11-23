@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2047</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2047</p><h1>Query 2047</h1><p class="muted">fuzz:4:evaluators:44 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-nw(50.692202,12.688619,50.712704,12.865521)(if:id()&gt;5000000000)[&quot;check_date:opening_hours&quot;=&quot;2025-04-30&quot;]-&gt;.s0;
-.s0 &lt;&lt;-&gt;.s1;
-node.s1(50.628312,12.897289,50.801001,12.945860)-&gt;.s2;
-if ((s1.sum((t[&quot;maxspeed&quot;]==&quot;abandoned&quot;?(version()):(changeset())))&lt;10)) { make yes n=s1.count(nwr)-&gt;.s3; } else { make no n=0-&gt;.s3; }
-if (((s2.max(count_by_role(&quot;part&quot;))==10)&amp;&amp;(s2.sum(-1)&lt;s2.count(ways)))) { make yes n=s2.count(nwr)-&gt;.s4; } else { make no n=0-&gt;.s4; }
-.s1 out meta center;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

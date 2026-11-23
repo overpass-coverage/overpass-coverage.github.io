@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 477</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 477</p><h1>Query 477</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3059 · 5.78 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Shops&quot;;[&quot;lanes:backward&quot;~&quot;^1&quot;];&quot;highway&quot;;)][date:&quot;2012-03-25T00:38:44Z&quot;];
+wr(if:(date((timestamp()+type()))&gt;date(suffix(id()))))[!&quot;oneway&quot;]-&gt;.s0;
+retro(date(&quot;2012-05-06T16:04:07Z&quot;)) { way[&quot;communication&quot;~&quot;^li&quot;,i][&quot;voltage&quot;=&quot;12500&quot;]-&gt;.s1; .s1 out ids; }
+(.s0; .s1;)-&gt;.s2;
+.s2 &lt;&lt;-&gt;.s3;
+.s1 out 17 body;
+.s3 out meta;
+</pre><h2>Lines only this query runs (2)</h2><ul><li><a href="../src/overpass_api/statements/tag_value.h.html#L177">overpass_api/statements/tag_value.h:177</a></li><li><a href="../src/overpass_api/statements/tag_value.h.html#L624">overpass_api/statements/tag_value.h:624</a></li></ul></main></body></html>

@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2823</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2823</p><h1>Query 2823</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:536 · 1.84 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][out:popup(&quot;Food&quot;;[&quot;covered&quot;];[&quot;historic&quot;!=&quot;memorial&quot;][&quot;tourism&quot;=&quot;information&quot;];[&quot;fire_hydrant:diameter&quot;!~&quot;^80&quot;];)(&quot;Other&quot;;[&quot;waterway&quot;=&quot;ditch&quot;][&quot;destination:ref&quot;=&quot;B 115&quot;];[&quot;building&quot;=&quot;house&quot;];[&quot;loc_name&quot;];)][timeout:25][date:&quot;2019-09-06T11:57:15Z&quot;];
-wr(51.383381,12.696326,51.401375,12.738089)-&gt;.s0;
-retro(date(&quot;2012-04-14T00:05:57Z&quot;)) { wr[&quot;bin&quot;](50.997748,13.559059,51.019870,13.756752)-&gt;.s1; .s1 out ids; }
-.s1 &lt;-&gt;.s2;
-complete(3).s1-&gt;.s3 { node(w); way(bn)[&quot;ref&quot;]; }
-node(around:200,50.794602,13.164632,50.795585,13.162128,50.795952,13.158693,50.796476,13.158739)[&quot;water_source&quot;]-&gt;.s4;
-node.s2(id:737383985,2161296842,3522353340,4005338688,6143290940,11074609633,13448816149,13796685221)-&gt;.s5;
-.s4 out (50.857095,14.732343,50.882325,14.865037) bb count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

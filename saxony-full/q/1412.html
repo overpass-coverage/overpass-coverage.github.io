@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1412</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1412</p><h1>Query 1412</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1271 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::lat,::timestamp,::id,::&quot;count:relations&quot;,::count)][timeout:25];
-nw(51.061642,13.283669,51.065254,13.325236)[&quot;railway&quot;!~&quot;abandoned|milestone|rail|razed|signal|switch&quot;](if:(!(is_number(suffix(t[&quot;denotation&quot;]))&amp;&amp;is_closed())))-&gt;.s0;
-node.s0(if:(count_by_role(&quot;to&quot;)&gt;=lrs_max(t[&quot;roof:shape&quot;])))-&gt;.s1;
-node.s0(id:2384315016,3377892905,7939786474,9990447152)-&gt;.s2;
-.s2 &gt;-&gt;.s3;
-.s0 out noids count;
-.s3 out asc ids bb;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

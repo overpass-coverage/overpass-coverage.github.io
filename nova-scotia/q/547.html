@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 547</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 547</p><h1>Query 547</h1><p class="muted">fuzz:4:history,complete,evaluators:691 · 1.09 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][date:&quot;2018-10-21T03:36:12Z&quot;];
+nwr[&quot;light:colour&quot;=&quot;white&quot;]-&gt;.s0;
+rel(bn.s0)[&quot;wheelchair&quot;=&quot;yes&quot;]-&gt;.s1;
+make stat k0=s1.min((is_date(t[&quot;material&quot;])?(number(t[&quot;man_made&quot;])):(count_members()))),k1=s1.min((1?(lat()):(count_members())))-&gt;.s2;
+.s2 out;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1260</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1260</p><h1>Query 1260</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3722 · 0.45 s CPU · expected status <code>ok</code></p><pre class="query">[bbox:50.380439,11.964624,50.679263,12.252015][adiff:&quot;2024-04-04T15:21:16Z&quot;,&quot;2024-07-21T07:03:59Z&quot;];
-nwr[&quot;network:short&quot;=&quot;VMS;MDV&quot;]-&gt;.s0;
-timeline(way,105438739,4)-&gt;.s1;
-complete(4).s1-&gt;.s2 { node(w); way(bn)[&quot;addr:street&quot;]; }
-way[&quot;support&quot;=&quot;pole&quot;](changed:&quot;2013-03-06T07:27:10Z&quot;)(id:370445553,784208724)(50.578946,12.441513,50.747151,12.481668)[&quot;toys:model_railway&quot;~&quot;^y&quot;,i]-&gt;.s3;
-.s2 compare(delta:count_tags())-&gt;.s4;
-.s3 out 2 noids;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

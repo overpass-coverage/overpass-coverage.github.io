@@ -1,6 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 379</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 379</p><h1>Query 379</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2892 · 0.20 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:536870912][out:json][date:&quot;2011-04-07T18:19:51Z&quot;];
-nwr(44.542976,-64.333578,44.549015,-64.324368)-&gt;.s0;
-nwr[&quot;bicycle:lanes&quot;~&quot;^no|no|yes|no|designated$&quot;][&quot;fire_hydrant:type&quot;~&quot;pil&quot;,i][&quot;gauge&quot;!=&quot;1435&quot;]-&gt;.s1;
-make stat k0=s1.max(&quot;1;2;3&quot;),k1=(((s1.min(count_distinct_by_role(&quot;part&quot;))&gt;=100)||(number(s1.u(lrs_min(&quot;1;2&quot;)))==0.5))?(s1.min(version())):(date(s1.max(timestamp())))),k2=date(s1.max(timestamp())),k3=s1.count(relations)-&gt;.s2;
-.s1 out center ids;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

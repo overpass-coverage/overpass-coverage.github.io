@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 273</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 273</p><h1>Query 273</h1><p class="muted">fuzz:3:history,complete:603 · 0.09 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][date:&quot;2010-02-21T19:23:37Z&quot;];
-rel(id:1469894,5737828,9817275,10413054,12254450,17748313,19695378,21435338)[!&quot;landuse&quot;]-&gt;.s0;
-complete(4).s0-&gt;.s1 { way(around:0)[&quot;landuse&quot;]; }
-way(bn.s1)[&quot;landuse&quot;=&quot;forest&quot;]-&gt;.s2;
-complete(2).s1-&gt;.s3 { way(bn)[&quot;natural&quot;]; node(w); }
-complete(5).s0-&gt;.s4 { node(w); way(bn)[&quot;landuse&quot;]; }
-.s0 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

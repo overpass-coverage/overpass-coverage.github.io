@@ -1,0 +1,5 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 562</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 562</p><h1>Query 562</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1884 · 0.74 s CPU · expected status <code>ok</code></p><pre class="query">rel(if:version()&gt;1)-&gt;.s0;
+retro(date(&quot;2026-10-09T14:40:31Z&quot;)) { nwr[~&quot;^den&quot;~&quot;ur&quot;]-&gt;.s1; }
+way.s1(if:((-date(user()))==(number(&quot;yes&quot;)-(is_number(t[&quot;tourism&quot;])?(number(t[&quot;tactile_paving&quot;])):(count_members())))))-&gt;.s2;
+.s0 out;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

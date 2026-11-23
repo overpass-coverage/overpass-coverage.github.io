@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2351</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2351</p><h1>Query 2351</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:604 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[out:xml];
-node[&quot;footway&quot;!~&quot;crossing|sidewalk&quot;](44.863709,-65.432943,44.953428,-65.169523)-&gt;.s0;
-node(around.s0:100)[&quot;man_made&quot;~&quot;^goods_c&quot;,i]-&gt;.s1;
-node.s1(if:count_tags()&gt;4)-&gt;.s2;
-node(way_link.s1:3-)-&gt;.s3;
-node(way_link.s2:1)-&gt;.s4;
-.s4 out tags;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

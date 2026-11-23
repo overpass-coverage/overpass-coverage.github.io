@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1161</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1161</p><h1>Query 1161</h1><p class="muted">fuzz:4:history,complete,output:763 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::&quot;count:nodes&quot;,::&quot;count:relations&quot;,::lat,::count,::user;false;&quot;;&quot;)][timeout:60][maxsize:268435456];
-rel(if:version()&gt;4)(id:253607,7069427,7519001,9119190,9327006,10262386,12079825,12834083,13466232,16671281)-&gt;.s0;
-node(w.s0)[&quot;loc_name&quot;~&quot;^The\\ R&quot;]-&gt;.s1;
-complete(2).s0-&gt;.s2 { way(bn)[&quot;waterway&quot;]; node(w); }
-.s1 out meta;
-.s2 out geom meta qt;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

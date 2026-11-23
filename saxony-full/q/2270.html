@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2270</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2270</p><h1>Query 2270</h1><p class="muted">fuzz:4:history,complete,evaluators:280 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-way(around:100,50.906377,14.122935)[&quot;highway&quot;!~&quot;^tert&quot;]-&gt;.s0;
-node(way_link.s0:2-)-&gt;.s1;
-make stat k0=s1.count(nodes)-&gt;.s2;
-rel.s2(if:lrs_in(date(&quot;x;y&quot;),lrs_isect(suffix(t[&quot;operator&quot;]),&quot;1;2&quot;)))-&gt;.s3;
-.s0 out skel;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1639</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1639</p><h1>Query 1639</h1><p class="muted">fuzz:4:history,areas,complete,statements:908 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;highway&quot;)];
-wr(44.864443,-63.661345,45.028999,-63.454917)(if:number(t[&quot;blind&quot;])&gt;36)[&quot;population&quot;=&quot;78&quot;](if:uid()&gt;5000000)-&gt;.s0;
-.s0 &lt;&lt;-&gt;.s1;
-nwr(around:0,45.624960,-64.539893,45.622624,-64.543394,45.623738,-64.546561,45.626167,-64.545340)[&quot;operator&quot;]-&gt;.s2;
-way.s1(id:106981228,434714239)-&gt;.s3;
-wr[&quot;ele&quot;=&quot;2&quot;][~&quot;golf&quot;~&quot;bu&quot;,i][~&quot;bran&quot;~&quot;Q5&quot;,i]-&gt;.s4;
-.s3 out skel bb 39;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

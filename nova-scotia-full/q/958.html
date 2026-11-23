@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 958</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 958</p><h1>Query 958</h1><p class="muted">fuzz:4:evaluators:300 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-way(id:99090045,99838133,122677081,180446837,330053751,393474874,554042973,849600838)(around:500,44.692178,-65.168154)-&gt;.s0;
-if ((s0.count(deriveds)&gt;s0.count(wr))) { make yes n=s0.count(nwr)-&gt;.s1; } else { make no n=0-&gt;.s1; }
-make info n=1,c=((s0.min(abs(id()))&gt;100)?(number(s0.min((&quot;1;2;3&quot;+type())))):(s0.min(lrs_min(&quot;a;b;c&quot;)))),v=s0.u(&quot;yes&quot;)-&gt;.s2;
-.s2 &lt;-&gt;.s3;
-.s2 convert row ::id=id(),!&quot;frequency&quot;,k0=suffix(t[&quot;phases&quot;]),::=::-&gt;.s4;
-.s3 out body 47 (44.852887,-62.342696,44.933947,-62.313963);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

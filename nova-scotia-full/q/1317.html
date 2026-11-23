@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1317</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1317</p><h1>Query 1317</h1><p class="muted">fuzz:4:history,complete,evaluators:120 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-node(44.196153,-65.949047,44.212212,-65.879612)-&gt;.s0;
-complete(5).s0-&gt;.s1 { way(bn)[&quot;addr:interpolation&quot;]; node(w); }
-.s0 convert row k1=suffix((is_number(t[&quot;water&quot;])?(timestamp()):(user()))),k2=number(t[&quot;crossing:markings&quot;]),!&quot;waterway&quot;,::id=id(),k0=type()-&gt;.s2;
-node.s0[~&quot;^sur&quot;~&quot;gr&quot;]-&gt;.s3;
-node(around.s2:100)[&quot;construction&quot;]-&gt;.s4;
-.s2 out tags;
-.s4 out ids;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

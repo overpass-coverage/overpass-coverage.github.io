@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2573</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2573</p><h1>Query 2573</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1805 · 0.12 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:popup(&quot;Shops&quot;;[&quot;lanes:forward&quot;=&quot;1&quot;];[&quot;destination:forward&quot;];[&quot;denomination&quot;][&quot;resource&quot;~&quot;^ag&quot;];)(&quot;Named things&quot;;[&quot;access&quot;=&quot;private&quot;];[&quot;maxheight&quot;!~&quot;^4.&quot;][&quot;to&quot;];&quot;name&quot;;)(&quot;Shops&quot;;[&quot;layer&quot;=&quot;-1&quot;];[&quot;water&quot;~&quot;^la&quot;];)];
-node[!&quot;golf&quot;](id:911488470,1323931523,1331159957,1365819723,2437460117,2480806291,3515981395,3634820645,6327916412,7010079260,13125134820,13162976269)-&gt;.s0;
-nwr(around:50,43.562522,-65.384432,43.562939,-65.385479)[&quot;owner&quot;]-&gt;.s1;
-.s1 is_in-&gt;.s2;
-node(around.s0:100)[&quot;building:flats&quot;!~&quot;^1&quot;]-&gt;.s3;
-make info v=lrs_min(s1.u(user()))-&gt;.s4;
-.s0 out body geom;
-.s3 out asc 100 body;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

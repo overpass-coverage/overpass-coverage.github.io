@@ -1,6 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 633</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 633</p><h1>Query 633</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2776 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][out:json];
-node[&quot;bridge:name&quot;=&quot;Sussex Street Bridge&quot;](newer:&quot;2015-09-26T09:10:31Z&quot;)-&gt;.s0;
-retro(date(&quot;2015-05-13T03:27:41Z&quot;)) { rel[&quot;barrier&quot;=&quot;gate&quot;](45.117153,-64.095466,45.235494,-64.066682)(if:date(timestamp())&gt;date(&quot;2015-01-01&quot;))(if:(date(lrs_min(t[&quot;addr:interpolation&quot;]))&lt;=number(t[&quot;light:lit&quot;])))-&gt;.s1; .s1 out ids; }
-.s0 out bb body;
-.s1 out 17 meta;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

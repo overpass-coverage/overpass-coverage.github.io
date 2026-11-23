@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 3075</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 3075</p><h1>Query 3075</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3522 · 2.83 s CPU · expected status <code>ok</code></p><pre class="query">[bbox:50.462971,11.796939,50.699968,12.195178][out:xml][timeout:60][maxsize:268435456];
-way[~&quot;^hig&quot;~&quot;unclas&quot;](around:10,51.349578,12.376200)(changed:&quot;2011-07-27T08:55:00Z&quot;)-&gt;.s0;
-rel(r.s0)-&gt;.s1;
-area[name=&quot;Moldava&quot;][boundary]-&gt;.s2;
-node(area.s2)[&quot;highway&quot;=&quot;primary&quot;]-&gt;.s3;
-.s0 out ids 12;
-.s1 out 2 body;
-.s3 out skel geom;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

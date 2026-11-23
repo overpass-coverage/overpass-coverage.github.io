@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 530</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 530</p><h1>Query 530</h1><p class="muted">fuzz:4:output:646 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][timeout:60][out:popup(&quot;Roads&quot;;[&quot;destination:backward&quot;=&quot;Freiberg;Pretzschendorf&quot;];[&quot;maxspeed&quot;=&quot;50&quot;][&quot;tunnel&quot;!=&quot;culvert&quot;];)(&quot;Other&quot;;[&quot;roof:orientation&quot;=&quot;along&quot;][&quot;roof:shape&quot;=&quot;gabled&quot;];[&quot;landuse&quot;];[&quot;to&quot;~&quot;^Um&quot;][&quot;service&quot;~&quot;^pa&quot;];&quot;highway&quot;;)];
-node[&quot;motor_vehicle&quot;=&quot;no&quot;](51.197896,13.129223,51.370630,13.322885)-&gt;.s0;
-rel(r.s0)-&gt;.s1;
-node.s0(id:552444135,6708330933)-&gt;.s2;
-(.s1; .s2;)-&gt;.s3;
-node.s2[&quot;waterway&quot;~&quot;^(ditch|drain|stream)$&quot;]-&gt;.s4;
-.s0 out 5;
-.s4 out tags;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

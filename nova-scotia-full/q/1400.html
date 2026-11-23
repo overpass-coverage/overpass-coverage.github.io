@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1400</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1400</p><h1>Query 1400</h1><p class="muted">fuzz:4:evaluators:661 · 0.00 s CPU · expected status <code>query-error: line N: parse error: &quot;,&quot; cannot be used as binary operator</code></p><pre class="query">[timeout:60][maxsize:536870912];
-node(5951923929)(45.523620,-62.956108,45.529840,-62.941713)(44.629850,-63.611986,44.709842,-63.552684)-&gt;.s0;
-node.s0(if:t[&quot;source&quot;]==&quot;ridge&quot;)-&gt;.s1;
-node.s1(45.758506,-61.264500,45.951275,-61.083199)-&gt;.s2;
-make stat k0=lrs_union(s2.u(lrs_min(lrs_union(t[&quot;admin_level&quot;],&quot;name&quot;))),s2.set(number(t[&quot;material&quot;]))),k1=s2.max(count_tags()),bad=date(1,2)-&gt;.s3;
-make stat k0=lrs_union(suffix(s1.max(type())),lrs_union(s1.min(id()),s1.min((id()+&quot;x;y&quot;))))-&gt;.s4;
-.s1 out body bb;
-.s2 out body;
-</pre><h2>Lines only this query runs (3)</h2><ul><li><a href="../src/overpass_api/statements/string_endomorphisms.h.html#L68">overpass_api/statements/string_endomorphisms.h:68</a></li><li><a href="../src/overpass_api/statements/string_endomorphisms.h.html#L69">overpass_api/statements/string_endomorphisms.h:69</a></li><li><a href="../src/overpass_api/statements/string_endomorphisms.h.html#L70">overpass_api/statements/string_endomorphisms.h:70</a></li></ul></main></body></html>

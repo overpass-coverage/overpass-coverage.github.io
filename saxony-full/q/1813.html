@@ -1,5 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1813</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1813</p><h1>Query 1813</h1><p class="muted">fuzz:4:evaluators:707 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;trail_visibility&quot;)];
-node[&quot;building:disused&quot;=&quot;yes&quot;](if:(is_date(suffix(t[&quot;addr:postcode&quot;]))&amp;&amp;lrs_in((0?(timestamp()):(timestamp())),lrs_union(t[&quot;smoothness&quot;],&quot;a;b;c&quot;))))-&gt;.s0;
-.s0 convert item ::id=id(),k0=lrs_max(t[&quot;backrest&quot;]),k1=lrs_isect(lrs_isect(lrs_isect(&quot;a;b;c&quot;,&quot;a;b;c&quot;),t[&quot;addr:country&quot;]),&quot;a;b;c&quot;),::geom=center(geom())-&gt;.s1;
-.s1 out ids;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

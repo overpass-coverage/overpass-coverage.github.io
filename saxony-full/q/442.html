@@ -1,6 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 442</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 442</p><h1>Query 442</h1><p class="muted">fuzz:4:history,complete,evaluators:277 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;direction&quot;)][bbox:50.773779,12.653561,50.842090,12.851829][date:&quot;2026-10-09T14:40:31Z&quot;];
-nw[&quot;destination:forward&quot;=&quot;Kreischa;Reinhardtsgrimma&quot;](50.725857,12.304137,50.807483,12.435396)-&gt;.s0;
-.s0 convert row ::geom=hull(geom()),k0=user(),k3=lrs_isect(lrs_union(lrs_union(t[&quot;building:levels&quot;],lrs_union(t[&quot;tactile_paving&quot;],&quot;name&quot;)),&quot;a;b;c&quot;),lrs_isect(&quot;1;2&quot;,t[&quot;foot&quot;])),angles=per_vertex(angle()),!&quot;railway&quot;,k2=&quot;1;2&quot;,k1=t[&quot;oneway&quot;],members=per_member(ref())-&gt;.s1;
-.s0 out body geom;
-.s1 out ids;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

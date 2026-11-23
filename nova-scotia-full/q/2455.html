@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2455</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2455</p><h1>Query 2455</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1287 · 0.18 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:xml];
-wr(poly:&quot;44.748446 -63.765653 44.750579 -63.764436 44.749870 -63.767770 44.749217 -63.769038 44.750344 -63.772956 44.750149 -63.773214 44.747327 -63.770496 44.743647 -63.773372 44.744566 -63.766983 44.744200 -63.764892&quot;)-&gt;.s0;
-rel(br.s0)[&quot;operator&quot;=&quot;Emera&quot;]-&gt;.s1;
-make info c=s1.max(count_distinct_members())-&gt;.s2;
-node(way_link.s2:1)-&gt;.s3;
-.s0 convert row ::id=id(),tags=count_tags();
-out;
-.s0 out tags bb 100 noids;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

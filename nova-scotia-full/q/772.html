@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 772</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 772</p><h1>Query 772</h1><p class="muted">fuzz:4:output:640 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][out:csv(::version,::otype,&quot;bridge&quot;,&quot;utility&quot;,&quot;colour&quot;,::user)];
-rel[&quot;network:wikidata&quot;=&quot;Q7059806&quot;][&quot;power&quot;!=&quot;minor_line&quot;]-&gt;.s0;
-.s0 &gt;&gt;-&gt;.s1;
-rel.s1(if:count_tags()&gt;6)-&gt;.s2;
-node(way_link.s0:2-)-&gt;.s3;
-way(r.s3)-&gt;.s4;
-.s0 out asc skel;
-.s2 out geom count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

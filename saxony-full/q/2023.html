@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2023</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2023</p><h1>Query 2023</h1><p class="muted">fuzz:4:history,complete,evaluators:45 · 0.16 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][date:&quot;2020-12-25T22:18:33Z&quot;];
-node[&quot;field_margin&quot;!=&quot;trees&quot;](id:369469220,1706741934,5147073736,5320269964,6419730415)(if:(date(suffix(t[&quot;smoothness&quot;]))==number(t[&quot;lane_markings&quot;])))-&gt;.s0;
-.s0 &lt;&lt;-&gt;.s1;
-make stat k0=s0.count(relations),k1=number(s0.u(suffix(timestamp()))),::geom=center(s0.gcat(center(geom())))-&gt;.s2;
-.s0 out body bb;
-.s1 out tags;
-.s2 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

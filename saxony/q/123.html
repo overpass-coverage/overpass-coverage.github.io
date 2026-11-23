@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 123</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 123</p><h1>Query 123</h1><p class="muted">fuzz:3:history,complete:1886 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[diff:&quot;2018-04-26T21:05:11Z&quot;];
+node(around:1000,50.677568,13.201381)[!&quot;capacity&quot;]-&gt;.s0;
+timeline(relation,2)-&gt;.s1;
+node.s0(if:is_tag(&quot;via&quot;))-&gt;.s2;
+node(way_link.s2:1)-&gt;.s4;
+.s4 out;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

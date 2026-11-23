@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1769</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1769</p><h1>Query 1769</h1><p class="muted">fuzz:4:evaluators:445 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-node(if:t[&quot;tracktype&quot;]==&quot;grade1&quot;)(poly:&#x27;50.950894 13.756237 50.954587 13.759804 50.959615 13.757501 50.944937 13.728703 50.934980 13.737362 50.943582 13.742759 50.934000 13.741528 50.941679 13.760719 50.942817 13.758669 50.945094 13.755019&#x27;)-&gt;.s0;
-if ((!(s0.count(deriveds)&lt;100))) { make yes n=s0.count(nwr)-&gt;.s1; } else { make no n=0-&gt;.s1; }
-node.s1(if:(!((-length())!=abs(version()))))-&gt;.s2;
-.s1 convert stat k3=lat(),k1=t[&quot;information&quot;],k2=(suffix((type()+id()))+user()),k0=is_date(type())-&gt;.s3;
-rel.s1(if:count_tags()&gt;0)-&gt;.s4;
-.s1 out ids bb;
-.s2 out body asc 29 (50.757064,13.109165,50.816370,13.115450);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

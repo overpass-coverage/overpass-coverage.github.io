@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1051</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1051</p><h1>Query 1051</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1011 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:1073741824][out:json][date:&quot;2024-08-07T12:12:35Z&quot;];
-rel(poly:&quot;51.138996 12.343672 51.140331 12.356547 51.144196 12.356349 51.142753 12.340519 51.152034 12.368150 51.162467 12.358690 51.148906 12.336920 51.166032 12.357503 51.157372 12.340892 51.161883 12.330606 51.153511 12.326091 51.163010 12.327057 51.154416 12.315082 51.161557 12.299488 51.147761 12.294613 51.149232 12.287921 51.152505 12.275732 51.140496 12.296547 51.136067 12.283242 51.114022 12.286967 51.114685 12.289493 51.128316 12.308985 51.110194 12.291084 51.128235 12.312081 51.105666 12.311917 51.123869 12.318693 51.126570 12.322245 51.101836 12.328749 51.124706 12.331998 51.124900 12.356685&quot;)[&quot;fax&quot;=&quot;+49 341 2626201&quot;][&quot;demolished:man_made&quot;=&quot;silo&quot;]-&gt;.s0;
-way(bn.s0)-&gt;.s1;
-rel.s0(if:lrs_in((is_number(t[&quot;parking&quot;])?(type()):(t[&quot;check_date&quot;])),t[&quot;check_date&quot;]))-&gt;.s2;
-rel(bw.s2)[&quot;material&quot;=&quot;wood&quot;]-&gt;.s3;
-.s2 out count;
-.s3 out ids 40;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

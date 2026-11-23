@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 198</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 198</p><h1>Query 198</h1><p class="muted">fuzz:4:history,complete,evaluators:690 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">node(4995271431)-&gt;.s0;
+node(way_cnt.s0:3-)-&gt;.s1;
+if ((number(s1.u(suffix(&quot;yes&quot;)))==0)) { } else { make no n=0-&gt;.s2; }
+for.s2-&gt;.s3 (is_date(t[&quot;addr:suburb&quot;])) { }
+.s3 out;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

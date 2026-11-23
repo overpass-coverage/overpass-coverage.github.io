@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 422</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 422</p><h1>Query 422</h1><p class="muted">fuzz:4:output:162 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:xml][bbox:44.172078,-65.567228,44.388454,-65.260716][timeout:60][maxsize:268435456];
-nwr(if:uid()&gt;4000000)(poly:&#x27;45.140720 -63.360124 45.143818 -63.363878 45.142497 -63.366871 45.142366 -63.371542 45.133882 -63.365873 45.135737 -63.361404&#x27;)(if:is_closed())-&gt;.s0;
-node(around.s0:300)[&quot;residential&quot;]-&gt;.s1;
-(.s0; .s0;)-&gt;.s2;
-node(way_cnt.s2:1-2)-&gt;.s3;
-node(around.s0:0)[&quot;landuse&quot;!~&quot;^gr&quot;]-&gt;.s4;
-.s0 out skel noids geom;
-.s3 out tags;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

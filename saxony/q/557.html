@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 557</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 557</p><h1>Query 557</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1544 · 0.21 s CPU · expected status <code>ok</code></p><pre class="query">nw(if:(((is_closed()&amp;&amp;0)||is_date(suffix(t[&quot;backrest&quot;])))&amp;&amp;is_date((user()+t[&quot;bus&quot;]))))(poly:&quot;50.707582 12.702497 50.696019 12.704890 50.709390 12.750180&quot;)-&gt;.s0;
+area(id:3608718533)-&gt;.s1;
+node(area.s1)-&gt;.s2;
+complete(5).s2-&gt;.s3 { }
+(.s3;)-&gt;.s4;
+.s4 out  body;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

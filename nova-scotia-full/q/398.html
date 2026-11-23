@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 398</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 398</p><h1>Query 398</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:225 · 0.10 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][date:&quot;2011-04-03T05:04:28Z&quot;];
-nwr(45.461586,-63.815962,45.634205,-63.583207)[&quot;network:wikidata&quot;=&quot;Q7059806&quot;](changed:&quot;2021-04-21T11:56:40Z&quot;,&quot;2023-06-17T03:15:53Z&quot;)[&quot;golf&quot;=&quot;cartpath&quot;]-&gt;.s0;
-timeline(way,274456670)-&gt;.s1;
-rel(bw.s0)-&gt;.s2;
-if (((s2.min(changeset())==s2.u(suffix(type())))||((s2.max((lon()-changeset()))&lt;1)&amp;&amp;(s2.min(lrs_max(&quot;a;b;c&quot;))&gt;0.5)))) { make yes n=s2.count(nwr)-&gt;.s3; } else { make no n=0-&gt;.s3; }
-.s1 out tags 100;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

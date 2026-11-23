@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2850</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2850</p><h1>Query 2850</h1><p class="muted">fuzz:3:history,complete:2065 · 1.71 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-nw(changed:&quot;2015-05-11T16:41:00Z&quot;,&quot;2026-01-29T19:27:44Z&quot;)[&quot;natural&quot;!~&quot;beach|cape|coastline|grassland|land|reef|ridge|rock|scrub|tree_row|wetland|wood&quot;](45.850306,-63.455476,45.889214,-63.454053)-&gt;.s0;
-complete(2).s0-&gt;.s1 { way(bn)[&quot;addr:province&quot;]; node(w); }
-complete(6).s1-&gt;.s2 { way(bn)[&quot;addr:housenumber&quot;]; node(w); }
-way(bn.s2)[&quot;destination:ref&quot;]-&gt;.s3;
-node(way_cnt.s3:2-)-&gt;.s4;
-foreach.s4-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
-.s3 out ids;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

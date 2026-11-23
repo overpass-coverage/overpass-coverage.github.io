@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 300</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 300</p><h1>Query 300</h1><p class="muted">fuzz:4:evaluators:503 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">way(76439906)-&gt;.s0;
+if ((s0.count(nw)&gt;2)) { make yes n=s0.count(nwr)-&gt;.s1; }
+make stat k0=number((s1.set(&quot;steps&quot;)+s1.min(suffix(suffix(t[&quot;water&quot;]))))),k1=s1.count(nw),k2=number(s1.u(id())),k3=(-((s1.min(date(suffix(t[&quot;man_made&quot;])))&gt;3)?(s1.count(nodes)):(s1.count(wr)))),::geom=s1.gcat(geom())-&gt;.s2;
+way(around.s1:300)-&gt;.s3;
+.s3 out;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

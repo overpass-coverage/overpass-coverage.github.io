@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1942</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1942</p><h1>Query 1942</h1><p class="muted">fuzz:4:history,complete,evaluators:195 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;maxspeed&quot;)];
-wr[&quot;highway&quot;=&quot;crossing&quot;][&quot;cables&quot;=&quot;12&quot;](if:(lrs_min(lrs_union(t[&quot;fire_hydrant:type&quot;],t[&quot;crossing:markings&quot;]))&lt;(user()+lrs_min(&quot;a;b;c&quot;))))-&gt;.s0;
-if ((s0.min(lrs_min(lrs_union(t[&quot;voltage&quot;],&quot;name&quot;)))&lt;=number(s0.u(3)))) { make yes n=s0.count(nwr)-&gt;.s1; } else { make no n=0-&gt;.s1; }
-node.s0(if:is_number(suffix(lrs_min(&quot;a;b;c&quot;))))-&gt;.s2;
-.s0 out skel;
-.s2 out tags bb 25;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

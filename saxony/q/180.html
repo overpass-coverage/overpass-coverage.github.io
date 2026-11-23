@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 180</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 180</p><h1>Query 180</h1><p class="muted">fuzz:4:history,complete,evaluators:940 · 0.23 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2026-07-10T21:21:10Z&quot;];
+rel(if:is_tag(&quot;tourism&quot;))[~&quot;^pop&quot;~&quot;6&quot;](50.339622,11.967045,50.513657,12.210415)-&gt;.s0;
+make info c=date(s0.max(timestamp())),v=suffix((s0.u(id())+s0.u(type()))),n=1-&gt;.s1;
+.s0 &gt;&gt;-&gt;.s2;
+foreach.s1-&gt;.it{ ()-&gt;.x; .x out count; }
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

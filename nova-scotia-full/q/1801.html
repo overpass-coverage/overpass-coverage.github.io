@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1801</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1801</p><h1>Query 1801</h1><p class="muted">fuzz:3:history,complete:2744 · 0.25 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2015-05-12T03:10:51Z&quot;,&quot;2021-10-02T20:32:06Z&quot;];
-rel[~&quot;^wat&quot;~&quot;po&quot;](poly:&quot;45.052725 -62.272342 45.052657 -62.276027 45.051617 -62.293458 45.055161 -62.289369 45.053918 -62.297368 45.070490 -62.297300 45.076096 -62.298156 45.078404 -62.301848 45.070138 -62.308292 45.069449 -62.309937 45.065231 -62.315989 45.072697 -62.329016 45.065185 -62.331376 45.066446 -62.336986 45.066334 -62.345187 45.053858 -62.327285 45.054813 -62.332255 45.054567 -62.345986 45.051050 -62.333123 45.052106 -62.351856 45.049207 -62.328118 45.046840 -62.324754 45.043294 -62.328616 45.043818 -62.325499 45.039318 -62.334946 45.028365 -62.326131 45.028515 -62.309997 45.030405 -62.291818 45.030567 -62.280177 45.038394 -62.279369&quot;)(if:changeset()&gt;58000000)-&gt;.s0;
-.s0 &gt;-&gt;.s1;
-complete(3).s1-&gt;.s2 { way(bn)[&quot;lamp_mount&quot;]; node(w); }
-complete(3).s1-&gt;.s3 { way(bn)[&quot;light:colour&quot;]; node(w); }
-foreach.s3-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
-.s1 out tags;
-.s2 out skel asc 17;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

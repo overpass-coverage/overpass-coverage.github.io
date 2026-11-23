@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2569</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2569</p><h1>Query 2569</h1><p class="muted">fuzz:4:evaluators:952 · 0.12 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-nw(poly:&quot;45.125926 -63.954112 45.129994 -63.971894 45.140654 -63.990913 45.118856 -63.988508 45.104905 -63.990276 45.117832 -63.964685&quot;)-&gt;.s0;
-node(around.s0:20)[&quot;telecom:medium&quot;]-&gt;.s1;
-node.s1(if:(!is_tag(&quot;oneway&quot;)))-&gt;.s2;
-.s1 &lt;&lt;-&gt;.s3;
-.s2 out ids;
-.s3 out skel bb qt;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

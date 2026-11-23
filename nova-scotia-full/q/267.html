@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 267</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 267</p><h1>Query 267</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2563 · 0.08 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][maxsize:536870912][out:popup(&quot;Roads&quot;;[&quot;surface&quot;=&quot;pebblestone&quot;][&quot;maintained&quot;=&quot;Halifax Regional Municipality&quot;];[&quot;cycleway&quot;!~&quot;^sh&quot;][&quot;golf&quot;~&quot;^bu&quot;];&quot;amenity&quot;;)(&quot;Shops&quot;;[&quot;natural&quot;~&quot;^ba&quot;][&quot;destination:symbol:forward&quot;!=&quot;airport;toll&quot;];&quot;ref&quot;;)];
-node[&quot;official_name&quot;~&quot;^Enterprise&quot;,i](if:is_number(suffix(type())))[&quot;loc_name&quot;=&quot;Membertou Interchange&quot;]-&gt;.s0;
-.s0 is_in-&gt;.s1;
-.s0 is_in-&gt;.s2;
-is_in(44.158007,-65.697413)-&gt;.s3;
-nwr(area.s3)[&quot;bridge:name&quot;=&quot;Sussex Street Bridge&quot;]-&gt;.s4;
-make stat k0=s3.count(wr),k1=s3.count(nr),k2=s3.count(nwr),k3=number(s3.u(number(t[&quot;boundary&quot;])))-&gt;.s5;
-.s1 out;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

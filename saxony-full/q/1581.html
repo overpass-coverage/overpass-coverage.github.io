@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1581</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1581</p><h1>Query 1581</h1><p class="muted">fuzz:4:history,complete,output:170 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][out:popup(&quot;Roads&quot;;[&quot;layer&quot;!~&quot;^-1&quot;][&quot;waste&quot;!~&quot;^or&quot;];[&quot;gauge&quot;=&quot;1435&quot;][&quot;brand&quot;!=&quot;Mitteldeutsche Regiobahn&quot;];&quot;ref&quot;;)(&quot;Food&quot;;[&quot;leaf_cycle&quot;=&quot;deciduous&quot;][&quot;barrier&quot;];[&quot;product&quot;!~&quot;^co&quot;][&quot;ramp&quot;=&quot;no&quot;];&quot;highway&quot;;)(&quot;Shops&quot;;[&quot;railway:position&quot;~&quot;^29&quot;];)][date:&quot;2010-10-24T06:26:40Z&quot;];
-way(id:39697975,86258358,172061815,229421432,424487217,534350505,1002423031,1009703956,1139172529,1442398759)(if:is_tag(&quot;amenity&quot;))-&gt;.s0;
-complete(4).s0-&gt;.s1 { way(around:0)[&quot;operator&quot;]; }
-way(around.s0:20)[&quot;amenity&quot;]-&gt;.s2;
-complete(1).s1-&gt;.s3 { way(bn)[&quot;maxspeed&quot;]; node(w); }
-.s0 out body;
-.s2 out noids (50.730720,12.427590,50.813778,12.437393) body;
-.s3 out bb qt count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

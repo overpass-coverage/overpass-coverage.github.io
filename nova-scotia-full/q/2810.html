@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2810</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2810</p><h1>Query 2810</h1><p class="muted">fuzz:4:history,complete,output:607 · 2.47 s CPU · expected status <code>query-error: runtime error: Filters too weak in query statement: specify in addition a bbox, a tag filt</code></p><pre class="query">[out:popup(&quot;Food&quot;;[&quot;type&quot;!=&quot;multipolygon&quot;];[&quot;unsigned_ref&quot;!=&quot;6763&quot;];&quot;ref&quot;;)(&quot;Named things&quot;;[&quot;surface&quot;];[&quot;athletics&quot;!~&quot;^lo&quot;];[&quot;roof:colour&quot;=&quot;white&quot;];)(&quot;Other&quot;;[&quot;is_in:country_code&quot;!~&quot;^CA&quot;];)][timeout:25][date:&quot;2026-08-01T00:54:40Z&quot;];
-wr[&quot;operator&quot;=&quot;Nature Conservancy of Canada&quot;](if:uid()&gt;14000000)(if:is_tag(&quot;material&quot;))-&gt;.s0;
-node(way_cnt.s0:1)-&gt;.s1;
-wr(bn.s0)[&quot;population&quot;]-&gt;.s2;
-node(way_link.s2:2-)-&gt;.s3;
-.s3 &lt;&lt;-&gt;.s4;
-.s0 out noids ids bb;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

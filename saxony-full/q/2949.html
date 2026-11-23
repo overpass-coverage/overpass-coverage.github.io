@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2949</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2949</p><h1>Query 2949</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3141 · 0.90 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;foot&quot;,::timestamp,::count,::lat,::&quot;count:relations&quot;,::type,::id,&quot;lane_markings&quot;,&quot;check_date&quot;;true)];
-way[&quot;sidewalk:left&quot;=&quot;no&quot;](51.462460,12.989745,51.595378,13.251076)-&gt;.s0;
-way(around.s0:20)[&quot;destination:forward&quot;!~&quot;^Morit&quot;]-&gt;.s1;
-way(around.s0:300)[&quot;bench&quot;=&quot;no&quot;]-&gt;.s2;
-rel(bw.s1)-&gt;.s3;
-(.s2; .s2 &gt;;)-&gt;.s4;
-.s4 local llb-&gt;.s5;
-.s4 out meta 47;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

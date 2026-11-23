@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 675</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 675</p><h1>Query 675</h1><p class="muted">fuzz:4:output:553 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::&quot;count:relations&quot;,::count,::lon,::uid,&quot;motor_vehicle&quot;,::user;false)][maxsize:268435456][timeout:180];
-node(around:500,51.601220,12.575030)-&gt;.s0;
-node(w.s0:1)-&gt;.s1;
-nw(if:is_tag(&quot;rooms&quot;))[&quot;abandoned:bridge:support&quot;=&quot;pier&quot;](51.244396,13.902854,51.264327,13.915796)-&gt;.s2;
-way(bn.s0)[&quot;amenity&quot;=&quot;bench&quot;]-&gt;.s3;
-way.s3(50.712278,12.536824,50.820750,12.916193)-&gt;.s4;
-foreach.s0-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
-.s0 out center skel;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

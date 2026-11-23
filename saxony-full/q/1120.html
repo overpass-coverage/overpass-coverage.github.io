@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1120</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1120</p><h1>Query 1120</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:406 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Other&quot;;[&quot;parking&quot;=&quot;street_side&quot;];[&quot;maxspeed:type&quot;];[&quot;highway&quot;!=&quot;crossing&quot;][&quot;destination:symbol&quot;];)(&quot;Food&quot;;[&quot;roof:shape&quot;!~&quot;^fl&quot;];[&quot;charge&quot;~&quot;^€0&quot;][&quot;abandoned:building&quot;=&quot;ruins&quot;];[&quot;building&quot;=&quot;garage&quot;];&quot;name&quot;;)][timeout:180];
-nwr[&quot;amenity&quot;~&quot;^recy&quot;](50.346694,12.447713,50.397099,12.493337)-&gt;.s0;
-way(r.s0)-&gt;.s1;
-rel.s0(if:is_number(((type()+user())+(&quot;&quot;+id()))))-&gt;.s2;
-(.s0; .s0 &gt;;)-&gt;.s3;
-.s3 local llb-&gt;.s4;
-.s1 out qt body;
-.s4 out skel asc;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 514</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 514</p><h1>Query 514</h1><p class="muted">fuzz:4:history,areas,complete,statements:304 · 0.33 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][date:&quot;2015-05-15T05:33:24Z&quot;];
-rel(id:2981640,7116581,9334399,9814920,20215998)(45.789642,-61.404637,45.981909,-61.357565)[&quot;destination:street&quot;~&quot;^(Barrington\\ Street|Nantucket\\ Avenue)$&quot;,i][&quot;crossing&quot;=&quot;unmarked&quot;]-&gt;.s0;
-area[name=&quot;Roseway River&quot;]-&gt;.s1;
-nwr(area.s1)(43.782762,-65.881880,43.870224,-65.851687)-&gt;.s2;
-is_in(43.785690,-65.953966)-&gt;.s3;
-nwr(area.s3)[&quot;type&quot;=&quot;neighbourhood&quot;]-&gt;.s4;
-way(bn.s0)[&quot;bridge:name&quot;=&quot;Lower Mill (River Lake #1)&quot;]-&gt;.s5;
-.s5 out ids bb;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 733</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 733</p><h1>Query 733</h1><p class="muted">fuzz:4:evaluators:913 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-way[&quot;bridge:name&quot;=&quot;Paint Brook (Elmsvale)&quot;][&quot;building:levels&quot;!~&quot;1|3|7&quot;]-&gt;.s0;
-way(r.s0)[&quot;leisure&quot;!=&quot;park&quot;]-&gt;.s1;
-way.s0(if:is_number((lrs_in(&quot;yes&quot;,&quot;a;b;c&quot;)?(user()):(count_distinct_members()))))-&gt;.s2;
-.s0 convert item ::geom=geom(),k1=(is_date(version())?(abs((0?(count_tags()):(uid())))):((-date(suffix(t[&quot;frequency&quot;]))))),members=per_member((pos()&gt;1)),k0=&quot;a;b;c&quot;-&gt;.s3;
-.s0 out skel qt;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

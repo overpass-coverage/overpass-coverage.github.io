@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 803</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 803</p><h1>Query 803</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1164 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Food&quot;;[&quot;highway&quot;];[&quot;gauge&quot;][&quot;surface&quot;];[&quot;level&quot;][&quot;frequency&quot;!~&quot;^16&quot;];)(&quot;Food&quot;;[&quot;fire_hydrant:diameter&quot;=&quot;100&quot;];)(&quot;Named things&quot;;[&quot;usage&quot;][&quot;railway:position&quot;~&quot;^29&quot;];[&quot;industrial&quot;=&quot;logistics&quot;][&quot;roof:material&quot;=&quot;tar_paper&quot;];&quot;highway&quot;;)][maxsize:1073741824][timeout:25][bbox:50.820368,14.498361,50.974362,14.759785];
-node(id:2170756853,2176816874,5410234658,10178633231)-&gt;.s0;
-.s0 map_to_area-&gt;.s1;
-(.s1; .s1 &gt;;)-&gt;.s2;
-.s2 local ll-&gt;.s3;
-.s0 convert item k0=(type()+lrs_min(t[&quot;type&quot;])),!&quot;addr:suburb&quot;-&gt;.s4;
-.s2 out center body asc 5;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

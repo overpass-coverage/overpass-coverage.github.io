@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2793</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2793</p><h1>Query 2793</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2355 · 2.41 s CPU · expected status <code>ok</code></p><pre class="query">[out:xml][maxsize:1073741824][date:&quot;2017-02-01T20:13:28Z&quot;];
-nwr(if:lrs_in(lrs_min(lrs_isect(t[&quot;access&quot;],t[&quot;surface&quot;])),(is_number(t[&quot;type&quot;])?(suffix(t[&quot;amenity&quot;])):(t[&quot;information&quot;]))))(50.700502,13.282570,50.839694,13.383366)[&quot;building&quot;=&quot;industrial&quot;]-&gt;.s0;
-.s0 convert row ::geom=center(geom()),!&quot;lit&quot;,::id=id(),k2=is_number(t[&quot;operator&quot;]),k0=lrs_min(lrs_union(t[&quot;addr:country&quot;],&quot;name&quot;)),k1=(is_closed()?(lrs_min(lrs_union(&quot;1;2&quot;,t[&quot;ref&quot;]))):((suffix(timestamp())+suffix(t[&quot;building:levels&quot;]))))-&gt;.s1;
-.s0 &lt;&lt;-&gt;.s2;
-complete(2).s1-&gt;.s3 { node(w); way(bn)[&quot;amenity&quot;]; }
-out body geom noids (51.320656,12.266005,51.371920,12.365023);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

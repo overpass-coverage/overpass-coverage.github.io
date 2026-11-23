@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2840</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2840</p><h1>Query 2840</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3645 · 1.39 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][out:json][maxsize:268435456];
-node[&quot;bus:lanes&quot;=&quot;designated|designated&quot;](46.081340,-60.466389,46.195678,-60.337392)-&gt;.s0;
-is_in(44.954806,-62.155829)-&gt;.s1;
-nwr(area.s1)(45.622642,-63.370442,45.632839,-63.233646)-&gt;.s2;
-way.s2[~&quot;^pos&quot;~&quot;B4B&quot;]-&gt;.s3;
-node(way_cnt.s0:2-)-&gt;.s4;
-.s3 out bb;
-.s4 out tags;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

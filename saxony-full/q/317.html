@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 317</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 317</p><h1>Query 317</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:865 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][maxsize:1073741824][out:csv(::lat,::user,::&quot;count:areas&quot;,::&quot;count:nodes&quot;)];
-way(id:722047448,799294284)[&quot;inscription&quot;=&quot;1/5&quot;][&quot;network:wikidata&quot;=&quot;Q1426445&quot;]-&gt;.s0;
-area[name=&quot;Olbersdorf&quot;]-&gt;.s1;
-way(area.s1)[&quot;brand:wikidata&quot;=&quot;Q457822&quot;]-&gt;.s2;
-.s1 &lt;-&gt;.s3;
-make stat k0=s1.min((t[&quot;bicycle&quot;]==&quot;no&quot;?(suffix(t[&quot;barrier&quot;])):(id()))),k1=abs((s1.sum(number(user()))-number(s1.u(count_distinct_by_role(&quot;&quot;))))),k2=s1.max(version())-&gt;.s4;
-.s4 out meta;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/tag_value.h.html#L570">overpass_api/statements/tag_value.h:570</a></li></ul></main></body></html>

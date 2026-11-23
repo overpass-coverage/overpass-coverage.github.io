@@ -1,0 +1,5 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 660</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 660</p><h1>Query 660</h1><p class="muted">fuzz:4:history,complete,evaluators:245 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">node[&quot;destination:ref&quot;=&quot;A 17&quot;]-&gt;.s0;
+make stat k0=s0.set((id()+t[&quot;addr:city&quot;])),k1=(number(s0.u((is_date(t[&quot;barrier&quot;])?(user()):(type()))))+(s0.min(count_by_role(&quot;backward&quot;))+s0.min((uid()*count_distinct_by_role(&quot;to&quot;))))),k2=(date(s0.max(timestamp()))-s0.min(number(type()))),k3=s0.max(type())-&gt;.s1;
+.s0 &lt;-&gt;.s3;
+.s3 out;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

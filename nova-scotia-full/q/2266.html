@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2266</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2266</p><h1>Query 2266</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1796 · 0.20 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:xml][maxsize:268435456][date:&quot;2011-02-18T21:21:23Z&quot;];
-wr[&quot;postal_code&quot;=&quot;B0S 1K0&quot;](45.530036,-64.241749,45.538409,-64.211244)-&gt;.s0;
-retro(date(&quot;2024-06-24T23:37:00Z&quot;)) { node[&quot;sport&quot;=&quot;ice_hockey;ice_skating&quot;]-&gt;.s1; .s1 out ids; }
-node(around:200,44.823706,-64.581480,44.823570,-64.583588)[&quot;operator&quot;]-&gt;.s2;
-.s0 convert item k0=(!((count_distinct_members()==changeset())&amp;&amp;0)),::id=id(),k1=type(),k2=suffix(user()),members=per_member(ref()),angles=per_vertex(angle())-&gt;.s3;
-.s2 convert row ::id=id(),tags=count_tags();
-out;
-.s3 out tags qt;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

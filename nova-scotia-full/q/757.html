@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 757</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 757</p><h1>Query 757</h1><p class="muted">fuzz:4:history,complete,evaluators:754 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2011-01-15T18:13:48Z&quot;,&quot;2020-01-12T22:59:45Z&quot;];
-node(id:2438158940,2439118707)[&quot;destination:street:to&quot;=&quot;Prince Albert Road;Braemar Drive&quot;](44.406329,-64.506267,44.501567,-64.255883)-&gt;.s0;
-make stat k0=s0.set(suffix(&quot;12500&quot;)),k1=s0.min(lrs_min(t[&quot;addr:housenumber&quot;])),k2=number(s0.u((timestamp()+suffix(t[&quot;building&quot;])))),::geom=trace(s0.gcat(geom()))-&gt;.s1;
-for.s1-&gt;.s2 ((is_date(t[&quot;land_area&quot;])?(id()):(lrs_min(&quot;1;2&quot;)))) { ._ out count; }
-complete(2).s2-&gt;.s3 { node(w); way(bn)[&quot;lamp_mount&quot;]; }
-way.s1[&quot;isced:level&quot;]-&gt;.s4;
-foreach.s3-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
-.s1 out meta 37;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

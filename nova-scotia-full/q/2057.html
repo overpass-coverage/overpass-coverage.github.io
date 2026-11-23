@@ -1,6 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2057</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2057</p><h1>Query 2057</h1><p class="muted">fuzz:4:evaluators:520 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-nwr(if:is_date(t[&quot;operator&quot;]))(around:250,45.362489,-63.899399)-&gt;.s0;
-if (((s0.count(relations)&gt;1)&amp;&amp;(s0.min((-count_tags()))&lt;100))) { make yes n=s0.count(nwr)-&gt;.s1; } else { make no n=0-&gt;.s1; }
-.s0 convert item k1=suffix(((t[&quot;utility&quot;]+t[&quot;oneway&quot;])+type())),k2=((10&lt;2)?((0?(type()):(user()))):(suffix(user()))),k0=suffix(user())-&gt;.s2;
-.s1 out ids bb;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

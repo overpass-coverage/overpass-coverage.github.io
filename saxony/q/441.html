@@ -1,0 +1,5 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 441</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 441</p><h1>Query 441</h1><p class="muted">fuzz:4:evaluators:835 · 0.00 s CPU · expected status <code>query-error: line N: parse error: is_tag(...) must have one or more arguments</code></p><pre class="query">way[&quot;to&quot;]-&gt;.s0;
+for.s0-&gt;.s1 ((id()+(timestamp()+&quot;2018-01-01&quot;))) { }
+rel.s1(if:is_tag())-&gt;.s3;
+.s0 out;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/tag_value.cc.html#L294">overpass_api/statements/tag_value.cc:294</a></li></ul></main></body></html>

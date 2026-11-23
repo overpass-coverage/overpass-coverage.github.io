@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 526</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 526</p><h1>Query 526</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3690 · 0.13 s CPU · expected status <code>ok</code></p><pre class="query">rel[&quot;NHS&quot;=&quot;yes&quot;]-&gt;.s0;
+make stat k0=s0.min(lon()),k1=s0.max(t[&quot;light:lit&quot;]),::geom=s0.gcat(center(geom()))-&gt;.s1;
+(.s0; - .s1;)-&gt;.s2;
+.s2 convert item !&quot;poles&quot;,::id=id(),::=::,::geom=center(geom()),k0=((is_number(id())?(count_by_role(&quot;house&quot;)):((1?(id()):(count_members()))))==(-number(t[&quot;addr:province&quot;]))),k1=lrs_union(lrs_isect(t[&quot;building&quot;],lrs_union(t[&quot;addr:city&quot;],&quot;1;2&quot;)),t[&quot;addr:postcode&quot;])-&gt;.s3;
+.s2 out;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

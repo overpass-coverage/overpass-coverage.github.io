@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1195</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1195</p><h1>Query 1195</h1><p class="muted">fuzz:4:output:196 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][out:json][timeout:60];
-wr[&quot;railway&quot;=&quot;level_crossing&quot;](45.493642,-63.240092,45.668134,-63.109291)[&quot;phases&quot;=&quot;3&quot;]-&gt;.s0;
-.s0 &lt;-&gt;.s1;
-way.s0[&quot;crossing&quot;=&quot;traffic_signals&quot;]-&gt;.s2;
-way.s1(if:length()&gt;100)-&gt;.s3;
-way.s2[&quot;operator&quot;=&quot;Berwick Power Commission&quot;]-&gt;.s4;
-.s0 out bb 100;
-.s1 out center body 100;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

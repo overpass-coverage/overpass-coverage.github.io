@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 399</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 399</p><h1>Query 399</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1195 · 0.09 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::&quot;count:nodes&quot;,&quot;man_made&quot;,&quot;railway&quot;)][maxsize:536870912][timeout:25][bbox:45.105866,-61.946122,45.127540,-61.792030][date:&quot;2026-11-15T20:09:41Z&quot;];
-nwr(around:1000,45.180918,-61.403335)[&quot;fuel:diesel&quot;!~&quot;^y&quot;]-&gt;.s0;
-retro(date(&quot;2008-09-18T00:23:55Z&quot;)) { node(46.803573,-60.611229,46.937525,-60.481506)[&quot;amenity&quot;=&quot;parking&quot;]-&gt;.s1; .s1 out ids; }
-.s1 convert stat k0=(is_closed()?(user()):(user())),::id=id(),!&quot;owner&quot;,k3=(t[&quot;light:colour&quot;]+suffix(user())),k1=user(),k2=lrs_union(lrs_union(t[&quot;voltage&quot;],&quot;name&quot;),&quot;1;2&quot;)-&gt;.s2;
-complete(5).s0-&gt;.s3 { way(around:0)[&quot;highway&quot;]; }
-.s0 is_in-&gt;.s4;
-.s2 out asc body geom;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

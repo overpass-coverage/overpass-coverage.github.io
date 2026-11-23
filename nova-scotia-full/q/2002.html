@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2002</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2002</p><h1>Query 2002</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2090 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:536870912][out:json];
-nw[&quot;natural&quot;=&quot;tree&quot;](if:lrs_in(type(),lrs_isect(lrs_isect(&quot;1;2&quot;,&quot;a;b;c&quot;),lrs_union(t[&quot;maxheight&quot;],&quot;name&quot;))))[&quot;operator&quot;=&quot;Accord&quot;]-&gt;.s0;
-area[name=&quot;Harbour Island&quot;]-&gt;.s1;
-node(area.s1)[&quot;destination&quot;=&quot;Mineville;Lake Echo&quot;]-&gt;.s2;
-.s1-&gt;._; &gt;; (._;)-&gt;.s3;
-.s3 out noids skel asc;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

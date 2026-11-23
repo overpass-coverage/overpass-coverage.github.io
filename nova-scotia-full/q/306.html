@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 306</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 306</p><h1>Query 306</h1><p class="muted">fuzz:4:evaluators:586 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-rel[&quot;highway&quot;!=&quot;street_lamp&quot;][!&quot;bicycle_parking&quot;][&quot;population&quot;=&quot;78&quot;](44.606187,-62.947828,44.781319,-62.744672)-&gt;.s0;
-rel.s0(if:t[&quot;lamp_mount&quot;]==&quot;42G&quot;)-&gt;.s1;
-rel.s1[&quot;landuse&quot;=&quot;residential&quot;]-&gt;.s2;
-rel.s0[&quot;takeaway&quot;=&quot;no&quot;]-&gt;.s3;
-.s0 convert stat k2=is_date(((type()!=t[&quot;colour&quot;])?((timestamp()+t[&quot;amenity&quot;])):(lrs_min(lrs_union(t[&quot;amenity&quot;],&quot;name&quot;))))),k1=is_number(t[&quot;landuse&quot;]),k0=count_distinct_members(),::=::,::geom=center(geom()),::id=id()-&gt;.s4;
-.s2 out ids 23;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

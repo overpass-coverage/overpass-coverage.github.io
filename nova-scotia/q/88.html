@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 88</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 88</p><h1>Query 88</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:411 · 0.34 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::count)][date:&quot;2026-04-27T17:06:17Z&quot;];
+rel(44.440096,-64.827020,44.452625,-64.796301)-&gt;.s0;
+way[&quot;turn:lanes:forward&quot;~&quot;^left|through|through;right$&quot;]-&gt;.s1;
+node(r.s0:&quot;label&quot;)-&gt;.s3;
+.s0 out count;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/output_formats/output_csv.cc.html#L211">overpass_api/output_formats/output_csv.cc:211</a></li></ul></main></body></html>

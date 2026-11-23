@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1577</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1577</p><h1>Query 1577</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2073 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;name:en&quot;,::timestamp,::otype,&quot;crossing&quot;,&quot;tunnel&quot;)][timeout:25][maxsize:536870912];
-node[&quot;bicycle_parking&quot;=&quot;bollard&quot;]-&gt;.s0;
-node.s0(if:lrs_in(suffix(timestamp()),(id()+timestamp())))-&gt;.s1;
-node.s0(43.963566,-66.136764,44.215161,-65.870299)-&gt;.s2;
-.s0 out body;
-.s2 out tags;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

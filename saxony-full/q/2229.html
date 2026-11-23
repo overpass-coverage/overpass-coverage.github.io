@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2229</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2229</p><h1>Query 2229</h1><p class="muted">fuzz:4:statements,areas:367 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;tactile_paving&quot;)];
-way(50.915318,12.800307,50.931783,12.824155)[&quot;demolished:man_made&quot;!=&quot;silo&quot;]-&gt;.s0;
-.s0 map_to_area-&gt;.s1;
-node(way_cnt.s1:2-)-&gt;.s2;
-way.s0[&quot;parking:both:surface&quot;!~&quot;asphalt&quot;]-&gt;.s3;
-.s1 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

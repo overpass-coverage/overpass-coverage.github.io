@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 65</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 65</p><h1>Query 65</h1><p class="muted">fuzz:3:history,complete:1935 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">rel(if:length()&gt;10)(id:1417891,9123337,9244325)-&gt;.s0;
+complete(4).s0-&gt;.s1 { }
+complete(2).s1-&gt;.s2 { }
+rel.s2-&gt;.s3;
+.s3 out  geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1862</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1862</p><h1>Query 1862</h1><p class="muted">fuzz:4:evaluators:123 · 0.25 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;fee&quot;)];
-nw(50.785469,12.344856,50.788937,12.396925)-&gt;.s0;
-.s0 &lt;-&gt;.s1;
-make info v=lrs_min(((s1.sum(lrs_min(t[&quot;addr:postcode&quot;]))&gt;=3)?(s1.max((suffix(t[&quot;lane_markings&quot;])+id()))):(s1.max(&quot;2018-01-01&quot;)))),n=1,c=(((s1.count(nodes)&gt;=1e3)?(number(s1.u((t[&quot;amenity&quot;]+user())))):(s1.count(nwr)))-s1.max(date(type())))-&gt;.s2;
-(.s1; .s1;)-&gt;.s3;
-.s1 out tags center;
-.s3 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

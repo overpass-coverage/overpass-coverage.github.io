@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2338</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2338</p><h1>Query 2338</h1><p class="muted">fuzz:4:history,complete,output:588 · 0.54 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Roads&quot;;[&quot;to&quot;!=&quot;Wolkenstein, Markt&quot;][&quot;width&quot;!~&quot;^2&quot;];)(&quot;Other&quot;;[&quot;railway:radio&quot;];[&quot;parking:both&quot;!=&quot;no&quot;][&quot;health_specialty:gynaecology&quot;=&quot;yes&quot;];&quot;highway&quot;;)(&quot;Shops&quot;;[&quot;shelter&quot;=&quot;no&quot;][&quot;cycleway:right:smoothness&quot;=&quot;perfect&quot;];[&quot;motorcar&quot;];[&quot;foot&quot;~&quot;^us&quot;];&quot;amenity&quot;;)][timeout:180][maxsize:1073741824];
-way[&quot;roof:levels&quot;!=&quot;1&quot;](50.399891,12.443523,50.486909,12.485225)-&gt;.s0;
-node(around.s0:100)[&quot;maxspeed:type&quot;]-&gt;.s1;
-.s1 &gt;-&gt;.s2;
-rel(bw.s1)[~&quot;^rai&quot;~&quot;L&quot;]-&gt;.s3;
-.s0 out count;
-.s3 out bb meta;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

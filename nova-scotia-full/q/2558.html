@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2558</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2558</p><h1>Query 2558</h1><p class="muted">fuzz:4:history,complete,evaluators:836 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][bbox:45.990585,-61.676746,46.020045,-61.363446][date:&quot;2021-01-12T08:57:21Z&quot;];
-nwr[&quot;operator&quot;~&quot;^Nature\\ Conserv&quot;][&quot;postal_code&quot;=&quot;B5A 5R1&quot;][&quot;tracktype&quot;!~&quot;^gra&quot;](44.614878,-63.416700,44.676287,-63.350921)-&gt;.s0;
-.s0 &gt;-&gt;.s1;
-(.s0; - .s1;)-&gt;.s2;
-.s2 convert stat members=per_member(role()),::=::,k0=lrs_union(timestamp(),lrs_isect(lrs_union(lrs_union(t[&quot;crossing&quot;],&quot;name&quot;),&quot;a;b;c&quot;),lrs_union(&quot;1;2&quot;,&quot;1;2&quot;)))-&gt;.s3;
-.s2 &gt;&gt;-&gt;.s4;
-.s0 out tags center;
-.s2 out meta qt;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

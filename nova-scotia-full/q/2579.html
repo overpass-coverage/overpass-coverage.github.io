@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2579</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2579</p><h1>Query 2579</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3722 · 0.12 s CPU · expected status <code>ok</code></p><pre class="query">[bbox:44.882861,-63.301832,45.181685,-63.014441][adiff:&quot;2022-12-21T01:52:24Z&quot;,&quot;2023-05-05T22:27:53Z&quot;];
-nwr[&quot;brand&quot;=&quot;Dero&quot;]-&gt;.s0;
-timeline(way,741147773,4)-&gt;.s1;
-complete(4).s1-&gt;.s2 { node(w); way(bn)[&quot;addr:housenumber&quot;]; }
-way[&quot;crossing:markings&quot;=&quot;yes&quot;](changed:&quot;2012-07-04T18:59:13Z&quot;)(id:718205488,837283945)(44.942919,-62.732052,45.111124,-62.691898)[&quot;lanes:psv&quot;~&quot;^1&quot;,i]-&gt;.s3;
-.s2 compare(delta:count_tags())-&gt;.s4;
-.s3 out 2 noids;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

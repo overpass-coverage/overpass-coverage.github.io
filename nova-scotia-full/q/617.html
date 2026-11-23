@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 617</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 617</p><h1>Query 617</h1><p class="muted">fuzz:4:history,complete,evaluators:427 · 0.32 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][adiff:&quot;2010-08-18T01:40:41Z&quot;,&quot;2018-11-10T14:03:18Z&quot;];
-way(if:1)[&quot;owner&quot;!~&quot;Canadian\\ National\\ Railway|Sackville\\ Manor|Sprigfield\\ Estates&quot;](id:5164344,241058403,297756295,452572623,473046002,492785515,520368391,628290136,1054510620,1241239656,1423323823,1557744831)-&gt;.s0;
-if (lrs_in(&quot;bollard&quot;,s0.min(count_distinct_members()))) { make yes n=s0.count(nwr)-&gt;.s1; } else { make no n=0-&gt;.s1; }
-(.s1; .s0;)-&gt;.s2;
-.s2 &gt;&gt;-&gt;.s3;
-rel.s2[&quot;poles&quot;=&quot;monopole&quot;]-&gt;.s4;
-.s2 out meta qt;
-.s3 out body qt;
-</pre><h2>Lines only this query runs (5)</h2><ul><li><a href="../src/overpass_api/statements/tag_value.cc.html#L689">overpass_api/statements/tag_value.cc:689</a></li><li><a href="../src/overpass_api/statements/tag_value.cc.html#L690">overpass_api/statements/tag_value.cc:690</a></li><li><a href="../src/overpass_api/statements/tag_value.cc.html#L691">overpass_api/statements/tag_value.cc:691</a></li><li><a href="../src/overpass_api/statements/tag_value.cc.html#L692">overpass_api/statements/tag_value.cc:692</a></li><li><a href="../src/overpass_api/statements/tag_value.cc.html#L693">overpass_api/statements/tag_value.cc:693</a></li></ul></main></body></html>

@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 622</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 622</p><h1>Query 622</h1><p class="muted">fuzz:4:evaluators:789 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;sidewalk&quot;)];
-nw(if:(!(uid()&lt;=(count_distinct_members()-id()))))[&quot;highway&quot;=&quot;turning_circle&quot;][&quot;brand:wikidata&quot;=&quot;Q457822&quot;](51.088955,14.087002,51.218824,14.322344)-&gt;.s0;
-make info v=lrs_min(s0.min(t[&quot;check_date&quot;]))-&gt;.s1;
-way.s1(if:(!is_number((is_date(t[&quot;lanes&quot;])?(t[&quot;type&quot;]):(user())))))-&gt;.s2;
-rel(bw.s0)-&gt;.s3;
-nwr.s1(if:(!(0.5&gt;=id())))-&gt;.s4;
-.s1 out tags center;
-.s4 out meta qt 8;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

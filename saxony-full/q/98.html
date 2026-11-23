@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 98</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 98</p><h1>Query 98</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2089 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2015-08-30T13:05:20Z&quot;];
-node(if:((is_number(&quot;Wasserschutzgebiet-Schutzzone I&quot;)?(uid()):(number(suffix(t[&quot;entrance&quot;]))))&gt;=abs(date(id()))))[&quot;manufacturer&quot;=&quot;Vestas Wind Systems A/S&quot;](changed:&quot;2008-10-05T18:45:32Z&quot;)-&gt;.s0;
-way(r.s0:&quot;from&quot;)-&gt;.s1;
-.s0 compare(delta:t[&quot;operator&quot;])-&gt;.s2 { .s2 out count; }
-out noids (50.782190,13.029966,50.854865,13.124657) 5 center;
-.s2 out asc center meta 100;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

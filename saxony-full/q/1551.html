@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1551</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1551</p><h1>Query 1551</h1><p class="muted">fuzz:4:evaluators:148 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-nwr[&quot;bicycle&quot;!~&quot;^desig&quot;][&quot;network:wikidata&quot;=&quot;Q2516468;Q1145755&quot;](50.471865,13.170272,50.577759,13.242761)-&gt;.s0;
-for.s0-&gt;.s1 (count_tags()) { ._ out count; }
-.s0 &lt;-&gt;.s2;
-for.s1-&gt;.s3 ((lrs_min(lrs_union(t[&quot;leaf_cycle&quot;],&quot;name&quot;))+user())) { ._ out count; }
-.s2 convert item ::=::,k0=lrs_max(user()),::id=id()-&gt;.s4;
-.s2 out skel;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

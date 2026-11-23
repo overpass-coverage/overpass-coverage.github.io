@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 46</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 46</p><h1>Query 46</h1><p class="muted">fuzz:3:areas,complete:1583 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::type,::lat,::lon)];
+node[&quot;leisure&quot;=&quot;pitch&quot;](51.207216,12.672570,51.268452,12.753517)-&gt;.s0;
+area[name=&quot;Naundorf&quot;]-&gt;.s1;
+.s0 is_in-&gt;.s3;
+.s0 out meta  (50.874002,14.736749,50.943014,14.773412);
+.s1 out  bb;
+.s3 out  qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

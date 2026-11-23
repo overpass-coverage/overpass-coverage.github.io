@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 356</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 356</p><h1>Query 356</h1><p class="muted">fuzz:3:history,complete:2580 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;tracktype&quot;)];
-way[&quot;crossing:markings&quot;=&quot;zebra&quot;](newer:&quot;2024-03-01T00:56:33Z&quot;)(44.544928,-63.622845,44.746935,-63.549665)(44.645672,-63.596034,44.649440,-63.584367)[&quot;bicycle&quot;=&quot;yes&quot;]-&gt;.s0;
-retro(date(&quot;2022-08-21T04:38:25Z&quot;)) { wr[&quot;operator:wikidata&quot;=&quot;Q3345333&quot;][&quot;building:levels&quot;=&quot;2&quot;](newer:&quot;2019-10-25T01:29:13Z&quot;)(44.572176,-63.839621,44.697121,-63.572955)[&quot;lanes&quot;=&quot;1&quot;]-&gt;.s1; .s1 out ids; }
-complete(1).s1-&gt;.s2 { way(around:0)[&quot;source&quot;]; }
-(.s1; - .s2;)-&gt;.s3;
-node(r.s3:&quot;admin_centre&quot;)-&gt;.s4;
-.s0 out skel center;
-.s4 out ids;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

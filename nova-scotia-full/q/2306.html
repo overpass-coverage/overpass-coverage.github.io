@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2306</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2306</p><h1>Query 2306</h1><p class="muted">fuzz:3:history,complete:2113 · 0.21 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;place&quot;)];
-wr[&quot;maxspeed&quot;=&quot;60&quot;][&quot;bridge:ref&quot;=&quot;HFX038&quot;]-&gt;.s0;
-way(r.s0:&quot;subarea&quot;)-&gt;.s1;
-wr(bn.s0)[&quot;land_area&quot;=&quot;administrative&quot;]-&gt;.s2;
-foreach.s2-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
-.s0 out body;
-.s1 out skel qt 32;
-.s2 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1783</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1783</p><h1>Query 1783</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3675 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][maxsize:1073741824][out:xml];
-wr(if:uid()&gt;16000000)(51.299662,14.562316,51.336294,14.563998)[!&quot;start_date&quot;]-&gt;.s0;
-node.s0(id:1672316855,1704442090,3536542839,6277492050,6989089549,7183802950,10907540314,14070414711)-&gt;.s1;
-rel(bn.s1)-&gt;.s2;
-.s1 convert row ::id=id(),tags=count_tags();
-out;
-.s2 out count center;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

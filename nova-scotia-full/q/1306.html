@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1306</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1306</p><h1>Query 1306</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1507 · 0.12 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Roads&quot;;[&quot;type&quot;~&quot;^mu&quot;][&quot;voltage&quot;!~&quot;^12&quot;];)(&quot;Named things&quot;;[&quot;landuse&quot;=&quot;grass&quot;][&quot;phases&quot;];&quot;ref&quot;;)][maxsize:268435456][timeout:25];
-nwr(46.094571,-60.006553,46.123372,-59.979683)-&gt;.s0;
-is_in(44.794525,-62.898263)-&gt;.s1;
-nwr(area.s1)[&quot;is_in:municipality&quot;=&quot;Halifax Regional Municipality&quot;]-&gt;.s2;
-node.s0(if:is_closed())-&gt;.s3;
-rel(br.s2)[&quot;building&quot;=&quot;commercial&quot;]-&gt;.s4;
-.s1 out body geom;
-.s2 out center count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

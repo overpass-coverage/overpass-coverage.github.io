@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2662</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2662</p><h1>Query 2662</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1805 · 0.21 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:popup(&quot;Shops&quot;;[&quot;tracktype&quot;=&quot;grade2&quot;];[&quot;operator&quot;];[&quot;destination:forward&quot;][&quot;area&quot;~&quot;^ye&quot;];)(&quot;Named things&quot;;[&quot;roof:levels&quot;=&quot;0&quot;];[&quot;amenity&quot;!~&quot;^be&quot;][&quot;waste&quot;];&quot;name&quot;;)(&quot;Shops&quot;;[&quot;highway&quot;=&quot;tertiary&quot;];[&quot;surface&quot;~&quot;^co&quot;];)];
-node[!&quot;information&quot;](id:332431465,2792948994,3632509753,3738748934,4435007785,4450066517,6155356046,7175295746,9507175954,10261228412,13959864902,14315993184)-&gt;.s0;
-nwr(around:50,50.676633,12.714204,50.677050,12.713157)[&quot;tactile_paving&quot;]-&gt;.s1;
-.s1 is_in-&gt;.s2;
-node(around.s0:100)[&quot;roof:direction&quot;!~&quot;^21&quot;]-&gt;.s3;
-make info v=lrs_min(s1.u(user()))-&gt;.s4;
-.s0 out body geom;
-.s3 out asc 100 body;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

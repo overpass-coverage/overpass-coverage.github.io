@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 49</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 49</p><h1>Query 49</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:224 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::user,::count,::changeset,::&quot;count:ways&quot;)];
-nw[&quot;foot&quot;][&quot;operator:wikidata&quot;=&quot;Q3587594&quot;][~&quot;^ins&quot;~&quot;3&quot;]-&gt;.s0;
-.s0 &gt;-&gt;.s1;
-way.s0(51.234709,12.885471,51.293586,12.898038)-&gt;.s2;
-node(around:50,53.950281,-1.083700,53.951156,-1.085390)[&quot;operator&quot;]-&gt;.s3;
-.s2 is_in-&gt;.s4;
-.s0 out bb skel;
-.s2 out geom;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

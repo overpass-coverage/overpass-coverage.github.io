@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 88</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 88</p><h1>Query 88</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:629 · 0.14 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][out:xml][maxsize:268435456];
-nw(51.512809,12.216125,51.541567,12.244982)-&gt;.s0;
-node.s0(50.854072,13.812493,51.051938,14.149664)-&gt;.s1;
-rel.s0(51.102970,14.107999,51.160690,14.276609)-&gt;.s2;
-(.s0; .s0 &gt;;)-&gt;.s3;
-.s3 local llb-&gt;.s4;
-.s0 convert row k3=((-1e3)&lt;((uid()&gt;=count_by_role(&quot;stop_position&quot;))?((lat()-lat())):(lrs_max(&quot;1;2&quot;)))),angles=per_vertex(angle()&gt;90),k2=version(),::id=id(),::=::,k0=lon(),k1=abs((abs(lat())/version())),members=per_member(role())-&gt;.s5;
-.s5 out qt meta;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 372</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 372</p><h1>Query 372</h1><p class="muted">fuzz:4:history,complete,evaluators:638 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][date:&quot;2010-09-07T22:19:48Z&quot;];
-nwr[&quot;capacity&quot;=&quot;15 litres&quot;][!&quot;destination&quot;](around:500,44.691288,-63.285875)-&gt;.s0;
-timeline(way,1362475954)-&gt;.s1;
-node(around.s1:300)[&quot;direction&quot;~&quot;^2&quot;]-&gt;.s2;
-node(way_link.s0:1)-&gt;.s3;
-way.s0(if:(lrs_in(t[&quot;highway&quot;],&quot;1;2&quot;)||(!is_date(id()))))-&gt;.s4;
-node.s0(id:814335081,907387289,1019357366,1687826869,1986947393,3536845432,4621945733,5617942133,6013927983)-&gt;.s5;
-.s2 out skel;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

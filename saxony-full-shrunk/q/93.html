@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 93</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full, shrunk)</a> / query 93</p><h1>Query 93</h1><p class="muted">fuzz:4:history,complete,evaluators:146 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[diff:&quot;2026-07-21T14:37:42Z&quot;];
-wr[&quot;operator&quot;=&quot;Michael Wittig&quot;][&quot;barrier&quot;=&quot;retaining_wall&quot;]-&gt;.s0;
-rel(r.s0)-&gt;.s1;
-make info v=(((s0.count(wr)&gt;=10)||(number(s0.u(count_tags()))&lt;1e3))?(lrs_min(s0.set(suffix(id())))):(s0.set(timestamp()))),c=s0.sum(length())-&gt;.s2;
-.s2 convert item k0=&quot;1;2&quot;,::id=id(),::geom=trace(geom()),k1=uid(),!&quot;amenity&quot;-&gt;.s3;
-.s2 out   23;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

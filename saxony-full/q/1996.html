@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1996</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1996</p><h1>Query 1996</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1109 · 0.44 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Shops&quot;;[&quot;rooms&quot;~&quot;^17&quot;][&quot;bin&quot;~&quot;^no&quot;];&quot;amenity&quot;;)(&quot;Named things&quot;;[&quot;fire_hydrant:position&quot;~&quot;^la&quot;][&quot;amenity&quot;!=&quot;waste_basket&quot;];)(&quot;Shops&quot;;[&quot;plant:output:electricity&quot;~&quot;^75&quot;][&quot;species:wikidata&quot;];[&quot;traffic_sign:backward&quot;!=&quot;DE:283&quot;];[&quot;network&quot;=&quot;CZ:national&quot;][&quot;bicycle_parking&quot;=&quot;stands&quot;];&quot;highway&quot;;)][timeout:25][maxsize:268435456][date:&quot;2009-07-05T21:20:05Z&quot;];
-node[&quot;maxwidth:physical&quot;!~&quot;^2&quot;](id:685010569,768935148,1691706693,2093634505,2564652356,3257126747,5241725622,7417649726,8600218873,9569490731,14087619468)[&quot;service&quot;!~&quot;driveway|parking_aisle|spur|yard&quot;]-&gt;.s0;
-area[name=&quot;Coswig&quot;]-&gt;.s1;
-node(area.s1)[&quot;couplings:diameters&quot;=&quot;B; B&quot;]-&gt;.s2;
-foreach.s2-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
-.s0 out ids;
-.s2 out asc meta geom noids;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

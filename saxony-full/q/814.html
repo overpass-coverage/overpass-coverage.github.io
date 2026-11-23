@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 814</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 814</p><h1>Query 814</h1><p class="muted">fuzz:4:evaluators:355 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-node(id:2273422699,2614999750,3761180019,9211269126)[&quot;sac_scale&quot;=&quot;hiking&quot;]-&gt;.s0;
-make stat k0=s0.u((id()+id())),::geom=s0.gcat(geom())-&gt;.s1;
-.s1 &lt;-&gt;.s2;
-.s1 convert item ::id=id(),::=::,k0=((count_distinct_by_role(&quot;alternative&quot;)&lt;suffix(t[&quot;maxspeed&quot;]))?(timestamp()):(lrs_min(lrs_union(lrs_union(t[&quot;natural&quot;],&quot;name&quot;),&quot;a;b;c&quot;)))),k1=lrs_min(lrs_union(lrs_isect(lrs_union(t[&quot;tourism&quot;],&quot;name&quot;),&quot;a;b;c&quot;),&quot;1;2&quot;)),!&quot;backrest&quot;-&gt;.s3;
-.s2 out ids;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

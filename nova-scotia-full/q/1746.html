@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1746</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1746</p><h1>Query 1746</h1><p class="muted">fuzz:4:evaluators:783 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-way[&quot;destination:street&quot;=&quot;Nantucket Avenue&quot;]-&gt;.s0;
-if (lrs_in(&quot;a&quot;,((s0.sum(abs(changeset()))&gt;=42)?(s0.max(lrs_min(&quot;a;b;c&quot;))):(s0.min(id()))))) { make yes n=s0.count(nwr)-&gt;.s1; }
-for.s0-&gt;.s2 (keys()) { ._ out count; }
-.s0 convert row ::id=id(),tags=count_tags();
-out;
-.s1 out ids (44.341794,-64.566070,44.411333,-64.527401);
-.s2 out ids;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/set_list_operators.cc.html#L95">overpass_api/statements/set_list_operators.cc:95</a></li></ul></main></body></html>

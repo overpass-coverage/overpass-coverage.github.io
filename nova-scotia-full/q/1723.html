@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1723</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1723</p><h1>Query 1723</h1><p class="muted">fuzz:4:history,complete,output:473 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:536870912][timeout:60][out:xml][date:&quot;2013-10-15T11:47:52Z&quot;];
-nw(around:10,44.324674,-66.121805)-&gt;.s0;
-way(around.s0:300)[&quot;operator&quot;~&quot;^(Berwick\\ Power\\ Commission|Glooscap\\ Energy|Halifax\\ Regional\\ Water\\ Commission|HalifaxHarbour\\ Bridges|Nature\\ Conservancy\\ of\\ Canada|Nova\\ Scotia\\ Nature\\ Trust\\ and\\ private\\ owner\\(s\\)|Parkbridge)$&quot;,i]-&gt;.s1;
-node.s0(if:id()&gt;9000000000)-&gt;.s2;
-.s1 &gt;-&gt;.s3;
-.s2 out asc meta bb;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1112</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1112</p><h1>Query 1112</h1><p class="muted">fuzz:4:history,complete,evaluators:694 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-way(44.639343,-63.695976,44.695250,-63.507328)[&quot;building:part&quot;=&quot;roof&quot;]-&gt;.s0;
-timeline(way,235889862)-&gt;.s1;
-.s1 convert stat k0=uid(),::=::,::geom=hull(geom())-&gt;.s2;
-way.s1[&quot;voltage&quot;]-&gt;.s3;
-(.s0; .s2;)-&gt;.s4;
-.s0 out tags center 34;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

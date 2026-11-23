@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 3025</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 3025</p><h1>Query 3025</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:595 · 1.43 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][maxsize:1073741824][out:csv(&quot;bench&quot;,&quot;addr:country&quot;,::type,&quot;lane_markings&quot;;false)][date:&quot;2020-04-20T17:39:08Z&quot;];
-nwr(50.530875,12.277305,50.571472,12.290190)(50.741614,12.836764,50.901749,12.939218)-&gt;.s0;
-retro(date(&quot;2017-06-06T15:46:34Z&quot;)) { node(id:3177032185,7080592697)[!&quot;power&quot;][&quot;shelter&quot;]-&gt;.s1; .s1 out ids; }
-rel(r.s1)[&quot;building:disused&quot;]-&gt;.s2;
-for.s2-&gt;.s3 (keys()) { make group value=_.val,count=count(nwr); }
-way(around.s3:300)[&quot;segregated&quot;!~&quot;^n&quot;]-&gt;.s4;
-.s3 out 1 asc skel;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/recurse.cc.html#L605">overpass_api/statements/recurse.cc:605</a></li></ul></main></body></html>

@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 299</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 299</p><h1>Query 299</h1><p class="muted">fuzz:4:history,areas,complete,statements:175 · 0.75 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][date:&quot;2020-03-19T04:04:39Z&quot;];
-rel(id:5309170,9236186,9321774,9774586,17643803)[&quot;barrier&quot;]-&gt;.s0;
-complete(5).s0-&gt;.s1 { way(around:0)[&quot;support&quot;]; }
-nw[&quot;camera:direction&quot;=&quot;15&quot;][~&quot;chec&quot;~&quot;20&quot;,i]-&gt;.s2;
-complete(3).s1-&gt;.s3 { node(w); way(bn)[&quot;addr:interpolation&quot;]; }
-nwr[~&quot;^postal_code$&quot;~&quot;^B2T 1B4$&quot;][&quot;brand:wikidata&quot;~&quot;Q60&quot;,i][~&quot;^is_&quot;~&quot;.&quot;]-&gt;.s4;
-.s0 out body;
-.s1 out tags (44.794887,-63.473463,44.866976,-63.435443);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1320</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1320</p><h1>Query 1320</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:142 · 0.01 s CPU · expected status <code>query-error: line N: parse error: per_member(...) must have one or more arguments</code></p><pre class="query">[timeout:180];
-way(id:222782171,332251832,813109437)(id:108333834,130372391,196309741,228642026,230589936,384679970,563205169,757841894,810539467,891179153,1191237989,1199493542)-&gt;.s0;
-nwr[~&quot;^check_date$&quot;~&quot;^2024-10-05$&quot;][!&quot;noexit&quot;]-&gt;.s1;
-(.s0; .s1;)-&gt;.s2;
-.s0 convert stat k0=is_number(t[&quot;gauge&quot;]),angles=per_vertex(angle()),k3=suffix(id()),!&quot;bus&quot;,k1=timestamp(),k2=lrs_isect(lrs_isect(t[&quot;lane_markings&quot;],&quot;1;2&quot;),lrs_isect(&quot;a;b;c&quot;,lrs_isect(&quot;1;2&quot;,&quot;1;2&quot;))),bad=per_member(),members=per_member(ref())-&gt;.s3;
-.s3 &gt;-&gt;.s4;
-.s1 out meta geom;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/per_member.h.html#L78">overpass_api/statements/per_member.h:78</a></li></ul></main></body></html>

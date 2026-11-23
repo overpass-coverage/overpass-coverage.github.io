@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 907</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 907</p><h1>Query 907</h1><p class="muted">fuzz:4:history,areas,complete,statements:219 · 0.12 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;lit&quot;)][date:&quot;2018-10-12T20:27:50Z&quot;];
-nw[&quot;natural&quot;~&quot;^gras&quot;,i](43.576711,-65.863842,43.670412,-65.605123)[~&quot;^foo&quot;~&quot;cros&quot;]-&gt;.s0;
-.s0 &lt;&lt;-&gt;.s1;
-rel.s0(id:9182315,9288516,9300635,12048983,13344699,13344731,20128070,20181240,21101393,21293973)-&gt;.s2;
-foreach.s1-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
-.s0 out body geom;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

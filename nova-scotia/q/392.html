@@ -1,0 +1,4 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 392</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 392</p><h1>Query 392</h1><p class="muted">fuzz:4:evaluators:600 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">way(around:10,45.279096,-62.882576)-&gt;.s0;
+way.s0(if:((-count_distinct_by_role(&quot;both&quot;))&gt;lrs_min(&quot;a;b;c&quot;)))-&gt;.s3;
+.s0 out;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

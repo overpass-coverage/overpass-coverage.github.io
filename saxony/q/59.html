@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 59</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 59</p><h1>Query 59</h1><p class="muted">fuzz:3:areas,complete:135 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">way(50.961987,12.579726,51.040305,12.621540)[&quot;bicycle&quot;!~&quot;designated|no|yes&quot;]-&gt;.s0;
+area(3605792493)-&gt;.s1;
+area(id:3601889122)-&gt;.s3;
+( .s3;)-&gt;.s5;
+.s1 out skel;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

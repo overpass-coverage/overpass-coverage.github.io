@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1767</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1767</p><h1>Query 1767</h1><p class="muted">fuzz:4:evaluators:362 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-way[&quot;natural&quot;~&quot;^(bare_rock|grassland|peak|tree|tree_row|wood)$&quot;][&quot;rating&quot;=&quot;100 kVA&quot;](51.498252,12.967822,51.605436,12.985692)-&gt;.s0;
-make info v=s0.u((is_tag(&quot;lit&quot;)?(timestamp()):(timestamp()))),c=((number(s0.u(lrs_min(lrs_union(t[&quot;wheelchair&quot;],&quot;name&quot;))))&lt;42)?(s0.min((0?(id()):(id())))):(s0.sum(date(type())))),n=1-&gt;.s1;
-way.s0(if:is_number(t[&quot;gauge&quot;]))-&gt;.s2;
-if ((s0.sum((-uid()))&lt;=date(s0.max(timestamp())))) { make yes n=s0.count(nwr)-&gt;.s3; }
-rel(bn.s1)-&gt;.s4;
-.s4 out tags geom 37;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

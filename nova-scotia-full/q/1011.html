@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1011</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1011</p><h1>Query 1011</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1408 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::id,&quot;bridge&quot;,&quot;waterway&quot;,::&quot;count:nodes&quot;,&quot;lit&quot;,::lat,::user,::timestamp)][bbox:43.462081,-65.912837,43.738093,-65.630066];
-rel[&quot;noexit&quot;!=&quot;yes&quot;](46.152170,-60.454040,46.164242,-60.384450)-&gt;.s0;
-area[name=&quot;Williams Lake&quot;]-&gt;.s1;
-node(area.s1)[&quot;admin_level&quot;=&quot;5&quot;]-&gt;.s2;
-if (lrs_in(&quot;yes&quot;,lrs_min(s1.min(suffix(t[&quot;man_made&quot;]))))) { make yes n=s1.count(nwr)-&gt;.s3; } else { make no n=0-&gt;.s3; }
-.s0 out body center (45.048957,-64.425096,45.080235,-64.349717);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 912</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 912</p><h1>Query 912</h1><p class="muted">fuzz:4:evaluators:380 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-node(around:100,46.187553,-60.398248)-&gt;.s0;
-.s0 convert row k2=type(),k1=(is_date(suffix(t[&quot;name&quot;]))&amp;&amp;is_number(t[&quot;admin_level&quot;])),::=::,k0=lrs_isect(count_members(),suffix(timestamp())),::id=id()-&gt;.s1;
-node(w.s0)[&quot;ford&quot;=&quot;stepping_stones&quot;]-&gt;.s2;
-node.s2(id:1228738099,1324125187,1689418285,2439347427,3503020491,5617942133,14086125662)-&gt;.s3;
-rel(r.s2)-&gt;.s4;
-.s4 out body bb;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

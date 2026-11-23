@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 243</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 243</p><h1>Query 243</h1><p class="muted">fuzz:4:poi,areas:449 · 0.17 s CPU · expected status <code>ok</code></p><pre class="query">nwr[&quot;post:city&quot;=&quot;Upper Musquodoboit&quot;][&quot;height&quot;=&quot;8&quot;]-&gt;.s0;
+area[name=&quot;Forest Glen&quot;]-&gt;.s2;
+rel(area.s2)-&gt;.s3;
+.s3 &lt;-&gt;.s4;
+.s4 out;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

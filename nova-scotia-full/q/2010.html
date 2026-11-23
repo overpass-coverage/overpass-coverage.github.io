@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2010</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2010</p><h1>Query 2010</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1844 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;railway&quot;,::otype,&quot;voltage&quot;;false)][maxsize:1073741824];
-node(id:987358000,1692572056)-&gt;.s0;
-nwr[&quot;start_date&quot;=&quot;2009&quot;][&quot;maxspeed&quot;~&quot;100&quot;,i][&quot;motor_vehicle&quot;!=&quot;no&quot;]-&gt;.s1;
-(.s0; - .s1;)-&gt;.s2;
-way(r.s0:&quot;&quot;)-&gt;.s3;
-.s2 out asc;
-.s3 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

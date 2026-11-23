@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1423</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1423</p><h1>Query 1423</h1><p class="muted">fuzz:4:evaluators:888 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][bbox:43.652559,-65.246599,43.745470,-64.977400];
-node[&quot;segregated&quot;=&quot;no&quot;](44.008237,-64.690809,44.136498,-64.664506)-&gt;.s0;
-if ((number(s0.u(suffix(t[&quot;phases&quot;])))&gt;100)) { make yes n=s0.count(nwr)-&gt;.s1; } else { make no n=0-&gt;.s1; }
-.s0 &lt;&lt;-&gt;.s2;
-.s2 &gt;-&gt;.s3;
-if ((s2.sum((0?(count_members()):(count_distinct_members())))&gt;=1)) { make yes n=s2.count(nwr)-&gt;.s4; } else { make no n=0-&gt;.s4; }
-.s1 out skel geom asc;
-.s2 out tags;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

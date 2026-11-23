@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2099</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2099</p><h1>Query 2099</h1><p class="muted">fuzz:3:areas,complete:1252 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-nw[&quot;lane_markings&quot;=&quot;no&quot;](51.048685,13.677387,51.071280,13.885037)-&gt;.s0;
-.s0 map_to_area-&gt;.s1;
-way.s1(if:date(timestamp())&gt;date(&quot;2008-01-01&quot;))-&gt;.s2;
-.s1 out ids (50.920148,13.764747,50.988890,13.878523);
-.s2 out body geom;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

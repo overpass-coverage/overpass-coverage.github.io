@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2816</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2816</p><h1>Query 2816</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1722 · 0.40 s CPU · expected status <code>ok</code></p><pre class="query">[bbox:50.954427,13.563188,51.091015,13.936837][out:csv(::timestamp,&quot;name&quot;,::user,::&quot;count:relations&quot;,&quot;motor_vehicle&quot;,::count,&quot;sidewalk&quot;)][timeout:180];
-node(id:308682505,4574048846,5126587609,7100167494,9483440689,13847068746)-&gt;.s0;
-.s0 is_in-&gt;.s1;
-node.s0(if:(suffix(count_members())&lt;(uid()+suffix(&quot;2018-01-01&quot;))))-&gt;.s2;
-area[name=&quot;Dorfteich&quot;]-&gt;.s3;
-rel(area.s3)(50.942808,13.097376,50.944916,13.113205)-&gt;.s4;
-.s0 out noids 100 bb;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

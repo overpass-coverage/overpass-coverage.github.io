@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 258</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 258</p><h1>Query 258</h1><p class="muted">fuzz:4:evaluators:196 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][bbox:50.970404,13.153531,51.109772,13.535844];
-wr(51.252550,12.418924,51.281485,12.577858)[&quot;amenity&quot;~&quot;^be&quot;](poly:&quot;50.673934 12.497767 50.683803 12.493957 50.658743 12.454032 50.662176 12.463175 50.662346 12.479097 50.660997 12.484190&quot;)-&gt;.s0;
-way.s0(if:(id()&lt;&quot;x;y&quot;))-&gt;.s1;
-node(way_link.s0:3-)-&gt;.s2;
-if (((s1.max(id())==-1)||((number(s1.u(id()))&gt;=2)||(s1.count(nw)&lt;1e3)))) { make yes n=s1.count(nwr)-&gt;.s3; } else { make no n=0-&gt;.s3; }
-.s3 out skel;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

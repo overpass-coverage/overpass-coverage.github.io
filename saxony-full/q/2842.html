@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2842</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2842</p><h1>Query 2842</h1><p class="muted">fuzz:3:history,complete:2646 · 0.47 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-wr[&quot;bicycle&quot;!~&quot;^y&quot;](50.715048,12.645073,50.737622,12.840911)-&gt;.s0;
-complete(2).s0-&gt;.s1 { node(w); way(bn)[&quot;waterway&quot;]; }
-.s0 &lt;&lt;-&gt;.s2;
-way(bn.s1)[&quot;diameter_crown&quot;]-&gt;.s3;
-complete(1).s0-&gt;.s4 { way(around:0)[&quot;surface&quot;]; }
-.s0 out tags;
-.s1 out body qt;
-</pre><h2>Lines only this query runs (3)</h2><ul><li><a href="../src/overpass_api/core/type_relation.h.html#L186">overpass_api/core/type_relation.h:186</a></li><li><a href="../src/overpass_api/core/type_relation.h.html#L187">overpass_api/core/type_relation.h:187</a></li><li><a href="../src/overpass_api/core/type_relation.h.html#L188">overpass_api/core/type_relation.h:188</a></li></ul></main></body></html>

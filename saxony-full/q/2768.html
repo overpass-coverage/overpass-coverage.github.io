@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2768</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2768</p><h1>Query 2768</h1><p class="muted">fuzz:3:areas,complete:1140 · 1.79 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-wr(51.177025,13.247155,51.253230,13.273043)[&quot;artist_name&quot;=&quot;Max Hermann Fritz&quot;]-&gt;.s0;
-.s0 &gt;&gt;-&gt;.s1;
-is_in(51.189164,14.682956)-&gt;.s2;
-rel(area.s2)[&quot;type&quot;=&quot;restriction&quot;]-&gt;.s3;
-.s0 out count;
-.s2 out skel;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

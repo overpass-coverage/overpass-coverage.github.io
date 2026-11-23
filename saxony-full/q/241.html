@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 241</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 241</p><h1>Query 241</h1><p class="muted">fuzz:3:history,complete:1259 · 0.56 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][adiff:&quot;2009-04-01T19:07:17Z&quot;,&quot;2013-01-27T15:42:13Z&quot;];
-way(poly:&#x27;51.165457 12.827612 51.140922 12.831216 51.137441 12.844985&#x27;)-&gt;.s0;
-.s0 &gt;&gt;-&gt;.s1;
-complete(2).s0-&gt;.s2 { way(around:0)[&quot;waterway&quot;]; }
-.s0 convert row ::id=id(),tags=count_tags();
-out;
-.s1 out count;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/data/set_comparison.cc.html#L415">overpass_api/data/set_comparison.cc:415</a></li></ul></main></body></html>

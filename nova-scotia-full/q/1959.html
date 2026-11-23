@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1959</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1959</p><h1>Query 1959</h1><p class="muted">fuzz:4:output:271 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][timeout:180][out:json];
-wr[&quot;brand:wikipedia&quot;=&quot;en:Walmart&quot;](44.711626,-65.478866,44.746670,-65.378313)[!&quot;segregated&quot;][&quot;public_transport&quot;=&quot;platform&quot;]-&gt;.s0;
-node(r.s0)[&quot;water_source&quot;!=&quot;main&quot;]-&gt;.s1;
-node(r.s0)-&gt;.s2;
-node(r.s2)-&gt;.s3;
-node(r.s0)[&quot;admin_level&quot;~&quot;^(10|5|8)$&quot;,i]-&gt;.s4;
-.s1 out bb (45.328099,-63.373266,45.398391,-63.270495) meta;
-.s4 out 17 ids;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

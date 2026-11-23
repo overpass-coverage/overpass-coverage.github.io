@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1148</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1148</p><h1>Query 1148</h1><p class="muted">fuzz:4:history,complete,evaluators:912 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-nwr(poly:&quot;45.024765 -63.951733 45.034541 -63.943526 45.044092 -63.938751 45.041682 -63.944951 45.045388 -63.950787 45.029056 -63.964334 45.030541 -63.964312 45.047053 -63.967534 45.048253 -63.972706 45.025234 -63.971493 45.026227 -63.985576 45.032784 -64.000501 45.032747 -64.005464 45.020449 -63.980720 45.021676 -64.012919 45.012931 -63.999018 45.003413 -64.005679 45.003744 -64.002190 44.998298 -63.995540 44.985527 -63.975655 44.984321 -63.969884 44.999191 -63.966110 44.995780 -63.961078 44.986743 -63.951433 44.986231 -63.940763 44.998800 -63.951491 44.994885 -63.931666 45.001093 -63.928216 45.007748 -63.945788 45.011321 -63.939923&quot;)[&quot;support&quot;=&quot;pole&quot;][~&quot;^sta&quot;~&quot;20&quot;]-&gt;.s0;
-make stat k0=s0.max(version())-&gt;.s1;
-make stat k0=s0.min(count_tags()),k1=(s0.sum((count_tags()*changeset()))/s0.max(abs(count_tags())))-&gt;.s2;
-.s0 convert row ::id=id(),tags=count_tags();
-out;
-.s0 out meta bb;
-.s1 out ids;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

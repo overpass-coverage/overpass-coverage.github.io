@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 756</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 756</p><h1>Query 756</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:374 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:xml][maxsize:536870912][bbox:44.241480,-64.670285,44.494322,-64.352409];
-rel(if:(lrs_min(lrs_isect(&quot;1;2&quot;,&quot;1;2&quot;))!=(2-uid())))(around:1000,44.109010,-65.493593)-&gt;.s0;
-node(way_cnt.s0:2-)-&gt;.s1;
-.s0 is_in-&gt;.s2;
-nwr(pivot.s2)-&gt;.s3;
-rel(r.s2)-&gt;.s4;
-.s1 out geom asc tags;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

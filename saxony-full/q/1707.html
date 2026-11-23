@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1707</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1707</p><h1>Query 1707</h1><p class="muted">fuzz:4:statements,areas:75 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-wr[&quot;barrier&quot;](50.564466,13.013326,50.596090,13.020726)[&quot;species&quot;!~&quot;Sequoiadendron\\ giganteum&quot;]-&gt;.s0;
-.s0 &lt;&lt;-&gt;.s1;
-.s1 &gt;-&gt;.s2;
-way(around.s0:0)[&quot;surface&quot;~&quot;^(concrete|concrete:plates|fine_gravel|grass|ground|paved|paving_stones|stone:plates|unpaved)$&quot;]-&gt;.s3;
-way.s3(if:uid()&gt;5000000)-&gt;.s4;
-foreach.s1-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
-.s4 out body qt;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

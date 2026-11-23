@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 650</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 650</p><h1>Query 650</h1><p class="muted">fuzz:3:history,complete:1513 · 3.52 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][date:&quot;2017-09-12T16:29:39Z&quot;];
+nwr(51.296985,12.642383,51.417552,12.782535)-&gt;.s0;
+complete(4).s0-&gt;.s1 { node(w); }
+way(r.s0:&quot;line&quot;)[!&quot;oneway&quot;]-&gt;.s2;
+.s1 out ids;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/data/collect_members.h.html#L432">overpass_api/data/collect_members.h:432</a></li></ul></main></body></html>

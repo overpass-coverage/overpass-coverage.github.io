@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1190</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1190</p><h1>Query 1190</h1><p class="muted">fuzz:4:history,complete,evaluators:58 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;hiking&quot;)][date:&quot;2015-05-10T13:10:55Z&quot;];
-way(poly:&quot;51.307602 14.061825 51.301172 14.073236 51.299334 14.077142 51.305830 14.078857 51.301941 14.083399 51.306817 14.101220&quot;)(id:4068292,118830240,119489145,386538695,520966349)(if:is_tag(&quot;lit&quot;))-&gt;.s0;
-timeline(relation,9752768,4)-&gt;.s1;
-way.s0(if:is_date(count_tags()))-&gt;.s2;
-(.s1; .s0;)-&gt;.s3;
-way.s1(if:lrs_in(id(),lrs_isect(lrs_isect(&quot;1;2&quot;,&quot;a;b;c&quot;),lrs_union(&quot;1;2&quot;,&quot;1;2&quot;))))-&gt;.s4;
-.s2 out body geom qt;
-.s3 out skel center;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

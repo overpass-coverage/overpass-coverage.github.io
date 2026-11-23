@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 479</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 479</p><h1>Query 479</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1170 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:1073741824][date:&quot;2011-01-05T02:14:50Z&quot;];
-nw[&quot;operator:en&quot;=&quot;Canada Post&quot;](around:100,45.646316,-63.060297)[~&quot;^lan&quot;~&quot;n&quot;]-&gt;.s0;
-make info v=suffix(lrs_min(s0.min(timestamp()))),n=1,c=((s0.sum(abs(number(t[&quot;footway&quot;])))==0.5)?(number(s0.u(suffix(suffix(t[&quot;service&quot;]))))):(abs(s0.sum(number(user())))))-&gt;.s1;
-rel.s0(if:(lrs_max(lrs_union(t[&quot;golf&quot;],&quot;name&quot;))&lt;lrs_max(&quot;&quot;)))-&gt;.s2;
-node(around:200,45.416788,-61.936603,45.417160,-61.934352,45.414197,-61.937776,45.416048,-61.940498,45.415274,-61.944347,45.414770,-61.943094)[&quot;postal_code&quot;]-&gt;.s3;
-.s2 out meta asc (45.085849,-64.448285,45.147639,-64.392557);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

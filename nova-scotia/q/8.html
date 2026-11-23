@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 8</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 8</p><h1>Query 8</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3155 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">way(if:length()&gt;10)[&quot;ford&quot;=&quot;stepping_stones&quot;]-&gt;.s0;
+node(way_link.s0:2-)-&gt;.s1;
+node(w.s0)-&gt;.s2;
+rel(bw.s1)-&gt;.s3;
+foreach.s1-&gt;.it{ .it out ids; ()-&gt;.x; }
+.s2 out;
+.s3 out tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

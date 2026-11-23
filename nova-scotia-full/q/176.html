@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 176</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 176</p><h1>Query 176</h1><p class="muted">fuzz:4:evaluators:673 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-rel(44.559748,-65.536979,44.593609,-65.486414)(if:(number((t[&quot;support&quot;]+timestamp()))&lt;date(lrs_min(&quot;1;2&quot;))))-&gt;.s0;
-node(way_cnt.s0:1)-&gt;.s1;
-.s0 convert stat !&quot;addr:county&quot;,k2=uid(),k0=user(),k1=(is_date(t[&quot;oneway&quot;])?(date(type())):((0?(count_by_role(&quot;stop&quot;)):(number(t[&quot;footway&quot;]))))),k3=(t[&quot;maxspeed&quot;]==&quot;159 litres&quot;?(timestamp()):(lrs_min(lrs_isect(&quot;a;b;c&quot;,lrs_union(t[&quot;man_made&quot;],&quot;name&quot;))))),members=per_member(role()),::geom=lstr(pt(44.075206,-64.854164),pt(44.076206,-64.852164))-&gt;.s2;
-.s1 out skel;
-.s2 out skel;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/per_member.h.html#L399">overpass_api/statements/per_member.h:399</a></li></ul></main></body></html>

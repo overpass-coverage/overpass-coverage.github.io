@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1873</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1873</p><h1>Query 1873</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3246 · 0.01 s CPU · expected status <code>query-error: line N: parse error: &quot;+&quot; needs a right hand side argument</code></p><pre class="query">[out:json][maxsize:1073741824];
-nwr[&quot;man_made&quot;=&quot;goods_conveyor&quot;](44.393473,-64.618740,44.487315,-64.511848)-&gt;.s0;
-way.s0(if:1 +)-&gt;.s1;
-node(r.s0)-&gt;.s2;
-node(way_link.s1:1)-&gt;.s3;
-.s3 out bb count;
-</pre><h2>Lines only this query runs (3)</h2><ul><li><a href="../src/overpass_api/statements/statement.cc.html#L292">overpass_api/statements/statement.cc:292</a></li><li><a href="../src/overpass_api/statements/statement.cc.html#L293">overpass_api/statements/statement.cc:293</a></li><li><a href="../src/overpass_api/statements/statement.cc.html#L294">overpass_api/statements/statement.cc:294</a></li></ul></main></body></html>

@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2659</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2659</p><h1>Query 2659</h1><p class="muted">fuzz:4:history,complete,evaluators:639 · 0.69 s CPU · expected status <code>query-error: runtime error: Filters too weak in query statement: specify in addition a bbox, a tag filt</code></p><pre class="query">[timeout:60][maxsize:536870912];
-nw(around:500,44.586534,-63.867787)-&gt;.s0;
-make info c=s0.min((count_members()*length()))-&gt;.s1;
-node(way_link.s0:2-)-&gt;.s2;
-node.s2(45.005268,-64.703141,45.154292,-64.481653)-&gt;.s3;
-wr(bn.s3)[&quot;light:lit&quot;]-&gt;.s4;
-.s0 out skel center (44.250270,-64.266343,44.284004,-64.236733);
-.s4 out body;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

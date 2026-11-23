@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1689</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1689</p><h1>Query 1689</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3231 · 0.20 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:json];
-node[!&quot;brand&quot;](id:270800607,314942040,442462930,1494394005,1670790819,2301129950,2917945291,3133023709,3986024717,11422447250)-&gt;.s0;
-.s0 convert item ::geom=geom(),k1=is_number(t[&quot;network&quot;]),k0=&quot;1;2&quot;,::=::-&gt;.s1;
-rel(r.s0)[&quot;change:lanes&quot;=&quot;yes|yes|no&quot;]-&gt;.s2;
-.s2 is_in-&gt;.s3;
-node(r.s0)-&gt;.s4;
-.s0 out body geom;
-.s4 out skel;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

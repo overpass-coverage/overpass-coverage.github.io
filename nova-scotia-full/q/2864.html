@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2864</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2864</p><h1>Query 2864</h1><p class="muted">fuzz:3:history,complete:1785 · 3.76 s CPU · expected status <code>query-error: runtime error: Filters too weak in query statement: specify in addition a bbox, a tag filt</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][date:&quot;2011-09-07T12:52:03Z&quot;];
-way[&quot;destination&quot;=&quot;Highway 104&quot;](if:changeset()&gt;113000000)(44.371112,-64.597647,44.387901,-64.482280)[&quot;building:levels&quot;=&quot;3&quot;]-&gt;.s0;
-complete(2).s0-&gt;.s1 { node(w); way(bn)[&quot;highway&quot;]; }
-rel(bn.s1)-&gt;.s2;
-wr(bn.s1)[&quot;landform&quot;!~&quot;^es&quot;]-&gt;.s3;
-.s1 out meta geom (44.666882,-63.222261,44.735812,-63.139083);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

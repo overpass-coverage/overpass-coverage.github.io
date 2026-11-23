@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2917</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2917</p><h1>Query 2917</h1><p class="muted">fuzz:4:history,areas,complete,statements:971 · 1.55 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;electrified&quot;)];
-nwr(poly:&#x27;50.506500 12.580829 50.519572 12.588202 50.515008 12.537950 50.484921 12.502971 50.493483 12.528002 50.485576 12.525399&#x27;)-&gt;.s0;
-.s0 &gt;&gt;-&gt;.s1;
-.s1 convert row ::id=id(),tags=count_tags();
-out;
-.s0 out skel 25;
-.s1 out meta geom asc;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,6 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 3083</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 3083</p><h1>Query 3083</h1><p class="muted">fuzz:4:history,complete,evaluators:362 · 3.57 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][date:&quot;2009-07-05T21:20:05Z&quot;];
-nwr[&quot;natural&quot;~&quot;^(bare_rock|grassland|peak|tree|tree_row|wood)$&quot;](51.538271,12.974171,51.565417,12.979343)-&gt;.s0;
-.s0 convert row k1=count_distinct_members(),members=per_member(ref()),k0=count_distinct_by_role(&quot;historic&quot;),k3=&quot;x;y&quot;,k2=lrs_union(t[&quot;emergency&quot;],&quot;name&quot;),::id=id()-&gt;.s1;
-.s0 out skel;
-.s1 out body asc 39;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

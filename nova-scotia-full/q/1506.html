@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1506</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1506</p><h1>Query 1506</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1184 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::&quot;count:relations&quot;,::count,::type,&quot;name:en&quot;,::otype,::lon,&quot;crossing:island&quot;,::id;true)][maxsize:1073741824];
-wr[&quot;location&quot;=&quot;roof&quot;]-&gt;.s0;
-node(w.s0:2)-&gt;.s1;
-node(w.s0)[&quot;landuse&quot;=&quot;grass&quot;]-&gt;.s2;
-rel.s0[&quot;unsigned_ref&quot;!~&quot;^69&quot;]-&gt;.s3;
-node(around.s2:20)[&quot;surface&quot;!~&quot;compacted|concrete|dirt|fine_gravel|gravel|ground|paved|pebblestone|unpaved&quot;]-&gt;.s4;
-.s4 out bb (43.871915,-66.030847,43.888650,-65.905863) asc noids;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

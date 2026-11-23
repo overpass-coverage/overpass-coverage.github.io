@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 33</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 33</p><h1>Query 33</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1954 · 0.22 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Named things&quot;;[&quot;operator:wikipedia&quot;!~&quot;^en&quot;][&quot;direction&quot;=&quot;290&quot;];[&quot;water&quot;~&quot;^la&quot;];)(&quot;ref&quot;;)][date:&quot;2015-05-13T19:50:33Z&quot;];
+node[&quot;cables&quot;=&quot;1&quot;]-&gt;.s0;
+make stat k0=number(s0.u(user()))-&gt;.s1;
+area[name=&quot;Half Island Cove&quot;][admin_level]-&gt;.s2;
+nwr(area.s2)[&quot;royal_cypher&quot;=&quot;no&quot;]-&gt;.s3;
+way(around.s1:100)[~&quot;^hei&quot;~&quot;6&quot;]-&gt;.s4;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

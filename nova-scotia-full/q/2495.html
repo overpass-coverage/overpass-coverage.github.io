@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2495</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2495</p><h1>Query 2495</h1><p class="muted">fuzz:3:areas,complete:680 · 0.08 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-node[&quot;vending&quot;=&quot;animal_feed&quot;](if:changeset()&gt;7000000)-&gt;.s0;
-is_in(46.071076,-60.273128)-&gt;.s1;
-node(area.s1)[&quot;destination:ref&quot;=&quot;NS 111 South&quot;]-&gt;.s2;
-way(around.s0:0)[!&quot;highway&quot;]-&gt;.s3;
-node(way_link.s0:2-)-&gt;.s4;
-.s0 out body 11 (44.768061,-63.181612,44.856185,-63.070024);
-.s4 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

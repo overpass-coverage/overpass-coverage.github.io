@@ -1,0 +1,5 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 461</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 461</p><h1>Query 461</h1><p class="muted">fuzz:4:evaluators:274 · 0.31 s CPU · expected status <code>ok</code></p><pre class="query">way(poly:&quot;51.247851 13.423986 51.247314 13.407068 51.250457 13.406407 51.250597 13.403188 51.250049 13.392667 51.243314 13.375746 51.237484 13.395132 51.232771 13.388120 51.232278 13.413281 51.237560 13.410037&quot;)-&gt;.s0;
+.s0 &lt;-&gt;.s1;
+.s1 convert row ::id=id(),k0=uid(),::geom=poly(lstr(pt(51.609144,12.474548))),k1=is_number(lrs_min(user()))-&gt;.s2;
+.s0 out;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/core/geometry.cc.html#L501">overpass_api/core/geometry.cc:501</a></li></ul></main></body></html>

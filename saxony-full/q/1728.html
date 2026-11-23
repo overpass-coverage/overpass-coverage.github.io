@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1728</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1728</p><h1>Query 1728</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3342 · 1.60 s CPU · expected status <code>ok</code></p><pre class="query">[bbox:50.653935,12.495584,50.728566,12.621607][out:xml][maxsize:268435456][date:&quot;2018-10-17T18:45:27Z&quot;];
-nwr(poly:&quot;50.417478 12.448995 50.413868 12.438378 50.413342 12.440971 50.412708 12.441593 50.412835 12.439069 50.412227 12.442669 50.410256 12.437590 50.407749 12.439953 50.408699 12.442572 50.408108 12.449872&quot;)-&gt;.s0;
-rel(r.s0:&quot;backward&quot;)-&gt;.s1;
-nwr.s0(if:((version()*version())==(1?((suffix(t[&quot;building&quot;])+id())):((&quot;&quot;+suffix(t[&quot;maxspeed&quot;]))))))-&gt;.s2;
-.s0 is_in-&gt;.s3;
-foreach.s2-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
-.s1 out (51.040810,13.642096,51.075004,13.761962) meta qt center;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

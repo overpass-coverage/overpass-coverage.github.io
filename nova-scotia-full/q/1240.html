@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1240</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1240</p><h1>Query 1240</h1><p class="muted">fuzz:4:history,areas,complete,statements:82 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-way[!&quot;sport&quot;][&quot;cycleway:both&quot;!~&quot;no&quot;][&quot;unsigned_ref&quot;=&quot;6991&quot;]-&gt;.s0;
-area[name=&quot;Carrigan Lake&quot;]-&gt;.s1;
-way(area.s1)[&quot;brand&quot;=&quot;Laura Secord&quot;]-&gt;.s2;
-way.s2(id:98980976,132427980,178099962,235889686,344511305,356895593,469214633,520371124,1049978900,1116135419,1561949799)-&gt;.s3;
-.s2 map_to_area-&gt;.s4;
-rel(bw.s0)[&quot;crossing&quot;=&quot;marked&quot;]-&gt;.s5;
-.s1 out tags (46.101081,-60.922531,46.109503,-60.919155);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 899</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 899</p><h1>Query 899</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3008 · 0.00 s CPU · expected status <code>query-error: line N: parse error: per_member(...) must have one or more arguments</code></p><pre class="query">[bbox:43.821196,-65.875424,44.029993,-65.536644][maxsize:1073741824][out:csv(::&quot;count:ways&quot;,&quot;land_area&quot;,::uid;true;&quot;;&quot;)][timeout:180];
-rel[&quot;natural&quot;!=&quot;coastline&quot;](around:500,43.717985,-65.118229)[!&quot;destination:symbol:forward&quot;]-&gt;.s0;
-node(way_cnt.s0:2-)-&gt;.s1;
-node.s1(if:per_member())-&gt;.s2;
-way(bn.s1)[&quot;building:levels&quot;!~&quot;1|12|16|19|2|3&quot;]-&gt;.s3;
-.s0 out (45.340625,-63.413433,45.352688,-63.375613) body;
-.s3 out;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

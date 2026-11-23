@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1955</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1955</p><h1>Query 1955</h1><p class="muted">fuzz:3:areas,complete:1237 · 0.35 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-wr(50.979986,13.898655,51.025703,13.936887)[&quot;incline&quot;=&quot;down&quot;][&quot;destination:forward&quot;=&quot;Chemnitz;Zentrum;Freizeitbad;Polizei&quot;](51.347481,12.433728,51.411020,12.496838)-&gt;.s0;
-is_in(50.917248,14.216618)-&gt;.s1;
-way(area.s1)(51.231374,13.518225,51.311249,13.538322)-&gt;.s2;
-way.s2[&quot;rooms&quot;]-&gt;.s3;
-.s0 out skel qt;
-.s2 out count;
-.s3 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

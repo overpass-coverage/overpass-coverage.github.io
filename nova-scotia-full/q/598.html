@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 598</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 598</p><h1>Query 598</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1607 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][timeout:180];
-way[&quot;frequency&quot;=&quot;60&quot;](45.169654,-62.863204,45.211307,-62.626987)-&gt;.s0;
-.s0 convert item ::=::,k0=(is_number((id()+user()))?((is_date(t[&quot;material&quot;])?((t[&quot;material&quot;]+timestamp())):(timestamp()))):(((t[&quot;support&quot;]+user())+id()))),::id=id(),!&quot;structure&quot;,k1=(lrs_min(lrs_isect(lrs_union(t[&quot;height&quot;],&quot;name&quot;),lrs_union(t[&quot;lamp_mount&quot;],&quot;name&quot;)))+&quot;2018-01-01&quot;)-&gt;.s1;
-way.s0(id:67028026,1423323823)-&gt;.s2;
-make stat k0=lrs_min(s2.u(version())),k1=s2.set(&quot;2018-01-01&quot;),k2=s2.max(uid())-&gt;.s3;
-node(way_link.s1:2-)-&gt;.s4;
-.s2 out meta bb;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

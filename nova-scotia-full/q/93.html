@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 93</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 93</p><h1>Query 93</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:411 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::type,::&quot;count:areas&quot;,::lon,::count)][date:&quot;2026-04-27T17:06:17Z&quot;];
-rel(44.440096,-64.827020,44.452625,-64.796301)-&gt;.s0;
-way[&quot;turn:lanes:forward&quot;~&quot;^left|through|through;right$&quot;,i][&quot;brand&quot;~&quot;Can&quot;,i][&quot;amenity&quot;~&quot;bic&quot;,i]-&gt;.s1;
-.s1 convert stat ::id=id(),k1=lrs_min(lrs_isect(&quot;a;b;c&quot;,lrs_isect(&quot;1;2&quot;,t[&quot;man_made&quot;]))),k0=lrs_isect(lrs_isect(lrs_isect(&quot;1;2&quot;,t[&quot;addr:locality&quot;]),lrs_union(lrs_union(t[&quot;landuse&quot;],&quot;name&quot;),&quot;a;b;c&quot;)),lrs_isect(&quot;1;2&quot;,lrs_isect(&quot;1;2&quot;,lrs_union(t[&quot;layer&quot;],&quot;name&quot;)))),k3=(t[&quot;water&quot;]==&quot;no&quot;?(user()):(suffix(t[&quot;lamp_mount&quot;]))),k2=lrs_in(suffix(t[&quot;light:colour&quot;]),lrs_isect(&quot;a;b;c&quot;,lrs_isect(lrs_union(t[&quot;water&quot;],&quot;name&quot;),lrs_union(t[&quot;support&quot;],&quot;name&quot;))))-&gt;.s2;
-node(r.s0:&quot;label&quot;)-&gt;.s3;
-.s0 out count;
-.s3 out tags;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

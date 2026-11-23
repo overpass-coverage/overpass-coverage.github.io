@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1471</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1471</p><h1>Query 1471</h1><p class="muted">fuzz:4:poi,areas:554 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-rel[&quot;species:wikidata&quot;=&quot;Q199427&quot;][&quot;operator&quot;=&quot;BUND Landesverband Sachsen&quot;](50.812609,14.576792,50.897212,14.849103)[&quot;width&quot;~&quot;^1&quot;,i]-&gt;.s0;
-.s0 &gt;-&gt;.s1;
-(.s1; - .s1;)-&gt;.s2;
-area[name=&quot;Geringswalde&quot;]-&gt;.s3;
-nwr(area.s3)[&quot;entrance&quot;=&quot;main&quot;]-&gt;.s4;
-foreach.s3-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
-.s3 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

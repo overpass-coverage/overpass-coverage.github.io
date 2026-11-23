@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 696</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 696</p><h1>Query 696</h1><p class="muted">fuzz:3:history,complete:1347 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-way[&quot;amenity&quot;=&quot;restaurant&quot;](poly:&#x27;44.729695 -63.658905 44.733083 -63.672880 44.733591 -63.674596 44.723619 -63.677849 44.723589 -63.669849 44.724357 -63.667057&#x27;)[&quot;destination&quot;!~&quot;Albro\\ Lake\\ Road|Bible\\ Hill;Tatamagouche|Commodore\\ Drive|Highway\\ 104|Mineville;Lake\\ Echo|Saint\\ Croix;Newport;Ellershouse|Woodside\\ Industrial\\ Park|Wright\\ Avenue&quot;]-&gt;.s0;
-node(w.s0)[&quot;unsigned_ref&quot;=&quot;NS 33&quot;]-&gt;.s1;
-way(r.s0)-&gt;.s2;
-rel(bw.s0)[&quot;destination:ref&quot;=&quot;NS 111 South&quot;]-&gt;.s3;
-foreach.s0-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
-.s1 out skel geom;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

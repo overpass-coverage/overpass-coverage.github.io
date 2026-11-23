@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2446</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2446</p><h1>Query 2446</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2352 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][out:xml][bbox:44.826589,-63.644870,44.995017,-63.512786][timeout:25];
-nw(45.183608,-62.506025,45.215226,-62.469069)-&gt;.s0;
-is_in(45.009063,-64.374463)-&gt;.s1;
-way(area.s1)[&quot;destination&quot;=&quot;Lunenburg;Mahone Bay;Blockhouse&quot;]-&gt;.s2;
-make info c=abs(s2.count(nodes)),n=1-&gt;.s3;
-node(way_cnt.s2:1)-&gt;.s4;
-out geom body;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 53</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 53</p><h1>Query 53</h1><p class="muted">fuzz:4:history,complete,evaluators:415 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2011-04-13T21:53:06Z&quot;];
-way[&quot;destination:ref:to:lanes&quot;~&quot;^\\|102\\ South&quot;,i][&quot;building:material&quot;=&quot;plaster&quot;]-&gt;.s0;
-retro(date(&quot;2013-08-31T00:45:51Z&quot;)) { wr(around:500,44.663074,-65.547671)-&gt;.s1; .s1 out ids; }
-node(around.s0:100)[&quot;operator:fr&quot;=&quot;Postes Canada&quot;]-&gt;.s2;
-way(around.s0:300)[&quot;house&quot;]-&gt;.s3;
-.s0 out skel;
-.s2 out meta 36;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

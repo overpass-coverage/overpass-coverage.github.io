@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 126</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 126</p><h1>Query 126</h1><p class="muted">fuzz:4:evaluators:209 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">rel[&quot;generator:source&quot;]-&gt;.s0;
+if ((s0.min(count_tags())==1)) { } else { make no n=0-&gt;.s1; }
+make info v=suffix(s0.u(lon())),n=1,c=s0.count(wr)-&gt;.s2;
+if ((number(s2.u(lat()))&lt;2)) { } else { }
+rel.s1-&gt;.s4;
+.s4 out;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

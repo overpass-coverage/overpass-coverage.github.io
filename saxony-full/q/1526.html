@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1526</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1526</p><h1>Query 1526</h1><p class="muted">fuzz:4:history,complete,evaluators:12 · 0.14 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-nw(50.643372,13.329411,50.665485,13.363015)-&gt;.s0;
-.s0 convert row k0=(is_date(type())?(lrs_min(timestamp())):((0?(type()):(timestamp())))),::=::,!&quot;addr:street&quot;,k1=lrs_union(lrs_isect(lrs_union(t[&quot;waterway&quot;],&quot;name&quot;),lrs_union(t[&quot;source&quot;],&quot;name&quot;)),&quot;1;2&quot;)-&gt;.s1;
-way(around.s1:300)[&quot;surface&quot;!~&quot;asphalt|concrete|concrete:plates|grass|gravel|ground|paved|paving_stones|unpaved&quot;]-&gt;.s2;
-(.s2; .s2;)-&gt;.s3;
-.s0 out skel;
-.s2 out meta qt 19;
-.s3 out count;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/set_list_operators.cc.html#L28">overpass_api/statements/set_list_operators.cc:28</a></li></ul></main></body></html>

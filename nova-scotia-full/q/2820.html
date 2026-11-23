@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2820</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2820</p><h1>Query 2820</h1><p class="muted">fuzz:4:evaluators:983 · 0.91 s CPU · expected status <code>query-error: runtime error: Filters too weak in query statement: specify in addition a bbox, a tag filt</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-wr[&quot;loc_name&quot;=&quot;Marine Drive&quot;][&quot;destination:ref&quot;!=&quot;NS 111 : NS 2 IN&quot;]-&gt;.s0;
-for.s0-&gt;.s1 (((t[&quot;crossing:markings&quot;]+suffix(t[&quot;light:method&quot;]))+(type()+type()))) { convert item ::id=id(),g=_.val; }
-make stat k0=s1.count(wr),k1=s1.min(lrs_min(&quot;a;b;c&quot;)),k2=date(s1.max(timestamp()))-&gt;.s2;
-wr(bn.s2)[&quot;is_in:province&quot;~&quot;^Nova\\ &quot;]-&gt;.s3;
-.s0 out ids;
-.s2 out tags asc;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

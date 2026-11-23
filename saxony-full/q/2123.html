@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2123</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2123</p><h1>Query 2123</h1><p class="muted">fuzz:4:history,complete,evaluators:719 · 0.20 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;roof:colour&quot;)][date:&quot;2005-04-18T15:12:33Z&quot;];
-nw[&quot;denotation&quot;=&quot;urban&quot;](50.718392,13.172057,50.721601,13.207352)-&gt;.s0;
-for.s0-&gt;.s1 (keys()) { make group value=_.val,count=count(nwr); }
-.s1 convert stat !&quot;addr:country&quot;,k0=abs(id()),k2=date(lrs_min(lrs_isect(&quot;a;b;c&quot;,&quot;1;2&quot;))),k3=lrs_isect(lrs_min(t[&quot;oneway&quot;]),t[&quot;tracktype&quot;]),::=::,k1=&quot;1;2&quot;-&gt;.s2;
-.s2 &gt;-&gt;.s3;
-.s3 out tags;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

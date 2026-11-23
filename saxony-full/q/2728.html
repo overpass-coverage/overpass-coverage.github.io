@@ -1,8 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2728</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2728</p><h1>Query 2728</h1><p class="muted">fuzz:4:history,areas,complete,statements:910 · 0.27 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2008-10-28T17:41:39Z&quot;,&quot;2019-06-09T14:06:32Z&quot;];
-way(newer:&quot;2014-01-26T16:03:28Z&quot;)(if:id()&gt;4000000000)(poly:&quot;50.563270 12.773895 50.582103 12.779983 50.577298 12.766716 50.572632 12.742076 50.576242 12.684805 50.563254 12.704673 50.561964 12.705934 50.522275 12.711599 50.544405 12.733322 50.537391 12.776728&quot;)(50.847025,12.706615,50.848699,12.736400)-&gt;.s0;
-node(around.s0:300)[!&quot;bicycle&quot;]-&gt;.s1;
-.s0 &lt;&lt;-&gt;.s2;
-.s1 compare(delta:version())-&gt;.s3 { node(w.s3)-&gt;.s3_n; .s3_n out ids; }
-.s2 out count;
-.s3 out skel 2;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

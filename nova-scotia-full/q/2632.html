@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2632</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 2632</p><h1>Query 2632</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:536 · 0.17 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][out:popup(&quot;Food&quot;;[&quot;waterway&quot;];[&quot;capacity&quot;!=&quot;15 litres&quot;][&quot;bridge&quot;=&quot;yes&quot;];[&quot;post:city&quot;!~&quot;^Up&quot;];)(&quot;Other&quot;;[&quot;post_box:type&quot;=&quot;community&quot;][&quot;entrance&quot;=&quot;emergency&quot;];[&quot;waterway&quot;=&quot;stream&quot;];[&quot;incline&quot;];)][timeout:25][date:&quot;2018-10-10T16:02:32Z&quot;];
-wr(43.888764,-65.400372,43.906757,-65.358608)-&gt;.s0;
-retro(date(&quot;2011-07-20T12:08:56Z&quot;)) { wr[&quot;man_made&quot;](44.454692,-63.809582,44.476814,-63.611889)-&gt;.s1; .s1 out ids; }
-.s1 &lt;-&gt;.s2;
-complete(3).s1-&gt;.s3 { node(w); way(bn)[&quot;light:lit&quot;]; }
-node(around:200,45.680396,-63.239683,45.681378,-63.242187,45.681746,-63.245622,45.682270,-63.245576)[&quot;destination:ref&quot;]-&gt;.s4;
-node.s2(id:842882157,1144771057,1235220190,2479659247,4565172935,6001819930,9220211130,9247525717)-&gt;.s5;
-.s4 out (44.534271,-64.648474,44.559501,-64.515780) bb count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

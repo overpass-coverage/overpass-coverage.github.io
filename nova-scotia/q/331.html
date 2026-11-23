@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 331</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 331</p><h1>Query 331</h1><p class="muted">fuzz:4:history,complete,evaluators:456 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[out:json];
+rel[&quot;operator&quot;=&quot;Nature Conservancy of Canada&quot;]-&gt;.s0;
+make info n=1,v=lrs_union(s0.min((t[&quot;ref&quot;]+suffix(t[&quot;waterway&quot;]))),lrs_min(s0.u(user()))),c=(number(s0.u(suffix(type())))/s0.count(deriveds))-&gt;.s1;
+complete(5).s0-&gt;.s2 { }
+way(around.s2:0)[&quot;destination&quot;=&quot;Chester : Yarmouth&quot;]-&gt;.s3;
+.s1 out  (46.201133,-60.247247,46.285094,-60.209886);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 571</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 571</p><h1>Query 571</h1><p class="muted">fuzz:4:evaluators:518 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-wr[&quot;land_area&quot;=&quot;administrative&quot;](46.239981,-61.046821,46.379275,-60.842769)-&gt;.s0;
-way.s0(if:(!is_date(t[&quot;structure&quot;])))-&gt;.s1;
-make stat k0=s1.min(suffix(t[&quot;height&quot;])),k1=s1.sum(lrs_min(&quot;1;2&quot;))-&gt;.s2;
-rel(br.s1)-&gt;.s3;
-rel(bw.s0:&quot;backward&quot;)[&quot;material&quot;=&quot;wood&quot;]-&gt;.s4;
-.s1 out skel center asc 1;
-.s4 out meta geom;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

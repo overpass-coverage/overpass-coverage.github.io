@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1768</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 1768</p><h1>Query 1768</h1><p class="muted">fuzz:4:history,complete,output:312 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::user)][timeout:60];
-way(if:id()&gt;4000000000)[&quot;species:wikidata&quot;=&quot;Q199427&quot;](newer:&quot;2012-07-16T14:58:24Z&quot;)(51.179407,14.068607,51.338901,14.333257)-&gt;.s0;
-.s0 &gt;&gt;-&gt;.s1;
-complete(1).s0-&gt;.s2 { way(around:0)[&quot;access&quot;]; }
-node(r.s1)-&gt;.s3;
-node(around.s1:20)[&quot;species:de&quot;=&quot;Berg-Ahorn&quot;]-&gt;.s4;
-foreach.s4-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
-.s1 out bb ids;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

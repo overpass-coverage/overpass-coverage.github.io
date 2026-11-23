@@ -1,7 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1086</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia, full)</a> / query 1086</p><h1>Query 1086</h1><p class="muted">fuzz:4:evaluators:852 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
-rel(id:9193830,9769490,12108922,13722103,17984349,21212794,21787165,21812640,21812671)-&gt;.s0;
-.s0 convert row k2=lrs_isect(lrs_isect(lrs_isect(&quot;a;b;c&quot;,t[&quot;man_made&quot;]),t[&quot;addr:housenumber&quot;]),t[&quot;lanes&quot;]),k0=is_number(type()),!&quot;crossing&quot;,k1=(lrs_in(user(),t[&quot;structure&quot;])?(count_members()):(abs(date(type())))),members=per_member(ref()),::id=id()-&gt;.s1;
-.s1 &gt;-&gt;.s2;
-node(way_cnt.s1:3-)-&gt;.s3;
-.s2 out skel asc;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/per_member.h.html#L344">overpass_api/statements/per_member.h:344</a></li></ul></main></body></html>

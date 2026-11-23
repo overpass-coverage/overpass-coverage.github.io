@@ -1,0 +1,5 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 91</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 91</p><h1>Query 91</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:236 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">way[&quot;bridge:ref&quot;=&quot;HFX038&quot;]-&gt;.s0;
+area[name=&quot;Pine Lake&quot;]-&gt;.s2;
+make stat k0=s0.min(&quot;2018-01-01&quot;),k1=((s0.min((id()/version()))&gt;=2)?(s0.set(lat())):(s0.u((suffix(t[&quot;amenity&quot;])+type())))),k2=s0.min(uid()),k3=lrs_union(s0.max(count_tags()),((number(s0.u(count_members()))&lt;2)?(s0.u((id()+&quot;telecom&quot;))):(s0.set((user()+timestamp()))))),::geom=hull(s0.gcat(geom()))-&gt;.s4;
+.s2 out;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

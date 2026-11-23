@@ -1,9 +1,0 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2334</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full)</a> / query 2334</p><h1>Query 2334</h1><p class="muted">fuzz:4:evaluators:991 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
-wr(around:500,50.765132,13.800681)(50.752492,12.440003,50.830980,12.769605)-&gt;.s0;
-way.s0(if:(abs(lrs_min(&quot;1;2&quot;))==length()))-&gt;.s1;
-way.s0[&quot;balise_count&quot;!~&quot;2&quot;]-&gt;.s2;
-.s1 convert row k2=lrs_isect(lrs_union(lrs_union(&quot;1;2&quot;,lrs_union(t[&quot;bus&quot;],&quot;name&quot;)),user()),&quot;1;2&quot;),k0=suffix(id()),k3=((is_number(t[&quot;network&quot;])?(abs(id())):(date(timestamp())))*abs((uid()/length()))),::geom=lstr(pt(51.136145,12.525357),pt(51.137145,12.527357)),members=per_member(mtype()+&quot;/&quot;+ref()),k1=suffix((t[&quot;lane_markings&quot;]==&quot;trees&quot;?((id()+timestamp())):(count_members())))-&gt;.s3;
-.s2 convert row k2=lrs_max(t[&quot;tracktype&quot;]),!&quot;material&quot;,k3=lrs_min(suffix(suffix(t[&quot;denotation&quot;]))),k1=lrs_isect(lrs_union(t[&quot;landuse&quot;],&quot;name&quot;),lrs_union(lrs_union(t[&quot;level&quot;],&quot;name&quot;),lrs_union(t[&quot;emergency&quot;],&quot;a;b;c&quot;))),::geom=geom(),k0=is_number((lrs_min(t[&quot;man_made&quot;])+(&quot;&quot;+id())))-&gt;.s4;
-.s2 out skel 25;
-.s4 out body 30;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>
