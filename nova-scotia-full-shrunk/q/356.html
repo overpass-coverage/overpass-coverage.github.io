@@ -1,4 +1,6 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 356</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full, shrunk)</a> / query 356</p><h1>Query 356</h1><p class="muted">fuzz:4:history,complete,evaluators:418 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2015-05-24T14:34:48Z&quot;];
-node[~&quot;^wid&quot;~&quot;1&quot;](2328559580)-&gt;.s0;
-.s0 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 356</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full, shrunk)</a> / query 356</p><h1>Query 356</h1><p class="muted">fuzz:4:history,complete,evaluators:165 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">node(around:10,45.863249,-63.455835)-&gt;.s0;
+node.s0(if:((is_number(t[&quot;water_source&quot;])?(count_distinct_by_role(&quot;highest_point&quot;)):((0?(user()):(timestamp()))))&gt;id()))-&gt;.s1;
+.s1 convert stat k3=lrs_min(lrs_union(lrs_isect(t[&quot;crossing&quot;],lrs_union(t[&quot;material&quot;],&quot;name&quot;)),&quot;a;b;c&quot;)),k2=lrs_isect(lrs_isect(&quot;1;2&quot;,lrs_union(t[&quot;addr:province&quot;],&quot;name&quot;)),&quot;1;2&quot;),k0=&quot;1;2&quot;,k1=lrs_min(&quot;a;b;c&quot;),::id=id()-&gt;.s2;
+.s2 convert row ::=::,::geom=poly(lstr(pt(45.409035,-62.027300))),k1=(count_distinct_by_role(&quot;platform&quot;)-lrs_max(lrs_union(&quot;a;b;c&quot;,t[&quot;ref&quot;]))),k0=suffix(lrs_max(&quot;a;b;c&quot;)),k2=timestamp()-&gt;.s4;
+.s4 out;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

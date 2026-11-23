@@ -1,10 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 46</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full, shrunk)</a> / query 46</p><h1>Query 46</h1><p class="muted">fuzz:3:areas,complete:2889 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[bbox:44.475823,-64.509530,44.563834,-64.246667];
-nwr[&quot;brand:wikidata&quot;=&quot;Q2974996&quot;]-&gt;.s0;
-area[name=&quot;Lake Pleasant&quot;]-&gt;.s1;
-node(area.s1)-&gt;.s2;
-area[name=&quot;Green Bay&quot;]-&gt;.s3;
-nwr(area.s3)[&quot;layer&quot;=&quot;1&quot;]-&gt;.s4;
-nwr(pivot.s3)-&gt;.s5;
-foreach.s6-&gt;.it{ }
-.s1 out ids center;
-</pre><h2>Lines only this query runs (7)</h2><ul><li><a href="../src/overpass_api/statements/foreach.cc.html#L114">overpass_api/statements/foreach.cc:114</a></li><li><a href="../src/overpass_api/statements/pivot.cc.html#L179">overpass_api/statements/pivot.cc:179</a></li><li><a href="../src/overpass_api/statements/pivot.cc.html#L212">overpass_api/statements/pivot.cc:212</a></li><li><a href="../src/overpass_api/statements/pivot.cc.html#L228">overpass_api/statements/pivot.cc:228</a></li><li><a href="../src/overpass_api/statements/pivot.cc.html#L229">overpass_api/statements/pivot.cc:229</a></li><li><a href="../src/overpass_api/statements/pivot.cc.html#L230">overpass_api/statements/pivot.cc:230</a></li><li><a href="../src/overpass_api/statements/pivot.cc.html#L231">overpass_api/statements/pivot.cc:231</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 46</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full, shrunk)</a> / query 46</p><h1>Query 46</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3825 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Shops&quot;;[&quot;wheelchair&quot;];)][date:&quot;2015-05-22T20:30:50Z&quot;];
+way(id:112418386,366542066,1321540329)-&gt;.s0;
+.s0 out meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

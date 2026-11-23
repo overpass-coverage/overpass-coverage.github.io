@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 233</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full, shrunk)</a> / query 233</p><h1>Query 233</h1><p class="muted">fuzz:4:history,complete,evaluators:472 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2010-09-10T23:28:30Z&quot;];
 nw(around:100,44.685202,-63.597808)(if:changeset()&gt;63000000)-&gt;.s0;
-make info c=s0.sum,n=1-&gt;.s1;
+make info c=s0.sum(date(&quot;1;2;3&quot;)),n=1-&gt;.s1;
 (.s1; - .s1;)-&gt;.s2;
 .s1 convert item k1=((lrs_min(&quot;a;b;c&quot;)+suffix(suffix(t[&quot;utility&quot;])))+((!t[&quot;post:city&quot;]==&quot;1&quot;)?(suffix(t[&quot;addr:interpolation&quot;])):(t[&quot;addr:street&quot;]))),::=::,k0=suffix(lrs_min(lrs_union(t[&quot;natural&quot;],&quot;name&quot;))),::geom=hull(geom()),k3=((!is_number(suffix(t[&quot;highway&quot;])))?((uid()*number(user()))):(number(t[&quot;ref&quot;]))),k2=((lon()&gt;=1e3)?(lon()):(lrs_max(lrs_union(t[&quot;addr:housenumber&quot;],&quot;name&quot;)))),::id=id()-&gt;.s4;
 .s2 out;

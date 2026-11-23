@@ -1,7 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 28</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full, shrunk)</a> / query 28</p><h1>Query 28</h1><p class="muted">fuzz:4:history,complete,evaluators:293 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[diff:&quot;2010-09-02T21:29:42Z&quot;];
-timeline(relation,7070123)-&gt;.s1;
-make stat k0=s1.u(suffix(&quot;2018-01-01&quot;)),k1=s1.count,k2=(abs(s1.count(nw))+s1.sum((changeset()+count_by_role(&quot;in&quot;)))),k3=abs((-s1.sum(lrs_max(t[&quot;layer&quot;]))))-&gt;.s2;
-make stat k0=s2.min,k1=abs(s2.min(date(id()))),k2=lrs_min(s2.max)-&gt;.s4;
-.s2 convert row ::id=id(),tags=count_tags();
-.s1 out;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/tag_value.h.html#L684">overpass_api/statements/tag_value.h:684</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 28</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full, shrunk)</a> / query 28</p><h1>Query 28</h1><p class="muted">fuzz:4:history,areas,complete,statements:212 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[adiff:&quot;2013-10-05T18:12:22Z&quot;];
+node(1140531148)[&quot;voltage&quot;=&quot;600&quot;]-&gt;.s0;
+node(w.s0:-1)[&quot;demolished:building&quot;!=&quot;garage&quot;]-&gt;.s1;
+node(way_cnt.s1:1-2)-&gt;.s2;
+rel(r.s2)[&quot;nat_ref&quot;=&quot;TCH&quot;]-&gt;.s3;
+.s2 compare(delta:t[&quot;oneway&quot;])-&gt;.s5 { ( .s5 &gt;;)-&gt;.s5; }
+.s2 out;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
