@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 109</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 109</p><h1>Query 109</h1><p class="muted">fuzz:4:history,complete,output:865 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][out:xml][bbox:50.454227,11.888348,50.494313,12.192825][date:&quot;2016-06-09T02:52:37Z&quot;];
+way(id:118232160,196309741,233563244,286603689,427497382,659081434,757943727,767159419,822519942)-&gt;.s0;
+retro(date(&quot;2026-07-01T12:14:14Z&quot;)) { nwr(51.151635,14.450694,51.172022,14.639162)(if:t[&quot;operator&quot;]==&quot;BUND Landesverband Sachsen&quot;)[&quot;date&quot;~&quot;^2012\\-&quot;,i](if:uid()&gt;3000000)-&gt;.s1; .s1 out ids; }
+node.s1(50.823977,13.632717,51.121617,13.642499)-&gt;.s2;
+.s0 &gt;-&gt;.s3;
+out (50.940835,14.631533,50.942340,14.743960) tags geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

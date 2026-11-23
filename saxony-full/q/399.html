@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 399</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 399</p><h1>Query 399</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:887 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  nwr[&quot;segregated&quot;~&quot;no&quot;][&quot;historic&quot;~&quot;Q14567|pole&quot;,i](around:1000,50.947441,13.979563);
+  relation[&quot;railway:radio&quot;~&quot;gsm\\-r&quot;](around:5000,50.947441,13.979563);
+  node[&quot;wheelchair&quot;=&quot;yes&quot;](around:500,50.947441,13.979563);
+  node[&quot;highway&quot;=&quot;residential&quot;](around:3219,50.947441,13.979563);
+);
+out body center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 754</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 754</p><h1>Query 754</h1><p class="muted">fuzz:3:areas,complete:977 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+nwr[&quot;lit&quot;=&quot;yes&quot;][&quot;uic_ref&quot;=&quot;983840&quot;](50.773362,12.807913,50.870001,12.968069)[&quot;ramp&quot;~&quot;^n&quot;]-&gt;.s0;
+wr(bn.s0)[&quot;destination:forward&quot;=&quot;Eger (Cheb)&quot;]-&gt;.s1;
+area[name=&quot;Neues Rathaus&quot;]-&gt;.s2;
+nwr(area.s2)[&quot;roof:colour&quot;=&quot;#86887B&quot;]-&gt;.s3;
+.s0 out skel;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

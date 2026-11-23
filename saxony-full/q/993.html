@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 993</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 993</p><h1>Query 993</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2593 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Other&quot;;[&quot;abandoned:railway&quot;=&quot;rail&quot;][&quot;roof:levels&quot;!~&quot;^2&quot;];[&quot;departures_board&quot;=&quot;timetable&quot;];[&quot;railway:signal:direction&quot;=&quot;forward&quot;];)(&quot;Other&quot;;[&quot;electrified&quot;!=&quot;no&quot;];[&quot;traffic_sign&quot;=&quot;city_limit&quot;];[&quot;abandoned:building&quot;][&quot;highway&quot;=&quot;steps&quot;];&quot;name&quot;;)][bbox:50.991929,12.370274,51.192966,12.525025];
+node[&quot;artist_name&quot;][&quot;fire_hydrant:diameter&quot;!~&quot;100|150|80&quot;][&quot;operator&quot;=&quot;Bauernhof Schreiter&quot;]-&gt;.s0;
+area[name=&quot;Hohndorf&quot;][boundary]-&gt;.s1;
+rel(area.s1)(50.967609,13.834768,51.019632,13.927330)-&gt;.s2;
+node(r.s2)-&gt;.s3;
+node.s3(50.941151,13.806374,51.065561,13.897654)-&gt;.s4;
+.s0 out meta center 100;
+.s1 out qt ids geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

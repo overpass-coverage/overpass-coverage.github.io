@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 585</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 585</p><h1>Query 585</h1><p class="muted">fuzz:4:evaluators:183 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+nw[&quot;shelter_type&quot;=&quot;parking&quot;]-&gt;.s0;
+rel(r.s0)[~&quot;^ame&quot;~&quot;par&quot;]-&gt;.s1;
+make info v=lrs_union(lrs_union(s1.set((suffix(t[&quot;parking&quot;])+t[&quot;network&quot;])),s1.max(timestamp())),s1.min((is_number(t[&quot;information&quot;])?(id()):(t[&quot;network&quot;]))))-&gt;.s2;
+(.s0; .s2;)-&gt;.s3;
+.s0 convert row k0=abs(changeset()),k3=lrs_max(&quot;1;2&quot;),k1=timestamp(),k2=lrs_min(suffix(id())),::id=id(),!&quot;highway&quot;-&gt;.s4;
+.s0 out tags 31 (51.255046,14.454153,51.275964,14.528981);
+.s1 out tags (50.892119,14.021289,50.944596,14.157812);
+.s2 out tags geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

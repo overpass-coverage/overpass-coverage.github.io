@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2315</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2315</p><h1>Query 2315</h1><p class="muted">fuzz:3:history,complete:948 · 0.29 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+rel(changed:&quot;2012-07-29T12:28:36Z&quot;,&quot;2014-09-24T15:26:02Z&quot;)(id:3029245,5994075,10772774,15541176,19881354,20594959)[&quot;building&quot;!~&quot;apartments|bungalow|commercial|detached|house|hut|industrial|shed|yes&quot;]-&gt;.s0;
+node(r.s0)-&gt;.s1;
+way(r.s0:&quot;stop_entry_only&quot;)-&gt;.s2;
+(.s2; .s1;)-&gt;.s3;
+node(r.s0)-&gt;.s4;
+.s0 convert row ::id=id(),tags=count_tags();
+out;
+.s1 out skel;
+.s4 out ids geom (50.535264,12.349183,50.599181,12.388109);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

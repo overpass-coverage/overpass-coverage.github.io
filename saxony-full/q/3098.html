@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 3098</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 3098</p><h1>Query 3098</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3669 · 4.10 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:popup(&quot;Shops&quot;;[&quot;type&quot;=&quot;restriction&quot;];[&quot;ele&quot;!=&quot;203&quot;];)][maxsize:536870912][date:&quot;2009-06-03T21:20:13Z&quot;];
+wr(50.880990,12.582854,51.032243,12.654471)(newer:&quot;2016-09-09T10:02:59Z&quot;)[&quot;check_date&quot;~&quot;^2024\\-&quot;]-&gt;.s0;
+node.s0(50.756425,13.204143,50.978732,13.469163)-&gt;.s1;
+.s0 convert item k3=(is_number(id())?(lrs_min(t[&quot;addr:city&quot;])):((0?(&quot;yes&quot;):(suffix(t[&quot;bus&quot;]))))),k0=is_number(suffix((is_number(t[&quot;public_transport&quot;])?(&quot;2018-01-01&quot;):(t[&quot;railway&quot;])))),k2=suffix(((t[&quot;bicycle&quot;]==&quot;no&quot;?(timestamp()):(t[&quot;maxspeed&quot;]))+lrs_min(t[&quot;lanes&quot;]))),!&quot;oneway&quot;,k1=lrs_min((0?(t[&quot;ref&quot;]):(id())))-&gt;.s2;
+.s2 is_in-&gt;.s3;
+way[&quot;destination:forward&quot;=&quot;Eger (Cheb)&quot;][&quot;roof:shape&quot;!~&quot;^fl&quot;]-&gt;.s4;
+.s2 out body bb 32;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

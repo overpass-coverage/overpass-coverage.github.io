@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2285</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2285</p><h1>Query 2285</h1><p class="muted">fuzz:3:areas,complete:567 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+node[&quot;frequency&quot;!=&quot;0&quot;](if:version()&gt;3)(if:changeset()&gt;93000000)(51.249175,13.704011,51.282061,13.901793)-&gt;.s0;
+area[name=&quot;Hohburg&quot;]-&gt;.s1;
+rel(area.s1)[&quot;railway:signal:combined:states&quot;=&quot;DE-ESO:hl1;DE-ESO:hl10;DE-ESO:hp0&quot;]-&gt;.s2;
+.s1 out body;
+.s2 out skel;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

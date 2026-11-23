@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 644</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 644</p><h1>Query 644</h1><p class="muted">fuzz:4:history,areas,complete,statements:175 · 2.17 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][date:&quot;2021-10-17T09:51:18Z&quot;];
+rel(id:8910575,11033834,12733468,17191592,19769637)[&quot;roof:shape&quot;]-&gt;.s0;
+complete(5).s0-&gt;.s1 { way(around:0)[&quot;roof:levels&quot;]; }
+nw[&quot;operator&quot;=&quot;riesa efau&quot;][~&quot;uic_&quot;~&quot;71&quot;,i]-&gt;.s2;
+complete(3).s1-&gt;.s3 { node(w); way(bn)[&quot;lit&quot;]; }
+nwr[~&quot;^industrial$&quot;~&quot;^logistics$&quot;][&quot;inscription&quot;~&quot;nic&quot;,i][~&quot;^sid&quot;~&quot;.&quot;]-&gt;.s4;
+.s0 out body;
+.s1 out tags (51.150231,14.432046,51.222320,14.470066);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1378</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1378</p><h1>Query 1378</h1><p class="muted">fuzz:4:history,complete,output:272 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:popup(&quot;Shops&quot;;[&quot;check_date:surface&quot;=&quot;2025-08-26&quot;];[&quot;tunnel&quot;=&quot;yes&quot;][&quot;network&quot;];[&quot;surface&quot;][&quot;support&quot;];&quot;amenity&quot;;)(&quot;Other&quot;;[&quot;to&quot;~&quot;^Wo&quot;][&quot;traffic_sign:backward&quot;=&quot;DE:283&quot;];&quot;ref&quot;;)];
+way(around:250,50.506555,12.462528)-&gt;.s0;
+timeline(node,4904197430)-&gt;.s1;
+complete(2).s0-&gt;.s2 { way(bn)[&quot;building:levels&quot;]; node(w); }
+way.s0(50.890066,14.052640,51.050267,14.122557)-&gt;.s3;
+complete(2).s1-&gt;.s4 { way(bn)[&quot;building:levels&quot;]; node(w); }
+.s0 out asc geom meta;
+.s4 out qt count noids 5 bb;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

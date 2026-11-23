@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 758</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 758</p><h1>Query 758</h1><p class="muted">fuzz:3:areas,complete:2478 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+nwr[&quot;landuse&quot;=&quot;residential&quot;](50.729017,12.733768,50.747725,12.773241)-&gt;.s0;
+rel.s0(51.518857,12.338569,51.634931,12.571685)-&gt;.s1;
+(.s0; .s0;)-&gt;.s2;
+(.s1; .s0;)-&gt;.s3;
+area(3601889122)-&gt;.s4;
+node(area.s4)[&quot;leisure&quot;=&quot;pitch&quot;]-&gt;.s5;
+.s1 out body;
+.s2 out body geom asc (51.336378,12.734192,51.385183,12.785895);
+.s4 out ids asc 50;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

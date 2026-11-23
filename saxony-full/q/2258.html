@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2258</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2258</p><h1>Query 2258</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:105 · 0.26 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;dibavod:id&quot;~&quot;^(146570000100)$&quot;,i][&quot;sac_scale&quot;~&quot;yes&quot;,i](around:1000,50.852723,13.509551);
+  relation[&quot;destination:forward&quot;~&quot;Chemnitz;Zentrum;Freizeitbad;Polizei|Moritzburg|Nemt|Rückersdorf|Zwickau;Rodewisch&quot;](around:1000,50.852723,13.509551);
+  node[&quot;width&quot;~&quot;1|2|3|3\\.50|3\\.60&quot;](around:500,50.852723,13.509551);
+  node[&quot;network&quot;~&quot;CZ:national|Mitteldeutscher\\ Verkehrsverbund|Verkehrsverbund\\ Oberelbe|swn&quot;,i][&quot;bicycle&quot;~&quot;2026\\-1|Sächsi|restau&quot;,i](around:1000,50.852723,13.509551);
+  way[&quot;map_type&quot;~&quot;^(yes)$&quot;][&quot;service&quot;~&quot;168|underg&quot;,i](around:1000,50.852723,13.509551);
+  way[&quot;highway&quot;~&quot;^(living_street|primary|service|track)$&quot;](around:5000,50.852723,13.509551);
+  relation[&quot;surface&quot;~&quot;paved|stone:plates&quot;,i](around:3000,50.852723,13.509551);
+  node[&quot;start_date&quot;~&quot;^(1779|1856\\-12\\-01|1994\\-09\\-29|2005\\-09\\-01|2024\\-02\\-29)$&quot;,i](around:1000,50.852723,13.509551);
+  way[&quot;surface&quot;](around:1000,50.852723,13.509551);
+  relation[&quot;destination:lanes:backward&quot;~&quot;Meißen;Freiberg\\|Zentrum&quot;](around:1000,50.852723,13.509551);
+);
+out center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

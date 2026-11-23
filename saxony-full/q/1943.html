@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1943</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1943</p><h1>Query 1943</h1><p class="muted">fuzz:4:statements,areas:360 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+way[&quot;destination:forward&quot;=&quot;Zwickau;Rodewisch&quot;](id:332592810,529699271,754590705,774772156,834672352)[&quot;crossing:island&quot;!=&quot;no&quot;]-&gt;.s0;
+wr[&quot;railway:signal:main:states&quot;=&quot;DE-ESO:hp0;DE-ESO:hl1&quot;][~&quot;whee&quot;~&quot;li&quot;,i]-&gt;.s1;
+node(way_link.s0:3-)-&gt;.s2;
+.s0 is_in-&gt;.s3;
+way.s0[&quot;bdouble&quot;=&quot;yes&quot;]-&gt;.s4;
+.s0 out skel asc (51.080631,12.936205,51.116757,13.008062);
+.s3 out body asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

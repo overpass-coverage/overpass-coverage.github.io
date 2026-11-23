@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 508</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 508</p><h1>Query 508</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3650 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::lat,&quot;maxspeed&quot;)][maxsize:1073741824];
+way(id:61424721,230771406,544815115,1229677481)[&quot;amenity&quot;~&quot;^post&quot;,i]-&gt;.s0;
+.s0 convert row k0=((t[&quot;layer&quot;]&lt;timestamp())&amp;&amp;((!0)&amp;&amp;lrs_in(id(),lrs_union(t[&quot;surface&quot;],&quot;name&quot;)))),k2=number((1?(lrs_min(t[&quot;wheelchair&quot;])):((timestamp()+suffix(t[&quot;addr:suburb&quot;]))))),::id=id(),members=per_member((pos()&gt;2)),::geom=center(center(center(geom()))),k3=number(t[&quot;leaf_type&quot;]),angles=per_vertex(angle()),k1=lrs_min(lrs_union(t[&quot;type&quot;],&quot;name&quot;))-&gt;.s1;
+.s0 out ids asc bb noids;
+out meta asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

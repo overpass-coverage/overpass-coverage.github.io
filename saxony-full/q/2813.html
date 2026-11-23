@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2813</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2813</p><h1>Query 2813</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:602 · 0.40 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;railway:signal:position&quot;](around:2000,51.173871,13.493176);
+  relation[&quot;barrier&quot;=&quot;bollard&quot;](around:2000,51.173871,13.493176);
+  relation[&quot;maxspeed&quot;=&quot;30&quot;](around:2000,51.173871,13.493176);
+  nwr[&quot;ramp&quot;~&quot;no&quot;][&quot;material&quot;~&quot;Omsewi|https:&quot;,i](around:2000,51.173871,13.493176);
+  way[&quot;foot&quot;=&quot;use_sidepath&quot;](around:2000,51.173871,13.493176);
+  nwr[&quot;building&quot;=&quot;commercial&quot;](around:2000,51.173871,13.493176);
+  nwr[&quot;building:levels&quot;=&quot;3&quot;](around:3000,51.173871,13.493176);
+  node[&quot;hazmat&quot;~&quot;designated&quot;](around:2000,51.173871,13.493176);
+  node[&quot;contact:instagram&quot;](around:5000,51.173871,13.493176);
+  way[&quot;amenity&quot;](around:2000,51.173871,13.493176);
+  way[&quot;amenity&quot;](around:2000,51.173871,13.493176);
+  node[&quot;barrier&quot;~&quot;^(fence|hedge|kerb|retaining_wall|wall)$&quot;](around:2000,51.173871,13.493176);
+  node[&quot;foot&quot;=&quot;use_sidepath&quot;](around:3000,51.173871,13.493176);
+  nwr[&quot;building&quot;~&quot;apartments|house|hut|residential&quot;,i](around:2000,51.173871,13.493176);
+  node[&quot;contact:phone&quot;~&quot;^(\\+49\\ 170\\ 7717270|\\+49\\ 3581\\ 314054|\\+49\\ 375\\ 3541231)$&quot;,i](around:2000,51.173871,13.493176);
+);
+out center tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

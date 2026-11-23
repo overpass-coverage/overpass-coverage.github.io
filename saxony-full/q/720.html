@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 720</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 720</p><h1>Query 720</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3983 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;addr:country&quot;,&quot;addr:housenumber&quot;,&quot;crossing&quot;,::uid)];
+way[!&quot;voltage&quot;](id:156640202,157511356,334781789,552410098,650642593,799120124,815631161)-&gt;.s0;
+node(w.s0)-&gt;.s1;
+area(3601309676)-&gt;.s2;
+rel(area.s2)[&quot;uic_ref&quot;=&quot;712114&quot;]-&gt;.s3;
+make info n=1,c=number(s2.u(t[&quot;check_date&quot;]))-&gt;.s4;
+.s3 out meta qt 1;
+.s4 out geom noids asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

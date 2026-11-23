@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1423</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1423</p><h1>Query 1423</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2194 · 0.17 s CPU · expected status <code>ok</code></p><pre class="query">[bbox:50.873091,13.980105,51.011390,14.099194][maxsize:536870912][out:csv(&quot;sidewalk&quot;,::&quot;count:nodes&quot;,&quot;layer&quot;,::lat,::uid)][timeout:60];
+wr[&quot;roof:colour&quot;=&quot;gray&quot;](50.790369,12.868514,50.842179,13.075600)-&gt;.s0;
+make info c=number(s0.u((suffix(t[&quot;lanes&quot;])+&quot;2018-01-01&quot;))),n=1,v=((s0.count(nwr)&lt;s0.sum(count_distinct_by_role(&quot;main_stream&quot;)))?(suffix(s0.max(count_by_role(&quot;main_stream&quot;)))):(lrs_min(s0.set(lrs_min(&quot;a;b;c&quot;)))))-&gt;.s1;
+node(w.s1:2)-&gt;.s2;
+nw[~&quot;^official_name$&quot;~&quot;^Kampfkunstteam GO-JU Chemnitz e.V.$&quot;][&quot;wheelchair:description:de&quot;~&quot;.&quot;][~&quot;^des&quot;~&quot;.&quot;]-&gt;.s3;
+out geom noids tags;
+.s3 out ids asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

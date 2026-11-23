@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2627</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2627</p><h1>Query 2627</h1><p class="muted">fuzz:3:history,complete:1917 · 0.40 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][date:&quot;2015-06-02T10:26:31Z&quot;];
+way(poly:&#x27;50.904852 14.655317 50.907077 14.659688 50.912196 14.659164 50.907865 14.653711 50.911230 14.656155 50.908536 14.647712 50.909198 14.642379 50.902640 14.641483 50.901269 14.647238 50.901856 14.651550&#x27;)-&gt;.s0;
+complete(2).s0-&gt;.s1 { way(bn)[&quot;amenity&quot;]; node(w); }
+complete(1).s0-&gt;.s2 { node(w); way(bn)[&quot;railway&quot;]; }
+rel(r.s0)[&quot;access:covid19&quot;=&quot;no&quot;]-&gt;.s3;
+complete(5).s1-&gt;.s4 { node(w); way(bn)[&quot;bicycle&quot;]; }
+.s2 out tags geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

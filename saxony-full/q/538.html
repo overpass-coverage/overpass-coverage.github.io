@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 538</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 538</p><h1>Query 538</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2524 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;layer&quot;,::&quot;count:relations&quot;,::&quot;count:areas&quot;,::uid,::&quot;count:ways&quot;,&quot;wheelchair&quot;,::count,::type;true;&quot;::&quot;)][timeout:180];
+way(50.933550,13.838972,50.999712,13.912370)[&quot;voltage&quot;][&quot;destination:symbol&quot;~&quot;^train_statio&quot;]-&gt;.s0;
+make stat k0=s0.sum(abs(count_members())),k1=suffix(lrs_union(s0.min((is_date(t[&quot;cycleway:both&quot;])?(suffix(t[&quot;entrance&quot;])):(type()))),s0.max(id()))),k2=(((s0.sum(lrs_max(&quot;1;2&quot;))&lt;1e3)?(number(s0.u(suffix(t[&quot;width&quot;])))):(s0.count(nw)))/(s0.sum(number(timestamp()))*s0.sum(lrs_min(t[&quot;width&quot;])))),::geom=center(trace(s0.gcat(geom())))-&gt;.s1;
+way(around.s1:20)[&quot;building:levels&quot;~&quot;^1&quot;]-&gt;.s2;
+way.s0(if:lrs_in((type()+user()),lrs_union(t[&quot;oneway&quot;],&quot;name&quot;)))-&gt;.s3;
+.s0 out count bb;
+.s2 out geom qt body;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

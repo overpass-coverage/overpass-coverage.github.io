@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 700</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 700</p><h1>Query 700</h1><p class="muted">fuzz:4:evaluators:891 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+node(if:(((count_by_role(&quot;shelter&quot;)!=lat())?(lrs_min(&quot;1;2&quot;)):((-count_members())))&lt;version()))(id:2337248985,2470082748,3683063973,3830625627,4100870672,9219204347,9982765868,13924009784)-&gt;.s0;
+.s0 &gt;&gt;-&gt;.s1;
+(.s1; .s1;)-&gt;.s2;
+make stat k0=date(s2.max(timestamp())),k1=s2.sum(count_distinct_by_role(&quot;historic&quot;))-&gt;.s3;
+foreach.s0-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s0 out body;
+.s3 out body;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

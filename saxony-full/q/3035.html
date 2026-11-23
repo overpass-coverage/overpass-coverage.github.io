@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 3035</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 3035</p><h1>Query 3035</h1><p class="muted">fuzz:4:history,complete,evaluators:420 · 3.23 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+node(id:599288035,1364140957,2242423246,3687929295,4265068354,6708330933,7824880894,9577322709,9776498101)(changed:&quot;2016-05-29T19:35:25Z&quot;)(if:(((0?(t[&quot;roof:shape&quot;]):(type()))!=suffix(id()))||is_number(lrs_min(&quot;1;2&quot;))))-&gt;.s0;
+for.s0-&gt;.s1 (lrs_in(suffix(user()),lrs_union(lrs_union(t[&quot;layer&quot;],&quot;name&quot;),lrs_union(t[&quot;leisure&quot;],&quot;name&quot;)))) { make group value=_.val,count=count(nwr); }
+.s0 &gt;&gt;-&gt;.s2;
+node(r.s1:&quot;link&quot;)[!&quot;inscription&quot;]-&gt;.s3;
+.s2 out ids geom (51.036464,13.716351,51.076978,13.835343);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

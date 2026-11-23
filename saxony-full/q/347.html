@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 347</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 347</p><h1>Query 347</h1><p class="muted">fuzz:4:evaluators:505 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+node[&quot;destination:forward&quot;=&quot;Hof;Pirk&quot;](51.170234,13.709357,51.266878,13.725491)-&gt;.s0;
+node.s0(50.491461,12.152645,50.731352,12.179888)-&gt;.s1;
+.s1 &lt;&lt;-&gt;.s2;
+if (((s2.min(lrs_min(t[&quot;foot&quot;]))&gt;=10)&amp;&amp;(s2.max(date(timestamp()))&gt;=10))) { make yes n=s2.count(nwr)-&gt;.s3; } else { make no n=0-&gt;.s3; }
+foreach.s1-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s2 out skel asc 36 (51.027854,14.034331,51.076650,14.132097);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

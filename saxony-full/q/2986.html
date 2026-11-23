@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2986</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2986</p><h1>Query 2986</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2019 · 2.26 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][timeout:180][out:json][date:&quot;2017-11-17T13:13:47Z&quot;];
+wr[&quot;check_date:cycleway&quot;][&quot;to&quot;!=&quot;Gahlenz&quot;](51.324484,12.288841,51.336689,12.336979)-&gt;.s0;
+if ((!lrs_in(&quot;LLW&quot;,s0.min(lrs_min(&quot;1;2&quot;))))) { make yes n=s0.count(nwr)-&gt;.s1; }
+.s0 &lt;&lt;-&gt;.s2;
+.s1 out center skel qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

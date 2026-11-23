@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 3034</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 3034</p><h1>Query 3034</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1402 · 1.59 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][out:json][date:&quot;2019-08-23T06:58:25Z&quot;];
+wr(if:is_tag(&quot;railway:signal:main:states&quot;))[&quot;leisure&quot;=&quot;playground&quot;](around:10,50.615240,12.235518)-&gt;.s0;
+way(around.s0:100)[&quot;tracktype&quot;=&quot;grade3&quot;]-&gt;.s1;
+area[name=&quot;Neues Rathaus&quot;]-&gt;.s2;
+way(area.s2)[&quot;abandoned:building&quot;=&quot;ruins&quot;]-&gt;.s3;
+.s3 out meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

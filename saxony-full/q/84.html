@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 84</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 84</p><h1>Query 84</h1><p class="muted">fuzz:4:evaluators:12 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+nwr[&quot;access&quot;=&quot;permissive&quot;](50.611054,13.279795,50.697803,13.412631)-&gt;.s0;
+.s0 convert row k0=(is_date(type())?(lrs_min(timestamp())):((0?(type()):(timestamp())))),::=::,!&quot;addr:street&quot;,k1=lrs_union(lrs_isect(lrs_union(t[&quot;waterway&quot;],&quot;name&quot;),lrs_union(t[&quot;source&quot;],&quot;name&quot;)),&quot;1;2&quot;)-&gt;.s1;
+way(around.s1:300)[&quot;surface&quot;!~&quot;asphalt|concrete|concrete:plates|grass|gravel|ground|paved|paving_stones|unpaved&quot;]-&gt;.s2;
+(.s2; .s2;)-&gt;.s3;
+.s0 out skel;
+.s2 out meta qt 19;
+.s3 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

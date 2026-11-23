@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2141</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2141</p><h1>Query 2141</h1><p class="muted">fuzz:4:evaluators:620 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+way(51.027350,13.025651,51.054290,13.034008)(if:lrs_in((suffix(suffix(t[&quot;cycleway:both&quot;]))+suffix(suffix(t[&quot;roof:levels&quot;]))),lrs_union(lrs_union(t[&quot;man_made&quot;],&quot;1;2&quot;),user())))-&gt;.s0;
+for.s0-&gt;.s1 (0) { ._ out count; }
+make stat k0=s1.sum((is_tag(&quot;source&quot;)?(version()):(lon()))),k1=s1.u((user()+type())),k2=s1.min((is_number(t[&quot;lane_markings&quot;])?(count_distinct_members()):(count_distinct_by_role(&quot;marker&quot;))))-&gt;.s2;
+.s0 out skel;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

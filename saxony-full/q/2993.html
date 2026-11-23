@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2993</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2993</p><h1>Query 2993</h1><p class="muted">fuzz:4:evaluators:643 · 1.14 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+nw(51.331629,12.471799,51.373581,12.512115)-&gt;.s0;
+node(around.s0:300)[&quot;roof:orientation&quot;=&quot;across&quot;]-&gt;.s1;
+.s0 &lt;-&gt;.s2;
+.s2 convert item k1=(lrs_max(id())-((is_date(t[&quot;landuse&quot;])?(lat()):(count_by_role(&quot;historic&quot;)))-lrs_max(&quot;a;b;c&quot;))),k0=(id()+date(timestamp())),::id=id()-&gt;.s3;
+rel.s0(id:3639562,9982578,10551452,14217367,20197472,21097087)-&gt;.s4;
+.s2 convert row ::id=id(),tags=count_tags();
+out;
+.s0 out body center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

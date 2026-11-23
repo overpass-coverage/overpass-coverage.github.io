@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 520</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 520</p><h1>Query 520</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:320 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Named things&quot;;[&quot;surface&quot;=&quot;dirt&quot;];[&quot;operator&quot;=&quot;DRK-Kreisverband Zittau e.V.&quot;][&quot;building:part&quot;~&quot;^ye&quot;];[&quot;sidewalk&quot;][&quot;railway:track_ref&quot;];)][timeout:25];
+node[&quot;operator&quot;=&quot;Chemnitzer blumenring Einzelhandels GmbH&quot;]-&gt;.s0;
+wr(bn.s0)[&quot;check_date:cycleway&quot;=&quot;2026-07-28&quot;]-&gt;.s1;
+node.s0(if:uid()&gt;2000000)-&gt;.s2;
+way(bn.s2)[&quot;fire_hydrant:position&quot;=&quot;lane&quot;]-&gt;.s3;
+out body geom;
+.s2 out qt geom noids meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

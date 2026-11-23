@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2720</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2720</p><h1>Query 2720</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:269 · 0.26 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][timeout:60][out:json][date:&quot;2023-07-17T19:03:49Z&quot;];
+way(poly:&#x27;51.037976 14.786672 51.058525 14.744036 51.029783 14.729079 51.015145 14.716703 51.002979 14.755549 51.013531 14.767935&#x27;)[!&quot;contact:phone&quot;][&quot;highway&quot;=&quot;give_way&quot;](50.576789,13.435670,50.631873,13.444275)-&gt;.s0;
+retro(date(&quot;2015-04-13T20:39:11Z&quot;)) { nw(50.945386,13.633811,51.105565,13.813287)[&quot;check_date:tracktype&quot;!=&quot;2025-02-19&quot;](if:(!is_closed()))-&gt;.s1; .s1 out ids; }
+node[~&quot;^check_date:surface$&quot;~&quot;^2025-03-31$&quot;]-&gt;.s2;
+.s1 &lt;-&gt;.s3;
+.s0 out qt count;
+.s1 out body;
+.s3 out center meta qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

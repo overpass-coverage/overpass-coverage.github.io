@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2445</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2445</p><h1>Query 2445</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3157 · 1.26 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][bbox:51.198036,15.022143,51.307308,15.049648][out:json];
+nwr[&quot;generator:method&quot;=&quot;photovoltaic&quot;](51.365540,12.289451,51.498018,12.466660)(newer:&quot;2014-02-14T15:06:52Z&quot;)[&quot;footway&quot;=&quot;sidewalk&quot;]-&gt;.s0;
+timeline(relation,2891557,2)-&gt;.s1;
+node(way_link.s1:1)-&gt;.s2;
+is_in(51.293861,13.061214)-&gt;.s3;
+nwr(area.s3)(51.361223,14.879244,51.415814,14.904294)-&gt;.s4;
+way.s1(if:is_date(lrs_min(lrs_union(t[&quot;addr:city&quot;],&quot;name&quot;))))-&gt;.s5;
+.s1 out ids;
+.s2 out 1 meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

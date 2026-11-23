@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 289</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 289</p><h1>Query 289</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1712 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][maxsize:268435456][out:json][date:&quot;2017-03-22T15:36:52Z&quot;];
+wr(51.252712,12.257107,51.439864,12.373921)[~&quot;^edu&quot;~&quot;cen&quot;][&quot;abandoned:amenity&quot;=&quot;school&quot;]-&gt;.s0;
+.s0 is_in-&gt;.s1;
+node.s0(id:4394458776,5543749418,9922419748)-&gt;.s2;
+node(way_link.s1:3-)-&gt;.s3;
+node(way_cnt.s2:2-)-&gt;.s4;
+.s1 out tags (51.096153,14.593557,51.113601,14.669437) asc;
+.s2 out noids skel;
+.s4 out body;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

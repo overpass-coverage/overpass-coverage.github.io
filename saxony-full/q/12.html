@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 12</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 12</p><h1>Query 12</h1><p class="muted">fuzz:4:history,areas,complete,statements:536 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+node(if:version()&gt;3)[!&quot;contact:webcam&quot;][&quot;population&quot;=&quot;48&quot;]-&gt;.s0;
+timeline(relation,1356180,2)-&gt;.s1;
+node(around.s0:100)[&quot;service&quot;]-&gt;.s2;
+way(bn.s0)[&quot;public_transport&quot;!~&quot;platform|stop_area|stop_position&quot;]-&gt;.s3;
+.s0 is_in-&gt;.s4;
+rel(r.s4)[&quot;barrier&quot;]-&gt;.s5;
+.s0 convert row ::id=id(),tags=count_tags();
+out;
+.s0 out count;
+.s4 out body geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

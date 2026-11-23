@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 664</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 664</p><h1>Query 664</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3601 · 0.10 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::&quot;count:nodes&quot;,::count,::version,::&quot;count:ways&quot;,::otype,&quot;natural&quot;,::&quot;count:relations&quot;;false)][maxsize:536870912];
+nw(around:100,50.840872,12.777626)-&gt;.s0;
+for.s0-&gt;.s1 (lrs_max(&quot;1;2&quot;)) { make group value=_.val,n=count(nodes),w=count(ways); }
+node(r.s0)[&quot;bicycle&quot;~&quot;^y&quot;]-&gt;.s2;
+nwr(area:3609436827)[&quot;start_date&quot;]-&gt;.s3;
+.s0 out 100 meta;
+.s1 out;
+.s3 out meta (50.661768,12.818594,50.710653,12.862474) asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2139</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2139</p><h1>Query 2139</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2659 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][bbox:50.795126,13.405152,50.950444,13.644415][timeout:25];
+node[&quot;amenity&quot;=&quot;parking&quot;](51.013164,13.629199,51.094283,13.899157)[~&quot;^fre&quot;~&quot;0&quot;]-&gt;.s0;
+node(around.s0:20)[~&quot;^cov&quot;~&quot;y&quot;]-&gt;.s1;
+node.s0(if:is_number(t[&quot;barrier&quot;]))-&gt;.s2;
+area[name=&quot;Schönbach&quot;]-&gt;.s3;
+rel(area.s3)[&quot;amenity&quot;=&quot;parking_space&quot;]-&gt;.s4;
+.s4 convert row ::id=id(),tags=count_tags();
+out;
+.s3 out center asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

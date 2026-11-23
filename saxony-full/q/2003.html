@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2003</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2003</p><h1>Query 2003</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1762 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Food&quot;;[&quot;hazard&quot;!=&quot;slippery&quot;];[&quot;building:levels&quot;=&quot;4&quot;];&quot;name&quot;;)][timeout:25][bbox:50.670661,13.931563,50.932620,13.944272];
+way(if:is_number(suffix(t[&quot;wheelchair&quot;])))(id:127977160,1435700638)-&gt;.s0;
+way.s0(50.480167,12.150641,50.778573,12.454212)-&gt;.s1;
+make stat k0=s0.min(suffix(t[&quot;man_made&quot;]))-&gt;.s2;
+foreach.s2(node(w)-&gt;.n; .n out count;)
+(._;)-&gt;.s3;
+.s0 out qt geom body;
+.s1 out meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

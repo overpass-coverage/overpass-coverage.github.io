@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2958</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2958</p><h1>Query 2958</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3137 · 3.92 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  way[&quot;contact:phone&quot;~&quot;^(\\+49\\ 174\\ 2042558|\\+49\\ 3581\\ 314054|\\+49\\ 37292\\ 21225)$&quot;,i][&quot;name:etymology:wikidata&quot;~&quot;roof_t&quot;,i](around:500,50.921754,13.357954);
+  nwr[&quot;cycleway:both&quot;=&quot;no&quot;](around:25000,50.921754,13.357954);
+  node[&quot;natural&quot;~&quot;bare_rock|cliff|water|wood&quot;](around:25000,50.921754,13.357954);
+  way[&quot;access&quot;~&quot;^(no|permissive|private)$&quot;](around:25000,50.921754,13.357954);
+  nwr[&quot;hiking&quot;~&quot;^(yes)$&quot;](around:1000,50.921754,13.357954);
+  way[&quot;building&quot;~&quot;commercial|garage|roof|yes&quot;](around:25000,50.921754,13.357954);
+  node[&quot;operator&quot;](around:5000,50.921754,13.357954);
+  node[&quot;check_date:opening_hours&quot;=&quot;2024-10-14&quot;](around:500,50.921754,13.357954);
+  node[&quot;bridge:name&quot;=&quot;Fleißenbachtalbrücke&quot;][&quot;addr:postcode&quot;~&quot;Spree|Wurzen|canal|lfd&quot;,i](around:500,50.921754,13.357954);
+  nwr[&quot;wheelchair&quot;=&quot;no&quot;](around:25000,50.921754,13.357954);
+  way[&quot;TMC:cid_58:tabcd_1:NextLocationCode&quot;~&quot;24629|42963&quot;](around:25000,50.921754,13.357954);
+  node[&quot;highway&quot;=&quot;crossing&quot;](around:3000,50.921754,13.357954);
+  node[&quot;bin&quot;=&quot;no&quot;](around:25000,50.921754,13.357954);
+  way[&quot;natural&quot;=&quot;grassland&quot;](around:25000,50.921754,13.357954);
+  node[&quot;footway&quot;~&quot;crossing&quot;](around:25000,50.921754,13.357954);
+);
+out center tags 200;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

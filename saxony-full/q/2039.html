@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2039</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2039</p><h1>Query 2039</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3532 · 0.10 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::&quot;count:areas&quot;,::lat,::uid,::lon,::&quot;count:nodes&quot;,::version,&quot;tourism&quot;;false;&quot;;&quot;)][timeout:180];
+way(newer:&quot;2007-12-31T18:21:24Z&quot;)(poly:&quot;51.287376 14.826003 51.281007 14.830888 51.280289 14.859437&quot;)-&gt;.s0;
+make info v=s0.u((user()+id())),n=1,c=abs(s0.min((42+changeset())))-&gt;.s1;
+rel(bn.s0)[&quot;destination:forward&quot;!~&quot;Corona\\-Ambulanz|Kreischa;Reinhardtsgrimma|Moritzburg|Nemt|Neustadt\\ \\(Sachsen\\);Radeberg|Rückersdorf|Wurzen;Luppa|Zwickau;Rodewisch&quot;]-&gt;.s2;
+.s2 &lt;-&gt;.s3;
+.s1 convert row ::id=id(),tags=count_tags();
+out;
+.s0 out center 100 asc;
+.s1 out count geom asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

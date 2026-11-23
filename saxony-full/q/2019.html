@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2019</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2019</p><h1>Query 2019</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3770 · 0.38 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][out:popup(&quot;Shops&quot;;[&quot;waterway&quot;=&quot;stream&quot;];[&quot;access&quot;!~&quot;^no&quot;];[&quot;to&quot;!~&quot;^Mi&quot;][&quot;building&quot;=&quot;apartments&quot;];&quot;name&quot;;)(&quot;Food&quot;;[&quot;dibavod:id&quot;=&quot;146570000100&quot;][&quot;destination:backward&quot;~&quot;^Fr&quot;];&quot;highway&quot;;)];
+nw(51.449367,12.875670,51.541546,13.116862)[&quot;level&quot;=&quot;0&quot;]-&gt;.s0;
+.s0 &gt;&gt;-&gt;.s1;
+make stat k0=(s0.max(count_by_role(&quot;to&quot;))/number(s0.u((is_tag(&quot;entrance&quot;)?(suffix(t[&quot;building:levels&quot;])):(suffix(t[&quot;roof:shape&quot;]))))))-&gt;.s2;
+(.s2; .s2;)-&gt;.s3;
+wr(bn.s1)[&quot;covered&quot;=&quot;yes&quot;]-&gt;.s4;
+out meta;
+.s2 out ids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

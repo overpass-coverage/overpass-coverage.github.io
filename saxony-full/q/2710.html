@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2710</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2710</p><h1>Query 2710</h1><p class="muted">fuzz:4:history,areas,complete,statements:650 · 1.16 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][date:&quot;2019-04-14T16:06:46Z&quot;];
+node(changed:&quot;2012-06-05T09:35:36Z&quot;,&quot;2014-12-15T18:36:33Z&quot;)(id:295679196,1303014162,3420353992,4336785631,4793915892,5303548188,9410355666)(if:uid()&gt;21000000)-&gt;.s0;
+retro(date(&quot;2022-09-19T15:04:18Z&quot;)) { way(id:79107318,210012435,242751997,256549017,299867062,398201439,543589381,700147832,1059070121,1534627111)(if:length()&gt;10)-&gt;.s1; .s1 out ids; }
+way(bn.s0)-&gt;.s2;
+rel(bn.s2)-&gt;.s3;
+way.s1(if:length()&gt;10)-&gt;.s4;
+(.s1; .s1 &gt;;)-&gt;.s5;
+.s5 local llb-&gt;.s6;
+.s5 out ids asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

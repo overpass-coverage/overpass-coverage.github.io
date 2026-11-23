@@ -1,0 +1,16 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1614</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1614</p><h1>Query 1614</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1412 · 0.08 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  nwr[&quot;destination:symbol:lanes:forward&quot;~&quot;^(train_station\\|)$&quot;](around:5000,50.703969,12.981644);
+  relation[&quot;entrance&quot;~&quot;main|staircase|yes&quot;](around:5000,50.703969,12.981644);
+  node[&quot;railway&quot;](around:5000,50.703969,12.981644);
+  relation[&quot;maxspeed&quot;~&quot;100|30|50|70&quot;][&quot;landuse&quot;~&quot;yes&quot;,i](around:5000,50.703969,12.981644);
+  way[&quot;shoulder&quot;~&quot;no&quot;,i](around:5000,50.703969,12.981644);
+  relation[&quot;check_date&quot;=&quot;2022-05-23&quot;](around:500,50.703969,12.981644);
+  node[&quot;barrier&quot;=&quot;retaining_wall&quot;](around:3000,50.703969,12.981644);
+  way[&quot;fee&quot;~&quot;no|yes&quot;](around:3000,50.703969,12.981644);
+  node[&quot;highway&quot;~&quot;^(crossing|living_street|steps|street_lamp|turning_circle)$&quot;](around:3000,50.703969,12.981644);
+  node[&quot;bicycle&quot;][&quot;type&quot;~&quot;no|separa&quot;,i](around:5000,50.703969,12.981644);
+  node[&quot;building:colour&quot;](around:5000,50.703969,12.981644);
+);
+out tags center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

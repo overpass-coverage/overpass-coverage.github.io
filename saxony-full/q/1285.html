@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1285</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1285</p><h1>Query 1285</h1><p class="muted">fuzz:3:areas,complete:421 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+nwr[&quot;generator:output:electricity&quot;=&quot;yes&quot;](50.989582,13.561390,51.037321,13.782726)[&quot;tracktype&quot;=&quot;grade4&quot;](51.214329,12.411743,51.479518,12.469625)-&gt;.s0;
+rel.s0(if:count_tags()&gt;5)-&gt;.s1;
+.s1 &lt;&lt;-&gt;.s2;
+area[name=&quot;Frohburg&quot;]-&gt;.s3;
+rel(area.s3)[&quot;water_source&quot;=&quot;canal&quot;]-&gt;.s4;
+is_in(50.876542,13.862727)-&gt;.s5;
+nwr(area.s5)[&quot;destination:lang:hsb:backward&quot;=&quot;Lutyjecy&quot;]-&gt;.s6;
+.s5 out meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

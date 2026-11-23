@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 3008</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 3008</p><h1>Query 3008</h1><p class="muted">fuzz:4:history,areas,complete,statements:395 · 2.52 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;smoothness&quot;)][date:&quot;2008-11-17T20:02:43Z&quot;];
+nwr(50.099374,12.316485,50.178181,12.335902)[&quot;check_date&quot;][&quot;shelter&quot;=&quot;yes&quot;][&quot;maxspeed&quot;]-&gt;.s0;
+retro(date(&quot;2010-12-19T18:58:00Z&quot;)) { nw[&quot;material&quot;=&quot;gold&quot;](if:length()&gt;100)(50.788958,13.331203,50.842083,13.561405)-&gt;.s1; .s1 out ids; }
+rel.s0(id:2860657,4745923,13333454,13824414,17316393,18715067,19721846)-&gt;.s2;
+area(3602982888)-&gt;.s3;
+rel(area.s3)[&quot;fax&quot;=&quot;+49 341 2626201&quot;]-&gt;.s4;
+(.s2; .s1;)-&gt;.s5;
+.s2 out meta qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

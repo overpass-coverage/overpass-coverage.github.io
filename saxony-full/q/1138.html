@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1138</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1138</p><h1>Query 1138</h1><p class="muted">fuzz:4:evaluators:785 · 0.32 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+wr(50.957899,14.284454,51.152565,14.489726)(if:(!lrs_in(count_members(),lrs_union(t[&quot;leaf_cycle&quot;],&quot;1;2&quot;))))[&quot;width&quot;=&quot;1&quot;]-&gt;.s0;
+.s0 &lt;&lt;-&gt;.s1;
+rel(bw.s0)[&quot;surface&quot;!~&quot;concrete|dirt|grass|ground|stone:plates&quot;]-&gt;.s2;
+rel.s2(if:length()&gt;100)-&gt;.s3;
+.s0 out skel center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

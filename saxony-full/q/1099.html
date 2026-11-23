@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1099</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1099</p><h1>Query 1099</h1><p class="muted">fuzz:3::2011 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+rel(50.727586,13.810330,50.833532,13.880830)[&quot;traffic_sign&quot;=&quot;DE:242.1,1022-10,1026-39&quot;][&quot;oneway&quot;!~&quot;^y&quot;][&quot;check_date:cycleway&quot;!=&quot;2022-11-05&quot;]-&gt;.s0;
+node(around.s0:300)[&quot;destination:forward&quot;=&quot;Nemt&quot;]-&gt;.s1;
+rel(bn.s0)[&quot;operator:wikidata&quot;!~&quot;Q1304269|Q1456718|Q3587594&quot;]-&gt;.s2;
+rel.s2[&quot;network&quot;]-&gt;.s3;
+(.s2; - .s1;)-&gt;.s4;
+.s1 out tags asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

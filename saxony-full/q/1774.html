@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1774</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1774</p><h1>Query 1774</h1><p class="muted">fuzz:4:poi,areas:316 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  relation[&quot;surface&quot;~&quot;paved|paving_stones|sett&quot;](around:1000,51.013192,13.638911);
+  relation[&quot;covered&quot;=&quot;yes&quot;](around:1000,51.013192,13.638911);
+  node[&quot;generator:type&quot;=&quot;solar_photovoltaic_panel&quot;](around:1000,51.013192,13.638911);
+  node[&quot;destination:lanes:backward&quot;~&quot;Meißen;Freiberg\\|Zentrum&quot;,i](around:3000,51.013192,13.638911);
+  relation[&quot;operator&quot;~&quot;^(Bauernhof\\ Schreiter|DB\\ InfraGO\\ AG|Sonnenhotel|Verkehrsverbund\\ Oberelbe|WG\\ Unitas\\ eG)$&quot;,i][&quot;survey:date&quot;~&quot;1|yes&quot;,i](around:1000,51.013192,13.638911);
+  node[&quot;pressure&quot;=&quot;84&quot;](around:2000,51.013192,13.638911);
+  relation[&quot;check_date:surface&quot;=&quot;2024-12-31&quot;](around:1000,51.013192,13.638911);
+  relation[&quot;official_name&quot;~&quot;Kampfkunstteam\\ GO\\-JU\\ Chemnitz\\ e\\.V\\.&quot;,i][&quot;generator:type&quot;~&quot;turnin|underg&quot;,i](around:5000,51.013192,13.638911);
+  relation[&quot;fire_hydrant:diameter&quot;](around:1000,51.013192,13.638911);
+  nwr[&quot;contact:mobile&quot;=&quot;+49 173 3835457&quot;](around:5000,51.013192,13.638911);
+);
+out tags center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

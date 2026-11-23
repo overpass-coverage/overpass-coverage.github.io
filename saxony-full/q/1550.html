@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1550</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1550</p><h1>Query 1550</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1170 · 0.14 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:1073741824][date:&quot;2010-03-12T22:25:15Z&quot;];
+nw[&quot;information&quot;=&quot;guidepost&quot;](around:100,50.988662,12.924532)[~&quot;^lan&quot;~&quot;3&quot;]-&gt;.s0;
+make info v=suffix(lrs_min(s0.min(timestamp()))),n=1,c=((s0.sum(abs(number(t[&quot;material&quot;])))==0.5)?(number(s0.u(suffix(suffix(t[&quot;layer&quot;]))))):(abs(s0.sum(number(user())))))-&gt;.s1;
+rel.s0(if:(lrs_max(lrs_union(t[&quot;information&quot;],&quot;name&quot;))&lt;lrs_max(&quot;&quot;)))-&gt;.s2;
+node(around:200,51.352940,12.319251,51.353312,12.321502,51.350349,12.318078,51.352201,12.315356,51.351426,12.311507,51.350922,12.312760)[&quot;building:colour&quot;]-&gt;.s3;
+.s2 out meta asc (51.348777,14.938100,51.410566,14.993827);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

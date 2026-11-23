@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1793</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1793</p><h1>Query 1793</h1><p class="muted">fuzz:3:areas,complete:2766 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+node[~&quot;^rai&quot;~&quot;DE\\-ESO:hl1;DE\\-ES&quot;](poly:&#x27;51.298285 14.580030 51.301088 14.562519 51.295801 14.538578 51.275717 14.550948 51.258684 14.578176 51.273649 14.613727&#x27;)(poly:&quot;50.984839 14.671563 51.000548 14.679416 50.990346 14.642667 50.982486 14.645607 50.983367 14.640157 50.967663 14.676714&quot;)-&gt;.s0;
+.s0 is_in-&gt;.s1;
+way(r.s1)[&quot;building:levels&quot;~&quot;^(1|2|3|4|5)$&quot;]-&gt;.s2;
+.s2 map_to_area-&gt;.s3;
+.s0 &lt;-&gt;.s4;
+.s0 out ids bb;
+.s2 out tags qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

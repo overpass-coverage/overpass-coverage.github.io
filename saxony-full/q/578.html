@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 578</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 578</p><h1>Query 578</h1><p class="muted">fuzz:4:history,complete,evaluators:514 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+node(poly:&quot;50.893789 13.925669 50.896664 13.924801 50.897253 13.922204 50.895841 13.919990 50.895963 13.916810 50.892250 13.921229&quot;)(if:((!lrs_in(suffix(t[&quot;lane_markings&quot;]),&quot;1;2&quot;))&amp;&amp;1))(50.883365,13.842725,50.889282,13.875511)-&gt;.s0;
+timeline(relation,10346607)-&gt;.s1;
+node.s0(if:is_closed())-&gt;.s2;
+make stat k0=suffix(s0.u((t[&quot;man_made&quot;]==&quot;0&quot;?(user()):(t[&quot;entrance&quot;])))),k1=number(s0.u((is_number(t[&quot;gauge&quot;])?(timestamp()):(user())))),k2=number(s0.u(t[&quot;roof:shape&quot;])),k3=number(s0.u(timestamp()))-&gt;.s3;
+node(way_link.s1:1)-&gt;.s4;
+.s2 out skel qt 31;
+.s4 out meta asc 37 (50.966910,12.960003,51.034539,12.965143);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

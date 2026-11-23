@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1399</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1399</p><h1>Query 1399</h1><p class="muted">fuzz:3::1574 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+rel(if:uid()&gt;10000000)(50.969317,13.834281,50.990417,13.895039)[&quot;bicycle&quot;=&quot;designated&quot;]-&gt;.s0;
+.s0 &gt;-&gt;.s1;
+node(around.s0:0)[&quot;railway:start_date&quot;=&quot;1890-09-05&quot;]-&gt;.s2;
+node(way_link.s0:1)-&gt;.s3;
+node(way_cnt.s1:3-)-&gt;.s4;
+.s2 out skel 24;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

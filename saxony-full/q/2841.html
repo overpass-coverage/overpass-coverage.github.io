@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2841</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2841</p><h1>Query 2841</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1737 · 0.46 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::&quot;count:nodes&quot;,&quot;bus&quot;,&quot;landuse&quot;,::user,::changeset,::lat,::&quot;count:ways&quot;,::id;true;&quot;,&quot;)];
+rel(50.963399,13.544034,51.098691,13.823787)(50.831033,12.916477,50.851847,12.937042)-&gt;.s0;
+rel.s0(if:lrs_in((timestamp()+suffix(t[&quot;service&quot;])),lrs_union(t[&quot;amenity&quot;],&quot;name&quot;)))-&gt;.s1;
+.s0 &gt;-&gt;.s2;
+make stat k0=(-s1.max((-uid()))),k1=s1.min(id()),k2=s1.min(count_tags()),k3=((s1.max(date(t[&quot;check_date&quot;]))&lt;100)?(s1.sum(lon())):(((s1.max(lon())&gt;1)?(s1.sum(count_distinct_members())):(s1.min(number(&quot;x;y&quot;))))))-&gt;.s3;
+.s0 out qt 1 skel;
+.s2 out asc skel 2;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

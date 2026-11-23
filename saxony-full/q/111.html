@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 111</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 111</p><h1>Query 111</h1><p class="muted">fuzz:4:history,complete,output:659 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[out:xml];
+wr(50.699017,13.018782,50.714683,13.083077)(if:is_tag(&quot;building:levels&quot;))[&quot;building&quot;~&quot;^(allotment_house|apartments|bungalow|commercial|detached|garage|garages|hut|industrial|residential|semidetached_house|shed|yes)$&quot;]-&gt;.s0;
+way(around.s0:100)[&quot;recycling_type&quot;=&quot;container&quot;]-&gt;.s1;
+complete(2).s1-&gt;.s2 { way(around:0)[&quot;tracktype&quot;]; }
+.s2 &gt;-&gt;.s3;
+(.s0; .s0;)-&gt;.s4;
+.s1 out geom asc count 1;
+.s2 out meta;
+.s4 out meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2466</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2466</p><h1>Query 2466</h1><p class="muted">fuzz:3:areas,complete:662 · 1.50 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+node(if:date(timestamp())&gt;date(&quot;2025-01-01&quot;))[&quot;operator&quot;!~&quot;APCOA\\ PARKING\\ Deutschland\\ GmbH|Anke\\ Lischka\\ e\\.K\\.|BUND\\ Landesverband\\ Sachsen|CSW\\-Christliches\\ Sozialwerk\\ gemeinnützige\\ GmbH|Chemnitzer\\ blumenring\\ Einzelhandels\\ GmbH|DRK\\-Kreisverband\\ Zittau\\ e\\.V\\.|FSV\\ Luppa\\ e\\.V\\.|Handwerkskammer\\ Dresden|Landratsamt\\ Mittelsachsen|Media\\ Logistic|Michael\\ Wittig|Simone\\ Richter|Susanne\\ Donner|Verkehrsverbund\\ Oberelbe|riesa\\ efau&quot;](51.073067,12.757844,51.167412,12.819621)-&gt;.s0;
+node(way_link.s0:2-)-&gt;.s1;
+.s0 is_in-&gt;.s2;
+.s1 &lt;-&gt;.s3;
+node(around.s2:300)[~&quot;^par&quot;~&quot;stree&quot;]-&gt;.s4;
+.s1 out skel asc 23 (50.499004,12.104801,50.522949,12.222384);
+.s4 out skel qt 41;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2091</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2091</p><h1>Query 2091</h1><p class="muted">fuzz:3:history,complete:2017 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][date:&quot;2011-10-25T20:33:32Z&quot;];
+way(51.295455,12.203034,51.305792,12.250912)[&quot;highway&quot;=&quot;living_street&quot;](if:id()&gt;1000000000)(if:length()&gt;100)-&gt;.s0;
+node(way_cnt.s0:2-)-&gt;.s1;
+complete(2).s1-&gt;.s2 { way(bn)[&quot;building:levels&quot;]; node(w); }
+complete(4).s2-&gt;.s3 { way(around:0)[&quot;addr:housenumber&quot;]; }
+node(w.s2)-&gt;.s4;
+.s1 convert row ::id=id(),tags=count_tags();
+out;
+.s0 out ids;
+.s4 out meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

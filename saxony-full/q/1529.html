@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1529</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1529</p><h1>Query 1529</h1><p class="muted">fuzz:4:output:69 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Other&quot;;[&quot;highway&quot;~&quot;^cr&quot;][&quot;backrest&quot;=&quot;no&quot;];[&quot;service&quot;=&quot;spur&quot;][&quot;emergency&quot;];[&quot;check_date:surface&quot;!=&quot;2026-07-26&quot;][&quot;route_ref&quot;!~&quot;^11&quot;];)(&quot;Food&quot;;[&quot;noexit&quot;][&quot;railway:track_ref&quot;!~&quot;^11&quot;];[&quot;operator&quot;=&quot;Bauernhof Schreiter&quot;][&quot;check_date:surface&quot;~&quot;^20&quot;];[&quot;support&quot;!=&quot;pole&quot;][&quot;width&quot;];)(&quot;Roads&quot;;[&quot;from&quot;=&quot;Schönberg (Vogtl)&quot;][&quot;route_ref&quot;~&quot;^11&quot;];[&quot;operator&quot;=&quot;Apollo-Optik Holding GmbH &amp; Co. KG&quot;];[&quot;lanes:forward&quot;!~&quot;^2&quot;];)][maxsize:536870912][timeout:60];
+nwr(if:id()&gt;8000000000)(around:10,51.122263,13.603104)-&gt;.s0;
+node(way_cnt.s0:1)-&gt;.s1;
+(.s1; .s0;)-&gt;.s2;
+node(w.s2)[&quot;building:use&quot;=&quot;education&quot;]-&gt;.s3;
+node(way_cnt.s2:3-)-&gt;.s4;
+.s1 out;
+.s4 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

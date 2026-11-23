@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 334</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 334</p><h1>Query 334</h1><p class="muted">fuzz:3:areas,complete:969 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+way(id:58560641,186505155,200309986,300691775,304664817,432449363,1266169662)(51.089480,14.283567,51.096320,14.347259)[&quot;historic&quot;]-&gt;.s0;
+area(3619222243)-&gt;.s1;
+node(area.s1)[&quot;maxspeed&quot;=&quot;50&quot;]-&gt;.s2;
+area(3607629275)-&gt;.s3;
+way(area.s3)[&quot;operator&quot;=&quot;DRK-Kreisverband Zittau e.V.&quot;]-&gt;.s4;
+area(id:3603818078)-&gt;.s5;
+nwr(area.s5)[&quot;dibavod:id&quot;=&quot;146570000100&quot;]-&gt;.s6;
+wr(bn.s3)-&gt;.s7;
+foreach.s2-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s6 out meta center (51.124718,13.742421,51.206015,13.782732);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

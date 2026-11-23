@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2422</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2422</p><h1>Query 2422</h1><p class="muted">fuzz:3:history,complete:120 · 0.09 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][date:&quot;2017-04-12T21:44:13Z&quot;];
+way[!&quot;artist_name&quot;][&quot;TMC:cid_58:tabcd_1:NextLocationCode&quot;=&quot;24629&quot;]-&gt;.s0;
+complete(1).s0-&gt;.s1 { node(w); way(bn)[&quot;maxspeed&quot;]; }
+.s1 &gt;-&gt;.s2;
+.s2 &lt;-&gt;.s3;
+complete(4).s3-&gt;.s4 { way(bn)[&quot;service&quot;]; node(w); }
+.s1 out count;
+.s4 out tags 25;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

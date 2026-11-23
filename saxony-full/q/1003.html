@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1003</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1003</p><h1>Query 1003</h1><p class="muted">fuzz:3:history,complete:2834 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+nw[&quot;TMC:cid_58:tabcd_1:LocationCode&quot;][~&quot;^cov&quot;~&quot;y&quot;][&quot;surface&quot;=&quot;fine_gravel&quot;](50.980119,14.203552,51.021093,14.293378)-&gt;.s0;
+complete(4).s0-&gt;.s1 { node(w); way(bn)[&quot;addr:suburb&quot;]; }
+rel.s0(50.993843,13.567880,51.002097,13.746478)-&gt;.s2;
+complete(5).s0-&gt;.s3 { way(around:0)[&quot;highway&quot;]; }
+(.s3; .s1;)-&gt;.s4;
+.s1 out ids geom;
+.s2 out skel;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 136</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 136</p><h1>Query 136</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2423 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  way[&quot;tunnel&quot;~&quot;^(culvert|yes)$&quot;](around:10000,50.211391,12.229826);
+  node[&quot;created_by&quot;~&quot;JOSM&quot;](around:500,50.211391,12.229826);
+  node[&quot;railway:position&quot;~&quot;104\\.8|60\\.2&quot;](around:500,50.211391,12.229826);
+  node[&quot;service&quot;~&quot;driveway|parking_aisle|spur|yard&quot;](around:10000,50.211391,12.229826);
+  relation[&quot;type&quot;=&quot;restriction&quot;](around:10000,50.211391,12.229826);
+  way[&quot;check_date&quot;~&quot;2022\\-05\\-23|2026\\-06\\-12&quot;,i](around:2000,50.211391,12.229826);
+  node[&quot;TMC:cid_58:tabcd_1:LocationCode&quot;~&quot;24628|30303|52406|58399&quot;](around:3000,50.211391,12.229826);
+  way[&quot;roof:direction&quot;~&quot;100\\.66|168|213\\.8|333\\.15&quot;](around:500,50.211391,12.229826);
+  node[&quot;railway:signal:combined:states&quot;~&quot;^(DE\\-ESO:hl1;DE\\-ESO:hl10;DE\\-ESO:hp0)$&quot;](around:3000,50.211391,12.229826);
+  way[&quot;railway&quot;=&quot;switch&quot;][&quot;handrail&quot;~&quot;no|paved&quot;,i](around:1000,50.211391,12.229826);
+  nwr[&quot;fire_hydrant:diameter&quot;=&quot;100&quot;](around:5000,50.211391,12.229826);
+  node[&quot;frequency&quot;=&quot;16.7&quot;](around:2000,50.211391,12.229826);
+  way[&quot;barrier&quot;=&quot;wall&quot;](around:2000,50.211391,12.229826);
+  nwr[&quot;power&quot;=&quot;substation&quot;](around:1000,50.211391,12.229826);
+  relation[&quot;animal_boarding&quot;~&quot;dog;cat&quot;](around:2000,50.211391,12.229826);
+);
+out center tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

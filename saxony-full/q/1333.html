@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1333</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1333</p><h1>Query 1333</h1><p class="muted">fuzz:4:evaluators:888 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][bbox:51.273454,12.171229,51.366365,12.440429];
+node[&quot;service&quot;=&quot;yard&quot;](51.283532,12.451776,51.411793,12.478079)-&gt;.s0;
+if ((number(s0.u(suffix(t[&quot;gauge&quot;])))&gt;100)) { make yes n=s0.count(nwr)-&gt;.s1; } else { make no n=0-&gt;.s1; }
+.s0 &lt;&lt;-&gt;.s2;
+.s2 &gt;-&gt;.s3;
+if ((s2.sum((0?(count_members()):(count_distinct_members())))&gt;=1)) { make yes n=s2.count(nwr)-&gt;.s4; } else { make no n=0-&gt;.s4; }
+.s1 out skel geom asc;
+.s2 out tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

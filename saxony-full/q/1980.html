@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1980</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1980</p><h1>Query 1980</h1><p class="muted">fuzz:4:evaluators:829 · 0.09 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+nw(around:250,50.967970,13.924677)[&quot;handrail&quot;!~&quot;yes&quot;]-&gt;.s0;
+make stat k0=abs(s0.sum(length())),k1=s0.max((user()+suffix(t[&quot;man_made&quot;])))-&gt;.s1;
+.s1 convert row ::id=id(),k2=lrs_max(lrs_isect(lrs_union(lrs_union(t[&quot;information&quot;],&quot;name&quot;),lrs_union(t[&quot;public_transport&quot;],&quot;name&quot;)),&quot;1;2&quot;)),::geom=geom(),k1=lrs_in(lrs_min(lrs_union(lrs_union(t[&quot;operator&quot;],&quot;name&quot;),t[&quot;leaf_type&quot;])),&quot;a;b;c&quot;),k0=timestamp()-&gt;.s2;
+(.s2; .s0;)-&gt;.s3;
+node(w.s2:1,-1)-&gt;.s4;
+.s1 out tags qt;
+.s4 out ids geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

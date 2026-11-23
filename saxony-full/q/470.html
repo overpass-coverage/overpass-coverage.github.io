@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 470</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 470</p><h1>Query 470</h1><p class="muted">fuzz:4:evaluators:503 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+way(poly:&#x27;50.908219 14.312394 50.901063 14.286255 50.884990 14.302767 50.870459 14.309727 50.879161 14.315605 50.885735 14.318397 50.880856 14.330246 50.889751 14.324788 50.884240 14.339858 50.891669 14.344922&#x27;)(id:24508680,45099367,106782660,293928057,314808956,447813739,521791470,813109437,1047626061,1458069501)-&gt;.s0;
+if ((s0.count(nw)&gt;2)) { make yes n=s0.count(nwr)-&gt;.s1; }
+make stat k0=number((s1.set(&quot;yes&quot;)+s1.min(suffix(suffix(t[&quot;emergency&quot;]))))),k1=s1.count(nw),k2=number(s1.u(id())),k3=(-((s1.min(date(suffix(t[&quot;power&quot;])))&gt;3)?(s1.count(nodes)):(s1.count(wr)))),::geom=s1.gcat(geom())-&gt;.s2;
+way(around.s1:300)[&quot;shop&quot;!~&quot;frozen_food&quot;]-&gt;.s3;
+foreach.s1-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s0 out skel center asc;
+.s3 out skel 46;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

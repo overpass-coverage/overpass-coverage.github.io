@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 179</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 179</p><h1>Query 179</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1335 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::timestamp,&quot;natural&quot;,::&quot;count:relations&quot;,::lon,::uid,::id,&quot;ref&quot;)];
+rel[!&quot;railway&quot;](id:3420558,4228667,5735622,7224908,12483083,12499599,14772272,15427562,19013800,20259535,20624456,21422003)-&gt;.s0;
+complete(1).s0-&gt;.s1 { way(around:0)[&quot;tracktype&quot;]; }
+.s0 convert stat ::id=id(),k0=lrs_min(t[&quot;leaf_cycle&quot;])-&gt;.s2;
+rel.s0(if:((lrs_min(t[&quot;layer&quot;])+(suffix(t[&quot;layer&quot;])+t[&quot;tracktype&quot;]))==(count_distinct_members()+user())))-&gt;.s3;
+.s0 convert row k0=((version()+id())+(-count_members())),::id=id()-&gt;.s4;
+.s0 out asc body;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

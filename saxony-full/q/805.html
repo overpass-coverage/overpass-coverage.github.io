@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 805</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 805</p><h1>Query 805</h1><p class="muted">fuzz:4:history,complete,output:567 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Roads&quot;;[&quot;tactile_paving&quot;=&quot;yes&quot;][&quot;fire_hydrant:diameter&quot;=&quot;80&quot;];[&quot;smoothness&quot;=&quot;good&quot;];[&quot;landuse&quot;=&quot;forest&quot;];&quot;name&quot;;)(&quot;Named things&quot;;[&quot;sidewalk:right&quot;=&quot;separate&quot;];[&quot;building&quot;=&quot;residential&quot;];[&quot;roof:levels&quot;=&quot;2&quot;][&quot;amenity&quot;=&quot;hunting_stand&quot;];&quot;amenity&quot;;)];
+way(1013452930)-&gt;.s0;
+complete(2).s0-&gt;.s1 { way(around:0)[&quot;ref&quot;]; }
+complete(2).s0-&gt;.s2 { node(w); way(bn)[&quot;access&quot;]; }
+complete(2).s2-&gt;.s3 { node(w); way(bn)[&quot;amenity&quot;]; }
+(.s1; .s0;)-&gt;.s4;
+.s4 out geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

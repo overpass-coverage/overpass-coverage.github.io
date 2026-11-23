@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1131</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1131</p><h1>Query 1131</h1><p class="muted">fuzz:4:poi,areas:155 · 0.09 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  way[&quot;railway:pzb&quot;=&quot;yes&quot;](around:2000,51.092900,14.315413);
+  node[&quot;amenity&quot;](around:3219,51.092900,14.315413);
+  node[&quot;service&quot;](around:500,51.092900,14.315413);
+  relation[&quot;to&quot;=&quot;Wolkenstein, Markt&quot;](around:500,51.092900,14.315413);
+  node[&quot;building&quot;=&quot;bungalow&quot;](around:5000,51.092900,14.315413);
+  relation[&quot;roof:levels&quot;](around:3219,51.092900,14.315413);
+  relation[&quot;lanes&quot;~&quot;1|2|3&quot;](around:3219,51.092900,14.315413);
+  relation[&quot;amenity&quot;~&quot;^(bicycle_parking|hunting_stand|parking|parking_space|post_box|recycling|waste_basket)$&quot;](around:2000,51.092900,14.315413);
+  node[&quot;natural&quot;=&quot;grassland&quot;](around:3219,51.092900,14.315413);
+  node[&quot;check_date:opening_hours&quot;=&quot;2025-12-15&quot;](around:3219,51.092900,14.315413);
+  relation[&quot;building&quot;](around:3219,51.092900,14.315413);
+  node[&quot;railway:position&quot;~&quot;^(112\\.4|145\\.4|60\\.2)$&quot;](around:3219,51.092900,14.315413);
+  node[&quot;to&quot;~&quot;Gahlenz|Löthain|Mittweida,\\ Busbahnhof|Prohlis,\\ Gleisschleife|Schmölln,\\ Bahnhof|Umspannwerk\\ Düben&quot;](around:3219,51.092900,14.315413);
+  way[&quot;route_ref&quot;=&quot;140&quot;](around:5000,51.092900,14.315413);
+  way[&quot;surface&quot;~&quot;concrete|concrete:plates|dirt|paved&quot;,i](around:500,51.092900,14.315413);
+);
+out tags center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 853</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 853</p><h1>Query 853</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2550 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::id;true;&quot;|&quot;)][timeout:60];
+node[&quot;type&quot;~&quot;^ro&quot;](1234971784)-&gt;.s0;
+retro(date(&quot;2010-01-29T21:00:42Z&quot;)) { nwr[&quot;shoulder&quot;=&quot;no&quot;](if:(lat()&gt;count_distinct_by_role(&quot;part&quot;)))[&quot;roof:direction&quot;=&quot;168&quot;]-&gt;.s1; .s1 out ids; }
+node.s1(if:is_date(&quot;x;y&quot;))-&gt;.s2;
+.s0 out ids center asc 14 (50.614008,13.396676,50.633294,13.498783);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

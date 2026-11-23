@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1220</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1220</p><h1>Query 1220</h1><p class="muted">fuzz:4:evaluators:403 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+node[&quot;brand&quot;!~&quot;^Mote&quot;][&quot;diameter_crown&quot;!=&quot;15.5&quot;](id:1700581946,1705768814,2125504774,2618826121,2874051394,4937546766,5811814659,8766327432,10161316754)-&gt;.s0;
+node(way_link.s0:3-)-&gt;.s1;
+(.s0; .s1;)-&gt;.s2;
+node.s1(if:(lrs_max(lrs_isect(t[&quot;lanes&quot;],t[&quot;barrier&quot;]))&gt;=lrs_min(lrs_isect(&quot;1;2&quot;,lrs_union(t[&quot;sidewalk&quot;],&quot;name&quot;)))))-&gt;.s3;
+.s1 out meta;
+.s2 out meta (50.484786,12.515716,50.564444,12.529490);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

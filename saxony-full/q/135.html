@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 135</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 135</p><h1>Query 135</h1><p class="muted">fuzz:4:evaluators:592 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+way[&quot;lit&quot;=&quot;yes&quot;](50.464160,12.352421,50.537206,12.363375)[&quot;building&quot;=&quot;roof&quot;]-&gt;.s0;
+.s0 convert stat ::geom=poly(lstr(pt(50.719997,13.189704),pt(50.720997,13.189704),pt(50.720997,13.190704),pt(50.719997,13.189704))),k0=lrs_min(t[&quot;gauge&quot;]),!&quot;barrier&quot;,angles=per_vertex(angle())-&gt;.s1;
+node(around.s0:0)[~&quot;^cha&quot;~&quot;yes\\|y&quot;]-&gt;.s2;
+node(way_link.s2:1)-&gt;.s3;
+way(r.s1)-&gt;.s4;
+.s3 out meta;
+.s4 out meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

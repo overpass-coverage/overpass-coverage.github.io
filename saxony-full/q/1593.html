@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1593</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1593</p><h1>Query 1593</h1><p class="muted">fuzz:4:history,areas,complete,statements:120 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+node(51.297715,13.464163,51.313775,13.533598)-&gt;.s0;
+area[name=&quot;Großer Teich&quot;]-&gt;.s1;
+rel(area.s1)[&quot;destination:forward&quot;=&quot;Neustadt (Sachsen);Radeberg&quot;]-&gt;.s2;
+node(way_cnt.s2:1-2)-&gt;.s3;
+.s0 map_to_area-&gt;.s4;
+rel(bn.s0)[&quot;natural&quot;!=&quot;water&quot;]-&gt;.s5;
+.s2 out meta center asc (51.412867,14.103445,51.441437,14.205557);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

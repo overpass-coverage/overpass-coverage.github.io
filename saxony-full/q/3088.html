@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 3088</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 3088</p><h1>Query 3088</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1052 · 3.66 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  nwr[&quot;door&quot;~&quot;hinged&quot;](around:25000,50.820460,12.856028);
+  node[&quot;board:title&quot;=&quot;Bad Lausick&quot;](around:500,50.820460,12.856028);
+  way[&quot;surface&quot;~&quot;asphalt|concrete:plates|dirt|fine_gravel|paving_stones|sett|unpaved&quot;](around:25000,50.820460,12.856028);
+  way[&quot;destination&quot;~&quot;^(Bischofswerda;Hoyerswerda|Dresden\\-Zentrum;Zollamt|Spree|Torgau;Eilenburg;Taucha)$&quot;](around:25000,50.820460,12.856028);
+  relation[&quot;destination:symbol:lanes:forward&quot;=&quot;train_station|&quot;](around:25000,50.820460,12.856028);
+  nwr[&quot;waterway&quot;~&quot;ditch|drain|stream&quot;,i](around:25000,50.820460,12.856028);
+  nwr[&quot;destination&quot;](around:25000,50.820460,12.856028);
+  relation[&quot;width&quot;](around:3000,50.820460,12.856028);
+  node[&quot;sidewalk&quot;](around:2000,50.820460,12.856028);
+  relation[&quot;shelter&quot;~&quot;^(no|yes)$&quot;](around:25000,50.820460,12.856028);
+  node[&quot;landuse&quot;~&quot;allotments|forest|grass&quot;](around:25000,50.820460,12.856028);
+  way[&quot;information&quot;~&quot;board|guidepost&quot;](around:25000,50.820460,12.856028);
+  node[&quot;service&quot;][&quot;bicycle&quot;~&quot;146570|60\\.2|forest|limite&quot;,i](around:25000,50.820460,12.856028);
+  nwr[&quot;seamark:building:function&quot;~&quot;harbour_master&quot;][&quot;step_count&quot;~&quot;2026\\-0|;;;ind|concre|living&quot;,i](around:1000,50.820460,12.856028);
+  relation[&quot;natural&quot;=&quot;water&quot;](around:5000,50.820460,12.856028);
+);
+out geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2024</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2024</p><h1>Query 2024</h1><p class="muted">fuzz:4:history,complete,evaluators:709 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+node(around:10,51.389363,12.333994)(50.822358,14.106606,50.967471,14.516456)[&quot;boundary_name:cs&quot;!~&quot;^Česko\\-německá\\ &quot;]-&gt;.s0;
+make stat k0=((s0.count(relations)!=s0.max(lrs_max(t[&quot;roof:shape&quot;])))?((-number(s0.u(t[&quot;ref&quot;])))):(date(s0.max(timestamp())))),k1=number(s0.u(suffix(t[&quot;lane_markings&quot;])))-&gt;.s1;
+.s0 &gt;&gt;-&gt;.s2;
+if (lrs_in(&quot;2018-01-01&quot;,((s2.sum(count_distinct_by_role(&quot;part&quot;))==1e3)?(s2.u((&quot;x;y&quot;+timestamp()))):(s2.set((user()+user())))))) { make yes n=s2.count(nwr)-&gt;.s3; } else { make no n=0-&gt;.s3; }
+for.s1-&gt;.s4 (lrs_min(id())) { ._ out count; }
+.s2 out meta asc;
+.s4 out tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

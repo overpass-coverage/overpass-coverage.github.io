@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1103</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1103</p><h1>Query 1103</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3911 · 1.04 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][timeout:25][diff:&quot;2022-12-19T18:15:46Z&quot;];
+nwr[&quot;surface&quot;=&quot;ground&quot;](50.818642,12.355072,50.861938,12.422661)-&gt;.s0;
+.s0 compare(delta:count_tags())-&gt;.s1;
+.s0 out geom asc meta;
+.s1 out skel;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/data/set_comparison.cc.html#L1165">overpass_api/data/set_comparison.cc:1165</a></li></ul></main></body></html>

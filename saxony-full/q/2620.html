@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2620</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2620</p><h1>Query 2620</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1280 · 0.17 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  way[&quot;boundary&quot;=&quot;administrative&quot;](around:500,50.840872,12.777626);
+  node[&quot;horse&quot;~&quot;no|yes&quot;](around:1000,50.840872,12.777626);
+  way[&quot;highway&quot;=&quot;unclassified&quot;](around:2000,50.840872,12.777626);
+  way[&quot;water_source&quot;=&quot;canal&quot;](around:1000,50.840872,12.777626);
+  node[&quot;heritage&quot;](around:1000,50.840872,12.777626);
+  node[&quot;operator&quot;~&quot;Apollo\\-Optik\\ Holding\\ GmbH\\ \\&amp;\\ Co\\.\\ KG|DIMAG|Gemeinde\\ Arnsdorf|Handwerkskammer\\ Dresden|Media\\ Logistic|Simone\\ Richter|Verkehrsverbund\\ Oberelbe&quot;](around:5000,50.840872,12.777626);
+  way[&quot;contact:instagram&quot;](around:1000,50.840872,12.777626);
+  node[&quot;TMC:cid_58:tabcd_1:LocationCode&quot;=&quot;52406&quot;](around:1000,50.840872,12.777626);
+  nwr[&quot;denotation&quot;=&quot;avenue&quot;](around:500,50.840872,12.777626);
+  nwr[&quot;roof:levels&quot;](around:3000,50.840872,12.777626);
+  way[&quot;surface&quot;~&quot;^(concrete|grass)$&quot;](around:1000,50.840872,12.777626);
+  node[&quot;railway:pzb&quot;~&quot;yes&quot;](around:1000,50.840872,12.777626);
+  relation[&quot;building&quot;~&quot;allotment_house|apartments|garage|garages|shed&quot;](around:3000,50.840872,12.777626);
+);
+out tags center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

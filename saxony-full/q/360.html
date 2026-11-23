@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 360</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 360</p><h1>Query 360</h1><p class="muted">fuzz:4:evaluators:645 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+node(id:4218244713,10873847199)[&quot;roof:direction&quot;!~&quot;100\\.66|168|213\\.8|333\\.15&quot;]-&gt;.s0;
+node.s0(if:(lrs_max(lrs_union(&quot;a;b;c&quot;,t[&quot;leisure&quot;]))!=lrs_min(&quot;1;2&quot;)))-&gt;.s1;
+node.s0(if:is_date(timestamp()))-&gt;.s2;
+.s1 &lt;-&gt;.s3;
+.s1 out body geom asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1510</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1510</p><h1>Query 1510</h1><p class="muted">fuzz:4:history,complete,evaluators:827 · 1.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;check_date&quot;)][date:&quot;2023-07-17T19:03:49Z&quot;];
+node[&quot;survey:date&quot;=&quot;2014-03-07&quot;]-&gt;.s0;
+wr(bn.s0)-&gt;.s1;
+foreach.s1-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s1 out ids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

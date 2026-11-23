@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 523</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 523</p><h1>Query 523</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:449 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Roads&quot;;[&quot;check_date:cycleway&quot;][&quot;parking:lane:right:perpendicular&quot;=&quot;lay_by&quot;];[&quot;bench&quot;~&quot;^no&quot;];&quot;amenity&quot;;)(&quot;Roads&quot;;[&quot;railway:radio&quot;=&quot;gsm-r&quot;];[&quot;destination:ref:forward&quot;!~&quot;^B &quot;][&quot;highway&quot;];[&quot;oneway&quot;!=&quot;no&quot;];&quot;name&quot;;)(&quot;Named things&quot;;[&quot;generator:source&quot;=&quot;solar&quot;];[&quot;check_date:opening_hours&quot;=&quot;2024-02-03&quot;];)];
+rel(50.241724,12.209078,50.280691,12.275758)-&gt;.s0;
+rel.s0(id:229829,7733295,9593490,10083920,13716243,13804482,14567568,14724402,18589690,19956207)-&gt;.s1;
+rel.s1(if:is_number(lrs_min(timestamp())))-&gt;.s2;
+.s0 map_to_area-&gt;.s3;
+.s1 out skel bb qt;
+.s2 out 5 meta center;
+.s3 out body;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

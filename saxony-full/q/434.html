@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 434</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 434</p><h1>Query 434</h1><p class="muted">fuzz:4:history,complete,output:836 · 1.73 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][maxsize:268435456][out:json][date:&quot;2026-10-27T20:52:58Z&quot;];
+nw[&quot;date&quot;!=&quot;2012-09-16&quot;](50.951357,13.480308,51.110289,13.702322)[&quot;hiking&quot;=&quot;yes&quot;]-&gt;.s0;
+rel(bn.s0)[!&quot;landuse&quot;]-&gt;.s1;
+foreach.s0-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s1 out noids meta geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

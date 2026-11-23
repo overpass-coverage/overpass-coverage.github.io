@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2872</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2872</p><h1>Query 2872</h1><p class="muted">fuzz:3:history,complete:446 · 0.55 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][date:&quot;2013-02-11T16:13:31Z&quot;];
+nw[&quot;electrified&quot;!=&quot;contact_line&quot;](50.723775,13.175721,50.841200,13.377888)[&quot;contact:website&quot;]-&gt;.s0;
+retro(date(&quot;2024-07-07T17:43:02Z&quot;)) { node(id:80283300,766772494,2085300096,2308099593,2425620348,2440406703,2750992037,3648577625,10174537826,13955254843)-&gt;.s1; .s1 out ids; }
+complete(2).s0-&gt;.s2 { node(w); way(bn)[&quot;source&quot;]; }
+complete(3).s2-&gt;.s3 { way(bn)[&quot;waterway&quot;]; node(w); }
+complete(1).s2-&gt;.s4 { way(bn)[&quot;operator&quot;]; node(w); }
+node(way_link.s3:2-)-&gt;.s5;
+.s3 out body 46;
+.s4 out meta geom asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 826</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 826</p><h1>Query 826</h1><p class="muted">fuzz:4:history,complete,evaluators:756 · 1.11 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2008-12-22T22:37:52Z&quot;,&quot;2012-12-09T18:46:14Z&quot;];
+nwr(changed:&quot;2013-05-29T20:58:41Z&quot;,&quot;2015-03-30T07:29:17Z&quot;)(51.149267,14.956967,51.159590,15.062991)[&quot;dibavod:id&quot;=&quot;146570000100&quot;]-&gt;.s0;
+timeline(relation,16381662,4)-&gt;.s1;
+node(way_cnt.s0:1-2)-&gt;.s2;
+for.s0-&gt;.s3 (suffix((type()+&quot;1;2;3&quot;))) { convert item ::id=id(),g=_.val; }
+node(around.s0:20)[&quot;highway&quot;=&quot;tertiary&quot;]-&gt;.s4;
+make stat k0=lrs_min(s4.u(count_members()))-&gt;.s5;
+.s3 convert row ::id=id(),tags=count_tags();
+out;
+.s2 out skel asc (51.353626,14.892807,51.431783,15.031948);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1805</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1805</p><h1>Query 1805</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3563 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:xml][timeout:60];
+rel[&quot;brand&quot;=&quot;L-Strom.drive&quot;](if:is_number(((count_by_role(&quot;marker&quot;)==number(t[&quot;layer&quot;]))?((type()+timestamp())):(type()))))-&gt;.s0;
+timeline(relation,7463526,1)-&gt;.s1;
+.s0 out skel bb 50;
+.s1 out ids geom qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

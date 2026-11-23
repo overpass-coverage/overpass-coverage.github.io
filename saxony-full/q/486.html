@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 486</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 486</p><h1>Query 486</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2358 · 0.00 s CPU · expected status <code>query-error: line N: parse error: lrs_in(...) needs two arguments</code></p><pre class="query">[out:csv(::changeset,&quot;source&quot;,&quot;traffic_sign&quot;,::uid,::id,::&quot;count:nodes&quot;;false;&quot; &quot;)];
+node(around:100,51.292127,13.567596)(if:lrs_in(&quot;&quot;,lrs_isect(lrs_union(t[&quot;building&quot;],lrs_union(t[&quot;sidewalk&quot;],&quot;name&quot;)),&quot;1;2&quot;)))-&gt;.s0;
+.s0 convert row bad=lrs_in(&quot;a&quot;),k3=type(),k2=0,k1=&quot;1;2&quot;,::geom=geom(),k0=(count_by_role(&quot;link&quot;)&gt;(lrs_in(id(),lrs_union(t[&quot;level&quot;],&quot;name&quot;))?((version()/uid())):(changeset())))-&gt;.s1;
+rel(bw.s0)-&gt;.s2;
+is_in(51.350760,12.324780)-&gt;.s3;
+way(area.s3)(50.938794,14.636435,51.003202,14.647247)-&gt;.s4;
+.s4 out meta;
+</pre><h2>Lines only this query runs (3)</h2><ul><li><a href="../src/overpass_api/statements/set_list_operators.h.html#L154">overpass_api/statements/set_list_operators.h:154</a></li><li><a href="../src/overpass_api/statements/set_list_operators.h.html#L155">overpass_api/statements/set_list_operators.h:155</a></li><li><a href="../src/overpass_api/statements/set_list_operators.h.html#L156">overpass_api/statements/set_list_operators.h:156</a></li></ul></main></body></html>

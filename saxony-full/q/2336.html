@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2336</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2336</p><h1>Query 2336</h1><p class="muted">fuzz:4:poi,areas:326 · 0.30 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  nwr[&quot;tunnel&quot;=&quot;yes&quot;](around:10000,50.896566,14.314445);
+  node[&quot;noexit&quot;](around:2000,50.896566,14.314445);
+  nwr[&quot;railway&quot;=&quot;rail&quot;](around:10000,50.896566,14.314445);
+  nwr[&quot;lanes&quot;~&quot;1|2&quot;](around:10000,50.896566,14.314445);
+  nwr[&quot;railway:track_ref&quot;=&quot;A19&quot;](around:10000,50.896566,14.314445);
+  relation[&quot;check_date:cycleway&quot;~&quot;2022\\-02\\-04|2022\\-11\\-05|2026\\-07\\-28|2026\\-10\\-24&quot;](around:1000,50.896566,14.314445);
+  way[&quot;maxspeed&quot;](around:5000,50.896566,14.314445);
+  way[&quot;backrest&quot;=&quot;no&quot;](around:2000,50.896566,14.314445);
+  node[&quot;bridge:name&quot;](around:1000,50.896566,14.314445);
+  node[&quot;hazmat&quot;=&quot;designated&quot;](around:10000,50.896566,14.314445);
+  nwr[&quot;route_ref&quot;](around:10000,50.896566,14.314445);
+  way[&quot;start_date&quot;=&quot;1856-12-01&quot;](around:500,50.896566,14.314445);
+  nwr[&quot;railway:track_ref&quot;=&quot;A19&quot;](around:10000,50.896566,14.314445);
+  way[&quot;highway&quot;=&quot;residential&quot;](around:10000,50.896566,14.314445);
+  way[&quot;TMC:cid_58:tabcd_1:LocationCode&quot;~&quot;^(30303|58399)$&quot;,i](around:500,50.896566,14.314445);
+);
+out geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

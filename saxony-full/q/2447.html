@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2447</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2447</p><h1>Query 2447</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2540 · 1.13 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::version,::&quot;count:areas&quot;,&quot;bicycle&quot;,::timestamp,::lon,::count)];
+rel(51.264773,12.394538,51.368604,12.417833)(changed:&quot;2014-06-08T15:29:30Z&quot;)[&quot;highway&quot;!~&quot;primary|traffic_signals|unclassified&quot;][&quot;building:levels&quot;=&quot;5&quot;]-&gt;.s0;
+make info v=s0.set(suffix(suffix(t[&quot;layer&quot;]))),c=(abs(s0.max((is_date(t[&quot;emergency&quot;])?(number(t[&quot;service&quot;])):(count_tags()))))-s0.min(lrs_min(lrs_union(t[&quot;addr:street&quot;],&quot;name&quot;))))-&gt;.s1;
+(.s1; .s1 &gt;;)-&gt;.s2;
+.s2 local-&gt;.s3;
+.s2 &lt;&lt;-&gt;.s4;
+node(way_cnt.s1:3-)-&gt;.s5;
+.s5 out noids meta center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

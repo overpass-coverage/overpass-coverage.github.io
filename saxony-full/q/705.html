@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 705</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 705</p><h1>Query 705</h1><p class="muted">fuzz:4:evaluators:616 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+way[&quot;check_date:surface&quot;!=&quot;2024-11-05&quot;](id:203539371,313174367,466779361,519745504,1337660865)-&gt;.s0;
+.s0 convert stat ::=::,k0=timestamp()-&gt;.s1;
+way(around.s1:20)[&quot;smoothness&quot;]-&gt;.s2;
+foreach.s1-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s0 out meta;
+.s2 out body center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

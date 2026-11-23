@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1208</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1208</p><h1>Query 1208</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2971 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::id,&quot;service&quot;,::&quot;count:relations&quot;,::lon,&quot;wheelchair&quot;,::count,::user,::uid,&quot;roof:colour&quot;;true;&quot;|&quot;)];
+way(poly:&#x27;51.086831 14.029679 51.085958 14.016888 51.092757 14.006538&#x27;)(poly:&#x27;50.762428 12.376475 50.762603 12.375044 50.760973 12.369997 50.757174 12.377241&#x27;)(id:138739464,209315089,241843374,688029082)-&gt;.s0;
+node(w.s0)[&quot;railway:signal:direction&quot;!~&quot;forward&quot;]-&gt;.s1;
+complete(2).s1-&gt;.s2 { way(around:0)[&quot;natural&quot;]; }
+(.s1; .s2;)-&gt;.s3;
+.s1 out meta (50.972366,14.538009,50.989259,14.656726);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

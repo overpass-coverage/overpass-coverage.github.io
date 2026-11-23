@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 16</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 16</p><h1>Query 16</h1><p class="muted">fuzz:4:poi,areas:556 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+node[&quot;natural&quot;=&quot;bare_rock&quot;][&quot;railway:position&quot;=&quot;145.4&quot;](50.994091,14.548250,51.089543,14.717620)[&quot;check_date:surface&quot;]-&gt;.s0;
+area[name=&quot;Schilfteich&quot;][&quot;type&quot;=&quot;multipolygon&quot;]-&gt;.s1;
+way(area.s1)(50.714576,12.939479,50.760591,12.968508)-&gt;.s2;
+area[name=&quot;Gornau&quot;][boundary]-&gt;.s3;
+way(area.s3)[&quot;operator:short&quot;=&quot;ENSO&quot;]-&gt;.s4;
+area(3620994583)-&gt;.s5;
+way(area.s5)[&quot;operator&quot;=&quot;Michael Wittig&quot;]-&gt;.s6;
+rel(pivot.s5)-&gt;.s7;
+.s3 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

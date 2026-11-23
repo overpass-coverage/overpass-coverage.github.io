@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 311</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 311</p><h1>Query 311</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1284 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][out:popup(&quot;Other&quot;;[&quot;highway&quot;=&quot;service&quot;][&quot;roof:shape&quot;~&quot;^fl&quot;];[&quot;destination:forward&quot;=&quot;Zwickau;Rodewisch&quot;];&quot;amenity&quot;;)(&quot;Other&quot;;[&quot;railway&quot;=&quot;switch&quot;][&quot;amenity&quot;=&quot;waste_basket&quot;];&quot;ref&quot;;)][maxsize:536870912];
+way(id:97558208,107703109,110427756,143232617,538325242,551453279,615480936,901524791,923379421,925194915,1313337388)[&quot;industrial&quot;~&quot;^logi&quot;][&quot;incline&quot;=&quot;up&quot;]-&gt;.s0;
+node(around.s0:0)[&quot;railway:track_ref&quot;!~&quot;^A&quot;]-&gt;.s1;
+node.s1(51.165094,13.216757,51.414684,13.352885)-&gt;.s2;
+.s0 &lt;-&gt;.s3;
+area[name=&quot;Waldheim&quot;]-&gt;.s4;
+nwr(area.s4)[&quot;power&quot;=&quot;tower&quot;]-&gt;.s5;
+.s4 out count;
+.s5 out (51.266247,12.240785,51.283775,12.370643) noids 2 meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

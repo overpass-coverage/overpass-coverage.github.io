@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 425</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 425</p><h1>Query 425</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1658 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][bbox:51.271132,12.287515,51.438468,12.545474][out:popup(&quot;Named things&quot;;[&quot;smoothness&quot;=&quot;bad&quot;][&quot;lit&quot;=&quot;yes&quot;];[&quot;railway:radio&quot;!=&quot;gsm-r&quot;][&quot;parking&quot;];[&quot;trail_visibility&quot;];)];
+rel(id:3274528,4064308,5240039,5756290,8500483,11812064,12483085,19891225)-&gt;.s0;
+way(bn.s0)[!&quot;highway&quot;]-&gt;.s1;
+node(way_cnt.s0:3-)-&gt;.s2;
+.s0 convert item k0=abs((-date(user())))-&gt;.s3;
+(.s3; .s1;)-&gt;.s4;
+.s1 out count geom;
+.s2 out asc count;
+.s4 out qt meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

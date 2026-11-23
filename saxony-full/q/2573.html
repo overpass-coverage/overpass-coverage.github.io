@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2573</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2573</p><h1>Query 2573</h1><p class="muted">fuzz:4:evaluators:606 · 0.15 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+way(id:72114751,151392599,189293932,371527709,452152715,456192398,529257099,799717109,799721075,1006158344,1187783304,1377873061)-&gt;.s0;
+make stat k0=number(s0.u(id())),k1=(s0.max((0?(user()):(timestamp())))+lrs_union(s0.max(count_by_role(&quot;platform_exit_only&quot;)),s0.min(t[&quot;backrest&quot;])))-&gt;.s1;
+(.s0; - .s0;)-&gt;.s2;
+node(w.s0)-&gt;.s3;
+.s0 out skel center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

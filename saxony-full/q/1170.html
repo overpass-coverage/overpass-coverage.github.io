@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1170</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1170</p><h1>Query 1170</h1><p class="muted">fuzz:3:history,complete:2288 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+way(if:is_tag(&quot;railway&quot;))(id:307383389,695861378,759180622)[!&quot;self_service&quot;]-&gt;.s0;
+timeline(relation,3796647)-&gt;.s1;
+retro(date(&quot;2023-12-20T11:27:29Z&quot;)) { way[&quot;check_date:opening_hours&quot;=&quot;2024-02-03&quot;](if:changeset()&gt;7000000)(id:413179838,982288957,1242891618)-&gt;.s2; .s2 out ids; }
+.s1 &gt;-&gt;.s3;
+.s0 out tags bb;
+.s1 out tags;
+.s2 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 3077</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 3077</p><h1>Query 3077</h1><p class="muted">fuzz:4:history,complete,output:305 · 2.88 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][maxsize:536870912][out:csv(::&quot;count:relations&quot;,::&quot;count:areas&quot;,::changeset,&quot;roof:colour&quot;,::count,&quot;access&quot;)][date:&quot;2018-12-17T19:20:07Z&quot;];
+nwr[&quot;building&quot;=&quot;semidetached_house&quot;](51.018888,13.670217,51.216407,13.875073)-&gt;.s0;
+timeline(node,4901448997,2)-&gt;.s1;
+retro(date(&quot;2010-05-07T18:53:59Z&quot;)) { nw(poly:&quot;51.244192 12.750885 51.247021 12.745037 51.245927 12.743610 51.241365 12.740723 51.241951 12.744968 51.243146 12.748965&quot;)(poly:&#x27;50.808365 13.886401 50.816323 13.872199 50.816539 13.870975 50.818470 13.865832 50.808130 13.868234 50.803242 13.867322 50.796704 13.866574 50.796619 13.885477 50.799628 13.881785 50.802975 13.891806&#x27;)-&gt;.s2; .s2 out ids; }
+rel(bn.s0)[&quot;contact:instagram&quot;=&quot;https://www.instagram.com/schloss_schoenefeld_kulturgut/&quot;]-&gt;.s3;
+rel.s3(50.858013,14.025030,50.885896,14.063123)-&gt;.s4;
+.s1 out body noids;
+.s2 out count;
+.s4 out meta geom asc 43;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

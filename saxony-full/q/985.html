@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 985</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 985</p><h1>Query 985</h1><p class="muted">fuzz:4:history,areas,complete,statements:61 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+nwr[&quot;highway&quot;=&quot;bus_stop&quot;][&quot;to&quot;=&quot;Mittweida, Busbahnhof&quot;](51.200451,14.249905,51.218289,14.515137)[&quot;fire_hydrant:position&quot;=&quot;lane&quot;]-&gt;.s0;
+rel(bn.s0)[~&quot;^che&quot;~&quot;2025\\-&quot;]-&gt;.s1;
+.s1 is_in-&gt;.s2;
+nwr[~&quot;^destination:lang:hsb:backward$&quot;~&quot;^Lutyjecy$&quot;]-&gt;.s3;
+.s2 out body geom qt (51.347734,12.307377,51.366673,12.404317);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1428</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1428</p><h1>Query 1428</h1><p class="muted">fuzz:4:evaluators:310 · 0.18 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;entrance&quot;)];
+nwr(poly:&#x27;51.594566 12.507132 51.569226 12.508790 51.568348 12.507455 51.560891 12.544870&#x27;)-&gt;.s0;
+way.s0[&quot;wheelchair&quot;=&quot;limited&quot;]-&gt;.s1;
+node(way_cnt.s1:3-)-&gt;.s2;
+node(r.s0:&quot;backward&quot;)-&gt;.s3;
+.s0 convert row ::id=id(),tags=count_tags();
+out;
+.s1 out skel geom (50.985624,13.651302,51.044879,13.710792);
+.s3 out body geom 14;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

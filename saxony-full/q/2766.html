@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2766</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2766</p><h1>Query 2766</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:918 · 0.31 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::user,&quot;hazmat&quot;,&quot;name:en&quot;,::lon,::&quot;count:areas&quot;,&quot;barrier&quot;)][maxsize:268435456];
+wr[&quot;highway&quot;!=&quot;path&quot;](51.228834,14.247519,51.396929,14.415237)[&quot;smoothness&quot;!~&quot;bad|excellent|good|intermediate&quot;](if:1)-&gt;.s0;
+timeline(node,6282056340)-&gt;.s1;
+area[name=&quot;Oberwiera&quot;]-&gt;.s2;
+node(area.s2)[&quot;cutline&quot;=&quot;hunting&quot;]-&gt;.s3;
+nwr.s1(if:is_number(count_distinct_members()))-&gt;.s4;
+.s0 out bb count;
+out center meta;
+.s3 out asc bb;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

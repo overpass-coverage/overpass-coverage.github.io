@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2317</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2317</p><h1>Query 2317</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3406 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][maxsize:1073741824][out:popup(&quot;Shops&quot;;[&quot;covered&quot;=&quot;no&quot;][&quot;maxspeed&quot;=&quot;30&quot;];&quot;name&quot;;)(&quot;Named things&quot;;[&quot;demolished:man_made&quot;][&quot;contact:instagram&quot;!=&quot;https://www.instagram.com/schloss_schoenefeld_kulturgut/&quot;];[&quot;inscription&quot;=&quot;12/21&quot;][&quot;entrance&quot;=&quot;yes&quot;];&quot;highway&quot;;)(&quot;Other&quot;;[&quot;operator&quot;=&quot;Bauernhof Schreiter&quot;];&quot;amenity&quot;;)];
+way(50.484146,12.376369,50.525679,12.424670)[&quot;smoothness&quot;~&quot;^exce&quot;](if:number(t[&quot;departures_board&quot;])&gt;4)-&gt;.s0;
+.s0 &gt;-&gt;.s1;
+.s0 &gt;-&gt;.s2;
+rel(br.s2:&quot;platform_entry_only&quot;)-&gt;.s3;
+.s0 out geom;
+.s2 out bb ids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

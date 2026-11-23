@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1200</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1200</p><h1>Query 1200</h1><p class="muted">fuzz:4:evaluators:329 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+wr(50.853907,13.651144,50.968737,13.755714)[&quot;leaf_type&quot;=&quot;broadleaved&quot;]-&gt;.s0;
+make stat k0=s0.sum((-count_tags())),k1=lrs_min(s0.u(suffix(timestamp())))-&gt;.s1;
+make info c=s1.sum((is_date(t[&quot;addr:housenumber&quot;])?(uid()):(count_by_role(&quot;part&quot;)))),v=s1.set(&quot;1;2;3&quot;)-&gt;.s2;
+node(way_cnt.s0:3-)-&gt;.s3;
+nwr.s2(if:is_number(t[&quot;operator&quot;]))-&gt;.s4;
+.s0 out skel;
+.s4 out meta asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

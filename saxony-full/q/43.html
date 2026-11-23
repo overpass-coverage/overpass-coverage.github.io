@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 43</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 43</p><h1>Query 43</h1><p class="muted">fuzz:4:history,complete,evaluators:11 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][date:&quot;2014-04-09T08:50:24Z&quot;];
+node(50.667120,13.382359,50.693675,13.422322)-&gt;.s0;
+retro(date(&quot;2008-08-19T06:15:43Z&quot;)) { nwr(if:count_tags()&gt;1)[&quot;ele&quot;~&quot;^8&quot;,i](changed:&quot;2016-04-28T13:26:43Z&quot;)(50.902648,14.287295,50.921366,14.300960)-&gt;.s1; .s1 out ids; }
+.s0 &gt;&gt;-&gt;.s2;
+.s0 convert stat k0=suffix((is_closed()?(user()):(type()))),k2=user(),::id=id(),k1=lrs_min(id())-&gt;.s3;
+.s0 out body bb 12;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/tag_value.h.html#L784">overpass_api/statements/tag_value.h:784</a></li></ul></main></body></html>

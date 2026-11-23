@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2670</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2670</p><h1>Query 2670</h1><p class="muted">fuzz:3::360 · 0.48 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+wr[&quot;cycleway:left&quot;!~&quot;no&quot;](50.999968,13.834673,51.112344,13.955288)(if:date(timestamp())&gt;date(&quot;2019-01-01&quot;))-&gt;.s0;
+way(51.408380,14.224118,51.478249,14.233931)[&quot;amenity&quot;=&quot;post_box&quot;]-&gt;.s1;
+(.s0; - .s0;)-&gt;.s2;
+.s1 out ids;
+.s2 out tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

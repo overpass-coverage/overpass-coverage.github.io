@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 28</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 28</p><h1>Query 28</h1><p class="muted">fuzz:3:areas,complete:2374 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+wr(50.483099,13.181676,50.671772,13.274690)[&quot;hiking&quot;=&quot;yes&quot;]-&gt;.s0;
+complete(3).s0-&gt;.s1 { node(w); way(bn)[&quot;natural&quot;]; }
+(.s0; - .s1;)-&gt;.s2;
+foreach.s1-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s0 out skel geom qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 806</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 806</p><h1>Query 806</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:920 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::&quot;count:ways&quot;)][maxsize:536870912][timeout:60][date:&quot;2009-06-20T22:04:22Z&quot;];
+node(around:1000,50.977979,13.125265)-&gt;.s0;
+complete(2).s0-&gt;.s1 { node(w); way(bn)[&quot;maxspeed&quot;]; }
+node(w.s0:2)-&gt;.s2;
+rel(r.s2:&quot;guidepost&quot;)-&gt;.s3;
+.s1 out;
+out asc noids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2873</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2873</p><h1>Query 2873</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:253 · 1.16 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][maxsize:268435456][bbox:50.710224,12.857900,50.940580,12.986149][date:&quot;2021-03-29T12:47:25Z&quot;];
+wr[!&quot;gtfs:release_date&quot;](51.508251,14.630406,51.537054,14.665842)(50.744061,13.394614,50.787702,13.665171)-&gt;.s0;
+timeline(way,572524017,2)-&gt;.s1;
+way(bn.s0)-&gt;.s2;
+way(around.s1:100)[&quot;check_date&quot;!=&quot;2021-02-02&quot;]-&gt;.s3;
+way.s3(id:38862539,229757788,281228694,377718422,401927122,777320492,832144851,998608931,1107453340,1410132084,1551268201)-&gt;.s4;
+way(around.s4:0)[&quot;start_date&quot;=&quot;2005-09-01&quot;]-&gt;.s5;
+.s2 out meta bb;
+.s3 out tags (51.006939,13.811177,51.106851,13.892398);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

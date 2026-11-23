@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1964</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1964</p><h1>Query 1964</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3225 · 0.35 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  way[&quot;abandoned:building&quot;~&quot;ruins&quot;,i](around:1000,51.040648,13.624531);
+  node[&quot;railway&quot;](around:5000,51.040648,13.624531);
+  relation[&quot;abandoned&quot;=&quot;village&quot;](around:2000,51.040648,13.624531);
+  relation[&quot;railway:signal:combined:states&quot;](around:500,51.040648,13.624531);
+  nwr[&quot;amenity&quot;](around:500,51.040648,13.624531);
+  nwr[&quot;building&quot;=&quot;residential&quot;](around:1000,51.040648,13.624531);
+  relation[&quot;departures_board&quot;~&quot;timetable&quot;][&quot;sidewalk:left&quot;~&quot;design|no&quot;,i](around:500,51.040648,13.624531);
+  nwr[&quot;check_date:surface&quot;~&quot;2024\\-11\\-05|2024\\-12\\-31|2025\\-03\\-31|2025\\-08\\-26|2026\\-07\\-26&quot;,i](around:1000,51.040648,13.624531);
+  way[&quot;artist_name&quot;~&quot;^(Edmund\\ Moeller|Max\\ Hermann\\ Fritz)$&quot;](around:500,51.040648,13.624531);
+  nwr[&quot;brand&quot;~&quot;^(L\\-Strom\\.drive|Mitteldeutsche\\ Regiobahn|Motel\\ One)$&quot;](around:500,51.040648,13.624531);
+  way[&quot;parking:both:surface&quot;=&quot;asphalt&quot;](around:500,51.040648,13.624531);
+  relation[&quot;destination:lanes&quot;=&quot;Pirna;Zoo|Pirna;Zoo|alle Richtungen;Universität;Hauptbahnhof|alle Richtungen;Universität;Hauptbahnhof&quot;](around:500,51.040648,13.624531);
+  nwr[&quot;highway&quot;~&quot;^(steps|track|turning_circle)$&quot;,i](around:500,51.040648,13.624531);
+  relation[&quot;natural&quot;=&quot;cliff&quot;](around:500,51.040648,13.624531);
+);
+out center tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

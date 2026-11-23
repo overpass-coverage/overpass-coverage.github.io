@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2282</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2282</p><h1>Query 2282</h1><p class="muted">fuzz:3:history,complete:2125 · 3.15 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][date:&quot;2022-10-11T15:11:27Z&quot;];
+wr(poly:&quot;50.878293 13.360083 50.896264 13.323935 50.868315 13.376043&quot;)-&gt;.s0;
+node(way_cnt.s0:1)-&gt;.s1;
+rel(r.s1)-&gt;.s2;
+node(way_link.s0:1)-&gt;.s3;
+.s1 convert row ::id=id(),tags=count_tags();
+out;
+.s0 out tags bb;
+.s2 out tags bb qt (51.393909,14.165548,51.440254,14.291490);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

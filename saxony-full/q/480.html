@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 480</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 480</p><h1>Query 480</h1><p class="muted">fuzz:4:history,areas,complete,statements:413 · 0.39 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][adiff:&quot;2012-05-22T00:26:34Z&quot;,&quot;2021-11-26T20:05:24Z&quot;];
+wr[&quot;water_source&quot;][&quot;voltage&quot;=&quot;15000&quot;][!&quot;traffic_sign&quot;](51.293162,13.453289,51.308606,13.619555)-&gt;.s0;
+way(bn.s0)[&quot;width&quot;=&quot;2&quot;]-&gt;.s1;
+wr(bn.s1)-&gt;.s2;
+(.s1; .s1;)-&gt;.s3;
+.s2 compare(delta:lat())-&gt;.s4;
+.s1 out tags 19;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

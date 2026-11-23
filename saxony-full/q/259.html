@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 259</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 259</p><h1>Query 259</h1><p class="muted">fuzz:4:history,areas,complete,statements:85 · 0.22 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+way(1302322998)-&gt;.s0;
+area[name=&quot;Marktplatz&quot;]-&gt;.s1;
+nwr(area.s1)(50.892383,14.682238,50.955262,14.687223)-&gt;.s2;
+complete(2).s1-&gt;.s3 { way(around:0)[&quot;building:levels&quot;]; }
+nwr(pivot.s1)-&gt;.s4;
+.s0 out skel bb;
+.s1 out body;
+.s3 out body geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

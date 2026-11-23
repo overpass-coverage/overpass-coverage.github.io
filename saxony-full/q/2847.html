@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2847</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2847</p><h1>Query 2847</h1><p class="muted">fuzz:3:areas,complete:573 · 2.60 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+way[&quot;is_in&quot;=&quot;Mittelsachsen,Chemnitz,Sachsen,Bundesrepublik Deutschland,Europe&quot;](id:74129951,103427452,389417925,456285004,496534403,1150427855,1174709062,1213229520,1312841615)-&gt;.s0;
+is_in(50.660968,12.454302)-&gt;.s1;
+nwr(area.s1)[&quot;amenity&quot;=&quot;bench&quot;]-&gt;.s2;
+.s1 map_to_area-&gt;.s3;
+complete(3).s1-&gt;.s4 { way(around:0)[&quot;addr:country&quot;]; }
+node(way_cnt.s1:2-)-&gt;.s5;
+.s2 out tags;
+.s4 out body;
+.s5 out body (50.899750,14.151137,50.943073,14.167494);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

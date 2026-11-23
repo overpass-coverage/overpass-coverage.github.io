@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1164</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1164</p><h1>Query 1164</h1><p class="muted">fuzz:4:history,complete,evaluators:754 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2010-04-02T19:38:43Z&quot;,&quot;2021-07-25T12:57:29Z&quot;];
+node(id:2040094545,12018212551)[&quot;destination:forward&quot;=&quot;Eger (Cheb)&quot;](50.378966,11.961820,50.474204,12.212204)-&gt;.s0;
+make stat k0=s0.set(suffix(&quot;no&quot;)),k1=s0.min(lrs_min(t[&quot;addr:street&quot;])),k2=number(s0.u((timestamp()+suffix(t[&quot;addr:city&quot;])))),::geom=trace(s0.gcat(geom()))-&gt;.s1;
+for.s1-&gt;.s2 ((is_date(t[&quot;oneway&quot;])?(id()):(lrs_min(&quot;1;2&quot;)))) { ._ out count; }
+complete(2).s2-&gt;.s3 { node(w); way(bn)[&quot;railway&quot;]; }
+way.s1[&quot;health_specialty:gynaecology&quot;]-&gt;.s4;
+foreach.s3-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s1 out meta 37;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 502</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 502</p><h1>Query 502</h1><p class="muted">fuzz:3:areas,complete:1920 · 0.15 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;opening_hours&quot;)];
+nw(50.840024,14.637375,50.863314,14.680033)[&quot;width&quot;~&quot;^1\\.&quot;,i]-&gt;.s0;
+is_in(51.346120,12.367346)-&gt;.s1;
+way(area.s1)[&quot;route_ref&quot;=&quot;70, 100, 107, N9&quot;]-&gt;.s2;
+.s0 &gt;-&gt;.s3;
+.s0 out skel geom qt 42;
+.s1 out ids geom;
+.s2 out body geom qt (51.435363,12.253455,51.498030,12.297140);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

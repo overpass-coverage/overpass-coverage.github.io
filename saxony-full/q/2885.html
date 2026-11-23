@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2885</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2885</p><h1>Query 2885</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2351 · 1.23 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;generator:type&quot;~&quot;^(solar_photovoltaic_panel)$&quot;](around:10000,50.900096,13.880344);
+  relation[&quot;amenity&quot;~&quot;^(bench|mortuary|parking_space|post_box)$&quot;][&quot;bicycle&quot;~&quot;VVO&quot;,i](around:10000,50.900096,13.880344);
+  relation[&quot;contact:phone&quot;~&quot;\\+49\\ 170\\ 7717270|\\+49\\ 174\\ 2042558|\\+49\\ 3581\\ 314054|\\+49\\ 37292\\ 21225|\\+49\\ 375\\ 3541231&quot;][&quot;building:levels&quot;~&quot;custom|grassl&quot;,i](around:10000,50.900096,13.880344);
+  way[&quot;surface&quot;~&quot;fine_gravel|gravel|ground|stone:plates|unpaved&quot;](around:10000,50.900096,13.880344);
+  node[&quot;check_date:surface&quot;~&quot;2023\\-02\\-25|2024\\-12\\-31|2025\\-03\\-31|2025\\-08\\-26&quot;](around:500,50.900096,13.880344);
+  nwr[&quot;generator:output:electricity&quot;](around:10000,50.900096,13.880344);
+  way[&quot;railway:position&quot;](around:10000,50.900096,13.880344);
+  relation[&quot;network:wikidata&quot;=&quot;Q1426445&quot;](around:10000,50.900096,13.880344);
+  node[&quot;surface&quot;~&quot;^(concrete|paving_stones)$&quot;](around:1000,50.900096,13.880344);
+  nwr[&quot;generator:source&quot;~&quot;solar&quot;](around:10000,50.900096,13.880344);
+  way[&quot;destination:forward&quot;=&quot;Görlitz&quot;](around:10000,50.900096,13.880344);
+  way[&quot;loc_name&quot;~&quot;Campus\\ Weg&quot;](around:10000,50.900096,13.880344);
+  way[&quot;surveillance:zone&quot;~&quot;parking_entrance&quot;][&quot;network:short&quot;~&quot;2024\\-0|25719|canal|ground&quot;,i](around:5000,50.900096,13.880344);
+);
+out geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

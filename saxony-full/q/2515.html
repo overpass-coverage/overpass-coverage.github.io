@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2515</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2515</p><h1>Query 2515</h1><p class="muted">fuzz:3:areas,complete:2896 · 0.12 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;network:short&quot;)];
+nw(if:t[&quot;destination:ref:forward&quot;]==&quot;B 172&quot;)[&quot;smoothness&quot;~&quot;^exce&quot;](poly:&#x27;51.471349 12.173308 51.473977 12.176957 51.490278 12.150665 51.465045 12.126699 51.450910 12.155873 51.440537 12.184713 51.450068 12.188729 51.457322 12.173752 51.452546 12.185310 51.461177 12.209065&#x27;)-&gt;.s0;
+way(r.s0:&quot;from&quot;)-&gt;.s1;
+area[name=&quot;Harthau&quot;]-&gt;.s2;
+nwr(area.s2)[&quot;building&quot;=&quot;shed&quot;]-&gt;.s3;
+.s2 out body asc 20;
+.s3 out body geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

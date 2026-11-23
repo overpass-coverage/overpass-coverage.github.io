@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2307</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2307</p><h1>Query 2307</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2313 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  way[&quot;highway&quot;=&quot;bus_stop&quot;](around:3219,51.179022,13.969584);
+  node[&quot;backrest&quot;~&quot;yes&quot;,i](around:2000,51.179022,13.969584);
+  way[&quot;destination:forward&quot;=&quot;Rückersdorf&quot;](around:3219,51.179022,13.969584);
+  way[&quot;roof:colour&quot;~&quot;\\#86887B|red&quot;](around:3219,51.179022,13.969584);
+  node[&quot;landuse&quot;~&quot;^(farmland|forest|grass|residential)$&quot;](around:3219,51.179022,13.969584);
+  nwr[&quot;destination:forward&quot;~&quot;Chemnitz;Zentrum;Freizeitbad;Polizei|Görlitz|Kreischa;Reinhardtsgrimma|Nemt|Neustadt\\ \\(Sachsen\\);Radeberg|Zwickau;Rodewisch&quot;](around:3000,51.179022,13.969584);
+  way[&quot;surface&quot;=&quot;gravel&quot;](around:3219,51.179022,13.969584);
+  node[&quot;building&quot;=&quot;industrial&quot;][&quot;created_by&quot;~&quot;Mittwe|Q16135|no|platfo&quot;,i](around:3219,51.179022,13.969584);
+  way[&quot;wall&quot;~&quot;^(wood)$&quot;][&quot;lanes:forward&quot;~&quot;3/8|K\\ 8851|new_ob&quot;,i](around:3219,51.179022,13.969584);
+  node[&quot;cafe&quot;=&quot;yes&quot;](around:3219,51.179022,13.969584);
+);
+out geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

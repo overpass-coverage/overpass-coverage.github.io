@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 581</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 581</p><h1>Query 581</h1><p class="muted">fuzz:4:evaluators:478 · 0.13 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+wr(51.299215,13.123155,51.316211,13.171122)[&quot;denotation&quot;!=&quot;avenue&quot;]-&gt;.s0;
+.s0 convert row angles=per_vertex(pos()),!&quot;leaf_type&quot;,::=::,k0=suffix(((type()!=t[&quot;tactile_paving&quot;])?(count_members()):((suffix(t[&quot;material&quot;])+t[&quot;ref&quot;])))),::id=id()-&gt;.s1;
+node(around.s1:300)[&quot;is_in&quot;=&quot;Mittelsachsen,Chemnitz,Sachsen,Bundesrepublik Deutschland,Europe&quot;]-&gt;.s2;
+(.s2; - .s2;)-&gt;.s3;
+.s2 out meta (50.996461,13.617536,51.004627,13.686824);
+.s3 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

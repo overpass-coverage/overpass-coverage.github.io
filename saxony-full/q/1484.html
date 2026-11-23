@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1484</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1484</p><h1>Query 1484</h1><p class="muted">fuzz:4:history,complete,evaluators:962 · 0.40 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][date:&quot;2017-02-22T04:50:15Z&quot;];
+way(if:1)(50.950491,13.892122,50.999555,13.942244)-&gt;.s0;
+way.s0(51.253740,12.245115,51.499265,12.403912)-&gt;.s1;
+for.s1-&gt;.s2 ((!is_number(suffix(t[&quot;maxspeed&quot;])))) { convert item ::id=id(),g=_.val; }
+complete(1).s0-&gt;.s3 { node(w); way(bn)[&quot;addr:street&quot;]; }
+.s0 convert stat k0=count_distinct_by_role(&quot;inner&quot;),k1=is_number((t[&quot;smoothness&quot;]==&quot;bicycle_parking&quot;?(t[&quot;lane_markings&quot;]):(lrs_min(lrs_union(t[&quot;roof:shape&quot;],&quot;name&quot;)))))-&gt;.s4;
+.s3 out skel;
+.s4 out body;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2253</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2253</p><h1>Query 2253</h1><p class="muted">fuzz:4:history,complete,evaluators:523 · 0.15 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][date:&quot;2014-09-24T15:26:02Z&quot;];
+way[&quot;healthcare:speciality&quot;=&quot;plastic_surgery&quot;](around:50,51.048358,14.082274)-&gt;.s0;
+complete(2).s0-&gt;.s1 { way(around:0)[&quot;addr:housenumber&quot;]; }
+.s1 convert stat ::id=id(),k1=changeset(),k2=(is_closed()?((0?(number(t[&quot;barrier&quot;])):(lon()))):((t[&quot;addr:country&quot;]==&quot;pitch&quot;?(changeset()):(count_by_role(&quot;platform_exit_only&quot;))))),k0=version()-&gt;.s2;
+way(around.s0:20)[&quot;direction&quot;]-&gt;.s3;
+.s3 out meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

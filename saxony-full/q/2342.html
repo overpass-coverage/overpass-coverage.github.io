@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2342</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2342</p><h1>Query 2342</h1><p class="muted">fuzz:4:history,areas,complete,statements:87 · 0.19 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json][date:&quot;2012-04-14T00:05:57Z&quot;];
+node(poly:&#x27;51.209831 14.403877 51.218446 14.399383 51.225924 14.385079 51.200111 14.390799 51.191929 14.375207 51.186506 14.397571 51.160986 14.390052 51.174436 14.427538 51.187152 14.440254 51.197024 14.442502&#x27;)-&gt;.s0;
+.s0 &gt;&gt;-&gt;.s1;
+.s1 is_in-&gt;.s2;
+foreach.s2-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s0 out skel center (51.322540,12.383618,51.364903,12.427163);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

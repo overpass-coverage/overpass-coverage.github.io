@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1722</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1722</p><h1>Query 1722</h1><p class="muted">fuzz:4:history,complete,output:205 · 0.58 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][out:csv(::id,::user,::lat,::uid,&quot;fire_hydrant:type&quot;,::changeset,::type,&quot;source:maxspeed&quot;,&quot;tunnel&quot;;false)][timeout:25][date:&quot;2025-11-15T23:33:34Z&quot;];
+wr(around:1000,51.269583,13.472655)-&gt;.s0;
+retro(date(&quot;2022-08-28T15:34:26Z&quot;)) { wr(newer:&quot;2013-04-07T15:06:47Z&quot;)(50.488863,12.411510,50.520630,12.721729)(around:250,51.397720,12.518786)-&gt;.s1; .s1 out ids; }
+.s0 out count;
+.s1 out geom (50.913225,13.266612,50.970307,13.390593) count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

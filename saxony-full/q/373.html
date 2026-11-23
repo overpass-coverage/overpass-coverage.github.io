@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 373</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 373</p><h1>Query 373</h1><p class="muted">fuzz:4:history,complete,output:553 · 0.31 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::&quot;count:relations&quot;,::count,::lon,::uid,&quot;motor_vehicle&quot;,::user;false)][maxsize:268435456][timeout:180];
+node(around:500,51.601220,12.575030)-&gt;.s0;
+node.s0(if:length()&gt;100)-&gt;.s1;
+.s0 &lt;-&gt;.s2;
+foreach.s2-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s2 out ids 47;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2624</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2624</p><h1>Query 2624</h1><p class="muted">fuzz:4:history,complete,evaluators:234 · 0.17 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+nw(if:lrs_in((0?((timestamp()+t[&quot;tactile_paving&quot;])):(lrs_min(lrs_union(t[&quot;building:levels&quot;],&quot;name&quot;)))),&quot;1;2&quot;))[&quot;network:short&quot;](newer:&quot;2022-04-10T14:49:35Z&quot;)[&quot;amenity&quot;!~&quot;bench|hunting_stand|mortuary|parking|parking_space|recycling|restaurant|shelter&quot;](50.948192,13.339233,51.070057,13.594613)-&gt;.s0;
+timeline(relation,207096,3)-&gt;.s1;
+rel(r.s1)-&gt;.s2;
+.s0 &gt;&gt;-&gt;.s3;
+.s0 out skel asc;
+.s2 out tags qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

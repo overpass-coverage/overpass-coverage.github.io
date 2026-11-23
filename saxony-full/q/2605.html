@@ -1,0 +1,16 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2605</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2605</p><h1>Query 2605</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:221 · 0.16 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;building&quot;=&quot;detached&quot;](around:1500,50.916314,13.923993);
+  relation[&quot;contact:phone&quot;](around:1000,50.916314,13.923993);
+  relation[&quot;shoulder&quot;~&quot;no&quot;,i](around:1000,50.916314,13.923993);
+  nwr[&quot;incline&quot;~&quot;^(down)$&quot;](around:1500,50.916314,13.923993);
+  way[&quot;building&quot;=&quot;semidetached_house&quot;](around:1500,50.916314,13.923993);
+  nwr[&quot;valve&quot;][&quot;check_date&quot;~&quot;2026\\-0|Sequoi&quot;,i](around:1500,50.916314,13.923993);
+  nwr[&quot;parking:lane:right:perpendicular&quot;][&quot;sidewalk:left&quot;~&quot;100\\.66|yard|yes&quot;,i](around:1500,50.916314,13.923993);
+  relation[&quot;fire_hydrant:diameter&quot;=&quot;150&quot;](around:500,50.916314,13.923993);
+  way[&quot;network:short&quot;~&quot;^(VMS;MDV)$&quot;](around:2000,50.916314,13.923993);
+  relation[&quot;sidewalk:both:surface&quot;~&quot;paving_stones&quot;,i](around:1500,50.916314,13.923993);
+  node[&quot;inscription&quot;=&quot;10/10&quot;](around:1500,50.916314,13.923993);
+);
+out tags center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

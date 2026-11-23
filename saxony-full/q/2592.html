@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2592</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2592</p><h1>Query 2592</h1><p class="muted">fuzz:4:output:701 · 0.16 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Named things&quot;;[&quot;maxspeed&quot;=&quot;70&quot;][&quot;landuse&quot;=&quot;residential&quot;];)(&quot;Food&quot;;[&quot;horse&quot;];&quot;name&quot;;)(&quot;Shops&quot;;[&quot;amenity&quot;~&quot;^bi&quot;];)][maxsize:536870912];
+way(poly:&#x27;51.251293 12.505878 51.235874 12.500621 51.234247 12.533100&#x27;)-&gt;.s0;
+rel(br.s0)-&gt;.s1;
+foreach.s0-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s0 out bb body (51.142146,14.704795,51.222341,14.838908);
+.s1 out body asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

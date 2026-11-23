@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 3019</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 3019</p><h1>Query 3019</h1><p class="muted">fuzz:3:areas,complete:758 · 1.34 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;generator:type&quot;)];
+nw[&quot;fire_hydrant:diameter&quot;=&quot;80&quot;](51.071578,14.283406,51.112209,14.514443)-&gt;.s0;
+is_in(51.186276,14.451056)-&gt;.s1;
+rel(area.s1)[&quot;natural&quot;=&quot;scrub&quot;]-&gt;.s2;
+.s1 &lt;&lt;-&gt;.s3;
+rel(br.s3)-&gt;.s4;
+way(around.s3:0)[&quot;lane_markings&quot;~&quot;^n&quot;]-&gt;.s5;
+.s1 out count;
+.s3 out ids bb;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

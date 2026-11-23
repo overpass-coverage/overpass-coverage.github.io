@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2189</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2189</p><h1>Query 2189</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1845 · 1.54 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:json][maxsize:1073741824][date:&quot;2022-10-11T15:11:27Z&quot;];
+nwr(51.295357,13.727859,51.303182,13.747397)-&gt;.s0;
+.s0 map_to_area-&gt;.s1;
+node.s0(if:is_date(t[&quot;leaf_cycle&quot;]))-&gt;.s2;
+area(3600418122)-&gt;.s3;
+rel(area.s3)[&quot;check_date:cycleway&quot;=&quot;2026-10-24&quot;]-&gt;.s4;
+.s3 out ids;
+</pre><h2>Lines only this query runs (3)</h2><ul><li><a href="../src/overpass_api/statements/map_to_area.cc.html#L102">overpass_api/statements/map_to_area.cc:102</a></li><li><a href="../src/overpass_api/statements/map_to_area.cc.html#L103">overpass_api/statements/map_to_area.cc:103</a></li><li><a href="../src/overpass_api/statements/map_to_area.cc.html#L104">overpass_api/statements/map_to_area.cc:104</a></li></ul></main></body></html>

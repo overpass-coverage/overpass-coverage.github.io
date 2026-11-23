@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 326</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 326</p><h1>Query 326</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3604 · 0.08 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][maxsize:536870912][out:popup(&quot;Shops&quot;;[&quot;access&quot;!~&quot;^cu&quot;][&quot;access&quot;=&quot;customers&quot;];&quot;amenity&quot;;)(&quot;Other&quot;;[&quot;operator:wikidata&quot;=&quot;Q1304269&quot;];)];
+way(around:50,50.759416,13.858089)-&gt;.s0;
+area[name=&quot;Hermsdorf&quot;]-&gt;.s1;
+way(area.s1)[&quot;operator:wikidata&quot;=&quot;Q1304269&quot;]-&gt;.s2;
+nwr(area:3621051682)[&quot;ele&quot;]-&gt;.s3;
+wr[&quot;toys:model_railway&quot;~&quot;^yes$&quot;][&quot;radio&quot;]-&gt;.s4;
+(.s1; - .s1;)-&gt;.s5;
+out body bb;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

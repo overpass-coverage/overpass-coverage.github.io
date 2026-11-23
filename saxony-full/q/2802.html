@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2802</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2802</p><h1>Query 2802</h1><p class="muted">fuzz:4:history,complete,evaluators:639 · 1.64 s CPU · expected status <code>query-error: runtime error: Filters too weak in query statement: specify in addition a bbox, a tag filt</code></p><pre class="query">[timeout:60][maxsize:536870912];
+nw(around:500,50.870981,14.836712)-&gt;.s0;
+make info c=s0.min((count_members()*length()))-&gt;.s1;
+node(way_link.s0:2-)-&gt;.s2;
+node.s2(50.419072,12.024893,50.568096,12.246381)-&gt;.s3;
+wr(bn.s3)[&quot;highway&quot;]-&gt;.s4;
+.s0 out skel center (51.046969,12.417495,51.080704,12.447106);
+.s4 out body;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

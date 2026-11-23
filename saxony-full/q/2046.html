@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2046</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2046</p><h1>Query 2046</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:546 · 0.10 s CPU · expected status <code>ok</code></p><pre class="query">[bbox:51.336357,12.243400,51.425827,12.424854][out:json][timeout:180];
+nwr(51.018683,13.658636,51.065679,13.691924)-&gt;.s0;
+.s0 map_to_area-&gt;.s1;
+.s0 is_in-&gt;.s2;
+rel(bw.s0:&quot;link&quot;)[&quot;water_source&quot;=&quot;main&quot;]-&gt;.s3;
+rel.s3(id:552364,574861,5350836,6185754,14168829,21061983)-&gt;.s4;
+.s0 out 5 tags asc;
+.s2 out asc tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

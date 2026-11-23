@@ -1,0 +1,5 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1466</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1466</p><h1>Query 1466</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:684 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180];
+way(if:is_number(t[&quot;railway&quot;]))(if:(number((suffix(t[&quot;barrier&quot;])+suffix(t[&quot;bicycle&quot;])))&gt;number(t[&quot;railway&quot;])))(around:50,50.668480,13.056165)-&gt;.s0;
+.s0 map_to_area-&gt;.s1;
+.s1 out skel bb qt 31 (50.564189,12.592892,50.567114,12.707333);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

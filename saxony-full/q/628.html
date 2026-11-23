@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 628</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 628</p><h1>Query 628</h1><p class="muted">fuzz:4:history,areas,complete,statements:181 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][adiff:&quot;2012-09-02T09:36:49Z&quot;,&quot;2018-10-31T20:40:06Z&quot;];
+rel(if:length()&gt;10)[&quot;highway&quot;=&quot;primary&quot;](51.277636,12.149405,51.418026,12.400372)-&gt;.s0;
+.s0 &gt;-&gt;.s1;
+rel.s0(50.849898,14.740882,51.034363,14.865702)-&gt;.s2;
+way[&quot;operator:wikidata&quot;=&quot;Q3587594&quot;][&quot;railway:signal:combined:states&quot;!=&quot;DE-ESO:hl1;DE-ESO:hl10;DE-ESO:hp0&quot;][&quot;network&quot;~&quot;.&quot;]-&gt;.s3;
+node(way_cnt.s2:2-)-&gt;.s4;
+.s2 compare(delta:lat())-&gt;.s5 { .s5 out count; }
+.s3 out body (51.131655,12.485942,51.193087,12.619532);
+.s4 out meta 30;
+.s5 out body center qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

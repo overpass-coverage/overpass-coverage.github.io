@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 509</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 509</p><h1>Query 509</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1607 · 0.12 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][timeout:180];
+way[&quot;service&quot;=&quot;parking_aisle&quot;](50.794954,12.495807,50.836608,12.732024)-&gt;.s0;
+.s0 convert item ::=::,k0=(is_number((id()+user()))?((is_date(t[&quot;name&quot;])?((t[&quot;name&quot;]+timestamp())):(timestamp()))):(((t[&quot;roof:levels&quot;]+user())+id()))),::id=id(),!&quot;tourism&quot;,k1=(lrs_min(lrs_isect(lrs_union(t[&quot;bicycle&quot;],&quot;name&quot;),lrs_union(t[&quot;railway&quot;],&quot;name&quot;)))+&quot;2018-01-01&quot;)-&gt;.s1;
+way.s0(if:is_closed())-&gt;.s2;
+(.s0; .s0 &gt;;)-&gt;.s3;
+.s3 local llb-&gt;.s4;
+way(around.s0:100)[&quot;destination&quot;=&quot;Torgau;Eilenburg;Taucha&quot;]-&gt;.s5;
+.s4 convert row ::id=id(),tags=count_tags();
+out;
+.s2 out (51.358623,13.442460,51.366184,13.571609) 2 asc body noids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

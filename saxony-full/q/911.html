@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 911</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 911</p><h1>Query 911</h1><p class="muted">fuzz:4:history,areas,complete,statements:969 · 1.14 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][date:&quot;2024-10-06T18:17:56Z&quot;];
+node(if:is_tag(&quot;industrial&quot;))(if:changeset()&gt;120000000)[&quot;destination&quot;=&quot;Gera;Chemnitz&quot;]-&gt;.s0;
+area(id:3617748311)-&gt;.s1;
+rel(area.s1)(50.998951,13.582091,51.008840,13.714364)-&gt;.s2;
+(.s0; .s2;)-&gt;.s3;
+area[name=&quot;Stadtwald&quot;]-&gt;.s4;
+rel(area.s4)[&quot;railway:lzb&quot;=&quot;no&quot;]-&gt;.s5;
+node(area:3616803562)[&quot;change:lanes&quot;]-&gt;.s6;
+.s5 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

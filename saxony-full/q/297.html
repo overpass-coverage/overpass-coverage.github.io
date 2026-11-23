@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 297</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 297</p><h1>Query 297</h1><p class="muted">fuzz:4:evaluators:704 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+wr(50.944777,13.692627,50.950859,13.755362)(50.876887,12.706934,51.056577,12.952496)-&gt;.s0;
+way.s0(if:lrs_in(&quot;2018-01-01&quot;,t[&quot;natural&quot;]))-&gt;.s1;
+.s0 convert item k0=lat(),k2=((-count_distinct_by_role(&quot;part&quot;))/lrs_max(lrs_union(&quot;1;2&quot;,lrs_union(t[&quot;backrest&quot;],&quot;name&quot;)))),k3=(((is_date(t[&quot;highway&quot;])?(user()):(timestamp()))==user())?((is_number(suffix(t[&quot;amenity&quot;]))?((t[&quot;check_date&quot;]==&quot;compacted&quot;?(&quot;x;y&quot;):(&quot;a&quot;))):(&quot;yes&quot;))):(((timestamp()+suffix(t[&quot;cycleway:both&quot;]))+id()))),::=::,k1=lrs_max(lon())-&gt;.s2;
+way.s1(51.322113,12.148869,51.611280,12.401726)-&gt;.s3;
+.s2 &lt;-&gt;.s4;
+.s4 out tags;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/set_list_operators.cc.html#L220">overpass_api/statements/set_list_operators.cc:220</a></li></ul></main></body></html>

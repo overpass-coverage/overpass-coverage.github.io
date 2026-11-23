@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2169</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2169</p><h1>Query 2169</h1><p class="muted">fuzz:3::2102 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][bbox:51.475750,12.268101,51.493881,12.271717];
+nw[&quot;highway&quot;=&quot;crossing&quot;][&quot;destination:forward&quot;!=&quot;Eger (Cheb)&quot;](poly:&quot;51.306413 12.228498 51.299639 12.209883 51.298543 12.207785 51.289698 12.191634 51.283019 12.225080 51.286062 12.259361&quot;)(51.016681,12.724933,51.086863,12.778649)-&gt;.s0;
+nw[&quot;destination:backward&quot;=&quot;Cottbus;Spremberg&quot;](51.009525,12.729213,51.203596,12.731628)[&quot;species:de&quot;!=&quot;Traubeneiche&quot;][&quot;railway:position&quot;]-&gt;.s1;
+way[&quot;uic_name&quot;=&quot;Schachthaus, Gersdorf&quot;][&quot;memorial:address&quot;=&quot;Weinligstraße 11, Leipzig&quot;]-&gt;.s2;
+(.s1; - .s0;)-&gt;.s3;
+wr(bn.s1)[&quot;waterway&quot;=&quot;stream&quot;]-&gt;.s4;
+.s1 out count;
+.s2 out meta geom asc (50.427367,12.187837,50.510619,12.258161);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

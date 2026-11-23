@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 432</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 432</p><h1>Query 432</h1><p class="muted">fuzz:4:evaluators:553 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+rel[&quot;building:architecture&quot;=&quot;modernism&quot;]-&gt;.s0;
+rel.s0(51.279229,12.707725,51.444334,12.825474)-&gt;.s1;
+.s0 &gt;-&gt;.s2;
+if ((s0.min(date(type()))==1e3)) { make yes n=s0.count(nwr)-&gt;.s3; } else { make no n=0-&gt;.s3; }
+.s1 &lt;-&gt;.s4;
+foreach.s4-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s3 out ids 47;
+.s4 out tags geom (50.868524,13.291507,50.944411,13.294062);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

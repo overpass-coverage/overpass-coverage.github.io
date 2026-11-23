@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2851</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2851</p><h1>Query 2851</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:487 · 0.49 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][bbox:50.556543,13.243442,50.643877,13.370508][out:xml][maxsize:268435456][date:&quot;2025-02-03T22:57:28Z&quot;];
+rel(id:536006,1502792,2062191,3235122,6172885,7164723,12946479,16153974,19650089)(51.182087,14.474176,51.370390,14.478216)[&quot;departures_board&quot;=&quot;timetable&quot;][&quot;leaf_cycle&quot;=&quot;deciduous&quot;]-&gt;.s0;
+timeline(relation,1378660)-&gt;.s1;
+.s0 &lt;-&gt;.s2;
+way(around.s1:20)[&quot;fax&quot;!~&quot;\\+49\\ 341\\ 2626201&quot;]-&gt;.s3;
+wr(bn.s1)[&quot;power&quot;~&quot;^po&quot;]-&gt;.s4;
+.s0 out tags qt;
+.s4 out ids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 762</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 762</p><h1>Query 762</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2848 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:1073741824][out:csv(::id,::type,::&quot;count:ways&quot;,::lon,::lat;false;&quot;|&quot;)][bbox:51.007988,13.309875,51.164743,13.524273];
+node(50.916928,14.649902,50.952386,14.686734)[&quot;artist_name&quot;]-&gt;.s0;
+area(3603019356)-&gt;.s1;
+node(area.s1)[&quot;roof:material&quot;=&quot;roof_tiles&quot;]-&gt;.s2;
+way(r.s0)-&gt;.s3;
+complete(3).s2-&gt;.s4 { way(bn)[&quot;operator&quot;]; node(w); }
+way(around.s0:20)[~&quot;^sid&quot;~&quot;bo&quot;]-&gt;.s5;
+.s1 out count center noids;
+.s3 out noids geom body;
+.s4 out body bb qt noids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

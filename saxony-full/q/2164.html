@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2164</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2164</p><h1>Query 2164</h1><p class="muted">fuzz:4:evaluators:981 · 0.21 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+way(50.927978,13.809953,51.032165,13.910925)(if:(suffix(t[&quot;public_transport&quot;])&lt;t[&quot;lit&quot;]))[&quot;fee&quot;=&quot;no&quot;]-&gt;.s0;
+if (lrs_in(&quot;1;2;3&quot;,s0.min((t[&quot;tracktype&quot;]+&quot;2018-01-01&quot;)))) { make yes n=s0.count(nwr)-&gt;.s1; } else { make no n=0-&gt;.s1; }
+way.s0(if:(!is_date(t[&quot;parking&quot;])))-&gt;.s2;
+way.s2(if:is_closed())-&gt;.s3;
+.s2 out body;
+.s3 out tags bb asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

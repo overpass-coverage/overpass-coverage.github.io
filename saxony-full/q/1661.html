@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1661</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1661</p><h1>Query 1661</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3436 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][timeout:25];
+node[&quot;to&quot;](id:948818265,2178623182,3557858015,5471146203,7264022504,10798683884)-&gt;.s0;
+node.s0(id:1151963904,1787175139,6010644084,7837078282)-&gt;.s1;
+rel(bw.s0)[&quot;natural&quot;=&quot;tree_row&quot;]-&gt;.s2;
+nwr(around:10,51.196828,14.917532,51.193930,14.915946,51.194799,14.919909,51.193053,14.919695)[&quot;fire_hydrant:diameter&quot;]-&gt;.s3;
+for.s0-&gt;.s4 (type()) { convert item ::id=id(),g=_.val; }
+.s3 out skel geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

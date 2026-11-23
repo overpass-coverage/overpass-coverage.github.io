@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2038</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2038</p><h1>Query 2038</h1><p class="muted">fuzz:3:areas,complete:1035 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+node(51.241307,12.740596,51.290734,13.043588)(poly:&quot;50.340770 12.335409 50.341795 12.324896 50.301539 12.313095&quot;)-&gt;.s0;
+node.s0(if:changeset()&gt;160000000)-&gt;.s1;
+area[name=&quot;Hohndorf&quot;][admin_level]-&gt;.s2;
+node(area.s2)[&quot;wall&quot;=&quot;wood&quot;]-&gt;.s3;
+rel(br.s0)[&quot;bicycle_parking&quot;=&quot;stands&quot;]-&gt;.s4;
+foreach.s3-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s4 convert row ::id=id(),tags=count_tags();
+out;
+.s2 out skel (50.506162,12.862793,50.562784,12.894356);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

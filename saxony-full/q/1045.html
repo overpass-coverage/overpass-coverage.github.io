@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1045</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1045</p><h1>Query 1045</h1><p class="muted">fuzz:4:history,areas,complete,statements:697 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+node(51.219433,12.259951,51.472807,12.474742)[&quot;contact:phone&quot;=&quot;+49 174 2042558&quot;][&quot;uic_name&quot;=&quot;Schachthaus, Gersdorf&quot;](newer:&quot;2015-09-23T23:14:26Z&quot;)-&gt;.s0;
+nwr(around:10,50.819476,12.510416,50.821542,12.507939,50.823064,12.508701)[&quot;destination:backward&quot;]-&gt;.s1;
+complete(3).s0-&gt;.s2 { way(around:0)[&quot;addr:suburb&quot;]; }
+node(way_cnt.s1:1)-&gt;.s3;
+nwr(around:0,50.529862,12.745782,50.526885,12.744294,50.526098,12.746203,50.524236,12.745756,50.524897,12.747286,50.527348,12.751198)[&quot;rooms&quot;]-&gt;.s4;
+.s2 convert row ::id=id(),tags=count_tags();
+out;
+.s1 out skel;
+.s2 out count;
+.s4 out meta geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

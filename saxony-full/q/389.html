@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 389</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 389</p><h1>Query 389</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:279 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  node[&quot;roof:shape&quot;=&quot;flat&quot;](around:2000,51.268824,14.776312);
+  nwr[&quot;roof:colour&quot;=&quot;gray&quot;](around:2000,51.268824,14.776312);
+  node[&quot;highway&quot;~&quot;crossing|give_way&quot;](around:2000,51.268824,14.776312);
+  node[&quot;building:material&quot;=&quot;plaster&quot;](around:2000,51.268824,14.776312);
+  node[&quot;operator:wikidata&quot;~&quot;Q1304269|Q1456718|Q3587594&quot;,i](around:2000,51.268824,14.776312);
+  node[&quot;usage&quot;](around:2000,51.268824,14.776312);
+  node[&quot;type&quot;][&quot;area:highway&quot;~&quot;12/21|recycl&quot;,i](around:2000,51.268824,14.776312);
+  node[&quot;population&quot;~&quot;2657|48|65&quot;,i](around:2000,51.268824,14.776312);
+  node[&quot;contact:phone&quot;~&quot;\\+49\\ 170\\ 7717270|\\+49\\ 3581\\ 314054|\\+49\\ 375\\ 3541231&quot;,i](around:3000,51.268824,14.776312);
+);
+out geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2266</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2266</p><h1>Query 2266</h1><p class="muted">fuzz:3:history,complete:1507 · 0.26 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2008-09-09T21:52:43Z&quot;,&quot;2016-07-01T11:44:45Z&quot;];
+node(if:date(timestamp())&gt;date(&quot;2021-01-01&quot;))[&quot;contact:phone&quot;=&quot;+49 37292 21225&quot;]-&gt;.s0;
+timeline(node,5632820432,3)-&gt;.s1;
+rel(bn.s1)[&quot;destination&quot;!=&quot;Elbe-Park;Flughafen&quot;]-&gt;.s2;
+complete(6).s2-&gt;.s3 { way(bn)[&quot;tracktype&quot;]; node(w); }
+(.s3; - .s3;)-&gt;.s4;
+complete(1).s1-&gt;.s5 { way(around:0)[&quot;addr:street&quot;]; }
+foreach.s3-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s1 out tags 30 (50.887172,13.841468,50.971011,13.888658);
+.s3 out skel;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

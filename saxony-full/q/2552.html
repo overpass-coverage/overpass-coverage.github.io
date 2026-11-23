@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2552</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2552</p><h1>Query 2552</h1><p class="muted">fuzz:4:history,areas,complete,statements:354 · 1.64 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+rel[&quot;power&quot;][&quot;hiking&quot;=&quot;yes&quot;](changed:&quot;2009-08-03T15:51:35Z&quot;)(51.124981,14.418729,51.196101,14.592285)[&quot;operator&quot;=&quot;Landratsamt Mittelsachsen&quot;]-&gt;.s0;
+rel[~&quot;^destination:backward$&quot;~&quot;^Zentrum;Historischer Stadtkern$&quot;]-&gt;.s1;
+complete(4).s0-&gt;.s2 { way(around:0)[&quot;service&quot;]; }
+(.s2; - .s2;)-&gt;.s3;
+area[name=&quot;Dorfteich&quot;]-&gt;.s4;
+nwr(area.s4)[&quot;crossing&quot;=&quot;traffic_signals&quot;]-&gt;.s5;
+foreach.s4-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s0 out tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

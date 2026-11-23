@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1042</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1042</p><h1>Query 1042</h1><p class="muted">fuzz:3:areas,complete:1931 · 0.18 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+rel(around:100,51.128456,12.469225)-&gt;.s0;
+.s0 &lt;&lt;-&gt;.s1;
+is_in(51.171129,14.135198)-&gt;.s2;
+rel(area.s2)[&quot;roof:direction&quot;=&quot;333.15&quot;]-&gt;.s3;
+.s3 convert row ::id=id(),tags=count_tags();
+out;
+.s2 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

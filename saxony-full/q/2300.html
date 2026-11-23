@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2300</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2300</p><h1>Query 2300</h1><p class="muted">fuzz:3:areas,complete:1869 · 0.50 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+rel(id:249006,3457027,7804765,13328333,13836581,21531855)(id:569895,3500130,4465586,5735622,7224689,7911808,12729649,15100743,15477794,19039499)[&quot;destination:forward&quot;!=&quot;Neustadt (Sachsen);Radeberg&quot;]-&gt;.s0;
+rel(bn.s0)[&quot;highway&quot;=&quot;turning_circle&quot;]-&gt;.s1;
+way(bn.s0)[&quot;access&quot;!~&quot;^pri&quot;]-&gt;.s2;
+area[name=&quot;Rathaus&quot;]-&gt;.s3;
+way(area.s3)[&quot;hazmat&quot;=&quot;designated&quot;]-&gt;.s4;
+complete(2).s0-&gt;.s5 { way(bn)[&quot;railway&quot;]; node(w); }
+.s4 out tags asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

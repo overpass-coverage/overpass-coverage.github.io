@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2653</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2653</p><h1>Query 2653</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2591 · 0.20 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][out:xml];
+wr(around:1000,50.862521,12.895415)(if:is_tag(&quot;handrail&quot;))-&gt;.s0;
+.s0 &gt;-&gt;.s1;
+node(r.s0)-&gt;.s2;
+wr(bn.s2)-&gt;.s3;
+.s1 out noids body center;
+.s2 out 1 bb noids body;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 231</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 231</p><h1>Query 231</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2316 · 0.15 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  way[&quot;operator&quot;](around:1000,50.742117,12.755312);
+  relation[&quot;amenity&quot;=&quot;bicycle_parking&quot;](around:3000,50.742117,12.755312);
+  node[&quot;start_date&quot;=&quot;1856-12-01&quot;](around:3000,50.742117,12.755312);
+  node[&quot;direction&quot;=&quot;forward&quot;](around:3000,50.742117,12.755312);
+  relation[&quot;railway:ref:parent&quot;~&quot;LLW&quot;,i](around:1000,50.742117,12.755312);
+  relation[&quot;bdouble&quot;=&quot;yes&quot;](around:3000,50.742117,12.755312);
+  nwr[&quot;roof:shape&quot;=&quot;hipped&quot;](around:3000,50.742117,12.755312);
+  node[&quot;bicycle_parking&quot;=&quot;stands&quot;](around:2000,50.742117,12.755312);
+  relation[&quot;traffic_sign&quot;~&quot;^(DE:242\\.1,1022\\-10,1026\\-39|DE:274\\[30\\],1042\\-33\\[Mo\\-Fr\\ 06:00\\-18:00\\]|city_limit)$&quot;](around:3000,50.742117,12.755312);
+  node[&quot;check_date:smoothness&quot;~&quot;2026\\-08\\-16&quot;](around:3000,50.742117,12.755312);
+  relation[&quot;rooms&quot;~&quot;17|34&quot;,i](around:3000,50.742117,12.755312);
+  nwr[&quot;generator:output:electricity&quot;=&quot;7.5 kW&quot;](around:5000,50.742117,12.755312);
+  nwr[&quot;destination&quot;](around:3000,50.742117,12.755312);
+);
+out geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

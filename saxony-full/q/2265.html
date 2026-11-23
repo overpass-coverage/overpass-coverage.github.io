@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2265</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2265</p><h1>Query 2265</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2783 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  way[&quot;railway:gnt&quot;~&quot;no&quot;](around:2000,51.333986,14.880085);
+  relation[&quot;building:architecture&quot;](around:2000,51.333986,14.880085);
+  way[&quot;surface&quot;=&quot;paving_stones&quot;](around:2000,51.333986,14.880085);
+  nwr[&quot;leisure&quot;~&quot;^(garden|playground|swimming_pool)$&quot;](around:2000,51.333986,14.880085);
+  node[&quot;highway&quot;~&quot;crossing|give_way&quot;](around:2000,51.333986,14.880085);
+  nwr[&quot;destination:symbol:lanes:forward&quot;~&quot;^(train_station\\|)$&quot;](around:2000,51.333986,14.880085);
+  node[&quot;railway:gnt&quot;~&quot;no&quot;](around:2000,51.333986,14.880085);
+  node[&quot;to&quot;~&quot;^(Gahlenz|Löthain|Mittweida,\\ Busbahnhof|Seifhennersdorf\\ Grenze\\ Rumburk|Wolkenstein,\\ Markt)$&quot;](around:2000,51.333986,14.880085);
+);
+out tags center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

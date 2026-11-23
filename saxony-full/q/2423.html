@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2423</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2423</p><h1>Query 2423</h1><p class="muted">fuzz:4:history,complete,evaluators:245 · 0.09 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][date:&quot;2022-10-11T15:11:27Z&quot;];
+node(50.923884,13.864092,51.198706,14.004038)[&quot;destination:ref&quot;=&quot;A 17&quot;]-&gt;.s0;
+make stat k0=s0.set((id()+t[&quot;addr:city&quot;])),k1=(number(s0.u((is_date(t[&quot;barrier&quot;])?(user()):(type()))))+(s0.min(count_by_role(&quot;backward&quot;))+s0.min((uid()*count_distinct_by_role(&quot;to&quot;))))),k2=(date(s0.max(timestamp()))-s0.min(number(type()))),k3=s0.max(type())-&gt;.s1;
+way(bn.s1)-&gt;.s2;
+.s0 &lt;-&gt;.s3;
+make info v=s0.set(suffix(id())),c=s0.count(nodes),n=1-&gt;.s4;
+.s0 out skel geom asc;
+.s3 out ids asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

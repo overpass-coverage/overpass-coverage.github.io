@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1720</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1720</p><h1>Query 1720</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3146 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(&quot;shelter&quot;,&quot;roof:levels&quot;,::user,::type,&quot;capacity&quot;,::&quot;count:nodes&quot;,::&quot;count:areas&quot;)];
+nw[&quot;generator:source&quot;=&quot;solar&quot;](51.113352,12.579538,51.255960,12.799564)-&gt;.s0;
+.s0 convert item k1=lrs_union(t[&quot;level&quot;],t[&quot;foot&quot;]),k0=changeset(),::id=id(),!&quot;building&quot;-&gt;.s1;
+node(way_link.s1:2-)-&gt;.s2;
+.s1 out body;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

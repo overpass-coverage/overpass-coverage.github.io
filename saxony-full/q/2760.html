@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2760</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2760</p><h1>Query 2760</h1><p class="muted">fuzz:3::1483 · 0.66 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;intermittent&quot;)];
+node[&quot;seamark:notice:information&quot;!=&quot;Wasserski&quot;](poly:&quot;50.927151 13.963385 50.930584 13.985640 50.937440 13.962216 50.947917 13.974909 50.950016 13.966856 50.945527 13.949177 50.969828 13.945169 50.944729 13.932569 50.963677 13.931473 50.954785 13.923612 50.951021 13.897530 50.938381 13.902279 50.934572 13.903369 50.931001 13.861329 50.920692 13.901548 50.904014 13.889773 50.904484 13.897134 50.888621 13.896523 50.896498 13.912121 50.901715 13.915904 50.898912 13.916256 50.893416 13.922297 50.899945 13.931129 50.906832 13.931307 50.891731 13.940597 50.901910 13.943185 50.911034 13.947970 50.914170 13.951611 50.904551 13.990029 50.920624 13.949247&quot;)[&quot;information&quot;!~&quot;^guid&quot;]-&gt;.s0;
+wr(bn.s0)[&quot;access&quot;=&quot;permissive&quot;]-&gt;.s1;
+rel(bn.s0)[!&quot;amenity&quot;]-&gt;.s2;
+node(r.s1)-&gt;.s3;
+.s0 out body bb;
+.s3 out body qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

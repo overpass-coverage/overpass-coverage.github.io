@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 429</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 429</p><h1>Query 429</h1><p class="muted">fuzz:4:evaluators:474 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+rel[&quot;seamark:notice:information&quot;=&quot;Wasserski&quot;][&quot;survey:date&quot;!=&quot;2014-03-07&quot;]-&gt;.s0;
+.s0 convert row k1=((abs(count_members())&gt;abs(length()))||((count_members()-count_members())==number(t[&quot;level&quot;]))),k2=(0?(lrs_max(lrs_isect(&quot;1;2&quot;,&quot;a;b;c&quot;))):((-abs(count_distinct_members())))),::id=id(),k0=(is_number(t[&quot;natural&quot;])?(t[&quot;addr:postcode&quot;]):(date(user())))-&gt;.s1;
+way.s1(if:is_closed())-&gt;.s2;
+node(way_cnt.s0:2-)-&gt;.s3;
+.s3 out skel 24;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

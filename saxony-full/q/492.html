@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 492</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 492</p><h1>Query 492</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:25 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][timeout:60][date:&quot;2025-01-16T15:55:18Z&quot;];
+node(newer:&quot;2015-05-22T18:44:35Z&quot;)(around:10,51.125948,14.630010)(if:t[&quot;surface&quot;]==&quot;2026-07-26&quot;)[&quot;network:wikidata&quot;=&quot;Q1426445&quot;]-&gt;.s0;
+complete(3).s0-&gt;.s1 { node(w); way(bn)[&quot;railway&quot;]; }
+way(r.s0:&quot;stop_exit_only&quot;)-&gt;.s2;
+(.s2; .s0;)-&gt;.s3;
+out body qt bb;
+.s3 out asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

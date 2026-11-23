@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1582</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1582</p><h1>Query 1582</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:36 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;power&quot;,::type,::otype,&quot;smoothness&quot;,::&quot;count:areas&quot;,&quot;building:levels&quot;,::uid)][timeout:180][maxsize:1073741824];
+nwr(if:(&quot;&quot;&lt;(1e3+(1?(timestamp()):(suffix(t[&quot;waterway&quot;]))))))[&quot;bicycle&quot;=&quot;no&quot;](if:(!is_number((is_number(t[&quot;building&quot;])?(timestamp()):(timestamp())))))(51.199389,13.480264,51.331302,13.584148)-&gt;.s0;
+.s0 &lt;&lt;-&gt;.s1;
+wr[&quot;destination:lanes&quot;=&quot;Chemnitz;Prag/Praha;Dresden-Wilder Mann|Chemnitz;Prag/Praha;Dresden-Wilder Mann|Chemnitz;Prag/Praha;Dresden-Wilder Mann|Dresden-Hellerau;Dresden-Zentrum;Zollamt&quot;][&quot;barrier&quot;~&quot;ker&quot;,i]-&gt;.s2;
+.s1 out body center;
+.s2 out qt bb;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

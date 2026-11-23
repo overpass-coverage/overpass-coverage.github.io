@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2062</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2062</p><h1>Query 2062</h1><p class="muted">fuzz:3:areas,complete:863 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;ref:IFOPT&quot;)];
+way(51.292653,12.395190,51.326385,12.464064)(id:88268553,127977160,185132588,433858402,583902068,610039347,882390245)-&gt;.s0;
+node(way_cnt.s0:1-2)-&gt;.s1;
+way.s0[&quot;railway:start_date&quot;=&quot;1890-09-05&quot;]-&gt;.s2;
+area[name=&quot;Wilhelm-Liebknecht-Platz&quot;][&quot;type&quot;=&quot;multipolygon&quot;]-&gt;.s3;
+node(area.s3)(50.646029,12.551736,50.659657,12.661673)-&gt;.s4;
+.s3 out meta center asc 11;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

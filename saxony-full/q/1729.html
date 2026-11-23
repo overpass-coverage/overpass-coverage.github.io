@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1729</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1729</p><h1>Query 1729</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1957 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][out:popup(&quot;Roads&quot;;[&quot;material&quot;][&quot;gtfs:release_date&quot;!=&quot;2021-06-01&quot;];[&quot;network&quot;][&quot;parking:lane:right:perpendicular&quot;=&quot;lay_by&quot;];)][timeout:60];
+nwr[&quot;protection_title&quot;=&quot;Wasserschutzgebiet-Schutzzone I&quot;]-&gt;.s0;
+way.s0(50.732096,14.639349,50.925050,14.739914)-&gt;.s1;
+area(3620405783)-&gt;.s2;
+nwr(area.s2)[&quot;wheelchair&quot;=&quot;limited&quot;]-&gt;.s3;
+nwr(around:10,51.124437,13.828661,51.123926,13.828307,51.123559,13.831585,51.125963,13.830430)[&quot;highway&quot;]-&gt;.s4;
+.s1 out meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

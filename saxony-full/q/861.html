@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 861</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 861</p><h1>Query 861</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2694 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::count,::lat,&quot;addr:city&quot;,::changeset,::&quot;count:areas&quot;;false;&quot;::&quot;)][maxsize:536870912][timeout:25];
+rel(51.224879,12.679369,51.255125,12.738589)-&gt;.s0;
+.s0 convert item ::id=id(),k0=0,k1=((suffix(t[&quot;addr:street&quot;])&gt;suffix(user()))?(date(user())):(lrs_min(lrs_isect(lrs_union(t[&quot;smoothness&quot;],&quot;name&quot;),t[&quot;name&quot;])))),members=per_member(mtype())-&gt;.s1;
+.s0 out ids;
+.s1 out meta center;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/per_member.h.html#L300">overpass_api/statements/per_member.h:300</a></li></ul></main></body></html>

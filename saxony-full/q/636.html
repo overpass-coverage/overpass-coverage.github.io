@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 636</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 636</p><h1>Query 636</h1><p class="muted">fuzz:4:history,areas,complete,statements:363 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+node(id:22966832,1793633777,2965702217,3206576168,5236038665,6506948062,12084657671,12559288937)[&quot;railway&quot;!=&quot;rail&quot;][&quot;leisure&quot;!=&quot;swimming_pool&quot;]-&gt;.s0;
+retro(date(&quot;2013-05-10T07:14:19Z&quot;)) { rel[&quot;sidewalk:both:surface&quot;=&quot;paving_stones&quot;](51.372607,14.082167,51.533524,14.331343)-&gt;.s1; .s1 out ids; }
+rel.s1[!&quot;emergency&quot;]-&gt;.s2;
+node(around.s2:20)[&quot;TMC:cid_58:tabcd_1:NextLocationCode&quot;=&quot;24629&quot;]-&gt;.s3;
+.s1 map_to_area-&gt;.s4;
+.s1 is_in-&gt;.s5;
+.s1 out count;
+.s2 out count;
+.s3 out tags geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

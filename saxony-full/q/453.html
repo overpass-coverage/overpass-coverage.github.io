@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 453</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 453</p><h1>Query 453</h1><p class="muted">fuzz:3:history,complete:1570 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+way(50.708027,13.354851,50.799426,13.433195)[&quot;check_date&quot;!~&quot;2021\\-02\\-02|2022\\-05\\-23|2023\\-12\\-22|2024\\-04\\-20|2024\\-10\\-05|2026\\-05\\-08|2026\\-06\\-12&quot;](poly:&quot;50.858677 12.558761 50.858722 12.537163 50.837112 12.537457 50.830482 12.553681 50.834191 12.563526 50.843570 12.550614&quot;)(poly:&#x27;50.743560 12.762896 50.749298 12.743427 50.702882 12.713252 50.707588 12.763327&#x27;)-&gt;.s0;
+complete(6).s0-&gt;.s1 { way(around:0)[&quot;roof:shape&quot;]; }
+node(r.s0)-&gt;.s2;
+.s2 &gt;-&gt;.s3;
+rel.s1(if:uid()&gt;4000000)-&gt;.s4;
+.s2 out body 36 (51.387427,12.155744,51.401048,12.226691);
+.s3 out tags;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

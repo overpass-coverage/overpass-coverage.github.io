@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1667</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1667</p><h1>Query 1667</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1340 · 0.19 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+(
+  way[&quot;cycleway:left&quot;~&quot;no&quot;](around:1000,51.186276,14.451056);
+  node[&quot;railway:signal:position&quot;~&quot;right&quot;](around:2000,51.186276,14.451056);
+  node[&quot;to&quot;~&quot;Gahlenz|Seifhennersdorf\\ Grenze\\ Rumburk|Umspannwerk\\ Düben|Umspannwerk\\ Streumen|Wolkenstein,\\ Markt&quot;](around:5000,51.186276,14.451056);
+  way[&quot;entrance&quot;=&quot;yes&quot;](around:25000,51.186276,14.451056);
+  relation[&quot;roof:colour&quot;~&quot;\\#67624F|\\#86887B|gray|red&quot;](around:500,51.186276,14.451056);
+  nwr[&quot;check_date:surface&quot;~&quot;2023\\-02\\-25|2025\\-03\\-31|2026\\-07\\-26&quot;](around:25000,51.186276,14.451056);
+  way[&quot;cafe&quot;~&quot;yes&quot;,i](around:2000,51.186276,14.451056);
+  node[&quot;building:part&quot;=&quot;yes&quot;](around:25000,51.186276,14.451056);
+  node[&quot;roof:shape&quot;=&quot;hipped&quot;](around:25000,51.186276,14.451056);
+  node[&quot;destination:lanes:forward&quot;=&quot;Stadt Wehlen;Mockethal|Zentrum;Dresden;Radeberg;Pillnitz&quot;][&quot;fee&quot;~&quot;30303|embank|urban&quot;,i](around:25000,51.186276,14.451056);
+  nwr[&quot;lanes:forward&quot;](around:1000,51.186276,14.451056);
+  node[&quot;landuse&quot;=&quot;residential&quot;](around:25000,51.186276,14.451056);
+  nwr[&quot;building:levels&quot;](around:3000,51.186276,14.451056);
+  relation[&quot;amenity&quot;~&quot;mortuary|parking_space|post_box|recycling|shelter&quot;](around:25000,51.186276,14.451056);
+);
+out center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

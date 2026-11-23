@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2393</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2393</p><h1>Query 2393</h1><p class="muted">fuzz:3:areas,complete:2783 · 0.21 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+way[&quot;seamark:notice:category&quot;=&quot;channel_two_way&quot;](51.167508,14.091397,51.174750,14.178998)(if:number(t[&quot;building:levels&quot;])&gt;36)(if:is_closed())-&gt;.s0;
+.s0 &gt;&gt;-&gt;.s1;
+area(3620626482)-&gt;.s2;
+nwr(area.s2)(50.920110,14.661269,50.949204,14.675366)-&gt;.s3;
+.s1 out meta qt;
+.s2 out ids qt 36;
+.s3 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

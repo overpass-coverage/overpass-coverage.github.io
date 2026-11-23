@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 367</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 367</p><h1>Query 367</h1><p class="muted">fuzz:4:history,complete,output:557 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:536870912][out:json][timeout:25];
+nwr(newer:&quot;2010-07-17T15:36:00Z&quot;)[&quot;operator&quot;=&quot;Gemeinde Arnsdorf&quot;](50.527452,11.836716,50.539345,11.973233)[&quot;operator&quot;=&quot;Handwerkskammer Dresden&quot;]-&gt;.s0;
+retro(date(&quot;2018-03-03T10:18:43Z&quot;)) { wr[&quot;destination:backward&quot;=&quot;Bischofswerda;Großharthau;Helmholtz-Zentrum;Dresden-Rossendorf;;Radeberg;Großerkmannsdorf;Pirna;Eschdorf&quot;][&quot;highway&quot;=&quot;path&quot;](newer:&quot;2010-09-02T12:09:06Z&quot;)(50.795262,14.606279,50.966565,14.634426)-&gt;.s1; .s1 out ids; }
+node(r.s1:&quot;stop_position&quot;)-&gt;.s2;
+node.s0(if:version()&gt;2)-&gt;.s3;
+out center;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

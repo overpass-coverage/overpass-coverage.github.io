@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 558</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 558</p><h1>Query 558</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:478 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:xml][timeout:60];
+nw(50.951381,14.227216,50.990837,14.323458)(if:is_number(id()))[&quot;operator&quot;=&quot;WG Unitas eG&quot;]-&gt;.s0;
+.s0 &gt;-&gt;.s1;
+.s1 &lt;-&gt;.s2;
+area[name=&quot;Lichtenstein/Sachsen&quot;]-&gt;.s3;
+node(area.s3)[&quot;smoothness&quot;=&quot;intermediate&quot;]-&gt;.s4;
+if ((abs(s3.min(number(timestamp())))==abs(number(s3.u(suffix(id())))))) { make yes n=s3.count(nwr)-&gt;.s5; }
+.s0 out noids tags;
+.s1 out skel noids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

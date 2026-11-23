@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1744</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1744</p><h1>Query 1744</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2200 · 0.00 s CPU · expected status <code>query-error: line N: parse error: number(...) must have one or more arguments</code></p><pre class="query">[timeout:180][maxsize:536870912];
+node[&quot;information&quot;!~&quot;board|guidepost&quot;](id:3871865283,9921031043,11168306663)-&gt;.s0;
+for.s0-&gt;.s1 (keys()) { make group value=_.val,n=count(nodes),w=count(ways); }
+rel(br.s0)-&gt;.s2;
+.s1 convert item bad=number(),!&quot;width&quot;,::geom=geom(),k0=lrs_isect((is_closed()?(timestamp()):(suffix(t[&quot;roof:levels&quot;]))),t[&quot;source&quot;])-&gt;.s3;
+.s3 &lt;&lt;-&gt;.s4;
+.s0 out body 1 bb;
+.s1 out center count;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/string_endomorphisms.h.html#L58">overpass_api/statements/string_endomorphisms.h:58</a></li></ul></main></body></html>

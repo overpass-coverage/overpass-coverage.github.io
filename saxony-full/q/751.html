@@ -1,0 +1,5 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 751</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 751</p><h1>Query 751</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2473 · 1.12 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][out:csv(::id,::lon,&quot;gauge&quot;,&quot;foot&quot;;true;&quot; &quot;)][maxsize:1073741824][date:&quot;2021-05-19T12:44:36Z&quot;];
+nwr[&quot;lanes&quot;](50.464354,12.033592,50.474961,12.177742)-&gt;.s0;
+foreach.s0-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s0 out tags (50.803897,14.664839,50.893797,14.713103);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

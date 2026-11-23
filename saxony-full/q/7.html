@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 7</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 7</p><h1>Query 7</h1><p class="muted">fuzz:3:history,complete:1452 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;bicycle_parking&quot;)][date:&quot;2024-08-07T12:12:35Z&quot;];
+node(id:130478417,2177718605,3093844790,9990447152,13376031506)-&gt;.s0;
+retro(date(&quot;2015-09-23T23:14:26Z&quot;)) { rel[&quot;horse&quot;=&quot;no&quot;](50.650991,13.150799,50.845281,13.159233)[~&quot;^rcn&quot;~&quot;6&quot;]-&gt;.s1; .s1 out ids; }
+complete(5).s1-&gt;.s2 { way(around:0)[&quot;source&quot;]; }
+complete(1).s0-&gt;.s3 { way(bn)[&quot;addr:street&quot;]; node(w); }
+complete(1).s3-&gt;.s4 { node(w); way(bn)[&quot;building&quot;]; }
+way(r.s0)-&gt;.s5;
+foreach.s5-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s2 out meta qt 37;
+.s5 out meta geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

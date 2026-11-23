@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 804</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 804</p><h1>Query 804</h1><p class="muted">fuzz:4:evaluators:835 · 0.00 s CPU · expected status <code>query-error: line N: parse error: is_tag(...) must have one or more arguments</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;crossing&quot;)];
+way[&quot;destination:symbol&quot;=&quot;;;;industrial&quot;][&quot;to&quot;](around:1000,51.100967,12.991674)-&gt;.s0;
+for.s0-&gt;.s1 ((id()+(timestamp()+&quot;2018-01-01&quot;))) { make group value=_.val,n=count(nodes),w=count(ways); }
+way(around.s0:300)[&quot;horse&quot;=&quot;no&quot;]-&gt;.s2;
+rel.s1(if:is_tag())-&gt;.s3;
+for.s3-&gt;.s4 (keys()) { ._ out count; }
+.s0 out ids;
+.s2 out tags center;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/tag_value.cc.html#L294">overpass_api/statements/tag_value.cc:294</a></li></ul></main></body></html>

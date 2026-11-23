@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 167</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 167</p><h1>Query 167</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:140 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:csv(&quot;maxspeed&quot;,::lat,::type,::id,&quot;level&quot;,::version,&quot;name:en&quot;,::user,::lon)];
+way(id:38805941,80344060,97361884,213713409,224919860,525261676,546330918,568802118,837515903,845603669,1475091406)[&quot;operator&quot;=&quot;DRK-Kreisverband Zittau e.V.&quot;]-&gt;.s0;
+timeline(node,1159579368)-&gt;.s1;
+nwr[&quot;destination:backward&quot;~&quot;^Freiberg;Pretzschendorf$&quot;][&quot;cycleway:right:smoothness&quot;!~&quot;^pe&quot;]-&gt;.s2;
+node(way_cnt.s2:1)-&gt;.s3;
+node(r.s0)-&gt;.s4;
+wr[&quot;seamark:notice:information&quot;~&quot;^wasserski$&quot;,i]-&gt;.s5;
+.s3 out meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

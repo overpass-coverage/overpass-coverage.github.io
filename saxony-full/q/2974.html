@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2974</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2974</p><h1>Query 2974</h1><p class="muted">fuzz:3:history,complete:2744 · 3.23 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2015-11-30T21:37:24Z&quot;,&quot;2023-04-04T08:36:26Z&quot;];
+rel[~&quot;^sur&quot;~&quot;gra&quot;](poly:&quot;50.935488 14.659592 50.935420 14.655907 50.934380 14.638476 50.937924 14.642565 50.936682 14.634566 50.953254 14.634634 50.958859 14.633778 50.961168 14.630086 50.952902 14.623643 50.952213 14.621997 50.947995 14.615945 50.955461 14.602918 50.947949 14.600558 50.949210 14.594948 50.949097 14.586747 50.936621 14.604649 50.937576 14.599679 50.937331 14.585948 50.933814 14.598811 50.934870 14.580079 50.931971 14.603816 50.929603 14.607180 50.926057 14.603318 50.926581 14.606436 50.922081 14.596988 50.911129 14.605803 50.911279 14.621938 50.913169 14.640116 50.913330 14.651757 50.921157 14.652565&quot;)(if:changeset()&gt;58000000)-&gt;.s0;
+.s0 &gt;-&gt;.s1;
+complete(3).s1-&gt;.s2 { way(bn)[&quot;railway&quot;]; node(w); }
+complete(3).s1-&gt;.s3 { way(bn)[&quot;operator&quot;]; node(w); }
+foreach.s3-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s1 out tags;
+.s2 out skel asc 17;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

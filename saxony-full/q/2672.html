@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2672</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2672</p><h1>Query 2672</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:801 · 3.69 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][maxsize:268435456][out:xml][date:&quot;2012-01-28T03:15:18Z&quot;];
+wr(poly:&quot;50.811453 13.314430 50.817890 13.307875 50.820996 13.312439 50.817815 13.291606 50.814755 13.262917 50.809501 13.264079 50.806916 13.268809 50.800457 13.264081 50.798248 13.259229 50.793749 13.273467&quot;)[&quot;material&quot;!=&quot;wood&quot;]-&gt;.s0;
+retro(date(&quot;2026-09-19T12:58:23Z&quot;)) { wr[&quot;barrier&quot;=&quot;lift_gate&quot;](newer:&quot;2010-09-19T11:14:50Z&quot;)(51.320858,12.267574,51.340315,12.358247)-&gt;.s1; .s1 out ids; }
+node.s0[&quot;operator&quot;!~&quot;^Bauernhof&quot;]-&gt;.s2;
+way[&quot;roof:direction&quot;=&quot;168&quot;]-&gt;.s3;
+.s3 out body geom asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

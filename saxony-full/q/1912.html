@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1912</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1912</p><h1>Query 1912</h1><p class="muted">fuzz:3:history,complete:963 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+node(if:is_tag(&quot;building:colour&quot;))(if:date(timestamp())&gt;date(&quot;2019-01-01&quot;))(2107005739)-&gt;.s0;
+timeline(relation,19611841,3)-&gt;.s1;
+complete(5).s1-&gt;.s2 { way(bn)[&quot;service&quot;]; node(w); }
+complete(5).s0-&gt;.s3 { way(bn)[&quot;lit&quot;]; node(w); }
+complete(4).s2-&gt;.s4 { node(w); way(bn)[&quot;smoothness&quot;]; }
+rel.s1[&quot;contact:website&quot;=&quot;https://www.xn--feinbckerei-bresan-ptb.de/&quot;]-&gt;.s5;
+.s2 out tags bb;
+.s5 out ids qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2946</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2946</p><h1>Query 2946</h1><p class="muted">fuzz:4:output:637 · 0.89 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;surface&quot;,::&quot;count:ways&quot;,&quot;height&quot;,&quot;tactile_paving&quot;;true)][timeout:180];
+nw(around:500,50.971880,12.883132)(if:changeset()&gt;120000000)[&quot;destination:forward&quot;=&quot;Görlitz&quot;]-&gt;.s0;
+rel(id:3067513,6554425,13059926)-&gt;.s1;
+(.s1; .s0;)-&gt;.s2;
+way(around.s1:100)[&quot;destination&quot;]-&gt;.s3;
+node(way_link.s0:3-)-&gt;.s4;
+.s1 out (50.859467,12.838639,50.861811,12.958383) 1 count asc geom;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

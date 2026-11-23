@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2782</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2782</p><h1>Query 2782</h1><p class="muted">fuzz:4:history,complete,output:900 · 0.34 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::&quot;count:relations&quot;,::&quot;count:nodes&quot;,&quot;railway&quot;,&quot;network&quot;,::otype,::version)][timeout:25][date:&quot;2010-12-19T18:58:00Z&quot;];
+nwr(if:number(t[&quot;tourism&quot;])&gt;50)[~&quot;^sid&quot;~&quot;bo&quot;][&quot;man_made&quot;=&quot;embankment&quot;](50.799251,13.370540,50.831790,13.522068)-&gt;.s0;
+complete(3).s0-&gt;.s1 { node(w); way(bn)[&quot;service&quot;]; }
+wr(bn.s0)[&quot;natural&quot;=&quot;peak&quot;]-&gt;.s2;
+complete(1).s1-&gt;.s3 { way(around:0)[&quot;operator&quot;]; }
+.s0 out asc geom tags;
+.s1 out count qt (51.250965,13.525224,51.319689,13.572669);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

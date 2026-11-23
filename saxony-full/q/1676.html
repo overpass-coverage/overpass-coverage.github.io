@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1676</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1676</p><h1>Query 1676</h1><p class="muted">fuzz:3:areas,complete:2729 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+nw(poly:&#x27;50.315992 12.151531 50.294801 12.149532 50.287090 12.151792 50.293507 12.206460&#x27;)[~&quot;^ope&quot;~&quot;Sächsische\\ Wohnungsg&quot;]-&gt;.s0;
+node(way_link.s0:1)-&gt;.s1;
+area[name=&quot;Mühlteich&quot;][&quot;type&quot;=&quot;multipolygon&quot;]-&gt;.s2;
+node(area.s2)[&quot;contact:mobile&quot;=&quot;+49 173 3835457&quot;]-&gt;.s3;
+.s1 map_to_area-&gt;.s4;
+(.s2; .s0;)-&gt;.s5;
+.s2 out count;
+.s3 out body qt;
+.s5 out count;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

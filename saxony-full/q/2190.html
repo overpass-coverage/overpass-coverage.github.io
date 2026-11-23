@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2190</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2190</p><h1>Query 2190</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3007 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::&quot;count:relations&quot;,::lon,::&quot;count:nodes&quot;,::user,::uid,::id)][bbox:51.002668,13.462448,51.026629,13.864732];
+rel(id:2182396,7643857,17639255)-&gt;.s0;
+.s0 &gt;-&gt;.s1;
+area[name=&quot;Waltersdorf&quot;]-&gt;.s2;
+rel(area.s2)[&quot;generator:output:electricity&quot;=&quot;7.5 kW&quot;]-&gt;.s3;
+foreach.s2((._; &gt;;);)
+(._;)-&gt;.s4;
+(.s0; - .s1;)-&gt;.s5;
+.s1 out ids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

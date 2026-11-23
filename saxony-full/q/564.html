@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 564</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 564</p><h1>Query 564</h1><p class="muted">fuzz:4:history,complete,evaluators:912 · 0.08 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+nwr(poly:&quot;50.993230 14.142183 51.003006 14.150390 51.012556 14.155165 51.010147 14.148965 51.013852 14.143129 50.997520 14.129582 50.999005 14.129604 51.015517 14.126382 51.016717 14.121210 50.993698 14.122423 50.994692 14.108340 51.001248 14.093415 51.001211 14.088452 50.988913 14.113196 50.990140 14.080997 50.981396 14.094898 50.971877 14.088237 50.972209 14.091726 50.966762 14.098376 50.953991 14.118261 50.952785 14.124032 50.967655 14.127806 50.964245 14.132838 50.955207 14.142483 50.954695 14.153153 50.967264 14.142425 50.963349 14.162250 50.969557 14.165700 50.976212 14.148128 50.979786 14.153993&quot;)[&quot;roof:shape&quot;=&quot;gabled&quot;][~&quot;^uic&quot;~&quot;Schachthau&quot;]-&gt;.s0;
+make stat k0=s0.max(version())-&gt;.s1;
+make stat k0=s0.min(count_tags()),k1=(s0.sum((count_tags()*changeset()))/s0.max(abs(count_tags())))-&gt;.s2;
+.s0 convert row ::id=id(),tags=count_tags();
+out;
+.s0 out meta bb;
+.s1 out ids;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

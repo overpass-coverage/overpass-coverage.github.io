@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1225</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1225</p><h1>Query 1225</h1><p class="muted">fuzz:4:evaluators:902 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+way(around:250,51.248653,13.252509)-&gt;.s0;
+way(around.s0:300)[&quot;destination:backward&quot;~&quot;^(Bischofswerda;Großharthau;Helmholtz\\-Zentrum;Dresden\\-Rossendorf;;Radeberg;Großerkmannsdorf;Pirna;Eschdorf|Cottbus;Spremberg|Dippoldiswalde;Reinhardtsgrimma|Freiberg;Pretzschendorf|Wurzen;Nord|Zentrum;Historischer\\ Stadtkern)$&quot;]-&gt;.s1;
+way.s0(if:(lrs_min(lrs_isect(&quot;1;2&quot;,&quot;1;2&quot;))==count_distinct_members()))-&gt;.s2;
+for.s0-&gt;.s3 (lrs_min(lrs_union(&quot;a;b;c&quot;,lrs_union(t[&quot;building:levels&quot;],&quot;name&quot;)))) { make group value=_.val,n=count(nodes),w=count(ways); }
+way(around.s3:20)[&quot;wheelchair&quot;~&quot;^y&quot;]-&gt;.s4;
+.s1 out tags geom (50.927456,13.013811,51.004741,13.146136);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

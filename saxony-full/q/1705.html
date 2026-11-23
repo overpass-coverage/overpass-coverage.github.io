@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1705</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1705</p><h1>Query 1705</h1><p class="muted">fuzz:4:history,complete,evaluators:559 · 1.79 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][diff:&quot;2025-04-02T10:41:48Z&quot;,&quot;2026-08-11T13:20:34Z&quot;];
+nw(if:is_closed())[&quot;species:de&quot;=&quot;Berg-Ahorn&quot;](if:(lrs_max(lrs_union(t[&quot;access&quot;],&quot;name&quot;))&gt;suffix(lrs_min(t[&quot;railway&quot;]))))-&gt;.s0;
+way(around.s0:100)[&quot;roof:colour&quot;!=&quot;gray&quot;]-&gt;.s1;
+.s0 out skel qt;
+.s1 out tags center asc 46;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1267</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1267</p><h1>Query 1267</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:233 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:180][out:xml][maxsize:268435456];
+nwr(50.439040,12.039561,50.459002,12.073758)[&quot;backrest&quot;=&quot;yes&quot;]-&gt;.s0;
+for.s0-&gt;.s1 (is_number((1?(id()):(id())))) { make group value=_.val,n=count(nodes),w=count(ways); }
+.s1 convert item k0=id(),k1=type(),k2=lrs_isect(&quot;a;b;c&quot;,lrs_isect(lrs_union(&quot;a;b;c&quot;,&quot;a;b;c&quot;),lrs_union(t[&quot;leaf_cycle&quot;],lrs_union(t[&quot;lit&quot;],&quot;name&quot;)))),::id=id()-&gt;.s2;
+area[name=&quot;Hrádek nad Nisou&quot;]-&gt;.s3;
+way(area.s3)[&quot;waterway&quot;=&quot;drain&quot;]-&gt;.s4;
+.s2 out count;
+.s3 out meta;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1334</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 1334</p><h1>Query 1334</h1><p class="muted">fuzz:4:history,complete,evaluators:874 · 0.68 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][date:&quot;2025-03-14T16:52:23Z&quot;];
+rel(51.160861,12.836704,51.177395,12.904833)-&gt;.s0;
+timeline(relation,4016055,2)-&gt;.s1;
+retro(date(&quot;2025-08-13T15:00:11Z&quot;)) { rel(51.157203,13.462680,51.172091,13.479937)(newer:&quot;2013-03-14T11:51:51Z&quot;)[&quot;inscription&quot;=&quot;nicht erkennbar&quot;](if:(!is_closed()))-&gt;.s2; .s2 out ids; }
+make info v=(s0.u(uid())+s0.set(suffix(suffix(t[&quot;material&quot;]))))-&gt;.s3;
+.s1 &gt;-&gt;.s4;
+rel.s2(if:(!lrs_in(&quot;a&quot;,lrs_union(t[&quot;access&quot;],&quot;1;2&quot;))))-&gt;.s5;
+node.s1(if:(!is_date((is_date(t[&quot;tunnel&quot;])?(id()):(t[&quot;tourism&quot;])))))-&gt;.s6;
+.s1 out tags (50.780593,13.673521,50.785540,13.739427);
+.s2 out tags (51.017807,13.682646,51.062214,13.783364);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

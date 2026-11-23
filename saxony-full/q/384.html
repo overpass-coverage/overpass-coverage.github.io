@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 384</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 384</p><h1>Query 384</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3339 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:json];
+wr(51.026127,12.613086,51.056740,12.643311)[&quot;barrier&quot;=&quot;wall&quot;]-&gt;.s0;
+nw[~&quot;^demolished:man_made$&quot;~&quot;^silo$&quot;][!&quot;sidewalk:both&quot;][&quot;hazard&quot;]-&gt;.s1;
+.s0 map_to_area-&gt;.s2;
+.s2 &gt;-&gt;.s3;
+.s2 out qt skel;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

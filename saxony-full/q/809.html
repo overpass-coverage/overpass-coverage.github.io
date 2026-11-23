@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 809</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 809</p><h1>Query 809</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3317 · 0.01 s CPU · expected status <code>query-error: line N: static error: Invalid regular expression: &quot;^+49 37292 21225$&quot;</code></p><pre class="query">[maxsize:1073741824][diff:&quot;2017-11-25T13:56:31Z&quot;];
+nw(if:(!is_number(suffix(&quot;2018-01-01&quot;))))(50.865426,12.861797,50.872183,12.978111)[&quot;wall&quot;=&quot;wood&quot;]-&gt;.s0;
+make stat k0=s0.max(number(timestamp())),k1=s0.u((id()+suffix(t[&quot;smoothness&quot;]))),k2=s0.u((0?(user()):(user()))),k3=s0.min(changeset())-&gt;.s1;
+node[&quot;contact:phone&quot;~&quot;^+49 37292 21225$&quot;]-&gt;.s2;
+.s2 compare-&gt;.s3;
+.s1 out meta geom 5;
+.s2 out geom body;
+</pre><h2>Lines only this query runs (4)</h2><ul><li><a href="../src/overpass_api/data/regular_expression.h.html#L33">overpass_api/data/regular_expression.h:33</a></li><li><a href="../src/overpass_api/data/regular_expression.h.html#L62">overpass_api/data/regular_expression.h:62</a></li><li><a href="../src/overpass_api/statements/query.cc.html#L1374">overpass_api/statements/query.cc:1374</a></li><li><a href="../src/overpass_api/statements/query.cc.html#L1375">overpass_api/statements/query.cc:1375</a></li></ul></main></body></html>

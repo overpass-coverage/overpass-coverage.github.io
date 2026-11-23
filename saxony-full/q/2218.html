@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2218</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Saxony, full)</a> / query 2218</p><h1>Query 2218</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2653 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:25][out:csv(&quot;bridge&quot;,::&quot;count:areas&quot;,&quot;leaf_type&quot;,::lon,::&quot;count:relations&quot;,::count,&quot;roof:colour&quot;)];
+wr[&quot;roof:colour&quot;=&quot;red&quot;][&quot;barrier&quot;!~&quot;bollard|kerb|lift_gate|retaining_wall|wall&quot;](50.934940,12.857117,51.042384,12.991947)-&gt;.s0;
+.s0 &lt;-&gt;.s1;
+way(around.s1:20)[&quot;tracktype&quot;=&quot;grade2&quot;]-&gt;.s2;
+.s2 convert stat k2=user(),::id=id(),k3=lrs_min(lrs_union(lrs_isect(lrs_union(t[&quot;operator&quot;],&quot;name&quot;),&quot;a;b;c&quot;),lrs_union(t[&quot;tracktype&quot;],&quot;name&quot;))),k1=is_date(id()),k0=&quot;yes&quot;-&gt;.s3;
+way(around.s2:20)[!&quot;railway:start_date&quot;]-&gt;.s4;
+.s0 out bb asc;
+.s2 out tags bb qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>
