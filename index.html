@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Overpass API regression suite coverage</title>
 <style>
-:root { --bg:#fff; --fg:#1b1f24; --muted:#59636e; --line:#d1d9e0; --link:#0969da; }
-@media (prefers-color-scheme: dark) { :root { --bg:#0d1117; --fg:#e6edf3; --muted:#9198a1; --line:#3d444d; --link:#4493f8; } }
+:root { --bg:#fff; --fg:#1b1f24; --muted:#59636e; --line:#d1d9e0; --link:#0969da; --code:#f6f8fa; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0d1117; --fg:#e6edf3; --muted:#9198a1; --line:#3d444d; --link:#4493f8; --code:#151b23; } }
 body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.55 system-ui, sans-serif; }
 main { max-width:760px; margin:0 auto; padding:24px 16px; }
 h1 { font-size:24px; margin:8px 0 12px; }
@@ -15,6 +15,8 @@ ul.runs { list-style:none; padding:0; }
 ul.runs li { padding:12px 0; border-bottom:1px solid var(--line); }
 ul.runs a { font-weight:600; font-size:16px; }
 .muted { color:var(--muted); }
+pre { background:var(--code); border:1px solid var(--line); border-radius:6px; padding:12px; overflow-x:auto; font-size:13px; line-height:1.45; }
+code { font-family:ui-monospace, SFMono-Regular, Menlo, monospace; }
 </style>
 </head>
 <body>
@@ -34,6 +36,34 @@ queries run them.</p>
   <li><a href="saxony-full/">Saxony, full</a>
     <div class="muted">3,110 queries on one database with history and areas (Geofabrik full-history extract of Sachsen, latest edit 2026-11-16) · upstream master 8edf11b</div></li>
 </ul>
+<h2>Run a suite yourself</h2>
+<p>Each run's <code>corpus.jsonl</code> holds its queries, one JSON object per line. To compare two builds, save this as <code>run.py</code>, run it once per build on the same database, and diff the results:</p>
+<pre><code>#!/usr/bin/env python3
+"""Run every query of a regression suite on one build and save each result, so that two builds
+can be compared with diff:
+
+    run.py corpus.jsonl OLD_BIN_DIR DB_DIR out-old
+    run.py corpus.jsonl NEW_BIN_DIR DB_DIR out-new
+    diff -r out-old out-new
+"""
+import json, os, subprocess, sys
+
+suite, bindir, db, outdir = sys.argv[1:]
+os.makedirs(outdir, exist_ok=True)
+for n, line in enumerate(open(suite)):
+    query = json.loads(line)['query']
+    try:
+        p = subprocess.run([os.path.join(bindir, 'osm3s_query'), '--db-dir=' + db],
+                           input=query.encode(), capture_output=True, timeout=300)
+        result = p.stdout + p.stderr + b'exit status %d\n' % p.returncode
+    except subprocess.TimeoutExpired:
+        result = b'killed after 300 s\n'
+    # The generator line names the build, so it differs between any two builds.
+    result = b'\n'.join(l for l in result.split(b'\n') if b'generator' not in l)
+    with open(os.path.join(outdir, '%04d.txt' % n), 'wb') as f:
+        f.write(query.encode() + b'\n----\n' + result)
+</code></pre>
+<p>Any file that differs shows the query and how its output changed. It works on any database, not only the one the suite was selected on, though queries find the most data on a database of the same region, with history and areas. A query near its <code>[timeout:]</code> can differ between runs, since the timeout message includes the elapsed time.</p>
 </main>
 </body>
 </html>
