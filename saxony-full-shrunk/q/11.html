@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 11</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full, shrunk)</a> / query 11</p><h1>Query 11</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3521 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">[out:json];
+(
+  nwr[&quot;highway&quot;=&quot;turning_circle&quot;](around:3000,50.389093,12.008248);
+  way[&quot;sac_scale&quot;~&quot;^(hiking)$&quot;](around:3000,50.389093,12.008248);
+  nwr[&quot;check_date:surface&quot;~&quot;^(2024\\-11\\-05|2025\\-03\\-31|2026\\-07\\-26)$&quot;];
+  node[&quot;building&quot;~&quot;^(allotment_house|apartments|semidetached_house)$&quot;](around:1000,50.389093,12.008248);
+  node[&quot;check_date:opening_hours&quot;~&quot;^(2024\\-10\\-14|2025\\-04\\-30)$&quot;,i](around:3000,50.389093,12.008248);
+  relation[i];
+  way[&quot;roof:orientation&quot;~&quot;across|along&quot;](around:1000,50.389093,12.008248);
+);
+out  center qt;
+</pre><h2>Lines only this query runs (4)</h2><ul><li><a href="../src/overpass_api/output_formats/output_json.cc.html#L147">overpass_api/output_formats/output_json.cc:147</a></li><li><a href="../src/overpass_api/output_formats/output_json.cc.html#L148">overpass_api/output_formats/output_json.cc:148</a></li><li><a href="../src/overpass_api/output_formats/output_json.cc.html#L149">overpass_api/output_formats/output_json.cc:149</a></li><li><a href="../src/overpass_api/output_formats/output_json.cc.html#L150">overpass_api/output_formats/output_json.cc:150</a></li></ul></main></body></html>

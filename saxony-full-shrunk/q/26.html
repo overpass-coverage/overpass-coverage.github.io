@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 26</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full, shrunk)</a> / query 26</p><h1>Query 26</h1><p class="muted">fuzz:3:history,complete:1935 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:json];
+rel(if:length()&gt;10)(id:1252801,7916242,10289486,11536319,18042964)[&quot;power&quot;!~&quot;^po&quot;]-&gt;.s0;
+complete(4).s0-&gt;.s1 { }
+complete(2).s1-&gt;.s2 { node(w); }
+rel.s2-&gt;.s3;
+.s3 &lt;-&gt;.s4;
+.s2 out body;
+.s3 out ids geom qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

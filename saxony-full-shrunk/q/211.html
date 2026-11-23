@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 211</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full, shrunk)</a> / query 211</p><h1>Query 211</h1><p class="muted">fuzz:4:evaluators:196 · 0.18 s CPU · expected status <code>ok</code></p><pre class="query">[out:json];
+wr[&quot;amenity&quot;~&quot;^be&quot;]-&gt;.s0;
+way.s0-&gt;.s1;
+if (((s1.max(id())==-1)||((number(s1.u(id()))&gt;=2)||(s1.count(nw)&lt;1e3)))) { make yes n=s1.count(nwr)-&gt;.s3; } else { }
+.s3 out;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

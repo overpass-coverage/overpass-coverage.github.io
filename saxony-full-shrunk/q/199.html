@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 199</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full, shrunk)</a> / query 199</p><h1>Query 199</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:411 · 0.33 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::&quot;count:areas&quot;)][date:&quot;2026-07-01T12:14:14Z&quot;];
+rel(50.534018,12.781605,50.546546,12.812324)-&gt;.s0;
+way[&quot;surface&quot;~&quot;fin&quot;][&quot;railway:signal:direction&quot;~&quot;for&quot;]-&gt;.s1;
+node(r.s0:&quot;forward&quot;)-&gt;.s3;
+.s0 out count;
+</pre><h2>Lines only this query runs (4)</h2><ul><li><a href="../src/overpass_api/data/collect_members.h.html#L448">overpass_api/data/collect_members.h:448</a></li><li><a href="../src/overpass_api/data/collect_members.h.html#L459">overpass_api/data/collect_members.h:459</a></li><li><a href="../src/overpass_api/output_formats/output_csv.cc.html#L152">overpass_api/output_formats/output_csv.cc:152</a></li><li><a href="../src/overpass_api/output_formats/output_csv.cc.html#L219">overpass_api/output_formats/output_csv.cc:219</a></li></ul></main></body></html>

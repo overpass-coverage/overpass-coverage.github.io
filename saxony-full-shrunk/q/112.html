@@ -1,0 +1,5 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 112</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full, shrunk)</a> / query 112</p><h1>Query 112</h1><p class="muted">fuzz:4:history,complete,evaluators:682 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">node[&quot;water_source&quot;!=&quot;main&quot;][&quot;leaf_cycle&quot;=&quot;deciduous&quot;](50.487781,11.973731,50.526087,12.117641)-&gt;.s0;
+.s0 convert stat k2=(id()+abs(count_distinct_members())),!&quot;wheelchair&quot;,k1=t[&quot;waterway&quot;],k0=&quot;2018-01-01&quot;,::geom=center(trace(geom()))-&gt;.s1;
+.s0 out;
+.s1 out  qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

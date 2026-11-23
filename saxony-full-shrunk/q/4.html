@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 4</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full, shrunk)</a> / query 4</p><h1>Query 4</h1><p class="muted">fuzz:4:history,complete,evaluators:913 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][date:&quot;2026-01-07T11:36:43Z&quot;];
+nw[&quot;snr:ref&quot;=&quot;II-55&quot;][&quot;survey:date&quot;~&quot;^(2014\\-03\\-07)$&quot;,i](51.316420,14.893529,51.337154,14.936279)-&gt;.s0;
+node(r.s0)-&gt;.s1;
+for.s1-&gt;.s2 (&quot;x;y&quot;) { convert item ::id=id(),g=_.val; }
+complete(6).s2-&gt;.s3 { node(w); way(bn)[&quot;addr:housenumber&quot;]; }
+.s1 convert stat ::id=id(),k1=id(),k0=0,k2=(t[&quot;layer&quot;]==&quot;hunting_stand&quot;?((uid()/version())):(number(&quot;yes&quot;))),::geom=lstr(pt(50.806299,13.769705),pt(50.807299,13.771705))-&gt;.s4;
+.s1 out count;
+.s3 out body asc;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

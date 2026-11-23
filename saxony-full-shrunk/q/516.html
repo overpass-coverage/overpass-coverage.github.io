@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 516</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full, shrunk)</a> / query 516</p><h1>Query 516</h1><p class="muted">fuzz:4:evaluators:537 · 0.13 s CPU · expected status <code>ok</code></p><pre class="query">node(50.870914,14.096078,50.942634,14.257162)-&gt;.s0;
+make info n=1,v=s0.max(t[&quot;natural&quot;])-&gt;.s1;
+.s1 convert stat ::=::,k1=abs((-count_members())),k0=number(user()),::id=id(),k2=(!(t[&quot;check_date&quot;]&lt;(is_number(t[&quot;tracktype&quot;])?(suffix(t[&quot;addr:postcode&quot;])):(suffix(t[&quot;highway&quot;]))))),::geom=geom()-&gt;.s3;
+foreach.s1-&gt;.it{ ()-&gt;.x; .x out count; }
+.s3 out ids  qt;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

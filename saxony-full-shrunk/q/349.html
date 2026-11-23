@@ -1,0 +1,5 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 349</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony, full, shrunk)</a> / query 349</p><h1>Query 349</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3629 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:json];
+way[&quot;destination:lanes&quot;=&quot;Chemnitz;Prag/Praha;Dresden-Wilder Mann|Chemnitz;Prag/Praha;Dresden-Wilder Mann|Chemnitz;Prag/Praha;Dresden-Wilder Mann|Dresden-Hellerau;Dresden-Zentrum;Zollamt&quot;]-&gt;.s0;
+.s0 convert stat ::id=id(),k0=lrs_max(lrs_union(t[&quot;lanes&quot;],&quot;1;2&quot;)),k2=(is_date(t[&quot;material&quot;])?(&quot;yes&quot;):((lrs_in(user(),&quot;1;2&quot;)?(type()):(suffix(t[&quot;addr:postcode&quot;]))))),k1=lrs_in(type(),&quot;1;2&quot;),::=::-&gt;.s1;
+.s1 out;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

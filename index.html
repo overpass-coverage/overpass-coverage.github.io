@@ -38,6 +38,8 @@ queries run them.</p>
     <div class="muted">the same coverage in 612 queries, each cut down to what it contributes (93% less text) · upstream master 8edf11b</div></li>
   <li><div class="head"><a href="saxony-full/">Saxony, full</a> <a class="dl" href="saxony-full/corpus.jsonl" download>corpus.jsonl · 2.2 MB</a></div>
     <div class="muted">3,110 queries on one database with history and areas (Geofabrik full-history extract of Sachsen, latest edit 2026-11-16) · upstream master 8edf11b</div></li>
+  <li><div class="head"><a href="saxony-full-shrunk/">Saxony, full, shrunk</a> <a class="dl" href="saxony-full-shrunk/corpus.jsonl" download>corpus.jsonl · 264 KB</a></div>
+    <div class="muted">the same coverage in 692 queries, each cut down to what it contributes (92% less text) · upstream master 8edf11b</div></li>
 </ul>
 <h2>Run a suite yourself</h2>
 <p>Each run's <code>corpus.jsonl</code> (linked above) holds its queries, one JSON object per line. To compare two builds, save this as <code>run.py</code>, run it once per build on the same database, and diff the results:</p>
