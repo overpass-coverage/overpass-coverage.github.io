@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 24</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 24</p><h1>Query 24</h1><p class="muted">fuzz:1:areas,complete:1153 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+nwr(44.617232,-63.769510,44.797159,-63.752566)[&quot;operator:wikidata&quot;=&quot;Q1032001&quot;](if:count_tags()&gt;6)-&gt;.s0;
+node(way_cnt.s0:1)-&gt;.s1;
+nwr[&quot;natural&quot;=&quot;scrub&quot;][&quot;surface&quot;=&quot;gravel&quot;](45.293380,-62.149318,45.474591,-61.907425)[&quot;water&quot;!~&quot;lake|pond|stream_pool&quot;]-&gt;.s2;
+.s0 is_in-&gt;.s3;
+.s0 out count;
+.s3 out ids bb asc;
+</pre><h2>Lines only this query runs (2)</h2><ul><li><a href="../src/overpass_api/data/tilewise_geometry.h.html#L794">overpass_api/data/tilewise_geometry.h:794</a></li><li><a href="../src/overpass_api/statements/tag_value.cc.html#L648">overpass_api/statements/tag_value.cc:648</a></li></ul></main></body></html>

@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 36</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 36</p><h1>Query 36</h1><p class="muted">fuzz:1:areas,complete:1436 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+nw[&quot;check_date&quot;=&quot;2026-07-13&quot;]-&gt;.s0;
+.s0 &lt;-&gt;.s1;
+complete(5).s0-&gt;.s2 { node(w); way(bn)[&quot;surface&quot;]; }
+.s0 out skel bb;
+.s1 out count;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/core/geometry.h.html#L223">overpass_api/core/geometry.h:223</a></li></ul></main></body></html>

@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 43</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 43</p><h1>Query 43</h1><p class="muted">fuzz:1:areas,complete:581 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+nwr(45.406146,-64.535697,45.486527,-64.499515)[&quot;brand&quot;=&quot;Tesla Supercharger&quot;]-&gt;.s0;
+area[name=&quot;Bell Island&quot;]-&gt;.s1;
+rel(area.s1)[&quot;material&quot;=&quot;wood&quot;]-&gt;.s2;
+area[name=&quot;Little Island&quot;]-&gt;.s3;
+nwr(area.s3)[&quot;operator&quot;=&quot;Shared&quot;]-&gt;.s4;
+.s4 out meta bb;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

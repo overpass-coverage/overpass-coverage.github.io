@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 35</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 35</p><h1>Query 35</h1><p class="muted">fuzz:1:areas,complete:824 · 0.12 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+wr(if:date(timestamp())&gt;date(&quot;2021-01-01&quot;))(44.411875,-66.045766,44.426869,-65.999278)[&quot;rapids&quot;!~&quot;yes&quot;]-&gt;.s0;
+rel(r.s0)-&gt;.s1;
+.s1 &lt;&lt;-&gt;.s2;
+foreach.s0-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s1 out tags qt;
+.s2 out body (44.521313,-65.010885,44.595639,-64.976605);
+</pre><h2>Lines only this query runs (2)</h2><ul><li><a href="../src/overpass_api/data/collect_members.cc.html#L376">overpass_api/data/collect_members.cc:376</a></li><li><a href="../src/overpass_api/data/collect_members.cc.html#L444">overpass_api/data/collect_members.cc:444</a></li></ul></main></body></html>

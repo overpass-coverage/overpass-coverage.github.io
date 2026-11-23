@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 5</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 5</p><h1>Query 5</h1><p class="muted">fuzz:1:areas,complete:538 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+nw(44.294506,-64.757110,44.341125,-64.733486)(44.659643,-65.374784,44.725603,-65.145253)-&gt;.s0;
+area[name=&quot;Mink Island&quot;]-&gt;.s1;
+node(area.s1)[&quot;fence_type&quot;=&quot;hedge&quot;]-&gt;.s2;
+foreach.s1-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s0 out skel (45.853504,-60.547893,45.923460,-60.421990);
+.s1 out ids (44.950653,-64.155411,45.015714,-64.082298);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

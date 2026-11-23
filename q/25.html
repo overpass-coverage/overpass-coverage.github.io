@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 25</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 25</p><h1>Query 25</h1><p class="muted">fuzz:1:areas,complete:1165 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:json];
+nwr(poly:&quot;45.994976 -59.693594 46.000160 -59.697907 45.998663 -59.711523 45.994819 -59.707954&quot;)-&gt;.s0;
+complete(4).s0-&gt;.s1 { node(w); way(bn)[&quot;material&quot;]; }
+complete(5).s1-&gt;.s2 { way(around:0)[&quot;addr:city&quot;]; }
+.s1 out count;
+.s2 out body geom;
+</pre><h2>Lines only this query runs (3)</h2><ul><li><a href="../src/overpass_api/statements/coord_query.cc.html#L136">overpass_api/statements/coord_query.cc:136</a></li><li><a href="../src/overpass_api/statements/coord_query.cc.html#L152">overpass_api/statements/coord_query.cc:152</a></li><li><a href="../src/overpass_api/statements/coord_query.cc.html#L156">overpass_api/statements/coord_query.cc:156</a></li></ul></main></body></html>

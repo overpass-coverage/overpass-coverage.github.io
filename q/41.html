@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 41</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 41</p><h1>Query 41</h1><p class="muted">fuzz:1::1468 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+nwr[&quot;sidewalk&quot;=&quot;no&quot;][&quot;footway&quot;=&quot;crossing&quot;](47.521898,-59.243317,47.604573,-58.983654)[~&quot;^tra&quot;~&quot;gra&quot;]-&gt;.s0;
+node(way_cnt.s0:1)-&gt;.s1;
+way(if:changeset()&gt;167000000)(43.380572,-65.813388,43.594267,-65.530729)(45.603559,-61.273856,45.613616,-61.235026)-&gt;.s2;
+way(45.374381,-61.901343,45.564072,-61.702058)(around:100,46.217280,-60.101294)(45.222874,-63.219787,45.469867,-63.120498)-&gt;.s3;
+way.s0(if:date(timestamp())&gt;date(&quot;2016-01-01&quot;))-&gt;.s4;
+.s1 out ids asc;
+.s4 out meta (45.416791,-61.850415,45.493416,-61.838627);
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 3</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 3</p><h1>Query 3</h1><p class="muted">fuzz:1:areas,complete:616 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+node(id:901842604,1316328848,7212830560)-&gt;.s0;
+area[name=&quot;The Pond&quot;][boundary]-&gt;.s1;
+way(area.s1)(45.683898,-63.281952,45.703711,-63.257029)-&gt;.s2;
+area[name=&quot;Sheep Island&quot;]-&gt;.s3;
+way(area.s3)[&quot;natural&quot;=&quot;sand&quot;]-&gt;.s4;
+area[name=&quot;Mitchell Lake&quot;]-&gt;.s5;
+rel(area.s5)[&quot;parking:lane:right&quot;=&quot;parallel&quot;]-&gt;.s6;
+(.s0; - .s1;)-&gt;.s7;
+foreach.s3-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s3 out count;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/query.cc.html#L995">overpass_api/statements/query.cc:995</a></li></ul></main></body></html>

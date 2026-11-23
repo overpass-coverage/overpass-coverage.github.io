@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 22</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 22</p><h1>Query 22</h1><p class="muted">fuzz:1:areas,complete:651 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912];
+nw(around:500,44.871788,-63.106994)-&gt;.s0;
+.s0 map_to_area-&gt;.s1;
+complete(5).s1-&gt;.s2 { node(w); way(bn)[&quot;addr:county&quot;]; }
+(.s0; - .s0;)-&gt;.s3;
+foreach.s1-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s1 out body;
+</pre><h2>Lines only this query runs (2)</h2><ul><li><a href="../src/overpass_api/statements/around.cc.html#L920">overpass_api/statements/around.cc:920</a></li><li><a href="../src/overpass_api/statements/around.cc.html#L960">overpass_api/statements/around.cc:960</a></li></ul></main></body></html>

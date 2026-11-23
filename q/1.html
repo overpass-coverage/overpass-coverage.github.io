@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 1</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage</a> / query 1</p><h1>Query 1</h1><p class="muted">fuzz:1:areas,complete:698 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][maxsize:536870912][out:csv(::type,::id,::lat,::lon,&quot;admin_level&quot;)];
+wr[!&quot;capacity&quot;](45.757107,-60.564633,45.854481,-60.404265)(if:id()&gt;3000000000)[&quot;natural&quot;=&quot;wetland&quot;]-&gt;.s0;
+node(around.s0:20)[&quot;man_made&quot;=&quot;mast&quot;]-&gt;.s1;
+.s1 &lt;-&gt;.s2;
+.s1 out body 10;
+.s2 out count;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/core/type_tags.h.html#L447">overpass_api/core/type_tags.h:447</a></li></ul></main></body></html>
