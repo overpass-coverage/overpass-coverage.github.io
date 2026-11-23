@@ -1,0 +1,4 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 97</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full, shrunk)</a> / query 97</p><h1>Query 97</h1><p class="muted">fuzz:4:history,complete,evaluators:146 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">make info v=(((s0.count&gt;=10)||(number(s0.u)&lt;1e3))?(lrs_min(s0.set)):(s0.set)),c=s0.sum-&gt;.s2;
+.s2 convert item k0=&quot;1;2&quot;,::id=id(),::geom=trace(geom()),k1=uid(),!&quot;addr:district&quot;-&gt;.s3;
+.s0 out;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

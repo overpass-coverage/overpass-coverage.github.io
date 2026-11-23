@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 282</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full, shrunk)</a> / query 282</p><h1>Query 282</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:225 · 0.44 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][date:&quot;2011-04-03T05:04:28Z&quot;];
+nwr[&quot;golf&quot;=&quot;cartpath&quot;]-&gt;.s0;
+timeline(way,274456670)-&gt;.s1;
+rel(bw.s0)-&gt;.s2;
+if (((s2.min(changeset())==s2.u)||((s2.max&lt;1)&amp;&amp;(s2.min&gt;0.5)))) { make yes n=s2.count(nwr)-&gt;.s3; } else { }
+.s1 out;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/aggregators.cc.html#L244">overpass_api/statements/aggregators.cc:244</a></li></ul></main></body></html>

@@ -1,0 +1,5 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 438</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full, shrunk)</a> / query 438</p><h1>Query 438</h1><p class="muted">fuzz:4:history,complete,evaluators:286 · 0.09 s CPU · expected status <code>ok</code></p><pre class="query">nw(around:100,44.655530,-63.551017)-&gt;.s0;
+node(w.s0)-&gt;.s1;
+.s1 convert row k3=lrs_union(lrs_union(t[&quot;created_by&quot;],&quot;name&quot;),t[&quot;crossing&quot;]),k2=(&quot;x;y&quot;!=id()),::geom=center(trace(geom())),k1=lrs_isect(lrs_min(&quot;a;b;c&quot;),lrs_union(lrs_isect(lrs_union(t[&quot;addr:locality&quot;],&quot;name&quot;),&quot;1;2&quot;),timestamp())),::id=id(),k0=date((is_tag(&quot;addr:suburb&quot;)?(id()):(suffix(timestamp())))),::=::,!&quot;operator&quot;-&gt;.s4;
+.s3 out;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the corpus for edges or hit counts that other queries reach only in part.</p></main></body></html>

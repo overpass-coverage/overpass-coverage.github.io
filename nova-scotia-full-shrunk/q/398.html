@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 398</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full, shrunk)</a> / query 398</p><h1>Query 398</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:17 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;natural&quot;)];
+area[name=&quot;Isaacs Lake&quot;]-&gt;.s1;
+make info v=lrs_min(lrs_min(s1.set((is_closed()?(user()):(id()))))),c=s1.sum,n=1-&gt;.s3;
+area[name=&quot;Back Harbour&quot;]-&gt;.s4;
+.s4 out;
+</pre><h2>Lines only this query runs (2)</h2><ul><li><a href="../src/overpass_api/statements/item_geometry.h.html#L68">overpass_api/statements/item_geometry.h:68</a></li><li><a href="../src/overpass_api/statements/ternary_operator.cc.html#L185">overpass_api/statements/ternary_operator.cc:185</a></li></ul></main></body></html>

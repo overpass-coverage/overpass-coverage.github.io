@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 9</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API corpus coverage (Nova Scotia, full, shrunk)</a> / query 9</p><h1>Query 9</h1><p class="muted">fuzz:4:poi,areas:340 · 0.42 s CPU · expected status <code>ok</code></p><pre class="query">[out:json];
+(
+  relation[&quot;natural&quot;](around:500,43.707976,-65.778435);
+  relation[&quot;maxspeed&quot;~&quot;100|20|30|50|80&quot;][&quot;man_made&quot;~&quot;Paint\\ |reside|track&quot;,i](around:500,43.707976,-65.778435);
+  node[&quot;postal_code&quot;](around:1000,43.707976,-65.778435);
+  way(around:500,43.707976,-65.778435);
+  way[&quot;railway&quot;];
+  nwr[&quot;motor_vehicle&quot;~&quot;no&quot;][&quot;admin_level&quot;~&quot;12|semide&quot;](around:5000,43.707976,-65.778435);
+  node[&quot;amenity&quot;~&quot;place_of_worship|restaurant|waste_basket&quot;](around:500,43.707976,-65.778435);
+  way[&quot;tracktype&quot;](around:1000,43.707976,-65.778435);
+);
+out tags center;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/expat/escape_json.cc.html#L31">expat/escape_json.cc:31</a></li></ul></main></body></html>
