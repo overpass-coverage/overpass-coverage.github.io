@@ -41,13 +41,18 @@ can be compared with diff:
     run.py corpus.jsonl OLD_BIN_DIR DB_DIR out-old
     run.py corpus.jsonl NEW_BIN_DIR DB_DIR out-new
     diff -r out-old out-new
+
+Queries run in parallel, one per available core.
 """
 import json, os, subprocess, sys
+from concurrent.futures import ThreadPoolExecutor
 
 suite, bindir, db, outdir = sys.argv[1:]
 os.makedirs(outdir, exist_ok=True)
-for n, line in enumerate(open(suite)):
-    query = json.loads(line)['query']
+queries = [json.loads(line)['query'] for line in open(suite)]
+
+
+def run(n, query):
     try:
         p = subprocess.run([os.path.join(bindir, 'osm3s_query'), '--db-dir=' + db],
                            input=query.encode(), capture_output=True, timeout=300)
@@ -58,6 +63,13 @@ for n, line in enumerate(open(suite)):
     result = b'\n'.join(l for l in result.split(b'\n') if b'generator' not in l)
     with open(os.path.join(outdir, '%04d.txt' % n), 'wb') as f:
         f.write(query.encode() + b'\n----\n' + result)
+
+
+# Cores this process may use (respects taskset and container limits), not all on the machine.
+workers = len(os.sched_getaffinity(0))
+with ThreadPoolExecutor(workers) as pool:
+    # list() waits for every query and re-raises any exception from a worker.
+    list(pool.map(run, range(len(queries)), queries))
 </code></pre>
 <p>Any file that differs shows the query and how its output changed. It works on any database, not only the one the suite was selected on, though queries find the most data on a database of the same region, with history and areas. A query near its <code>[timeout:]</code> can differ between runs, since the timeout message includes the elapsed time.</p>
 </main>
