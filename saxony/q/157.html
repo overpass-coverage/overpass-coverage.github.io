@@ -1,7 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 157</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 157</p><h1>Query 157</h1><p class="muted">fuzz:3:history,complete:2559 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2012-03-10T13:02:53Z&quot;];
-way(id:87563406)[&quot;ele&quot;!=&quot;807&quot;]-&gt;.s0;
-retro(date(&quot;2020-01-20T12:18:17Z&quot;)) { way[&quot;operator&quot;=&quot;WG Unitas eG&quot;]-&gt;.s1; }
-complete(2).s1-&gt;.s2 { }
-node(w.s2)-&gt;.s3;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 157</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 157</p><h1>Query 157</h1><p class="muted">fuzz:4:history,complete,output:865 · 0.61 s CPU · expected status <code>ok</code></p><pre class="query">[out:xml][bbox:50.454227,11.888348,50.494313,12.192825][date:&quot;2016-06-09T02:52:37Z&quot;];
+way-&gt;.s0;
+.s0 &gt;-&gt;.s3;
+.s0 out count;
+.s0 out ids 1000;
 .s3 out count;
+.s3 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

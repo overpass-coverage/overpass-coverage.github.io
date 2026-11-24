@@ -1,7 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 425</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 425</p><h1>Query 425</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:103 · 0.00 s CPU · expected status <code>query-error: line N: parse error: Left ( not closed.</code></p><pre class="query">nw[&quot;laundry&quot;!=&quot;yes&quot;]-&gt;.s0;
-way(634303578)-&gt;.s1;
-.s1 convert item ::id=id(),bad=id(,k0=user(),::=::,::geom=center(trace(geom()))-&gt;.s2;
-.s0 convert row ::id=id(),tags=count_tags();
-out;
-.s2 out;
-</pre><h2>Lines only this query runs (3)</h2><ul><li><a href="../src/overpass_api/frontend/tokenizer_utils.cc.html#L321">overpass_api/frontend/tokenizer_utils.cc:321</a></li><li><a href="../src/overpass_api/frontend/tokenizer_utils.cc.html#L322">overpass_api/frontend/tokenizer_utils.cc:322</a></li><li><a href="../src/overpass_api/statements/evaluator.h.html#L365">overpass_api/statements/evaluator.h:365</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 425</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 425</p><h1>Query 425</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2913 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::user)][bbox:45.489514,-63.245478,45.737114,-62.951231];
+way(235735408)-&gt;.s0;
+way.s0-&gt;.s1;
+(.s0; .s0 &gt;;)-&gt;.s2;
+.s2 out meta;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+</pre><h2>Lines only this query runs (5)</h2><ul><li><a href="../src/overpass_api/output_formats/output_csv.cc.html#L133">overpass_api/output_formats/output_csv.cc:133</a></li><li><a href="../src/overpass_api/output_formats/output_csv.cc.html#L134">overpass_api/output_formats/output_csv.cc:134</a></li><li><a href="../src/overpass_api/output_formats/output_csv.cc.html#L135">overpass_api/output_formats/output_csv.cc:135</a></li><li><a href="../src/overpass_api/output_formats/output_csv.cc.html#L136">overpass_api/output_formats/output_csv.cc:136</a></li><li><a href="../src/overpass_api/output_formats/output_csv.cc.html#L137">overpass_api/output_formats/output_csv.cc:137</a></li></ul></main></body></html>

@@ -1,5 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 609</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 609</p><h1>Query 609</h1><p class="muted">fuzz:3:history,complete:2726 · 5.45 s CPU · expected status <code>query-error: runtime error: Filters too weak in query statement: specify in addition a bbox, a tag filt</code></p><pre class="query">[date:&quot;2018-09-06T18:33:00Z&quot;];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 609</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 609</p><h1>Query 609</h1><p class="muted">fuzz:3:history,complete:2726 · 7.50 s CPU · expected status <code>query-error: runtime error: Filters too weak in query statement: specify in addition a bbox, a tag filt</code></p><pre class="query">[date:&quot;2018-09-06T18:33:00Z&quot;];
 nwr[&quot;bridge&quot;=&quot;yes&quot;]-&gt;.s0;
 wr(bn.s0)[&quot;shop&quot;!=&quot;beverages&quot;]-&gt;.s1;
 .s1 out ids qt;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

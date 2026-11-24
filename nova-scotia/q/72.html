@@ -1,7 +1,15 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 72</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 72</p><h1>Query 72</h1><p class="muted">fuzz:4:history,areas,complete,statements:562 · 0.85 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2018-10-12T20:27:50Z&quot;];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 72</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 72</p><h1>Query 72</h1><p class="muted">fuzz:4:history,areas,complete,statements:562 · 1.11 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2018-10-12T20:27:50Z&quot;];
 nwr[&quot;official_name&quot;=&quot;Enterprise Rent-A-Car&quot;]-&gt;.s0;
 .s0 is_in-&gt;.s1;
 node(r.s0:&quot;link&quot;)[&quot;owner&quot;=&quot;Sackville Manor&quot;]-&gt;.s3;
 node[&quot;crossing:markings&quot;=&quot;lines&quot;]-&gt;.s4;
 .s0 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

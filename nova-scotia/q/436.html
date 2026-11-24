@@ -1,4 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 436</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 436</p><h1>Query 436</h1><p class="muted">fuzz:4:history,areas,complete,statements:8 · 0.16 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2017-06-19T16:15:05Z&quot;];
-nwr[&quot;building:part&quot;=&quot;roof&quot;][&quot;takeaway&quot;!=&quot;yes&quot;]-&gt;.s0;
-out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 436</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 436</p><h1>Query 436</h1><p class="muted">fuzz:3:history,complete:870 · 1.18 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2015-05-05T00:43:29Z&quot;];
+node(2331214955)-&gt;.s0;
+node.s0-&gt;.s2;
+rel(br.s2)[&quot;operator&quot;=&quot;Nova Scotia Nature Trust and private owner(s)&quot;]-&gt;.s4;
+.s0 out;
+.s0 out count;
+.s0 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

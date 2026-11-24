@@ -1,7 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 193</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 193</p><h1>Query 193</h1><p class="muted">fuzz:3:history,complete:1060 · 0.18 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2021-01-07T13:42:40Z&quot;];
-nw(newer:&quot;2018-12-17T19:20:07Z&quot;)(51.013927,14.557987,51.044600,14.583133)-&gt;.s0;
-complete(6).s0-&gt;.s1 { }
-complete(3).s0-&gt;.s2 { }
-.s1 out meta  30;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 193</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 193</p><h1>Query 193</h1><p class="muted">fuzz:3:history,complete:2481 · 0.25 s CPU · expected status <code>ok</code></p><pre class="query">[adiff:&quot;2011-04-02T20:56:12Z&quot;];
+rel(changed:&quot;2008-05-25T18:46:37Z&quot;)-&gt;.s0;
+.s0 &lt;&lt;-&gt;.s2;
+.s2 &lt;-&gt;.s3;
 .s2 out;
+.s0 out count;
+.s0 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

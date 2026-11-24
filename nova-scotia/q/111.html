@@ -1,5 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 111</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 111</p><h1>Query 111</h1><p class="muted">fuzz:4:history,complete,output:661 · 0.02 s CPU · expected status <code>query-error: runtime error: A print statement cannot be executed in a loop in a diff setting.</code></p><pre class="query">[diff:&quot;2013-08-30T00:17:55Z&quot;];
-node(id:1323734377,1325402518,2439131680,2656342720)-&gt;.s0;
-foreach.s0-&gt;.it{ .it out; }
-.s0 out (45.600901,-62.983935,45.664871,-62.852142) noids;
-</pre><h2>Lines only this query runs (7)</h2><ul><li><a href="../src/overpass_api/statements/print.cc.html#L930">overpass_api/statements/print.cc:930</a></li><li><a href="../src/overpass_api/statements/print.cc.html#L931">overpass_api/statements/print.cc:931</a></li><li><a href="../src/overpass_api/statements/print.cc.html#L932">overpass_api/statements/print.cc:932</a></li><li><a href="../src/overpass_api/statements/print.cc.html#L933">overpass_api/statements/print.cc:933</a></li><li><a href="../src/overpass_api/statements/print.cc.html#L934">overpass_api/statements/print.cc:934</a></li><li><a href="../src/overpass_api/statements/print.cc.html#L935">overpass_api/statements/print.cc:935</a></li><li><a href="../src/overpass_api/statements/print.cc.html#L936">overpass_api/statements/print.cc:936</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 111</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 111</p><h1>Query 111</h1><p class="muted">fuzz:3::2906 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">nw[&quot;destination&quot;=&quot;Chester;Windsor&quot;]-&gt;.s0;
+node(way_cnt.s0:1-2)-&gt;.s1;
+.s1 &lt;&lt;-&gt;.s2;
+(.s1; - .s0;)-&gt;.s3;
+out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

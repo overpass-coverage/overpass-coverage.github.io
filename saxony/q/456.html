@@ -1,5 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 456</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 456</p><h1>Query 456</h1><p class="muted">fuzz:3::1230 · 0.46 s CPU · expected status <code>ok</code></p><pre class="query">nw[&quot;highway&quot;=&quot;tertiary&quot;]-&gt;.s0;
-rel(bw.s0:&quot;stop_entry_only&quot;)[&quot;boundary&quot;=&quot;administrative&quot;]-&gt;.s2;
-way(bn.s0)-&gt;.s3;
-.s3 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 456</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 456</p><h1>Query 456</h1><p class="muted">fuzz:4:history,complete,evaluators:247 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">nwr(around:100,51.315994,13.177035)-&gt;.s0;
+timeline(node,3699096777,3)-&gt;.s1;
+.s0 out   (50.965123,14.431453,51.056650,14.539506);
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

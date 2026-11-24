@@ -1,5 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 93</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 93</p><h1>Query 93</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3355 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2025-11-19T16:17:02Z&quot;];
-way(id:21623023,77054980)(if:(!is_date(version())))-&gt;.s0;
-(.s0;)-&gt;.s2;
-.s2 out  bb qt (44.422766,-64.894578,44.487398,-64.836981);
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 93</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 93</p><h1>Query 93</h1><p class="muted">fuzz:4:history,complete,evaluators:146 · 1.15 s CPU · expected status <code>ok</code></p><pre class="query">wr[&quot;natural&quot;=&quot;grassland&quot;]-&gt;.s0;
+make info v=(((s0.count(wr)&gt;=10)||(number(s0.u(count_tags()))&lt;1e3))?(lrs_min(s0.set(suffix(id())))):(s0.set(timestamp()))),c=s0.sum(length())-&gt;.s2;
+.s2 convert item k0=&quot;1;2&quot;,::id=id(),::geom=trace(geom()),k1=uid(),!&quot;addr:district&quot;-&gt;.s3;
+.s0 out;
+.s0 out count;
+.s0 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,6 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 438</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 438</p><h1>Query 438</h1><p class="muted">fuzz:4:history,complete,evaluators:286 · 0.10 s CPU · expected status <code>ok</code></p><pre class="query">nw(around:100,44.655530,-63.551017)-&gt;.s0;
-node(w.s0)-&gt;.s1;
-.s1 convert row k2=((is_closed()?(0.5):(suffix(type())))+lon()),k3=lrs_min(lrs_union(lrs_isect(&quot;a;b;c&quot;,&quot;a;b;c&quot;),lrs_isect(t[&quot;crossing&quot;],t[&quot;addr:province&quot;]))),k1=number(type()),::id=id(),k0=(timestamp()+count_distinct_by_role(&quot;house&quot;))-&gt;.s3;
-.s1 convert row k3=lrs_union(lrs_union(t[&quot;created_by&quot;],&quot;name&quot;),t[&quot;crossing&quot;]),k2=(&quot;x;y&quot;!=id()),::geom=center(trace(geom())),k1=lrs_isect(lrs_min(&quot;a;b;c&quot;),lrs_union(lrs_isect(lrs_union(t[&quot;addr:locality&quot;],&quot;name&quot;),&quot;1;2&quot;),timestamp())),::id=id(),k0=date((is_tag(&quot;addr:suburb&quot;)?(id()):(suffix(timestamp())))),::=::,!&quot;operator&quot;-&gt;.s4;
-.s3 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 438</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 438</p><h1>Query 438</h1><p class="muted">fuzz:3:history,complete:2250 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[bbox:45.064188,-64.724889,45.083049,-64.569193][date:&quot;2012-07-11T21:47:23Z&quot;];
+node-&gt;.s0;
+complete(6).s0-&gt;.s1 { }
+(.s0; - .s1;)-&gt;.s2;
+out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,7 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 244</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 244</p><h1>Query 244</h1><p class="muted">fuzz:4:evaluators:67 · 0.09 s CPU · expected status <code>ok</code></p><pre class="query">rel(51.025281,14.200059,51.051890,14.238462)-&gt;.s0;
-rel(r.s0)-&gt;.s1;
-node(w.s0)-&gt;.s2;
-make stat k0=lrs_union(suffix(s1.set(type())),s1.min((is_date(t[&quot;leisure&quot;])?(t[&quot;lit&quot;]):(timestamp())))),::geom=center(s1.gcat(geom()))-&gt;.s3;
-make stat k0=abs((-s2.count(relations))),::geom=center(trace(s2.gcat(geom())))-&gt;.s4;
-.s4 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 244</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 244</p><h1>Query 244</h1><p class="muted">fuzz:3:history,complete:96 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2013-12-23T16:32:01Z&quot;];
+way(id:238884882)-&gt;.s0;
+complete(3).s0-&gt;.s2 { }
+.s2 out meta qt;
+.s0 out count;
+.s0 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

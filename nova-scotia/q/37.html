@@ -1,7 +1,13 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 37</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 37</p><h1>Query 37</h1><p class="muted">fuzz:4:evaluators:905 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[out:json];
-nwr(45.011637,-63.616333,45.031773,-63.569958)(if:date(timestamp())&gt;date(&quot;2019-01-01&quot;))(if:version()&gt;2)-&gt;.s0;
-make stat k0=s0.sum((length()/count_by_role(&quot;bus_stop&quot;))),::geom=s0.gcat(center(geom()))-&gt;.s1;
-.s0 &gt;&gt;-&gt;.s2;
-.s0 out meta;
-.s2 out ids qt;
-</pre><h2>Lines only this query runs (2)</h2><ul><li><a href="../src/overpass_api/output_formats/output_json.cc.html#L173">overpass_api/output_formats/output_json.cc:173</a></li><li><a href="../src/overpass_api/output_formats/output_json.cc.html#L231">overpass_api/output_formats/output_json.cc:231</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 37</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 37</p><h1>Query 37</h1><p class="muted">fuzz:4:evaluators:496 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">rel[&quot;surface&quot;=&quot;asphalt&quot;]-&gt;.s0;
+rel.s0(if:(is_number(t[&quot;addr:postcode&quot;])||(suffix(timestamp())&lt;id())))-&gt;.s1;
+foreach.s0-&gt;.it{ .it out; ()-&gt;.x; }
+.s1 out skel;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.it out count;
+.it out ids 1000;
+.x out count;
+.x out ids 1000;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

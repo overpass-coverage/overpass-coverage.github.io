@@ -1,3 +1,21 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 106</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 106</p><h1>Query 106</h1><p class="muted">fuzz:4:poi,areas:152 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">wr[&quot;junction:ref&quot;!=&quot;1H&quot;](44.355771,-66.156949,44.482974,-65.888095)[&quot;water&quot;!~&quot;^la&quot;]-&gt;.s0;
-.s0 out;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 106</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 106</p><h1>Query 106</h1><p class="muted">fuzz:4:history,areas,complete,statements:845 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">rel(around:10,45.067863,-64.476579)(if:changeset()&gt;170000000)-&gt;.s0;
+retro(date(&quot;2013-08-29T20:37:53Z&quot;)) { rel(around:250,44.683248,-64.591542)-&gt;.s1; }
+.s0 &lt;&lt;-&gt;.s2;
+complete(6).s1-&gt;.s4 { }
+(.s2; .s2 &gt;;)-&gt;.s5;
+.s5 local-&gt;.s6;
+.s5 out;
+.s6 out skel;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
+.s5 out count;
+.s5 out ids 1000;
+.s6 out count;
+.s6 out ids 1000;
+</pre><h2>Lines only this query runs (5)</h2><ul><li><a href="../src/overpass_api/dispatch/resource_manager.cc.html#L226">overpass_api/dispatch/resource_manager.cc:226</a></li><li><a href="../src/overpass_api/dispatch/resource_manager.cc.html#L227">overpass_api/dispatch/resource_manager.cc:227</a></li><li><a href="../src/overpass_api/dispatch/resource_manager.cc.html#L228">overpass_api/dispatch/resource_manager.cc:228</a></li><li><a href="../src/overpass_api/dispatch/resource_manager.cc.html#L229">overpass_api/dispatch/resource_manager.cc:229</a></li><li><a href="../src/overpass_api/dispatch/resource_manager.cc.html#L230">overpass_api/dispatch/resource_manager.cc:230</a></li></ul></main></body></html>

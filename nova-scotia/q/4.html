@@ -1,4 +1,16 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 4</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 4</p><h1>Query 4</h1><p class="muted">fuzz:4:history,complete,evaluators:649 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[diff:&quot;2012-05-08T00:58:26Z&quot;];
-nwr[&quot;internet_access:fee&quot;!~&quot;^y&quot;](newer:&quot;2011-05-09T00:21:05Z&quot;)[&quot;postal_code&quot;=&quot;B5A 5G3&quot;]-&gt;.s0;
-.s0 out skel;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 4</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 4</p><h1>Query 4</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:25 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][timeout:60][date:&quot;2024-03-01T00:56:33Z&quot;];
+node(newer:&quot;2015-01-02T12:02:02Z&quot;)(around:10,44.077080,-64.852887)(if:t[&quot;power&quot;]==&quot;Mill Brook&quot;)[&quot;motor_vehicle&quot;=&quot;no&quot;]-&gt;.s0;
+complete(3).s0-&gt;.s1 { node(w); way(bn)[&quot;lamp_mount&quot;]; }
+way(r.s0:&quot;part&quot;)-&gt;.s2;
+(.s2; .s0;)-&gt;.s3;
+out body qt bb;
+.s3 out asc;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/frontend/map_ql_parser.cc.html#L766">overpass_api/frontend/map_ql_parser.cc:766</a></li></ul></main></body></html>

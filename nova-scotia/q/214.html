@@ -1,6 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 214</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 214</p><h1>Query 214</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2563 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Roads&quot;;)];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 214</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 214</p><h1>Query 214</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2563 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Roads&quot;;)];
 node[&quot;official_name&quot;~&quot;^Enterprise&quot;][&quot;loc_name&quot;=&quot;Membertou Interchange&quot;]-&gt;.s0;
 is_in(44.158007,-65.697413)-&gt;.s3;
 nwr(area.s3)[&quot;bridge:name&quot;=&quot;Sussex Street Bridge&quot;]-&gt;.s4;
 make stat k0=s3.count(wr),k1=s3.count(nr),k2=s3.count(nwr),k3=number(s3.u(number(t[&quot;boundary&quot;])))-&gt;.s5;
+.s0 out count;
+.s0 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
+.s5 out count;
+.s5 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,5 +1,18 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 49</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 49</p><h1>Query 49</h1><p class="muted">fuzz:4:history,complete,evaluators:415 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[diff:&quot;2011-04-13T21:53:06Z&quot;];
-way[&quot;destination:ref:to:lanes&quot;~&quot;^\\|102\\ South&quot;][&quot;building:material&quot;=&quot;plaster&quot;]-&gt;.s0;
-retro(date(&quot;2013-08-31T00:45:51Z&quot;)) { wr(around:500,44.663074,-65.547671)-&gt;.s1; .s1 out; }
-node(around.s0:100)-&gt;.s2;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 49</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 49</p><h1>Query 49</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3079 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:json];
+way[&quot;postal_code&quot;!~&quot;^B2T&quot;][&quot;unsigned_ref&quot;=&quot;7519&quot;][&quot;segregated&quot;!=&quot;yes&quot;]-&gt;.s0;
+.s0 is_in-&gt;.s1;
+.s0 convert item members=per_member((role()==&quot;alternative&quot;)),k1=(-changeset()),::geom=center(poly(lstr(pt(45.133060,-62.939008),pt(45.134060,-62.939008),pt(45.134060,-62.938008),pt(45.133060,-62.939008)))),k0=(((count_tags()&lt;=count_distinct_members())&amp;&amp;is_closed())&amp;&amp;(lrs_max(lrs_union(t[&quot;light:method&quot;],&quot;name&quot;))&gt;=(t[&quot;crossing&quot;]==&quot;customers&quot;?(count_tags()):(uid()))))-&gt;.s2;
+.s0 &lt;-&gt;.s3;
+complete(1).s1-&gt;.s4 { node(w); way(bn)[&quot;height&quot;]; }
+.s2 out noids (45.112108,-64.412435,45.198838,-64.378353)  1;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
+</pre><h2>Lines only this query runs (6)</h2><ul><li><a href="../src/overpass_api/core/geometry.cc.html#L1568">overpass_api/core/geometry.cc:1568</a></li><li><a href="../src/overpass_api/core/geometry.cc.html#L1569">overpass_api/core/geometry.cc:1569</a></li><li><a href="../src/overpass_api/core/geometry.cc.html#L1570">overpass_api/core/geometry.cc:1570</a></li><li><a href="../src/overpass_api/core/geometry.cc.html#L1571">overpass_api/core/geometry.cc:1571</a></li><li><a href="../src/overpass_api/core/geometry.cc.html#L1572">overpass_api/core/geometry.cc:1572</a></li><li><a href="../src/overpass_api/statements/binary_operators.cc.html#L329">overpass_api/statements/binary_operators.cc:329</a></li></ul></main></body></html>

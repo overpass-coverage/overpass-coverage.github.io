@@ -1,5 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 119</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 119</p><h1>Query 119</h1><p class="muted">fuzz:3:history,complete:568 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[adiff:&quot;2018-08-09T22:02:09Z&quot;];
-nw(if:is_tag(&quot;operator:fr&quot;))(46.214944,-60.062316,46.243388,-60.028877)-&gt;.s0;
-timeline(node,4833545093)-&gt;.s1;
-.s1 out body;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 119</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 119</p><h1>Query 119</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1664 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">nw[&quot;postal_code&quot;=&quot;B0J 1J0&quot;]-&gt;.s0;
+area[name=&quot;Morrisons Cove&quot;]-&gt;.s2;
+.s2 compare-&gt;.s4 { .s4 out; }
+.s0 out;
+.s0 out count;
+.s0 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
+</pre><h2>Lines only this query runs (6)</h2><ul><li><a href="../src/overpass_api/statements/compare.cc.html#L118">overpass_api/statements/compare.cc:118</a></li><li><a href="../src/overpass_api/statements/compare.cc.html#L119">overpass_api/statements/compare.cc:119</a></li><li><a href="../src/overpass_api/statements/compare.cc.html#L120">overpass_api/statements/compare.cc:120</a></li><li><a href="../src/overpass_api/statements/compare.cc.html#L121">overpass_api/statements/compare.cc:121</a></li><li><a href="../src/overpass_api/statements/compare.cc.html#L122">overpass_api/statements/compare.cc:122</a></li><li><a href="../src/overpass_api/statements/compare.cc.html#L123">overpass_api/statements/compare.cc:123</a></li></ul></main></body></html>

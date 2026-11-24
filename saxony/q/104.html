@@ -1,8 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 104</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 104</p><h1>Query 104</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3629 · 0.08 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2020-07-14T09:33:53Z&quot;];
-rel[&quot;artist_name&quot;!~&quot;^Max\\ Herm&quot;](id:207434,552364,4200298)[&quot;check_date&quot;~&quot;^(2022\\-05\\-23|2024\\-04\\-20|2024\\-10\\-05|2026\\-05\\-08|2026\\-06\\-12)$&quot;]-&gt;.s0;
-rel(bw.s0:&quot;inner&quot;)-&gt;.s1;
-rel.s1-&gt;.s2;
-rel(r.s1)-&gt;.s3;
-for.s3-&gt;.s4 (keys()) { }
-.s4 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 104</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 104</p><h1>Query 104</h1><p class="muted">fuzz:4:history,complete,evaluators:276 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">node[&quot;route_ref&quot;=&quot;119&quot;]-&gt;.s0;
+if ((s0.sum((is_date(t[&quot;oneway&quot;])?(0):(count_by_role(&quot;alternative&quot;))))&lt;10)) { make yes n=s0.count(nwr)-&gt;.s1; }
+node.s1-&gt;.s2;
+.s0 convert stat k1=lon(),::geom=center(hull(geom())),k0=(!is_date(t[&quot;lane_markings&quot;])),!&quot;roof:shape&quot;,k2=count_distinct_by_role(&quot;outer&quot;),k3=(((-count_tags())&gt;=number(t[&quot;surface&quot;]))?(date(lrs_min(&quot;a;b;c&quot;))):(length()))-&gt;.s3;
+.s0 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/core/geometry.cc.html#L2499">overpass_api/core/geometry.cc:2499</a></li></ul></main></body></html>

@@ -1,5 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 558</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 558</p><h1>Query 558</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3246 · 0.00 s CPU · expected status <code>query-error: line N: parse error: &quot;+&quot; needs a right hand side argument</code></p><pre class="query">nwr[&quot;man_made&quot;=&quot;goods_conveyor&quot;]-&gt;.s0;
-way.s0(if:1 +)-&gt;.s1;
-node-&gt;.s3;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 558</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 558</p><h1>Query 558</h1><p class="muted">fuzz:4:history,complete,output:135 · 0.32 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2023-05-05T22:27:53Z&quot;];
+wr(around:1000,45.056478,-64.625308)-&gt;.s0;
+complete(3).s0-&gt;.s2 { }
+way(r.s2)-&gt;.s3;
 .s3 out;
+.s0 out count;
+.s0 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

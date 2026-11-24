@@ -1,6 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 341</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 341</p><h1>Query 341</h1><p class="muted">fuzz:4:evaluators:761 · 0.00 s CPU · expected status <code>query-error: line N: parse error: Operator &quot;?&quot; must have a &quot;:&quot; operator as right-hand-side argument</code></p><pre class="query">wr(if:is_tag(&quot;building&quot;))-&gt;.s0;
-nwr.s0-&gt;.s1;
-rel.s0-&gt;.s3;
-node.s1(if:&quot;a&quot; ? 1)-&gt;.s4;
-.s3 out;
-</pre><h2>Lines only this query runs (6)</h2><ul><li><a href="../src/overpass_api/statements/ternary_operator.cc.html#L60">overpass_api/statements/ternary_operator.cc:60</a></li><li><a href="../src/overpass_api/statements/ternary_operator.cc.html#L61">overpass_api/statements/ternary_operator.cc:61</a></li><li><a href="../src/overpass_api/statements/ternary_operator.cc.html#L62">overpass_api/statements/ternary_operator.cc:62</a></li><li><a href="../src/overpass_api/statements/ternary_operator.cc.html#L63">overpass_api/statements/ternary_operator.cc:63</a></li><li><a href="../src/overpass_api/statements/ternary_operator.cc.html#L64">overpass_api/statements/ternary_operator.cc:64</a></li><li><a href="../src/overpass_api/statements/ternary_operator.cc.html#L65">overpass_api/statements/ternary_operator.cc:65</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 341</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 341</p><h1>Query 341</h1><p class="muted">fuzz:4:statements,areas:328 · 0.23 s CPU · expected status <code>ok</code></p><pre class="query">is_in(50.734526,12.935747)-&gt;.s4;
+way(area.s4)(50.577693,13.052438,50.618339,13.102378)-&gt;.s5;
+.s4 out  bb 35;
+.s4 out count;
+.s4 out ids 1000;
+.s5 out count;
+.s5 out ids 1000;
+</pre><h2>Lines only this query runs (3)</h2><ul><li><a href="../src/overpass_api/data/tilewise_geometry.h.html#L743">overpass_api/data/tilewise_geometry.h:743</a></li><li><a href="../src/overpass_api/data/tilewise_geometry.h.html#L744">overpass_api/data/tilewise_geometry.h:744</a></li><li><a href="../src/overpass_api/data/tilewise_geometry.h.html#L745">overpass_api/data/tilewise_geometry.h:745</a></li></ul></main></body></html>

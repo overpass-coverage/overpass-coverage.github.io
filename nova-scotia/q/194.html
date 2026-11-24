@@ -1,6 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 194</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 194</p><h1>Query 194</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2360 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">(
-  node(around:1000,44.497735,-64.633278);
-  nwr[i][&quot;network:wikidata&quot;~&quot;2|600|line&quot;];
-);
-out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 194</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 194</p><h1>Query 194</h1><p class="muted">fuzz:4:history,complete,evaluators:690 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">node(4995271431)-&gt;.s0;
+node(way_cnt.s0:3-)-&gt;.s1;
+if ((number(s1.u(suffix(&quot;yes&quot;)))==0)) { } else { make no n=0-&gt;.s2; }
+for.s2-&gt;.s3 (is_date(t[&quot;addr:suburb&quot;])) { }
+.s3 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,6 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 160</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 160</p><h1>Query 160</h1><p class="muted">fuzz:4:statements,areas:39 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">nwr[&quot;natural&quot;](poly:&quot;45.415370 -64.308106 45.410114 -64.337479 45.412703 -64.347573 45.387185 -64.345678&quot;)-&gt;.s0;
-wr(bn.s0)-&gt;.s1;
-(.s0; .s0 &gt;;)-&gt;.s2;
-.s2 local llb-&gt;.s3;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 160</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 160</p><h1>Query 160</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2057 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">node(around:500,43.863325,-65.874903)-&gt;.s0;
+node[~&quot;^fuel:diesel$&quot;~&quot;^yes$&quot;]-&gt;.s1;
+.s0 is_in-&gt;.s3;
+.s1 out skel  5;
+.s0 out count;
+.s0 out ids 1000;
 .s1 out count;
-</pre><h2>Lines only this query runs (8)</h2><ul><li><a href="../src/overpass_api/statements/localize.cc.html#L720">overpass_api/statements/localize.cc:720</a></li><li><a href="../src/overpass_api/statements/localize.cc.html#L721">overpass_api/statements/localize.cc:721</a></li><li><a href="../src/overpass_api/statements/localize.cc.html#L722">overpass_api/statements/localize.cc:722</a></li><li><a href="../src/overpass_api/statements/localize.cc.html#L723">overpass_api/statements/localize.cc:723</a></li><li><a href="../src/overpass_api/statements/localize.cc.html#L759">overpass_api/statements/localize.cc:759</a></li><li><a href="../src/overpass_api/statements/localize.cc.html#L760">overpass_api/statements/localize.cc:760</a></li><li><a href="../src/overpass_api/statements/localize.cc.html#L761">overpass_api/statements/localize.cc:761</a></li><li><a href="../src/overpass_api/statements/localize.cc.html#L762">overpass_api/statements/localize.cc:762</a></li></ul></main></body></html>
+.s1 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

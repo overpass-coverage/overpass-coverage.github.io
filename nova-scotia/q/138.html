@@ -1,6 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 138</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 138</p><h1>Query 138</h1><p class="muted">fuzz:4:history,complete,evaluators:847 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[diff:&quot;2015-05-01T17:40:23Z&quot;];
-rel(id:2980110,9225382)-&gt;.s0;
-complete(2).s0-&gt;.s1 { way(around:0)[&quot;addr:housenumber&quot;]; }
-.s0 out;
-.s1 out  center;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 138</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 138</p><h1>Query 138</h1><p class="muted">fuzz:3::1157 · 0.45 s CPU · expected status <code>ok</code></p><pre class="query">way(poly:&#x27;44.275815 -64.273874 44.262412 -64.259063 44.254983 -64.252014&#x27;)-&gt;.s0;
+nw[&quot;foot&quot;=&quot;yes&quot;]-&gt;.s3;
+node(w.s0)[&quot;postal_code&quot;!=&quot;B3G 1R1&quot;]-&gt;.s4;
+.s3 out;
+.s0 out count;
+.s0 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

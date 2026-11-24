@@ -1,5 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 276</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 276</p><h1>Query 276</h1><p class="muted">fuzz:4:evaluators:643 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">nw(45.485666,-62.653487,45.527618,-62.613170)-&gt;.s0;
-.s0 &lt;-&gt;.s2;
-.s2 convert item k1=(lrs_max(id())-((is_date(t[&quot;name&quot;])?(lat()):(count_by_role(&quot;house&quot;)))-lrs_max(&quot;a;b;c&quot;))),k0=(id()+date(timestamp())),::id=id()-&gt;.s3;
-.s0 out;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 276</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 276</p><h1>Query 276</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2592 · 0.24 s CPU · expected status <code>ok</code></p><pre class="query">nw[&quot;maxheight&quot;=&quot;4.1&quot;]-&gt;.s0;
+is_in(44.769851,-63.270508)-&gt;.s1;
+(.s0; - .s1;)-&gt;.s3;
+.s1 convert item k2=lrs_union(lrs_isect(t[&quot;colour&quot;],&quot;a;b;c&quot;),lrs_union(&quot;1;2&quot;,lrs_union(&quot;a;b;c&quot;,&quot;1;2&quot;))),k0=user(),::id=id(),k1=0-&gt;.s5;
+.s1 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+.s5 out count;
+.s5 out ids 1000;
+</pre><h2>Lines only this query runs (3)</h2><ul><li><a href="../src/overpass_api/statements/unary_functions.cc.html#L307">overpass_api/statements/unary_functions.cc:307</a></li><li><a href="../src/overpass_api/statements/unary_functions.cc.html#L308">overpass_api/statements/unary_functions.cc:308</a></li><li><a href="../src/overpass_api/statements/unary_functions.cc.html#L309">overpass_api/statements/unary_functions.cc:309</a></li></ul></main></body></html>

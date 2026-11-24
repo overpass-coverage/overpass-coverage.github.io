@@ -1,6 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 43</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 43</p><h1>Query 43</h1><p class="muted">fuzz:4:evaluators:763 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">way(51.412051,13.186266,51.449562,13.240148)-&gt;.s0;
-way.s0-&gt;.s1;
-for.s1-&gt;.s2 (keys()) { make group value=_.val,count=count(nwr); }
-way.s0(if:is_date((is_closed()?(timestamp()):(changeset()))))-&gt;.s3;
-.s1 out  32;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 43</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 43</p><h1>Query 43</h1><p class="muted">fuzz:3:history,complete:2177 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][date:&quot;2016-12-07T01:46:10Z&quot;];
+rel(id:1591024,6290043,16110203)(poly:&#x27;50.679268 12.431177 50.685621 12.371368 50.650658 12.375910&#x27;)-&gt;.s0;
+node(way_link.s0:1)-&gt;.s3;
+.s0 out count;
+.s0 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

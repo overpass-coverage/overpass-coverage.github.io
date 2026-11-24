@@ -1,7 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 142</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 142</p><h1>Query 142</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2720 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">way(51.070249,13.511121,51.147587,13.730833)[&quot;created_by&quot;=&quot;JOSM&quot;]-&gt;.s0;
-way(around.s0:100)[&quot;level&quot;=&quot;1&quot;]-&gt;.s1;
-way(around.s1:300)-&gt;.s2;
-.s2 convert item ::id=id(),::geom=hull(geom()),angles=per_vertex(pos()),k0=length()-&gt;.s3;
-.s1 out geom 5;
-.s3 out body;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/core/geometry.cc.html#L1565">overpass_api/core/geometry.cc:1565</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 142</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 142</p><h1>Query 142</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2641 · 0.10 s CPU · expected status <code>ok</code></p><pre class="query">is_in(51.135157,14.508541)-&gt;.s1;
+rel(area.s1)[&quot;highway&quot;=&quot;bus_stop&quot;]-&gt;.s2;
+node(w.s1:2)-&gt;.s4;
+.s2 out   5;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

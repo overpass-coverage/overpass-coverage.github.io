@@ -1,5 +1,5 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 496</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 496</p><h1>Query 496</h1><p class="muted">fuzz:3:history,complete:1926 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[diff:&quot;2010-01-29T21:00:42Z&quot;];
-way(118232160)-&gt;.s0;
-foreach.s0-&gt;.it{ .it out; }
-.s0 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 496</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 496</p><h1>Query 496</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3749 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Food&quot;;)];
+nwr(50.787485,12.752377,50.823704,12.759065)[&quot;check_date:opening_hours&quot;~&quot;^(2024\\-02\\-03|2024\\-10\\-14|2025\\-04\\-30|2025\\-12\\-15|2026\\-06\\-08|2026\\-08\\-28)$&quot;][~&quot;^she&quot;~&quot;n&quot;]-&gt;.s0;
+.s0 out count;
+.s0 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

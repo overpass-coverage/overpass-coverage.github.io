@@ -1,4 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 508</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 508</p><h1>Query 508</h1><p class="muted">fuzz:3:areas,complete:2546 · 1.09 s CPU · expected status <code>ok</code></p><pre class="query">nw[!&quot;backrest&quot;][&quot;barrier&quot;=&quot;bollard&quot;][&quot;generator:source&quot;!~&quot;solar&quot;](50.964772,13.621017,51.087329,13.886014)-&gt;.s0;
-.s0 is_in-&gt;.s1;
-.s1 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 508</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 508</p><h1>Query 508</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1565 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">way(around:500,51.664181,12.793468)-&gt;.s0;
+way.s0(if:(1&amp;&amp;is_closed()))-&gt;.s1;
+.s1 out (50.858194,13.857382,50.918743,13.924696);
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

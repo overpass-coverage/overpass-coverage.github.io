@@ -1,5 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 584</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 584</p><h1>Query 584</h1><p class="muted">fuzz:4:history,complete,evaluators:879 · 0.08 s CPU · expected status <code>ok</code></p><pre class="query">way[&quot;sidewalk&quot;~&quot;^ri&quot;]-&gt;.s0;
-wr(bn.s0)-&gt;.s1;
-make info v=s1.set((0?(suffix(t[&quot;highway&quot;])):(t[&quot;fire_hydrant:type&quot;]))),c=(date(s1.max(timestamp()))-(number(s1.u(id()))/number(s1.u((id()+id())))))-&gt;.s2;
-.s0 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 584</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 584</p><h1>Query 584</h1><p class="muted">fuzz:3:history,complete:2107 · 2.18 s CPU · expected status <code>ok</code></p><pre class="query">[diff:&quot;2011-02-11T15:50:14Z&quot;];
+way(poly:&quot;44.802921 -63.629229 44.820078 -63.621839 44.820678 -63.622154 44.816402 -63.628067 44.806725 -63.644896 44.801701 -63.669039 44.789500 -63.667755 44.781290 -63.670382 44.763233 -63.641848 44.789831 -63.633877&quot;)-&gt;.s0;
+node(way_cnt.s0:1-2)-&gt;.s1;
+.s1 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

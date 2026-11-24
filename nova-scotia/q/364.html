@@ -1,3 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 364</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 364</p><h1>Query 364</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3364 · 0.66 s CPU · expected status <code>ok</code></p><pre class="query">rel(45.083619,-64.438287,45.129473,-64.404075)-&gt;.s0;
-foreach.s0-&gt;.it{ .it out; ( .it &gt;;)-&gt;.x; }
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 364</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 364</p><h1>Query 364</h1><p class="muted">fuzz:4:history,complete,evaluators:874 · 0.23 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2024-05-20T16:24:48Z&quot;];
+rel(44.777940,-63.636851,44.794474,-63.568722)-&gt;.s0;
+retro(date(&quot;2025-04-22T21:17:43Z&quot;)) { rel(if:(!is_closed()))-&gt;.s2; .s2 out; }
+make info v=(s0.u(uid())+s0.set(suffix(suffix(t[&quot;footway&quot;]))))-&gt;.s3;
+.s0 out count;
+.s0 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+</pre><h2>Lines only this query runs (7)</h2><ul><li><a href="../src/overpass_api/data/meta_collector.h.html#L248">overpass_api/data/meta_collector.h:248</a></li><li><a href="../src/overpass_api/data/tag_store.h.html#L396">overpass_api/data/tag_store.h:396</a></li><li><a href="../src/overpass_api/data/tag_store.h.html#L397">overpass_api/data/tag_store.h:397</a></li><li><a href="../src/overpass_api/data/tag_store.h.html#L398">overpass_api/data/tag_store.h:398</a></li><li><a href="../src/overpass_api/data/tag_store.h.html#L399">overpass_api/data/tag_store.h:399</a></li><li><a href="../src/overpass_api/data/tag_store.h.html#L400">overpass_api/data/tag_store.h:400</a></li><li><a href="../src/overpass_api/statements/tag_value.h.html#L736">overpass_api/statements/tag_value.h:736</a></li></ul></main></body></html>

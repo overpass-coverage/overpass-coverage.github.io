@@ -1,4 +1,5 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 102</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 102</p><h1>Query 102</h1><p class="muted">fuzz:4:history,areas,complete,statements:393 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2015-05-13T15:57:03Z&quot;];
-nw(44.359563,-64.346171,44.365132,-64.311923)-&gt;.s0;
-.s0 out meta;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 102</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 102</p><h1>Query 102</h1><p class="muted">fuzz:4:poi,areas:152 · 0.08 s CPU · expected status <code>ok</code></p><pre class="query">wr[&quot;junction:ref&quot;!=&quot;1H&quot;](44.355771,-66.156949,44.482974,-65.888095)[&quot;water&quot;!~&quot;^la&quot;]-&gt;.s0;
+.s0 out;
+.s0 out count;
+.s0 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

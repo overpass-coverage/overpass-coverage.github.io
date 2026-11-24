@@ -1,4 +1,6 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 572</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 572</p><h1>Query 572</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3192 · 0.17 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2011-10-09T09:38:19Z&quot;];
-way(around:50,51.275765,12.369580)(if:lrs_in((lon()+lrs_min(&quot;1;2&quot;)),lrs_isect(lrs_union(lrs_union(t[&quot;surface&quot;],&quot;name&quot;),&quot;1;2&quot;),lrs_isect(&quot;1;2&quot;,&quot;a;b;c&quot;))))-&gt;.s0;
-retro(date(&quot;2017-01-15T13:17:32Z&quot;)) { rel(around:250,51.040792,13.806045)-&gt;.s1; .s1 out; }
-</pre><h2>Lines only this query runs (2)</h2><ul><li><a href="../src/overpass_api/statements/item_geometry.h.html#L335">overpass_api/statements/item_geometry.h:335</a></li><li><a href="../src/overpass_api/statements/item_geometry.h.html#L336">overpass_api/statements/item_geometry.h:336</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 572</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 572</p><h1>Query 572</h1><p class="muted">fuzz:3:history,complete:1440 · 0.19 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2017-03-01T19:45:04Z&quot;];
+way(51.529997,12.805539,51.616856,12.890837)[&quot;lit&quot;=&quot;yes&quot;][&quot;building:levels&quot;!=&quot;4&quot;]-&gt;.s0;
+.s0 out;
+.s0 out count;
+.s0 out ids 1000;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

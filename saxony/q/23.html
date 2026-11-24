@@ -1,8 +1,24 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 23</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 23</p><h1>Query 23</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1391 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">nwr[~&quot;^gau&quot;~&quot;14&quot;][&quot;to&quot;=&quot;Umspannwerk Düben&quot;][!&quot;destination&quot;]-&gt;.s0;
-way.s0-&gt;.s1;
-for.s1-&gt;.s2 (keys()) { }
-()-&gt;.s3;
-.s3 local-&gt;.s4;
-node(around.s4:300)-&gt;.s5;
-.s5 out count (50.292509,12.136662,50.357271,12.242206);
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 23</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 23</p><h1>Query 23</h1><p class="muted">fuzz:3:history,complete:1452 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::type,::id,::lat,::lon)][date:&quot;2024-08-07T12:12:35Z&quot;];
+node(id:130478417,13376031506)-&gt;.s0;
+retro(date(&quot;2015-09-23T23:14:26Z&quot;)) { rel[~&quot;^rcn&quot;~&quot;6&quot;]-&gt;.s1; .s1 out ids; }
+complete(5).s1-&gt;.s2 { way(around:0)[&quot;source&quot;]; }
+complete(1).s0-&gt;.s3 { way(bn)[&quot;addr:street&quot;]; node(w); }
+way(r.s0)-&gt;.s5;
+foreach.s5-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; }
+.s2 out meta qt 37;
+.s5 out meta geom;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+.s5 out count;
+.s5 out ids 1000;
+.it out count;
+.it out ids 1000;
+.x out count;
+.x out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

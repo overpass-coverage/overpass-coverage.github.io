@@ -1,4 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 557</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 557</p><h1>Query 557</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1628 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">timeline(node,1208285646)-&gt;.s1;
-area[name=&quot;Wrights Lake&quot;]-&gt;.s5;
-.s5 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 557</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 557</p><h1>Query 557</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:100 · 5.19 s CPU · expected status <code>query-error: runtime error: Filters too weak in query statement: specify in addition a bbox, a tag filt</code></p><pre class="query">[date:&quot;2018-10-09T21:00:27Z&quot;];
+rel[!&quot;lanes&quot;]-&gt;.s0;
+.s0 convert stat k0=user()-&gt;.s1;
+wr(bn.s1)[&quot;type&quot;!=&quot;boundary&quot;]-&gt;.s4;
+.s1 out qt (45.535813,-62.789045,45.565846,-62.709707) 1 ids;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

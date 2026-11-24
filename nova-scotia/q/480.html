@@ -1,5 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 480</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 480</p><h1>Query 480</h1><p class="muted">fuzz:4:evaluators:852 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">rel(9769490)-&gt;.s0;
-.s0 convert row k2=lrs_isect(lrs_isect(lrs_isect(&quot;a;b;c&quot;,t[&quot;man_made&quot;]),t[&quot;addr:housenumber&quot;]),t[&quot;lanes&quot;]),k0=is_number(type()),!&quot;crossing&quot;,k1=(lrs_in(user(),t[&quot;structure&quot;])?(count_members()):(abs(date(type())))),members=per_member(ref()),::id=id()-&gt;.s1;
-.s1 &gt;-&gt;.s2;
-.s2 out;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/per_member.h.html#L344">overpass_api/statements/per_member.h:344</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 480</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 480</p><h1>Query 480</h1><p class="muted">fuzz:3:areas,complete:824 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">area[name=&quot;Smiths Cove&quot;]-&gt;.s3;
+node(area.s3)-&gt;.s4;
+.s3 out;
+.s3 out count;
+.s3 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

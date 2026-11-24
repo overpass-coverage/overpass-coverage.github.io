@@ -1,6 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 173</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 173</p><h1>Query 173</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3146 · 0.42 s CPU · expected status <code>ok</code></p><pre class="query">nw[&quot;collection_times&quot;=&quot;08:00;Mo-Fr 08:00&quot;]-&gt;.s0;
-node(way_cnt.s0:2-)-&gt;.s1;
-nwr[~&quot;^net&quot;~&quot;.&quot;]-&gt;.s2;
-nwr(around:200,44.918470,-62.542474,44.919414,-62.540324,44.917610,-62.544266,44.917906,-62.544701)-&gt;.s3;
-.s1 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 173</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 173</p><h1>Query 173</h1><p class="muted">fuzz:4:poi,areas:695 · 0.23 s CPU · expected status <code>ok</code></p><pre class="query">area[name=&quot;Turtle Lake&quot;]-&gt;.s1;
+rel(area.s1)-&gt;.s2;
+.s1 out  qt (44.630171,-65.837689,44.652547,-65.698175);
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

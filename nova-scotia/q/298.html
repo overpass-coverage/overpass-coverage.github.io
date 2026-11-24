@@ -1,5 +1,6 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 298</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 298</p><h1>Query 298</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3462 · 3.47 s CPU · expected status <code>ok</code></p><pre class="query">rel(if:(!((id()!=&quot;a&quot;)||(lon()&gt;version()))))-&gt;.s0;
-way[&quot;oneway&quot;~&quot;.&quot;]-&gt;.s1;
-rel.s0-&gt;.s2;
-.s2 out;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 298</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 298</p><h1>Query 298</h1><p class="muted">fuzz:4:history,areas,complete,statements:542 · 0.25 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::lat,::lon)];
+way[&quot;bridge:ref&quot;]-&gt;.s0;
+.s0 out  bb;
+.s0 out count;
+.s0 out ids 1000;
+</pre><h2>Lines only this query runs (3)</h2><ul><li><a href="../src/overpass_api/core/geometry.h.html#L208">overpass_api/core/geometry.h:208</a></li><li><a href="../src/overpass_api/core/geometry.h.html#L209">overpass_api/core/geometry.h:209</a></li><li><a href="../src/overpass_api/core/geometry.h.html#L210">overpass_api/core/geometry.h:210</a></li></ul></main></body></html>

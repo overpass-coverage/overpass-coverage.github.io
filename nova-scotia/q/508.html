@@ -1,4 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 508</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 508</p><h1>Query 508</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1592 · 0.16 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2019-10-01T04:19:54Z&quot;];
-nwr(44.282223,-64.710370,44.293583,-64.666873)-&gt;.s0;
-rel(r.s0:&quot;out&quot;)-&gt;.s1;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/data/collect_members.cc.html#L580">overpass_api/data/collect_members.cc:580</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 508</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 508</p><h1>Query 508</h1><p class="muted">fuzz:4:statements,areas:723 · 0.09 s CPU · expected status <code>ok</code></p><pre class="query">nw(44.720024,-63.424386,44.733116,-63.363974)-&gt;.s0;
+(.s0;)-&gt;.s1;
+.s1 local ll-&gt;.s2;
+way(bn.s2)-&gt;.s3;
+.s3 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

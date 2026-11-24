@@ -1,5 +1,15 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 141</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 141</p><h1>Query 141</h1><p class="muted">fuzz:4:history,areas,complete,statements:203 · 0.19 s CPU · expected status <code>ok</code></p><pre class="query">[diff:&quot;2018-12-17T19:20:07Z&quot;,&quot;2024-09-24T11:20:29Z&quot;];
-way(around:500,50.999392,14.550476)-&gt;.s0;
-.s0 compare(delta:is_tag(&quot;lanes&quot;))-&gt;.s3;
-.s0 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 141</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 141</p><h1>Query 141</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:140 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::version,::user)];
+timeline(node,1159579368)-&gt;.s1;
+nwr[&quot;destination:backward&quot;~&quot;^Freiberg;Pretzschendorf$&quot;][&quot;cycleway:right:smoothness&quot;!~&quot;^pe&quot;]-&gt;.s2;
+node(way_cnt.s2:1)-&gt;.s3;
+wr[&quot;seamark:notice:information&quot;~&quot;^wasserski$&quot;,i]-&gt;.s5;
+.s3 out meta;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+.s5 out count;
+.s5 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,5 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 152</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 152</p><h1>Query 152</h1><p class="muted">fuzz:3:history,complete:87 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][date:&quot;2018-09-28T18:48:31Z&quot;];
-node(id:902134813,912930160,1105704308,1325250703,2489946540)[!&quot;amenity&quot;]-&gt;.s0;
-node(around.s0:20)-&gt;.s2;
-.s2 out meta;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 152</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 152</p><h1>Query 152</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1663 · 1.00 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::count;true;&quot;::&quot;)][date:&quot;2020-10-14T18:39:31Z&quot;];
+way(id:345563689)-&gt;.s0;
+wr[~&quot;^hei&quot;~&quot;.&quot;]-&gt;.s1;
+way.s0(460235862)-&gt;.s3;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

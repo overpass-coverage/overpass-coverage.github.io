@@ -1,2 +1,13 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 180</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 180</p><h1>Query 180</h1><p class="muted">upstream-test:osm3s_query_135.ql · 0.00 s CPU · expected status <code>query-error: line N: parse error: &quot;=&quot; cannot be used as binary operator</code></p><pre class="query">way(if:t=&quot;b&quot;);
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 180</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 180</p><h1>Query 180</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3629 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[out:json];
+way[&quot;brand:wikidata&quot;=&quot;Q6970842&quot;]-&gt;.s0;
+.s0 convert stat ::id=id(),k0=lrs_max(lrs_union(t[&quot;maxheight&quot;],&quot;1;2&quot;)),k2=(is_date(t[&quot;footway&quot;])?(&quot;yes&quot;):((lrs_in(user(),&quot;1;2&quot;)?(type()):(suffix(t[&quot;highway&quot;]))))),k1=lrs_in(type(),&quot;1;2&quot;),::=::-&gt;.s1;
+way(r.s0)[&quot;natural&quot;=&quot;wood&quot;]-&gt;.s3;
+.s1 convert row ::id=id(),tags=count_tags();
+out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

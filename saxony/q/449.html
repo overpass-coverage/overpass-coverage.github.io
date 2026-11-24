@@ -1,5 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 449</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 449</p><h1>Query 449</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3439 · 0.62 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][date:&quot;2015-07-30T10:11:29Z&quot;];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 449</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 449</p><h1>Query 449</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3439 · 0.80 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][date:&quot;2015-07-30T10:11:29Z&quot;];
 area[name=&quot;Pirna&quot;]-&gt;.s4;
 nwr(area.s4)[&quot;sac_scale&quot;=&quot;hiking&quot;]-&gt;.s5;
 .s5 out qt;
+.s4 out count;
+.s4 out ids 1000;
+.s5 out count;
+.s5 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

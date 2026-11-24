@@ -1,5 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 144</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 144</p><h1>Query 144</h1><p class="muted">fuzz:3:history,complete:193 · 0.08 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][date:&quot;2025-01-09T14:26:27Z&quot;];
-nw(poly:&#x27;44.498194 -63.868990 44.502855 -63.896956 44.516276 -63.909999 44.475526 -63.887703&#x27;)-&gt;.s0;
-.s0 convert row ::id=id(),tags=count_tags();
-out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 144</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 144</p><h1>Query 144</h1><p class="muted">fuzz:4:history,areas,complete,statements:118 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2022-08-01T01:02:30Z&quot;];
+()-&gt;.s2;
+area[name=&quot;Carrigan Lake&quot;][admin_level]-&gt;.s3;
+rel(area.s3)-&gt;.s4;
+.s2 out count;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

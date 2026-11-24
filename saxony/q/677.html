@@ -1,5 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 677</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 677</p><h1>Query 677</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1341 · 3.43 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2012-12-02T10:45:25Z&quot;];
-wr(50.823349,12.922304,50.842398,12.924351)-&gt;.s0;
-.s0 convert row ::id=id(),tags=count_tags();
-.s0 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 677</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 677</p><h1>Query 677</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:487 · 0.59 s CPU · expected status <code>ok</code></p><pre class="query">[bbox:50.556543,13.243442,50.643877,13.370508][out:xml][date:&quot;2025-02-03T22:57:28Z&quot;];
+timeline(relation,1378660)-&gt;.s1;
+wr(bn.s1)[&quot;power&quot;~&quot;^po&quot;]-&gt;.s4;
+.s1 out count;
+.s1 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

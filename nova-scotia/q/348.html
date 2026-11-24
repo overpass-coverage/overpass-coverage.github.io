@@ -1,5 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 348</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 348</p><h1>Query 348</h1><p class="muted">fuzz:4:statements,areas:123 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">nw(44.574134,-64.317598,44.577602,-64.265529)-&gt;.s0;
-.s0 &lt;-&gt;.s1;
-.s1 map_to_area-&gt;.s2;
-.s0 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 348</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 348</p><h1>Query 348</h1><p class="muted">fuzz:3:history,complete:742 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2015-05-13T02:35:25Z&quot;];
+nw(around:100,45.438488,-62.610212)-&gt;.s0;
+complete(1).s0-&gt;.s1 { }
+complete(4).s1-&gt;.s4 { }
+.s4 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

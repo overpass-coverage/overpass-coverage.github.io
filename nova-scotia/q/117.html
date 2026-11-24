@@ -1,5 +1,5 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 117</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 117</p><h1>Query 117</h1><p class="muted">fuzz:4:output:61 · 3.62 s CPU · expected status <code>ok</code></p><pre class="query">way[&quot;loc_name&quot;!=&quot;Marine Drive&quot;]-&gt;.s0;
-way.s0(if:version()&gt;2)-&gt;.s1;
-nwr(poly:&#x27;43.992641 -65.315453 43.997180 -65.343342 43.987341 -65.356275&#x27;)[~&quot;^nat&quot;~&quot;wet&quot;]-&gt;.s2;
-.s1 out (47.534735,-59.139376,47.591737,-59.087595);
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/data/tags_global_reader.h.html#L668">overpass_api/data/tags_global_reader.h:668</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 117</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 117</p><h1>Query 117</h1><p class="muted">fuzz:3:history,complete:101 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">nwr[~&quot;^mem&quot;~&quot;ceno&quot;][&quot;brand:wikidata&quot;=&quot;Q118558630&quot;][&quot;usage&quot;!~&quot;crane&quot;]-&gt;.s0;
+.s0 out count;
+.s0 out count;
+.s0 out ids 1000;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

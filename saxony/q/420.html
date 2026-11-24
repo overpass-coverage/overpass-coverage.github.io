@@ -1,5 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 420</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 420</p><h1>Query 420</h1><p class="muted">fuzz:3:history,complete:2097 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2015-05-22T18:44:35Z&quot;];
-node(id:888686332)-&gt;.s0;
-way(bn.s0)[&quot;maxspeed&quot;]-&gt;.s1;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 420</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 420</p><h1>Query 420</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1660 · 0.08 s CPU · expected status <code>ok</code></p><pre class="query">rel[&quot;building&quot;=&quot;yes&quot;]-&gt;.s0;
+for.s0-&gt;.s1 ((-lrs_max(t[&quot;source&quot;]))) { }
 .s0 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

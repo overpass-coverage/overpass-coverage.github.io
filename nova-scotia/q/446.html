@@ -1,6 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 446</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 446</p><h1>Query 446</h1><p class="muted">fuzz:3:history,complete:2745 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[adiff:&quot;2015-05-13T00:59:59Z&quot;];
-way(460939332)-&gt;.s0;
-node(way_cnt.s0:1)-&gt;.s1;
-complete(2).s1-&gt;.s4 { }
-.s4 out;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 446</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 446</p><h1>Query 446</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3392 · 2.36 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2018-09-13T20:11:09Z&quot;];
+rel(45.321900,-61.402098,45.366795,-61.362788)-&gt;.s0;
+.s0 &lt;&lt;-&gt;.s3;
+rel(br.s3:&quot;inner&quot;)-&gt;.s5;
+foreach.s0-&gt;.it{ .it out; }
+.s0 out count;
+.s0 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+.s5 out count;
+.s5 out ids 1000;
+.it out count;
+.it out ids 1000;
+</pre><h2>Lines only this query runs (8)</h2><ul><li><a href="../src/overpass_api/statements/recurse.cc.html#L415">overpass_api/statements/recurse.cc:415</a></li><li><a href="../src/overpass_api/statements/recurse.cc.html#L416">overpass_api/statements/recurse.cc:416</a></li><li><a href="../src/overpass_api/statements/recurse.cc.html#L417">overpass_api/statements/recurse.cc:417</a></li><li><a href="../src/overpass_api/statements/recurse.cc.html#L419">overpass_api/statements/recurse.cc:419</a></li><li><a href="../src/overpass_api/statements/recurse.cc.html#L420">overpass_api/statements/recurse.cc:420</a></li><li><a href="../src/overpass_api/statements/recurse.cc.html#L421">overpass_api/statements/recurse.cc:421</a></li><li><a href="../src/overpass_api/statements/recurse.cc.html#L422">overpass_api/statements/recurse.cc:422</a></li><li><a href="../src/overpass_api/statements/recurse.cc.html#L423">overpass_api/statements/recurse.cc:423</a></li></ul></main></body></html>

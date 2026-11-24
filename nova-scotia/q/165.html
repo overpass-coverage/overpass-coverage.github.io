@@ -1,4 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 165</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 165</p><h1>Query 165</h1><p class="muted">fuzz:4:history,complete,output:969 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Food&quot;;[&quot;postal_code&quot;!~&quot;^B2&quot;];&quot;amenity&quot;;)][date:&quot;2011-02-03T22:11:23Z&quot;];
-way(if:length()&gt;10)(46.963902,-60.503975,46.979343,-60.437198)-&gt;.s0;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 165</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 165</p><h1>Query 165</h1><p class="muted">fuzz:4:evaluators:558 · 0.08 s CPU · expected status <code>ok</code></p><pre class="query">wr[&quot;ocean&quot;=&quot;yes&quot;]-&gt;.s0;
+make stat k0=((!(s0.min((-changeset()))&gt;=0.5))?(lrs_union(s0.u((is_closed()?(t[&quot;service&quot;]):(type()))),s0.max(timestamp()))):(s0.u(lrs_min(&quot;1;2&quot;))))-&gt;.s1;
+make stat k0=s1.count(nr),k1=(-(number(s1.u((&quot;2018-01-01&quot;+timestamp())))/number(s1.u((0?(t[&quot;light:lit&quot;]):(&quot;yes&quot;)))))),::geom=s1.gcat(center(geom()))-&gt;.s2;
 .s0 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

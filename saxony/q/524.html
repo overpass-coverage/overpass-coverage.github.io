@@ -1,4 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 524</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 524</p><h1>Query 524</h1><p class="muted">fuzz:3:history,complete:776 · 2.29 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2018-03-03T10:18:43Z&quot;];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 524</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 524</p><h1>Query 524</h1><p class="muted">fuzz:3:history,complete:776 · 2.93 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2018-03-03T10:18:43Z&quot;];
 wr(poly:&#x27;51.437175 12.668425 51.433493 12.676685 51.441251 12.679327&#x27;)-&gt;.s0;
 foreach.s0-&gt;.it{ .it out; }
+.s0 out count;
+.s0 out ids 1000;
+.it out count;
+.it out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

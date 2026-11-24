@@ -1,3 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 347</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 347</p><h1>Query 347</h1><p class="muted">fuzz:3::1245 · 0.69 s CPU · expected status <code>ok</code></p><pre class="query">nwr[&quot;network:short&quot;=&quot;VVO&quot;]-&gt;.s0;
-.s0 out  geom  (50.831107,14.030219,50.870602,14.051845);
-</pre><h2>Lines only this query runs (2)</h2><ul><li><a href="../src/overpass_api/output_formats/output_xml.cc.html#L354">overpass_api/output_formats/output_xml.cc:354</a></li><li><a href="../src/overpass_api/output_formats/output_xml.cc.html#L355">overpass_api/output_formats/output_xml.cc:355</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 347</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 347</p><h1>Query 347</h1><p class="muted">fuzz:3:history,complete:2852 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2005-04-18T15:12:33Z&quot;];
+rel[&quot;service&quot;~&quot;^parkin&quot;]-&gt;.s0;
+way(bn.s0)-&gt;.s1;
+complete(4).s1-&gt;.s2 { }
+.s2 out  qt;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

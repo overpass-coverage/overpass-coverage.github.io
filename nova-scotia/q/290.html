@@ -1,4 +1,15 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 290</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 290</p><h1>Query 290</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:860 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:json];
-node(if:(!(is_tag(&quot;addr:county&quot;)&amp;&amp;(is_tag(&quot;type&quot;)||t[&quot;fire_hydrant:type&quot;]==&quot;en:Canada Post&quot;))))(around:500,43.936584,-66.113829)-&gt;.s0;
-.s0 out   noids;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 290</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 290</p><h1>Query 290</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:225 · 0.53 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][date:&quot;2011-04-03T05:04:28Z&quot;];
+nwr[&quot;golf&quot;=&quot;cartpath&quot;]-&gt;.s0;
+timeline(way,274456670)-&gt;.s1;
+rel(bw.s0)-&gt;.s2;
+if (((s2.min(changeset())==s2.u(suffix(type())))||((s2.max((lon()-changeset()))&lt;1)&amp;&amp;(s2.min(lrs_max(&quot;a;b;c&quot;))&gt;0.5)))) { make yes n=s2.count(nwr)-&gt;.s3; } else { }
+.s1 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

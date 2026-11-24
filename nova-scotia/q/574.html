@@ -1,3 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 574</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 574</p><h1>Query 574</h1><p class="muted">fuzz:4:history,areas,complete,statements:328 · 0.00 s CPU · expected status <code>ok</code></p><pre class="query">retro(date(&quot;2011-04-05T23:37:15Z&quot;)) { way(id:170976786)-&gt;.s1; .s1 out; }
-.s1 compare(delta:is_tag(&quot;type&quot;))-&gt;.s3;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/compare.cc.html#L70">overpass_api/statements/compare.cc:70</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 574</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 574</p><h1>Query 574</h1><p class="muted">fuzz:4:statements,areas:428 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">node[&quot;man_made&quot;=&quot;pier&quot;]-&gt;.s0;
+way(around:0,44.761014,-63.661347,44.758743,-63.661981)-&gt;.s1;
+.s0 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

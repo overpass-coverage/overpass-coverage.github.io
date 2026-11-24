@@ -1,6 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 630</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 630</p><h1>Query 630</h1><p class="muted">fuzz:4:statements,areas:269 · 1.25 s CPU · expected status <code>ok</code></p><pre class="query">way(51.283482,13.282840,51.316452,13.335023)-&gt;.s0;
-.s0 &lt;&lt;-&gt;.s1;
-(.s1;)-&gt;.s5;
-.s5 local ll-&gt;.s6;
-.s0 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 630</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 630</p><h1>Query 630</h1><p class="muted">fuzz:3:history,complete:1096 · 3.66 s CPU · expected status <code>ok</code></p><pre class="query">[timeout:60][date:&quot;2019-08-23T06:58:25Z&quot;];
+nwr[!&quot;TMC:cid_58:tabcd_1:NextLocationCode&quot;](50.978084,13.210052,51.085906,13.376383)-&gt;.s0;
+complete(6).s0-&gt;.s2 { node(w); }
+complete(2).s2-&gt;.s4 { node(w); }
+.s4 out meta qt;
+.s0 out count;
+.s0 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

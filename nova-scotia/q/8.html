@@ -1,8 +1,21 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 8</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 8</p><h1>Query 8</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3155 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">way(if:length()&gt;10)[&quot;ford&quot;=&quot;stepping_stones&quot;]-&gt;.s0;
-node(way_link.s0:2-)-&gt;.s1;
-node(w.s0)-&gt;.s2;
-rel(bw.s1)-&gt;.s3;
-foreach.s1-&gt;.it{ .it out ids; ()-&gt;.x; }
-.s2 out;
-.s3 out tags;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 8</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 8</p><h1>Query 8</h1><p class="muted">fuzz:4:history,areas,complete,statements:347 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::type,::lat,::lon,&quot;addr:suburb&quot;)][date:&quot;2019-06-22T20:40:01Z&quot;];
+node(around:250,45.708815,-61.070353)-&gt;.s0;
+node(r.s0)-&gt;.s1;
+node(w.s1)-&gt;.s2;
+.s2 &lt;-&gt;.s3;
+foreach.s0-&gt;.it{ .it out ids; (.it;)-&gt;.x; .x out count; }
+.s0 out  33;
+.s3 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+.it out count;
+.it out ids 1000;
+.x out count;
+.x out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,5 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 465</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 465</p><h1>Query 465</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1663 · 1.21 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2022-03-02T11:59:51Z&quot;];
-wr[&quot;destination:forward&quot;=&quot;Görlitz&quot;][~&quot;^fee&quot;~&quot;.&quot;]-&gt;.s1;
-node(area:3600443527)-&gt;.s2;
-.s2 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 465</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 465</p><h1>Query 465</h1><p class="muted">fuzz:4:evaluators:603 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">way[&quot;destination:ref:lanes&quot;=&quot;B 6|B 6|B 6&quot;]-&gt;.s0;
+node(way_cnt.s0:2-)-&gt;.s1;
+node.s1(if:((lrs_in(t[&quot;roof:levels&quot;],lrs_union(t[&quot;sidewalk&quot;],&quot;name&quot;))&amp;&amp;(changeset()&lt;=lat()))||(number(t[&quot;smoothness&quot;])!=suffix(&quot;&quot;))))-&gt;.s2;
+.s1 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

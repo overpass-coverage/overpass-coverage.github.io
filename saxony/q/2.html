@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 2</p><h1>Query 2</h1><p class="muted">fuzz:4:history,complete,evaluators:236 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2014-03-30T17:43:34Z&quot;];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 2</p><h1>Query 2</h1><p class="muted">fuzz:4:history,complete,evaluators:236 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2014-03-30T17:43:34Z&quot;];
 way(id:31047722,535696859,564754529,1248133836)-&gt;.s0;
 timeline(way,970702785)-&gt;.s1;
 (.s1; .s1;)-&gt;.s2;
@@ -6,4 +6,16 @@ timeline(way,970702785)-&gt;.s1;
 .s2 convert stat k1=((is_date(t[&quot;oneway&quot;])?(count_distinct_members()):(length()))==lrs_min(id())),::id=id(),k0=number(suffix(user())),k2=(user()&lt;suffix(count_distinct_by_role(&quot;platform&quot;))),k3=(0||lrs_in((t[&quot;bus&quot;]==&quot;Chemnitz;Prag/Praha;Dresden-Wilder Mann|Chemnitz;Prag/Praha;Dresden-Wilder Mann|Chemnitz;Prag/Praha;Dresden-Wilder Mann|Dresden-Hellerau;Dresden-Zentrum;Zollamt&quot;?(t[&quot;layer&quot;]):(t[&quot;tourism&quot;])),t[&quot;ref&quot;])),!&quot;foot&quot;-&gt;.s4;
 node.s4(if:(!lrs_in(id(),lrs_isect(&quot;a;b;c&quot;,lrs_union(t[&quot;layer&quot;],&quot;name&quot;)))))-&gt;.s5;
 .s3 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
+.s5 out count;
+.s5 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

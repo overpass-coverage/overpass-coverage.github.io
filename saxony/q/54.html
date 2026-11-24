@@ -1,6 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 54</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 54</p><h1>Query 54</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3488 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Food&quot;;[&quot;network&quot;][&quot;route_ref&quot;~&quot;^D;&quot;];[&quot;destination:ref:lanes:backward&quot;=&quot;|B 174&quot;];)(&quot;Other&quot;;[&quot;traffic_mode&quot;!=&quot;passenger&quot;];)];
-wr(51.073959,14.136696,51.122449,14.368565)[&quot;type&quot;~&quot;^public_t&quot;]-&gt;.s0;
-foreach.s0(( &lt;;);)
-(._;)-&gt;.s2;
-.s0 out  qt;
-</pre><h2>Lines only this query runs (5)</h2><ul><li><a href="../src/overpass_api/output_formats/output_popup.cc.html#L103">overpass_api/output_formats/output_popup.cc:103</a></li><li><a href="../src/overpass_api/output_formats/output_popup.cc.html#L191">overpass_api/output_formats/output_popup.cc:191</a></li><li><a href="../src/overpass_api/output_formats/output_popup.cc.html#L194">overpass_api/output_formats/output_popup.cc:194</a></li><li><a href="../src/overpass_api/output_formats/output_popup.cc.html#L198">overpass_api/output_formats/output_popup.cc:198</a></li><li><a href="../src/overpass_api/output_formats/output_popup.cc.html#L304">overpass_api/output_formats/output_popup.cc:304</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 54</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 54</p><h1>Query 54</h1><p class="muted">fuzz:4:evaluators:331 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">rel(id:7300092)-&gt;.s0;
+for.s0-&gt;.s1 (keys()) { }
+make info c=s1.max(date(t[&quot;addr:city&quot;])),v=s1.u(suffix(t[&quot;tunnel&quot;])),n=1-&gt;.s2;
+.s2 convert stat k3=(((!1)&amp;&amp;lrs_in(&quot;contact_line&quot;,lrs_union(t[&quot;addr:city&quot;],&quot;name&quot;)))&amp;&amp;(number(id())&gt;count_distinct_by_role(&quot;shelter&quot;))),!&quot;type&quot;,k0=lrs_max(lrs_union(lrs_union(&quot;a;b;c&quot;,lrs_union(t[&quot;leaf_cycle&quot;],&quot;name&quot;)),lrs_isect(lrs_union(t[&quot;parking&quot;],&quot;name&quot;),&quot;1;2&quot;))),k2=is_number(((!is_closed())?((is_date(t[&quot;level&quot;])?(timestamp()):(user()))):(count_tags()))),k1=lrs_union(lrs_isect(&quot;a;b;c&quot;,lrs_union(&quot;a;b;c&quot;,t[&quot;surface&quot;])),lrs_union(lrs_union(t[&quot;maxspeed&quot;],&quot;name&quot;),lrs_union(lrs_union(t[&quot;emergency&quot;],&quot;name&quot;),t[&quot;operator&quot;])))-&gt;.s3;
+.s0 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/item_geometry.h.html#L70">overpass_api/statements/item_geometry.h:70</a></li></ul></main></body></html>

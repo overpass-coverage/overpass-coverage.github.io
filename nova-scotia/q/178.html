@@ -1,6 +1,15 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 178</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 178</p><h1>Query 178</h1><p class="muted">fuzz:3:history,complete:2481 · 0.10 s CPU · expected status <code>ok</code></p><pre class="query">[adiff:&quot;2011-03-25T01:02:22Z&quot;];
-rel(changed:&quot;2010-06-22T05:19:23Z&quot;)-&gt;.s0;
-.s0 &lt;&lt;-&gt;.s2;
-.s2 &lt;-&gt;.s3;
-.s2 out;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/query.cc.html#L1047">overpass_api/statements/query.cc:1047</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 178</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 178</p><h1>Query 178</h1><p class="muted">fuzz:4:history,areas,complete,statements:583 · 1.52 s CPU · expected status <code>ok</code></p><pre class="query">[adiff:&quot;2010-09-02T21:29:42Z&quot;];
+way[&quot;highway&quot;=&quot;steps&quot;]-&gt;.s0;
+way(r.s0)-&gt;.s1;
+rel(r.s1)[&quot;place&quot;=&quot;city&quot;]-&gt;.s4;
+rel[~&quot;^destination$&quot;~&quot;^Bible Hill;Tatamagouche$&quot;][&quot;ocean&quot;]-&gt;.s5;
+.s4 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
+.s5 out count;
+.s5 out ids 1000;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

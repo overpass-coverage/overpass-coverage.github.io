@@ -1,6 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 323</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 323</p><h1>Query 323</h1><p class="muted">fuzz:3:areas,complete:1429 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">way(67405876)-&gt;.s0;
-rel(bw.s0)[&quot;surface&quot;=&quot;dirt&quot;]-&gt;.s1;
-node(way_cnt.s0:1-2)-&gt;.s2;
-.s2 &lt;-&gt;.s3;
-.s3 out;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 323</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 323</p><h1>Query 323</h1><p class="muted">fuzz:4:evaluators:969 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">way(45.617388,-61.863653,45.622084,-61.804412)-&gt;.s0;
+.s0 convert row k0=(suffix(t[&quot;poles&quot;])+count_distinct_by_role(&quot;outer&quot;)),members=per_member(mtype()+&quot;/&quot;+ref()),k2=(!is_date((suffix(t[&quot;golf&quot;])+type()))),::=::,k1=(0?(length()):(lrs_min(user()))),angles=per_vertex(angle()),::id=id()-&gt;.s1;
+for.s1-&gt;.s2 ((version()+suffix(&quot;a&quot;))) { }
+rel(r.s0)-&gt;.s4;
+.s4 out count;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/tag_value.h.html#L572">overpass_api/statements/tag_value.h:572</a></li></ul></main></body></html>

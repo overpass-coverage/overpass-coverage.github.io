@@ -1,5 +1,24 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 10</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 10</p><h1>Query 10</h1><p class="muted">fuzz:4:evaluators:338 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">nwr(around:10,44.942492,-62.178765)-&gt;.s0;
-make stat k0=s0.u(t[&quot;fire_hydrant:type&quot;]),k1=(lrs_in(&quot;1;2;3&quot;,s0.max((type()+timestamp())))?(suffix(s0.min(number(t[&quot;lamp_mount&quot;])))):(lrs_min(s0.u(suffix(t[&quot;phases&quot;]))))),::geom=hull(s0.gcat(geom()))-&gt;.s2;
-foreach.s0-&gt;.it{ .it out ids; }
-.s0 out skel;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 10</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 10</p><h1>Query 10</h1><p class="muted">fuzz:4:history,areas,complete,statements:236 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2013-08-30T18:33:25Z&quot;];
+way(id:84508871,116850366,887381410)-&gt;.s0;
+timeline(way,1388684167)-&gt;.s1;
+()-&gt;.s2;
+(.s1; - .s1;)-&gt;.s3;
+.s2 map_to_area-&gt;.s4;
+(.s0; .s0 &gt;;)-&gt;.s5;
+.s5 local llb-&gt;.s6;
+.s3 out count;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
+.s5 out count;
+.s5 out ids 1000;
+.s6 out count;
+.s6 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

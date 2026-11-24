@@ -1,6 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 472</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 472</p><h1>Query 472</h1><p class="muted">fuzz:4:history,complete,evaluators:527 · 2.61 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2010-06-17T17:38:32Z&quot;];
-rel(around:1000,50.498322,12.762345)-&gt;.s0;
-.s0 convert row k2=user(),k0=lrs_min(2),k3=(!(!is_closed())),k1=&quot;1;2&quot;,::id=id()-&gt;.s1;
-rel.s0-&gt;.s2;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 472</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 472</p><h1>Query 472</h1><p class="muted">fuzz:3:history,complete:2267 · 2.58 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2025-04-02T10:41:48Z&quot;];
+wr(50.987447,13.434919,51.078020,13.669663)(newer:&quot;2022-01-13T12:54:55Z&quot;)-&gt;.s0;
+complete(4).s0-&gt;.s1 { }
+rel.s1(if:count_tags()&gt;1)-&gt;.s2;
 .s2 out;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/tag_value.h.html#L792">overpass_api/statements/tag_value.h:792</a></li></ul></main></body></html>
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,5 +1,17 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 684</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 684</p><h1>Query 684</h1><p class="muted">fuzz:4:history,complete,output:880 · 4.36 s CPU · expected status <code>ok</code></p><pre class="query">[out:xml][date:&quot;2019-10-06T20:23:42Z&quot;];
-nwr(poly:&#x27;51.043162 13.672419 51.045118 13.668374 51.042923 13.666937 51.042549 13.667183 51.042007 13.665121 51.041752 13.665887 51.040989 13.668180 51.041144 13.669252 51.041660 13.670233 51.042531 13.670509&#x27;)-&gt;.s0;
-node(way_link.s0:2-)-&gt;.s1;
-(.s1; - .s0;)-&gt;.s3;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 684</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 684</p><h1>Query 684</h1><p class="muted">fuzz:4:poi,areas:878 · 4.35 s CPU · expected status <code>query-error: runtime error: Filters too weak in query statement: specify in addition a bbox, a tag filt</code></p><pre class="query">way(50.454789,11.956830,50.553837,12.159482)-&gt;.s0;
+rel(bw.s0)-&gt;.s1;
+wr(bn.s1)[&quot;landuse&quot;]-&gt;.s2;
+area[name=&quot;Markt&quot;]-&gt;.s3;
+node(area.s3)-&gt;.s4;
+.s3 out  qt;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

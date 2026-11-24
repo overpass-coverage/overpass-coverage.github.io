@@ -1,6 +1,17 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 56</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 56</p><h1>Query 56</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:684 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2019-02-09T06:44:57Z&quot;];
-way(id:159813000,260921280)-&gt;.s0;
-way.s0(if:uid()&gt;21000000)-&gt;.s1;
-.s0 map_to_area-&gt;.s2;
-.s2 out skel qt bb;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/tag_value.h.html#L732">overpass_api/statements/tag_value.h:732</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 56</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 56</p><h1>Query 56</h1><p class="muted">fuzz:3:areas,complete:2374 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:json];
+wr(50.483099,13.181676,50.671772,13.274690)[&quot;hiking&quot;=&quot;yes&quot;]-&gt;.s0;
+complete(3).s0-&gt;.s1 { }
+(.s0; - .s1;)-&gt;.s2;
+foreach.s1-&gt;.it{ .it out ids; ()-&gt;.x; }
+.s0 out skel  qt;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.it out count;
+.it out ids 1000;
+.x out count;
+.x out ids 1000;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

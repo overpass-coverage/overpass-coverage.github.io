@@ -1,4 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 392</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 392</p><h1>Query 392</h1><p class="muted">fuzz:4:evaluators:600 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">way(around:10,45.279096,-62.882576)-&gt;.s0;
-way.s0(if:((-count_distinct_by_role(&quot;both&quot;))&gt;lrs_min(&quot;a;b;c&quot;)))-&gt;.s3;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 392</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 392</p><h1>Query 392</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2524 · 6.05 s CPU · expected status <code>ok</code></p><pre class="query">way[&quot;maxspeed&quot;]-&gt;.s0;
+make stat k0=s0.sum(abs(count_members())),k1=suffix(lrs_union(s0.min((is_date(t[&quot;landuse&quot;])?(suffix(t[&quot;type&quot;])):(type()))),s0.max(id()))),k2=(((s0.sum(lrs_max(&quot;1;2&quot;))&lt;1e3)?(number(s0.u(suffix(t[&quot;created_by&quot;])))):(s0.count(nw)))/(s0.sum(number(timestamp()))*s0.sum(lrs_min(t[&quot;created_by&quot;])))),::geom=center(trace(s0.gcat(geom())))-&gt;.s1;
 .s0 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

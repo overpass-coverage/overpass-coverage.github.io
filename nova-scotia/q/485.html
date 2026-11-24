@@ -1,5 +1,16 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 485</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 485</p><h1>Query 485</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2119 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;name&quot;;)(&quot;Named things&quot;;[&quot;place&quot;!=&quot;city&quot;];)];
-is_in(45.120604,-63.404833)-&gt;.s1;
-rel(pivot.s1)-&gt;.s3;
-.s3 out;
-</pre><h2>Lines only this query runs (4)</h2><ul><li><a href="../src/overpass_api/output_formats/output_popup.cc.html#L47">overpass_api/output_formats/output_popup.cc:47</a></li><li><a href="../src/overpass_api/output_formats/output_popup.cc.html#L57">overpass_api/output_formats/output_popup.cc:57</a></li><li><a href="../src/overpass_api/output_formats/output_popup.cc.html#L116">overpass_api/output_formats/output_popup.cc:116</a></li><li><a href="../src/overpass_api/output_formats/output_popup.cc.html#L121">overpass_api/output_formats/output_popup.cc:121</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 485</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 485</p><h1>Query 485</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3059 · 7.09 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Shops&quot;;[&quot;lanes:backward&quot;~&quot;^1&quot;];&quot;highway&quot;;)][date:&quot;2012-03-25T00:38:44Z&quot;];
+wr(if:(date((timestamp()+type()))&gt;date(suffix(id()))))[!&quot;oneway&quot;]-&gt;.s0;
+retro(date(&quot;2012-05-06T16:04:07Z&quot;)) { way[&quot;communication&quot;~&quot;^li&quot;,i][&quot;voltage&quot;=&quot;12500&quot;]-&gt;.s1; .s1 out ids; }
+(.s0; .s1;)-&gt;.s2;
+.s2 &lt;&lt;-&gt;.s3;
+.s1 out 17 body;
+.s3 out meta;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+</pre><h2>Lines only this query runs (2)</h2><ul><li><a href="../src/overpass_api/statements/tag_value.h.html#L177">overpass_api/statements/tag_value.h:177</a></li><li><a href="../src/overpass_api/statements/tag_value.h.html#L624">overpass_api/statements/tag_value.h:624</a></li></ul></main></body></html>

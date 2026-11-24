@@ -1,4 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 251</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 251</p><h1>Query 251</h1><p class="muted">fuzz:4:history,complete,output:308 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2015-05-13T15:57:03Z&quot;];
-nw[&quot;building:flats&quot;=&quot;5&quot;][&quot;man_made&quot;]-&gt;.s0;
-.s0 out;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 251</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 251</p><h1>Query 251</h1><p class="muted">fuzz:4:history,complete,output:930 · 0.17 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2020-10-24T05:42:57Z&quot;];
+nw(if:version()&gt;5)(45.027108,-64.773127,45.031820,-64.743401)-&gt;.s0;
+complete(6).s0-&gt;.s1 { }
+rel(bn.s1)-&gt;.s4;
+.s4 out  noids qt;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/tag_value.h.html#L560">overpass_api/statements/tag_value.h:560</a></li></ul></main></body></html>

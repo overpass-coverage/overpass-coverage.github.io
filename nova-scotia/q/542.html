@@ -1,5 +1,15 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 542</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 542</p><h1>Query 542</h1><p class="muted">fuzz:4:history,areas,complete,statements:183 · 0.65 s CPU · expected status <code>query-error: runtime error: Filters too weak in query statement: specify in addition a bbox, a tag filt</code></p><pre class="query">is_in(46.217280,-60.101294)-&gt;.s1;
-nwr[&quot;length&quot;=&quot;2.6&quot;]-&gt;.s2;
-wr(bn.s1)[&quot;seamark:light:height&quot;~&quot;^2&quot;]-&gt;.s3;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 542</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 542</p><h1>Query 542</h1><p class="muted">fuzz:4:history,complete,evaluators:289 · 0.71 s CPU · expected status <code>ok</code></p><pre class="query">[diff:&quot;2010-09-10T20:36:28Z&quot;];
+nwr(poly:&#x27;44.578244 -65.474138 44.612471 -65.520288 44.547321 -65.516348 44.561110 -65.497786&#x27;)-&gt;.s0;
+.s0 &lt;&lt;-&gt;.s1;
+complete(1).s1-&gt;.s2 { }
+for.s1-&gt;.s3 (lrs_max(t[&quot;operator&quot;])) { }
 .s2 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

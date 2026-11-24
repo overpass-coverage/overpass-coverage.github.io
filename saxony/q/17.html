@@ -1,6 +1,15 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 17</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 17</p><h1>Query 17</h1><p class="muted">fuzz:4:history,complete,output:292 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:xml][date:&quot;2025-05-25T08:21:21Z&quot;];
-node(around:50,50.734526,12.935747)(if:date(timestamp())&gt;date(&quot;2010-01-01&quot;))-&gt;.s0;
-.s0 convert row ::id=id(),tags=count_tags();
-out;
-.s0 out  2 qt;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 17</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 17</p><h1>Query 17</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3164 · 1.23 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;leaf_cycle&quot;,::changeset;false;&quot;,&quot;)];
+way(around:500,51.166055,14.091055)-&gt;.s0;
+.s0 convert row k2=number(lrs_min(lrs_union(lrs_union(t[&quot;highway&quot;],&quot;name&quot;),t[&quot;surface&quot;]))),k0=abs(uid()),k1=timestamp(),::geom=hull(geom())-&gt;.s1;
+area(id:3621040445)-&gt;.s3;
+way(area.s3)-&gt;.s4;
+.s4 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

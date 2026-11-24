@@ -1,15 +1,23 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 187</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 187</p><h1>Query 187</h1><p class="muted">upstream-test:osm3s_query_37.ql · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">&lt;osm-script timeout=&quot;1&quot; element-limit=&quot;1073741824&quot;&gt;
-
-&lt;bbox-query s=&quot;51.0&quot; n=&quot;51.1&quot; w=&quot;7.0&quot; e=&quot;7.1&quot;/&gt;
-&lt;recurse type=&quot;node-relation&quot; into=&quot;__&quot;/&gt;
-&lt;foreach from=&quot;__&quot; into=&quot;_a&quot;&gt;
-  &lt;foreach from=&quot;__&quot; into=&quot;_a&quot;&gt;
-    &lt;foreach from=&quot;__&quot; into=&quot;_a&quot;&gt;
-      &lt;recurse type=&quot;node-relation&quot; into=&quot;__&quot;/&gt;
-    &lt;/foreach&gt;
-  &lt;/foreach&gt;
-&lt;/foreach&gt;
-&lt;print/&gt;
-
-&lt;/osm-script&gt;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 187</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 187</p><h1>Query 187</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3800 · 0.23 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;addr:suburb&quot;,&quot;name:en&quot;,&quot;type&quot;,::changeset,&quot;roof:levels&quot;)][timeout:60][date:&quot;2021-03-11T02:21:43Z&quot;];
+nw[&quot;wheelchair&quot;=&quot;yes&quot;][&quot;type&quot;=&quot;restriction&quot;]-&gt;.s0;
+way(around.s0:100)[&quot;roof:direction&quot;=&quot;100.66&quot;]-&gt;.s1;
+way(r.s0:&quot;&quot;)-&gt;.s2;
+is_in(50.894840,14.783648)-&gt;.s3;
+rel(area.s3)[&quot;railway:etcs&quot;=&quot;no&quot;]-&gt;.s4;
+foreach.s3-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
+.s2 out skel;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
+.it out count;
+.it out ids 1000;
+.x out count;
+.x out ids 1000;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/foreach.cc.html#L77">overpass_api/statements/foreach.cc:77</a></li></ul></main></body></html>

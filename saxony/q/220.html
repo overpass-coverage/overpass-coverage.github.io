@@ -1,4 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 220</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 220</p><h1>Query 220</h1><p class="muted">fuzz:3:history,complete:2371 · 0.10 s CPU · expected status <code>ok</code></p><pre class="query">nwr(51.209040,13.273334,51.255252,13.285563)(if:date(timestamp())&gt;date(&quot;2025-01-01&quot;))-&gt;.s0;
-node(way_cnt.s0:1-2)-&gt;.s1;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 220</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 220</p><h1>Query 220</h1><p class="muted">fuzz:4:history,areas,complete,statements:359 · 0.29 s CPU · expected status <code>ok</code></p><pre class="query">[diff:&quot;2017-08-22T14:32:44Z&quot;,&quot;2019-04-30T11:23:09Z&quot;];
+way(id:93063696,572782801,756940298)-&gt;.s0;
+complete(1).s0-&gt;.s1 { }
+.s0 compare(delta:is_tag(&quot;emergency&quot;))-&gt;.s2 { ()-&gt;.s2; }
 .s1 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

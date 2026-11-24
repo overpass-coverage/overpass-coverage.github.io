@@ -1,3 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 410</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 410</p><h1>Query 410</h1><p class="muted">fuzz:4:evaluators:891 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">node(if:(((count_by_role(&quot;shelter&quot;)!=lat())?(lrs_min(&quot;1;2&quot;)):((-count_members())))&lt;version()))(id:2337248985,2470082748,3683063973,3830625627,4100870672,9219204347,9982765868)-&gt;.s0;
-.s0 out body;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 410</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 410</p><h1>Query 410</h1><p class="muted">fuzz:4:evaluators:852 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">rel(1438205)-&gt;.s0;
+.s0 convert row k2=lrs_isect(lrs_isect(lrs_isect(&quot;a;b;c&quot;,t[&quot;power&quot;]),t[&quot;addr:street&quot;]),t[&quot;building:levels&quot;]),k0=is_number(type()),!&quot;tactile_paving&quot;,k1=(lrs_in(user(),t[&quot;tourism&quot;])?(count_members()):(abs(date(type())))),members=per_member(ref()),::id=id()-&gt;.s1;
+.s1 &gt;-&gt;.s2;
+.s2 out  asc;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

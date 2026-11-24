@@ -1,6 +1,6 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 242</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 242</p><h1>Query 242</h1><p class="muted">fuzz:3:history,complete:932 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[diff:&quot;2015-05-12T03:10:51Z&quot;];
-nwr[&quot;unsigned_ref&quot;=&quot;1374&quot;]-&gt;.s0;
-rel(bw.s0)[&quot;waterway&quot;=&quot;rapids&quot;]-&gt;.s1;
-complete(1).s1-&gt;.s3 { }
-.s3 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 242</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 242</p><h1>Query 242</h1><p class="muted">fuzz:4:history,areas,complete,statements:883 · 1.44 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2023-05-05T22:27:53Z&quot;];
+nw[&quot;lanes:forward&quot;!~&quot;1|2&quot;][&quot;railway&quot;=&quot;level_crossing&quot;][&quot;internet_access:fee&quot;!=&quot;yes&quot;]-&gt;.s0;
+.s0 out;
+.s0 out count;
+.s0 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

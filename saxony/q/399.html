@@ -1,7 +1,6 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 399</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 399</p><h1>Query 399</h1><p class="muted">fuzz:4:history,areas,complete,statements:363 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">node(1793633777)[&quot;railway&quot;!=&quot;rail&quot;][&quot;leisure&quot;!=&quot;swimming_pool&quot;]-&gt;.s0;
-retro(date(&quot;2013-05-10T07:14:19Z&quot;)) { rel[&quot;sidewalk:both:surface&quot;=&quot;paving_stones&quot;]-&gt;.s1; }
-rel.s1-&gt;.s2;
-.s1 map_to_area-&gt;.s4;
-.s1 is_in-&gt;.s5;
-.s2 out count;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 399</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 399</p><h1>Query 399</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1828 · 0.16 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2018-08-10T15:18:17Z&quot;];
+nw(if:(lat()&gt;number(changeset())))(51.553291,12.854032,51.587290,12.976764)-&gt;.s0;
+.s0 out;
+.s0 out count;
+.s0 out ids 1000;
+</pre><h2>Lines only this query runs (4)</h2><ul><li><a href="../src/overpass_api/statements/item_geometry.h.html#L265">overpass_api/statements/item_geometry.h:265</a></li><li><a href="../src/overpass_api/statements/item_geometry.h.html#L266">overpass_api/statements/item_geometry.h:266</a></li><li><a href="../src/overpass_api/statements/item_geometry.h.html#L271">overpass_api/statements/item_geometry.h:271</a></li><li><a href="../src/overpass_api/statements/item_geometry.h.html#L272">overpass_api/statements/item_geometry.h:272</a></li></ul></main></body></html>

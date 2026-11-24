@@ -1,4 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 500</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 500</p><h1>Query 500</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:609 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::changeset)];
-nwr[&quot;check_date&quot;=&quot;2026-10-14&quot;]-&gt;.s2;
-.s2 out meta;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 500</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 500</p><h1>Query 500</h1><p class="muted">fuzz:3::774 · 0.23 s CPU · expected status <code>ok</code></p><pre class="query">nwr(44.635085,-63.538905,44.678294,-63.519813)-&gt;.s0;
+way(bn.s0)[&quot;maxspeed&quot;=&quot;40&quot;]-&gt;.s1;
+.s0 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

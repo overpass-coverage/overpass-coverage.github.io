@@ -1,5 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 396</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 396</p><h1>Query 396</h1><p class="muted">fuzz:3:history,complete:2050 · 0.61 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][date:&quot;2016-08-05T12:44:36Z&quot;];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 396</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 396</p><h1>Query 396</h1><p class="muted">fuzz:3:history,complete:2050 · 0.79 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][date:&quot;2016-08-05T12:44:36Z&quot;];
 node[&quot;tunnel&quot;]-&gt;.s0;
 .s0 &lt;-&gt;.s1;
 rel(bw.s1)[&quot;tactile_paving&quot;]-&gt;.s2;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

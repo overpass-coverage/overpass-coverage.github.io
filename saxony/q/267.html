@@ -1,7 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 267</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 267</p><h1>Query 267</h1><p class="muted">fuzz:4:history,complete,output:826 · 0.17 s CPU · expected status <code>ok</code></p><pre class="query">[diff:&quot;2010-10-24T06:26:40Z&quot;,&quot;2019-07-25T13:44:12Z&quot;];
-rel(id:3796647,20785556)-&gt;.s0;
-complete(6).s0-&gt;.s1 { }
-complete(4).s1-&gt;.s2 { }
-node(around.s2:100)-&gt;.s3;
-.s0 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 267</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 267</p><h1>Query 267</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:898 · 0.58 s CPU · expected status <code>ok</code></p><pre class="query">[out:xml][date:&quot;2020-03-09T12:29:03Z&quot;];
+node[&quot;building:levels&quot;=&quot;4&quot;]-&gt;.s0;
+way(bn.s0)-&gt;.s2;
+if ((s2.sum(length())&gt;=42)) { }
+.s0 out count;
+.s0 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

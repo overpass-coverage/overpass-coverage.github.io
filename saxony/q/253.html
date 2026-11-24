@@ -1,5 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 253</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 253</p><h1>Query 253</h1><p class="muted">fuzz:4:history,complete,output:220 · 0.17 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2023-06-27T11:38:54Z&quot;];
-nw(if:version()&gt;2)(50.549417,12.039353,50.647543,12.275673)[&quot;foot&quot;=&quot;designated&quot;]-&gt;.s0;
-timeline(relation,3)-&gt;.s1;
-.s1 out;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/tag_value.h.html#L564">overpass_api/statements/tag_value.h:564</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 253</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 253</p><h1>Query 253</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3604 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">area[name=&quot;Hermsdorf&quot;]-&gt;.s1;
+(.s1; - .s1;)-&gt;.s5;
+out;
+.s1 out count;
+.s1 out ids 1000;
+.s5 out count;
+.s5 out ids 1000;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

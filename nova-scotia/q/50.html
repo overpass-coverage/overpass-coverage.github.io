@@ -1,5 +1,27 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 50</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 50</p><h1>Query 50</h1><p class="muted">fuzz:4:evaluators:288 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">nwr[&quot;railway&quot;!~&quot;abandoned|level_crossing|rail|switch&quot;](44.608434,-63.781441,44.639228,-63.768187)-&gt;.s0;
-if ((s0.sum((changeset()*count_tags()))&gt;=3)) { make yes n=s0.count(nwr)-&gt;.s1; } else { }
-if ((s1.sum(count_tags())&gt;10)) { make yes n=s1.count(nwr)-&gt;.s2; }
-.s2 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 50</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 50</p><h1>Query 50</h1><p class="muted">fuzz:3:areas,complete:2889 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[bbox:44.475823,-64.509530,44.563834,-64.246667];
+nwr[&quot;brand:wikidata&quot;=&quot;Q2974996&quot;]-&gt;.s0;
+area[name=&quot;Lake Pleasant&quot;]-&gt;.s1;
+node(area.s1)-&gt;.s2;
+area[name=&quot;Green Bay&quot;]-&gt;.s3;
+nwr(area.s3)[&quot;layer&quot;=&quot;1&quot;]-&gt;.s4;
+nwr(pivot.s3)-&gt;.s5;
+way(r.s1)-&gt;.s6;
+foreach.s6-&gt;.it{ }
+.s1 out ids center;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
+.s5 out count;
+.s5 out ids 1000;
+.s6 out count;
+.s6 out ids 1000;
+.it out count;
+.it out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

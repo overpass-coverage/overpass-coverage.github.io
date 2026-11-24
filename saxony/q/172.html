@@ -1,6 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 172</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 172</p><h1>Query 172</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3080 · 1.26 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Shops&quot;;[&quot;check_date&quot;=&quot;2022-05-23&quot;];)(&quot;Roads&quot;;)];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 172</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 172</p><h1>Query 172</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3080 · 1.89 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Shops&quot;;[&quot;check_date&quot;=&quot;2022-05-23&quot;];)(&quot;Roads&quot;;)];
 nwr(if:lrs_in((count_tags()/version()),&quot;1;2&quot;))[&quot;highway&quot;=&quot;secondary&quot;]-&gt;.s0;
 .s0 &lt;&lt;-&gt;.s1;
 (.s1; - .s1;)-&gt;.s2;
 .s1 out asc;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
 </pre><h2>Lines only this query runs (2)</h2><ul><li><a href="../src/overpass_api/statements/set_list_operators.cc.html#L89">overpass_api/statements/set_list_operators.cc:89</a></li><li><a href="../src/overpass_api/statements/set_list_operators.cc.html#L95">overpass_api/statements/set_list_operators.cc:95</a></li></ul></main></body></html>

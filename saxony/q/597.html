@@ -1,4 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 597</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 597</p><h1>Query 597</h1><p class="muted">fuzz:4:evaluators:947 · 0.00 s CPU · expected status <code>query-error: line N: parse error: Function &quot;nosuchfunc&quot; not known</code></p><pre class="query">way[&quot;direction&quot;!~&quot;^back&quot;]-&gt;.s0;
-make stat k0=lrs_union(s0.u(lrs_min(&quot;a;b;c&quot;))),bad=nosuchfunc()-&gt;.s1;
-out;
-</pre><h2>Lines only this query runs (3)</h2><ul><li><a href="../src/overpass_api/statements/statement.cc.html#L234">overpass_api/statements/statement.cc:234</a></li><li><a href="../src/overpass_api/statements/statement.cc.html#L235">overpass_api/statements/statement.cc:235</a></li><li><a href="../src/overpass_api/statements/statement.cc.html#L236">overpass_api/statements/statement.cc:236</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 597</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 597</p><h1>Query 597</h1><p class="muted">fuzz:4:history,complete,evaluators:559 · 2.15 s CPU · expected status <code>ok</code></p><pre class="query">[diff:&quot;2025-04-02T10:41:48Z&quot;];
+nw[&quot;species:de&quot;=&quot;Berg-Ahorn&quot;]-&gt;.s0;
+way(around.s0:100)-&gt;.s1;
+.s1 out  center;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

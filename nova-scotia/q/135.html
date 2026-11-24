@@ -1,5 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 135</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 135</p><h1>Query 135</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1428 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::otype)];
-nwr[&quot;frequency&quot;!=&quot;60&quot;](around:10,45.405821,-62.414372)[&quot;maxspeed&quot;!=&quot;30&quot;]-&gt;.s0;
-.s0 convert stat ::id=id(),k0=(!(count_distinct_by_role(&quot;&quot;)&lt;=(is_closed()?(count_distinct_by_role(&quot;in&quot;)):(count_distinct_by_role(&quot;house&quot;))))),::geom=center(geom()),k2=type(),k1=date(suffix(id())),k3=lrs_min(lrs_isect(lrs_union(t[&quot;addr:county&quot;],&quot;name&quot;),lrs_union(&quot;a;b;c&quot;,lrs_union(t[&quot;natural&quot;],&quot;name&quot;))))-&gt;.s1;
-.s0 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 135</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 135</p><h1>Query 135</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:684 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2018-06-26T15:29:16Z&quot;];
+way(id:97633491,632509882)-&gt;.s0;
+way.s0(if:uid()&gt;21000000)-&gt;.s1;
+.s0 map_to_area-&gt;.s2;
+.s2 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

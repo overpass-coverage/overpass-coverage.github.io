@@ -1,6 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 322</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 322</p><h1>Query 322</h1><p class="muted">fuzz:4:statements,areas:230 · 0.50 s CPU · expected status <code>ok</code></p><pre class="query">[bbox:45.614113,-64.701936,45.635807,-64.377850];
-area[boundary]-&gt;.s1;
-nwr(area.s1)-&gt;.s2;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 322</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 322</p><h1>Query 322</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3127 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">rel(around:500,45.068758,-64.618020)-&gt;.s0;
+foreach.s0-&gt;.it{ .it out; }
 out;
-.s2 out meta;
-</pre><h2>Lines only this query runs (4)</h2><ul><li><a href="../src/overpass_api/statements/query.cc.html#L161">overpass_api/statements/query.cc:161</a></li><li><a href="../src/overpass_api/statements/query.cc.html#L162">overpass_api/statements/query.cc:162</a></li><li><a href="../src/overpass_api/statements/query.cc.html#L163">overpass_api/statements/query.cc:163</a></li><li><a href="../src/overpass_api/statements/query.cc.html#L164">overpass_api/statements/query.cc:164</a></li></ul></main></body></html>
+.s0 out count;
+.s0 out ids 1000;
+.it out count;
+.it out ids 1000;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

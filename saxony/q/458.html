@@ -1,5 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 458</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 458</p><h1>Query 458</h1><p class="muted">fuzz:4:history,complete,evaluators:847 · 0.52 s CPU · expected status <code>ok</code></p><pre class="query">[diff:&quot;2015-06-02T10:26:31Z&quot;];
-rel(id:424388,1507641,2410075,3924703,5921725)-&gt;.s0;
-complete(2).s0-&gt;.s1 { }
-.s1 out  center;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 458</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 458</p><h1>Query 458</h1><p class="muted">fuzz:3:history,complete:110 · 0.26 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2014-08-21T09:14:26Z&quot;];
+way(51.261387,13.554515,51.290706,13.699473)-&gt;.s0;
+way.s0(541909495)-&gt;.s2;
+.s0 out;
+.s0 out count;
+.s0 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

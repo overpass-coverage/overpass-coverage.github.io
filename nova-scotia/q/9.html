@@ -1,13 +1,15 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 9</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 9</p><h1>Query 9</h1><p class="muted">fuzz:4:poi,areas:340 · 0.50 s CPU · expected status <code>ok</code></p><pre class="query">[out:json];
-(
-  relation[&quot;natural&quot;](around:500,43.707976,-65.778435);
-  relation[&quot;maxspeed&quot;~&quot;100|20|30|50|80&quot;][&quot;man_made&quot;~&quot;Paint\\ |reside|track&quot;,i](around:500,43.707976,-65.778435);
-  node[&quot;postal_code&quot;](around:1000,43.707976,-65.778435);
-  way(around:500,43.707976,-65.778435);
-  way[&quot;railway&quot;];
-  nwr[&quot;motor_vehicle&quot;~&quot;no&quot;][&quot;admin_level&quot;~&quot;12|semide&quot;](around:5000,43.707976,-65.778435);
-  node[&quot;amenity&quot;~&quot;place_of_worship|restaurant|waste_basket&quot;](around:500,43.707976,-65.778435);
-  way[&quot;tracktype&quot;](around:1000,43.707976,-65.778435);
-);
-out tags center;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/expat/escape_json.cc.html#L31">expat/escape_json.cc:31</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 9</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 9</p><h1>Query 9</h1><p class="muted">fuzz:4:evaluators:331 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:json];
+rel(id:9337964)-&gt;.s0;
+for.s0-&gt;.s1 (keys()) { make group value=_.val,count=count(nwr); }
+make info c=s1.max(date(t[&quot;building&quot;])),v=s1.u(suffix(t[&quot;frequency&quot;])),n=1-&gt;.s2;
+.s2 convert stat k3=(((!1)&amp;&amp;lrs_in(&quot;village&quot;,lrs_union(t[&quot;building&quot;],&quot;name&quot;)))&amp;&amp;(number(id())&gt;count_distinct_by_role(&quot;in&quot;))),!&quot;ref&quot;,k0=lrs_max(lrs_union(lrs_union(&quot;a;b;c&quot;,lrs_union(t[&quot;admin_level&quot;],&quot;name&quot;)),lrs_isect(lrs_union(t[&quot;operator:wikidata&quot;],&quot;name&quot;),&quot;1;2&quot;))),k2=is_number(((!is_closed())?((is_date(t[&quot;voltage&quot;])?(timestamp()):(user()))):(count_tags()))),k1=lrs_union(lrs_isect(&quot;a;b;c&quot;,lrs_union(&quot;a;b;c&quot;,t[&quot;power&quot;])),lrs_union(lrs_union(t[&quot;addr:suburb&quot;],&quot;name&quot;),lrs_union(lrs_union(t[&quot;water&quot;],&quot;name&quot;),t[&quot;light:colour&quot;])))-&gt;.s3;
+.s0 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/item_geometry.h.html#L70">overpass_api/statements/item_geometry.h:70</a></li></ul></main></body></html>

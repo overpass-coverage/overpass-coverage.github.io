@@ -1,4 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 617</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 617</p><h1>Query 617</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3342 · 1.69 s CPU · expected status <code>ok</code></p><pre class="query">[out:xml][date:&quot;2018-10-17T18:45:27Z&quot;];
-nwr(poly:&quot;50.417478 12.448995 50.413868 12.438378 50.413342 12.440971 50.412708 12.441593 50.412835 12.439069 50.412227 12.442669 50.410256 12.437590 50.407749 12.439953 50.408699 12.442572 50.408108 12.449872&quot;)-&gt;.s0;
-rel(r.s0:&quot;backward&quot;)-&gt;.s1;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/data/collect_members.cc.html#L580">overpass_api/data/collect_members.cc:580</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 617</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 617</p><h1>Query 617</h1><p class="muted">fuzz:3:areas,complete:2806 · 0.22 s CPU · expected status <code>ok</code></p><pre class="query">rel(around:100,51.388012,12.489449)-&gt;.s0;
+is_in(51.071938,13.777282)-&gt;.s2;
+node(area.s2)(50.253626,12.227033,50.268789,12.257803)-&gt;.s3;
+.s0 out;
+.s0 out count;
+.s0 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

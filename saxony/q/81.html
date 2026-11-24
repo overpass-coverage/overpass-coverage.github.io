@@ -1,5 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 81</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 81</p><h1>Query 81</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1579 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2018-10-31T20:40:06Z&quot;];
-node[&quot;denotation&quot;](51.121563,14.388383,51.216258,14.804996)(poly:&quot;51.193996 14.509771 51.194894 14.508579 51.197446 14.508045 51.193708 14.500832 51.189711 14.504173 51.188858 14.505415 51.189420 14.507093 51.186415 14.508614 51.191270 14.509587 51.190696 14.512314&quot;)-&gt;.s0;
-node.s0-&gt;.s3;
-.s3 out  (51.163629,12.934981,51.239069,12.995553);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 81</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 81</p><h1>Query 81</h1><p class="muted">fuzz:3:areas,complete:2153 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">area[name=&quot;Schönheide&quot;]-&gt;.s1;
+nwr(area.s1)[&quot;power&quot;=&quot;substation&quot;]-&gt;.s2;
+.s1 out;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/data/tilewise_geometry.h.html#L682">overpass_api/data/tilewise_geometry.h:682</a></li></ul></main></body></html>

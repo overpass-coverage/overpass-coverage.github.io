@@ -1,4 +1,18 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 279</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 279</p><h1>Query 279</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:865 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">area[name=&quot;Northeast Cove&quot;]-&gt;.s1;
-make stat k0=s1.min((t[&quot;height&quot;]==&quot;110&quot;?(suffix(t[&quot;poles&quot;])):(id()))),k1=abs((s1.sum(number(user()))-number(s1.u(count_distinct_by_role(&quot;outer&quot;))))),k2=s1.max(version())-&gt;.s4;
-.s4 out;
-</pre><h2>Lines only this query runs (3)</h2><ul><li><a href="../src/overpass_api/statements/tag_value.cc.html#L833">overpass_api/statements/tag_value.cc:833</a></li><li><a href="../src/overpass_api/statements/tag_value.h.html#L570">overpass_api/statements/tag_value.h:570</a></li><li><a href="../src/overpass_api/statements/ternary_operator.cc.html#L186">overpass_api/statements/ternary_operator.cc:186</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 279</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 279</p><h1>Query 279</h1><p class="muted">fuzz:4:history,areas,complete,statements:979 · 1.66 s CPU · expected status <code>ok</code></p><pre class="query">[diff:&quot;2011-06-14T14:02:01Z&quot;];
+node[&quot;water_source&quot;=&quot;main&quot;]-&gt;.s0;
+.s0 &lt;-&gt;.s1;
+is_in(44.140510,-66.176193)-&gt;.s2;
+node(area.s2)(46.240204,-61.332010,46.248298,-61.261430)-&gt;.s3;
+nwr[&quot;destination:ref&quot;~&quot;^NS 111 South$&quot;]-&gt;.s4;
+.s1 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

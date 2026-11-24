@@ -1,5 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 35</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 35</p><h1>Query 35</h1><p class="muted">fuzz:4:history,complete,evaluators:11 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2014-04-09T08:50:24Z&quot;];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 35</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 35</p><h1>Query 35</h1><p class="muted">fuzz:4:history,complete,evaluators:11 · 0.07 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2014-04-09T08:50:24Z&quot;];
 node(50.667120,13.382359,50.693675,13.422322)-&gt;.s0;
 .s0 convert stat k0=suffix((is_closed()?(user()):(type()))),k2=user(),::id=id(),k1=lrs_min(id())-&gt;.s3;
 .s0 out   12;
+.s0 out count;
+.s0 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

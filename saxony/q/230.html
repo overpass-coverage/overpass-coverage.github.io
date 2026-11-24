@@ -1,5 +1,15 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 230</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 230</p><h1>Query 230</h1><p class="muted">fuzz:4:history,complete,output:825 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2020-03-09T12:29:03Z&quot;];
-node(around:100,50.211391,12.229826)[i][&quot;created_by&quot;!~&quot;JOSM&quot;]-&gt;.s0;
-node.s0-&gt;.s1;
-.s1 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 230</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 230</p><h1>Query 230</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1492 · 0.71 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2018-05-17T22:44:46Z&quot;];
+is_in(51.262708,14.172953)-&gt;.s1;
+way(area.s1)[&quot;start_date&quot;=&quot;1779&quot;]-&gt;.s2;
+area[name=&quot;Schafteich&quot;]-&gt;.s4;
+way(area.s4)(50.748993,13.353394,50.758460,13.434652)-&gt;.s5;
+.s2 out;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
+.s5 out count;
+.s5 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,5 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 255</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 255</p><h1>Query 255</h1><p class="muted">fuzz:4:poi,areas:88 · 0.08 s CPU · expected status <code>ok</code></p><pre class="query">way[&quot;length&quot;=&quot;4.2&quot;]-&gt;.s0;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 255</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 255</p><h1>Query 255</h1><p class="muted">fuzz:4:poi,areas:88 · 0.10 s CPU · expected status <code>ok</code></p><pre class="query">way[&quot;length&quot;=&quot;4.2&quot;]-&gt;.s0;
 area[name=&quot;Rocky Lake&quot;]-&gt;.s1;
 nwr(area.s1)[&quot;building:levels&quot;=&quot;7&quot;]-&gt;.s2;
 .s0 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

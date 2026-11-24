@@ -1,6 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 94</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 94</p><h1>Query 94</h1><p class="muted">fuzz:4:evaluators:991 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">wr(around:500,45.778504,-60.741217)-&gt;.s0;
-way.s0-&gt;.s1;
-way.s0-&gt;.s2;
-.s1 convert row k2=lrs_isect(lrs_union(lrs_union(&quot;1;2&quot;,lrs_union(t[&quot;fire_hydrant:type&quot;],&quot;name&quot;)),user()),&quot;1;2&quot;),k0=suffix(id()),k3=((is_number(t[&quot;colour&quot;])?(abs(id())):(date(timestamp())))*abs((uid()/length()))),::geom=lstr(pt(44.247245,-65.802882)),members=per_member(mtype()+&quot;/&quot;+ref()),k1=suffix((t[&quot;emergency&quot;]==&quot;Accord&quot;?((id()+timestamp())):(count_members())))-&gt;.s3;
-.s2 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 94</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 94</p><h1>Query 94</h1><p class="muted">fuzz:4:evaluators:596 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">rel(45.590005,-61.205350,45.629865,-61.201017)-&gt;.s0;
+for.s0-&gt;.s1 (keys()) { }
+.s1 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

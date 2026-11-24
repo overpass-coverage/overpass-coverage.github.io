@@ -1,12 +1,16 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 2</p><h1>Query 2</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3164 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::&quot;count:nodes&quot;,&quot;admin_level&quot;,::changeset;false;&quot;,&quot;)];
-way(around:500,43.604508,-65.395599)-&gt;.s0;
-.s0 convert row k2=number(lrs_min(lrs_union(lrs_union(t[&quot;addr:street&quot;],&quot;name&quot;),t[&quot;power&quot;]))),k0=abs(uid()),k1=timestamp(),::geom=hull(geom())-&gt;.s1;
-(.s1;)-&gt;.s2;
-area[name=&quot;Clearwater Lake&quot;]-&gt;.s3;
-way(area.s3)[&quot;destination&quot;=&quot;Port Hawkesbury;Antigonish;Canso Causeway&quot;]-&gt;.s4;
-.s4 &lt;&lt;-&gt;.s5;
-foreach.s3-&gt;.it{ .it out ids; (.it; .it &gt;;)-&gt;.x; .x out count; }
-.s3 convert row ::id=id(),tags=count_tags();
-out;
-.s3 out 5;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/output_formats/output_csv.cc.html#L213">overpass_api/output_formats/output_csv.cc:213</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 2</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 2</p><h1>Query 2</h1><p class="muted">fuzz:3:history,complete:34 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2012-02-11T18:02:07Z&quot;];
+node(if:number(t[&quot;destination:forward&quot;])&gt;44)(poly:&quot;45.743436 -63.157855 45.749738 -63.164863 45.753014 -63.161203 45.755578 -63.166453 45.749177 -63.178468 45.756171 -63.184918 45.751509 -63.188272 45.753447 -63.193045 45.752808 -63.193474 45.732776 -63.164291&quot;)[!&quot;postal_code&quot;]-&gt;.s0;
+complete(6).s0-&gt;.s1 { }
+.s0 &gt;&gt;-&gt;.s2;
+complete(1).s1-&gt;.s3 { node(w); way(bn)[&quot;addr:street&quot;]; }
+.s1 out  center;
+.s2 out skel;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

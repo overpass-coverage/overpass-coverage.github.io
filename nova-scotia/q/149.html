@@ -1,5 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 149</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 149</p><h1>Query 149</h1><p class="muted">fuzz:3::1059 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::lat,::lon)];
-rel(id:1355331,7061545)-&gt;.s0;
-.s0 &lt;&lt;-&gt;.s1;
-.s1 out  geom;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 149</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 149</p><h1>Query 149</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1514 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:json];
+nw(45.527623,-62.516827,45.536865,-62.514109)-&gt;.s0;
+.s0 convert stat ::id=id(),::geom=trace(geom()),k0=suffix(type())-&gt;.s1;
+.s1 out  (45.383120,-62.336545,45.384763,-62.308109);
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

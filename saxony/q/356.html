@@ -1,4 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 356</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 356</p><h1>Query 356</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2524 · 0.43 s CPU · expected status <code>ok</code></p><pre class="query">way[&quot;destination:symbol&quot;~&quot;^train_statio&quot;]-&gt;.s0;
-make stat k0=s0.sum(abs(count_members())),k1=suffix(lrs_union(s0.min((is_date(t[&quot;cycleway:both&quot;])?(suffix(t[&quot;entrance&quot;])):(type()))),s0.max(id()))),k2=(((s0.sum(lrs_max(&quot;1;2&quot;))&lt;1e3)?(number(s0.u(suffix(t[&quot;width&quot;])))):(s0.count(nw)))/(s0.sum(number(timestamp()))*s0.sum(lrs_min(t[&quot;width&quot;])))),::geom=center(trace(s0.gcat(geom())))-&gt;.s1;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 356</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 356</p><h1>Query 356</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:985 · 0.29 s CPU · expected status <code>ok</code></p><pre class="query">nw(51.308864,12.983177,51.356749,12.985647)-&gt;.s0;
+node(way_link.s0:2-)-&gt;.s2;
+.s2 is_in-&gt;.s3;
 .s0 out;
+.s0 out count;
+.s0 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,6 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 613</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 613</p><h1>Query 613</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3690 · 0.19 s CPU · expected status <code>ok</code></p><pre class="query">rel[&quot;surface&quot;=&quot;sett&quot;]-&gt;.s0;
-make stat k0=s0.min(lon()),k1=s0.max(t[&quot;ref&quot;]),::geom=s0.gcat(center(geom()))-&gt;.s1;
-(.s0; - .s1;)-&gt;.s2;
-.s2 convert item !&quot;barrier&quot;,::id=id(),::=::,::geom=center(geom()),k0=((is_number(id())?(count_by_role(&quot;historic&quot;)):((1?(id()):(count_members()))))==(-number(t[&quot;addr:country&quot;]))),k1=lrs_union(lrs_isect(t[&quot;addr:city&quot;],lrs_union(t[&quot;addr:housenumber&quot;],&quot;1;2&quot;)),t[&quot;natural&quot;])-&gt;.s3;
-.s2 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 613</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 613</p><h1>Query 613</h1><p class="muted">fuzz:3:history,complete:337 · 0.09 s CPU · expected status <code>ok</code></p><pre class="query">nw(50.856057,13.520169,50.882631,13.536104)-&gt;.s0;
+complete(4).s0-&gt;.s1 { }
+way(around.s1:300)[&quot;destination:forward&quot;=&quot;Rückersdorf&quot;]-&gt;.s2;
+node(way_cnt.s1:1)-&gt;.s4;
+.s4 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

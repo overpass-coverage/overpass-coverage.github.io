@@ -1,11 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 51</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 51</p><h1>Query 51</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2043 · 1.41 s CPU · expected status <code>ok</code></p><pre class="query">node[!&quot;capacity&quot;](id:5041829408,7325426303)[&quot;roof:orientation&quot;~&quot;^acr&quot;](newer:&quot;2009-08-20T10:38:57Z&quot;)-&gt;.s0;
-area[name=&quot;Wilhelm-Liebknecht-Platz&quot;]-&gt;.s1;
-way(area.s1)-&gt;.s2;
-area(3605876617)-&gt;.s3;
-node(area.s3)-&gt;.s4;
-node.s3(if:((suffix(suffix(t[&quot;level&quot;]))+(is_tag(&quot;name&quot;)?(suffix(t[&quot;roof:levels&quot;])):(timestamp())))&lt;type()))-&gt;.s5;
-rel(pivot.s1)-&gt;.s6;
-.s3 convert row ::id=id(),tags=count_tags();
-.s5 out qt;
-.s6 out skel;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 51</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 51</p><h1>Query 51</h1><p class="muted">fuzz:3:history,complete:674 · 1.09 s CPU · expected status <code>ok</code></p><pre class="query">[adiff:&quot;2013-08-25T02:13:56Z&quot;,&quot;2023-05-18T08:35:31Z&quot;];
+nw(50.533580,13.074570,50.569563,13.115626)-&gt;.s0;
+complete(5).s0-&gt;.s1 { }
+.s0 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,4 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 154</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 154</p><h1>Query 154</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1428 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">nwr[&quot;service&quot;!=&quot;parking_aisle&quot;](around:10,51.259154,14.200932)[&quot;amenity&quot;!=&quot;recycling&quot;]-&gt;.s0;
-.s0 convert stat ::id=id(),k0=(!(count_distinct_by_role(&quot;platform&quot;)&lt;=(is_closed()?(count_distinct_by_role(&quot;shelter&quot;)):(count_distinct_by_role(&quot;historic&quot;))))),::geom=center(geom()),k2=type(),k1=date(suffix(id())),k3=lrs_min(lrs_isect(lrs_union(t[&quot;smoothness&quot;],&quot;name&quot;),lrs_union(&quot;a;b;c&quot;,lrs_union(t[&quot;source&quot;],&quot;name&quot;))))-&gt;.s1;
-.s0 out;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/binary_operators.cc.html#L276">overpass_api/statements/binary_operators.cc:276</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 154</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 154</p><h1>Query 154</h1><p class="muted">fuzz:4:history,complete,evaluators:748 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">node(8001348717)-&gt;.s0;
+node.s0(if:is_date(suffix(suffix(id()))))-&gt;.s1;
+if ((s1.count(nr)&lt;s1.min(abs(count_distinct_by_role(&quot;platform_exit_only&quot;))))) { } else { make no n=0-&gt;.s2; }
+make stat k0=s2.sum(number(t[&quot;addr:city&quot;])),k1=number(s2.u(lrs_min(&quot;1;2&quot;))),k2=s2.set(id()),::geom=center(s2.gcat(center(geom())))-&gt;.s3;
+.s2 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+</pre><h2>Lines only this query runs (5)</h2><ul><li><a href="../src/overpass_api/statements/aggregators.cc.html#L394">overpass_api/statements/aggregators.cc:394</a></li><li><a href="../src/overpass_api/statements/aggregators.cc.html#L395">overpass_api/statements/aggregators.cc:395</a></li><li><a href="../src/overpass_api/statements/aggregators.cc.html#L452">overpass_api/statements/aggregators.cc:452</a></li><li><a href="../src/overpass_api/statements/aggregators.cc.html#L453">overpass_api/statements/aggregators.cc:453</a></li><li><a href="../src/overpass_api/statements/aggregators.cc.html#L455">overpass_api/statements/aggregators.cc:455</a></li></ul></main></body></html>

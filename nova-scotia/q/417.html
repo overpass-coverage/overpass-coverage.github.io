@@ -1,4 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 417</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 417</p><h1>Query 417</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2089 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[diff:&quot;2015-05-08T18:11:26Z&quot;];
-node(if:((is_number(&quot;B2X 1T5&quot;)?(uid()):(number(suffix(t[&quot;type&quot;]))))&gt;=abs(date(id()))))[&quot;demolished:railway&quot;=&quot;rail&quot;]-&gt;.s0;
-.s0 compare(delta:t[&quot;light:colour&quot;])-&gt;.s2 { .s2 out count; }
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 417</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 417</p><h1>Query 417</h1><p class="muted">fuzz:3:history,complete:2097 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2015-01-02T12:02:02Z&quot;];
+node(1146989712)-&gt;.s0;
+way(bn.s0)[&quot;highway&quot;]-&gt;.s1;
+.s0 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

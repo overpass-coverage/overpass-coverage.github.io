@@ -1,5 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 239</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 239</p><h1>Query 239</h1><p class="muted">fuzz:4:statements,areas:936 · 0.93 s CPU · expected status <code>ok</code></p><pre class="query">area[name=&quot;Augustusplatz&quot;]-&gt;.s1;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 239</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 239</p><h1>Query 239</h1><p class="muted">fuzz:4:statements,areas:936 · 1.27 s CPU · expected status <code>ok</code></p><pre class="query">area[name=&quot;Augustusplatz&quot;]-&gt;.s1;
 rel(area.s1)-&gt;.s2;
 node[~&quot;bali&quot;~&quot;2&quot;,i]-&gt;.s4;
 .s2 out;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
 </pre><h2>Lines only this query runs (9)</h2><ul><li><a href="../src/overpass_api/frontend/map_ql_parser.cc.html#L959">overpass_api/frontend/map_ql_parser.cc:959</a></li><li><a href="../src/overpass_api/frontend/map_ql_parser.cc.html#L960">overpass_api/frontend/map_ql_parser.cc:960</a></li><li><a href="../src/overpass_api/frontend/map_ql_parser.cc.html#L961">overpass_api/frontend/map_ql_parser.cc:961</a></li><li><a href="../src/overpass_api/frontend/map_ql_parser.cc.html#L1129">overpass_api/frontend/map_ql_parser.cc:1129</a></li><li><a href="../src/overpass_api/frontend/map_ql_parser.cc.html#L1130">overpass_api/frontend/map_ql_parser.cc:1130</a></li><li><a href="../src/overpass_api/frontend/map_ql_parser.cc.html#L1131">overpass_api/frontend/map_ql_parser.cc:1131</a></li><li><a href="../src/overpass_api/frontend/map_ql_parser.cc.html#L1132">overpass_api/frontend/map_ql_parser.cc:1132</a></li><li><a href="../src/overpass_api/frontend/map_ql_parser.cc.html#L1133">overpass_api/frontend/map_ql_parser.cc:1133</a></li><li><a href="../src/overpass_api/frontend/map_ql_parser.cc.html#L1134">overpass_api/frontend/map_ql_parser.cc:1134</a></li></ul></main></body></html>

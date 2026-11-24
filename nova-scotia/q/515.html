@@ -1,2 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 515</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 515</p><h1>Query 515</h1><p class="muted">bench:queries-areas/a4_is_in_cafes.ql · 0.00 s CPU · expected status <code>ok</code></p><pre class="query">is_in; out count;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 515</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 515</p><h1>Query 515</h1><p class="muted">fuzz:4:history,areas,complete,statements:300 · 0.08 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2022-12-03T05:39:51Z&quot;];
+node[!&quot;building&quot;](45.037877,-64.646091,45.077058,-64.612759)-&gt;.s0;
+timeline(way,4)-&gt;.s1;
+.s1-&gt;._;
+.s0 out meta;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+._ out count;
+._ out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

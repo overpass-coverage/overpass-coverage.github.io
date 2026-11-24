@@ -1,5 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 446</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 446</p><h1>Query 446</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1204 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">nwr[&quot;network:wikidata&quot;=&quot;Q2516468;Q1145755&quot;]-&gt;.s0;
-node.s0-&gt;.s1;
-way(r.s0:&quot;platform_exit_only&quot;)-&gt;.s2;
-.s1 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 446</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 446</p><h1>Query 446</h1><p class="muted">fuzz:4:history,complete,evaluators:311 · 0.28 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2014-08-31T09:00:27Z&quot;];
+way(51.381832,14.226158,51.388325,14.268530)-&gt;.s0;
+way.s0[&quot;roof:direction&quot;=&quot;333.15&quot;]-&gt;.s1;
+way.s0(if:(suffix((is_number(t[&quot;railway&quot;])?(user()):(&quot;Verkehrsverbund Oberelbe&quot;)))&gt;suffix(t[&quot;oneway&quot;])))-&gt;.s2;
+.s0 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

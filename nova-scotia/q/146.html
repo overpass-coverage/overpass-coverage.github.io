@@ -1,5 +1,6 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 146</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 146</p><h1>Query 146</h1><p class="muted">fuzz:3:history,complete:659 · 1.08 s CPU · expected status <code>ok</code></p><pre class="query">[adiff:&quot;2010-09-10T20:36:28Z&quot;];
-nw[&quot;amenity&quot;~&quot;^bicycle&quot;]-&gt;.s0;
-rel(bw.s0:&quot;via&quot;)[&quot;public_bookcase:type&quot;!=&quot;wooden_cabinet&quot;]-&gt;.s2;
-.s2 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 146</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 146</p><h1>Query 146</h1><p class="muted">fuzz:4:history,complete,output:713 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;cables&quot;)];
+nw[&quot;highway&quot;!~&quot;^st&quot;](45.741632,-63.111752,45.768742,-63.102794)-&gt;.s0;
+.s0 out;
+.s0 out count;
+.s0 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

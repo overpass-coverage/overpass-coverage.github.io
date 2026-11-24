@@ -1,5 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 365</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 365</p><h1>Query 365</h1><p class="muted">fuzz:4:evaluators:518 · 0.43 s CPU · expected status <code>ok</code></p><pre class="query">wr[&quot;land_area&quot;=&quot;administrative&quot;]-&gt;.s0;
-way.s0-&gt;.s1;
-rel(bw.s0:&quot;backward&quot;)[&quot;material&quot;=&quot;wood&quot;]-&gt;.s4;
-.s1 out;
-</pre><h2>Lines only this query runs (5)</h2><ul><li><a href="../src/overpass_api/statements/recurse.cc.html#L334">overpass_api/statements/recurse.cc:334</a></li><li><a href="../src/overpass_api/statements/recurse.cc.html#L335">overpass_api/statements/recurse.cc:335</a></li><li><a href="../src/overpass_api/statements/recurse.cc.html#L336">overpass_api/statements/recurse.cc:336</a></li><li><a href="../src/overpass_api/statements/recurse.cc.html#L337">overpass_api/statements/recurse.cc:337</a></li><li><a href="../src/overpass_api/statements/recurse.cc.html#L338">overpass_api/statements/recurse.cc:338</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 365</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 365</p><h1>Query 365</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:985 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">nw(44.556230,-64.143390,44.604115,-64.140919)-&gt;.s0;
+.s0 map_to_area-&gt;.s1;
+.s1 out meta;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

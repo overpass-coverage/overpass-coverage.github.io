@@ -1,2 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 226</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 226</p><h1>Query 226</h1><p class="muted">bench:queries-poi/p09_bbox_setting_many_nwr_geom.ql · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][timeout:25][bbox:44.6440,-63.5800,44.6520,-63.5650]; (node[amenity]; way[amenity]; node[highway~&quot;^(bus_stop|crossing|elevator)$&quot;]; node[leisure]; node[shop]; way[shop]; way[tourism]; ); out geom;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 226</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 226</p><h1>Query 226</h1><p class="muted">fuzz:4:history,complete,output:825 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2020-03-09T12:29:03Z&quot;];
+node(around:100,50.211391,12.229826)[i][&quot;created_by&quot;!~&quot;JOSM&quot;]-&gt;.s0;
+node.s0-&gt;.s1;
+.s1 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

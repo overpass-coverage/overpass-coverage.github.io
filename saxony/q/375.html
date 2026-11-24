@@ -1,5 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 375</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 375</p><h1>Query 375</h1><p class="muted">fuzz:4:history,complete,evaluators:300 · 4.81 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2024-03-19T11:01:24Z&quot;];
-node[&quot;horse&quot;=&quot;no&quot;](if:is_tag(&quot;natural&quot;))-&gt;.s0;
-rel(bw.s0)-&gt;.s2;
-.s2 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 375</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 375</p><h1>Query 375</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2851 · 0.69 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2026-02-10T18:09:54Z&quot;];
+nwr(around:10,50.886728,14.300270)-&gt;.s0;
+retro(date(&quot;2022-02-18T08:11:08Z&quot;)) { node[&quot;network&quot;=&quot;Brücke Weg Moritzburg&quot;]-&gt;.s1; }
+.s1 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

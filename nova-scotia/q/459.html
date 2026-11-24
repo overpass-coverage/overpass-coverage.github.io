@@ -1,4 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 459</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 459</p><h1>Query 459</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2756 · 0.12 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(&quot;light:lit&quot;)];
-nwr(44.726728,-63.656356,44.879262,-63.638742)-&gt;.s0;
-.s0 out (46.924583,-60.529427,47.018662,-60.411746);
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 459</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 459</p><h1>Query 459</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3008 · 0.01 s CPU · expected status <code>query-error: line N: parse error: per_member(...) must have one or more arguments</code></p><pre class="query">rel[&quot;natural&quot;!=&quot;coastline&quot;]-&gt;.s0;
+node(way_cnt.s0:2-)-&gt;.s1;
+node.s1(if:per_member())-&gt;.s2;
+way-&gt;.s3;
+.s3 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/per_member.h.html#L78">overpass_api/statements/per_member.h:78</a></li></ul></main></body></html>

@@ -1,8 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 338</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 338</p><h1>Query 338</h1><p class="muted">fuzz:3:history,complete:1579 · 3.34 s CPU · expected status <code>ok</code></p><pre class="query">[diff:&quot;2011-03-22T19:31:45Z&quot;,&quot;2025-03-14T16:52:23Z&quot;];
-rel(id:1469100,2210585,2567046,9508105,13767515)-&gt;.s0;
-complete(5).s0-&gt;.s1 { node(w); }
-(.s0; .s1;)-&gt;.s2;
-complete(3).s1-&gt;.s4 { way(around:0)[&quot;highway&quot;]; }
-foreach.s4-&gt;.it{ .it out ids; }
-.s4 out tags;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/around.cc.html#L928">overpass_api/statements/around.cc:928</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 338</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 338</p><h1>Query 338</h1><p class="muted">fuzz:4:evaluators:503 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">way(45099367)-&gt;.s0;
+if ((s0.count(nw)&gt;2)) { make yes n=s0.count(nwr)-&gt;.s1; }
+make stat k0=number((s1.set(&quot;yes&quot;)+s1.min(suffix(suffix(t[&quot;emergency&quot;]))))),k1=s1.count(nw),k2=number(s1.u(id())),k3=(-((s1.min(date(suffix(t[&quot;power&quot;])))&gt;3)?(s1.count(nodes)):(s1.count(wr)))),::geom=s1.gcat(geom())-&gt;.s2;
+way(around.s1:300)-&gt;.s3;
+.s3 out  46;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,4 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 456</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 456</p><h1>Query 456</h1><p class="muted">fuzz:4:history,complete,output:459 · 0.18 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2011-02-11T09:03:37Z&quot;];
-node(44.584508,-63.623548,44.632728,-63.553899)-&gt;.s0;
-.s0 out;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 456</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 456</p><h1>Query 456</h1><p class="muted">fuzz:4:evaluators:435 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">node(43.688311,-65.135938,43.709718,-65.088062)-&gt;.s0;
+node.s0-&gt;.s1;
+node.s0(5053966879)-&gt;.s2;
+make stat k0=s2.sum((id()/count_distinct_by_role(&quot;east&quot;))),::geom=hull(s2.gcat(geom()))-&gt;.s3;
+.s1 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/geometry_endomorphisms.cc.html#L73">overpass_api/statements/geometry_endomorphisms.cc:73</a></li></ul></main></body></html>

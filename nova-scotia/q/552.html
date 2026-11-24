@@ -1,6 +1,10 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 552</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 552</p><h1>Query 552</h1><p class="muted">fuzz:4:history,areas,complete,statements:1 · 0.10 s CPU · expected status <code>ok</code></p><pre class="query">[diff:&quot;2015-05-01T23:44:57Z&quot;,&quot;2015-05-13T19:50:33Z&quot;];
-node[&quot;lanes&quot;=&quot;4&quot;]-&gt;.s0;
-rel(bw.s0)-&gt;.s1;
-.s1 compare(delta:t[&quot;addr:locality&quot;])-&gt;.s4;
-.s4 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 552</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 552</p><h1>Query 552</h1><p class="muted">upstream-test:osm3s_query_27.ql · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">&lt;osm-script timeout=&quot;3600&quot; element-limit=&quot;1073741824&quot;&gt;
+
+&lt;query type=&quot;relation&quot;&gt;
+  &lt;has-kv k=&quot;relation_key_5&quot;/&gt;
+  &lt;has-kv k=&quot;relation_key_2/4&quot;/&gt;
+&lt;/query&gt;
+&lt;print/&gt;
+
+&lt;/osm-script&gt;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

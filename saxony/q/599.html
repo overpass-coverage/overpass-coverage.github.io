@@ -1,10 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 599</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 599</p><h1>Query 599</h1><p class="muted">upstream-test:osm3s_query_26.ql · 0.00 s CPU · expected status <code>ok</code></p><pre class="query">&lt;osm-script timeout=&quot;3600&quot; element-limit=&quot;1024&quot;&gt;
-
-&lt;query type=&quot;relation&quot;&gt;
-  &lt;has-kv k=&quot;relation_key_5&quot;/&gt;
-  &lt;has-kv k=&quot;relation_key_2/4&quot;/&gt;
-&lt;/query&gt;
-&lt;print/&gt;
-
-&lt;/osm-script&gt;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 599</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 599</p><h1>Query 599</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2459 · 0.08 s CPU · expected status <code>ok</code></p><pre class="query">node(50.854480,14.778960,50.884940,14.818420)-&gt;.s0;
+(.s0;)-&gt;.s3;
+.s3 local ll-&gt;.s4;
+.s3 out;
+.s0 out count;
+.s0 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,2 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 120</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 120</p><h1>Query 120</h1><p class="muted">bench:queries-tools/t09_osmnx_features.ql · 0.90 s CPU · expected status <code>ok</code></p><pre class="query">(();(way[&#x27;amenity&#x27;=&#x27;restaurant&#x27;];);(););out;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 120</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 120</p><h1>Query 120</h1><p class="muted">fuzz:4:evaluators:592 · 0.24 s CPU · expected status <code>ok</code></p><pre class="query">way[&quot;lit&quot;=&quot;yes&quot;][&quot;building&quot;=&quot;roof&quot;]-&gt;.s0;
+.s0 convert stat ::geom=poly(lstr(pt(50.719997,13.189704),pt(50.720997,13.189704),pt(50.720997,13.190704),pt(50.719997,13.189704))),k0=lrs_min(t[&quot;gauge&quot;]),!&quot;barrier&quot;,angles=per_vertex(angle())-&gt;.s1;
+node(around.s0:0)[~&quot;^cha&quot;~&quot;yes\\|y&quot;]-&gt;.s2;
+node(way_link.s2:1)-&gt;.s3;
+.s3 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+</pre><h2>Lines only this query runs (6)</h2><ul><li><a href="../src/overpass_api/core/geometry.cc.html#L541">overpass_api/core/geometry.cc:541</a></li><li><a href="../src/overpass_api/core/geometry.cc.html#L1568">overpass_api/core/geometry.cc:1568</a></li><li><a href="../src/overpass_api/core/geometry.cc.html#L1569">overpass_api/core/geometry.cc:1569</a></li><li><a href="../src/overpass_api/core/geometry.cc.html#L1570">overpass_api/core/geometry.cc:1570</a></li><li><a href="../src/overpass_api/core/geometry.cc.html#L1571">overpass_api/core/geometry.cc:1571</a></li><li><a href="../src/overpass_api/core/geometry.cc.html#L1572">overpass_api/core/geometry.cc:1572</a></li></ul></main></body></html>

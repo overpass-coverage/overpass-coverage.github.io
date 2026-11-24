@@ -1,5 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 150</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 150</p><h1>Query 150</h1><p class="muted">fuzz:4:evaluators:854 · 0.13 s CPU · expected status <code>ok</code></p><pre class="query">[out:json];
-nwr(51.495072,14.363467,51.520558,14.429953)-&gt;.s0;
-make stat k0=s0.min(number(t[&quot;parking&quot;])),k1=s0.max(date(type())),k2=lrs_union(lrs_min(s0.set((is_closed()?(type()):(type())))),s0.min(suffix(timestamp()))),k3=(s0.count(nwr)/number(s0.u((user()+type()))))-&gt;.s1;
-.s1 out;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 150</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 150</p><h1>Query 150</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1428 · 0.17 s CPU · expected status <code>ok</code></p><pre class="query">nwr[&quot;service&quot;!=&quot;parking_aisle&quot;](around:10,51.259154,14.200932)[&quot;amenity&quot;!=&quot;recycling&quot;]-&gt;.s0;
+.s0 convert stat ::id=id(),k0=(!(count_distinct_by_role(&quot;platform&quot;)&lt;=(is_closed()?(count_distinct_by_role(&quot;shelter&quot;)):(count_distinct_by_role(&quot;historic&quot;))))),::geom=center(geom()),k2=type(),k1=date(suffix(id())),k3=lrs_min(lrs_isect(lrs_union(t[&quot;smoothness&quot;],&quot;name&quot;),lrs_union(&quot;a;b;c&quot;,lrs_union(t[&quot;source&quot;],&quot;name&quot;))))-&gt;.s1;
+.s0 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/binary_operators.cc.html#L276">overpass_api/statements/binary_operators.cc:276</a></li></ul></main></body></html>

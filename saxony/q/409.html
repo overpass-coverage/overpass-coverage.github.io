@@ -1,5 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 409</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 409</p><h1>Query 409</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2377 · 0.20 s CPU · expected status <code>ok</code></p><pre class="query">[bbox:51.098875,14.266382,51.164297,14.544552];
-node-&gt;.s1;
-area[name=&quot;Přebuz&quot;]-&gt;.s3;
-.s1 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 409</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 409</p><h1>Query 409</h1><p class="muted">fuzz:4:history,areas,complete,statements:175 · 3.06 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2021-10-17T09:51:18Z&quot;];
+rel[&quot;roof:shape&quot;]-&gt;.s0;
+nwr[~&quot;^industrial$&quot;~&quot;^logistics$&quot;][~&quot;^sid&quot;~&quot;.&quot;]-&gt;.s4;
+.s0 out;
+.s0 out count;
+.s0 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

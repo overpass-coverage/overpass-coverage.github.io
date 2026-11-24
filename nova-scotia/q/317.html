@@ -1,6 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 317</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 317</p><h1>Query 317</h1><p class="muted">fuzz:4:evaluators:355 · 0.10 s CPU · expected status <code>ok</code></p><pre class="query">node[&quot;crossing:markings&quot;=&quot;zebra&quot;]-&gt;.s0;
-make stat k0=s0.u((id()+id())),::geom=s0.gcat(geom())-&gt;.s1;
-.s1 &lt;-&gt;.s2;
-.s1 convert item ::id=id(),::=::,k0=((count_distinct_by_role(&quot;alternative&quot;)&lt;suffix(t[&quot;addr:suburb&quot;]))?(timestamp()):(lrs_min(lrs_union(lrs_union(t[&quot;addr:postcode&quot;],&quot;name&quot;),&quot;a;b;c&quot;)))),k1=lrs_min(lrs_union(lrs_isect(lrs_union(t[&quot;structure&quot;],&quot;name&quot;),&quot;a;b;c&quot;),&quot;1;2&quot;)),!&quot;water_source&quot;-&gt;.s3;
-.s2 out;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 317</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 317</p><h1>Query 317</h1><p class="muted">fuzz:3:history,complete:1513 · 0.36 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2016-12-26T13:58:32Z&quot;];
+nwr(46.155400,-60.529308,46.275966,-60.389156)-&gt;.s0;
+complete(4).s0-&gt;.s1 { }
+way(r.s0:&quot;side_stream&quot;)-&gt;.s2;
+.s1 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/data/collect_members.h.html#L494">overpass_api/data/collect_members.h:494</a></li></ul></main></body></html>

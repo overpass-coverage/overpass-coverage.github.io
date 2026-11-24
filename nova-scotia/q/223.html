@@ -1,6 +1,10 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 223</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 223</p><h1>Query 223</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:920 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">node(around:1000,45.335159,-64.500593)-&gt;.s0;
-complete(2).s0-&gt;.s1 { }
-node(w.s0:2)-&gt;.s2;
-rel(r.s2:&quot;backward&quot;)-&gt;.s3;
-.s1 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 223</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 223</p><h1>Query 223</h1><p class="muted">fuzz:3:history,complete:2342 · 0.21 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2022-11-20T22:24:51Z&quot;];
+nwr(poly:&#x27;45.517247 -62.454700 45.517572 -62.475167 45.509074 -62.464726 45.481721 -62.442625&#x27;)-&gt;.s0;
+complete(2).s0-&gt;.s3 { }
+.s0 out    6;
+.s3 out   qt;
+.s0 out count;
+.s0 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

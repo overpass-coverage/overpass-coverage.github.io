@@ -1,9 +1,18 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 5</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 5</p><h1>Query 5</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:975 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[bbox:44.665179,-65.312183,44.720067,-65.207854];
-wr(if:((is_date(t[&quot;water&quot;])||is_date(user()))||((is_tag(&quot;oneway&quot;)?(count_by_role(&quot;highest_point&quot;)):(count_members()))&lt;number(user()))))[&quot;operator&quot;](45.406177,-62.833733,45.500358,-62.825764)-&gt;.s0;
-rel.s0(if:lrs_in((lrs_min(&quot;a;b;c&quot;)+suffix(t[&quot;emergency&quot;])),lrs_isect(lrs_union(&quot;1;2&quot;,&quot;1;2&quot;),lrs_union(&quot;a;b;c&quot;,&quot;1;2&quot;))))-&gt;.s1;
-if (lrs_in(&quot;&quot;,lrs_min(s0.max((&quot;x;y&quot;+user()))))) { make yes n=s0.count(nwr)-&gt;.s2; } else { make no n=0-&gt;.s2; }
-wr(bn.s1)-&gt;.s3;
-area[name=&quot;Sucker Lake&quot;][&quot;type&quot;=&quot;multipolygon&quot;]-&gt;.s4;
-node(area.s4)[&quot;length&quot;=&quot;3&quot;]-&gt;.s5;
-.s2 out meta  noids;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 5</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 5</p><h1>Query 5</h1><p class="muted">fuzz:4:history,complete,evaluators:720 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:536870912][adiff:&quot;2012-03-25T00:38:44Z&quot;,&quot;2022-08-01T01:02:30Z&quot;];
+way(poly:&quot;45.190723 -63.696923 45.205231 -63.691495 45.178984 -63.744577&quot;)[&quot;aeroway&quot;=&quot;taxilane&quot;][&quot;aeroway&quot;=&quot;runway&quot;]-&gt;.s0;
+.s0 convert item k1=number(suffix(suffix(timestamp()))),angles=per_vertex(angle()&gt;90),k0=number(t[&quot;addr:locality&quot;]),members=per_member(pos())-&gt;.s1;
+make stat k0=s1.max((count_tags()-version())),k1=s1.sum(0),k2=s1.count(wr)-&gt;.s2;
+way.s2(if:is_number(t[&quot;surface&quot;]))-&gt;.s3;
+.s0 convert row k1=(number(&quot;&quot;)+length()),k0=((1?(suffix(t[&quot;material&quot;])):((type()+type())))+((t[&quot;footway&quot;]==&quot;50 KW&quot;?(id()):(id()))+timestamp())),::id=id()-&gt;.s4;
+.s3 out skel 16;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

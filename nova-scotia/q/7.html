@@ -1,7 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 7</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 7</p><h1>Query 7</h1><p class="muted">fuzz:3:history,complete:1653 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2019-08-30T01:16:32Z&quot;];
-rel(id:7079297,7705808,9242166,13444913)-&gt;.s0;
-.s0 &gt;-&gt;.s1;
-way(bn.s0)-&gt;.s2;
-.s0 out meta;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 7</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 7</p><h1>Query 7</h1><p class="muted">fuzz:4:history,areas,complete,statements:182 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[bbox:44.829595,-64.907480,44.852489,-64.806494][adiff:&quot;2011-02-15T23:17:15Z&quot;,&quot;2026-10-03T11:57:20Z&quot;];
+nw[&quot;brand:wikidata&quot;=&quot;Q7366633&quot;](44.902849,-63.723871,45.027464,-63.458359)-&gt;.s0;
+()-&gt;.s2;
+.s2 compare(delta:is_tag(&quot;ref&quot;))-&gt;.s3;
+.s0 out  geom;
+.s0 out count;
+.s0 out ids 1000;
 .s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,6 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 611</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 611</p><h1>Query 611</h1><p class="muted">fuzz:4:output:961 · 5.33 s CPU · expected status <code>ok</code></p><pre class="query">rel[&quot;length&quot;!~&quot;^2&quot;]-&gt;.s0;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 611</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 611</p><h1>Query 611</h1><p class="muted">fuzz:4:output:961 · 7.58 s CPU · expected status <code>ok</code></p><pre class="query">rel[&quot;length&quot;!~&quot;^2&quot;]-&gt;.s0;
 .s0 &gt;&gt;-&gt;.s1;
 rel.s0(if:count_tags()&gt;3)-&gt;.s2;
 node(way_link.s1:3-)-&gt;.s3;
 .s3 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
 </pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/tag_value.cc.html#L777">overpass_api/statements/tag_value.cc:777</a></li></ul></main></body></html>

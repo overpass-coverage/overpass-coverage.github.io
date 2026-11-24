@@ -1,4 +1,15 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 292</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 292</p><h1>Query 292</h1><p class="muted">fuzz:3::958 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">nwr(51.225754,13.479472,51.356471,13.587505)[&quot;bench&quot;=&quot;yes&quot;][~&quot;^con&quot;~&quot;\\+49\\ 174&quot;]-&gt;.s0;
-rel.s0-&gt;.s1;
-.s1 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 292</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 292</p><h1>Query 292</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3794 · 1.15 s CPU · expected status <code>ok</code></p><pre class="query">[adiff:&quot;2019-12-14T13:57:53Z&quot;,&quot;2021-07-25T12:57:29Z&quot;];
+way(id:107690616,127586061,260449304)-&gt;.s0;
+node(way_cnt.s0:1)-&gt;.s1;
+.s0 map_to_area-&gt;.s2;
+.s1 compare(delta:count_tags())-&gt;.s4;
+.s1 out meta;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

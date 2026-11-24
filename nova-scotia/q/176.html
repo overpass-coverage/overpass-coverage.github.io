@@ -1,4 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 176</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 176</p><h1>Query 176</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1917 · 0.08 s CPU · expected status <code>ok</code></p><pre class="query">[maxsize:268435456][out:xml][date:&quot;2020-10-07T14:41:27Z&quot;];
-node(id:842870542,907388716,1238071242,2478200575,3520526120,3634723799,4308851770,6441330350)-&gt;.s0;
-node(around.s0:20)[&quot;operator&quot;!~&quot;Accord|Canada\\ Post|Halifax\\ Regional\\ Municipality|Halifax\\ Regional\\ Water\\ Commission|HalifaxHarbour\\ Bridges|Jason\\ Hiltz|Killam\\ Properties|Municipality\\ of\\ the\\ District\\ of\\ Argyle|Parkbridge|Shared|South\\ Queens\\ Middle\\ School&quot;]-&gt;.s1;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 176</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 176</p><h1>Query 176</h1><p class="muted">fuzz:4:history,complete,evaluators:941 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">way(45.988107,-60.260844,45.989918,-60.201400)-&gt;.s0;
+.s0 &lt;-&gt;.s1;
+.s1 convert row ::geom=center(geom()),k3=abs(count_distinct_by_role(&quot;outer&quot;)),k1=lrs_union(timestamp(),count_by_role(&quot;via&quot;)),k0=(t[&quot;light:lit&quot;]==&quot;rapids&quot;?(suffix(t[&quot;admin_level&quot;])):((lrs_min(t[&quot;utility&quot;])+(type()+timestamp())))),k2=suffix(t[&quot;type&quot;])-&gt;.s2;
+.s1 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

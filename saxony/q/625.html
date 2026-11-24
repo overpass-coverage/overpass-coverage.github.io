@@ -1,5 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 625</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 625</p><h1>Query 625</h1><p class="muted">fuzz:4:statements,areas:854 · 0.34 s CPU · expected status <code>ok</code></p><pre class="query">nwr(51.495072,14.363467,51.520558,14.429953)-&gt;.s0;
-.s0 is_in-&gt;.s1;
-node.s1-&gt;.s4;
-.s4 out count;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 625</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 625</p><h1>Query 625</h1><p class="muted">fuzz:4:statements,areas:600 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">way(around:10,50.738078,13.494503)-&gt;.s0;
+rel(r.s0)[&quot;bdouble&quot;=&quot;yes&quot;]-&gt;.s3;
+out;
+.s0 out count;
+.s0 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

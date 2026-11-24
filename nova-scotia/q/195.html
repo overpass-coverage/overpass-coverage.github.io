@@ -1,7 +1,10 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 195</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 195</p><h1>Query 195</h1><p class="muted">fuzz:4:history,complete,output:138 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2017-03-14T15:06:33Z&quot;];
-way(around:1000,44.515936,-64.122783)-&gt;.s0;
-.s0 &gt;&gt;-&gt;.s1;
-way(r.s0)-&gt;.s2;
-way(bn.s2)[&quot;communication&quot;=&quot;line&quot;]-&gt;.s3;
-.s1 out  (45.063551,-64.250070,45.141952,-64.194844);
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 195</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 195</p><h1>Query 195</h1><p class="muted">fuzz:4:history,complete,evaluators:26 · 0.14 s CPU · expected status <code>ok</code></p><pre class="query">rel(46.103851,-60.953743,46.264921,-60.778201)[!&quot;unsigned_ref&quot;]-&gt;.s0;
+.s0 convert row ::geom=center(center(geom())),::=::,k0=suffix(((number(t[&quot;source&quot;])&gt;changeset())?(t[&quot;name&quot;]):((t[&quot;operator&quot;]==&quot;Fundy Ocean Research Centre for Energy&quot;?(type()):(user()))))),k2=suffix(date(type())),k1=is_number(t[&quot;ref&quot;])-&gt;.s1;
+foreach.s0-&gt;.it{ .it out; }
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.it out count;
+.it out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

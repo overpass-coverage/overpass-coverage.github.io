@@ -1,6 +1,13 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 49</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 49</p><h1>Query 49</h1><p class="muted">fuzz:3:history,complete:68 · 0.15 s CPU · expected status <code>ok</code></p><pre class="query">[adiff:&quot;2016-03-20T20:09:37Z&quot;,&quot;2021-05-19T12:44:36Z&quot;];
-nwr[&quot;building:architecture&quot;=&quot;modernism&quot;]-&gt;.s0;
-node(w.s0)[&quot;bench&quot;!=&quot;no&quot;]-&gt;.s1;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 49</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 49</p><h1>Query 49</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:511 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[out:json];
+way[~&quot;^ram&quot;~&quot;n&quot;](around:1000,50.473709,12.970768)-&gt;.s0;
+node(way_cnt.s0:2-)-&gt;.s2;
+make stat k0=s2.count(nodes),k1=(s2.max(number(t[&quot;man_made&quot;]))+s2.max(suffix(t[&quot;smoothness&quot;]))),k2=(((s2.sum(lrs_max(&quot;a;b;c&quot;))&gt;3)?(s2.min(count_members())):(s2.min(type())))+lrs_min(s2.min((&quot;2018-01-01&quot;+id())))),::geom=center(s2.gcat(center(geom())))-&gt;.s3;
+.s3 convert row ::id=id(),tags=count_tags();
+.s3 out center  qt noids;
 .s0 out count;
-.s1 out;
+.s0 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

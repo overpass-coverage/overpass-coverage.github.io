@@ -1,4 +1,5 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 355</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 355</p><h1>Query 355</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:97 · 0.27 s CPU · expected status <code>ok</code></p><pre class="query">nwr(around:1000,50.900940,14.307339)(newer:&quot;2025-10-08T18:26:07Z&quot;)-&gt;.s0;
-for.s0-&gt;.s2 (keys()) { }
-.s0 out;
-</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/tag_value.h.html#L461">overpass_api/statements/tag_value.h:461</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 355</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 355</p><h1>Query 355</h1><p class="muted">fuzz:3:history,complete:2181 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][date:&quot;2023-03-12T10:04:37Z&quot;];
+node[&quot;operator&quot;~&quot;^WG\\ Uni&quot;](50.730872,13.703156,50.737710,13.831094)-&gt;.s0;
+.s0 out count;
+.s0 out ids 1000;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,4 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 330</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 330</p><h1>Query 330</h1><p class="muted">fuzz:3:history,complete:1214 · 0.09 s CPU · expected status <code>ok</code></p><pre class="query">[adiff:&quot;2011-06-12T04:08:44Z&quot;,&quot;2020-09-21T20:17:06Z&quot;];
-way(around:1000,45.724542,-60.818138)-&gt;.s0;
-.s0 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 330</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 330</p><h1>Query 330</h1><p class="muted">fuzz:4:history,complete,output:310 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">rel(poly:&quot;43.727934 -65.741224 43.734670 -65.742353 43.753691 -65.760730 43.719899 -65.826541 43.710788 -65.815132 43.684890 -65.807718 43.700954 -65.756934 43.696492 -65.745775 43.700579 -65.747792 43.705740 -65.724659&quot;)-&gt;.s0;
+wr(bn.s0)-&gt;.s1;
+node(way_cnt.s1:1)-&gt;.s2;
+.s2 out count;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,6 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 492</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 492</p><h1>Query 492</h1><p class="muted">fuzz:4:statements,areas:723 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">nw(44.720024,-63.424386,44.733116,-63.363974)-&gt;.s0;
-(.s0;)-&gt;.s1;
-.s1 local ll-&gt;.s2;
-way(bn.s2)-&gt;.s3;
-.s3 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 492</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 492</p><h1>Query 492</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2975 · 0.23 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2017-05-03T18:22:52Z&quot;];
+wr(45.332720,-62.628692,45.337684,-62.528599)[~&quot;^pla&quot;~&quot;is&quot;]-&gt;.s0;
+node(way_link.s0:3-)-&gt;.s1;
+.s1 out count;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

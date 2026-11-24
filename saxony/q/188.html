@@ -1,6 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 188</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 188</p><h1>Query 188</h1><p class="muted">fuzz:4:history,complete,evaluators:198 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:json];
-way[&quot;plant:output:electricity&quot;=&quot;75 kW&quot;]-&gt;.s0;
-make stat k0=s0.u((type()+&quot;x;y&quot;)),::geom=center(s0.gcat(center(geom())))-&gt;.s1;
-make info n=1,c=(-(s0.count(nodes)/s0.sum(number(&quot;x;y&quot;)))),v=s0.max(timestamp())-&gt;.s2;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 188</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 188</p><h1>Query 188</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:2375 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">nw[&quot;operator&quot;=&quot;FSV Luppa e.V.&quot;]-&gt;.s0;
+nw[~&quot;^contact:webcam$&quot;~&quot;^https://www.terra-hd.de/hochwald/$&quot;]-&gt;.s2;
+rel(bw.s0)[i]-&gt;.s4;
 .s2 out;
+.s0 out count;
+.s0 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

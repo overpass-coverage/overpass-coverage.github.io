@@ -1,4 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 418</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 418</p><h1>Query 418</h1><p class="muted">fuzz:4:output:41 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">node[&quot;capacity&quot;=&quot;127&quot;]-&gt;.s0;
-node.s0[&quot;layer&quot;=&quot;-1&quot;]-&gt;.s1;
-.s0 out;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 418</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 418</p><h1>Query 418</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1656 · 1.18 s CPU · expected status <code>ok</code></p><pre class="query">nwr(44.770072,-63.731069,44.810309,-63.706734)-&gt;.s0;
+.s0 convert row ::id=id(),::geom=geom(),::=::,k0=abs(abs(uid())),members=per_member((pos()&gt;3)),!&quot;poles&quot;,k1=lrs_in(&quot;&quot;,lrs_union(t[&quot;operator:wikidata&quot;],lrs_union(t[&quot;owner&quot;],&quot;name&quot;)))-&gt;.s1;
+make stat k0=abs(s0.sum(number(type()))),k1=number(s0.u(count_distinct_by_role(&quot;stop&quot;))),k2=s0.max(count_members()),k3=number(s0.u((&quot;1;2;3&quot;+&quot;2018-01-01&quot;))),::geom=center(trace(s0.gcat(geom())))-&gt;.s2;
+foreach.s1-&gt;.it{ }
+.s0 out skel 40;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.it out count;
+.it out ids 1000;
+</pre><h2>Lines only this query runs (11)</h2><ul><li><a href="../src/overpass_api/core/geometry.cc.html#L2223">overpass_api/core/geometry.cc:2223</a></li><li><a href="../src/overpass_api/core/geometry.cc.html#L2274">overpass_api/core/geometry.cc:2274</a></li><li><a href="../src/overpass_api/core/geometry.cc.html#L2275">overpass_api/core/geometry.cc:2275</a></li><li><a href="../src/overpass_api/core/geometry.cc.html#L2285">overpass_api/core/geometry.cc:2285</a></li><li><a href="../src/overpass_api/core/geometry.cc.html#L2286">overpass_api/core/geometry.cc:2286</a></li><li><a href="../src/overpass_api/statements/binary_operators.cc.html#L141">overpass_api/statements/binary_operators.cc:141</a></li><li><a href="../src/overpass_api/statements/binary_operators.cc.html#L142">overpass_api/statements/binary_operators.cc:142</a></li><li><a href="../src/overpass_api/statements/binary_operators.cc.html#L143">overpass_api/statements/binary_operators.cc:143</a></li><li><a href="../src/overpass_api/statements/evaluator.h.html#L254">overpass_api/statements/evaluator.h:254</a></li><li><a href="../src/overpass_api/statements/per_member.h.html#L243">overpass_api/statements/per_member.h:243</a></li><li><a href="../src/overpass_api/statements/tag_value.cc.html#L742">overpass_api/statements/tag_value.cc:742</a></li></ul></main></body></html>

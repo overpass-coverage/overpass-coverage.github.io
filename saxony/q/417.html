@@ -1,5 +1,5 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 417</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 417</p><h1>Query 417</h1><p class="muted">fuzz:3::55 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">rel(id:12770471)-&gt;.s0;
-way(r.s0)[&quot;barrier&quot;!~&quot;^wa&quot;]-&gt;.s1;
-rel(br.s0)[&quot;bicycle&quot;~&quot;^(designated|no|yes)$&quot;]-&gt;.s3;
-.s1 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 417</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 417</p><h1>Query 417</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2517 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Named things&quot;;)];
+timeline(relation,2262672)-&gt;.s1;
+.s1 out count;
+.s1 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

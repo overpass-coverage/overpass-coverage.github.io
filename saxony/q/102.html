@@ -1,6 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 102</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 102</p><h1>Query 102</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1547 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">nw[&quot;check_date&quot;=&quot;2023-12-22&quot;][&quot;roof:colour&quot;!=&quot;#9CA4AA&quot;][&quot;tactile_paving&quot;!~&quot;^y&quot;]-&gt;.s0;
-timeline(relation,4022745)-&gt;.s1;
-node(around:200,50.987904,13.857627,50.987661,13.859676,50.990086,13.856096,50.988391,13.855532,50.990785,13.854794,50.993092,13.854793)-&gt;.s3; ()-&gt;.s4;
-way(bn.s1)[&quot;check_date:handrail&quot;=&quot;2022-11-16&quot;]-&gt;.s5;
-.s4 out  (50.758788,12.326676,50.778308,12.390266);
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 102</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 102</p><h1>Query 102</h1><p class="muted">fuzz:4:history,complete,evaluators:286 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">nw(around:100,50.963086,14.240472)-&gt;.s0;
+node(w.s0)-&gt;.s1;
+.s1 convert row k2=((is_closed()?(0.5):(suffix(type())))+lon()),k3=lrs_min(lrs_union(lrs_isect(&quot;a;b;c&quot;,&quot;a;b;c&quot;),lrs_isect(t[&quot;tactile_paving&quot;],t[&quot;addr:country&quot;]))),k1=number(type()),::id=id(),k0=(timestamp()+count_distinct_by_role(&quot;historic&quot;))-&gt;.s3;
+.s1 convert row k3=lrs_union(lrs_union(t[&quot;width&quot;],&quot;name&quot;),t[&quot;tactile_paving&quot;]),k2=(&quot;x;y&quot;!=id()),::geom=center(trace(geom())),k1=lrs_isect(lrs_min(&quot;a;b;c&quot;),lrs_union(lrs_isect(lrs_union(t[&quot;roof:shape&quot;],&quot;name&quot;),&quot;1;2&quot;),timestamp())),::id=id(),k0=date((is_tag(&quot;maxspeed&quot;)?(id()):(suffix(timestamp())))),::=::,!&quot;access&quot;-&gt;.s4;
+.s3 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

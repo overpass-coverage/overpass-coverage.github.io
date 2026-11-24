@@ -1,5 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 18</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 18</p><h1>Query 18</h1><p class="muted">fuzz:3:areas,complete:1729 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">node[&quot;poles&quot;=&quot;bipole&quot;](46.143746,-60.370404,46.156127,-60.310855)-&gt;.s0;
-node(around.s0:0)-&gt;.s1;
-.s0 is_in-&gt;.s3;
-.s1 out  qt;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 18</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 18</p><h1>Query 18</h1><p class="muted">fuzz:4:evaluators:338 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">nwr(around:10,44.942492,-62.178765)-&gt;.s0;
+make stat k0=s0.u(t[&quot;fire_hydrant:type&quot;]),k1=(lrs_in(&quot;1;2;3&quot;,s0.max((type()+timestamp())))?(suffix(s0.min(number(t[&quot;lamp_mount&quot;])))):(lrs_min(s0.u(suffix(t[&quot;phases&quot;]))))),::geom=hull(s0.gcat(geom()))-&gt;.s2;
+foreach.s0-&gt;.it{ .it out ids; }
+.s0 out skel;
+.s0 out count;
+.s0 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.it out count;
+.it out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

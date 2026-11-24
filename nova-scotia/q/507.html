@@ -1,2 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 507</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 507</p><h1>Query 507</h1><p class="muted">upstream-test:osm3s_query_119.ql · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">way(50,7,51,8);
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 507</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 507</p><h1>Query 507</h1><p class="muted">fuzz:3:history,complete:2235 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2025-08-19T13:40:45Z&quot;];
+wr[&quot;destination:symbol:forward&quot;=&quot;motorway;airport&quot;]-&gt;.s0;
+complete(2).s0-&gt;.s1 { }
+rel(bn.s1)[&quot;surface&quot;=&quot;ground&quot;]-&gt;.s3;
+.s0 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

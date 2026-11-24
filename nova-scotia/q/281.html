@@ -1,4 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 281</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 281</p><h1>Query 281</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2046 · 0.09 s CPU · expected status <code>ok</code></p><pre class="query">nwr(around:1000,46.281124,-60.568219)-&gt;.s0;
-.s0 convert row k1=((count_by_role(&quot;subarea&quot;)&lt;lrs_max(lrs_union(t[&quot;lamp_mount&quot;],&quot;name&quot;)))||(lat()&gt;date(timestamp()))),k2=(suffix(user())+lrs_min(t[&quot;operator&quot;])),k0=lrs_in(suffix(length()),lrs_union(t[&quot;lanes&quot;],&quot;name&quot;))-&gt;.s3;
-.s0 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 281</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 281</p><h1>Query 281</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1603 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::otype,::id)];
+node(around:50,45.812064,-63.653077)-&gt;.s0;
+for.s0-&gt;.s1 ((suffix(t[&quot;operator:wikidata&quot;])!=type())) { }
+make info n=1,c=s0.count(deriveds),v=suffix(s0.min((type()+id())))-&gt;.s2;
+.s0 out noids;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

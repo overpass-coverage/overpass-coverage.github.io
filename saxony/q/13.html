@@ -1,5 +1,13 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 13</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 13</p><h1>Query 13</h1><p class="muted">fuzz:3::331 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">wr(50.715092,13.701012,50.753490,13.833237)[&quot;waterway&quot;=&quot;stream&quot;]-&gt;.s0;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 13</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 13</p><h1>Query 13</h1><p class="muted">fuzz:3::331 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">wr(50.715092,13.701012,50.753490,13.833237)[&quot;waterway&quot;=&quot;stream&quot;]-&gt;.s0;
 node(way_link.s0:3-)-&gt;.s1;
 foreach.s1-&gt;.it{ .it out ids; ()-&gt;.x; }
 .s1 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.it out count;
+.it out ids 1000;
+.x out count;
+.x out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

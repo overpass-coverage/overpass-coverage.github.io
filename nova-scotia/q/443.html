@@ -1,4 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 443</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 443</p><h1>Query 443</h1><p class="muted">fuzz:3:history,complete:1555 · 0.08 s CPU · expected status <code>ok</code></p><pre class="query">[adiff:&quot;2013-09-05T14:15:00Z&quot;];
-way(around:500,45.011216,-63.522995)-&gt;.s0;
-.s0 out meta;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 443</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 443</p><h1>Query 443</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3848 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2010-09-10T23:28:30Z&quot;];
+way(44.507679,-65.624616,44.553137,-65.503707)[~&quot;^lan&quot;~&quot;3&quot;]-&gt;.s0;
+()-&gt;.s2;
+.s2 out;
+.s0 out count;
+.s0 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

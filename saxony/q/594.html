@@ -1,5 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 594</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 594</p><h1>Query 594</h1><p class="muted">fuzz:4:history,areas,complete,statements:183 · 1.61 s CPU · expected status <code>query-error: runtime error: Filters too weak in query statement: specify in addition a bbox, a tag filt</code></p><pre class="query">is_in(51.373937,12.338493)-&gt;.s1;
-nwr[&quot;postal_code&quot;=&quot;01723&quot;]-&gt;.s2;
-wr(bn.s1)[&quot;maxwidth:physical&quot;~&quot;^2&quot;]-&gt;.s3;
-.s2 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 594</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 594</p><h1>Query 594</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3246 · 0.01 s CPU · expected status <code>query-error: line N: parse error: &quot;+&quot; needs a right hand side argument</code></p><pre class="query">nwr[&quot;operator&quot;=&quot;WG Unitas eG&quot;]-&gt;.s0;
+way.s0(if:1 +)-&gt;.s1;
+node-&gt;.s3;
+.s3 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

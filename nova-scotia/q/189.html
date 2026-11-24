@@ -1,5 +1,16 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 189</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 189</p><h1>Query 189</h1><p class="muted">fuzz:4:history,areas,complete,statements:446 · 0.15 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2018-11-10T14:03:18Z&quot;];
-way(45.488893,-62.476712,45.512927,-62.421510)-&gt;.s0;
-rel(bw.s0:&quot;&quot;)-&gt;.s1;
-.s1 out;
-</pre><h2>Lines only this query runs (4)</h2><ul><li><a href="../src/overpass_api/data/abstract_processing.h.html#L125">overpass_api/data/abstract_processing.h:125</a></li><li><a href="../src/overpass_api/statements/recurse.cc.html#L1340">overpass_api/statements/recurse.cc:1340</a></li><li><a href="../src/overpass_api/statements/recurse.cc.html#L1341">overpass_api/statements/recurse.cc:1341</a></li><li><a href="../src/overpass_api/statements/recurse.cc.html#L1342">overpass_api/statements/recurse.cc:1342</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 189</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 189</p><h1>Query 189</h1><p class="muted">fuzz:4:evaluators:880 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">node(45.370157,-62.481219,45.401732,-62.451462)-&gt;.s0;
+way(bn.s0)-&gt;.s1;
+make stat k0=date(s1.max(timestamp())),k1=lrs_min(s1.set(lrs_min(&quot;a;b;c&quot;)))-&gt;.s2;
+foreach.s2-&gt;.it{ .it out; ()-&gt;.x; }
+.s0 out  3;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.it out count;
+.it out ids 1000;
+.x out count;
+.x out ids 1000;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

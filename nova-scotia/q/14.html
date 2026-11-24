@@ -1,10 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 14</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 14</p><h1>Query 14</h1><p class="muted">fuzz:4:history,areas,complete,statements:236 · 0.06 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2013-08-30T18:33:25Z&quot;];
-way(id:84508871,116850366,887381410)-&gt;.s0;
-timeline(way,1388684167)-&gt;.s1;
-()-&gt;.s2;
-(.s1; - .s1;)-&gt;.s3;
-.s2 map_to_area-&gt;.s4;
-(.s0; .s0 &gt;;)-&gt;.s5;
-.s5 local llb-&gt;.s6;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 14</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 14</p><h1>Query 14</h1><p class="muted">fuzz:3:areas,complete:1729 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">node[&quot;poles&quot;=&quot;bipole&quot;](46.143746,-60.370404,46.156127,-60.310855)-&gt;.s0;
+node(around.s0:0)-&gt;.s1;
+.s0 is_in-&gt;.s3;
+.s1 out  qt;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
 .s3 out count;
+.s3 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

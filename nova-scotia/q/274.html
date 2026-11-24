@@ -1,6 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 274</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 274</p><h1>Query 274</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3088 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::changeset;true)];
-nw[&quot;capacity&quot;=&quot;48&quot;]-&gt;.s0;
-way.s0-&gt;.s1;
-rel(bw.s1:&quot;backward&quot;)[&quot;power&quot;]-&gt;.s2;
-.s0 out meta;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 274</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 274</p><h1>Query 274</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:659 · 0.14 s CPU · expected status <code>ok</code></p><pre class="query">[out:xml][date:&quot;2026-02-14T01:39:26Z&quot;];
+way[&quot;piste:type&quot;=&quot;nordic&quot;]-&gt;.s0;
+retro(date(&quot;2022-08-06T05:11:21Z&quot;)) { wr(44.707902,-64.629062,44.730772,-64.601387)-&gt;.s1; }
+node(w.s1)[&quot;sidewalk&quot;]-&gt;.s3;
+rel(bw.s0:&quot;via&quot;)[&quot;public_bookcase:type&quot;!=&quot;wooden_cabinet&quot;]-&gt;.s4;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

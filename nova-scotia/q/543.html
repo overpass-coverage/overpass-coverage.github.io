@@ -1,5 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 543</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 543</p><h1>Query 543</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:1541 · 2.93 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2011-02-18T21:21:23Z&quot;];
-is_in(46.150650,-60.140021)-&gt;.s5;
-rel(area.s5)(45.399008,-63.919996,45.476889,-63.827156)-&gt;.s6;
-.s5 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 543</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 543</p><h1>Query 543</h1><p class="muted">fuzz:4:history,complete,evaluators:691 · 1.31 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][date:&quot;2018-10-21T03:36:12Z&quot;];
+nwr[&quot;light:colour&quot;=&quot;white&quot;]-&gt;.s0;
+rel(bn.s0)[&quot;wheelchair&quot;=&quot;yes&quot;]-&gt;.s1;
+make stat k0=s1.min((is_date(t[&quot;material&quot;])?(number(t[&quot;man_made&quot;])):(count_members()))),k1=s1.min((1?(lat()):(count_members())))-&gt;.s2;
+.s2 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

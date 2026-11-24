@@ -1,6 +1,15 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 448</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 448</p><h1>Query 448</h1><p class="muted">fuzz:4:history,areas,complete,statements:757 · 0.09 s CPU · expected status <code>ok</code></p><pre class="query">[diff:&quot;2011-02-13T14:09:51Z&quot;];
-nw[&quot;post:city&quot;=&quot;Tangier&quot;]-&gt;.s0;
-wr(bn.s0)-&gt;.s1;
-.s1 compare(delta:is_tag(&quot;maxheight&quot;))-&gt;.s2;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 448</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 448</p><h1>Query 448</h1><p class="muted">fuzz:3:history,complete:952 · 0.56 s CPU · expected status <code>ok</code></p><pre class="query">[adiff:&quot;2015-09-26T09:10:31Z&quot;];
+nwr(around:50,44.953434,-63.532083)-&gt;.s0;
+node(way_link.s0:2-)-&gt;.s1;
+()-&gt;.s2;
+(.s2; - .s0;)-&gt;.s3;
 .s1 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

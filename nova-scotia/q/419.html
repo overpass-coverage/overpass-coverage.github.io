@@ -1,6 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 419</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 419</p><h1>Query 419</h1><p class="muted">fuzz:3:history,complete:1096 · 1.63 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2018-10-09T21:00:27Z&quot;];
-nwr[!&quot;brand:wikidata&quot;](44.696180,-63.731351,44.804002,-63.565020)(newer:&quot;2011-03-24T20:52:29Z&quot;)-&gt;.s0;
-way.s0(45.109069,-64.412883,45.173755,-64.124638)-&gt;.s1;
-node.s0[&quot;capacity&quot;=&quot;159 litres&quot;]-&gt;.s3;
-.s0 out ids;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 419</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 419</p><h1>Query 419</h1><p class="muted">fuzz:3:areas,complete:2447 · 3.53 s CPU · expected status <code>ok</code></p><pre class="query">node(989558013)-&gt;.s0;
+node(way_cnt.s0:2-)-&gt;.s1;
+area[name=&quot;Duck Pond&quot;]-&gt;.s4;
+nwr(area.s4)-&gt;.s5;
+.s1 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
+.s5 out count;
+.s5 out ids 1000;
+</pre><h2>Lines only this query runs (3)</h2><ul><li><a href="../src/overpass_api/statements/area_query.cc.html#L735">overpass_api/statements/area_query.cc:735</a></li><li><a href="../src/overpass_api/statements/area_query.cc.html#L736">overpass_api/statements/area_query.cc:736</a></li><li><a href="../src/overpass_api/statements/area_query.cc.html#L741">overpass_api/statements/area_query.cc:741</a></li></ul></main></body></html>

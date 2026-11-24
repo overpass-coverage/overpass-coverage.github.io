@@ -1,4 +1,5 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 439</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 439</p><h1>Query 439</h1><p class="muted">fuzz:4:evaluators:735 · 0.23 s CPU · expected status <code>ok</code></p><pre class="query">nwr[&quot;water&quot;=&quot;lake&quot;]-&gt;.s0;
-way.s0[&quot;building:levels&quot;=&quot;19&quot;]-&gt;.s1;
-for.s0-&gt;.s2 (keys()) { ._ out count; }
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 439</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 439</p><h1>Query 439</h1><p class="muted">fuzz:3:history,complete:178 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][date:&quot;2011-02-10T07:21:59Z&quot;];
+rel[&quot;horse&quot;=&quot;no&quot;](44.766755,-64.621321,44.858122,-64.478116)-&gt;.s0;
+.s0 out count;
+.s0 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

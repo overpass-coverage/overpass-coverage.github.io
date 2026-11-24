@@ -1,6 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 97</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 97</p><h1>Query 97</h1><p class="muted">fuzz:3:areas,complete:2588 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">wr[&quot;highway&quot;=&quot;primary&quot;](50.972652,13.616173,51.035139,13.680282)-&gt;.s0;
-.s0 map_to_area-&gt;.s1;
-way(r.s0)[&quot;collection_times&quot;!~&quot;Mo\\-Fr\\ 14:00;\\ Sa\\ 09:30&quot;]-&gt;.s2;
-rel(bw.s1:&quot;platform&quot;)[&quot;highway&quot;!=&quot;living_street&quot;]-&gt;.s3;
-out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 97</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 97</p><h1>Query 97</h1><p class="muted">fuzz:4:history,complete,evaluators:423 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">way(823584149)-&gt;.s0;
+way(r.s0)-&gt;.s1;
+node(way_link.s1:2-)-&gt;.s2;
+if ((s2.sum(number(t[&quot;addr:city&quot;]))==0)) { make yes n=s2.count(nwr)-&gt;.s3; } else { }
+.s1 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

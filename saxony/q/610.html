@@ -1,4 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 610</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 610</p><h1>Query 610</h1><p class="muted">fuzz:4:history,areas,complete,statements:472 · 0.11 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2009-03-05T13:43:25Z&quot;];
-nw(around:100,50.707786,12.452152)(if:is_closed())-&gt;.s0;
-.s0 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 610</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 610</p><h1>Query 610</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1100 · 5.08 s CPU · expected status <code>ok</code></p><pre class="query">node[&quot;highway&quot;]-&gt;.s0;
+node(w.s0)-&gt;.s1;
+.s0 convert stat k1=suffix(lrs_min(lrs_union(&quot;1;2&quot;,lrs_union(t[&quot;maxspeed&quot;],&quot;name&quot;)))),k2=abs((-uid())),!&quot;backrest&quot;,::id=id(),k0=((abs(count_by_role(&quot;guidepost&quot;))!=(is_tag(&quot;addr:suburb&quot;)?(number(t[&quot;man_made&quot;])):(count_distinct_members())))?((is_closed()?(t[&quot;entrance&quot;]):(number(t[&quot;source&quot;])))):(((!is_number(t[&quot;service&quot;]))?(id()):((t[&quot;natural&quot;]+timestamp())))))-&gt;.s2;
+.s1 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

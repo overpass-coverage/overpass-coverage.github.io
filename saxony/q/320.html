@@ -1,4 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 320</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 320</p><h1>Query 320</h1><p class="muted">fuzz:4:evaluators:338 · 0.27 s CPU · expected status <code>ok</code></p><pre class="query">nwr(around:10,51.360212,12.389017)-&gt;.s0;
-make stat k0=s0.u(t[&quot;bus&quot;]),k1=(lrs_in(&quot;1;2;3&quot;,s0.max((type()+timestamp())))?(suffix(s0.min(number(t[&quot;railway&quot;])))):(lrs_min(s0.u(suffix(t[&quot;gauge&quot;]))))),::geom=hull(s0.gcat(geom()))-&gt;.s2;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 320</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 320</p><h1>Query 320</h1><p class="muted">fuzz:4:history,complete,evaluators:376 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">rel(2966879)-&gt;.s0;
+rel(r.s0)-&gt;.s1;
 .s0 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

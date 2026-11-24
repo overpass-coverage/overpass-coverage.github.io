@@ -1,7 +1,6 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 283</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 283</p><h1>Query 283</h1><p class="muted">fuzz:4:history,complete,evaluators:21 · 0.58 s CPU · expected status <code>ok</code></p><pre class="query">[adiff:&quot;2017-05-24T03:01:51Z&quot;];
-node(46.098792,-60.200125,46.145815,-60.163122)-&gt;.s0;
-if ((!(!(s0.max(count_distinct_members())==1)))) { }
-way(bn.s0)-&gt;.s2;
-.s0 out   (44.646201,-63.610291,44.668581,-63.566363);
-.s2 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 283</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 283</p><h1>Query 283</h1><p class="muted">fuzz:3:history,complete:739 · 0.46 s CPU · expected status <code>ok</code></p><pre class="query">[diff:&quot;2011-06-10T17:47:12Z&quot;];
+nwr[&quot;natural&quot;~&quot;^wo&quot;](45.302573,-61.979517,45.493497,-61.835385)-&gt;.s0;
+.s0 out;
+.s0 out count;
+.s0 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

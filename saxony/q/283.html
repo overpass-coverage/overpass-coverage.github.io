@@ -1,5 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 283</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 283</p><h1>Query 283</h1><p class="muted">fuzz:4:history,areas,complete,statements:101 · 0.71 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2013-11-14T08:10:50Z&quot;];
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 283</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 283</p><h1>Query 283</h1><p class="muted">fuzz:4:history,areas,complete,statements:101 · 1.03 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2013-11-14T08:10:50Z&quot;];
 rel[&quot;kerb&quot;=&quot;lowered&quot;]-&gt;.s0;
 nwr[~&quot;^operator:wikidata$&quot;~&quot;^Q3587594$&quot;]-&gt;.s1;
 .s0 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

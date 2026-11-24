@@ -1,7 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 312</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 312</p><h1>Query 312</h1><p class="muted">fuzz:4:history,areas,complete,statements:817 · 0.37 s CPU · expected status <code>ok</code></p><pre class="query">[diff:&quot;2011-04-05T23:37:15Z&quot;];
-nw(44.703924,-63.766859,44.731486,-63.764622)-&gt;.s0;
-.s0-&gt;._; &lt;; (._;)-&gt;.s1;
-node(r.s0)-&gt;.s3;
-(.s3; - .s1;)-&gt;.s4;
-.s0 compare(delta:t[&quot;addr:county&quot;])-&gt;.s5 { .s5 out count; }
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 312</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 312</p><h1>Query 312</h1><p class="muted">fuzz:3:history,complete:1303 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2022-10-05T04:18:46Z&quot;];
+node[&quot;loc_name&quot;=&quot;Membertou Interchange&quot;][&quot;natural&quot;!=&quot;bay&quot;]-&gt;.s0;
+timeline(relation,4)-&gt;.s1;
+.s1 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,5 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 468</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 468</p><h1>Query 468</h1><p class="muted">fuzz:4:history,complete,output:808 · 1.08 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(true)][date:&quot;2023-05-05T22:27:53Z&quot;];
-rel(id:1416520,9105314,9118670)-&gt;.s0;
-.s0 &gt;&gt;-&gt;.s2;
-.s2 &lt;&lt;-&gt;.s3;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 468</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 468</p><h1>Query 468</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:227 · 0.01 s CPU · expected status <code>query-error: line N: parse error: lrs_in(...) needs two arguments</code></p><pre class="query">nwr(if:0)-&gt;.s0;
+.s0 convert item ::=::,bad=lrs_in(&quot;a&quot;),k1=(0?(((!is_number(t[&quot;poles&quot;]))?((is_tag(&quot;addr:housenumber&quot;)?(id()):(t[&quot;utility&quot;]))):((suffix(t[&quot;lanes&quot;])+timestamp())))):(&quot;2018-01-01&quot;)),members=per_member(mtype()+&quot;/&quot;+ref()),::id=id(),k0=(-uid()),k2=is_tag(&quot;waterway&quot;),k3=lrs_isect(lrs_union(t[&quot;operator:wikidata&quot;],&quot;name&quot;),lrs_union(t[&quot;name&quot;],&quot;name&quot;))-&gt;.s1;
+.s0 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

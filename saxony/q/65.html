@@ -1,6 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 65</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 65</p><h1>Query 65</h1><p class="muted">fuzz:4:output:126 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">way(958233899)-&gt;.s0;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 65</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 65</p><h1>Query 65</h1><p class="muted">fuzz:4:output:126 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">way(958233899)-&gt;.s0;
 .s0 &gt;&gt;-&gt;.s1;
 rel[!&quot;access&quot;](id:5267834)-&gt;.s2;
 rel(br.s1)[&quot;building:levels:underground&quot;=&quot;1&quot;]-&gt;.s3;
 .s2 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

@@ -1,4 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 287</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 287</p><h1>Query 287</h1><p class="muted">fuzz:3:history,complete:739 · 0.33 s CPU · expected status <code>ok</code></p><pre class="query">[diff:&quot;2011-06-10T17:47:12Z&quot;];
-nwr[&quot;natural&quot;~&quot;^wo&quot;](45.302573,-61.979517,45.493497,-61.835385)-&gt;.s0;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 287</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 287</p><h1>Query 287</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:1020 · 0.25 s CPU · expected status <code>ok</code></p><pre class="query">nwr(44.959219,-64.952955,44.996020,-64.890059)-&gt;.s0;
+.s0 convert row k0=(lrs_min(lrs_isect(t[&quot;voltage&quot;],&quot;1;2&quot;))&lt;=length()),k1=is_date(timestamp())-&gt;.s2;
+.s2 convert stat k2=-1,k0=is_tag(&quot;maxspeed&quot;),::id=id(),!&quot;operator:wikidata&quot;,k1=(is_number(t[&quot;maxheight&quot;])?(&quot;3&quot;):(suffix(number(t[&quot;addr:housenumber&quot;]))))-&gt;.s4;
 .s0 out;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>
+.s0 out count;
+.s0 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/tag_value.h.html#L336">overpass_api/statements/tag_value.h:336</a></li></ul></main></body></html>

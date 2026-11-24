@@ -1,7 +1,18 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 18</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 18</p><h1>Query 18</h1><p class="muted">fuzz:4:history,complete,evaluators:261 · 0.77 s CPU · expected status <code>ok</code></p><pre class="query">[adiff:&quot;2012-12-09T18:46:14Z&quot;];
-rel[&quot;old_ref&quot;]-&gt;.s0;
-rel.s0(51.194333,12.249394,51.470887,12.398230)-&gt;.s1;
-rel.s1(if:((!(!0))&amp;&amp;is_number((suffix(t[&quot;backrest&quot;])+t[&quot;surface&quot;]))))-&gt;.s2;
-way(around.s2:100)-&gt;.s3;
-.s3 out   (50.221608,12.207136,50.300807,12.277701);
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 18</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 18</p><h1>Query 18</h1><p class="muted">fuzz:4:history,complete,evaluators:702 · 0.04 s CPU · expected status <code>ok</code></p><pre class="query">[out:json];
+node[&quot;building:levels&quot;=&quot;5&quot;]-&gt;.s0;
+timeline(node,9932496242)-&gt;.s1;
+node.s0-&gt;.s2;
+make stat k0=suffix(s1.set(length())),k1=(date(s1.max(timestamp()))*((number(s1.u((t[&quot;building&quot;]+&quot;1;2;3&quot;)))&gt;10)?(s1.count(relations)):(s1.min(count_members())))),k2=s1.sum((-length())),k3=((s1.sum((id()-uid()))&gt;42)?(s1.max(length())):(s1.u(timestamp())))-&gt;.s3;
+node(way_link.s2:2-)-&gt;.s5;
+.s1 out skel  (50.307173,12.421001,50.390813,12.553007);
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+.s3 out count;
+.s3 out ids 1000;
+.s5 out count;
+.s5 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

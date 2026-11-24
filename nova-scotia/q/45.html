@@ -1,5 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 45</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 45</p><h1>Query 45</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:2555 · 0.13 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Shops&quot;;)(&quot;Named things&quot;;[&quot;cables&quot;=&quot;3&quot;][&quot;golf&quot;=&quot;fairway&quot;];[&quot;natural&quot;=&quot;tree_row&quot;];)][date:&quot;2019-05-13T19:03:34Z&quot;];
-nw(newer:&quot;2012-02-11T18:02:07Z&quot;)(43.998677,-65.199206,44.036877,-65.155886)-&gt;.s0;
-foreach.s0-&gt;.it{ ( .it &gt;;)-&gt;.x; .x out count; }
-.s0 out;
-</pre><h2>Lines only this query runs (2)</h2><ul><li><a href="../src/overpass_api/output_formats/output_popup.cc.html#L314">overpass_api/output_formats/output_popup.cc:314</a></li><li><a href="../src/overpass_api/output_formats/output_popup.cc.html#L316">overpass_api/output_formats/output_popup.cc:316</a></li></ul></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 45</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 45</p><h1>Query 45</h1><p class="muted">fuzz:4:history,complete,evaluators:415 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[diff:&quot;2011-04-13T21:53:06Z&quot;];
+way[&quot;destination:ref:to:lanes&quot;~&quot;^\\|102\\ South&quot;][&quot;building:material&quot;=&quot;plaster&quot;]-&gt;.s0;
+retro(date(&quot;2013-08-31T00:45:51Z&quot;)) { wr(around:500,44.663074,-65.547671)-&gt;.s1; .s1 out; }
+node(around.s0:100)-&gt;.s2;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
+</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

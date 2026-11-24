@@ -1,4 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 79</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 79</p><h1>Query 79</h1><p class="muted">fuzz:4:history,complete,evaluators:268 · 0.02 s CPU · expected status <code>ok</code></p><pre class="query">[diff:&quot;2012-05-10T21:55:38Z&quot;];
-rel[~&quot;^haz&quot;~&quot;desig&quot;](4022745)-&gt;.s0;
-.s0 out;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 79</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 79</p><h1>Query 79</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:723 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Roads&quot;;)];
+area(3620734518)-&gt;.s2;
+make stat k0=s2.min(&quot;1;2;3&quot;),k1=lrs_min(((s2.max((is_number(t[&quot;emergency&quot;])?(uid()):(count_tags())))&gt;1)?(s2.max((is_number(t[&quot;bicycle&quot;])?(timestamp()):(timestamp())))):(s2.set(lrs_min(lrs_union(t[&quot;leaf_type&quot;],&quot;name&quot;)))))),k2=lrs_min(lrs_min(s2.max((1?(type()):(t[&quot;surface&quot;]))))),k3=s2.min(abs(42))-&gt;.s4;
+out;
+.s2 out count;
+.s2 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/statements/ternary_operator.cc.html#L185">overpass_api/statements/ternary_operator.cc:185</a></li></ul></main></body></html>

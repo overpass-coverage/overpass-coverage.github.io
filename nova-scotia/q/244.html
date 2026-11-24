@@ -1,5 +1,6 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 244</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 244</p><h1>Query 244</h1><p class="muted">fuzz:4:history,areas,complete,statements:175 · 1.79 s CPU · expected status <code>ok</code></p><pre class="query">[out:json][date:&quot;2020-03-19T04:04:39Z&quot;];
-rel[&quot;barrier&quot;]-&gt;.s0;
-nw[~&quot;chec&quot;~&quot;20&quot;]-&gt;.s2;
-nwr[~&quot;^postal_code$&quot;~&quot;^B2T 1B4$&quot;][&quot;brand:wikidata&quot;~&quot;Q60&quot;][~&quot;^is_&quot;~&quot;.&quot;]-&gt;.s4;
-</pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 244</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 244</p><h1>Query 244</h1><p class="muted">fuzz:4:history,complete,output:585 · 0.03 s CPU · expected status <code>ok</code></p><pre class="query">[out:popup(&quot;Roads&quot;;[&quot;surface&quot;];)];
+nw(poly:&#x27;45.598661 -64.476488 45.597718 -64.487397 45.593921 -64.497055 45.563492 -64.476771&#x27;)-&gt;.s0;
+.s0 out;
+.s0 out count;
+.s0 out ids 1000;
+</pre><h2>Lines only this query runs (1)</h2><ul><li><a href="../src/overpass_api/output_formats/output_popup.cc.html#L34">overpass_api/output_formats/output_popup.cc:34</a></li></ul></main></body></html>

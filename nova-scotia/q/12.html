@@ -1,9 +1,11 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 12</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 12</p><h1>Query 12</h1><p class="muted">fuzz:4:history,areas,complete,statements:347 · 0.05 s CPU · expected status <code>ok</code></p><pre class="query">[out:csv(::type,::lat,::lon,&quot;addr:suburb&quot;)][date:&quot;2019-06-22T20:40:01Z&quot;];
-node(around:250,45.708815,-61.070353)-&gt;.s0;
-node(r.s0)-&gt;.s1;
-node(w.s1)-&gt;.s2;
-.s2 &lt;-&gt;.s3;
-foreach.s0-&gt;.it{ .it out ids; (.it;)-&gt;.x; .x out count; }
-.s0 out  33;
-.s3 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 12</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 12</p><h1>Query 12</h1><p class="muted">fuzz:3:areas,complete:2583 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">nw(45.609592,-61.103887,45.780101,-61.045363)[&quot;turn:lanes:backward&quot;~&quot;^left\\|t&quot;][&quot;roof:shape&quot;!~&quot;^gab&quot;](poly:&#x27;44.706565 -65.181066 44.686927 -65.184061 44.685071 -65.155423&#x27;)-&gt;.s0;
+area[name=&quot;Cedar Lake&quot;]-&gt;.s4;
+rel(area.s4)(46.047647,-60.319470,46.101427,-60.302342)-&gt;.s5;
+.s5 out;
+.s0 out count;
+.s0 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
+.s5 out count;
+.s5 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

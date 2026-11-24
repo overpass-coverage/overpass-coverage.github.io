@@ -1,6 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 426</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 426</p><h1>Query 426</h1><p class="muted">fuzz:3:evaluators,output,statements,poi,areas,complete:3662 · 0.01 s CPU · expected status <code>ok</code></p><pre class="query">way[&quot;branch&quot;=&quot;Kentville&quot;]-&gt;.s0;
-area[name=&quot;Tomahawk Lake&quot;]-&gt;.s1;
-(.s0; - .s1;)-&gt;.s3;
-.s3 convert row ::id=id(),tags=count_tags();
-.s0 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 426</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Nova Scotia)</a> / query 426</p><h1>Query 426</h1><p class="muted">fuzz:4:history,complete,output:161 · 5.32 s CPU · expected status <code>ok</code></p><pre class="query">[date:&quot;2025-01-09T14:26:27Z&quot;];
+node[&quot;building&quot;=&quot;yes&quot;]-&gt;.s0;
+.s0 &lt;-&gt;.s2;
+.s2 out  qt;
+.s0 out count;
+.s0 out ids 1000;
+.s2 out count;
+.s2 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>

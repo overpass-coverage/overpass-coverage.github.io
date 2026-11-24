@@ -1,6 +1,15 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 165</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 165</p><h1>Query 165</h1><p class="muted">fuzz:3:history,areas,complete,evaluators,output,statements,poi:3712 · 2.18 s CPU · expected status <code>ok</code></p><pre class="query">area[name=&quot;Zentrum&quot;]-&gt;.s1;
-rel(area.s1)-&gt;.s2;
-.s2 &gt;&gt;-&gt;.s3;
-rel.s2-&gt;.s5;
-.s5 out;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query 165</title><link rel="stylesheet" href="../style.css"></head><body><main><p><a href="../index.html">Overpass API regression suite coverage (Saxony)</a> / query 165</p><h1>Query 165</h1><p class="muted">fuzz:4:history,areas,complete,statements:583 · 0.22 s CPU · expected status <code>ok</code></p><pre class="query">[adiff:&quot;2009-01-11T21:10:21Z&quot;];
+way[&quot;check_date&quot;=&quot;2026-05-08&quot;]-&gt;.s0;
+way(r.s0)-&gt;.s1;
+rel(r.s1)-&gt;.s4;
+rel[~&quot;^official_name$&quot;~&quot;^Kampfkunstteam GO-JU Chemnitz e.V.$&quot;][&quot;tactile_paving&quot;]-&gt;.s5;
+.s4 out;
+.s0 out count;
+.s0 out ids 1000;
+.s1 out count;
+.s1 out ids 1000;
+.s4 out count;
+.s4 out ids 1000;
+.s5 out count;
+.s5 out ids 1000;
 </pre><h2>Lines only this query runs (0)</h2><p class="muted">None: it is in the suite for edges or hit counts that other queries reach only in part.</p></main></body></html>
